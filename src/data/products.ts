@@ -16,7 +16,7 @@ export interface Product {
 const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "budgettechp01-20";
 
 export function affiliateUrl(asin: string): string {
-  return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}&linkCode=ogi&th=1`;
+  return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}`;
 }
 
 // Proxy images through our own domain so ad blockers can't interfere
@@ -303,8 +303,8 @@ export const products: Product[] = [
   },
   {
     id: "benq-screenbar-plus",
-    name: "BenQ ScreenBar Plus Monitor Light",
-    asin: "B07MXRCDF3",
+    name: "BenQ ScreenBar Monitor Light",
+    asin: "B076VNQDLT",
     price: "$109.99",
     priceNum: 109.99,
     rating: 4.6,
@@ -504,15 +504,15 @@ export const products: Product[] = [
     articleSlug: "best-smart-home-under-50",
   },
   {
-    id: "govee-smart-bulb",
-    name: "Govee Smart Bulbs RGBWW (4-Pack)",
-    asin: "B08XFN3PW3",
+    id: "kasa-smart-bulb-4pack",
+    name: "Kasa Smart Bulbs Full Color (4-Pack)",
+    asin: "B07J4K1T8P",
     price: "$24.99",
     priceNum: 24.99,
-    rating: 4.5,
-    reviewCount: 19000,
-    description: "16 million color RGBWW smart bulbs with app and voice control. Set scenes, schedules, music sync, and wake-up routines. Four bulbs for $25 is absurd value.",
-    pros: ["16M colors", "App + Alexa/Google", "Music sync mode"],
+    rating: 4.6,
+    reviewCount: 22000,
+    description: "16 million color RGBW smart bulbs with app and voice control. Works with Alexa and Google Home, no hub needed. Four bulbs for $25 is absurd value.",
+    pros: ["16M colors", "App + Alexa/Google", "No hub required"],
     cons: ["Needs 2.4GHz WiFi", "No Bluetooth fallback"],
     category: "Smart Home",
     articleSlug: "best-smart-home-under-50",
@@ -908,7 +908,7 @@ export const products: Product[] = [
   {
     id: "logitech-g-pro-superlight-2",
     name: "Logitech G Pro X Superlight 2 Gaming Mouse",
-    asin: "B0BF1TCCCX",
+    asin: "B0BZNG6LXF",
     price: "$159.99",
     priceNum: 159.99,
     rating: 4.7,
