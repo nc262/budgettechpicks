@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   description:
     "Honest reviews of the best budget tech gadgets under $50. USB-C hubs, webcams, wireless earbuds, and desk accessories.",
-  metadataBase: new URL("https://budgettechpicks.com"),
+  metadataBase: new URL("https://budgettechpicks.vercel.app"),
   openGraph: {
     siteName: "BudgetTechPicks",
     type: "website",

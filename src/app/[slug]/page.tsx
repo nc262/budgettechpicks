@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import type { Metadata } from "next";
 import { getArticleBySlug, articles } from "@/data/articles";
 import { getProductsByArticle } from "@/data/products";
@@ -31,6 +32,13 @@ export default function ArticlePage({ params }: Props) {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
+      {/* Breadcrumb */}
+      <nav className="text-sm text-gray-400 mb-6 flex items-center gap-1.5">
+        <Link href="/" className="hover:text-blue-600 transition-colors font-medium">Home</Link>
+        <span>›</span>
+        <span className="text-gray-600 font-semibold">{article.category}</span>
+      </nav>
+
       {/* Header */}
       <div className="mb-8">
         <p className="text-sm text-brand-600 font-semibold uppercase tracking-wide mb-2">
