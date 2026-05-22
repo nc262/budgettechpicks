@@ -8,27 +8,6 @@ export interface Product {
   description: string;
   pros: string[];
   cons: string[];
-  imageUrl: string;
-  category: string;
-  articleSlug: string;
-}
-
-const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "yoursite-20";
-
-export function affiliateUrl(asin: string): string {
-  return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}&linkCode=ogi&th=1`;
-}
-
-export interface Product {
-  id: string;
-  name: string;
-  asin: string;
-  price: string;
-  rating: number;
-  reviewCount: number;
-  description: string;
-  pros: string[];
-  cons: string[];
   category: string;
   articleSlug: string;
 }
