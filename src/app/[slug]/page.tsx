@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getArticleBySlug, articles } from "@/data/articles";
 import { getProductsByArticle } from "@/data/products";
-import ProductCard from "@/components/ProductCard";
+import ProductFilter from "@/components/ProductFilter";
 import AdSlot from "@/components/AdSlot";
 
 interface Props {
@@ -51,18 +51,8 @@ export default function ArticlePage({ params }: Props) {
         keep the site running.
       </div>
 
-      {/* Product list */}
-      <div className="space-y-6">
-        {products.map((product, index) => (
-          <>
-            <ProductCard key={product.id} product={product} rank={index + 1} />
-            {/* Insert ad after 2nd product */}
-            {index === 1 && (
-              <AdSlot key="mid-ad" slot="5566778899" style="rectangle" className="my-4" />
-            )}
-          </>
-        ))}
-      </div>
+      {/* Product list with price filter */}
+      <ProductFilter products={products} />
 
       {/* Bottom ad */}
       <AdSlot slot="9988776655" style="horizontal" className="mt-10" />

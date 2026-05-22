@@ -72,6 +72,38 @@ export const articles: Article[] = [
     updatedAt: "May 2025",
     category: "Portable Tech",
   },
+  {
+    slug: "best-monitors-and-displays",
+    title: "Best Monitors & Displays for Every Budget (2025)",
+    metaDescription: "From $229 budget gaming monitors to $1,300 OLED masterpieces — the best displays for gaming, work, and content creation.",
+    intro: "Your monitor is the one piece of tech you stare at for 8+ hours a day. It deserves more thought than your GPU. Whether you're on a tight budget or ready to splurge on QD-OLED, here's what's actually worth buying.",
+    updatedAt: "May 2025",
+    category: "Monitors & Displays",
+  },
+  {
+    slug: "best-streaming-gear",
+    title: "Best Streaming & Content Creator Gear (2025)",
+    metaDescription: "Microphones, capture cards, key lights, and stream decks — everything you need to go from bedroom streamer to professional creator.",
+    intro: "Great content doesn't need a $10,000 studio. A few hundred dollars of the right gear turns your desk into a broadcast setup. Here's exactly what to buy and in what order.",
+    updatedAt: "May 2025",
+    category: "Streaming Gear",
+  },
+  {
+    slug: "best-audio-gear",
+    title: "Best Headphones & Microphones for Every Budget (2025)",
+    metaDescription: "From $149 studio reference headphones to $399 broadcast microphones — the best audio gear for music, gaming, and work.",
+    intro: "Good audio is felt before it's understood. Whether you're mixing music, gaming, or just tired of hearing every noise in your office, these picks represent the best sound per dollar at every price point.",
+    updatedAt: "May 2025",
+    category: "Audio & Microphones",
+  },
+  {
+    slug: "best-gaming-setups",
+    title: "Best Gaming Setup Gear: Budget to Extreme (2025)",
+    metaDescription: "Gaming keyboards, mice, chairs, handhelds, standing desks — the full gaming setup breakdown from $80 to over-the-top.",
+    intro: "A great gaming setup isn't about spending the most — it's about spending smart. We cover everything from the $80 mechanical keyboard that competes with $200 boards to the Steam Deck and ROG Ally that put your entire PC in your hands.",
+    updatedAt: "May 2025",
+    category: "Gaming Setups",
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {

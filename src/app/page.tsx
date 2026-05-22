@@ -14,14 +14,14 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center text-center">
             <span className="inline-block bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
-              🔥 All picks under $50 · Updated May 2025
+              🔥 65+ Products Reviewed · Updated May 2025
             </span>
             <h1 className="text-5xl font-black mb-5 leading-tight">
-              Best Budget Tech<br />
-              <span className="text-blue-400">That&apos;s Actually Worth It</span>
+              Best Tech Picks<br />
+              <span className="text-blue-400">Budget to Extreme</span>
             </h1>
             <p className="text-gray-400 text-lg max-w-xl mb-8">
-              25+ honest reviews across gaming gear, smart home, desk toys, earbuds, and more. No fluff. No paid placements. Just the best stuff under $50.
+              Honest reviews across gaming rigs, streaming gear, audio, monitors, and more. Budget finds to over-the-top splurges — no fluff, no paid placements.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
               <Link href="/best-gaming-gear-under-50" className="bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-xl transition-colors">
@@ -43,7 +43,7 @@ export default function HomePage() {
         <section className="mb-14">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-black text-gray-900">⭐ Editor&apos;s Top Picks</h2>
-            <span className="text-sm text-gray-400 bg-gray-100 px-3 py-1 rounded-full">All under $50</span>
+            <span className="text-sm text-gray-400 bg-gray-100 px-3 py-1 rounded-full">All price ranges</span>
           </div>
           <FeaturedGrid products={featured} />
         </section>
@@ -78,20 +78,20 @@ export default function HomePage() {
         <section className="bg-gradient-to-r from-gray-900 to-blue-950 rounded-2xl p-6 mb-10 text-white">
           <div className="grid grid-cols-4 gap-4 text-center">
             <div>
-              <p className="text-3xl font-black text-blue-400">25+</p>
+              <p className="text-3xl font-black text-blue-400">65+</p>
               <p className="text-xs text-gray-400 mt-1">Products Reviewed</p>
             </div>
             <div>
-              <p className="text-3xl font-black text-blue-400">8</p>
+              <p className="text-3xl font-black text-blue-400">12</p>
               <p className="text-xs text-gray-400 mt-1">Categories</p>
             </div>
             <div>
-              <p className="text-3xl font-black text-blue-400">$50</p>
-              <p className="text-xs text-gray-400 mt-1">Max Price</p>
+              <p className="text-3xl font-black text-blue-400">$10</p>
+              <p className="text-xs text-gray-400 mt-1">Cheapest Pick</p>
             </div>
             <div>
-              <p className="text-3xl font-black text-blue-400">4.5★</p>
-              <p className="text-xs text-gray-400 mt-1">Avg. Rating</p>
+              <p className="text-3xl font-black text-blue-400">No Limit</p>
+              <p className="text-xs text-gray-400 mt-1">Price Range</p>
             </div>
           </div>
         </section>
