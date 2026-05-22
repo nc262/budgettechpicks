@@ -18,9 +18,10 @@ export function affiliateUrl(asin: string): string {
   return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}&linkCode=ogi&th=1`;
 }
 
-// Amazon associate image widget - officially allowed for affiliates
+// Proxy all product images through our own API route so ad blockers
+// (which block amazon-adsystem.com) never interfere.
 export function amazonImageUrl(asin: string): string {
-  return `https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=${asin}&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=${AMAZON_TAG}`;
+  return `/api/img?asin=${asin}`;
 }
 
 export const categoryEmoji: Record<string, string> = {
