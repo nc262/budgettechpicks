@@ -19,11 +19,40 @@ export function affiliateUrl(asin: string): string {
   return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}&linkCode=ogi&th=1`;
 }
 
+export interface Product {
+  id: string;
+  name: string;
+  asin: string;
+  price: string;
+  rating: number;
+  reviewCount: number;
+  description: string;
+  pros: string[];
+  cons: string[];
+  category: string;
+  articleSlug: string;
+}
+
+const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "budgettechp01-20";
+
+export function affiliateUrl(asin: string): string {
+  return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}&linkCode=ogi&th=1`;
+}
+
+// Amazon associate image widget - officially allowed for affiliates
+export function amazonImageUrl(asin: string): string {
+  return `https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=${asin}&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=${AMAZON_TAG}`;
+}
+
 export const categoryEmoji: Record<string, string> = {
   "USB-C Hubs": "🔌",
   "Webcams": "📷",
   "Wireless Earbuds": "🎧",
   "Desk Accessories": "🖥️",
+  "Gaming Gear": "🎮",
+  "Desk Toys & Fun": "🧲",
+  "Smart Home": "💡",
+  "Portable Tech": "🔋",
 };
 
 export const categoryColor: Record<string, string> = {
@@ -31,7 +60,376 @@ export const categoryColor: Record<string, string> = {
   "Webcams": "bg-purple-100 text-purple-700",
   "Wireless Earbuds": "bg-green-100 text-green-700",
   "Desk Accessories": "bg-orange-100 text-orange-700",
+  "Gaming Gear": "bg-red-100 text-red-700",
+  "Desk Toys & Fun": "bg-yellow-100 text-yellow-700",
+  "Smart Home": "bg-teal-100 text-teal-700",
+  "Portable Tech": "bg-indigo-100 text-indigo-700",
 };
+
+export const products: Product[] = [
+  // USB-C Hubs
+  {
+    id: "anker-usbc-hub-7in1",
+    name: "Anker 7-in-1 USB-C Hub",
+    asin: "B07ZVKTP53",
+    price: "$35.99",
+    rating: 4.6,
+    reviewCount: 28000,
+    description: "Turn one USB-C port into seven: 4K HDMI, 100W Power Delivery, SD/microSD card readers, and two USB-A 3.0 ports.",
+    pros: ["Compact & travel-friendly", "100W PD pass-through", "4K HDMI"],
+    cons: ["No Ethernet", "Gets slightly warm"],
+    category: "USB-C Hubs",
+    articleSlug: "best-usb-c-hubs-under-50",
+  },
+  {
+    id: "ugreen-usbc-hub-9in1",
+    name: "UGREEN 9-in-1 USB-C Hub",
+    asin: "B08R6Q1G3F",
+    price: "$45.99",
+    rating: 4.5,
+    reviewCount: 12000,
+    description: "Nine ports: HDMI + VGA dual display, Gigabit Ethernet, 3.5mm audio, SD card, and three USB-A ports.",
+    pros: ["Dual display support", "Gigabit Ethernet", "Wide compatibility"],
+    cons: ["Slightly bulkier", "Needs PD host for max charging"],
+    category: "USB-C Hubs",
+    articleSlug: "best-usb-c-hubs-under-50",
+  },
+  {
+    id: "hiearcool-usbc-hub",
+    name: "Hiearcool USB-C Hub 7-in-1",
+    asin: "B09413MX6X",
+    price: "$27.99",
+    rating: 4.4,
+    reviewCount: 9500,
+    description: "Ultra-slim 7-in-1 hub with 4K HDMI, 100W PD, USB 3.0, SD/TF card reader. Best value pick.",
+    pros: ["Best value", "Ultra-slim", "Universal compatibility"],
+    cons: ["HDMI 30Hz at 4K", "SD reader USB 2.0 speed"],
+    category: "USB-C Hubs",
+    articleSlug: "best-usb-c-hubs-under-50",
+  },
+  // Webcams
+  {
+    id: "logitech-c920s",
+    name: "Logitech C920s HD Pro Webcam",
+    asin: "B07K986YLL",
+    price: "$49.99",
+    rating: 4.6,
+    reviewCount: 45000,
+    description: "1080p/30fps Full HD with automatic light correction and dual mics. The gold standard for home office calls.",
+    pros: ["Crystal-clear 1080p", "Auto light correction", "Privacy shutter"],
+    cons: ["No 4K", "Fixed focus"],
+    category: "Webcams",
+    articleSlug: "best-budget-webcams",
+  },
+  {
+    id: "razer-kiyo",
+    name: "Razer Kiyo — Built-in Ring Light",
+    asin: "B075N1BYWB",
+    price: "$49.99",
+    rating: 4.4,
+    reviewCount: 31000,
+    description: "1080p webcam with a built-in adjustable ring light — no extra lighting gear needed for a pro look.",
+    pros: ["Built-in ring light", "Plug-and-play", "Great in low light"],
+    cons: ["Bulkier", "Ring light non-removable"],
+    category: "Webcams",
+    articleSlug: "best-budget-webcams",
+  },
+  {
+    id: "anker-powerconf-c200",
+    name: "Anker PowerConf C200 2K Webcam",
+    asin: "B09MFMTMPD",
+    price: "$39.99",
+    rating: 4.4,
+    reviewCount: 8200,
+    description: "2K Sony sensor, dual noise-cancelling mics, AI auto-framing. Looks better than cameras twice the price.",
+    pros: ["2K Sony sensor", "AI auto-framing", "Dual noise-cancelling mics"],
+    cons: ["Not 4K", "Less brand recognition"],
+    category: "Webcams",
+    articleSlug: "best-budget-webcams",
+  },
+  // Wireless Earbuds
+  {
+    id: "soundcore-p3i",
+    name: "Soundcore Life P3i — ANC Earbuds",
+    asin: "B09W2CGWQY",
+    price: "$39.99",
+    rating: 4.4,
+    reviewCount: 17000,
+    description: "Active Noise Cancellation, 10-hour battery, 4 mics — all for under $40. Unbeatable at this price.",
+    pros: ["ANC under $40", "App EQ control", "10hr playtime"],
+    cons: ["ANC not as deep as premium", "Bulkier ear tips"],
+    category: "Wireless Earbuds",
+    articleSlug: "best-wireless-earbuds-under-50",
+  },
+  {
+    id: "tozo-t6",
+    name: "TOZO T6 True Wireless Earbuds",
+    asin: "B07RGZ5NKS",
+    price: "$25.99",
+    rating: 4.3,
+    reviewCount: 89000,
+    description: "Amazon's best-selling earbuds: IPX8 waterproofing, deep bass, 6hr playtime at an unbeatable price.",
+    pros: ["IPX8 waterproof", "Incredible value", "Deep bass"],
+    cons: ["No ANC", "Average mic"],
+    category: "Wireless Earbuds",
+    articleSlug: "best-wireless-earbuds-under-50",
+  },
+  {
+    id: "jabra-elite-3",
+    name: "Jabra Elite 3 Wireless Earbuds",
+    asin: "B09GD6HY71",
+    price: "$49.99",
+    rating: 4.3,
+    reviewCount: 22000,
+    description: "Mono audio mode, 28-hour total battery with case, IP55 sweat resistance — great for commuters.",
+    pros: ["Mono mode for calls", "IP55 rated", "28hr total battery"],
+    cons: ["No ANC", "Slightly bulky"],
+    category: "Wireless Earbuds",
+    articleSlug: "best-wireless-earbuds-under-50",
+  },
+  // Desk Accessories
+  {
+    id: "lamicall-phone-stand",
+    name: "Lamicall Adjustable Phone Stand",
+    asin: "B01N9ETPHV",
+    price: "$14.99",
+    rating: 4.5,
+    reviewCount: 62000,
+    description: "Aluminum adjustable desktop holder with 270° angle adjustment. Works with any phone 4–8 inches.",
+    pros: ["Sturdy aluminum", "270° adjustment", "Works with cases"],
+    cons: ["No tablet support", "Shows fingerprints"],
+    category: "Desk Accessories",
+    articleSlug: "best-desk-accessories-under-50",
+  },
+  {
+    id: "anker-wireless-charger-pad",
+    name: "Anker 15W Wireless Charger Pad",
+    asin: "B07THHQMHM",
+    price: "$15.99",
+    rating: 4.5,
+    reviewCount: 39000,
+    description: "Qi-certified 15W fast wireless charger with LED indicator and sleep-friendly design.",
+    pros: ["15W fast charge", "Works through cases", "Sleep-friendly LED"],
+    cons: ["Adapter not included", "One device at a time"],
+    category: "Desk Accessories",
+    articleSlug: "best-desk-accessories-under-50",
+  },
+  {
+    id: "magnetic-cable-organizer",
+    name: "Magnetic Cable Clips (10-Pack)",
+    asin: "B09NQG24NL",
+    price: "$9.99",
+    rating: 4.4,
+    reviewCount: 14000,
+    description: "Stick-on magnetic clips that keep all your cables organized on your desk or monitor.",
+    pros: ["Easy peel-and-stick", "Holds multiple cables", "Very affordable"],
+    cons: ["Adhesive may weaken on textured surfaces"],
+    category: "Desk Accessories",
+    articleSlug: "best-desk-accessories-under-50",
+  },
+  // Gaming Gear
+  {
+    id: "razer-deathadder-essential",
+    name: "Razer DeathAdder Essential Gaming Mouse",
+    asin: "B07FRLH5TJ",
+    price: "$29.99",
+    rating: 4.6,
+    reviewCount: 52000,
+    description: "6400 DPI optical sensor, ergonomic right-hand design, and 5 programmable buttons. The best budget gaming mouse.",
+    pros: ["Best-in-class sensor", "Ergonomic comfort", "10M click lifespan"],
+    cons: ["Right-hand only", "Basic RGB"],
+    category: "Gaming Gear",
+    articleSlug: "best-gaming-gear-under-50",
+  },
+  {
+    id: "redragon-k552-keyboard",
+    name: "Redragon K552 Mechanical Keyboard",
+    asin: "B016MAK38U",
+    price: "$42.99",
+    rating: 4.5,
+    reviewCount: 35000,
+    description: "Tenkeyless mechanical keyboard with tactile blue switches, red LED backlight, and splash-proof design.",
+    pros: ["Satisfying tactile keys", "Compact TKL layout", "Splash-proof"],
+    cons: ["Blue switches are loud", "No wireless"],
+    category: "Gaming Gear",
+    articleSlug: "best-gaming-gear-under-50",
+  },
+  {
+    id: "hyperx-cloud-stinger",
+    name: "HyperX Cloud Stinger Gaming Headset",
+    asin: "B01LXB3UKK",
+    price: "$39.99",
+    rating: 4.5,
+    reviewCount: 48000,
+    description: "Lightweight 275g gaming headset with 50mm directional drivers, swivel-to-mute mic, and memory foam ear cushions.",
+    pros: ["Super lightweight", "Great sound for price", "Swivel-to-mute mic"],
+    cons: ["No surround sound", "Non-detachable cable"],
+    category: "Gaming Gear",
+    articleSlug: "best-gaming-gear-under-50",
+  },
+  {
+    id: "govee-led-strip-lights",
+    name: "Govee 32.8ft LED Strip Lights",
+    asin: "B07CL2RMR7",
+    price: "$19.99",
+    rating: 4.4,
+    reviewCount: 67000,
+    description: "32.8ft color-changing LED strips with app control, music sync, and 16 million colors. RGB your whole room.",
+    pros: ["App + voice control", "Music sync mode", "Super easy install"],
+    cons: ["Adhesive weakens over time", "Requires WiFi"],
+    category: "Gaming Gear",
+    articleSlug: "best-gaming-gear-under-50",
+  },
+  // Desk Toys & Fun
+  {
+    id: "newtons-cradle",
+    name: "Newton's Cradle Balance Balls",
+    asin: "B07V28Z55J",
+    price: "$14.99",
+    rating: 4.4,
+    reviewCount: 8500,
+    description: "Classic desktop physics toy with polished steel balls and a sturdy base. The ultimate desk stress reliever.",
+    pros: ["Endlessly satisfying", "Great conversation starter", "Sturdy build"],
+    cons: ["Click noise can be loud", "Balls may drift with time"],
+    category: "Desk Toys & Fun",
+    articleSlug: "best-desk-toys-under-50",
+  },
+  {
+    id: "magnetic-sculpture",
+    name: "Magnetic Sculpture Building Bars",
+    asin: "B07L5KQ2CL",
+    price: "$18.99",
+    rating: 4.4,
+    reviewCount: 6200,
+    description: "200 magnetic rods and steel balls to build unlimited 3D sculptures on your desk. Satisfying and creative.",
+    pros: ["Endless creativity", "Stress-relieving", "Great gift"],
+    cons: ["Small pieces — keep away from kids", "Magnets affect cards nearby"],
+    category: "Desk Toys & Fun",
+    articleSlug: "best-desk-toys-under-50",
+  },
+  {
+    id: "infinity-cube",
+    name: "Infinity Cube Fidget Toy",
+    asin: "B072MQ2BN3",
+    price: "$12.99",
+    rating: 4.3,
+    reviewCount: 11000,
+    description: "Fold it, flip it, spin it. The infinity cube fidget toy keeps hands busy during calls and focus sessions.",
+    pros: ["Silent to use", "Compact pocket size", "Durable build"],
+    cons: ["Can be distracting", "Not as complex as some toys"],
+    category: "Desk Toys & Fun",
+    articleSlug: "best-desk-toys-under-50",
+  },
+  {
+    id: "speed-cube",
+    name: "GAN 356 M Speed Cube 3x3",
+    asin: "B07SFMF3WM",
+    price: "$29.99",
+    rating: 4.7,
+    reviewCount: 14000,
+    description: "Magnetic speedcube used by world competitors. Smooth, fast, and satisfying — even for beginners.",
+    pros: ["Magnetic feel", "Competition-grade", "Smooth turns"],
+    cons: ["Learning curve for beginners", "Slightly pricier than basic cubes"],
+    category: "Desk Toys & Fun",
+    articleSlug: "best-desk-toys-under-50",
+  },
+  // Smart Home
+  {
+    id: "kasa-smart-plug",
+    name: "Kasa Smart Plug EP10 (4-Pack)",
+    asin: "B09T3DM397",
+    price: "$19.99",
+    rating: 4.6,
+    reviewCount: 28000,
+    description: "Control any outlet from your phone or voice. Schedule lamps, fans, and appliances with no hub needed.",
+    pros: ["No hub required", "Works with Alexa/Google", "Energy monitoring"],
+    cons: ["2.4GHz WiFi only", "Blocks adjacent outlet"],
+    category: "Smart Home",
+    articleSlug: "best-smart-home-under-50",
+  },
+  {
+    id: "govee-smart-bulb",
+    name: "Govee Smart Light Bulbs (4-Pack)",
+    asin: "B08XFN3PW3",
+    price: "$24.99",
+    rating: 4.5,
+    reviewCount: 19000,
+    description: "16 million color RGBWW smart bulbs with app + voice control. Set scenes, schedules, and music sync.",
+    pros: ["16M colors", "App + Alexa/Google", "Music sync mode"],
+    cons: ["Needs 2.4GHz WiFi", "No Bluetooth fallback"],
+    category: "Smart Home",
+    articleSlug: "best-smart-home-under-50",
+  },
+  {
+    id: "amazon-echo-dot-5",
+    name: "Amazon Echo Dot (5th Gen)",
+    asin: "B09B8RF4PY",
+    price: "$49.99",
+    rating: 4.7,
+    reviewCount: 95000,
+    description: "The best-selling smart speaker. Better audio than ever, built-in Eero WiFi extender, and full Alexa support.",
+    pros: ["Best sound in Echo Dot lineup", "Built-in WiFi extender", "Tap to snooze alarm"],
+    cons: ["Requires Amazon account", "Alexa privacy concerns for some"],
+    category: "Smart Home",
+    articleSlug: "best-smart-home-under-50",
+  },
+  // Portable Tech
+  {
+    id: "anker-powercore-10000",
+    name: "Anker PowerCore 10000 Power Bank",
+    asin: "B0194WDVHI",
+    price: "$21.99",
+    rating: 4.7,
+    reviewCount: 112000,
+    description: "Ultra-compact 10,000mAh power bank. Charges an iPhone 3x over. The most reliable budget power bank on Amazon.",
+    pros: ["Ultra-compact", "3x iPhone charges", "Premium Anker cells"],
+    cons: ["Micro-USB input (not USB-C)", "Single output port"],
+    category: "Portable Tech",
+    articleSlug: "best-portable-tech-under-50",
+  },
+  {
+    id: "anker-soundcore-mini",
+    name: "Anker Soundcore Mini Bluetooth Speaker",
+    asin: "B01N5QLLT3",
+    price: "$25.99",
+    rating: 4.5,
+    reviewCount: 88000,
+    description: "Palm-sized Bluetooth speaker with surprisingly loud 360° sound, 15-hour battery, and IPX5 waterproofing.",
+    pros: ["Surprisingly loud", "15hr battery", "IPX5 waterproof"],
+    cons: ["No aux input", "Bass limited by size"],
+    category: "Portable Tech",
+    articleSlug: "best-portable-tech-under-50",
+  },
+  {
+    id: "tile-mate-tracker",
+    name: "Tile Mate Item Tracker (4-Pack)",
+    asin: "B09B4LSD3N",
+    price: "$49.99",
+    rating: 4.4,
+    reviewCount: 33000,
+    description: "Never lose keys, wallet, or bag again. Tile's community network finds your stuff even when out of Bluetooth range.",
+    pros: ["Community find network", "Water-resistant", "Works with iOS + Android"],
+    cons: ["Subscription for premium features", "Range limited without community"],
+    category: "Portable Tech",
+    articleSlug: "best-portable-tech-under-50",
+  },
+];
+
+export function getProductsByArticle(slug: string): Product[] {
+  return products.filter((p) => p.articleSlug === slug);
+}
+
+export function getFeaturedProducts(): Product[] {
+  return [
+    products.find((p) => p.id === "razer-deathadder-essential")!,
+    products.find((p) => p.id === "govee-led-strip-lights")!,
+    products.find((p) => p.id === "anker-powercore-10000")!,
+    products.find((p) => p.id === "newtons-cradle")!,
+    products.find((p) => p.id === "logitech-c920s")!,
+    products.find((p) => p.id === "amazon-echo-dot-5")!,
+  ];
+}
+
 
 export const products: Product[] = [
   {
