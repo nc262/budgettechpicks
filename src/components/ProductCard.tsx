@@ -1,3 +1,5 @@
+"use client";
+
 import { Product, affiliateUrl, amazonImageUrl, categoryEmoji, categoryColor } from "@/data/products";
 
 interface Props {

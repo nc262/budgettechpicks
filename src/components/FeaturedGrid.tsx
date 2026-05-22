@@ -1,0 +1,45 @@
+"use client";
+
+import { Product, affiliateUrl, amazonImageUrl, categoryEmoji, categoryColor } from "@/data/products";
+
+export default function FeaturedGrid({ products }: { products: Product[] }) {
+  return (
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+      {products.map((product) => {
+        const url = affiliateUrl(product.asin);
+        const imgUrl = amazonImageUrl(product.asin);
+        const emoji = categoryEmoji[product.category] ?? "🛒";
+        const color = categoryColor[product.category] ?? "bg-gray-100 text-gray-700";
+        return (
+          <a
+            key={product.id}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="bg-white rounded-2xl border border-gray-100 p-4 hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center group"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={imgUrl}
+              alt={product.name}
+              className="w-20 h-20 object-contain mb-3 rounded-lg"
+              onError={(e) => {
+                const t = e.currentTarget;
+                t.style.display = "none";
+                const next = t.nextElementSibling as HTMLElement | null;
+                if (next) next.style.display = "flex";
+              }}
+            />
+            <div className={`hidden w-20 h-20 rounded-xl items-center justify-center text-3xl mb-3 ${color}`}>
+              {emoji}
+            </div>
+            <p className="font-bold text-gray-900 text-xs leading-snug mb-1 group-hover:text-blue-600 transition-colors">
+              {product.name}
+            </p>
+            <p className="text-blue-600 font-black">{product.price}</p>
+          </a>
+        );
+      })}
+    </div>
+  );
+}
