@@ -1,6 +1,6 @@
 "use client";
 
-import { Product, affiliateUrl, amazonImageUrl, categoryEmoji, categoryColor } from "@/data/products";
+import { Product, affiliateUrl, amazonImageUrl, amazonImageFallback, categoryEmoji, categoryColor } from "@/data/products";
 
 interface Props {
   product: Product;
@@ -11,6 +11,7 @@ export default function ProductCard({ product, rank }: Props) {
   const stars = Math.round(product.rating);
   const url = affiliateUrl(product.asin);
   const imgUrl = amazonImageUrl(product.asin);
+  const imgFallback = amazonImageFallback(product.asin);
   const emoji = categoryEmoji[product.category] ?? "🛒";
   const colorClass = categoryColor[product.category] ?? "bg-gray-100 text-gray-700";
 
@@ -18,7 +19,7 @@ export default function ProductCard({ product, rank }: Props) {
     <div className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-200 overflow-hidden">
       <div className="p-5">
         <div className="flex items-start gap-4">
-          {/* Product image */}
+          {/* Product image — CDN direct, two fallbacks, then emoji */}
           <a href={url} target="_blank" rel="noopener noreferrer sponsored" className="shrink-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -29,9 +30,13 @@ export default function ProductCard({ product, rank }: Props) {
               className="rounded-xl object-contain bg-gray-50 w-24 h-24"
               onError={(e) => {
                 const t = e.currentTarget;
-                t.style.display = "none";
-                const next = t.nextElementSibling as HTMLElement | null;
-                if (next) next.style.display = "flex";
+                if (t.src !== imgFallback) {
+                  t.src = imgFallback;
+                } else {
+                  t.style.display = "none";
+                  const next = t.nextElementSibling as HTMLElement | null;
+                  if (next) next.style.display = "flex";
+                }
               }}
             />
             <div

@@ -19,9 +19,14 @@ export function affiliateUrl(asin: string): string {
   return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}`;
 }
 
-// Proxy images through our own domain so ad blockers can't interfere
+// Direct Amazon CDN — not ad-system, not blocked by ad blockers
 export function amazonImageUrl(asin: string): string {
-  return `/api/img?asin=${asin}`;
+  return `https://images-na.ssl-images-amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg`;
+}
+
+// Fallback image URL (alternate format)
+export function amazonImageFallback(asin: string): string {
+  return `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SCLZZZZZZZ_.jpg`;
 }
 
 export const categoryEmoji: Record<string, string> = {

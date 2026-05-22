@@ -1,6 +1,6 @@
 "use client";
 
-import { Product, affiliateUrl, amazonImageUrl, categoryEmoji, categoryColor } from "@/data/products";
+import { Product, affiliateUrl, amazonImageUrl, amazonImageFallback, categoryEmoji, categoryColor } from "@/data/products";
 
 export default function FeaturedGrid({ products }: { products: Product[] }) {
   return (
@@ -8,6 +8,7 @@ export default function FeaturedGrid({ products }: { products: Product[] }) {
       {products.map((product) => {
         const url = affiliateUrl(product.asin);
         const imgUrl = amazonImageUrl(product.asin);
+        const imgFallback = amazonImageFallback(product.asin);
         const emoji = categoryEmoji[product.category] ?? "🛒";
         const color = categoryColor[product.category] ?? "bg-gray-100 text-gray-700";
         return (
@@ -25,9 +26,13 @@ export default function FeaturedGrid({ products }: { products: Product[] }) {
               className="w-20 h-20 object-contain mb-3 rounded-lg"
               onError={(e) => {
                 const t = e.currentTarget;
-                t.style.display = "none";
-                const next = t.nextElementSibling as HTMLElement | null;
-                if (next) next.style.display = "flex";
+                if (t.src !== imgFallback) {
+                  t.src = imgFallback;
+                } else {
+                  t.style.display = "none";
+                  const next = t.nextElementSibling as HTMLElement | null;
+                  if (next) next.style.display = "flex";
+                }
               }}
             />
             <div className={`hidden w-20 h-20 rounded-xl items-center justify-center text-3xl mb-3 ${color}`}>
