@@ -90,8 +90,8 @@ export default function HomePage() {
               <p className="text-xs text-gray-400 mt-1">Cheapest Pick</p>
             </div>
             <div>
-              <p className="text-3xl font-black text-blue-400">💸 Send It</p>
-              <p className="text-xs text-gray-400 mt-1">Price Range</p>
+              <p className="text-3xl font-black text-blue-400">God Tier 🫡</p>
+              <p className="text-xs text-gray-400 mt-1">Top of Price Range</p>
             </div>
           </div>
         </section>
