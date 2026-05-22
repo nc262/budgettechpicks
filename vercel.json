@@ -2,10 +2,5 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "framework": "nextjs",
-  "installCommand": "npm install",
-  "env": {
-    "NEXT_PUBLIC_AMAZON_TAG": "@NEXT_PUBLIC_AMAZON_TAG",
-    "NEXT_PUBLIC_ADSENSE_ID": "@NEXT_PUBLIC_ADSENSE_ID",
-    "NEXT_PUBLIC_GA_ID": "@NEXT_PUBLIC_GA_ID"
-  }
+  "installCommand": "npm install"
 }
