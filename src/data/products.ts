@@ -381,7 +381,7 @@ export const products: Product[] = [
   {
     id: "razer-basilisk-v3",
     name: "Razer Basilisk V3 Gaming Mouse",
-    asin: "B09D8TYGG3",
+    asin: "B09GVFD3G2",
     price: "$49.99",
     priceNum: 49.99,
     rating: 4.6,
@@ -927,7 +927,7 @@ export const products: Product[] = [
   {
     id: "steelseries-arctis-nova-pro",
     name: "SteelSeries Arctis Nova Pro Wireless Headset",
-    asin: "B09ZXN5W9N",
+    asin: "B09Y3S3HFV",
     price: "$249.99",
     priceNum: 249.99,
     rating: 4.5,
