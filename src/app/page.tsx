@@ -74,6 +74,9 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Mid ad */}
+        <AdSlot slot="6127167489" style="horizontal" className="mb-10" />
+
         {/* Stats bar */}
         <section className="bg-gradient-to-r from-gray-900 to-blue-950 rounded-2xl p-6 mb-10 text-white">
           <div className="grid grid-cols-4 gap-4 text-center">
