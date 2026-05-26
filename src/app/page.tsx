@@ -37,7 +37,7 @@ export default function HomePage() {
 
       <div className="max-w-5xl mx-auto px-4 py-10">
         {/* Top ad */}
-        <AdSlot slot="1234567890" style="horizontal" className="mb-10" />
+        <AdSlot slot="5229018783" style="horizontal" className="mb-10" />
 
         {/* Featured picks */}
         <section className="mb-14">
@@ -97,10 +97,11 @@ export default function HomePage() {
         </section>
 
         {/* Bottom ad */}
-        <AdSlot slot="0987654321" style="horizontal" />
+        <AdSlot slot="5229018783" style="horizontal" />
       </div>
     </div>
   );
 }
+
 
 
