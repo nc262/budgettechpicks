@@ -14,7 +14,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center text-center">
             <span className="inline-block bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
-              🔥 65+ Products Reviewed · Updated May 2025
+              🔥 65+ Products Reviewed · Updated May 2026
             </span>
             <h1 className="text-5xl font-black mb-5 leading-tight">
               Best Tech Picks<br />
@@ -102,4 +102,5 @@ export default function HomePage() {
     </div>
   );
 }
+
 
