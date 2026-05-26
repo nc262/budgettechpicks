@@ -1,10 +1,13 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Script from "next/script";
 import type { Metadata } from "next";
 import { getArticleBySlug, articles } from "@/data/articles";
-import { getProductsByArticle, affiliateUrl } from "@/data/products";
+import { getProductsByArticle, affiliateUrl, amazonImageUrl } from "@/data/products";
 import ProductFilter from "@/components/ProductFilter";
 import AdSlot from "@/components/AdSlot";
+
+const SITE_URL = "https://budgettechpicks.vercel.app";
 
 interface Props {
   params: { slug: string };
@@ -17,10 +20,27 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getArticleBySlug(params.slug);
   if (!article) return {};
+  const products = getProductsByArticle(params.slug);
+  const ogImage = products[0] ? amazonImageUrl(products[0].asin) : `${SITE_URL}/og-default.png`;
+  const url = `${SITE_URL}/${params.slug}`;
   return {
     title: article.title,
     description: article.metaDescription,
-    openGraph: { title: article.title, description: article.metaDescription },
+    alternates: { canonical: url },
+    keywords: [article.category, "budget tech", "best value", "review", "under $50", "affiliate picks"],
+    openGraph: {
+      title: article.title,
+      description: article.metaDescription,
+      url,
+      type: "article",
+      images: [{ url: ogImage, width: 500, height: 500, alt: article.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.metaDescription,
+      images: [ogImage],
+    },
   };
 }
 

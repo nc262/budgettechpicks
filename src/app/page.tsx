@@ -1,8 +1,30 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+import Script from "next/script";
 import { getFeaturedProducts, products as allProducts, categoryEmoji, categoryColor } from "@/data/products";
 import { articles } from "@/data/articles";
 import AdSlot from "@/components/AdSlot";
 import FeaturedGrid from "@/components/FeaturedGrid";
+
+const SITE_URL = "https://budgettechpicks.vercel.app";
+
+export const metadata: Metadata = {
+  alternates: { canonical: SITE_URL },
+  openGraph: { url: SITE_URL, type: "website" },
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "BudgetTechPicks",
+  url: SITE_URL,
+  description: "Honest reviews of the best budget tech gadgets under $50.",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: { "@type": "EntryPoint", urlTemplate: `${SITE_URL}/?q={search_term_string}` },
+    "query-input": "required name=search_term_string",
+  },
+};
 
 export default function HomePage() {
   const featured = getFeaturedProducts();
@@ -13,6 +35,7 @@ export default function HomePage() {
 
   return (
     <div>
+      <Script id="jsonld-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
       {/* Hero — dark tech gradient */}
       <section className="bg-gradient-to-br from-gray-950 via-gray-900 to-blue-950 text-white px-4 py-20">
         <div className="max-w-5xl mx-auto">

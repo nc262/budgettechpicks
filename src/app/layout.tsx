@@ -10,20 +10,47 @@ const inter = Inter({ subsets: ["latin"] });
 const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_ID;
 const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
+const SITE_URL = "https://budgettechpicks.vercel.app";
+const SITE_NAME = "BudgetTechPicks";
+const DEFAULT_DESCRIPTION =
+  "Honest reviews of the best budget tech gadgets under $50. USB-C hubs, webcams, wireless earbuds, mechanical keyboards, monitors, and more.";
+const OG_IMAGE = `${SITE_URL}/og-default.png`;
+
 export const metadata: Metadata = {
   title: {
-    default: "BudgetTechPicks – Best Tech Gadgets Under $50",
-    template: "%s | BudgetTechPicks",
+    default: `${SITE_NAME} – Best Budget Tech Gadgets Under $50`,
+    template: `%s | ${SITE_NAME}`,
   },
-  description:
-    "Honest reviews of the best budget tech gadgets under $50. USB-C hubs, webcams, wireless earbuds, and desk accessories.",
-  metadataBase: new URL("https://budgettechpicks.vercel.app"),
+  description: DEFAULT_DESCRIPTION,
+  metadataBase: new URL(SITE_URL),
+  keywords: [
+    "budget tech", "best gadgets under $50", "USB-C hub review", "cheap webcam",
+    "wireless earbuds budget", "mechanical keyboard budget", "affiliate tech picks",
+    "best value tech 2026", "desk accessories", "home office tech",
+  ],
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  alternates: { canonical: SITE_URL },
   verification: {
     google: "MClIPiF4Bq8pkSGn-UoTHbd4sTtt-i0fPXHzixXmpCo",
   },
   openGraph: {
-    siteName: "BudgetTechPicks",
+    siteName: SITE_NAME,
     type: "website",
+    url: SITE_URL,
+    locale: "en_US",
+    title: `${SITE_NAME} – Best Budget Tech Gadgets Under $50`,
+    description: DEFAULT_DESCRIPTION,
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${SITE_NAME} — Best Budget Tech` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE_NAME} – Best Budget Tech Gadgets Under $50`,
+    description: DEFAULT_DESCRIPTION,
+    images: [OG_IMAGE],
+    creator: "@budgettechpicks",
   },
 };
 
