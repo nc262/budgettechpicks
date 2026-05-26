@@ -22,12 +22,12 @@ export function affiliateUrl(asin: string): string {
 
 // Direct Amazon CDN — not ad-system, not blocked by ad blockers
 export function amazonImageUrl(asin: string): string {
-  return `https://images-na.ssl-images-amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg`;
+  return `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SCMZZZZZZZ_.jpg`;
 }
 
 // Fallback image URL (alternate format)
 export function amazonImageFallback(asin: string): string {
-  return `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SCLZZZZZZZ_.jpg`;
+  return `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SX450_.jpg`;
 }
 
 export const categoryEmoji: Record<string, string> = {
