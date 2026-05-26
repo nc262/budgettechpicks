@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { articles } from "@/data/articles";
 
-const BASE = "https://budgettechpicks.vercel.app";
+const BASE = "https://totaltechpicks.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const categoryPages = articles.map((a) => ({

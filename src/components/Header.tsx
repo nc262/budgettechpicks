@@ -30,7 +30,7 @@ export default function Header() {
           onClick={() => setOpen(false)}
           className="text-lg font-black text-gray-900 hover:text-blue-600 transition-colors shrink-0"
         >
-          💻 BudgetTechPicks
+          💻 TotalTechPicks
         </Link>
 
         {/* Nav pills — desktop only */}

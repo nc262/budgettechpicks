@@ -10,15 +10,15 @@ const inter = Inter({ subsets: ["latin"] });
 const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_ID;
 const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
-const SITE_URL = "https://budgettechpicks.vercel.app";
-const SITE_NAME = "BudgetTechPicks";
+const SITE_URL = "https://totaltechpicks.com";
+const SITE_NAME = "TotalTechPicks";
 const DEFAULT_DESCRIPTION =
-  "Honest reviews of the best budget tech gadgets under $50. USB-C hubs, webcams, wireless earbuds, mechanical keyboards, monitors, and more.";
+  "Honest reviews of the Best Tech Gadgets under $50. USB-C hubs, webcams, wireless earbuds, mechanical keyboards, monitors, and more.";
 const OG_IMAGE = `${SITE_URL}/og-default.png`;
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE_NAME} – Best Budget Tech Gadgets Under $50`,
+    default: `${SITE_NAME} – Best Tech Gadgets Under $50`,
     template: `%s | ${SITE_NAME}`,
   },
   description: DEFAULT_DESCRIPTION,
@@ -41,16 +41,16 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
     locale: "en_US",
-    title: `${SITE_NAME} – Best Budget Tech Gadgets Under $50`,
+    title: `${SITE_NAME} – Best Tech Gadgets Under $50`,
     description: DEFAULT_DESCRIPTION,
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${SITE_NAME} — Best Budget Tech` }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${SITE_NAME} — best tech picks` }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} – Best Budget Tech Gadgets Under $50`,
+    title: `${SITE_NAME} – Best Tech Gadgets Under $50`,
     description: DEFAULT_DESCRIPTION,
     images: [OG_IMAGE],
-    creator: "@budgettechpicks",
+    creator: "@TotalTechPicks",
   },
 };
 

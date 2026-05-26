@@ -8,9 +8,9 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-4 py-10">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div>
-            <p className="text-white font-bold text-lg mb-2">BudgetTechPicks</p>
+            <p className="text-white font-bold text-lg mb-2">TotalTechPicks</p>
             <p className="text-sm max-w-xs">
-              Honest reviews of the best budget tech gadgets under $50. We earn
+              Honest reviews of the Best Tech Gadgets under $50. We earn
               a commission from qualifying Amazon purchases at no extra cost to
               you.
             </p>
@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-gray-700 mt-8 pt-6 text-xs text-center">
           <p>
-            © {year} BudgetTechPicks. Amazon and the Amazon logo are trademarks
+            © {year} TotalTechPicks. Amazon and the Amazon logo are trademarks
             of Amazon.com, Inc. As an Amazon Associate we earn from qualifying
             purchases.
           </p>

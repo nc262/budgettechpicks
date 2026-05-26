@@ -6,7 +6,7 @@ import { articles } from "@/data/articles";
 import AdSlot from "@/components/AdSlot";
 import FeaturedGrid from "@/components/FeaturedGrid";
 
-const SITE_URL = "https://budgettechpicks.vercel.app";
+const SITE_URL = "https://totaltechpicks.com";
 
 export const metadata: Metadata = {
   alternates: { canonical: SITE_URL },
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "BudgetTechPicks",
+  name: "TotalTechPicks",
   url: SITE_URL,
-  description: "Honest reviews of the best budget tech gadgets under $50.",
+  description: "Honest reviews of the Best Tech Gadgets under $50.",
   potentialAction: {
     "@type": "SearchAction",
     target: { "@type": "EntryPoint", urlTemplate: `${SITE_URL}/?q={search_term_string}` },

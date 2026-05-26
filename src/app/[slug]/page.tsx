@@ -7,7 +7,7 @@ import { getProductsByArticle, affiliateUrl, amazonImageUrl } from "@/data/produ
 import ProductFilter from "@/components/ProductFilter";
 import AdSlot from "@/components/AdSlot";
 
-const SITE_URL = "https://budgettechpicks.vercel.app";
+const SITE_URL = "https://totaltechpicks.com";
 
 interface Props {
   params: { slug: string };
@@ -118,7 +118,7 @@ export default function ArticlePage({ params }: Props) {
           <div>
             <p className="text-xs font-bold text-blue-600 uppercase tracking-wide mb-1">Editor&apos;s Note</p>
             <p className="text-gray-800 italic leading-relaxed">&ldquo;{article.editorNote}&rdquo;</p>
-            <p className="text-xs text-gray-400 mt-2">— The BudgetTechPicks Team</p>
+            <p className="text-xs text-gray-400 mt-2">— The TotalTechPicks Team</p>
           </div>
         </div>
       )}
