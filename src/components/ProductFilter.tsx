@@ -109,7 +109,7 @@ export default function ProductFilter({ products }: Props) {
               <ProductCard product={product} rank={index + 1} />
               {index === 1 && (
                 <div className="mt-6">
-                  <AdSlot slot="5229018783" style="rectangle" />
+                  <AdSlot slot="8753330826" style="rectangle" />
                 </div>
               )}
             </div>

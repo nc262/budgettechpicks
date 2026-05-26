@@ -63,7 +63,7 @@ export default function ArticlePage({ params }: Props) {
       <ProductFilter products={products} />
 
       {/* Bottom ad */}
-      <AdSlot slot="5229018783" style="horizontal" className="mt-10" />
+      <AdSlot slot="7683791736" style="horizontal" className="mt-10" />
 
       {/* Bottom summary */}
       <div className="mt-10 p-5 bg-gray-100 rounded-xl">

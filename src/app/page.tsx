@@ -97,7 +97,7 @@ export default function HomePage() {
         </section>
 
         {/* Bottom ad */}
-        <AdSlot slot="5229018783" style="horizontal" />
+        <AdSlot slot="8753330826" style="horizontal" />
       </div>
     </div>
   );
