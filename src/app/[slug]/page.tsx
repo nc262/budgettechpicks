@@ -50,7 +50,7 @@ export default function ArticlePage({ params }: Props) {
       </div>
 
       {/* Top ad */}
-      <AdSlot slot="1122334455" style="horizontal" className="mb-8" />
+      <AdSlot slot="5229018783" style="horizontal" className="mb-8" />
 
       {/* Affiliate disclosure */}
       <div className="bg-blue-50 border border-blue-100 rounded-lg p-3 text-xs text-blue-700 mb-8">
@@ -63,7 +63,7 @@ export default function ArticlePage({ params }: Props) {
       <ProductFilter products={products} />
 
       {/* Bottom ad */}
-      <AdSlot slot="9988776655" style="horizontal" className="mt-10" />
+      <AdSlot slot="5229018783" style="horizontal" className="mt-10" />
 
       {/* Bottom summary */}
       <div className="mt-10 p-5 bg-gray-100 rounded-xl">
