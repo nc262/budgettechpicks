@@ -22,7 +22,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+    <header className="bg-gray-900/95 border-b border-gray-800 sticky top-0 z-50 shadow-lg backdrop-blur-sm">
       <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
         {/* Logo */}
         <Link
@@ -39,11 +39,17 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:bg-blue-50 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap"
+              className="text-sm font-semibold text-gray-300 hover:text-blue-400 hover:bg-gray-800 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap"
             >
               {link.label}
             </Link>
           ))}
+          <Link
+            href="/about"
+            className="text-sm font-semibold text-gray-300 hover:text-blue-400 hover:bg-gray-800 px-3 py-1.5 rounded-lg transition-all"
+          >
+            About
+          </Link>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -58,30 +64,37 @@ export default function Header() {
           {/* Hamburger — mobile */}
           <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="lg:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-gray-800 transition-colors"
             aria-label="Toggle menu"
           >
-            <span className={`block w-5 h-0.5 bg-gray-700 transition-transform ${open ? "translate-y-2 rotate-45" : ""}`} />
-            <span className={`block w-5 h-0.5 bg-gray-700 transition-opacity ${open ? "opacity-0" : ""}`} />
-            <span className={`block w-5 h-0.5 bg-gray-700 transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`} />
+            <span className={`block w-5 h-0.5 bg-gray-300 transition-transform ${open ? "translate-y-2 rotate-45" : ""}`} />
+            <span className={`block w-5 h-0.5 bg-gray-300 transition-opacity ${open ? "opacity-0" : ""}`} />
+            <span className={`block w-5 h-0.5 bg-gray-300 transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`} />
           </button>
         </div>
       </div>
 
       {/* Mobile drawer */}
       {open && (
-        <div className="lg:hidden bg-white border-t border-gray-100 px-4 py-4">
+        <div className="lg:hidden bg-gray-900 border-t border-gray-800 px-4 py-4">
           <div className="grid grid-cols-2 gap-2">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="text-sm font-semibold text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-3 py-2.5 rounded-xl transition-all"
+                className="text-sm font-semibold text-gray-300 hover:text-blue-400 hover:bg-gray-800 px-3 py-2.5 rounded-xl transition-all"
               >
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="/about"
+              onClick={() => setOpen(false)}
+              className="text-sm font-semibold text-gray-300 hover:text-blue-400 hover:bg-gray-800 px-3 py-2.5 rounded-xl transition-all"
+            >
+              About
+            </Link>
           </div>
           <Link
             href="/"

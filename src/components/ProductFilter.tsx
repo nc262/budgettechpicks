@@ -61,13 +61,13 @@ export default function ProductFilter({ products }: Props) {
                   active
                     ? "bg-blue-600 text-white border-blue-600 shadow-md"
                     : hasItems
-                    ? "bg-white text-gray-700 border-gray-200 hover:border-blue-400 hover:text-blue-600 cursor-pointer"
-                    : "bg-gray-50 text-gray-300 border-gray-100 cursor-not-allowed"
+                    ? "bg-gray-800 text-gray-300 border-gray-700 hover:border-blue-500 hover:text-blue-400 cursor-pointer"
+                    : "bg-gray-900 text-gray-600 border-gray-800 cursor-not-allowed"
                 }`}
               >
                 {range.label}
                 <span className={`text-xs rounded-full px-1.5 py-0.5 font-bold ${
-                  active ? "bg-white/20 text-white" : hasItems ? "bg-gray-100 text-gray-500" : "bg-gray-100 text-gray-300"
+                  active ? "bg-white/20 text-white" : hasItems ? "bg-gray-700 text-gray-400" : "bg-gray-800 text-gray-600"
                 }`}>
                   {count}
                 </span>
@@ -76,13 +76,13 @@ export default function ProductFilter({ products }: Props) {
           })}
         </div>
         {activeRange.label !== "All" && (
-          <p className="text-sm text-gray-500 mt-3">
-            Showing <span className="font-bold text-gray-900">{filtered.length}</span> of{" "}
-            <span className="font-bold text-gray-900">{products.length}</span> products
+          <p className="text-sm text-gray-400 mt-3">
+            Showing <span className="font-bold text-gray-100">{filtered.length}</span> of{" "}
+            <span className="font-bold text-gray-100">{products.length}</span> products
             {" · "}
             <button
               onClick={() => setActiveIndex(0)}
-              className="text-blue-600 font-bold hover:underline"
+              className="text-blue-400 font-bold hover:underline"
             >
               Show all
             </button>
@@ -92,9 +92,9 @@ export default function ProductFilter({ products }: Props) {
 
       {/* Product list */}
       {filtered.length === 0 ? (
-        <div className="text-center py-20 bg-gray-50 rounded-2xl">
+        <div className="text-center py-20 bg-gray-900 rounded-2xl border border-gray-700/50">
           <p className="text-5xl mb-4">🔍</p>
-          <p className="font-bold text-gray-700 text-lg mb-1">No products in this range</p>
+          <p className="font-bold text-gray-100 text-lg mb-1">No products in this range</p>
           <button
             onClick={() => setActiveIndex(0)}
             className="mt-4 bg-blue-600 text-white font-bold px-6 py-2.5 rounded-xl hover:bg-blue-500 transition-colors"

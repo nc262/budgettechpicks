@@ -10,20 +10,20 @@ export default function FeaturedGrid({ products }: { products: Product[] }) {
         const imgUrl = amazonImageUrl(product.asin);
         const imgFallback = amazonImageFallback(product.asin);
         const emoji = categoryEmoji[product.category] ?? "🛒";
-        const color = categoryColor[product.category] ?? "bg-gray-100 text-gray-700";
+        const color = categoryColor[product.category] ?? "bg-gray-800 text-gray-300";
         return (
           <a
             key={product.id}
             href={url}
             target="_blank"
             rel="noopener noreferrer sponsored"
-            className="bg-white rounded-2xl border border-gray-100 p-4 hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center group"
+            className="bg-gray-900 rounded-2xl border border-gray-700/50 p-4 hover:shadow-lg hover:shadow-blue-900/30 hover:border-blue-500/50 transition-all duration-200 flex flex-col items-center text-center group"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={imgUrl}
               alt={product.name}
-              className="w-20 h-20 object-contain mb-3 rounded-lg"
+              className="w-20 h-20 object-contain mb-3 rounded-lg bg-gray-800"
               onError={(e) => {
                 const t = e.currentTarget;
                 if (t.src !== imgFallback) {
@@ -38,10 +38,10 @@ export default function FeaturedGrid({ products }: { products: Product[] }) {
             <div className={`hidden w-20 h-20 rounded-xl items-center justify-center text-3xl mb-3 ${color}`}>
               {emoji}
             </div>
-            <p className="font-bold text-gray-900 text-xs leading-snug mb-1 group-hover:text-blue-600 transition-colors">
+            <p className="font-bold text-gray-100 text-xs leading-snug mb-1 group-hover:text-blue-400 transition-colors">
               {product.name}
             </p>
-            <p className="text-blue-600 font-black">{product.price}</p>
+            <p className="text-blue-400 font-black">{product.price}</p>
           </a>
         );
       })}

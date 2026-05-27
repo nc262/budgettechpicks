@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+﻿import { notFound } from "next/navigation";
 import Link from "next/link";
 import Script from "next/script";
 import type { Metadata } from "next";
@@ -50,28 +50,54 @@ export default function ArticlePage({ params }: Props) {
 
   const products = getProductsByArticle(params.slug);
 
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: article.title,
+    url: `${SITE_URL}/${params.slug}`,
+    numberOfItems: products.length,
+    itemListElement: products.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: affiliateUrl(p.asin),
+      name: p.name,
+    })),
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: article.category, item: `${SITE_URL}/${params.slug}` },
+    ],
+  };
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
+      <Script id="jsonld-itemlist" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
+      <Script id="jsonld-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+
       {/* Breadcrumb */}
-      <nav className="text-sm text-gray-400 mb-6 flex items-center gap-1.5">
-        <Link href="/" className="hover:text-blue-600 transition-colors font-medium">Home</Link>
+      <nav className="text-sm text-gray-500 mb-6 flex items-center gap-1.5">
+        <Link href="/" className="hover:text-blue-400 transition-colors font-medium">Home</Link>
         <span>›</span>
-        <span className="text-gray-600 font-semibold">{article.category}</span>
+        <span className="text-gray-300 font-semibold">{article.category}</span>
       </nav>
 
       {/* Header */}
       <div className="mb-8">
-        <span className="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">
+        <span className="inline-block bg-blue-500/20 border border-blue-500/30 text-blue-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">
           {article.category}
         </span>
-        <h1 className="text-3xl md:text-4xl font-black text-gray-900 mb-3 leading-tight">{article.title}</h1>
-        <p className="text-sm text-gray-400 mb-4">Last updated: {article.updatedAt}</p>
-        <p className="text-lg text-gray-700 leading-relaxed">{article.intro}</p>
+        <h1 className="text-3xl md:text-4xl font-black text-white mb-3 leading-tight">{article.title}</h1>
+        <p className="text-sm text-gray-500 mb-4">Last updated: {article.updatedAt}</p>
+        <p className="text-lg text-gray-300 leading-relaxed">{article.intro}</p>
       </div>
 
       {/* TL;DR Quick Picks */}
       {article.tldr && article.tldr.length > 0 && (
-        <div className="bg-gradient-to-br from-gray-900 to-blue-950 rounded-2xl p-6 mb-8 text-white">
+        <div className="bg-gradient-to-br from-gray-900 to-blue-950 rounded-2xl p-6 mb-8 text-white border border-gray-700/50">
           <div className="flex items-center gap-2 mb-4">
             <span className="text-2xl">⚡</span>
             <span className="font-black text-lg uppercase tracking-wide">TL;DR — Our Top Picks</span>
@@ -105,7 +131,7 @@ export default function ArticlePage({ params }: Props) {
       <AdSlot slot="5229018783" style="horizontal" className="mb-8" />
 
       {/* Affiliate disclosure */}
-      <div className="bg-blue-50 border border-blue-100 rounded-xl p-3 text-xs text-blue-700 mb-8">
+      <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-3 text-xs text-blue-300 mb-8">
         <strong>Affiliate Disclosure:</strong> This page contains Amazon affiliate links. If you
         buy through our links we earn a small commission at no extra cost to you. This helps us
         keep the site running. ❤️
@@ -113,12 +139,12 @@ export default function ArticlePage({ params }: Props) {
 
       {/* Editor's Note */}
       {article.editorNote && (
-        <div className="border-l-4 border-blue-500 bg-blue-50 rounded-r-2xl p-5 mb-8 flex gap-4 items-start">
+        <div className="border-l-4 border-blue-500 bg-gray-900 rounded-r-2xl p-5 mb-8 flex gap-4 items-start border border-gray-700/50">
           <div className="text-3xl shrink-0">🎙️</div>
           <div>
-            <p className="text-xs font-bold text-blue-600 uppercase tracking-wide mb-1">Editor&apos;s Note</p>
-            <p className="text-gray-800 italic leading-relaxed">&ldquo;{article.editorNote}&rdquo;</p>
-            <p className="text-xs text-gray-400 mt-2">— The TotalTechPicks Team</p>
+            <p className="text-xs font-bold text-blue-400 uppercase tracking-wide mb-1">Editor&apos;s Note</p>
+            <p className="text-gray-300 italic leading-relaxed">&ldquo;{article.editorNote}&rdquo;</p>
+            <p className="text-xs text-gray-500 mt-2">— The TotalTechPicks Team</p>
           </div>
         </div>
       )}
@@ -131,26 +157,26 @@ export default function ArticlePage({ params }: Props) {
         <div className="mt-12 mb-8">
           <div className="flex items-center gap-2 mb-5">
             <span className="text-2xl">📖</span>
-            <h2 className="text-xl font-black text-gray-900">Buying Guide — What to Look For</h2>
+            <h2 className="text-xl font-black text-white">Buying Guide — What to Look For</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             {article.buyingGuide.map((tip, i) => {
               const colors = [
-                "bg-blue-50 border-blue-100",
-                "bg-green-50 border-green-100",
-                "bg-orange-50 border-orange-100",
-                "bg-purple-50 border-purple-100",
+                "bg-blue-500/10 border-blue-500/20",
+                "bg-green-500/10 border-green-500/20",
+                "bg-orange-500/10 border-orange-500/20",
+                "bg-purple-500/10 border-purple-500/20",
               ];
               const headingColors = [
-                "text-blue-800",
-                "text-green-800",
-                "text-orange-800",
-                "text-purple-800",
+                "text-blue-300",
+                "text-green-300",
+                "text-orange-300",
+                "text-purple-300",
               ];
               return (
                 <div key={i} className={`border rounded-xl p-4 ${colors[i % 4]}`}>
                   <p className={`font-bold text-sm mb-1 ${headingColors[i % 4]}`}>{tip.heading}</p>
-                  <p className="text-sm text-gray-700 leading-relaxed">{tip.body}</p>
+                  <p className="text-sm text-gray-400 leading-relaxed">{tip.body}</p>
                 </div>
               );
             })}
@@ -162,7 +188,7 @@ export default function ArticlePage({ params }: Props) {
       <AdSlot slot="7683791736" style="horizontal" className="mt-4 mb-8" />
 
       {/* Our Verdict */}
-      <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-6 text-white">
+      <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-6 text-white border border-blue-500/30">
         <div className="flex items-center gap-2 mb-3">
           <span className="text-2xl">🎯</span>
           <h2 className="text-lg font-black uppercase tracking-wide">Our Verdict</h2>
