@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 
 const NAV_LINKS = [
@@ -31,7 +30,7 @@ export default function Header() {
           onClick={() => setOpen(false)}
           className="flex items-center shrink-0"
         >
-          <Image src="/logo.png" alt="TotalTechPicks" width={160} height={52} priority className="h-10 w-auto" />
+          <img src="/logo.png" alt="TotalTechPicks" height={52} className="h-10 w-auto" />
         </Link>
 
         {/* Nav pills — desktop only */}
