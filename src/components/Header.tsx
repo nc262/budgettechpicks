@@ -28,9 +28,12 @@ export default function Header() {
         <Link
           href="/"
           onClick={() => setOpen(false)}
-          className="flex items-center shrink-0"
+          className="flex items-center gap-2 shrink-0"
         >
-          <img src="/logo.png" alt="TotalTechPicks" height={52} className="h-10 w-auto" />
+          <img src="/logo.png" alt="TotalTechPicks" className="h-14 w-auto max-w-[180px] object-contain" />
+          <span className="hidden sm:block text-white font-extrabold text-lg leading-tight tracking-tight">
+            Total<span className="text-blue-400">Tech</span>Picks
+          </span>
         </Link>
 
         {/* Nav pills — desktop only */}
