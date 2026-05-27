@@ -8,11 +8,15 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-4 py-10">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div>
-            <p className="text-white font-bold text-lg mb-2">TotalTechPicks</p>
-            <p className="text-sm max-w-xs">
-              Honest reviews of the Best Tech Gadgets under $50. We earn
-              a commission from qualifying Amazon purchases at no extra cost to
-              you.
+            <p className="text-white font-bold text-lg mb-2">⚡ TotalTechPicks</p>
+            <p className="text-sm max-w-xs leading-relaxed">
+              125+ expert-picked tech products across every budget — from
+              hidden $10 gems to premium splurges. No fluff, no paid placements,
+              just honest picks.
+            </p>
+            <p className="text-xs text-gray-500 mt-2">
+              🛒 Affiliate disclosure: We earn a small commission from Amazon
+              purchases at no extra cost to you.
             </p>
           </div>
           <div>

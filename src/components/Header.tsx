@@ -28,9 +28,14 @@ export default function Header() {
         <Link
           href="/"
           onClick={() => setOpen(false)}
-          className="text-lg font-black text-gray-900 hover:text-blue-600 transition-colors shrink-0"
+          className="flex items-center gap-2 shrink-0 group"
         >
-          💻 TotalTechPicks
+          <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-700 text-white text-sm font-black shadow-sm group-hover:shadow-blue-300 transition-shadow">
+            T
+          </span>
+          <span className="text-lg font-black text-gray-900 group-hover:text-blue-600 transition-colors">
+            Total<span className="text-blue-600">Tech</span>Picks
+          </span>
         </Link>
 
         {/* Nav pills — desktop only */}
