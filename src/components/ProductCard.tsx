@@ -73,11 +73,10 @@ export default function ProductCard({ product, rank }: Props) {
                 className="rounded-xl object-contain bg-gray-800 w-24 h-24"
                 onError={(e) => {
                   const t = e.currentTarget;
-                  if (t.src !== imgFallback) {
-                    t.src = imgFallback;
-                  } else if (t.src !== imgFallback2) {
-                    t.src = imgFallback2;
-                  } else {
+                  const state = parseInt(t.dataset.imgState ?? "0", 10);
+                  if (state === 0) { t.dataset.imgState = "1"; t.src = imgFallback; }
+                  else if (state === 1) { t.dataset.imgState = "2"; t.src = imgFallback2; }
+                  else {
                     t.style.display = "none";
                     const next = t.nextElementSibling as HTMLElement | null;
                     if (next) next.style.display = "flex";
