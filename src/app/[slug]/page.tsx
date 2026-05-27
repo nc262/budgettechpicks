@@ -3,10 +3,12 @@ import Link from "next/link";
 import Script from "next/script";
 import type { Metadata } from "next";
 import { getArticleBySlug, articles } from "@/data/articles";
-import { getProductsByArticle, affiliateUrl, amazonImageUrl } from "@/data/products";
+import { getProductsByArticle, affiliateUrl, amazonImageUrl, categoryEmoji } from "@/data/products";
 import ProductFilter from "@/components/ProductFilter";
 import AdSlot from "@/components/AdSlot";
 import redditInsightsData from "@/data/reddit-insights.json";
+import productHealth from "@/data/product-health.json";
+import autoProductsRaw from "@/data/auto-products.json";
 
 const SITE_URL = "https://totaltechpicks.com";
 
@@ -59,12 +61,31 @@ interface RedditInsight {
   scrapedAt?: string;
 }
 
+interface AutoProduct {
+  asin: string;
+  name: string;
+  price?: string;
+  imageUrl?: string;
+  articleSlug: string;
+  category?: string;
+  description?: string;
+  sourceUrl?: string;
+  addedAt?: string;
+}
+
 export default function ArticlePage({ params }: Props) {
   const article = getArticleBySlug(params.slug);
   if (!article) notFound();
 
-  const products = getProductsByArticle(params.slug);
+  const health = productHealth as Record<string, { imageUrl?: string; isLive?: boolean }>;
+  const allProducts = getProductsByArticle(params.slug);
+  // Hide products marked as discontinued by n8n health check
+  const products = allProducts.filter(p => health[p.asin]?.isLive !== false);
+  const discontinuedCount = allProducts.length - products.length;
+
   const redditData = (redditInsightsData as Record<string, { lastUpdated: string; insights: RedditInsight[] }>)[params.slug];
+  // Auto-discovered community picks for this slug
+  const autoPicks = (autoProductsRaw as AutoProduct[]).filter(p => p.articleSlug === params.slug);
 
   const itemListJsonLd = {
     "@context": "https://schema.org",
@@ -268,6 +289,44 @@ export default function ArticlePage({ params }: Props) {
 
       {/* Bottom ad */}
       <AdSlot slot="7683791736" style="horizontal" className="mt-4 mb-8" />
+
+      {/* Community Picks — auto-discovered by n8n from Reddit */}
+      {autoPicks.length > 0 && (
+        <div className="bg-gray-900 rounded-2xl border border-gray-700/50 p-6 mb-8">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="text-xl">🤖</span>
+            <h2 className="text-xl font-black text-white">Community Picks</h2>
+            <span className="ml-auto text-xs bg-blue-500/20 text-blue-300 border border-blue-500/30 px-2 py-0.5 rounded-full font-bold">Auto-discovered</span>
+          </div>
+          <p className="text-xs text-gray-500 mb-4">Products spotted in Reddit discussions — not yet in our curated list.</p>
+          <div className="grid gap-3">
+            {autoPicks.map((pick) => (
+              <div key={pick.asin} className="flex items-center gap-3 bg-gray-800/50 rounded-xl p-3">
+                {pick.imageUrl ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={pick.imageUrl} alt={pick.name} width={60} height={60} className="w-14 h-14 object-contain rounded-lg bg-gray-700 shrink-0" />
+                ) : (
+                  <div className="w-14 h-14 rounded-lg bg-gray-700 flex items-center justify-center text-2xl shrink-0">
+                    {categoryEmoji[pick.category ?? ""] ?? "🛒"}
+                  </div>
+                )}
+                <div className="flex-1 min-w-0">
+                  <p className="font-bold text-white text-sm leading-snug">{pick.name}</p>
+                  {pick.price && <p className="text-blue-400 font-black text-sm">{pick.price}</p>}
+                  {pick.description && <p className="text-xs text-gray-400 mt-0.5 line-clamp-2">{pick.description}</p>}
+                </div>
+                <a
+                  href={`https://www.amazon.com/dp/${pick.asin}?tag=totaltechpicks-20`}
+                  target="_blank" rel="noopener noreferrer sponsored"
+                  className="shrink-0 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold text-xs px-3 py-2 rounded-lg transition-all"
+                >
+                  View →
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Our Verdict */}
       <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-6 text-white border border-blue-500/30">

@@ -1,6 +1,7 @@
 "use client";
 
 import { Product, affiliateUrl, amazonImageUrl, amazonImageFallback, amazonImageFallback2, categoryEmoji, categoryColor } from "@/data/products";
+import productHealth from "@/data/product-health.json";
 
 interface Props {
   product: Product;
@@ -36,7 +37,9 @@ function getScoreColor(score: number): string {
 export default function ProductCard({ product, rank }: Props) {
   const stars = Math.round(product.rating);
   const url = affiliateUrl(product.name);
-  const imgUrl = amazonImageUrl(product.asin);
+  // Use n8n-verified image URL if available, otherwise fall back to CDN pattern
+  const healthData = (productHealth as Record<string, { imageUrl?: string; isLive?: boolean }>)[product.asin];
+  const imgUrl = healthData?.imageUrl ?? amazonImageUrl(product.asin);
   const imgFallback = amazonImageFallback(product.asin);
   const imgFallback2 = amazonImageFallback2(product.asin);
   const emoji = categoryEmoji[product.category] ?? "🛒";
