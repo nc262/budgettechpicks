@@ -16,8 +16,8 @@ export interface Product {
 
 const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "totaltechpicks-20";
 
-export function affiliateUrl(asin: string): string {
-  return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}`;
+export function affiliateUrl(name: string): string {
+  return `https://www.amazon.com/s?k=${encodeURIComponent(name)}&tag=${AMAZON_TAG}`;
 }
 
 // Primary: modern Amazon CDN (most reliable for hotlinking)
@@ -346,16 +346,16 @@ export const products: Product[] = [
 
   // ── GAMING GEAR───────────────────────────────────────────────────────────
   {
-    id: "razer-deathadder-essential",
-    name: "Razer DeathAdder Essential Gaming Mouse",
-    asin: "B07FRLH5TJ",
-    price: "$29.99",
-    priceNum: 29.99,
+    id: "logitech-g305-gaming-mouse",
+    name: "Logitech G305 LIGHTSPEED Wireless Gaming Mouse",
+    asin: "B07CMS5Q6P",
+    price: "$34.99",
+    priceNum: 34.99,
     rating: 4.6,
-    reviewCount: 52000,
-    description: "6400 DPI optical sensor, ergonomic right-hand design, 5 programmable buttons, 10M click lifespan. The best gaming mouse under $30 — full stop.",
-    pros: ["Best-in-class sensor", "Ergonomic all-day comfort", "10M click lifespan"],
-    cons: ["Right-hand only", "Basic RGB"],
+    reviewCount: 58000,
+    description: "HERO 12K sensor, wireless LIGHTSPEED technology, 6 programmable buttons, and 250-hour battery life. Wireless gaming performance without the wireless tax.",
+    pros: ["Wireless LIGHTSPEED tech", "250-hour battery", "HERO 12K sensor"],
+    cons: ["Requires 1 AA battery", "No RGB"],
     category: "Gaming Gear",
     articleSlug: "best-gaming-gear-under-50",
     badge: "⚡ Budget Beast",

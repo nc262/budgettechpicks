@@ -157,7 +157,7 @@ export const articles: Article[] = [
     category: "Gaming Gear",
     editorNote: "I used a $5 office mouse for my first year of PC gaming and wondered why I kept losing. Spoiler: it had 800 DPI and a scroll wheel that double-registered twice per session. Don't be me. These picks are real.",
     tldr: [
-      { label: "Best Gaming Mouse", name: "Razer DeathAdder Essential", asin: "B07FRLH5TJ" },
+      { label: "Best Gaming Mouse", name: "Logitech G305 LIGHTSPEED Wireless Gaming Mouse", asin: "B07CMS5Q6P" },
       { label: "Best Keyboard Under $50", name: "Redragon K552 Mechanical Keyboard", asin: "B016MAK38U" },
       { label: "Best Headset Under $50", name: "HyperX Cloud Stinger", asin: "B01LXB3UKK" },
       { label: "Best Upgrade Mouse", name: "Razer Basilisk V3 Gaming Mouse", asin: "B09GVFD3G2" },

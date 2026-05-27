@@ -6,7 +6,7 @@ export default function FeaturedGrid({ products }: { products: Product[] }) {
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
       {products.map((product) => {
-        const url = affiliateUrl(product.asin);
+        const url = affiliateUrl(product.name);
         const imgUrl = amazonImageUrl(product.asin);
         const imgFallback = amazonImageFallback(product.asin);
         const imgFallback2 = amazonImageFallback2(product.asin);

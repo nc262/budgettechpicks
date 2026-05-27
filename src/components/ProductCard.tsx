@@ -35,7 +35,7 @@ function getScoreColor(score: number): string {
 
 export default function ProductCard({ product, rank }: Props) {
   const stars = Math.round(product.rating);
-  const url = affiliateUrl(product.asin);
+  const url = affiliateUrl(product.name);
   const imgUrl = amazonImageUrl(product.asin);
   const imgFallback = amazonImageFallback(product.asin);
   const imgFallback2 = amazonImageFallback2(product.asin);

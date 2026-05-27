@@ -18,7 +18,7 @@ export default function HeroProductCard({ product }: { product: Product }) {
       <div className="absolute -top-3 -right-3 bg-yellow-400 text-yellow-900 text-xs font-black px-3 py-1 rounded-full shadow-lg">
         🏆 Best Overall
       </div>
-      <a href={affiliateUrl(product.asin)} target="_blank" rel="noopener noreferrer sponsored" className="block">
+      <a href={affiliateUrl(product.name)} target="_blank" rel="noopener noreferrer sponsored" className="block">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={amazonImageUrl(product.asin)}

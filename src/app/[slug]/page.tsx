@@ -1,4 +1,4 @@
-﻿import { notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 import Link from "next/link";
 import Script from "next/script";
 import type { Metadata } from "next";
@@ -59,7 +59,7 @@ export default function ArticlePage({ params }: Props) {
     itemListElement: products.map((p, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      url: affiliateUrl(p.asin),
+      url: affiliateUrl(p.name),
       name: p.name,
     })),
   };
@@ -106,7 +106,7 @@ export default function ArticlePage({ params }: Props) {
             {article.tldr.map((pick, i) => (
               <a
                 key={i}
-                href={affiliateUrl(pick.asin)}
+                href={affiliateUrl(pick.name)}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 className="flex items-center justify-between bg-white/10 hover:bg-white/20 rounded-xl px-4 py-3 transition-all group"
