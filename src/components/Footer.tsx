@@ -10,7 +10,6 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div>
             <Image src="/logo.png" alt="TotalTechPicks" width={160} height={52} className="h-10 w-auto mb-3 brightness-0 invert" />
-            <p className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-2">Less Hype. More Hardware.</p>
             <p className="text-sm max-w-xs leading-relaxed">
               125+ expert-picked tech products across every budget — from
               hidden $10 gems to premium splurges. No fluff, no paid placements,
