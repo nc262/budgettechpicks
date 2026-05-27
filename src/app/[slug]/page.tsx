@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: article.title,
     description: article.metaDescription,
     alternates: { canonical: url },
-    keywords: [article.category, "budget tech", "best value", "review", "under $50", "affiliate picks"],
+    keywords: [article.category, "tech picks", "best value", "review", "top rated", "affiliate picks"],
     openGraph: {
       title: article.title,
       description: article.metaDescription,
