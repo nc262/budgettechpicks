@@ -5,7 +5,7 @@
 # Environment variables (public — safe to commit, exposed to browser anyway)
 [build.environment]
   NEXT_PUBLIC_ADSENSE_ID = "ca-pub-4358249929867424"
-  NEXT_PUBLIC_AMAZON_TAG = "budgettechp01-20"
+  NEXT_PUBLIC_AMAZON_TAG = "totaltechpicks-20"
   NEXT_PUBLIC_GA_ID = ""
   NODE_VERSION = "20"
 

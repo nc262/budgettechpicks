@@ -14,20 +14,25 @@ export interface Product {
   badge?: string;
 }
 
-const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "budgettechp01-20";
+const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "totaltechpicks-20";
 
 export function affiliateUrl(asin: string): string {
   return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}`;
 }
 
-// Direct Amazon CDN — not ad-system, not blocked by ad blockers
+// Primary: modern Amazon CDN (most reliable for hotlinking)
 export function amazonImageUrl(asin: string): string {
-  return `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SCMZZZZZZZ_.jpg`;
+  return `https://m.media-amazon.com/images/P/${asin}.01._SX300_QL70_.jpg`;
 }
 
-// Fallback image URL (alternate format)
+// Fallback 1: legacy CDN, different format
 export function amazonImageFallback(asin: string): string {
-  return `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SX450_.jpg`;
+  return `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SX300_.jpg`;
+}
+
+// Fallback 2: smallest/most universally cached size
+export function amazonImageFallback2(asin: string): string {
+  return `https://m.media-amazon.com/images/P/${asin}.01._SL160_.jpg`;
 }
 
 export const categoryEmoji: Record<string, string> = {

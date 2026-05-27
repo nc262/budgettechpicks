@@ -1,6 +1,6 @@
 "use client";
 
-import { Product, affiliateUrl, amazonImageUrl, amazonImageFallback, categoryEmoji, categoryColor } from "@/data/products";
+import { Product, affiliateUrl, amazonImageUrl, amazonImageFallback, amazonImageFallback2, categoryEmoji, categoryColor } from "@/data/products";
 
 export default function FeaturedGrid({ products }: { products: Product[] }) {
   return (
@@ -9,6 +9,7 @@ export default function FeaturedGrid({ products }: { products: Product[] }) {
         const url = affiliateUrl(product.asin);
         const imgUrl = amazonImageUrl(product.asin);
         const imgFallback = amazonImageFallback(product.asin);
+        const imgFallback2 = amazonImageFallback2(product.asin);
         const emoji = categoryEmoji[product.category] ?? "🛒";
         const color = categoryColor[product.category] ?? "bg-gray-800 text-gray-300";
         return (
@@ -28,6 +29,8 @@ export default function FeaturedGrid({ products }: { products: Product[] }) {
                 const t = e.currentTarget;
                 if (t.src !== imgFallback) {
                   t.src = imgFallback;
+                } else if (t.src !== imgFallback2) {
+                  t.src = imgFallback2;
                 } else {
                   t.style.display = "none";
                   const next = t.nextElementSibling as HTMLElement | null;

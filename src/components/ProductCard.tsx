@@ -1,6 +1,6 @@
 "use client";
 
-import { Product, affiliateUrl, amazonImageUrl, amazonImageFallback, categoryEmoji, categoryColor } from "@/data/products";
+import { Product, affiliateUrl, amazonImageUrl, amazonImageFallback, amazonImageFallback2, categoryEmoji, categoryColor } from "@/data/products";
 
 interface Props {
   product: Product;
@@ -38,6 +38,7 @@ export default function ProductCard({ product, rank }: Props) {
   const url = affiliateUrl(product.asin);
   const imgUrl = amazonImageUrl(product.asin);
   const imgFallback = amazonImageFallback(product.asin);
+  const imgFallback2 = amazonImageFallback2(product.asin);
   const emoji = categoryEmoji[product.category] ?? "🛒";
   const colorClass = categoryColor[product.category] ?? "bg-gray-800 text-gray-300";
   const badgeColor = product.badge ? (badgeColors[product.badge] ?? "bg-gray-700 text-gray-300") : null;
@@ -74,6 +75,8 @@ export default function ProductCard({ product, rank }: Props) {
                   const t = e.currentTarget;
                   if (t.src !== imgFallback) {
                     t.src = imgFallback;
+                  } else if (t.src !== imgFallback2) {
+                    t.src = imgFallback2;
                   } else {
                     t.style.display = "none";
                     const next = t.nextElementSibling as HTMLElement | null;
