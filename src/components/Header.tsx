@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const NAV_LINKS = [
@@ -28,14 +29,9 @@ export default function Header() {
         <Link
           href="/"
           onClick={() => setOpen(false)}
-          className="flex items-center gap-2 shrink-0 group"
+          className="flex items-center shrink-0"
         >
-          <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-700 text-white text-sm font-black shadow-sm group-hover:shadow-blue-300 transition-shadow">
-            T
-          </span>
-          <span className="text-lg font-black text-gray-900 group-hover:text-blue-600 transition-colors">
-            Total<span className="text-blue-600">Tech</span>Picks
-          </span>
+          <Image src="/logo.png" alt="TotalTechPicks" width={160} height={52} priority className="h-10 w-auto" />
         </Link>
 
         {/* Nav pills — desktop only */}

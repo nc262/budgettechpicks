@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { articles } from "@/data/articles";
 
 export default function Footer() {
@@ -8,7 +9,8 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-4 py-10">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div>
-            <p className="text-white font-bold text-lg mb-2">⚡ TotalTechPicks</p>
+            <Image src="/logo.png" alt="TotalTechPicks" width={160} height={52} className="h-10 w-auto mb-3 brightness-0 invert" />
+            <p className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-2">Less Hype. More Hardware.</p>
             <p className="text-sm max-w-xs leading-relaxed">
               125+ expert-picked tech products across every budget — from
               hidden $10 gems to premium splurges. No fluff, no paid placements,

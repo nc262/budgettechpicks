@@ -45,10 +45,10 @@ export default function HomePage() {
             </span>
             <h1 className="text-5xl font-black mb-5 leading-tight">
               Best Tech Picks<br />
-              <span className="text-blue-400">Budget to Extreme</span>
+              <span className="text-blue-400">Less Hype. More Hardware.</span>
             </h1>
             <p className="text-gray-400 text-lg max-w-xl mb-8">
-              Honest reviews across gaming rigs, streaming gear, audio, monitors, and more. Budget finds to over-the-top splurges — no fluff, no paid placements.
+              125+ expert-picked products across gaming, audio, streaming, home office, and more. From hidden $10 gems to premium splurges — no fluff, no paid placements.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
               <Link href="/best-gaming-gear-under-50" className="bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-xl transition-colors">
