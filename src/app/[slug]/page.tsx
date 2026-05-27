@@ -167,13 +167,6 @@ export default function ArticlePage({ params }: Props) {
       {/* Top ad */}
       <AdSlot slot="5229018783" style="horizontal" className="mb-8" />
 
-      {/* Affiliate disclosure */}
-      <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-3 text-xs text-blue-300 mb-8">
-        <strong>Affiliate Disclosure:</strong> This page contains Amazon affiliate links. If you
-        buy through our links we earn a small commission at no extra cost to you. This helps us
-        keep the site running. ❤️
-      </div>
-
       {/* Editor's Note */}
       {article.editorNote && (
         <div className="border-l-4 border-blue-500 bg-gray-900 rounded-r-2xl p-5 mb-8 flex gap-4 items-start border border-gray-700/50">

@@ -9,13 +9,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <img src="/logo.png" alt="TotalTechPicks" height={52} className="h-10 w-auto mb-4 brightness-0 invert" />
+            <img src="/logo.png" alt="TotalTechPicks" className="h-14 w-auto max-w-[160px] object-contain mb-4 brightness-0 invert" />
             <p className="text-sm leading-relaxed mb-3">
               125+ expert-picked tech products across every budget. No fluff, no paid placements, just honest picks.
             </p>
-            <p className="text-xs text-gray-600">
-              As an Amazon Associate we earn from qualifying purchases.
-            </p>
+
           </div>
 
           {/* Categories */}
@@ -40,14 +38,12 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-blue-400 transition-colors">About &amp; Methodology</Link></li>
               <li><a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Shop Amazon</a></li>
             </ul>
-            <div className="mt-6 p-3 bg-blue-500/10 border border-blue-500/20 rounded-xl text-xs text-blue-300">
-              <strong>Affiliate Disclosure:</strong> Links on this site may earn a commission at no extra cost to you.
-            </div>
+
           </div>
         </div>
 
         <div className="border-t border-gray-800/50 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
-          <p>© {year} TotalTechPicks. Amazon and the Amazon logo are trademarks of Amazon.com, Inc.</p>
+          <p>© {year} TotalTechPicks. Amazon affiliate — links may earn a commission at no extra cost to you.</p>
           <p className="text-blue-400/60">Less Hype. More Hardware.</p>
         </div>
       </div>
