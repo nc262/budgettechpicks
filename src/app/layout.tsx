@@ -38,6 +38,10 @@ export const metadata: Metadata = {
   publisher: SITE_NAME,
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   alternates: { canonical: SITE_URL },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   verification: {
     google: "MClIPiF4Bq8pkSGn-UoTHbd4sTtt-i0fPXHzixXmpCo",
   },
