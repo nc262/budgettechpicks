@@ -6,10 +6,23 @@
         "product": "Logitech G305 LIGHTSPEED Wireless Gaming Mouse",
         "productSlug": "best-gaming-gear-under-50",
         "summary": "Consistently praised as the best wireless gaming mouse under $40 with near-universal recommendation.",
-        "pros": ["Wireless at a wired price", "HERO sensor is extremely accurate", "250-hour battery life is exceptional", "Lightweight at 99g"],
-        "cons": ["Uses AA battery (no rechargeable)", "No RGB lighting", "Plastic feels basic"],
+        "pros": [
+          "Wireless at a wired price",
+          "HERO sensor is extremely accurate",
+          "250-hour battery life is exceptional",
+          "Lightweight at 99g"
+        ],
+        "cons": [
+          "Uses AA battery (no rechargeable)",
+          "No RGB lighting",
+          "Plastic feels basic"
+        ],
         "sentiment": "positive",
-        "key_insights": ["Many users switched from wired mice and say they'll never go back", "Popular in r/MouseReview as a 'forever mouse' recommendation", "Competes with mice 3x its price in sensor accuracy"],
+        "key_insights": [
+          "Many users switched from wired mice and say they'll never go back",
+          "Popular in r/MouseReview as a 'forever mouse' recommendation",
+          "Competes with mice 3x its price in sensor accuracy"
+        ],
         "recommended_by_users": true,
         "sourcePost": "What's the best budget wireless gaming mouse in 2024?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/example",
@@ -24,10 +37,23 @@
         "product": "Jabra Elite 3 Wireless Earbuds",
         "productSlug": "best-wireless-earbuds-under-50",
         "summary": "Highly recommended as the best budget earbuds with surprising call quality and reliable connection.",
-        "pros": ["Best mic quality in budget tier", "Secure fit for workouts", "Clear balanced sound", "4 mic array for calls"],
-        "cons": ["No ANC", "Case is bulkier than competitors", "Bass could be stronger"],
+        "pros": [
+          "Best mic quality in budget tier",
+          "Secure fit for workouts",
+          "Clear balanced sound",
+          "4 mic array for calls"
+        ],
+        "cons": [
+          "No ANC",
+          "Case is bulkier than competitors",
+          "Bass could be stronger"
+        ],
         "sentiment": "positive",
-        "key_insights": ["Frequently recommended over Galaxy Buds at 2x the price", "Office workers praise the call quality above all else", "r/headphones regulars call it the 'safe pick' under $50"],
+        "key_insights": [
+          "Frequently recommended over Galaxy Buds at 2x the price",
+          "Office workers praise the call quality above all else",
+          "r/headphones regulars call it the 'safe pick' under $50"
+        ],
         "recommended_by_users": true,
         "sourcePost": "Best budget wireless earbuds for calls and music?",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/example",
@@ -42,14 +68,45 @@
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
         "summary": "The undisputed default recommendation for work-from-home and streaming, praised for reliability over years of use.",
-        "pros": ["Plug and play on every OS", "Consistent color accuracy", "Great in varied lighting", "Works for 5+ years without issues"],
-        "cons": ["No 4K", "Privacy shutter is a bit flimsy", "Autofocus can hunt occasionally"],
+        "pros": [
+          "Plug and play on every OS",
+          "Consistent color accuracy",
+          "Great in varied lighting",
+          "Works for 5+ years without issues"
+        ],
+        "cons": [
+          "No 4K",
+          "Privacy shutter is a bit flimsy",
+          "Autofocus can hunt occasionally"
+        ],
         "sentiment": "positive",
-        "key_insights": ["r/WorkFromHome recommends it in nearly every webcam thread", "Users report units lasting 5-7 years with daily use", "Often cited as 'what every streamer started with'"],
+        "key_insights": [
+          "r/WorkFromHome recommends it in nearly every webcam thread",
+          "Users report units lasting 5-7 years with daily use",
+          "Often cited as 'what every streamer started with'"
+        ],
         "recommended_by_users": true,
         "sourcePost": "Best webcam for remote work under $100?",
         "sourceUrl": "https://www.reddit.com/r/workfromhome/comments/example",
         "scrapedAt": "2026-05-27T00:00:00.000Z"
+      }
+    ]
+  },
+  "best-usb-c-hubs-under-50": {
+    "lastUpdated": "2026-05-27T22:34:15.936Z",
+    "insights": [
+      {
+        "product": "Anker 7-in-1 USB-C Hub",
+        "productSlug": "best-usb-c-hubs-under-50",
+        "summary": "Community pick for this category.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "positive",
+        "key_insights": [],
+        "recommended_by_users": true,
+        "sourcePost": "Dual Laptop KVM Setup - Diagrm &amp; Details",
+        "sourceUrl": "https://www.reddit.com/r/desksetup/comments/1rnr2mm/dual_laptop_kvm_setup_diagrm_details/",
+        "scrapedAt": "2026-05-27T22:34:15.929Z"
       }
     ]
   }
