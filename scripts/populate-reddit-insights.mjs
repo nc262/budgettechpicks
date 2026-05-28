@@ -15,6 +15,7 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 const FORCE = process.argv.includes("--force");
+const MISSING_CONS = process.argv.includes("--missing-cons");
 const SINGLE = (() => { const i = process.argv.indexOf("--product"); return i > -1 ? process.argv[i+1] : null; })();
 
 // ── Load existing data ─────────────────────────────────────────────────────
@@ -71,29 +72,36 @@ function filterRelevant(productName, posts) {
 // ── Ollama AI summarization ────────────────────────────────────────────────
 async function ollamaSummarize(productName, posts) {
   const snippets = posts.slice(0, 5).map(p => {
-    const body = p.selftext ? p.selftext.slice(0, 400).replace(/\n+/g, " ") : "";
-    return `[r/${p.subreddit ?? "reddit"}] ${p.title}${body ? ` — ${body}` : ""}`;
+    const body = p.selftext ? p.selftext.slice(0, 500).replace(/\n+/g, " ") : "";
+    return `[r/${p.subreddit ?? "reddit"}] "${p.title}"${body ? ` — ${body}` : ""}`;
   }).join("\n\n");
 
-  const prompt = `You analyze Reddit community opinions about tech products. The product is: "${productName}"
+  const prompt = `You are extracting real community feedback about a specific tech product from Reddit posts.
 
-Reddit posts:
+PRODUCT: "${productName}"
+
+REDDIT POSTS:
 ${snippets}
 
-Reply with ONLY a JSON object, no markdown, no explanation:
+Your job: extract what Reddit users actually say about "${productName}" specifically.
+
+Reply with ONLY valid JSON (no markdown code fences, no explanation before or after):
 {
-  "summary": "one sentence under 20 words about what Reddit users think of this specific product",
-  "pros": ["specific pro from posts", "another pro"],
-  "cons": ["specific con from posts"],
+  "summary": "1-2 sentences about what Reddit users think of ${productName} specifically — mention the product name, be opinionated",
+  "pros": ["specific thing users praise", "another praised feature or quality"],
+  "cons": ["specific complaint users mention", "another issue or limitation noted"],
   "sentiment": "positive",
-  "key_insights": ["notable community observation", "another insight"]
+  "key_insights": ["notable community observation", "another insight or recommendation"]
 }
 
-Rules:
-- summary must be specific to ${productName}, not generic
-- pros/cons must be things actually mentioned in these posts
-- sentiment: "positive", "negative", or "neutral"
-- if posts aren't about this product, return {"summary":"","pros":[],"cons":[],"sentiment":"neutral","key_insights":[]}`;
+RULES — follow exactly:
+1. "pros" MUST have at least 1 item — pick the most commonly praised aspect
+2. "cons" MUST have at least 1 item — every product has tradeoffs; pick the most common complaint or limitation
+3. Each pro/con must be a SHORT phrase (3-8 words) — not a full sentence
+4. "sentiment" must be exactly "positive", "negative", or "neutral"
+5. If posts mention ANY issue, complaint, limitation, or caveat about ${productName}, put it in cons
+6. If product has no negatives in posts, add the most obvious tradeoff for its category/price
+7. If posts are not about ${productName} at all, return: {"summary":"","pros":[],"cons":[],"sentiment":"neutral","key_insights":[]}`;
 
   try {
     const res = await fetch("http://localhost:11434/api/generate", {
@@ -103,7 +111,7 @@ Rules:
         model: "llama3.2:3b",
         prompt,
         stream: false,
-        options: { temperature: 0.1, num_predict: 400 },
+        options: { temperature: 0.2, num_predict: 500 },
       }),
     });
     if (!res.ok) throw new Error(`Ollama HTTP ${res.status}`);
@@ -201,9 +209,20 @@ for (const [slug, products] of Object.entries(bySlug)) {
 
   for (const product of products) {
     if (!FORCE && existingNames.has(product.name.toLowerCase())) {
-      console.log(`  ⏭ Skip (exists): ${product.name}`);
-      skipped++;
-      continue;
+      // In --missing-cons mode, only skip if the existing entry already has cons
+      if (MISSING_CONS) {
+        const existingInsight = results[slug].insights.find(i => i.product.toLowerCase() === product.name.toLowerCase());
+        if (existingInsight?.cons?.length > 0) {
+          console.log(`  ⏭ Skip (has cons): ${product.name}`);
+          skipped++;
+          continue;
+        }
+        console.log(`  🔄 Re-running (missing cons): ${product.name}`);
+      } else {
+        console.log(`  ⏭ Skip (exists): ${product.name}`);
+        skipped++;
+        continue;
+      }
     }
 
     console.log(`\n[${++processed}/${allProducts.length}] ${product.name}`);
@@ -229,4 +248,7 @@ for (const [slug, products] of Object.entries(bySlug)) {
 
 writeFileSync(insightsPath, JSON.stringify(results, null, 2));
 console.log(`\n✅ Done! Processed ${processed}, skipped ${skipped}.`);
-console.log(`Tip: run with --force to regenerate all insights using Ollama`);
+console.log(`Tips:`);
+console.log(`  --force          Regenerate all 125 products from scratch`);
+console.log(`  --missing-cons   Only re-run products with empty cons arrays`);
+console.log(`  --product "Name" Process a single product by name`);

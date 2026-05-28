@@ -181,6 +181,15 @@ export default function ProductCard({ product, rank, redditInsight }: Props) {
             <div className="flex items-center gap-2 mb-2">
               <span className="text-base">💬</span>
               <span className="text-xs font-bold text-orange-400 uppercase tracking-wide">Reddit Says</span>
+              {/* Subreddit badge — extracted from sourceUrl */}
+              {redditInsight.sourceUrl && (() => {
+                const match = redditInsight.sourceUrl.match(/reddit\.com\/r\/([^/]+)/);
+                return match ? (
+                  <span className="text-xs text-gray-500 bg-gray-800 border border-gray-700 rounded-full px-2 py-0.5">
+                    r/{match[1]}
+                  </span>
+                ) : null;
+              })()}
               <span className={`ml-auto text-xs font-bold px-2 py-0.5 rounded-full border ${
                 redditInsight.sentiment === "positive" ? "bg-green-400/10 text-green-400 border-green-400/30" :
                 redditInsight.sentiment === "negative" ? "bg-red-400/10 text-red-400 border-red-400/30" :
@@ -190,22 +199,34 @@ export default function ProductCard({ product, rank, redditInsight }: Props) {
               </span>
             </div>
             <p className="text-xs text-gray-400 italic leading-relaxed mb-2">&ldquo;{redditInsight.summary}&rdquo;</p>
-            {(redditInsight.pros.length > 0 || redditInsight.cons.length > 0) && (
-              <div className="flex gap-3 flex-wrap">
-                {redditInsight.pros.slice(0, 2).map((p, i) => (
+            {/* ⚠️ Prominent complaint callout — only when real con data exists */}
+            {redditInsight.cons.length > 0 && (
+              <div className="flex items-start gap-1.5 bg-amber-400/5 border border-amber-400/20 rounded-lg px-2.5 py-1.5 mb-2">
+                <span className="text-amber-400 text-xs shrink-0">⚠</span>
+                <p className="text-xs text-amber-300/80">Users frequently mention: <span className="font-medium">{redditInsight.cons[0]}</span></p>
+              </div>
+            )}
+            {redditInsight.pros.length > 0 && (
+              <div className="flex gap-2 flex-wrap mb-2">
+                {redditInsight.pros.slice(0, 3).map((p, i) => (
                   <span key={i} className="text-xs text-green-400 bg-green-400/10 rounded-full px-2 py-0.5">✓ {p}</span>
-                ))}
-                {redditInsight.cons.slice(0, 1).map((c, i) => (
-                  <span key={i} className="text-xs text-red-400 bg-red-400/10 rounded-full px-2 py-0.5">✗ {c}</span>
                 ))}
               </div>
             )}
-            {redditInsight.sourceUrl && (
-              <a href={redditInsight.sourceUrl} target="_blank" rel="noopener noreferrer"
-                className="block mt-2 text-xs text-gray-600 hover:text-orange-400 transition-colors">
-                📎 View Reddit thread →
-              </a>
-            )}
+            {/* Last scraped date + source link */}
+            <div className="flex items-center justify-between mt-1">
+              {redditInsight.scrapedAt && (
+                <span className="text-xs text-gray-600">
+                  Live Data · Updated {new Date(redditInsight.scrapedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+                </span>
+              )}
+              {redditInsight.sourceUrl && (
+                <a href={redditInsight.sourceUrl} target="_blank" rel="noopener noreferrer"
+                  className="text-xs text-gray-600 hover:text-orange-400 transition-colors">
+                  📎 Source →
+                </a>
+              )}
+            </div>
           </div>
         )}
       </div>
