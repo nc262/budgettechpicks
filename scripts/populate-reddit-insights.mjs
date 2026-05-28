@@ -122,7 +122,7 @@ RULES — follow exactly:
     const parsed = JSON.parse(match[0]);
     // Reject if Ollama returned empty/unhelpful summary
     if (!parsed.summary || parsed.summary.length < 10) return null;
-    if (/not mentioned|not discussed|no specific|is not mentioned|not included/i.test(parsed.summary)) return null;
+    if (/not mentioned|not discussed|no specific|is not mentioned|not included|no mention|no direct mention|not related|no information|not referenced/i.test(parsed.summary)) return null;
     return parsed;
   } catch (e) {
     console.warn(`  ⚠ Ollama: ${e.message}`);
@@ -229,8 +229,8 @@ for (const [slug, products] of Object.entries(bySlug)) {
     const posts = await searchReddit(`${product.name} reddit review`);
     const insight = await buildInsight(product.name, slug, posts);
 
-    // Replace existing entry if force mode, otherwise append
-    if (FORCE) {
+    // Replace existing entry if force/missing-cons mode, otherwise append
+    if (FORCE || MISSING_CONS) {
       const idx = results[slug].insights.findIndex(i => i.product.toLowerCase() === product.name.toLowerCase());
       if (idx > -1) results[slug].insights[idx] = insight;
       else results[slug].insights.push(insight);
