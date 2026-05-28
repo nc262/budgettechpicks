@@ -20,19 +20,19 @@ export function affiliateUrl(name: string): string {
   return `https://www.amazon.com/s?k=${encodeURIComponent(name)}&tag=${AMAZON_TAG}`;
 }
 
-// Primary: modern Amazon CDN (most reliable for hotlinking)
+// Primary: locally hosted image (downloaded to public/images/products/)
 export function amazonImageUrl(asin: string): string {
+  return `/images/products/${asin}.jpg`;
+}
+
+// Fallback 1: modern Amazon CDN
+export function amazonImageFallback(asin: string): string {
   return `https://m.media-amazon.com/images/P/${asin}.01._SX300_QL70_.jpg`;
 }
 
-// Fallback 1: legacy CDN, different format
-export function amazonImageFallback(asin: string): string {
-  return `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SX300_.jpg`;
-}
-
-// Fallback 2: smallest/most universally cached size
+// Fallback 2: legacy Amazon CDN
 export function amazonImageFallback2(asin: string): string {
-  return `https://m.media-amazon.com/images/P/${asin}.01._SL160_.jpg`;
+  return `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SX300_.jpg`;
 }
 
 export const categoryEmoji: Record<string, string> = {
