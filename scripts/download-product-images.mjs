@@ -5,18 +5,26 @@
  *   1. Skip if local file already exists and is valid
  *   2. Try ~8 Amazon CDN URL patterns directly
  *   3. Try to scrape og:image from the Amazon product page
- *   4. If BING_API_KEY is set, search Bing Images for "{product name} amazon"
+ *   4. If BING_API_KEY or RAPIDAPI_KEY is set, search Bing Images for "{product name} amazon"
  *   5. Give up → product card shows emoji fallback
  *
  * Usage:
  *   node scripts/download-product-images.mjs
  *   BING_API_KEY=yourkey node scripts/download-product-images.mjs
+ *   RAPIDAPI_KEY=yourkey node scripts/download-product-images.mjs
  *   FORCE=1 node scripts/download-product-images.mjs   (re-download even existing)
  *
- * Get a free Bing key (1,000 calls/month):
- *   1. portal.azure.com → search "Bing Search v7" → Create → F1 (Free) tier
+ * Get a free Bing key — pick ONE of these options:
+ *
+ * Option A — RapidAPI (easiest, no Azure needed):
+ *   1. rapidapi.com → search "Bing Image Search" → subscribe Free tier
+ *   2. Copy your X-RapidAPI-Key from the code examples panel
+ *   3. RAPIDAPI_KEY=yourkey node scripts/download-product-images.mjs
+ *
+ * Option B — Azure direct:
+ *   1. portal.azure.com (personal Microsoft account) → search "Bing Search v7" → F1 Free
  *   2. Keys and Endpoint → copy Key 1
- *   3. Set as env var: BING_API_KEY=your_key
+ *   3. BING_API_KEY=yourkey node scripts/download-product-images.mjs
  */
 
 import fs from "fs";
@@ -26,6 +34,7 @@ const HEALTH_JSON = new URL("../src/data/product-health.json", import.meta.url).
 const PRODUCTS_SRC = new URL("../src/data/products.ts", import.meta.url).pathname.replace(/^\/([A-Z]:)/, "$1");
 const OUT_DIR = new URL("../public/images/products", import.meta.url).pathname.replace(/^\/([A-Z]:)/, "$1");
 const BING_KEY = process.env.BING_API_KEY ?? "";
+const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY ?? "";
 const FORCE = process.env.FORCE === "1";
 
 const BROWSER_HEADERS = {
@@ -130,17 +139,66 @@ async function tryAmazonPageScrape(asin) {
   return null;
 }
 
+// Search DuckDuckGo Images — no API key required
+async function tryDuckDuckGo(productName) {
+  try {
+    const query = encodeURIComponent(`${productName} amazon`);
+    // Step 1: get vqd token from DDG search page
+    const searchRes = await fetch(`https://duckduckgo.com/?q=${query}&iax=images&ia=images`, {
+      headers: BROWSER_HEADERS,
+      signal: AbortSignal.timeout(10000),
+    });
+    if (!searchRes.ok) return null;
+    const html = await searchRes.text();
+    const vqdMatch = html.match(/vqd=['"]([^'"]+)['"]/);
+    if (!vqdMatch) return null;
+    const vqd = vqdMatch[1];
+
+    // Step 2: fetch image results JSON
+    const imgRes = await fetch(
+      `https://duckduckgo.com/i.js?q=${query}&vqd=${encodeURIComponent(vqd)}&f=,,,&p=1&o=json`,
+      { headers: { ...BROWSER_HEADERS, Referer: "https://duckduckgo.com/" }, signal: AbortSignal.timeout(10000) }
+    );
+    if (!imgRes.ok) return null;
+    const data = await imgRes.json();
+    const results = data.results ?? [];
+    for (const img of results.slice(0, 5)) {
+      const imgUrl = img.image;
+      if (!imgUrl) continue;
+      const buf = await fetchBuf(imgUrl, IMG_HEADERS, 8000);
+      if (buf) return { buf, source: `ddg:${imgUrl}` };
+    }
+  } catch {
+    // DDG blocked or changed format
+  }
+  return null;
+}
+
 // Search Bing Images for "{product name} amazon" and download first result
 async function tryBingImage(productName) {
-  if (!BING_KEY) return null;
+  if (!BING_KEY && !RAPIDAPI_KEY) return null;
   try {
     const query = encodeURIComponent(`${productName} amazon product`);
-    const url = `https://api.bing.microsoft.com/v7.0/images/search?q=${query}&count=3&safeSearch=Off&imageType=Photo`;
-    const res = await fetch(url, {
-      headers: { "Ocp-Apim-Subscription-Key": BING_KEY },
-      signal: AbortSignal.timeout(8000),
-    });
-    if (!res.ok) return null;
+    let url, headers;
+
+    if (RAPIDAPI_KEY) {
+      // RapidAPI Bing Image Search (text search endpoint)
+      url = `https://bing-image-search1.p.rapidapi.com/images/search?q=${query}&count=5&imageType=Photo&safeSearch=Off`;
+      headers = {
+        "X-RapidAPI-Key": RAPIDAPI_KEY,
+        "X-RapidAPI-Host": "bing-image-search1.p.rapidapi.com",
+      };
+    } else {
+      // Azure direct
+      url = `https://api.bing.microsoft.com/v7.0/images/search?q=${query}&count=5&safeSearch=Off&imageType=Photo`;
+      headers = { "Ocp-Apim-Subscription-Key": BING_KEY };
+    }
+
+    const res = await fetch(url, { headers, signal: AbortSignal.timeout(8000) });
+    if (!res.ok) {
+      console.log(`    Bing API error: ${res.status} ${res.statusText}`);
+      return null;
+    }
     const data = await res.json();
     const results = data.value ?? [];
     for (const img of results) {
@@ -149,8 +207,8 @@ async function tryBingImage(productName) {
       const buf = await fetchBuf(imgUrl, IMG_HEADERS, 8000);
       if (buf) return { buf, source: `bing:${imgUrl}` };
     }
-  } catch {
-    // Bing error
+  } catch (e) {
+    console.log(`    Bing error: ${e.message}`);
   }
   return null;
 }
@@ -167,7 +225,10 @@ async function downloadAsin(asin, productName) {
   // 2. Amazon page scrape (gets real /images/I/ URL)
   if (!result) result = await tryAmazonPageScrape(asin);
 
-  // 3. Bing Image Search fallback
+  // 3. DuckDuckGo image search (free, no key)
+  if (!result && productName) result = await tryDuckDuckGo(productName);
+
+  // 4. Bing Image Search fallback (if key provided)
   if (!result && productName) result = await tryBingImage(productName);
 
   if (result) {
@@ -197,8 +258,9 @@ async function main() {
         !fs.existsSync(path.join(OUT_DIR, `${a}.jpg`)));
 
   console.log(`Processing ${toProcess.length}/${asins.length} ASINs...`);
-  if (BING_KEY) console.log("  ✓ Bing Image Search enabled as fallback");
-  else console.log("  ℹ  No BING_API_KEY set — Bing fallback disabled");
+  if (RAPIDAPI_KEY) console.log("  ✓ Bing Image Search enabled via RapidAPI");
+  else if (BING_KEY) console.log("  ✓ Bing Image Search enabled via Azure");
+  else console.log("  ✓ Using DuckDuckGo image search (free, no key) as fallback");
 
   let downloaded = 0, skipped = 0, failed = 0;
   const failedList = [];
@@ -241,9 +303,9 @@ async function main() {
   if (failedList.length > 0) {
     console.log(`\n⚠ ${failedList.length} products still missing images (will show emoji):`);
     console.log(failedList.map(a => `  ${a}  ${productNames[a] ?? ""}`).join("\n"));
-    if (!BING_KEY) {
-      console.log("\n→ Re-run with BING_API_KEY=yourkey to fix these via Bing Image Search");
-      console.log("  Free key: portal.azure.com → search 'Bing Search v7' → F1 (Free) tier");
+    if (!BING_KEY && !RAPIDAPI_KEY) {
+      console.log("\n→ Re-run with your RapidAPI key to fix these via Bing Image Search:");
+      console.log("  $env:RAPIDAPI_KEY='yourkey'; node scripts/download-product-images.mjs");
     }
   }
 }
