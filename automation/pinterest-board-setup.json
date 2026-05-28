@@ -33,30 +33,41 @@
     },
     {
       "parameters": {
-        "resource": "board",
-        "operation": "create",
-        "name": "={{ $json.name }}",
-        "description": "={{ $json.description }}"
+        "method": "POST",
+        "url": "https://api.pinterest.com/v5/boards",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            { "name": "name", "value": "={{ $json.name }}" },
+            { "name": "description", "value": "={{ $json.description }}" },
+            { "name": "privacy", "value": "PUBLIC" }
+          ]
+        },
+        "options": {}
       },
       "id": "create-board",
       "name": "Create Pinterest Board",
-      "type": "n8n-nodes-base.pinterest",
-      "typeVersion": 1,
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
       "position": [700, 300],
       "credentials": {
-        "pinterestOAuth2Api": {
+        "httpHeaderAuth": {
           "id": "pinterest-creds",
-          "name": "Pinterest OAuth2"
+          "name": "Pinterest Bearer Token"
         }
       }
     },
     {
       "parameters": {
-        "values": {
-          "string": [
+        "assignments": {
+          "assignments": [
             {
+              "id": "status",
               "name": "status",
-              "value": "={{ 'Board created: ' + $json.name + ' (ID: ' + $json.id + ')' }}"
+              "value": "={{ 'Board created: ' + $json.name + ' (ID: ' + $json.id + ')' }}",
+              "type": "string"
             }
           ]
         }
@@ -66,17 +77,6 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [900, 300]
-    },
-    {
-      "parameters": {
-        "respondWith": "allIncomingItems",
-        "options": {}
-      },
-      "id": "output",
-      "name": "Output",
-      "type": "n8n-nodes-base.respondToWebhook",
-      "typeVersion": 1,
-      "position": [1100, 300]
     }
   ],
   "connections": {
@@ -91,9 +91,6 @@
     },
     "Create Pinterest Board": {
       "main": [[{ "node": "Log Board ID", "type": "main", "index": 0 }]]
-    },
-    "Log Board ID": {
-      "main": [[{ "node": "Output", "type": "main", "index": 0 }]]
     }
   },
   "settings": {
@@ -102,6 +99,6 @@
   "staticData": null,
   "meta": {
     "templateId": "pinterest-board-setup",
-    "description": "One-time workflow: creates 12 category boards on Pinterest for TotalTechPicks. Run once after linking your Pinterest Business account credentials in n8n."
+    "description": "One-time workflow: creates 12 category boards on Pinterest for TotalTechPicks. Uses Header Auth (Bearer token) — no OAuth2 required. Run once after linking Pinterest credentials."
   }
 }

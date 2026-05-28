@@ -41,25 +41,26 @@
     },
     {
       "parameters": {
-        "resource": "board",
-        "operation": "getAll",
-        "returnAll": true
+        "url": "https://api.pinterest.com/v5/boards?page_size=100",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "httpHeaderAuth",
+        "options": {}
       },
       "id": "get-boards",
       "name": "Get My Pinterest Boards",
-      "type": "n8n-nodes-base.pinterest",
-      "typeVersion": 1,
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
       "position": [700, 300],
       "credentials": {
-        "pinterestOAuth2Api": {
+        "httpHeaderAuth": {
           "id": "pinterest-creds",
-          "name": "Pinterest OAuth2"
+          "name": "Pinterest Bearer Token"
         }
       }
     },
     {
       "parameters": {
-        "jsCode": "// Match product to its board ID\nconst product = $('Pick Next 5 Unpinned').all()[$itemIndex].json;\nconst boards = $('Get My Pinterest Boards').all().map(b => b.json);\n\nconst matchingBoard = boards.find(b => \n  b.name.toLowerCase() === product.boardName.toLowerCase()\n);\n\nif (!matchingBoard) {\n  // Fallback: use first board\n  return [{ json: { ...product, boardId: boards[0]?.id ?? 'unknown' } }];\n}\n\nreturn [{ json: { ...product, boardId: matchingBoard.id } }];"
+        "jsCode": "// Match product to its board ID\n// HTTP response from Pinterest API v5 returns { items: [...boards] }\nconst product = $('Pick Next 5 Unpinned').all()[$itemIndex].json;\nconst boardsResponse = $('Get My Pinterest Boards').first().json;\nconst boards = boardsResponse.items ?? boardsResponse;\n\nconst matchingBoard = boards.find(b => \n  b.name.toLowerCase() === product.boardName.toLowerCase()\n);\n\nif (!matchingBoard) {\n  // Fallback: use first board\n  return [{ json: { ...product, boardId: boards[0]?.id ?? 'unknown' } }];\n}\n\nreturn [{ json: { ...product, boardId: matchingBoard.id } }];"
       },
       "id": "match-board-id",
       "name": "Match Board ID",
@@ -69,25 +70,24 @@
     },
     {
       "parameters": {
-        "resource": "pin",
-        "operation": "create",
-        "boardId": "={{ $json.boardId }}",
-        "imageUrl": "={{ $json.imageUrl }}",
-        "note": "={{ $json.description }}",
-        "link": "={{ $json.link }}",
-        "additionalFields": {
-          "title": "={{ $json.title }}"
-        }
+        "method": "POST",
+        "url": "https://api.pinterest.com/v5/pins",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "httpHeaderAuth",
+        "sendBody": true,
+        "contentType": "json",
+        "body": "={\n  \"board_id\": \"{{ $json.boardId }}\",\n  \"title\": \"{{ $json.title }}\",\n  \"description\": \"{{ $json.description }}\",\n  \"link\": \"{{ $json.link }}\",\n  \"media_source\": {\n    \"source_type\": \"image_url\",\n    \"url\": \"{{ $json.imageUrl }}\"\n  }\n}",
+        "options": {}
       },
       "id": "create-pin",
       "name": "Create Pinterest Pin",
-      "type": "n8n-nodes-base.pinterest",
-      "typeVersion": 1,
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
       "position": [1100, 300],
       "credentials": {
-        "pinterestOAuth2Api": {
+        "httpHeaderAuth": {
           "id": "pinterest-creds",
-          "name": "Pinterest OAuth2"
+          "name": "Pinterest Bearer Token"
         }
       }
     },
