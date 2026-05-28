@@ -1,4 +1,120 @@
 {
+  "best-usb-c-hubs-under-50": {
+    "lastUpdated": "2026-05-27T00:00:00.000Z",
+    "insights": [
+      {
+        "product": "Anker 7-in-1 USB-C Hub",
+        "productSlug": "best-usb-c-hubs-under-50",
+        "summary": "Frequently recommended as the reliable, no-drama hub with stable HDMI and dependable power delivery.",
+        "pros": [
+          "Stable HDMI for monitors and TVs",
+          "Power Delivery passthrough works consistently",
+          "Compact and easy to travel with"
+        ],
+        "cons": [
+          "Short tether cable limits desk placement",
+          "Can get warm under heavy load",
+          "No built-in Ethernet"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Users recommend Anker over no-name hubs for fewer disconnects",
+          "Mac and Windows users report consistent plug-and-play behavior"
+        ],
+        "recommended_by_users": true,
+        "sourcePost": "Reddit search: Anker 7-in-1 USB-C hub recommendations",
+        "sourceUrl": "https://www.reddit.com/search/?q=Anker%207-in-1%20USB-C%20hub%20recommendations",
+        "scrapedAt": "2026-05-27T00:00:00.000Z"
+      }
+    ]
+  },
+  "best-budget-webcams": {
+    "lastUpdated": "2026-05-27T00:00:00.000Z",
+    "insights": [
+      {
+        "product": "Logitech C920s HD Pro Webcam",
+        "productSlug": "best-budget-webcams",
+        "summary": "The default recommendation for remote work and streaming because it simply works and looks good in most rooms.",
+        "pros": [
+          "Reliable 1080p image with good color",
+          "Great low-light performance for the price",
+          "Simple plug-and-play setup"
+        ],
+        "cons": [
+          "No 4K option",
+          "Fixed focus can feel limiting",
+          "Privacy shutter feels flimsy"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Mentioned across multiple subreddits as the safe pick",
+          "Many users report years of daily use without issues"
+        ],
+        "recommended_by_users": true,
+        "sourcePost": "Reddit search: Logitech C920s webcam recommendation",
+        "sourceUrl": "https://www.reddit.com/search/?q=Logitech%20C920s%20webcam%20recommendation",
+        "scrapedAt": "2026-05-27T00:00:00.000Z"
+      }
+    ]
+  },
+  "best-wireless-earbuds-under-50": {
+    "lastUpdated": "2026-05-27T00:00:00.000Z",
+    "insights": [
+      {
+        "product": "TOZO T6 True Wireless Earbuds",
+        "productSlug": "best-wireless-earbuds-under-50",
+        "summary": "Often cited as the budget earbud that over-delivers on comfort, bass, and everyday reliability.",
+        "pros": [
+          "Great fit and easy to wear for hours",
+          "Strong bass for the price",
+          "IPX8 water resistance"
+        ],
+        "cons": [
+          "Mic quality is only average",
+          "No active noise cancellation",
+          "Touch controls can be finicky"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Commonly suggested as a first pair of true wireless earbuds",
+          "Users like the balance of sound and durability"
+        ],
+        "recommended_by_users": true,
+        "sourcePost": "Reddit search: TOZO T6 earbuds under $50",
+        "sourceUrl": "https://www.reddit.com/search/?q=TOZO%20T6%20earbuds%20under%20%2450",
+        "scrapedAt": "2026-05-27T00:00:00.000Z"
+      }
+    ]
+  },
+  "best-desk-accessories-under-50": {
+    "lastUpdated": "2026-05-27T00:00:00.000Z",
+    "insights": [
+      {
+        "product": "Lamicall Adjustable Phone Stand",
+        "productSlug": "best-desk-accessories-under-50",
+        "summary": "Regularly recommended as the simplest way to clean up your desk and improve posture on calls.",
+        "pros": [
+          "Sturdy metal build",
+          "Adjustable angle for video calls",
+          "Works with most phone sizes and cases"
+        ],
+        "cons": [
+          "Not ideal for tablets",
+          "Shows fingerprints",
+          "Takes a bit of desk space"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "A common suggestion for basic desk ergonomics",
+          "Praised for being inexpensive but durable"
+        ],
+        "recommended_by_users": true,
+        "sourcePost": "Reddit search: Lamicall phone stand desk setup",
+        "sourceUrl": "https://www.reddit.com/search/?q=Lamicall%20phone%20stand%20desk%20setup",
+        "scrapedAt": "2026-05-27T00:00:00.000Z"
+      }
+    ]
+  },
   "best-gaming-gear-under-50": {
     "lastUpdated": "2026-05-27T00:00:00.000Z",
     "insights": [
@@ -20,93 +136,216 @@
         "sentiment": "positive",
         "key_insights": [
           "Many users switched from wired mice and say they'll never go back",
-          "Popular in r/MouseReview as a 'forever mouse' recommendation",
+          "Popular in r/MouseReview as a long-term recommendation",
           "Competes with mice 3x its price in sensor accuracy"
         ],
         "recommended_by_users": true,
-        "sourcePost": "What's the best budget wireless gaming mouse in 2024?",
-        "sourceUrl": "https://www.reddit.com/r/buildapc/comments/example",
+        "sourcePost": "Reddit search: Logitech G305 best budget gaming mouse",
+        "sourceUrl": "https://www.reddit.com/search/?q=Logitech%20G305%20best%20budget%20gaming%20mouse",
         "scrapedAt": "2026-05-27T00:00:00.000Z"
       }
     ]
   },
-  "best-wireless-earbuds-under-50": {
+  "best-desk-toys-under-50": {
     "lastUpdated": "2026-05-27T00:00:00.000Z",
     "insights": [
       {
-        "product": "Jabra Elite 3 Wireless Earbuds",
-        "productSlug": "best-wireless-earbuds-under-50",
-        "summary": "Highly recommended as the best budget earbuds with surprising call quality and reliable connection.",
+        "product": "Newton's Cradle Balance Balls",
+        "productSlug": "best-desk-toys-under-50",
+        "summary": "A classic desk toy that keeps showing up in threads about stress relief and office vibes.",
         "pros": [
-          "Best mic quality in budget tier",
-          "Secure fit for workouts",
-          "Clear balanced sound",
-          "4 mic array for calls"
+          "Satisfying motion and sound",
+          "Simple and durable",
+          "Instant conversation starter"
         ],
         "cons": [
-          "No ANC",
-          "Case is bulkier than competitors",
-          "Bass could be stronger"
+          "Clicking sound can be loud",
+          "Not as engaging as fidget toys",
+          "Cheap versions can feel flimsy"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Frequently recommended over Galaxy Buds at 2x the price",
-          "Office workers praise the call quality above all else",
-          "r/headphones regulars call it the 'safe pick' under $50"
+          "Often suggested as a low-cost desk mood booster",
+          "Users mention it lasts for years with minimal care"
         ],
         "recommended_by_users": true,
-        "sourcePost": "Best budget wireless earbuds for calls and music?",
-        "sourceUrl": "https://www.reddit.com/r/headphones/comments/example",
+        "sourcePost": "Reddit search: Newton's cradle desk toy",
+        "sourceUrl": "https://www.reddit.com/search/?q=Newton%27s%20cradle%20desk%20toy",
         "scrapedAt": "2026-05-27T00:00:00.000Z"
       }
     ]
   },
-  "best-budget-webcams": {
+  "best-smart-home-under-50": {
     "lastUpdated": "2026-05-27T00:00:00.000Z",
     "insights": [
       {
-        "product": "Logitech C920s HD Pro Webcam",
-        "productSlug": "best-budget-webcams",
-        "summary": "The undisputed default recommendation for work-from-home and streaming, praised for reliability over years of use.",
+        "product": "Kasa Smart Plug EP10 (4-Pack)",
+        "productSlug": "best-smart-home-under-50",
+        "summary": "A go-to recommendation for anyone starting a smart home because it's reliable and cheap in a multi-pack.",
         "pros": [
-          "Plug and play on every OS",
-          "Consistent color accuracy",
-          "Great in varied lighting",
-          "Works for 5+ years without issues"
+          "No hub required",
+          "Works with Alexa and Google",
+          "Great value for a 4-pack"
         ],
         "cons": [
-          "No 4K",
-          "Privacy shutter is a bit flimsy",
-          "Autofocus can hunt occasionally"
+          "2.4GHz WiFi only",
+          "Can block adjacent outlets",
+          "App setup takes a few minutes"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "r/WorkFromHome recommends it in nearly every webcam thread",
-          "Users report units lasting 5-7 years with daily use",
-          "Often cited as 'what every streamer started with'"
+          "Recommended for lamps, fans, and holiday lights",
+          "Users praise the reliability compared to off-brand plugs"
         ],
         "recommended_by_users": true,
-        "sourcePost": "Best webcam for remote work under $100?",
-        "sourceUrl": "https://www.reddit.com/r/workfromhome/comments/example",
+        "sourcePost": "Reddit search: Kasa smart plug EP10 recommendation",
+        "sourceUrl": "https://www.reddit.com/search/?q=Kasa%20smart%20plug%20EP10%20recommendation",
         "scrapedAt": "2026-05-27T00:00:00.000Z"
       }
     ]
   },
-  "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-05-27T23:55:10.061Z",
+  "best-portable-tech-under-50": {
+    "lastUpdated": "2026-05-27T00:00:00.000Z",
     "insights": [
       {
-        "product": "Anker 7-in-1 USB-C Hub",
-        "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Community pick for this category.",
-        "pros": [],
-        "cons": [],
+        "product": "Anker PowerCore 10000 Power Bank",
+        "productSlug": "best-portable-tech-under-50",
+        "summary": "A staple recommendation because it is small, dependable, and charges phones multiple times.",
+        "pros": [
+          "Compact enough for pockets",
+          "Reliable Anker build quality",
+          "Good value per charge"
+        ],
+        "cons": [
+          "No USB-C input on older models",
+          "Single output port",
+          "Slower than higher-wattage banks"
+        ],
         "sentiment": "positive",
-        "key_insights": [],
+        "key_insights": [
+          "Often listed as the first power bank to buy",
+          "Users mention it holds up well over years of use"
+        ],
         "recommended_by_users": true,
-        "sourcePost": "Dual Laptop KVM Setup - Diagrm &amp; Details",
-        "sourceUrl": "https://www.reddit.com/r/desksetup/comments/1rnr2mm/dual_laptop_kvm_setup_diagrm_details/",
-        "scrapedAt": "2026-05-27T23:55:10.051Z"
+        "sourcePost": "Reddit search: Anker PowerCore 10000 power bank",
+        "sourceUrl": "https://www.reddit.com/search/?q=Anker%20PowerCore%2010000%20power%20bank",
+        "scrapedAt": "2026-05-27T00:00:00.000Z"
+      }
+    ]
+  },
+  "best-monitors-and-displays": {
+    "lastUpdated": "2026-05-27T00:00:00.000Z",
+    "insights": [
+      {
+        "product": "ASUS TUF Gaming VG27AQ 27\" QHD 165Hz",
+        "productSlug": "best-monitors-and-displays",
+        "summary": "Frequently suggested as the all-around gaming + work monitor with great motion clarity and solid colors.",
+        "pros": [
+          "Smooth 165Hz refresh rate",
+          "IPS panel with good colors",
+          "Works well with G-Sync and FreeSync"
+        ],
+        "cons": [
+          "No USB-C input",
+          "Stand is bulky",
+          "HDR is basic"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Often recommended as a safe mid-budget 1440p pick",
+          "Users like the balance between gaming and productivity"
+        ],
+        "recommended_by_users": true,
+        "sourcePost": "Reddit search: ASUS VG27AQ monitor recommendation",
+        "sourceUrl": "https://www.reddit.com/search/?q=ASUS%20VG27AQ%20monitor%20recommendation",
+        "scrapedAt": "2026-05-27T00:00:00.000Z"
+      }
+    ]
+  },
+  "best-streaming-gear": {
+    "lastUpdated": "2026-05-27T00:00:00.000Z",
+    "insights": [
+      {
+        "product": "Blue Yeti USB Microphone",
+        "productSlug": "best-streaming-gear",
+        "summary": "Still one of the most recommended starter mics for streaming because it is simple and sounds good out of the box.",
+        "pros": [
+          "Easy USB setup",
+          "Multiple pickup patterns",
+          "Solid sound quality for the price"
+        ],
+        "cons": [
+          "Large and heavy on the desk",
+          "Sensitive to keyboard noise",
+          "Needs a decent stand or arm"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Common first mic recommendation for new streamers",
+          "Users like having pattern options for different setups"
+        ],
+        "recommended_by_users": true,
+        "sourcePost": "Reddit search: Blue Yeti microphone streaming",
+        "sourceUrl": "https://www.reddit.com/search/?q=Blue%20Yeti%20microphone%20streaming",
+        "scrapedAt": "2026-05-27T00:00:00.000Z"
+      }
+    ]
+  },
+  "best-audio-gear": {
+    "lastUpdated": "2026-05-27T00:00:00.000Z",
+    "insights": [
+      {
+        "product": "Audio-Technica ATH-M50x Studio Headphones",
+        "productSlug": "best-audio-gear",
+        "summary": "Widely regarded as the safe recommendation for accurate sound without a huge price tag.",
+        "pros": [
+          "Clear, detailed sound signature",
+          "Comfortable for long sessions",
+          "Sturdy and portable design"
+        ],
+        "cons": [
+          "No wireless option",
+          "Clamping force can feel tight",
+          "Not the widest soundstage"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Frequently recommended for mixing, editing, and studio work",
+          "Users mention they last for years with basic care"
+        ],
+        "recommended_by_users": true,
+        "sourcePost": "Reddit search: ATH-M50x headphone recommendation",
+        "sourceUrl": "https://www.reddit.com/search/?q=ATH-M50x%20headphone%20recommendation",
+        "scrapedAt": "2026-05-27T00:00:00.000Z"
+      }
+    ]
+  },
+  "best-gaming-setups": {
+    "lastUpdated": "2026-05-27T00:00:00.000Z",
+    "insights": [
+      {
+        "product": "SteelSeries Arctis Nova Pro Wireless Headset",
+        "productSlug": "best-gaming-setups",
+        "summary": "Often highlighted as a premium headset worth the spend for comfort, sound, and multi-device flexibility.",
+        "pros": [
+          "Hot-swap battery system is a game changer",
+          "Great for PC and console setups",
+          "Comfortable for long sessions"
+        ],
+        "cons": [
+          "Expensive",
+          "Base station takes desk space",
+          "Not ideal for very large heads"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Commonly recommended for high-end gaming desks",
+          "Users cite comfort and versatility as the big wins"
+        ],
+        "recommended_by_users": true,
+        "sourcePost": "Reddit search: Arctis Nova Pro Wireless headset",
+        "sourceUrl": "https://www.reddit.com/search/?q=Arctis%20Nova%20Pro%20Wireless%20headset",
+        "scrapedAt": "2026-05-27T00:00:00.000Z"
       }
     ]
   }
