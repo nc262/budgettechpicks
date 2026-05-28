@@ -4,7 +4,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 import { getArticleBySlug, articles } from "@/data/articles";
 import { getProductsByArticle, affiliateUrl, amazonImageUrl, categoryEmoji } from "@/data/products";
-import ProductFilter from "@/components/ProductFilter";
+import ProductFilter, { RedditInsight } from "@/components/ProductFilter";
 import AdSlot from "@/components/AdSlot";
 import redditInsightsData from "@/data/reddit-insights.json";
 import productHealth from "@/data/product-health.json";
@@ -48,19 +48,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-interface RedditInsight {
-  product: string;
-  summary: string;
-  pros: string[];
-  cons: string[];
-  sentiment: string;
-  key_insights: string[];
-  recommended_by_users: boolean;
-  sourcePost?: string;
-  sourceUrl?: string;
-  scrapedAt?: string;
-}
-
 interface AutoProduct {
   asin: string;
   name: string;
@@ -84,6 +71,15 @@ export default function ArticlePage({ params }: Props) {
   const discontinuedCount = allProducts.length - products.length;
 
   const redditData = (redditInsightsData as Record<string, { lastUpdated: string; insights: RedditInsight[] }>)[params.slug];
+  // Build a lookup map: normalized product name → insight (for inline card display)
+  const redditByProduct: Record<string, RedditInsight> = {};
+  if (redditData?.insights) {
+    for (const insight of redditData.insights) {
+      redditByProduct[insight.product.toLowerCase()] = insight;
+      // Also index by productSlug if present
+      if (insight.productSlug) redditByProduct[insight.productSlug] = insight;
+    }
+  }
   // Auto-discovered community picks for this slug
   const autoPicks = (autoProductsRaw as AutoProduct[]).filter(p => p.articleSlug === params.slug);
 
@@ -180,7 +176,7 @@ export default function ArticlePage({ params }: Props) {
       )}
 
       {/* Product list with price filter */}
-      <ProductFilter products={products} />
+      <ProductFilter products={products} redditByProduct={redditByProduct} />
 
       {/* Buying Guide */}
       {article.buyingGuide && article.buyingGuide.length > 0 && (
@@ -259,11 +255,11 @@ export default function ArticlePage({ params }: Props) {
                     </div>
                   )}
                 </div>
-                {insight.key_insights.length > 0 && (
+                {insight.key_insights && insight.key_insights.length > 0 && (
                   <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-3 mb-3">
                     <p className="text-xs font-bold text-blue-400 uppercase tracking-wide mb-2">🔑 Key insights from the community</p>
                     <ul className="space-y-1">
-                      {insight.key_insights.slice(0, 2).map((ki, j) => (
+                      {insight.key_insights.slice(0, 2).map((ki: string, j: number) => (
                         <li key={j} className="text-xs text-gray-300">• {ki}</li>
                       ))}
                     </ul>

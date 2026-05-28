@@ -2,10 +2,12 @@
 
 import { Product, affiliateUrl, amazonImageUrl, amazonImageFallback, amazonImageFallback2, categoryEmoji, categoryColor } from "@/data/products";
 import productHealth from "@/data/product-health.json";
+import { RedditInsight } from "./ProductFilter";
 
 interface Props {
   product: Product;
   rank?: number;
+  redditInsight?: RedditInsight;
 }
 
 const badgeColors: Record<string, string> = {
@@ -34,7 +36,7 @@ function getScoreColor(score: number): string {
   return "text-orange-400 border-orange-400/30 bg-orange-400/10";
 }
 
-export default function ProductCard({ product, rank }: Props) {
+export default function ProductCard({ product, rank, redditInsight }: Props) {
   const stars = Math.round(product.rating);
   const url = affiliateUrl(product.name);
   // Use n8n-verified image URL if available, otherwise fall back to CDN pattern
@@ -172,6 +174,40 @@ export default function ProductCard({ product, rank }: Props) {
             </ul>
           </div>
         </div>
+
+        {/* Reddit Insight — inline per product */}
+        {redditInsight && (
+          <div className="mt-4 pt-4 border-t border-gray-700/50">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-base">💬</span>
+              <span className="text-xs font-bold text-orange-400 uppercase tracking-wide">Reddit Says</span>
+              <span className={`ml-auto text-xs font-bold px-2 py-0.5 rounded-full border ${
+                redditInsight.sentiment === "positive" ? "bg-green-400/10 text-green-400 border-green-400/30" :
+                redditInsight.sentiment === "negative" ? "bg-red-400/10 text-red-400 border-red-400/30" :
+                "bg-gray-500/20 text-gray-400 border-gray-500/30"
+              }`}>
+                {redditInsight.sentiment === "positive" ? "👍 Loved" : redditInsight.sentiment === "negative" ? "👎 Mixed" : "😐 Neutral"}
+              </span>
+            </div>
+            <p className="text-xs text-gray-400 italic leading-relaxed mb-2">&ldquo;{redditInsight.summary}&rdquo;</p>
+            {(redditInsight.pros.length > 0 || redditInsight.cons.length > 0) && (
+              <div className="flex gap-3 flex-wrap">
+                {redditInsight.pros.slice(0, 2).map((p, i) => (
+                  <span key={i} className="text-xs text-green-400 bg-green-400/10 rounded-full px-2 py-0.5">✓ {p}</span>
+                ))}
+                {redditInsight.cons.slice(0, 1).map((c, i) => (
+                  <span key={i} className="text-xs text-red-400 bg-red-400/10 rounded-full px-2 py-0.5">✗ {c}</span>
+                ))}
+              </div>
+            )}
+            {redditInsight.sourceUrl && (
+              <a href={redditInsight.sourceUrl} target="_blank" rel="noopener noreferrer"
+                className="block mt-2 text-xs text-gray-600 hover:text-orange-400 transition-colors">
+                📎 View Reddit thread →
+              </a>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

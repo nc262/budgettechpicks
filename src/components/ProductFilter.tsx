@@ -21,11 +21,26 @@ const RANGES: Range[] = [
   { label: "$500+", min: 500, max: Number.MAX_VALUE },
 ];
 
-interface Props {
-  products: Product[];
+export interface RedditInsight {
+  product: string;
+  productSlug?: string;
+  summary: string;
+  pros: string[];
+  cons: string[];
+  sentiment: string;
+  key_insights?: string[];
+  recommended_by_users?: boolean;
+  sourcePost?: string;
+  sourceUrl?: string;
+  scrapedAt?: string;
 }
 
-export default function ProductFilter({ products }: Props) {
+interface Props {
+  products: Product[];
+  redditByProduct?: Record<string, RedditInsight>;
+}
+
+export default function ProductFilter({ products, redditByProduct = {} }: Props) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const activeRange = RANGES[activeIndex];
@@ -104,16 +119,19 @@ export default function ProductFilter({ products }: Props) {
         </div>
       ) : (
         <div className="space-y-6">
-          {filtered.map((product, index) => (
-            <div key={product.id}>
-              <ProductCard product={product} rank={index + 1} />
-              {index === 1 && (
-                <div className="mt-6">
-                  <AdSlot slot="8753330826" style="rectangle" />
-                </div>
-              )}
-            </div>
-          ))}
+          {filtered.map((product, index) => {
+              const insight = redditByProduct[product.name.toLowerCase()] ?? redditByProduct[product.name];
+              return (
+              <div key={product.id}>
+                <ProductCard product={product} rank={index + 1} redditInsight={insight} />
+                {index === 1 && (
+                  <div className="mt-6">
+                    <AdSlot slot="8753330826" style="rectangle" />
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       )}
     </div>
