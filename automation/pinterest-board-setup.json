@@ -1,0 +1,107 @@
+{
+  "name": "Pinterest — Create Category Boards (One-Time Setup)",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "trigger-manual",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [100, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://totaltechpicks.com/products-for-pinterest.json",
+        "options": {}
+      },
+      "id": "fetch-products",
+      "name": "Fetch Products JSON",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [300, 300]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "boards",
+        "options": {}
+      },
+      "id": "split-boards",
+      "name": "Split Boards",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [500, 300]
+    },
+    {
+      "parameters": {
+        "resource": "board",
+        "operation": "create",
+        "name": "={{ $json.name }}",
+        "description": "={{ $json.description }}"
+      },
+      "id": "create-board",
+      "name": "Create Pinterest Board",
+      "type": "n8n-nodes-base.pinterest",
+      "typeVersion": 1,
+      "position": [700, 300],
+      "credentials": {
+        "pinterestOAuth2Api": {
+          "id": "pinterest-creds",
+          "name": "Pinterest OAuth2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "status",
+              "value": "={{ 'Board created: ' + $json.name + ' (ID: ' + $json.id + ')' }}"
+            }
+          ]
+        }
+      },
+      "id": "log-result",
+      "name": "Log Board ID",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "allIncomingItems",
+        "options": {}
+      },
+      "id": "output",
+      "name": "Output",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1100, 300]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [[{ "node": "Fetch Products JSON", "type": "main", "index": 0 }]]
+    },
+    "Fetch Products JSON": {
+      "main": [[{ "node": "Split Boards", "type": "main", "index": 0 }]]
+    },
+    "Split Boards": {
+      "main": [[{ "node": "Create Pinterest Board", "type": "main", "index": 0 }]]
+    },
+    "Create Pinterest Board": {
+      "main": [[{ "node": "Log Board ID", "type": "main", "index": 0 }]]
+    },
+    "Log Board ID": {
+      "main": [[{ "node": "Output", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateId": "pinterest-board-setup",
+    "description": "One-time workflow: creates 12 category boards on Pinterest for TotalTechPicks. Run once after linking your Pinterest Business account credentials in n8n."
+  }
+}

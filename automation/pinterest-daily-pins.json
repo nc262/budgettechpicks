@@ -1,0 +1,151 @@
+{
+  "name": "Pinterest — Daily Product Pins (5/day)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 10,
+              "triggerAtMinute": 0
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Daily at 10am",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [100, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://totaltechpicks.com/products-for-pinterest.json",
+        "options": {}
+      },
+      "id": "fetch-products",
+      "name": "Fetch Products JSON",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [300, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Flatten all products from all boards into one array\nconst data = $input.first().json;\nconst allProducts = [];\nfor (const board of data.boards) {\n  for (const product of board.products) {\n    allProducts.push({ ...product, boardName: board.name });\n  }\n}\n\n// Get pinned tracking from workflow static data\nconst pinnedAsins = $getWorkflowStaticData('global').pinnedAsins ?? [];\n\n// Find unpinned products\nconst unpinned = allProducts.filter(p => !pinnedAsins.includes(p.asin));\n\nif (unpinned.length === 0) {\n  // All products pinned — reset to start a new cycle\n  $getWorkflowStaticData('global').pinnedAsins = [];\n  return allProducts.slice(0, 5).map(p => ({ json: p }));\n}\n\n// Return next 5 to pin\nreturn unpinned.slice(0, 5).map(p => ({ json: p }));"
+      },
+      "id": "pick-next-5",
+      "name": "Pick Next 5 Unpinned",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [500, 300]
+    },
+    {
+      "parameters": {
+        "resource": "board",
+        "operation": "getAll",
+        "returnAll": true
+      },
+      "id": "get-boards",
+      "name": "Get My Pinterest Boards",
+      "type": "n8n-nodes-base.pinterest",
+      "typeVersion": 1,
+      "position": [700, 300],
+      "credentials": {
+        "pinterestOAuth2Api": {
+          "id": "pinterest-creds",
+          "name": "Pinterest OAuth2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Match product to its board ID\nconst product = $('Pick Next 5 Unpinned').all()[$itemIndex].json;\nconst boards = $('Get My Pinterest Boards').all().map(b => b.json);\n\nconst matchingBoard = boards.find(b => \n  b.name.toLowerCase() === product.boardName.toLowerCase()\n);\n\nif (!matchingBoard) {\n  // Fallback: use first board\n  return [{ json: { ...product, boardId: boards[0]?.id ?? 'unknown' } }];\n}\n\nreturn [{ json: { ...product, boardId: matchingBoard.id } }];"
+      },
+      "id": "match-board-id",
+      "name": "Match Board ID",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "resource": "pin",
+        "operation": "create",
+        "boardId": "={{ $json.boardId }}",
+        "imageUrl": "={{ $json.imageUrl }}",
+        "note": "={{ $json.description }}",
+        "link": "={{ $json.link }}",
+        "additionalFields": {
+          "title": "={{ $json.title }}"
+        }
+      },
+      "id": "create-pin",
+      "name": "Create Pinterest Pin",
+      "type": "n8n-nodes-base.pinterest",
+      "typeVersion": 1,
+      "position": [1100, 300],
+      "credentials": {
+        "pinterestOAuth2Api": {
+          "id": "pinterest-creds",
+          "name": "Pinterest OAuth2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Mark this product as pinned in static workflow data\nconst asin = $input.first().json.asin ?? $('Match Board ID').first().json.asin;\nconst storage = $getWorkflowStaticData('global');\nif (!storage.pinnedAsins) storage.pinnedAsins = [];\nif (asin && !storage.pinnedAsins.includes(asin)) {\n  storage.pinnedAsins.push(asin);\n}\nconsole.log(`Pinned: ${asin} (${storage.pinnedAsins.length} total pinned)`);\nreturn $input.all();"
+      },
+      "id": "mark-pinned",
+      "name": "Mark as Pinned",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1300, 300]
+    },
+    {
+      "parameters": {
+        "amount": 30,
+        "unit": "seconds"
+      },
+      "id": "wait-between-pins",
+      "name": "Wait 30s Between Pins",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1100, 500],
+      "webhookId": "pinterest-wait"
+    }
+  ],
+  "connections": {
+    "Daily at 10am": {
+      "main": [[{ "node": "Fetch Products JSON", "type": "main", "index": 0 }]]
+    },
+    "Fetch Products JSON": {
+      "main": [[{ "node": "Pick Next 5 Unpinned", "type": "main", "index": 0 }]]
+    },
+    "Pick Next 5 Unpinned": {
+      "main": [[{ "node": "Get My Pinterest Boards", "type": "main", "index": 0 }]]
+    },
+    "Get My Pinterest Boards": {
+      "main": [[{ "node": "Match Board ID", "type": "main", "index": 0 }]]
+    },
+    "Match Board ID": {
+      "main": [[{ "node": "Create Pinterest Pin", "type": "main", "index": 0 }]]
+    },
+    "Create Pinterest Pin": {
+      "main": [[{ "node": "Mark as Pinned", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveDataSuccessExecution": "all",
+    "saveManualExecutions": true
+  },
+  "staticData": {
+    "global": {
+      "pinnedAsins": []
+    }
+  },
+  "meta": {
+    "templateId": "pinterest-daily-pins",
+    "description": "Pins 5 products/day to TotalTechPicks Pinterest boards. Tracks which products have been pinned using workflow static data. Cycles through all 125 products (takes ~25 days per cycle)."
+  }
+}
