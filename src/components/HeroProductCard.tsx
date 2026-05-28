@@ -1,6 +1,7 @@
 'use client';
 
 import { affiliateUrl, amazonImageUrl, amazonImageFallback, amazonImageFallback2 } from "@/data/products";
+import productHealth from "@/data/product-health.json";
 
 interface Product {
   asin: string;
@@ -12,6 +13,8 @@ interface Product {
 
 export default function HeroProductCard({ product }: { product: Product }) {
   const nobsScore = Math.round(product.rating * 2 * 10) / 10;
+  const healthData = (productHealth as Record<string, { imageUrl?: string }>)[product.asin];
+  const imgUrl = healthData?.imageUrl ?? amazonImageUrl(product.asin);
 
   return (
     <div className="relative bg-gray-900/80 backdrop-blur-sm rounded-2xl border border-gray-700/50 p-5 glow-blue">
@@ -21,7 +24,7 @@ export default function HeroProductCard({ product }: { product: Product }) {
       <a href={affiliateUrl(product.name)} target="_blank" rel="noopener noreferrer sponsored" className="block">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={amazonImageUrl(product.asin)}
+          src={imgUrl}
           alt={product.name}
           className="w-full h-40 object-contain bg-gray-800/50 rounded-xl mb-4"
           onError={(e) => {

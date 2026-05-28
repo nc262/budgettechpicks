@@ -1,13 +1,15 @@
 "use client";
 
 import { Product, affiliateUrl, amazonImageUrl, amazonImageFallback, amazonImageFallback2, categoryEmoji, categoryColor } from "@/data/products";
+import productHealth from "@/data/product-health.json";
 
 export default function FeaturedGrid({ products }: { products: Product[] }) {
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
       {products.map((product) => {
         const url = affiliateUrl(product.name);
-        const imgUrl = amazonImageUrl(product.asin);
+        const healthData = (productHealth as Record<string, { imageUrl?: string }>)[product.asin];
+        const imgUrl = healthData?.imageUrl ?? amazonImageUrl(product.asin);
         const imgFallback = amazonImageFallback(product.asin);
         const imgFallback2 = amazonImageFallback2(product.asin);
         const emoji = categoryEmoji[product.category] ?? "🛒";
