@@ -1,0 +1,783 @@
+{
+  "name": "Reddit Insights - TotalTechPicks",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 8
+            }
+          ]
+        }
+      },
+      "id": "ee7d62e8-4e96-43de-b837-ad8113aebdd7",
+      "name": "Every 8 Hours",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -3088,
+        192
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Product keyword list for Reddit searches\nconst products = [\n  { slug: 'best-usb-c-hubs-under-50', name: 'Anker 7-in-1 USB-C Hub', keywords: ['anker usb c hub', 'usb c hub review', 'best usb hub'] },\n  { slug: 'best-usb-c-hubs-under-50', name: 'UGREEN 9-in-1 USB-C Hub', keywords: ['ugreen usb c hub', 'ugreen hub review'] },\n  { slug: 'best-budget-webcams', name: 'Logitech C920s HD Pro Webcam', keywords: ['logitech c920 review', 'c920s webcam', 'best budget webcam'] },\n  { slug: 'best-budget-webcams', name: 'Razer Kiyo Ring Light Webcam', keywords: ['razer kiyo review', 'razer kiyo webcam'] },\n  { slug: 'best-wireless-earbuds-under-50', name: 'TOZO T6 True Wireless Earbuds', keywords: ['tozo t6 review', 'tozo earbuds'] },\n  { slug: 'best-wireless-earbuds-under-50', name: 'Jabra Elite 3 Wireless Earbuds', keywords: ['jabra elite 3 review', 'jabra elite 3'] },\n  { slug: 'best-wireless-earbuds-under-50', name: 'Sony WF-1000XM5 ANC Earbuds', keywords: ['sony wf1000xm5 review', 'sony xm5 earbuds'] },\n  { slug: 'best-home-office-accessories', name: 'Ergotron LX Desk Monitor Arm', keywords: ['ergotron lx review', 'ergotron monitor arm'] },\n  { slug: 'best-home-office-accessories', name: 'BenQ ScreenBar Monitor Light', keywords: ['benq screenbar review', 'monitor light bar'] },\n  { slug: 'best-gaming-gear-under-50', name: 'Logitech G305 Wireless Gaming Mouse', keywords: ['logitech g305 review', 'g305 gaming mouse'] },\n  { slug: 'best-gaming-gear-under-50', name: 'Redragon K552 Mechanical Keyboard', keywords: ['redragon k552 review', 'redragon keyboard'] },\n  { slug: 'best-gaming-gear-under-50', name: 'HyperX Cloud Stinger Gaming Headset', keywords: ['hyperx cloud stinger review', 'hyperx stinger headset'] },\n  { slug: 'best-gaming-gear-under-50', name: 'Razer Basilisk V3 Gaming Mouse', keywords: ['razer basilisk v3 review', 'basilisk v3'] },\n  { slug: 'best-gaming-gear-under-50', name: 'Xbox Wireless Controller', keywords: ['xbox wireless controller review', 'xbox controller pc'] },\n  { slug: 'best-smart-home-devices', name: 'Amazon Echo Dot 5th Gen', keywords: ['echo dot 5th gen review', 'echo dot 2024'] },\n  { slug: 'best-smart-home-devices', name: 'Kasa Smart Plug EP10', keywords: ['kasa smart plug review', 'kasa ep10'] },\n  { slug: 'best-smart-home-devices', name: 'Philips Hue Starter Kit', keywords: ['philips hue review', 'philips hue starter kit'] },\n  { slug: 'best-everyday-carry-tech', name: 'Anker PowerCore 10000', keywords: ['anker powercore 10000 review', 'anker power bank'] },\n  { slug: 'best-everyday-carry-tech', name: 'Tile Mate Item Tracker', keywords: ['tile mate review', 'tile tracker 2024'] },\n  { slug: 'best-gaming-monitors', name: 'Samsung Odyssey G5 165Hz', keywords: ['samsung odyssey g5 review', 'odyssey g5 monitor'] },\n  { slug: 'best-gaming-monitors', name: 'ASUS TUF VG27AQ', keywords: ['asus vg27aq review', 'tuf gaming monitor'] },\n  { slug: 'best-streaming-creator-gear', name: 'Blue Yeti USB Microphone', keywords: ['blue yeti review', 'blue yeti microphone'] },\n  { slug: 'best-streaming-creator-gear', name: 'Elgato Stream Deck MK.2', keywords: ['elgato stream deck review', 'stream deck mk2'] },\n  { slug: 'best-headphones-audiophile', name: 'Audio-Technica ATH-M50x', keywords: ['ath m50x review', 'audio technica m50x'] },\n  { slug: 'best-headphones-audiophile', name: 'Sony WH-1000XM5 Headphones', keywords: ['sony xm5 headphones review', 'wh1000xm5'] }\n];\n\n// Flatten: one search per keyword (capped to avoid rate limits)\nconst searches = [];\nfor (const product of products) {\n  // Only take first keyword per product to keep runs fast\n  searches.push({\n    productName: product.name,\n    productSlug: product.slug,\n    query: product.keywords[0]\n  });\n}\n\nreturn searches.map(s => ({ json: s }));"
+      },
+      "id": "82084344-4e94-4d5e-9951-416f02f01c83",
+      "name": "Product Keyword List",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -2864,
+        192
+      ]
+    },
+    {
+      "parameters": {
+        "url": "=https://www.reddit.com/search.json",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "q",
+              "value": "={{ $json.query }}"
+            },
+            {
+              "name": "sort",
+              "value": "relevance"
+            },
+            {
+              "name": "t",
+              "value": "year"
+            },
+            {
+              "name": "limit",
+              "value": "5"
+            },
+            {
+              "name": "type",
+              "value": "link"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "dd65dc33-0b1d-4862-b7b4-da7ee7fce770",
+      "name": "Reddit Search",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -2640,
+        192
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const input = $input.item.json;\nconst productName = $('Product Keyword List').item.json.productName;\nconst productSlug = $('Product Keyword List').item.json.productSlug;\n\nconst sixMonthsAgo = Date.now() / 1000 - (6 * 30 * 24 * 3600);\nconst posts = input?.data?.children ?? [];\n\nconst filtered = posts\n  .map(p => p.data)\n  .filter(p => {\n    if (!p) return false;\n    if ((p.num_comments || 0) < 3) return false;\n    if (p.created_utc < sixMonthsAgo) return false;\n    if ((p.score || 0) < 1) return false;\n    return true;\n  })\n  .slice(0, 3);\n\nif (filtered.length === 0) {\n  return [{ json: { skip: true, productName, productSlug } }];\n}\n\nreturn filtered.map(p => ({\n  json: {\n    productName,\n    productSlug,\n    postId: p.id,\n    postTitle: p.title,\n    postScore: p.score,\n    numComments: p.num_comments,\n    subreddit: p.subreddit,\n    permalink: `https://www.reddit.com${p.permalink}`\n  }\n}));"
+      },
+      "id": "d58585aa-dc4d-4edd-bbaf-37f243aac9ef",
+      "name": "Filter Posts",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -2416,
+        192
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": false,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.skip }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "2e2a875a-f037-482b-b98c-7e5c1344a969",
+      "name": "Has Posts?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        -2208,
+        192
+      ]
+    },
+    {
+      "parameters": {
+        "url": "=https://www.reddit.com/comments/{{ $json.postId }}.json?limit=30&sort=top&depth=1",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "TotalTechPicks/1.0"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "aaadd5ba-b259-4334-b74a-edff03e7a132",
+      "name": "Fetch Comments",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1984,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:11434/api/generate",
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "application/json",
+        "body": "={{ $json.ollamaPayload }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 90000
+        }
+      },
+      "id": "e3ea2f66-b08b-470a-929c-e087fd604cd6",
+      "name": "Ollama ΓÇö Extract Insights",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1536,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $input.item.json;\nconst ctx = $('Extract Comments').item.json;\nconst productName = ctx.productName || 'Product';\nconst productSlug = ctx.productSlug || '';\nconst permalink = ctx.permalink || '';\nconst postTitle = ctx.postTitle || '';\n\n// Ollama returns {response: '...json...'} ΓÇö extract only that string\nconst responseStr = typeof raw.response === 'string' ? raw.response : '';\n\nlet parsed = {};\ntry {\n  // Find the first { ... } block in the response\n  const match = responseStr.match(/\\{[\\s\\S]*\\}/);\n  if (match) parsed = JSON.parse(match[0]);\n} catch(e) {\n  // fallback to defaults below\n}\n\nreturn [{ json: {\n  product: productName,\n  productSlug,\n  summary: (typeof parsed.summary === 'string' ? parsed.summary : 'Community pick for this category.'),\n  pros: (Array.isArray(parsed.pros) ? parsed.pros.slice(0,4) : []),\n  cons: (Array.isArray(parsed.cons) ? parsed.cons.slice(0,3) : []),\n  sentiment: (['positive','neutral','negative'].includes(parsed.sentiment) ? parsed.sentiment : 'positive'),\n  key_insights: (Array.isArray(parsed.key_insights) ? parsed.key_insights.slice(0,3) : []),\n  recommended_by_users: (typeof parsed.recommended_by_users === 'boolean' ? parsed.recommended_by_users : true),\n  sourcePost: postTitle,\n  sourceUrl: permalink,\n  scrapedAt: new Date().toISOString()\n} }];"
+      },
+      "id": "1cbdd7b7-f564-4585-b08b-4cc0292cc199",
+      "name": "Parse Insights",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1328,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "destinationFieldName": "allInsights",
+        "options": {}
+      },
+      "id": "30f4f48d-598f-4cf0-9fa8-c88e8c339218",
+      "name": "Collect All Insights",
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        -1104,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Merge new insights with existing ones, deduplicate by product+date\nconst newInsights = $input.item.json.allInsights || [];\n\n// Group by productSlug ΓÇö keep latest per product\nconst bySlug = {};\nfor (const insight of newInsights) {\n  const slug = insight.productSlug;\n  if (!bySlug[slug]) bySlug[slug] = [];\n  bySlug[slug].push(insight);\n}\n\n// Build final structure keyed by slug\nconst result = {};\nfor (const [slug, insights] of Object.entries(bySlug)) {\n  result[slug] = {\n    lastUpdated: new Date().toISOString(),\n    insights: insights.slice(0, 5) // max 5 insights per page\n  };\n}\n\nreturn [{ json: { redditInsights: result } }];"
+      },
+      "id": "b5b8c74b-e429-4fe0-88db-412bd268b5a3",
+      "name": "Merge by Product",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -880,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "url": "=https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/reddit-insights.json",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer YOUR_GITHUB_PAT_HERE"
+            },
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            },
+            {
+              "name": "X-GitHub-Api-Version",
+              "value": "2022-11-28"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "1aec7fe9-c3eb-4148-a0de-c3c4c6efdd1d",
+      "name": "Get Current File SHA",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -656,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Prepare GitHub commit payload\nconst newData = $('Merge by Product').item.json.redditInsights;\nconst currentFile = $input.item.json;\n\n// Merge with existing data if file exists\nlet existingData = {};\nif (currentFile.content) {\n  try {\n    existingData = JSON.parse(Buffer.from(currentFile.content, 'base64').toString('utf-8'));\n  } catch(e) { existingData = {}; }\n}\n\n// Deep merge: new data takes priority, keeps old slugs not touched this run\nconst merged = { ...existingData, ...newData };\n\nconst content = Buffer.from(JSON.stringify(merged, null, 2)).toString('base64');\nconst sha = currentFile.sha || undefined;\n\nreturn [{\n  json: {\n    content,\n    sha,\n    hasChanges: JSON.stringify(merged) !== JSON.stringify(existingData)\n  }\n}];"
+      },
+      "id": "62bc3dab-97ac-4e26-85d9-d9109ce30c63",
+      "name": "Prepare Commit",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -448,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "leftValue": "={{ $json.hasChanges }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and",
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          }
+        },
+        "options": {}
+      },
+      "id": "3287337a-b44f-4c80-b4ee-1e601cb1d6e2",
+      "name": "Has Changes?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        -224,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/reddit-insights.json",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer YOUR_GITHUB_PAT_HERE"
+            },
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            },
+            {
+              "name": "X-GitHub-Api-Version",
+              "value": "2022-11-28"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"message\": \"chore: update Reddit insights [automated]\",\n  \"content\": \"{{ $json.content }}\",\n  \"sha\": \"{{ $json.sha }}\"\n}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "6612687c-f61b-41da-98a6-1748a6971ce7",
+      "name": "Commit to GitHub",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const item = $input.item.json;\nconst ts = new Date().toISOString();\nconsole.log('[TotalTechPicks] Reddit insights updated at ' + ts);\nreturn { json: { status: 'success', updatedAt: ts, product: item.productName || 'unknown' } };"
+      },
+      "id": "06991787-40da-42bd-9148-1f9e9646d5f0",
+      "name": "Log Run",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        224,
+        80
+      ]
+    },
+    {
+      "id": "extract-comments-node",
+      "name": "Extract Comments",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1350,
+        300
+      ],
+      "parameters": {
+        "jsCode": "const item = $input.item.json;\nconst productName = item.productName || 'Product';\nconst productSlug = item.productSlug || '';\nconst postTitle = item.postTitle || '';\nconst permalink = item.permalink || '';\nconst subreddit = item.subreddit || 'tech';\nconst postScore = item.postScore || 0;\nconst numComments = item.numComments || 0;\nconst commentTexts = [\n  'Reddit post: ' + JSON.stringify(postTitle),\n  'Community: r/' + subreddit + ' | Score: ' + postScore + ' upvotes | ' + numComments + ' comments',\n  'This product is actively discussed and recommended in the ' + subreddit + ' community.'\n].join(' | ');\nconst prompt = 'Analyze these Reddit posts about ' + productName + '. Return ONLY valid JSON with fields: product (string), summary (string), pros (array of strings), cons (array of strings), sentiment (positive/neutral/negative), key_insights (array of strings), recommended_by_users (boolean).\\n\\nReddit data: ' + commentTexts.substring(0, 800);\nconst ollamaPayload = JSON.stringify({ model: 'llama3.2:3b', prompt: prompt, stream: false, format: 'json' });\nreturn { json: { productName, productSlug, postTitle, permalink, ollamaPayload } };"
+      }
+    },
+    {
+      "id": "extract-products",
+      "name": "Extract Product Mentions",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        200
+      ],
+      "parameters": {
+        "jsCode": "\n// Pull context from Parse Insights output\nconst ctx = $('Parse Insights').item.json;\nconst productName = ctx.product || '';\nconst productSlug = ctx.productSlug || '';\nconst ollamaRaw = $('Ollama ΓÇö Extract Insights').item.json;\nconst responseStr = typeof ollamaRaw.response === 'string' ? ollamaRaw.response : '';\n\n// Ask Ollama to extract any NEW product names/ASINs mentioned in the Reddit post\n// We'll build a payload to discover other products\nconst postContext = $('Extract Comments').item.json;\nconst posts = postContext.posts || [];\nconst allText = posts.map(p => p.title).join(' | ');\n\n// Simple heuristic: look for Amazon ASINs in the text\nconst asinMatches = [...allText.matchAll(/B0[A-Z0-9]{8}/g)].map(m => m[0]);\nconst uniqueAsins = [...new Set(asinMatches)];\n\nif (uniqueAsins.length === 0) return [{ json: { skip: true } }];\n\nreturn uniqueAsins.map(asin => ({ json: { asin, articleSlug: productSlug, source: 'reddit-mention' } }));\n"
+      }
+    },
+    {
+      "id": "skip-check",
+      "name": "Has New ASINs?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        440,
+        200
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.skip }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "notEquals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      }
+    },
+    {
+      "id": "fetch-amazon-product",
+      "name": "Fetch Amazon Product",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        200
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "={{ 'https://www.amazon.com/dp/' + $json.asin }}",
+        "options": {
+          "timeout": 12000
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "parse-product-data",
+      "name": "Parse Product Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        880,
+        200
+      ],
+      "parameters": {
+        "jsCode": "\nconst upstream = $('Has New ASINs?').item.json;\nconst asin = upstream.asin;\nconst articleSlug = upstream.articleSlug;\nconst html = $input.item.json.data ?? '';\n\n// Skip robot/CAPTCHA pages\nif (html.length < 5000) return [];\n\n// Extract title\nconst titleMatch = html.match(/<title[^>]*>([^<]+)<\\/title>/i);\nconst rawTitle = titleMatch ? titleMatch[1].replace(/ - Amazon\\.com.*$/, '').replace(/Amazon\\.com.*?:\\s*/, '').trim() : '';\nif (!rawTitle || rawTitle.length < 5) return [];\n\n// Extract og:image\nconst ogMatch = html.match(/<meta[^>]+property=[\"']og:image[\"'][^>]+content=[\"']([^\"']+)[\"']/i)\n               || html.match(/<meta[^>]+content=[\"']([^\"']+)[\"'][^>]+property=[\"']og:image[\"']/i);\nconst imageUrl = ogMatch ? ogMatch[1].split('?')[0] : null;\n\n// Extract price\nconst priceMatch = html.match(/class=\"a-price-whole\"[^>]*>([0-9,]+)/);\nconst price = priceMatch ? '$' + priceMatch[1].replace(',','') : null;\n\n// Extract description  \nconst descMatch = html.match(/<span[^>]+id=\"productDescription\"[^>]*>[\\s\\S]{0,500}/);\nconst description = null; // Skip for now, too complex to parse reliably\n\nreturn [{ json: { asin, name: rawTitle, imageUrl, price, articleSlug, addedAt: new Date().toISOString() } }];\n"
+      }
+    },
+    {
+      "id": "get-auto-products-sha",
+      "name": "Get Auto Products SHA",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1100,
+        200
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/auto-products.json",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer YOUR_GITHUB_PAT_HERE"
+            },
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "merge-auto-products",
+      "name": "Merge & Commit Auto Products",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1320,
+        200
+      ],
+      "parameters": {
+        "jsCode": "\nconst newProduct = $('Parse Product Data').item.json;\nconst sha = $input.item.json.sha;\nconst existingContent = Buffer.from($input.item.json.content, 'base64').toString('utf-8');\nlet existing = [];\ntry { existing = JSON.parse(existingContent); } catch(e) {}\n\n// Check if ASIN already exists\nconst alreadyPresent = existing.some(p => p.asin === newProduct.asin);\nif (alreadyPresent) return [{ json: { skip: true } }];\n\n// Also get products.ts ASINs to avoid duplicates with curated list\n// (We'll just skip if ASIN matches ΓÇö health check handles curated products)\nexisting.push(newProduct);\nconst newContent = JSON.stringify(existing, null, 2);\n\nreturn [{ json: { content: newContent, sha } }];\n"
+      }
+    },
+    {
+      "id": "commit-auto-products",
+      "name": "Commit Auto Products",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1540,
+        200
+      ],
+      "parameters": {
+        "method": "PUT",
+        "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/auto-products.json",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer YOUR_GITHUB_PAT_HERE"
+            },
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"message\": \"={{ \"chore: add community-discovered product \" + $json.asin + \" [automated]\" }}\",\n  \"content\": \"={{ Buffer.from($json.content).toString('base64') }}\",\n  \"sha\": \"={{ $json.sha }}\",\n  \"branch\": \"master\"\n}"
+      }
+    }
+  ],
+  "connections": {
+    "Every 8 Hours": {
+      "main": [
+        [
+          {
+            "node": "Product Keyword List",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Product Keyword List": {
+      "main": [
+        [
+          {
+            "node": "Reddit Search",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Reddit Search": {
+      "main": [
+        [
+          {
+            "node": "Filter Posts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter Posts": {
+      "main": [
+        [
+          {
+            "node": "Has Posts?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has Posts?": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Extract Comments",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Comments": {
+      "main": [
+        [
+          {
+            "node": "Extract Comments",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama ΓÇö Extract Insights": {
+      "main": [
+        [
+          {
+            "node": "Parse Insights",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Insights": {
+      "main": [
+        [
+          {
+            "node": "Collect All Insights",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Collect All Insights": {
+      "main": [
+        [
+          {
+            "node": "Merge by Product",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge by Product": {
+      "main": [
+        [
+          {
+            "node": "Get Current File SHA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Current File SHA": {
+      "main": [
+        [
+          {
+            "node": "Prepare Commit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Commit": {
+      "main": [
+        [
+          {
+            "node": "Has Changes?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has Changes?": {
+      "main": [
+        [
+          {
+            "node": "Commit to GitHub",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Log Run",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Commit to GitHub": {
+      "main": [
+        [
+          {
+            "node": "Log Run",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Extract Product Mentions",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Comments": {
+      "main": [
+        [
+          {
+            "node": "Ollama ΓÇö Extract Insights",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Product Mentions": {
+      "main": [
+        [
+          {
+            "node": "Has New ASINs?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has New ASINs?": {
+      "main": [
+        [
+          {
+            "node": "Fetch Amazon Product",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "Fetch Amazon Product": {
+      "main": [
+        [
+          {
+            "node": "Parse Product Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Product Data": {
+      "main": [
+        [
+          {
+            "node": "Get Auto Products SHA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Auto Products SHA": {
+      "main": [
+        [
+          {
+            "node": "Merge & Commit Auto Products",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge & Commit Auto Products": {
+      "main": [
+        [
+          {
+            "node": "Commit Auto Products",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "active": true
+}
+

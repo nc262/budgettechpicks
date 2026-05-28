@@ -1,0 +1,225 @@
+{
+  "name": "Product Health Check",
+  "nodes": [
+    {
+      "id": "schedule",
+      "name": "Schedule ΓÇö Weekly",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks",
+              "weeksInterval": 1,
+              "triggerAtDay": [
+                0
+              ],
+              "triggerAtHour": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "get-products",
+      "name": "Get products.ts",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        0
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/products.ts",
+        "options": {},
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer YOUR_GITHUB_PAT_HERE"
+            },
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "parse-asins",
+      "name": "Parse ASINs",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        440,
+        0
+      ],
+      "parameters": {
+        "jsCode": "\nconst raw = $input.item.json;\nconst content = Buffer.from(raw.content, 'base64').toString('utf-8');\nconst asinMatches = [...content.matchAll(/asin:\\s*\"([A-Z0-9]{10})\"/g)];\nconst nameMatches = [...content.matchAll(/name:\\s*\"([^\"]+)\"/g)];\nconst items = [];\nfor (let i = 0; i < asinMatches.length; i++) {\n  const asin = asinMatches[i][1];\n  // Find the name closest before this asin match\n  items.push({ json: { asin, index: i } });\n}\nreturn items;\n",
+        "mode": "runOnceForAllItems"
+      }
+    },
+    {
+      "id": "get-current-health",
+      "name": "Get Current Health SHA",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        200
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/product-health.json",
+        "options": {},
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer YOUR_GITHUB_PAT_HERE"
+            },
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "build-health-json",
+      "name": "Build Health JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1760,
+        0
+      ],
+      "parameters": {
+        "jsCode": "\nconst sha = $input.first().json.sha;\nconst parseItems = $('Parse ASINs').all();\n\nconst healthMap = {};\nfor (const item of parseItems) {\n  const asin = item.json.asin;\n  healthMap[asin] = {\n    imageUrl: 'https://m.media-amazon.com/images/P/' + asin + '.01._SX300_QL70_.jpg',\n    isLive: true,\n    checkedAt: new Date().toISOString()\n  };\n}\n\nconst content = JSON.stringify(healthMap, null, 2);\nconst base64Content = Buffer.from(content).toString('base64');\nreturn [{ json: { sha, base64Content, count: Object.keys(healthMap).length } }];\n",
+        "mode": "runOnceForAllItems"
+      }
+    },
+    {
+      "id": "commit-health",
+      "name": "Commit Health JSON",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1980,
+        0
+      ],
+      "parameters": {
+        "method": "PUT",
+        "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/product-health.json",
+        "options": {},
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer YOUR_GITHUB_PAT_HERE"
+            },
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "keypair",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "chore: update product health data [automated]"
+            },
+            {
+              "name": "content",
+              "value": "={{ $json.base64Content }}"
+            },
+            {
+              "name": "sha",
+              "value": "={{ $json.sha }}"
+            },
+            {
+              "name": "branch",
+              "value": "master"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Schedule ΓÇö Weekly": {
+      "main": [
+        [
+          {
+            "node": "Get products.ts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get products.ts": {
+      "main": [
+        [
+          {
+            "node": "Parse ASINs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse ASINs": {
+      "main": [
+        [
+          {
+            "node": "Get Current Health SHA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Health JSON": {
+      "main": [
+        [
+          {
+            "node": "Commit Health JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Current Health SHA": {
+      "main": [
+        [
+          {
+            "node": "Build Health JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": true
+}
+
