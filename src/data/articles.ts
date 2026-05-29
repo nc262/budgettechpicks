@@ -19,7 +19,7 @@ export const articles: Article[] = [
     intro: "Modern laptops ship with fewer ports than ever. A good USB-C hub solves that instantly — and you don't need to spend $100+ to get one that works great.",
     updatedAt: "May 2026",
     category: "USB-C Hubs",
-    editorNote: "I bought my first USB-C hub by picking the cheapest one on Amazon. It made a concerning smell after 20 minutes and I never saw my files again. These won't do that.",
+    editorNote: "I have two work laptops and a gaming PC on the same desk. The number of times I've swapped the same hub between machines because I didn't buy enough of them — I've stopped counting. One hub per machine is the move. These are the ones that actually work.",
     tldr: [
       { label: "Best Overall", name: "Anker 7-in-1 USB-C Hub", asin: "B07ZVKTP53" },
       { label: "Best Value", name: "Hiearcool USB-C Hub 7-in-1", asin: "B09413MX6X" },
@@ -53,7 +53,7 @@ export const articles: Article[] = [
     intro: "Your laptop's built-in webcam makes you look like you're in witness protection. These picks cost less than a dinner out and look ten times better.",
     updatedAt: "May 2026",
     category: "Webcams",
-    editorNote: "My laptop webcam made me look like I was testifying before Congress via satellite link from 1994. Two years of Zoom calls. Two years. Never again — these $40 cameras will make you look like you actually tried.",
+    editorNote: "I was on video calls for months before someone finally said something. Laptop webcam. Working from home means people see your face all day — that is not the time to be using the camera that came free with your laptop.",
     tldr: [
       { label: "Best Overall", name: "Logitech C920s HD Pro Webcam", asin: "B07K986YLL" },
       { label: "Best in Low Light", name: "Razer Kiyo Ring Light Webcam", asin: "B075N1BYWB" },
@@ -87,7 +87,7 @@ export const articles: Article[] = [
     intro: "Premium earbuds cost $250+. But the gap between $50 and $250 has never been smaller. Here are the picks that punch way above their price.",
     updatedAt: "May 2026",
     category: "Wireless Earbuds",
-    editorNote: "I spent $250 on AirPods Pro once. Lost one in a parking lot two weeks later. Now I keep a $20 TOZO pair as backup and feel genuinely smarter than I did before.",
+    editorNote: "I already have a headset I love for the desk. But earbuds are for everything else — commuting, errands, not wanting to look like you're running air traffic control at the grocery store. These are the ones that actually stay in your ears.",
     tldr: [
       { label: "Best Overall", name: "Sony WF-1000XM5 ANC Earbuds", asin: "B0C33XXS56" },
       { label: "Best Budget", name: "TOZO T6 True Wireless Earbuds", asin: "B07RGZ5NKS" },
@@ -121,7 +121,7 @@ export const articles: Article[] = [
     intro: "You don't need a $5,000 standing desk setup to have a great workspace. A few well-chosen accessories can transform a cluttered desk without breaking the bank.",
     updatedAt: "May 2026",
     category: "Desk Accessories",
-    editorNote: "My desk used to look like a cable manufacturer exploded on it. Monitor at table height. Phone nowhere to be found. Now it's basically a productivity shrine and I take Zoom calls standing up like a functional adult. It cost about $80 in total to fix.",
+    editorNote: "Before I got a proper desk setup I had zip ties holding cables to the underside of my IKEA desk like some kind of IT infrastructure held together with prayers. Cable management matters more than people think. Start here before you buy anything else.",
     tldr: [
       { label: "Best Overall", name: "Ergotron LX Desk Monitor Arm", asin: "B0149RILEW" },
       { label: "Instant Upgrade", name: "BenQ ScreenBar Monitor Light", asin: "B076VNQDLT" },
@@ -155,7 +155,7 @@ export const articles: Article[] = [
     intro: "You don't need to spend $200 on a gaming mouse to dominate. These picks deliver real gaming performance at a fraction of the price.",
     updatedAt: "May 2026",
     category: "Gaming Gear",
-    editorNote: "I used a $5 office mouse for my first year of PC gaming and wondered why I kept losing. Spoiler: it had 800 DPI and a scroll wheel that double-registered twice per session. Don't be me. These picks are real.",
+    editorNote: "I'm a Logitech guy through and through — G502 mouse, G915 keyboard, G733 headset. But I can still tell a good deal when I see one. These picks are for where I was before I went all-in. Don't run a $20 mouse for a year like I did.",
     tldr: [
       { label: "Best Gaming Mouse", name: "Logitech G305 LIGHTSPEED Wireless Gaming Mouse", asin: "B07CMS5Q6P" },
       { label: "Best Budget Keyboard", name: "Redragon K552 Mechanical Keyboard", asin: "B016MAK38U" },
@@ -189,7 +189,7 @@ export const articles: Article[] = [
     intro: "Forget stress balls and fidget spinners. The best desk tech levitates, glows, responds to your touch, or looks like it was stolen from a sci-fi set. These picks start conversations every single time someone walks into your office.",
     updatedAt: "May 2026",
     category: "Desk Toys & Fun",
-    editorNote: "I have been told by multiple people that my desk looks like 'a scientist who never left grad school.' I take that as a compliment. Everything on this page has made at least one visitor stop mid-sentence and say 'wait, what IS that?' That's the bar.",
+    editorNote: "My desk doesn't have a lot of spare room — two work laptops, a KVM switch, speakers, and a 49-inch monitor don't leave much. But the things that made the cut are the ones that actually stop people mid-sentence. That's the bar for desk tech.",
     tldr: [
       { label: "Most Impressive", name: "Levitating Moon Lamp", asin: "B07VPZF11N" },
       { label: "Best Light Show", name: "Neon Plasma Globe Ball with Lightning", asin: "B00FQ30WL8" },
@@ -223,7 +223,7 @@ export const articles: Article[] = [
     intro: "A smart home doesn't require a $500 setup. These gadgets work with Alexa and Google Home at every price point.",
     updatedAt: "May 2026",
     category: "Smart Home",
-    editorNote: "I started my smart home journey with a single smart plug in 2019. I now have 47 connected devices and can turn off every light in my house by talking to the air. This is the best and worst thing that has ever happened to me. Start small.",
+    editorNote: "Working from home means the line between 'at work' and 'not at work' disappears fast. I have my office lights on a smart schedule — they turn on when I start and off when I should stop. It's the only reason I maintain any kind of boundary. Start with one smart plug.",
     tldr: [
       { label: "Best Speaker", name: "Amazon Echo Dot (5th Gen)", asin: "B09B8RF4PY" },
       { label: "Best Value", name: "Kasa Smart Plug EP10 (4-Pack)", asin: "B09T3DM397" },
@@ -257,7 +257,7 @@ export const articles: Article[] = [
     intro: "The best portable tech keeps you charged, connected, and never losing your stuff — at any budget.",
     updatedAt: "May 2026",
     category: "Portable Tech",
-    editorNote: "I once spent 4 hours in an airport with a dead phone and nothing to do except read the departures board like it was entertainment. The Anker PowerCore 10000 has been in every bag I've owned since 2019. It's not exciting. It's essential.",
+    editorNote: "I carry a laptop basically everywhere. Which means I carry a charger. Which means I need a bag that fits all of it. I've had the Anker PowerCore in every bag I've owned for years at this point — not exciting, but it's never let me down.",
     tldr: [
       { label: "Best Power Bank", name: "Anker PowerCore 10000 Power Bank", asin: "B0194WDVHI" },
       { label: "Best Speaker", name: "Anker Soundcore Mini Bluetooth Speaker", asin: "B01N5QLLT3" },
@@ -291,7 +291,7 @@ export const articles: Article[] = [
     intro: "Your monitor is the one piece of tech you stare at for 8+ hours a day. It deserves more thought than your GPU. Whether you're on a tight budget or ready to splurge on QD-OLED, here's what's actually worth buying.",
     updatedAt: "May 2026",
     category: "Monitors & Displays",
-    editorNote: "I used a 1080p 60Hz monitor until 2021 and genuinely thought I understood gaming. Then I borrowed a friend's 1440p 165Hz panel for a weekend and felt like I'd been lied to my entire gaming life. The upgrade is real.",
+    editorNote: "I ran three monitors for two years and thought I was maximizing productivity. Then I tried the Samsung Odyssey G95C — one 49-inch ultrawide that takes three separate inputs — and sold all three monitors within the month. This upgrade is genuinely not reversible.",
     tldr: [
       { label: "Best Budget Gaming", name: "Samsung Odyssey G5 27\" 165Hz", asin: "B08GZXZD5B" },
       { label: "Best All-Around", name: "ASUS TUF Gaming VG27AQ 27\" QHD 165Hz", asin: "B07Z6BGV8J" },
@@ -325,7 +325,7 @@ export const articles: Article[] = [
     intro: "Great content doesn't need a $10,000 studio. A few hundred dollars of the right gear turns your desk into a broadcast setup. Here's exactly what to buy and in what order.",
     updatedAt: "May 2026",
     category: "Streaming Gear",
-    editorNote: "I watched a streamer with a $30 mic and 720p webcam who had 50,000 concurrent viewers, and a creator with a $3,000 setup who had 12. Gear matters less than you think — but bad audio will make people leave immediately. Fix that first.",
+    editorNote: "I'm not a streamer but I've been on enough all-day video calls to know this: bad audio ends conversations. People will tolerate a blurry camera. Bad audio and they'll find a reason to wrap up the meeting. Fix the mic first, everything else second.",
     tldr: [
       { label: "Best Starter Mic", name: "Blue Yeti USB Microphone", asin: "B00N1YPXW2" },
       { label: "Best Workflow Tool", name: "Elgato Stream Deck MK.2", asin: "B09738CV2G" },
@@ -359,7 +359,7 @@ export const articles: Article[] = [
     intro: "Good audio is felt before it's understood. Whether you're mixing music, gaming, or just tired of hearing every noise in your office, these picks represent the best sound per dollar at every price point.",
     updatedAt: "May 2026",
     category: "Audio & Microphones",
-    editorNote: "I have described the Sennheiser HD 650 to at least six people as 'it sounds like the band is in the room.' Two of those people bought them. One of them stopped talking to me because they can't stop buying more audio gear now. I regret nothing.",
+    editorNote: "I have 3 computers on my desk and a Logitech G733 headset I actually like. I spent way too long trying cheap hubs and splitters to get audio from all three machines into one headset. None of them worked the way they should. If I was doing it over I'd just buy a real audio mixer from the jump and skip all of that.",
     tldr: [
       { label: "Best Studio Headphones", name: "Audio-Technica ATH-M50x Studio Headphones", asin: "B00HVLUR86" },
       { label: "Best Wireless ANC", name: "Sony WH-1000XM5 Wireless ANC Headphones", asin: "B09XS7JWHH" },
@@ -393,7 +393,7 @@ export const articles: Article[] = [
     intro: "A great gaming setup isn't about spending the most — it's about spending smart. We cover everything from the $80 mechanical keyboard that competes with $200 boards to the Steam Deck and ROG Ally that put your entire PC in your hands.",
     updatedAt: "May 2026",
     category: "Gaming Setups",
-    editorNote: "I have spent more on my gaming setup than my car payment in any given month. I regret nothing except the chair I bought before the Secretlab Titan existed. My spine specifically regrets that one.",
+    editorNote: "My SecretLab Magnus Pro desk and Titan XL chair are the two things I'd order again the same day if they broke. Everything else on my desk has been swapped out at least once in two years. Those two have never moved. Build around your chair and desk first.",
     tldr: [
       { label: "Best Endgame Mouse", name: "Logitech G Pro X Superlight 2 Gaming Mouse", asin: "B0BZNG6LXF" },
       { label: "Best Gaming Chair", name: "Secretlab Titan Evo 2022 Gaming Chair", asin: "B09PJSLNTJ" },
