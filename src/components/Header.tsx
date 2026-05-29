@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { label: "🎧 Audio", href: "/best-audio-gear" },
   { label: "🖥️ Monitors", href: "/best-monitors-and-displays" },
   { label: "🌐 Streaming", href: "/best-streaming-gear" },
-  { label: "🔌 Earbuds", href: "/best-wireless-earbuds-under-50" },
+  { label: "🎵 Earbuds", href: "/best-wireless-earbuds-under-50" },
   { label: "🧲 Desk Toys", href: "/best-desk-toys-under-50" },
   { label: "🏠 Smart Home", href: "/best-smart-home-under-50" },
   { label: "💻 USB-C Hubs", href: "/best-usb-c-hubs-under-50" },
