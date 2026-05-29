@@ -754,5 +754,23 @@
   "B07WZPXT3L": {
     "imageSource": "local",
     "imageUrl": "/images/products/B07WZPXT3L.jpg"
+  },
+  "B07ZPZN6LN": {
+    "isLive": true,
+    "checkedAt": "2026-05-30T00:00:00.000Z",
+    "imageUrl": "/images/products/B07ZPZN6LN.jpg",
+    "imageSource": "local"
+  },
+  "B08D9PQVGD": {
+    "isLive": true,
+    "checkedAt": "2026-05-30T00:00:00.000Z",
+    "imageUrl": "/images/products/B08D9PQVGD.jpg",
+    "imageSource": "local"
+  },
+  "B0CJM9TW2Y": {
+    "isLive": true,
+    "checkedAt": "2026-05-30T00:00:00.000Z",
+    "imageUrl": "/images/products/B0CJM9TW2Y.jpg",
+    "imageSource": "local"
   }
 }

@@ -16,6 +16,7 @@ const NAV_LINKS = [
   { label: "🎒 Portable Tech", href: "/best-portable-tech-under-50" },
   { label: "🖥 Desk Setup", href: "/best-desk-accessories-under-50" },
   { label: "🕹 Gaming Setups", href: "/best-gaming-setups" },
+  { label: "⚙️ My Setup", href: "/my-setup" },
 ];
 
 export default function Header() {
