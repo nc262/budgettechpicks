@@ -29,10 +29,10 @@ const SETUP: SetupCategory[] = [
     title: "Display",
     items: [
       {
-        name: "Samsung Odyssey G95C 49\" Super Ultrawide",
-        note: "I used to run 3 monitors. Then I got this and sold all three. The G95C takes 3 separate inputs simultaneously — so I have my gaming PC, my work laptop, and a second work machine all feeding into one screen. Combined with the KVM switch below, it's genuinely like having 3 full desks collapsed into one. You cannot go back to normal monitors after this.",
-        tag: "Game Changer",
-        amazonUrl: "https://www.amazon.com/dp/B0BLF2WVB6?tag=totaltechpicks-20",
+        name: "Samsung 57\" Odyssey Neo G9 Dual 4K UHD",
+        note: "I used to run 3 monitors. Then I got this and sold all three. 57 inches of Quantum Mini-LED, dual 4K panels side by side, 240Hz, HDR 1000, HDMI 2.1 and DP 2.1 — it takes 3 separate inputs simultaneously so I have my gaming PC, my work laptop, and a second work machine all feeding into one screen. Combined with the KVM switch below, it's genuinely like having 3 full desks collapsed into one. You cannot go back to normal monitors after this. Also yes, 57 inches is as absurd as it sounds. I love it.",
+        tag: "The Centerpiece",
+        amazonUrl: "https://www.amazon.com/s?k=Samsung+57+Odyssey+Neo+G9+LS57CG952NNXZA&tag=totaltechpicks-20",
       },
     ],
   },
@@ -67,7 +67,7 @@ const SETUP: SetupCategory[] = [
     items: [
       {
         name: "SecretLab Magnus Pro XL Desk",
-        note: "Honestly my favorite thing in this entire setup. It's a full steel desk with a magnetic surface, and the cable management tray runs the entire length underneath. With 3 computers, a KVM switch, speakers, webcam, and a 49\" monitor all on one desk — the Magnus Pro is the only reason it doesn't look like a server room exploded. The magnetic accessories are a nice touch too. If this broke tomorrow I'd order another one the same day.",
+        note: "Honestly my favorite thing in this entire setup. It's a full steel desk with a magnetic surface, and the cable management tray runs the entire length underneath. With 3 computers, a KVM switch, speakers, webcam, and a 57\" monitor all on one desk — the Magnus Pro is the only reason it doesn't look like a server room exploded. The magnetic accessories are a nice touch too. If this broke tomorrow I'd order another one the same day.",
         tag: "Favorite Piece",
         externalUrl: "https://secretlabchairs.com/products/magnus-pro",
       },
@@ -163,7 +163,7 @@ export default function MySetupPage() {
           <div>
             <h2 className="font-black text-white text-xl mb-2">The Setup Philosophy</h2>
             <p className="text-gray-300 leading-relaxed">
-              I used to run 3 separate monitors. Then I replaced all of them with one 49&quot; ultrawide and a KVM switch — and suddenly I could control 3 machines with one keyboard and mouse, all on the same screen.
+              I used to run 3 separate monitors. Then I replaced all of them with one 57&quot; ultrawide and a KVM switch — and suddenly I could control 3 machines with one keyboard and mouse, all on the same screen.
               The goal was: sit down, start working, start gaming, and never think about cable management again. The Magnus Pro desk made that last part possible.
             </p>
           </div>
