@@ -46,6 +46,12 @@ export default function Header() {
             </Link>
           ))}
           <Link
+            href="/my-setup"
+            className="text-sm font-semibold text-blue-400 hover:text-blue-300 hover:bg-gray-800 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap"
+          >
+            ⚙️ My Setup
+          </Link>
+          <Link
             href="/about"
             className="text-sm font-semibold text-gray-300 hover:text-blue-400 hover:bg-gray-800 px-3 py-1.5 rounded-lg transition-all"
           >

@@ -144,7 +144,7 @@ export default function HomePage() {
         {/* Category grid */}
         <section className="mb-14">
           <h2 className="text-2xl font-black text-white mb-2">Browse All Categories</h2>
-          <p className="text-gray-400 mb-6 text-sm">From $10 budget finds to absolute god-tier gear. Every category has picks for every wallet.</p>
+          <p className="text-gray-400 mb-6 text-sm">From $10 budget finds to premium picks. Every category has something for every wallet.</p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {articles.map((article) => {
               const emoji = categoryEmoji[article.category] ?? "🛒";
@@ -183,7 +183,7 @@ export default function HomePage() {
               <p className="text-xs text-gray-400 mt-1">Cheapest Pick</p>
             </div>
             <div>
-              <p className="text-3xl font-black text-blue-400">God Tier 🫡</p>
+              <p className="text-3xl font-black text-blue-400">Premium Picks</p>
               <p className="text-xs text-gray-400 mt-1">Top of Price Range</p>
             </div>
           </div>
