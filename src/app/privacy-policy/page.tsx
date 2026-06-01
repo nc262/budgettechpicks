@@ -10,7 +10,8 @@ export const metadata: Metadata = {
 const LAST_UPDATED = "May 28, 2026";
 const SITE = "TotalTechPicks";
 const SITE_URL = "https://totaltechpicks.com";
-const CONTACT_EMAIL = "contact@totaltechpicks.com";
+// Split to prevent Cloudflare email obfuscation (which breaks /cdn-cgi/ crawl)
+const CONTACT_EMAIL = "contact" + "@" + "totaltechpicks.com";
 
 export default function PrivacyPolicyPage() {
   return (
