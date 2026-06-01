@@ -44,7 +44,10 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "MClIPiF4Bq8pkSGn-UoTHbd4sTtt-i0fPXHzixXmpCo",
-    other: { "p:domain_verify": "b5081bc005ef6e5a700de0b9a92dcb3a" },
+    other: {
+      "p:domain_verify": "b5081bc005ef6e5a700de0b9a92dcb3a",
+      "msvalidate.01": "AE739AF0E5025A1689B899FE6A404D91",
+    },
   },
   openGraph: {
     siteName: SITE_NAME,
