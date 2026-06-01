@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Product } from "@/data/products";
 import ProductCard from "./ProductCard";
+import CompareDrawer from "./CompareDrawer";
 import AdSlot from "./AdSlot";
 
 interface Range {
@@ -40,8 +41,11 @@ interface Props {
   redditByProduct?: Record<string, RedditInsight>;
 }
 
+const MAX_COMPARE = 4;
+
 export default function ProductFilter({ products, redditByProduct = {} }: Props) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [compareIds, setCompareIds] = useState<string[]>([]);
 
   const activeRange = RANGES[activeIndex];
 
@@ -54,6 +58,20 @@ export default function ProductFilter({ products, redditByProduct = {} }: Props)
     activeRange.label === "All"
       ? products
       : products.filter((p) => p.priceNum >= activeRange.min && p.priceNum < activeRange.max);
+
+  function toggleCompare(id: string) {
+    setCompareIds((prev) => {
+      if (prev.includes(id)) return prev.filter((x) => x !== id);
+      if (prev.length >= MAX_COMPARE) return prev; // silently ignore when at max
+      return [...prev, id];
+    });
+  }
+
+  const compareProducts = compareIds
+    .map((id) => products.find((p) => p.id === id))
+    .filter((p): p is Product => !!p);
+
+  const atMax = compareIds.length >= MAX_COMPARE;
 
   return (
     <div>
@@ -105,6 +123,18 @@ export default function ProductFilter({ products, redditByProduct = {} }: Props)
         )}
       </div>
 
+      {/* Compare hint — shown once at least 1 product is selected */}
+      {compareIds.length === 1 && (
+        <div className="mb-4 px-4 py-3 rounded-xl bg-blue-500/10 border border-blue-500/20 text-sm text-blue-300 font-medium">
+          ⚖️ Select one more product to start comparing.
+        </div>
+      )}
+      {atMax && (
+        <div className="mb-4 px-4 py-3 rounded-xl bg-yellow-500/10 border border-yellow-500/20 text-sm text-yellow-300 font-medium">
+          ⚖️ Maximum {MAX_COMPARE} products selected for comparison.
+        </div>
+      )}
+
       {/* Product list */}
       {filtered.length === 0 ? (
         <div className="text-center py-20 bg-gray-900 rounded-2xl border border-gray-700/50">
@@ -118,12 +148,20 @@ export default function ProductFilter({ products, redditByProduct = {} }: Props)
           </button>
         </div>
       ) : (
-        <div className="space-y-6">
+        <div className={`space-y-6 ${compareProducts.length >= 2 ? "pb-64" : ""}`}>
           {filtered.map((product, index) => {
-              const insight = redditByProduct[product.name.toLowerCase()] ?? redditByProduct[product.name];
-              return (
+            const insight = redditByProduct[product.name.toLowerCase()] ?? redditByProduct[product.name];
+            const isSelected = compareIds.includes(product.id);
+            return (
               <div key={product.id}>
-                <ProductCard product={product} rank={index + 1} redditInsight={insight} />
+                <ProductCard
+                  product={product}
+                  rank={index + 1}
+                  redditInsight={insight}
+                  isCompareSelected={isSelected}
+                  onToggleCompare={() => toggleCompare(product.id)}
+                  compareDisabled={atMax && !isSelected}
+                />
                 {index === 1 && (
                   <div className="mt-6">
                     <AdSlot slot="8753330826" style="rectangle" />
@@ -134,7 +172,13 @@ export default function ProductFilter({ products, redditByProduct = {} }: Props)
           })}
         </div>
       )}
+
+      {/* Comparison drawer */}
+      <CompareDrawer
+        products={compareProducts}
+        onRemove={(id) => setCompareIds((prev) => prev.filter((x) => x !== id))}
+        onClear={() => setCompareIds([])}
+      />
     </div>
   );
 }
-

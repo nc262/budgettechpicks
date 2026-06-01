@@ -8,6 +8,9 @@ interface Props {
   product: Product;
   rank?: number;
   redditInsight?: RedditInsight;
+  isCompareSelected?: boolean;
+  onToggleCompare?: () => void;
+  compareDisabled?: boolean;
 }
 
 const badgeColors: Record<string, string> = {
@@ -36,7 +39,7 @@ function getScoreColor(score: number): string {
   return "text-orange-400 border-orange-400/30 bg-orange-400/10";
 }
 
-export default function ProductCard({ product, rank, redditInsight }: Props) {
+export default function ProductCard({ product, rank, redditInsight, isCompareSelected = false, onToggleCompare, compareDisabled = false }: Props) {
   const stars = Math.round(product.rating);
   const url = affiliateUrl(product.name);
   // Use n8n-verified image URL if available, otherwise fall back to CDN pattern
@@ -54,7 +57,11 @@ export default function ProductCard({ product, rank, redditInsight }: Props) {
   return (
     <div
       className={`bg-gray-900 rounded-2xl border shadow-lg hover:shadow-blue-900/30 hover:shadow-xl transition-all duration-200 overflow-hidden relative ${
-        isTopPick ? "border-l-4 border-l-yellow-400 border-t border-r border-b border-gray-700/50" : "border-gray-700/50"
+        isCompareSelected
+          ? "border-2 border-blue-400 shadow-blue-500/20"
+          : isTopPick
+          ? "border-l-4 border-l-yellow-400 border-t border-r border-b border-gray-700/50"
+          : "border-gray-700/50"
       }`}
     >
       <div className="p-5">
@@ -147,6 +154,22 @@ export default function ProductCard({ product, rank, redditInsight }: Props) {
               >
                 🛒 View on Amazon →
               </a>
+              {onToggleCompare && (
+                <button
+                  onClick={onToggleCompare}
+                  disabled={compareDisabled}
+                  title={compareDisabled ? "Max 4 products" : isCompareSelected ? "Remove from comparison" : "Add to comparison"}
+                  className={`inline-flex items-center gap-1.5 text-xs font-bold px-3 py-2.5 rounded-xl border transition-all ${
+                    isCompareSelected
+                      ? "bg-blue-500/20 text-blue-300 border-blue-400/60 hover:bg-red-500/20 hover:text-red-300 hover:border-red-400/60"
+                      : compareDisabled
+                      ? "bg-gray-800 text-gray-600 border-gray-700 cursor-not-allowed"
+                      : "bg-gray-800 text-gray-400 border-gray-700 hover:border-blue-400/60 hover:text-blue-300 hover:bg-blue-500/10"
+                  }`}
+                >
+                  {isCompareSelected ? "⊖ Remove" : "⚖️ Compare"}
+                </button>
+              )}
             </div>
           </div>
         </div>
