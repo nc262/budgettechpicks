@@ -1,6 +1,6 @@
 "use client";
 
-import { Product, affiliateUrl, amazonImageUrl, amazonImageFallback, amazonImageFallback2, categoryEmoji, categoryColor } from "@/data/products";
+import { Product, affiliateUrl, amazonImageUrl, amazonImageFallback, amazonImageFallback2, amazonImageHighRes, categoryEmoji, categoryColor } from "@/data/products";
 import productHealth from "@/data/product-health.json";
 import { RedditInsight } from "./ProductFilter";
 
@@ -83,6 +83,8 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
                 width={100}
                 height={100}
                 className="rounded-xl object-contain bg-gray-800 w-24 h-24"
+                data-pin-media={amazonImageHighRes(product.asin)}
+                data-pin-description={`${product.name} — ${product.description} | TotalTechPicks`}
                 onError={(e) => {
                   const t = e.currentTarget;
                   const state = parseInt(t.dataset.imgState ?? "0", 10);

@@ -35,6 +35,11 @@ export function amazonImageFallback2(asin: string): string {
   return `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SX300_.jpg`;
 }
 
+// High-res Amazon image for Pinterest pinning (500px)
+export function amazonImageHighRes(asin: string): string {
+  return `https://m.media-amazon.com/images/P/${asin}.01._SX500_QL70_.jpg`;
+}
+
 export const categoryEmoji: Record<string, string> = {
   "USB-C Hubs": "🔌",
   "Webcams": "📷",
