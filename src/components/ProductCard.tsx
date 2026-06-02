@@ -147,7 +147,10 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
             <p className="text-sm text-gray-400 mb-3 leading-relaxed">{product.description}</p>
 
             <div className="flex flex-wrap items-center gap-3">
-              <span className="text-2xl font-black text-blue-400">{product.price}</span>
+              <div className="flex flex-col leading-tight">
+                <span className="text-2xl font-black text-blue-400">{product.price}</span>
+                <span className="text-xs text-gray-500">est. · check Amazon for current price</span>
+              </div>
               <a
                 href={url}
                 target="_blank"
