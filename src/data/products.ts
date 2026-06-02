@@ -16,7 +16,8 @@ export interface Product {
 
 const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "totaltechpicks-20";
 
-export function affiliateUrl(name: string): string {
+export function affiliateUrl(name: string, asin?: string): string {
+  if (asin) return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}`;
   return `https://www.amazon.com/s?k=${encodeURIComponent(name)}&tag=${AMAZON_TAG}`;
 }
 

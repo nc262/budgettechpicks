@@ -139,7 +139,7 @@ export default function ArticlePage({ params }: Props) {
             {article.tldr.map((pick, i) => (
               <a
                 key={i}
-                href={affiliateUrl(pick.name)}
+                href={affiliateUrl(pick.name, pick.asin)}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 className="flex items-center justify-between bg-white/10 hover:bg-white/20 rounded-xl px-4 py-3 transition-all group"
