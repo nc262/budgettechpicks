@@ -125,12 +125,6 @@
     "imageUrl": "/images/products/B01N5QLLT3.jpg",
     "imageSource": "local"
   },
-  "B078GVTD9T": {
-    "isLive": false,
-    "checkedAt": "2026-06-02T18:51:35.371Z",
-    "imageUrl": "/images/products/B078GVTD9T.jpg",
-    "imageSource": "local"
-  },
   "B00N1YPXW2": {
     "isLive": true,
     "checkedAt": "2026-06-02T18:50:37.779Z",
@@ -747,5 +741,11 @@
     "imageUrl": "https://m.media-amazon.com/images/P/B0FQFB8FMG.01._SX300_QL70_.jpg",
     "isLive": true,
     "checkedAt": "2026-06-02T18:50:53.681Z"
+  },
+  "B09FBJT84P": {
+    "isLive": false,
+    "checkedAt": "2026-06-02T18:54:04.490Z",
+    "imageUrl": "/images/products/B09FBJT84P.jpg",
+    "imageSource": "local"
   }
 }
