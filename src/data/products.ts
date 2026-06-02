@@ -169,7 +169,7 @@ export const products: Product[] = [
   {
     id: "anker-powerconf-c200",
     name: "Anker PowerConf C200 2K Webcam",
-    asin: "B09MFMTMPD",
+    asin: "B085TFF7M1",
     price: "$39.99",
     priceNum: 39.99,
     rating: 4.4,
@@ -201,7 +201,7 @@ export const products: Product[] = [
   {
     id: "tozo-t6",
     name: "TOZO T6 True Wireless Earbuds",
-    asin: "B07RGZ5NKS",
+    asin: "B0F53L8J78",
     price: "$25.99",
     priceNum: 25.99,
     rating: 4.3,
@@ -216,7 +216,7 @@ export const products: Product[] = [
   {
     id: "soundcore-p3i",
     name: "Soundcore Life P3i ANC Earbuds",
-    asin: "B09W2CGWQY",
+    asin: "B0CRTYZG5C",
     price: "$39.99",
     priceNum: 39.99,
     rating: 4.4,
@@ -231,7 +231,7 @@ export const products: Product[] = [
   {
     id: "jabra-elite-3",
     name: "Jabra Elite 3 Wireless Earbuds",
-    asin: "B09GD6HY71",
+    asin: "B09B468VKX",
     price: "$49.99",
     priceNum: 49.99,
     rating: 4.3,
@@ -322,7 +322,7 @@ export const products: Product[] = [
   {
     id: "ergotron-lx-monitor-arm",
     name: "Ergotron LX Desk Monitor Arm",
-    asin: "B0149RILEW",
+    asin: "B07Q1NJ15Q",
     price: "$169.99",
     priceNum: 169.99,
     rating: 4.7,
@@ -337,7 +337,7 @@ export const products: Product[] = [
   {
     id: "benq-screenbar-plus",
     name: "BenQ ScreenBar Monitor Light",
-    asin: "B076VNQDLT",
+    asin: "B076VNFZJG",
     price: "$109.99",
     priceNum: 109.99,
     rating: 4.6,
@@ -414,7 +414,7 @@ export const products: Product[] = [
   {
     id: "hyperx-cloud-stinger",
     name: "HyperX Cloud Stinger Gaming Headset",
-    asin: "B01LXB3UKK",
+    asin: "B0C3BSZ56D",
     price: "$39.99",
     priceNum: 39.99,
     rating: 4.5,
@@ -444,7 +444,7 @@ export const products: Product[] = [
   {
     id: "razer-basilisk-v3",
     name: "Razer Basilisk V3 Gaming Mouse",
-    asin: "B09GVFD3G2",
+    asin: "B09C13PZX7",
     price: "$49.99",
     priceNum: 49.99,
     rating: 4.6,
@@ -568,7 +568,7 @@ export const products: Product[] = [
   {
     id: "kasa-smart-plug",
     name: "Kasa Smart Plug EP10 (4-Pack)",
-    asin: "B09T3DM397",
+    asin: "B091FXLMS8",
     price: "$19.99",
     priceNum: 19.99,
     rating: 4.6,
@@ -583,7 +583,7 @@ export const products: Product[] = [
   {
     id: "kasa-smart-bulb-4pack",
     name: "Kasa Smart Bulbs Full Color (4-Pack)",
-    asin: "B07J4K1T8P",
+    asin: "B08TB6VXFL",
     price: "$24.99",
     priceNum: 24.99,
     rating: 4.6,
@@ -598,7 +598,7 @@ export const products: Product[] = [
   {
     id: "amazon-echo-dot-5",
     name: "Amazon Echo Dot (5th Gen)",
-    asin: "B09B8RF4PY",
+    asin: "B0BFC7WQ6R",
     price: "$49.99",
     priceNum: 49.99,
     rating: 4.7,
@@ -613,7 +613,7 @@ export const products: Product[] = [
   {
     id: "philips-hue-starter",
     name: "Philips Hue White & Color Starter Kit",
-    asin: "B08BLM13VF",
+    asin: "B07GXVNBRZ",
     price: "$89.99",
     priceNum: 89.99,
     rating: 4.6,
@@ -675,7 +675,7 @@ export const products: Product[] = [
   {
     id: "tile-mate-tracker",
     name: "Tile Mate Item Tracker (4-Pack)",
-    asin: "B09B4LSD3N",
+    asin: "B0D63573CF",
     price: "$49.99",
     priceNum: 49.99,
     rating: 4.4,
@@ -705,7 +705,7 @@ export const products: Product[] = [
   {
     id: "ipad-mini-7",
     name: "Apple iPad mini (7th Generation, A17 Pro)",
-    asin: "B0CN2FVJXT",
+    asin: "B0DK3XM94S",
     price: "$499.00",
     priceNum: 499.00,
     rating: 4.7,
@@ -767,7 +767,7 @@ export const products: Product[] = [
   {
     id: "samsung-odyssey-g5",
     name: "Samsung Odyssey G5 27\" 165Hz Curved",
-    asin: "B08GZXZD5B",
+    asin: "B0GLV9PML4",
     price: "$249.99",
     priceNum: 249.99,
     rating: 4.6,
@@ -782,7 +782,7 @@ export const products: Product[] = [
   {
     id: "asus-tuf-vg27aq",
     name: "ASUS TUF Gaming VG27AQ 27\" QHD 165Hz",
-    asin: "B07Z6BGV8J",
+    asin: "B0F233D6W1",
     price: "$229.99",
     priceNum: 229.99,
     rating: 4.5,
@@ -797,7 +797,7 @@ export const products: Product[] = [
   {
     id: "benq-mobiuz-ex2710q",
     name: "BenQ MOBIUZ EX2710Q 27\" 165Hz IPS",
-    asin: "B09KHSZ2ZP",
+    asin: "B0FNNH6Y4G",
     price: "$299.99",
     priceNum: 299.99,
     rating: 4.5,
@@ -827,7 +827,7 @@ export const products: Product[] = [
   {
     id: "alienware-aw3423dwf",
     name: "Alienware AW3423DWF 34\" QD-OLED",
-    asin: "B09VJGQYQD",
+    asin: "B0BP94J8VD",
     price: "$799.99",
     priceNum: 799.99,
     rating: 4.7,
@@ -842,7 +842,7 @@ export const products: Product[] = [
   {
     id: "lg-c3-oled-tv",
     name: "LG C3 55\" OLED evo 4K TV",
-    asin: "B0BV45NSPD",
+    asin: "B0CVPMF4HQ",
     price: "$1296.99",
     priceNum: 1296.99,
     rating: 4.8,
@@ -904,7 +904,7 @@ export const products: Product[] = [
   {
     id: "elgato-hd60x",
     name: "Elgato HD60 X Capture Card",
-    asin: "B09V1HJ5H9",
+    asin: "B0FFTFYGLV",
     price: "$149.99",
     priceNum: 149.99,
     rating: 4.5,
@@ -919,7 +919,7 @@ export const products: Product[] = [
   {
     id: "rode-nt-usb-mini",
     name: "RØDE NT-USB Mini Condenser Microphone",
-    asin: "B08G4P5HZF",
+    asin: "B0CKVD62NX",
     price: "$99.00",
     priceNum: 99.00,
     rating: 4.5,
@@ -966,7 +966,7 @@ export const products: Product[] = [
   {
     id: "beyerdynamic-dt770-pro",
     name: "Beyerdynamic DT 770 Pro 80 Ohm Headphones",
-    asin: "B0016MNAAI",
+    asin: "B0011UB9CQ",
     price: "$149.00",
     priceNum: 149.00,
     rating: 4.7,
@@ -1026,7 +1026,7 @@ export const products: Product[] = [
   {
     id: "focusrite-scarlett-solo",
     name: "Focusrite Scarlett Solo 4th Gen Audio Interface",
-    asin: "B0BZPYDXHD",
+    asin: "B0C5JSHP7M",
     price: "$129.99",
     priceNum: 129.99,
     rating: 4.7,
@@ -1043,7 +1043,7 @@ export const products: Product[] = [
   {
     id: "razer-blackwidow-v3-tkl",
     name: "Razer BlackWidow V3 TKL Mechanical Keyboard",
-    asin: "B08FB5XWLY",
+    asin: "B09698GFZJ",
     price: "$79.99",
     priceNum: 79.99,
     rating: 4.6,
@@ -1058,7 +1058,7 @@ export const products: Product[] = [
   {
     id: "logitech-g-pro-superlight-2",
     name: "Logitech G Pro X Superlight 2 Gaming Mouse",
-    asin: "B0BZNG6LXF",
+    asin: "B09NBWQDKX",
     price: "$159.99",
     priceNum: 159.99,
     rating: 4.7,
@@ -1073,7 +1073,7 @@ export const products: Product[] = [
   {
     id: "steelseries-arctis-nova-pro",
     name: "SteelSeries Arctis Nova Pro Wireless Headset",
-    asin: "B09Y3S3HFV",
+    asin: "B0GS7PZH2P",
     price: "$249.99",
     priceNum: 249.99,
     rating: 4.5,
@@ -1103,7 +1103,7 @@ export const products: Product[] = [
   {
     id: "steam-deck-oled",
     name: "Steam Deck OLED 512GB",
-    asin: "B0C9DRRGWM",
+    asin: "B0CQ3L4726",
     price: "$549.00",
     priceNum: 549.00,
     rating: 4.7,
@@ -1118,7 +1118,7 @@ export const products: Product[] = [
   {
     id: "asus-rog-ally-x",
     name: "ASUS ROG Ally X Gaming Handheld",
-    asin: "B0CZQ5QYGM",
+    asin: "B0FM6C3ZMN",
     price: "$799.99",
     priceNum: 799.99,
     rating: 4.5,
