@@ -506,7 +506,7 @@ export const products: Product[] = [
   {
     id: "plasma-globe",
     name: "Neon Plasma Globe Ball with Lightning",
-    asin: "B00FQ30WL8",
+    asin: "B07JN136NS",
     price: "$19.99",
     priceNum: 19.99,
     rating: 4.4,
@@ -521,7 +521,7 @@ export const products: Product[] = [
   {
     id: "pixel-art-display",
     name: "MOCREO WiFi Pixel Art LED Display",
-    asin: "B09CYYSMFW",
+    asin: "B07HHXWN3C",
     price: "$39.99",
     priceNum: 39.99,
     rating: 4.5,
@@ -645,7 +645,7 @@ export const products: Product[] = [
   {
     id: "anker-powercore-10000",
     name: "Anker PowerCore 10000 Power Bank",
-    asin: "B0194WDVHI",
+    asin: "B0BMDYV6X5",
     price: "$21.99",
     priceNum: 21.99,
     rating: 4.7,
@@ -735,7 +735,7 @@ export const products: Product[] = [
   {
     id: "anker-prime-power-bank",
     name: "Anker Prime 20000mAh Power Bank (200W)",
-    asin: "B0C9Q6T2R8",
+    asin: "B0CXDXP8VR",
     price: "$89.99",
     priceNum: 89.99,
     rating: 4.6,
@@ -750,7 +750,7 @@ export const products: Product[] = [
   {
     id: "jsaux-steam-deck-dock",
     name: "JSAUX Docking Station for Steam Deck (6-in-1)",
-    asin: "B0B3GY8VS4",
+    asin: "B0BNTQWKN6",
     price: "$39.99",
     priceNum: 39.99,
     rating: 4.5,
@@ -1147,7 +1147,7 @@ export const products: Product[] = [
   {
     id: "lg-ultragear-27gp950",
     name: "LG UltraGear 27\" 4K 144Hz Nano IPS",
-    asin: "B09FX5J8CY",
+    asin: "B0G5R2QK24",
     price: "$649.99",
     priceNum: 649.99,
     rating: 4.5,
@@ -1163,7 +1163,7 @@ export const products: Product[] = [
   {
     id: "caldigit-ts4-thunderbolt4",
     name: "CalDigit TS4 Thunderbolt 4 Dock",
-    asin: "B09GK8LBWS",
+    asin: "B0DSVVJXK5",
     price: "$259.99",
     priceNum: 259.99,
     rating: 4.7,
@@ -1178,7 +1178,7 @@ export const products: Product[] = [
   {
     id: "anker-577-thunderbolt-hub",
     name: "Anker 577 Thunderbolt Hub (13-in-1)",
-    asin: "B09XZ3YDLX",
+    asin: "B088F7SY6S",
     price: "$179.99",
     priceNum: 179.99,
     rating: 4.6,
@@ -1221,7 +1221,7 @@ export const products: Product[] = [
   {
     id: "iniu-usbc-hub-8in1",
     name: "INIU 8-in-1 USB-C Hub — Ultra Slim",
-    asin: "B09N6ZH79W",
+    asin: "B087QZVQJX",
     price: "$32.99",
     priceNum: 32.99,
     rating: 4.5,
@@ -1237,7 +1237,7 @@ export const products: Product[] = [
   {
     id: "elgato-facecam-pro",
     name: "Elgato Facecam Pro 4K Webcam",
-    asin: "B0B4VVT5KY",
+    asin: "B0DVZG36J8",
     price: "$199.99",
     priceNum: 199.99,
     rating: 4.4,
@@ -1267,7 +1267,7 @@ export const products: Product[] = [
   {
     id: "microsoft-modern-webcam",
     name: "Microsoft Modern Webcam 1080p",
-    asin: "B0BWYWXMMB",
+    asin: "B095DQJ3Z2",
     price: "$69.99",
     priceNum: 69.99,
     rating: 4.3,
@@ -1313,7 +1313,7 @@ export const products: Product[] = [
   {
     id: "samsung-galaxy-buds3-pro",
     name: "Samsung Galaxy Buds3 Pro",
-    asin: "B0D3JTDRKQ",
+    asin: "B0D9YZJ3V7",
     price: "$199.99",
     priceNum: 199.99,
     rating: 4.4,
@@ -1328,7 +1328,7 @@ export const products: Product[] = [
   {
     id: "nothing-ear-2",
     name: "Nothing Ear (2) Transparent Design Earbuds",
-    asin: "B0BZKNJFV8",
+    asin: "B0CXPR5412",
     price: "$149.00",
     priceNum: 149.00,
     rating: 4.4,
@@ -1343,7 +1343,7 @@ export const products: Product[] = [
   {
     id: "anker-soundcore-liberty-4-nc",
     name: "Anker Soundcore Liberty 4 NC ANC Earbuds",
-    asin: "B0BVFQKQKN",
+    asin: "B0DT4F2NM9",
     price: "$79.99",
     priceNum: 79.99,
     rating: 4.4,
@@ -1358,7 +1358,7 @@ export const products: Product[] = [
   {
     id: "google-pixel-buds-pro-2",
     name: "Google Pixel Buds Pro 2",
-    asin: "B0D3FBNKV2",
+    asin: "B0D79ND3N7",
     price: "$229.00",
     priceNum: 229.00,
     rating: 4.5,
@@ -1387,7 +1387,7 @@ export const products: Product[] = [
   {
     id: "moondrop-chu-ii",
     name: "Moondrop Chu II Wired IEM Earphones",
-    asin: "B0BTNTMV1J",
+    asin: "B0CRP76PVM",
     price: "$19.99",
     priceNum: 19.99,
     rating: 4.5,
@@ -1402,7 +1402,7 @@ export const products: Product[] = [
   {
     id: "7hz-zero-2-iem",
     name: "7Hz Salnotes Zero 2 Wired IEM",
-    asin: "B0CM8X5VN8",
+    asin: "B0B76YF5CY",
     price: "$19.99",
     priceNum: 19.99,
     rating: 4.5,
@@ -1419,7 +1419,7 @@ export const products: Product[] = [
   {
     id: "logitech-mx-keys-s",
     name: "Logitech MX Keys S Wireless Keyboard",
-    asin: "B0BX7Z2QBN",
+    asin: "B0BKW3LB2B",
     price: "$109.99",
     priceNum: 109.99,
     rating: 4.6,
@@ -1464,7 +1464,7 @@ export const products: Product[] = [
   {
     id: "anker-3in1-cube-charger",
     name: "Anker 3-in-1 Cube MagSafe Charger",
-    asin: "B0BQJPF56K",
+    asin: "B09TT8GZK9",
     price: "$45.99",
     priceNum: 45.99,
     rating: 4.5,
@@ -1478,7 +1478,7 @@ export const products: Product[] = [
   {
     id: "mountup-dual-monitor-arm",
     name: "Mount-It! Dual Monitor Arm",
-    asin: "B087GQTFMJ",
+    asin: "B01F2SIY02",
     price: "$79.99",
     priceNum: 79.99,
     rating: 4.4,
@@ -1510,7 +1510,7 @@ export const products: Product[] = [
   {
     id: "corsair-k70-pro-mini",
     name: "Corsair K70 Pro Mini 60% Mechanical Keyboard",
-    asin: "B099XTXJ4G",
+    asin: "B0CG7C1NVP",
     price: "$109.99",
     priceNum: 109.99,
     rating: 4.4,
@@ -1525,7 +1525,7 @@ export const products: Product[] = [
   {
     id: "logitech-g502x-plus",
     name: "Logitech G502 X Plus Wireless Mouse",
-    asin: "B0B6BNZQW9",
+    asin: "B092CB69Q4",
     price: "$149.99",
     priceNum: 149.99,
     rating: 4.5,
@@ -1539,7 +1539,7 @@ export const products: Product[] = [
   {
     id: "steelseries-arctis-nova-7",
     name: "SteelSeries Arctis Nova 7 Wireless Headset",
-    asin: "B09ZDQLRPZ",
+    asin: "B0FRNR8Y11",
     price: "$149.99",
     priceNum: 149.99,
     rating: 4.5,
@@ -1554,7 +1554,7 @@ export const products: Product[] = [
   {
     id: "elgato-ring-light",
     name: "Elgato Ring Light — 2500 Lumens",
-    asin: "B09TMHZ7ZP",
+    asin: "B07L755X9G",
     price: "$199.99",
     priceNum: 199.99,
     rating: 4.5,
@@ -1568,7 +1568,7 @@ export const products: Product[] = [
   {
     id: "nanoleaf-shapes-triangles",
     name: "Nanoleaf Shapes Triangles Starter Kit (9pk)",
-    asin: "B08B8SX4YG",
+    asin: "B09B83GQKR",
     price: "$199.99",
     priceNum: 199.99,
     rating: 4.3,
@@ -1583,7 +1583,7 @@ export const products: Product[] = [
   {
     id: "divoom-ditoo-pixel-speaker",
     name: "Divoom Ditoo Retro Pixel Art Bluetooth Speaker",
-    asin: "B07ZPZN6LN",
+    asin: "B07H7L1PLD",
     price: "$49.99",
     priceNum: 49.99,
     rating: 4.4,
@@ -1613,7 +1613,7 @@ export const products: Product[] = [
   {
     id: "sphero-mini-robot",
     name: "Sphero Mini App-Controlled Robot Ball",
-    asin: "B071XBQNX5",
+    asin: "B072B6QVVW",
     price: "$49.99",
     priceNum: 49.99,
     rating: 4.2,
@@ -1628,7 +1628,7 @@ export const products: Product[] = [
   {
     id: "lametric-smart-clock",
     name: "LaMetric TIME Wi-Fi Smart Clock",
-    asin: "B01N2SS5EZ",
+    asin: "B01IVTVK3W",
     price: "$199.99",
     priceNum: 199.99,
     rating: 4.3,
@@ -1645,7 +1645,7 @@ export const products: Product[] = [
   {
     id: "matter-smart-switch-eve",
     name: "Eve Energy Smart Plug — Matter",
-    asin: "B09JXHR5QV",
+    asin: "B0C1CL2MV3",
     price: "$39.99",
     priceNum: 39.99,
     rating: 4.6,
@@ -1675,7 +1675,7 @@ export const products: Product[] = [
   {
     id: "wiz-smart-bulb-tunable",
     name: "WiZ 60W Tunable White Smart Bulb (4-Pack)",
-    asin: "B091GZ4TKV",
+    asin: "B0B3347SYV",
     price: "$29.99",
     priceNum: 29.99,
     rating: 4.5,
@@ -1722,7 +1722,7 @@ export const products: Product[] = [
   {
     id: "anker-powercore-20100",
     name: "Anker PowerCore+ 20100 USB-C Power Bank",
-    asin: "B0197QCFK4",
+    asin: "B0CXDXP8VR",
     price: "$49.99",
     priceNum: 49.99,
     rating: 4.7,
@@ -1767,7 +1767,7 @@ export const products: Product[] = [
   {
     id: "kindle-paperwhite-5",
     name: "Kindle Paperwhite (16GB, 2023)",
-    asin: "B09TMF6742",
+    asin: "B0CFPJYX7P",
     price: "$139.99",
     priceNum: 139.99,
     rating: 4.7,
@@ -1782,7 +1782,7 @@ export const products: Product[] = [
   {
     id: "gopro-hero12-black",
     name: "GoPro HERO12 Black Action Camera",
-    asin: "B0CDX3V6JH",
+    asin: "B0CZMG5L6X",
     price: "$299.99",
     priceNum: 299.99,
     rating: 4.6,
@@ -1799,7 +1799,7 @@ export const products: Product[] = [
   {
     id: "asus-proart-pa278cv",
     name: "ASUS ProArt PA278CV 27\" 4K IPS Monitor",
-    asin: "B08L6CR7TX",
+    asin: "B0DM6S4FMH",
     price: "$329.99",
     priceNum: 329.99,
     rating: 4.6,
@@ -1814,7 +1814,7 @@ export const products: Product[] = [
   {
     id: "dell-s2722qc-4k",
     name: "Dell S2722QC 27\" 4K USB-C Monitor",
-    asin: "B09FJPTZ7W",
+    asin: "B0DR9LFNGX",
     price: "$279.99",
     priceNum: 279.99,
     rating: 4.5,
@@ -1829,7 +1829,7 @@ export const products: Product[] = [
   {
     id: "aoc-27g2-ips-gaming",
     name: "AOC 27G2 27\" IPS 144Hz Gaming Monitor",
-    asin: "B08F9CZH9B",
+    asin: "B0FF5HXGJK",
     price: "$179.99",
     priceNum: 179.99,
     rating: 4.5,
@@ -1844,7 +1844,7 @@ export const products: Product[] = [
   {
     id: "lg-49wq95c-ultrawide",
     name: "LG 49\" 5K2K DQHD Curved Ultrawide",
-    asin: "B09SB14ZNG",
+    asin: "B0DYG9DKX8",
     price: "$1099.99",
     priceNum: 1099.99,
     rating: 4.5,
@@ -1859,7 +1859,7 @@ export const products: Product[] = [
   {
     id: "samsung-m8-smart-monitor",
     name: "Samsung M8 32\" 4K Smart Monitor",
-    asin: "B09V7Z6JNH",
+    asin: "B0DXMQW3BF",
     price: "$599.99",
     priceNum: 599.99,
     rating: 4.4,
@@ -1891,7 +1891,7 @@ export const products: Product[] = [
   {
     id: "elgato-stream-deck-plus",
     name: "Elgato Stream Deck + (8 keys + 4 dials)",
-    asin: "B0BM9HWGTQ",
+    asin: "B0BJL8SJ59",
     price: "$199.99",
     priceNum: 199.99,
     rating: 4.6,
@@ -1906,7 +1906,7 @@ export const products: Product[] = [
   {
     id: "avermedia-live-gamer-4k",
     name: "AVerMedia Live Gamer 4K Capture Card",
-    asin: "B07YQJWFR9",
+    asin: "B0F93KM854",
     price: "$189.99",
     priceNum: 189.99,
     rating: 4.4,
@@ -1921,7 +1921,7 @@ export const products: Product[] = [
   {
     id: "logitech-mx-brio-4k",
     name: "Logitech MX Brio 705 4K Webcam",
-    asin: "B0CKJLN23B",
+    asin: "B0CS32LM8W",
     price: "$199.99",
     priceNum: 199.99,
     rating: 4.4,
@@ -1936,7 +1936,7 @@ export const products: Product[] = [
   {
     id: "tonor-tc-30-usb-mic",
     name: "TONOR TC-30 USB Cardioid Microphone",
-    asin: "B0876YQZ4Q",
+    asin: "B0BRKFP94K",
     price: "$29.99",
     priceNum: 29.99,
     rating: 4.3,
@@ -1983,7 +1983,7 @@ export const products: Product[] = [
   {
     id: "fifine-usb-podcast-mic",
     name: "FIFINE Podcast USB Microphone with Arm",
-    asin: "B01N034IPM",
+    asin: "B0C74GYW3J",
     price: "$49.99",
     priceNum: 49.99,
     rating: 4.4,
@@ -2013,7 +2013,7 @@ export const products: Product[] = [
   {
     id: "jbl-charge-5-speaker",
     name: "JBL Charge 5 Portable Bluetooth Speaker",
-    asin: "B08X29TFHP",
+    asin: "B0DN2ZCZX6",
     price: "$179.99",
     priceNum: 179.99,
     rating: 4.7,
@@ -2030,7 +2030,7 @@ export const products: Product[] = [
   {
     id: "razer-viper-v3-pro",
     name: "Razer Viper V3 Pro Wireless Esports Mouse",
-    asin: "B0CY3VXVS5",
+    asin: "B0FSG67VPX",
     price: "$159.99",
     priceNum: 159.99,
     rating: 4.6,
@@ -2045,7 +2045,7 @@ export const products: Product[] = [
   {
     id: "corsair-vengeance-k65-tkl",
     name: "Corsair K65 Plus Wireless 75% Keyboard",
-    asin: "B0CNLZMZN4",
+    asin: "B0CQ31VFT4",
     price: "$119.99",
     priceNum: 119.99,
     rating: 4.5,
