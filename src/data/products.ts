@@ -92,7 +92,7 @@ export const products: Product[] = [
   {
     id: "ugreen-usbc-hub-9in1",
     name: "UGREEN 9-in-1 USB-C Hub",
-    asin: "B08R6Q1G3F",
+    asin: "B0BR3M8XHK",
     price: "$45.99",
     priceNum: 45.99,
     rating: 4.5,
@@ -551,7 +551,7 @@ export const products: Product[] = [
   {
     id: "magnetic-sculpture",
     name: "Magnetic Sculpture Building Bars (216 pcs)",
-    asin: "B07L5KQ2CL",
+    asin: "B0BXTPRSCL",
     price: "$18.99",
     priceNum: 18.99,
     rating: 4.4,
@@ -690,7 +690,7 @@ export const products: Product[] = [
   {
     id: "dji-mini-4-pro",
     name: "DJI Mini 4 Pro Drone (4K/60fps)",
-    asin: "B0CGXSNKRL",
+    asin: "B0F6XN1J7K",
     price: "$759.00",
     priceNum: 759.00,
     rating: 4.7,
@@ -1088,7 +1088,7 @@ export const products: Product[] = [
   {
     id: "secretlab-titan-evo",
     name: "Secretlab Titan Evo 2022 Gaming Chair",
-    asin: "B09PJSLNTJ",
+    asin: "B0CGGPKBCZ",
     price: "$449.00",
     priceNum: 449.00,
     rating: 4.5,
@@ -1133,7 +1133,7 @@ export const products: Product[] = [
   {
     id: "flexispot-e7-standing-desk",
     name: "FlexiSpot E7 Pro Electric Standing Desk",
-    asin: "B08CJZ9LNF",
+    asin: "B0851BVHCD",
     price: "$499.00",
     priceNum: 499.00,
     rating: 4.6,
@@ -1207,7 +1207,7 @@ export const products: Product[] = [
   {
     id: "plugable-usbc-hub-11in1",
     name: "Plugable 11-in-1 USB-C Hub with Dual HDMI",
-    asin: "B0B7YNLM2G",
+    asin: "B09Q5V9G5P",
     price: "$59.99",
     priceNum: 59.99,
     rating: 4.4,
@@ -1372,7 +1372,7 @@ export const products: Product[] = [
   {
     id: "earfun-air-pro-4-anc",
     name: "EarFun Air Pro 4 ANC Earbuds",
-    asin: "B0CJM9TW2Y",
+    asin: "B0FQFB8FMG",
     price: "$69.99",
     priceNum: 69.99,
     rating: 4.5,
@@ -1660,7 +1660,7 @@ export const products: Product[] = [
   {
     id: "google-nest-hub-2nd-gen",
     name: "Google Nest Hub (2nd Gen) Smart Display",
-    asin: "B08XTNGNMQ",
+    asin: "B09B2QTGFY",
     price: "$99.99",
     priceNum: 99.99,
     rating: 4.4,
@@ -1690,7 +1690,7 @@ export const products: Product[] = [
   {
     id: "eufy-smart-lock-c254",
     name: "eufy Security Smart Lock C254",
-    asin: "B0BGWYPNHD",
+    asin: "B0DKQQ6Z7Q",
     price: "$89.99",
     priceNum: 89.99,
     rating: 4.4,
@@ -2075,7 +2075,7 @@ export const products: Product[] = [
   {
     id: "herman-miller-aeron-chair",
     name: "Herman Miller Aeron Chair (Remastered)",
-    asin: "B07GRMZF39",
+    asin: "B01K31X4HG",
     price: "$1795.00",
     priceNum: 1795.00,
     rating: 4.7,
