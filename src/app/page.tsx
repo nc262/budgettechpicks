@@ -1,7 +1,7 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
 import Script from "next/script";
-import { getFeaturedProducts, products as allProducts, categoryEmoji, categoryColor } from "@/data/products";
+import { getFeaturedProducts, products as allProducts, categoryEmoji, categoryColor, affiliateUrl } from "@/data/products";
 import { articles } from "@/data/articles";
 import AdSlot from "@/components/AdSlot";
 import FeaturedGrid from "@/components/FeaturedGrid";
@@ -121,21 +121,30 @@ export default function HomePage() {
               const emoji = categoryEmoji[product.category] ?? "🛒";
               const color = categoryColor[product.category] ?? "bg-gray-800 text-gray-300";
               return (
-                <Link
+                <div
                   key={product.id}
-                  href={`/${product.articleSlug}`}
-                  className="bg-gray-900 rounded-2xl border border-gray-700/50 p-4 glow-card transition-all duration-200 group"
+                  className="bg-gray-900 rounded-2xl border border-gray-700/50 p-4 glow-card transition-all duration-200 flex flex-col"
                 >
                   <div className="flex items-center gap-3 mb-2">
-                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl ${color}`}>{emoji}</div>
+                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0 ${color}`}>{emoji}</div>
                     {product.badge && (
-                      <span className="text-xs font-bold text-orange-400 bg-orange-400/10 border border-orange-400/20 px-2 py-0.5 rounded-full">{product.badge}</span>
+                      <span className="text-xs font-bold text-orange-400 bg-orange-400/10 border border-orange-400/20 px-2 py-0.5 rounded-full leading-tight">{product.badge}</span>
                     )}
                   </div>
-                  <p className="font-bold text-gray-100 group-hover:text-blue-400 transition-colors text-sm leading-snug">{product.name}</p>
-                  <p className="text-xs text-blue-400 mt-0.5">{product.price}</p>
-                  <p className="text-xs text-gray-500 mt-2 font-medium">Read review →</p>
-                </Link>
+                  <Link href={`/${product.articleSlug}`} className="group flex-1">
+                    <p className="font-bold text-gray-100 group-hover:text-blue-400 transition-colors text-sm leading-snug">{product.name}</p>
+                    <p className="text-xs text-blue-400 font-black mt-0.5">{product.price}</p>
+                    <p className="text-xs text-gray-500 mt-1 font-medium group-hover:text-gray-400 transition-colors">Full review →</p>
+                  </Link>
+                  <a
+                    href={affiliateUrl(product.name, product.asin)}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className="mt-3 w-full text-center bg-yellow-400 hover:bg-yellow-300 active:bg-yellow-500 text-gray-900 font-bold text-xs px-3 py-2 rounded-xl transition-all hover:-translate-y-0.5 shadow-sm hover:shadow-yellow-400/20 hover:shadow-md"
+                  >
+                    🛒 Buy on Amazon →
+                  </a>
+                </div>
               );
             })}
           </div>
