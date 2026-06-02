@@ -41,9 +41,9 @@ function getScoreColor(score: number): string {
 
 export default function ProductCard({ product, rank, redditInsight, isCompareSelected = false, onToggleCompare, compareDisabled = false }: Props) {
   const stars = Math.round(product.rating);
-  const url = affiliateUrl(product.name, product.asin);
   // Use n8n-verified image URL if available, otherwise fall back to CDN pattern
   const healthData = (productHealth as Record<string, { imageUrl?: string; isLive?: boolean }>)[product.asin];
+  const url = affiliateUrl(product.name, product.asin, healthData?.isLive);
   const imgUrl = healthData?.imageUrl ?? amazonImageUrl(product.asin);
   const imgFallback = amazonImageFallback(product.asin);
   const imgFallback2 = amazonImageFallback2(product.asin);
