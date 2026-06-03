@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About TotalTechPicks — How We Pick, Why We're Different",
+  title: "About TotalTechPicks — Our Methodology",
   description:
     "TotalTechPicks is an independent tech review site built on real-world testing, value analysis, and zero corporate sponsorships. Learn how we pick products and score them.",
   alternates: { canonical: "https://totaltechpicks.com/about" },

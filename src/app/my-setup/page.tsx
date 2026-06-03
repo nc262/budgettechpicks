@@ -3,7 +3,7 @@ import Link from "next/link";
 import SetupItemImage from "@/components/SetupItemImage";
 
 export const metadata: Metadata = {
-  title: "My Actual Setup — What a DevOps Engineer Uses Daily | TotalTechPicks",
+  title: "My Actual Setup — DevOps Engineer Daily Gear",
   description:
     "3 computers, 1 keyboard, 1 monitor. The real WFH setup behind TotalTechPicks — built over 2 years by a DevOps engineer who games when the work is done.",
   alternates: { canonical: "https://totaltechpicks.com/my-setup" },

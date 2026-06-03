@@ -116,7 +116,7 @@ export const articles: Article[] = [
   },
   {
     slug: "best-desk-accessories-under-50",
-    title: "Best Desk Accessories to Upgrade Your Home Office (2026)",
+    title: "Best Desk Accessories for Home Office (2026)",
     metaDescription: "Small upgrades, big impact. The best desk accessories for a more organized, productive workspace — from quick wins to serious upgrades.",
     intro: "You don't need a $5,000 standing desk setup to have a great workspace. A few well-chosen accessories can transform a cluttered desk without breaking the bank.",
     updatedAt: "May 2026",
