@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SetupItemImage from "@/components/SetupItemImage";
 
 export const metadata: Metadata = {
   title: "My Actual Setup — What a DevOps Engineer Uses Daily | TotalTechPicks",
@@ -12,6 +13,8 @@ type SetupItem = {
   name: string;
   note: string;
   tag: string;
+  asin?: string;
+  imageUrl?: string;
   amazonUrl?: string;
   externalUrl?: string;
   siteUrl?: string;
@@ -32,6 +35,7 @@ const SETUP: SetupCategory[] = [
         name: "Samsung 57\" Odyssey Neo G9 Dual 4K UHD",
         note: "I used to run 3 monitors. Then I got this and sold all three. 57 inches of Quantum Mini-LED, dual 4K panels side by side, 240Hz, HDR 1000, HDMI 2.1 and DP 2.1 — it takes 3 separate inputs simultaneously so I have my gaming PC, my work laptop, and a second work machine all feeding into one screen. Combined with the KVM switch below, it's genuinely like having 3 full desks collapsed into one. You cannot go back to normal monitors after this. Also yes, 57 inches is as absurd as it sounds. I love it.",
         tag: "The Centerpiece",
+        asin: "B09FBJT84P",
         amazonUrl: "https://www.amazon.com/s?k=Samsung+57+Odyssey+Neo+G9+LS57CG952NNXZA&tag=totaltechpicks-20",
       },
     ],
@@ -44,12 +48,14 @@ const SETUP: SetupCategory[] = [
         name: "ATEN CS724KM 4-Port USB KM Switch",
         note: "This is the actual secret weapon of the whole setup. One keyboard, one mouse, up to 4 computers — and you switch between them by sliding the cursor off the edge of the screen. No button. No hotkey. You just move the mouse past the border and you're on a different machine. As a DevOps engineer juggling 2 work laptops and a gaming PC, this single device changed everything.",
         tag: "Game Changer",
+        imageUrl: "https://m.media-amazon.com/images/I/51Q3M6YKUFL._SX300_QL70_.jpg",
         externalUrl: "https://www.aten.com/global/en/products/kvm/desktop-kvm-switches/cs724km/",
       },
       {
         name: "Logitech G502 Lightspeed Wireless Mouse",
         note: "Been through a lot of mice. The G502 stays. The weight is perfect, the side buttons are exactly where your thumb wants them, and the scroll wheel has that satisfying notched resistance. Battery life is solid. I've never once felt the need to upgrade this.",
         tag: "Daily Driver",
+        asin: "B07GBZ4Q68",
         amazonUrl: "https://www.amazon.com/dp/B07GBZ4Q68?tag=totaltechpicks-20",
         siteUrl: "/best-gaming-gear-under-50",
       },
@@ -57,6 +63,7 @@ const SETUP: SetupCategory[] = [
         name: "Logitech G915 TKL Wireless Lightspeed (Clicky)",
         note: "Low-profile, wireless, clicky GL switches. The click sound is satisfying without being the kind that gets your coworkers on a call asking what that noise is. Battery lasts so long I forget it needs charging. TKL layout means more desk space and I genuinely don't miss the numpad.",
         tag: "Daily Driver",
+        asin: "B07NY9ZT92",
         amazonUrl: "https://www.amazon.com/dp/B07NY9ZT92?tag=totaltechpicks-20",
       },
     ],
@@ -69,12 +76,14 @@ const SETUP: SetupCategory[] = [
         name: "SecretLab Magnus Pro XL Desk",
         note: "Honestly my favorite thing in this entire setup. It's a full steel desk with a magnetic surface, and the cable management tray runs the entire length underneath. With 3 computers, a KVM switch, speakers, webcam, and a 57\" monitor all on one desk — the Magnus Pro is the only reason it doesn't look like a server room exploded. The magnetic accessories are a nice touch too. If this broke tomorrow I'd order another one the same day.",
         tag: "Favorite Piece",
+        imageUrl: "https://secretlabchairs.com/cdn/shop/products/magnus-pro-xl-desk-black-front.jpg",
         externalUrl: "https://secretlabchairs.com/products/magnus-pro",
       },
       {
         name: "SecretLab Titan XL — Cyberpunk Edition",
         note: "Went XL because I'm not small and I sit here for 8+ hours between work and gaming. The lumbar support is legitimately good — not just a pillow duct-taped to a chair. The Cyberpunk collab edition looks ridiculous in the best way.",
         tag: "Love It",
+        imageUrl: "https://secretlabchairs.com/cdn/shop/products/titan-evo-cyberpunk-2077-front.jpg",
         externalUrl: "https://secretlabchairs.com/products/titan-gaming-chair",
       },
     ],
@@ -87,12 +96,14 @@ const SETUP: SetupCategory[] = [
         name: "Logitech G733 Wireless Headset",
         note: "My main audio for gaming and calls. Lightweight, good wireless range, the mic is decent enough for meetings. The problem? I have 3 computers and I wanted the audio from all of them to come through one headset. I tried every cheap hub and splitter I could find — none of them actually worked cleanly. If I were doing it over, I'd skip all that and just buy a proper audio mixer from the start.",
         tag: "Daily Driver",
+        asin: "B08DF98XFH",
         amazonUrl: "https://www.amazon.com/dp/B08DF98XFH?tag=totaltechpicks-20",
       },
       {
         name: "HECATE G1500 Gaming Speakers",
         note: "For when I don't want to wear a headset. Way better sound than you'd expect at this price — the bass is real without being muddy. Good for background music during deep work sessions and for gaming when I'm alone.",
         tag: "Solid Value",
+        asin: "B09KWTF8YN",
         amazonUrl: "https://www.amazon.com/dp/B09KWTF8YN?tag=totaltechpicks-20",
       },
     ],
@@ -105,6 +116,7 @@ const SETUP: SetupCategory[] = [
         name: "EMEET HD 1080p Webcam",
         note: "Sharp at 1080p, decent autofocus, and the built-in mic handles background noise better than I expected. Does everything I need for meetings and the occasional stream. No complaints.",
         tag: "Does The Job",
+        asin: "B07W3T6VJV",
         amazonUrl: "https://www.amazon.com/dp/B07W3T6VJV?tag=totaltechpicks-20",
         siteUrl: "/best-budget-webcams",
       },
@@ -118,6 +130,7 @@ const SETUP: SetupCategory[] = [
         name: "XXL Gaming Mouse Pad — Japanese Demon Mask (35.4\" × 15.7\")",
         note: "Covers the entire desk surface. Non-slip rubber base actually stays put even during intense sessions, stitched edges mean it won't fray after a few months. The Demon Mask design fits the dark aesthetic of the setup perfectly.",
         tag: "Love It",
+        asin: "B0G6DX394S",
         amazonUrl: "https://www.amazon.com/dp/B0G6DX394S?tag=totaltechpicks-20",
       },
     ],
@@ -189,39 +202,47 @@ export default function MySetupPage() {
                     key={item.name}
                     className="bg-gray-900 rounded-2xl border border-gray-700/50 p-5 hover:border-gray-600/70 transition-colors"
                   >
-                    <div className="flex flex-wrap items-center gap-2 mb-3">
-                      <h3 className="font-bold text-white text-base leading-snug">{item.name}</h3>
-                      <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full border ${tagStyle}`}>
-                        {item.tag}
-                      </span>
-                      <span className="text-xs font-semibold text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-2.5 py-0.5 rounded-full">
-                        ✅ I Own This
-                      </span>
-                    </div>
-
-                    <p className="text-sm text-gray-400 leading-relaxed mb-4">
-                      &ldquo;{item.note}&rdquo;
-                    </p>
-
-                    <div className="flex flex-wrap gap-2">
-                      {buyUrl && (
-                        <a
-                          href={buyUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 bg-orange-500 hover:bg-orange-400 text-white text-xs font-bold px-4 py-2 rounded-xl transition-colors"
-                        >
-                          {isExternal ? "🛍️ Buy Direct" : "🛒 Check on Amazon"}
-                        </a>
+                    <div className="flex gap-4">
+                      {/* Product image */}
+                      {(item.asin || item.imageUrl) && (
+                        <SetupItemImage asin={item.asin} imageUrl={item.imageUrl} name={item.name} />
                       )}
-                      {item.siteUrl && (
-                        <Link
-                          href={item.siteUrl}
-                          className="inline-flex items-center gap-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 text-xs font-semibold px-4 py-2 rounded-xl border border-gray-700 transition-colors"
-                        >
-                          📝 See Our Review
-                        </Link>
-                      )}
+                      <div className="flex-1 min-w-0">
+                        <div className="flex flex-wrap items-center gap-2 mb-3">
+                          <h3 className="font-bold text-white text-base leading-snug">{item.name}</h3>
+                          <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full border ${tagStyle}`}>
+                            {item.tag}
+                          </span>
+                          <span className="text-xs font-semibold text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-2.5 py-0.5 rounded-full">
+                            ✅ I Own This
+                          </span>
+                        </div>
+
+                        <p className="text-sm text-gray-400 leading-relaxed mb-4">
+                          &ldquo;{item.note}&rdquo;
+                        </p>
+
+                        <div className="flex flex-wrap gap-2">
+                          {buyUrl && (
+                            <a
+                              href={buyUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 bg-orange-500 hover:bg-orange-400 text-white text-xs font-bold px-4 py-2 rounded-xl transition-colors"
+                            >
+                              {isExternal ? "🛍️ Buy Direct" : "🛒 Check on Amazon"}
+                            </a>
+                          )}
+                          {item.siteUrl && (
+                            <Link
+                              href={item.siteUrl}
+                              className="inline-flex items-center gap-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 text-xs font-semibold px-4 py-2 rounded-xl border border-gray-700 transition-colors"
+                            >
+                              📝 See Our Review
+                            </Link>
+                          )}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 );
