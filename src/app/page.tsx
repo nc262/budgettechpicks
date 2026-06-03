@@ -7,6 +7,7 @@ import AdSlot from "@/components/AdSlot";
 import FeaturedGrid from "@/components/FeaturedGrid";
 import HeroProductCard from "@/components/HeroProductCard";
 import SetupItemImage from "@/components/SetupItemImage";
+import productHealth from "@/data/product-health.json";
 
 const SITE_URL = "https://totaltechpicks.com";
 
@@ -128,7 +129,13 @@ export default function HomePage() {
                 >
                   <div className="flex items-center gap-3 mb-2">
                     {product.asin ? (
-                      <SetupItemImage asin={product.asin} name={product.name} className="w-10 h-10 object-contain rounded-xl bg-gray-800 shrink-0" />
+                      <SetupItemImage
+                        asin={product.asin}
+                        imageUrl={(productHealth as Record<string, { imageUrl?: string }>)[product.asin]?.imageUrl}
+                        name={product.name}
+                        className="w-10 h-10 object-contain rounded-xl bg-gray-800 shrink-0"
+                        fallback={<div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0 ${color}`}>{emoji}</div>}
+                      />
                     ) : (
                       <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0 ${color}`}>{emoji}</div>
                     )}
