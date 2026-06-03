@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-03T00:19:16.804Z",
+  "updatedAt": "2026-06-03T00:21:12.944Z",
   "createdAt": "2026-06-01T14:38:59.809Z",
   "id": "bKe96bOw97L3zmnI",
   "name": "Reddit Lead Finder",
@@ -64,7 +64,8 @@
             }
           ]
         },
-        "options": {}
+        "options": {},
+        "method": "GET"
       },
       "id": "reddit-search",
       "name": "Search Reddit",
@@ -129,7 +130,8 @@
         "sendBody": true,
         "specifyBody": "json",
         "jsonBody": "={{ JSON.stringify([$json]) }}",
-        "options": {}
+        "options": {},
+        "method": "POST"
       },
       "id": "save-lead",
       "name": "Save Lead",
@@ -221,15 +223,15 @@
   },
   "meta": null,
   "pinData": null,
-  "versionId": "a173a310-67db-485a-a561-1f085979cada",
-  "activeVersionId": "a173a310-67db-485a-a561-1f085979cada",
-  "versionCounter": 10,
+  "versionId": "4c20474d-bf45-434b-a186-2aaca0f64dec",
+  "activeVersionId": "4c20474d-bf45-434b-a186-2aaca0f64dec",
+  "versionCounter": 11,
   "triggerCount": 1,
   "tags": [],
   "activeVersion": {
-    "updatedAt": "2026-06-03T00:19:16.804Z",
-    "createdAt": "2026-06-03T00:19:16.804Z",
-    "versionId": "a173a310-67db-485a-a561-1f085979cada",
+    "updatedAt": "2026-06-03T00:21:12.944Z",
+    "createdAt": "2026-06-03T00:21:12.944Z",
+    "versionId": "4c20474d-bf45-434b-a186-2aaca0f64dec",
     "workflowId": "bKe96bOw97L3zmnI",
     "nodes": [
       {
@@ -289,7 +291,8 @@
               }
             ]
           },
-          "options": {}
+          "options": {},
+          "method": "GET"
         },
         "id": "reddit-search",
         "name": "Search Reddit",
@@ -354,7 +357,8 @@
           "sendBody": true,
           "specifyBody": "json",
           "jsonBody": "={{ JSON.stringify([$json]) }}",
-          "options": {}
+          "options": {},
+          "method": "POST"
         },
         "id": "save-lead",
         "name": "Save Lead",
