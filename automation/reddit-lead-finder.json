@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-03T00:11:50.156Z",
+  "updatedAt": "2026-06-03T00:15:33.597Z",
   "createdAt": "2026-06-01T14:38:59.809Z",
   "id": "bKe96bOw97L3zmnI",
   "name": "Reddit Lead Finder",
@@ -97,7 +97,7 @@
           "parameters": []
         },
         "specifyBody": "json",
-        "jsonBody": "={\n  \"model\": \"llama3.2\",\n  \"prompt\": \"You are writing a helpful Reddit comment for TotalTechPicks, a no-nonsense tech gear recommendation site (slogan: Less Hype. More Hardware.). Write a genuinely helpful reply to this Reddit post. Be conversational, specific, and helpful. Mention 1-2 relevant products if appropriate. DO NOT be salesy. DO NOT mention the website unless it naturally fits. Keep it under 150 words.\\n\\nSubreddit: r/{{ $json.subreddit }}\\nPost title: {{ $json.title }}\\nPost body: {{ $json.body }}\\n\\nWrite only the reply text, nothing else.\",\n  \"stream\": false\n}",
+        "jsonBody": "={{ JSON.stringify({\n  model: \"llama3.2\",\n  prompt: \"You are writing a helpful Reddit comment for TotalTechPicks, a no-nonsense tech gear recommendation site (slogan: Less Hype. More Hardware.). Write a genuinely helpful reply to this Reddit post. Be conversational, specific, and helpful. Mention 1-2 relevant products if appropriate. DO NOT be salesy. DO NOT mention the website unless it naturally fits. Keep it under 150 words.\\n\\nSubreddit: r/\" + $json.subreddit + \"\\nPost title: \" + $json.title + \"\\nPost body: \" + ($json.body || \"\").substring(0, 500) + \"\\n\\nWrite only the reply text, nothing else.\",\n  stream: false\n}) }}",
         "options": {}
       },
       "id": "ollama-draft",
@@ -220,34 +220,15 @@
   },
   "meta": null,
   "pinData": null,
-  "versionId": "bed6fb5f-a886-429c-9457-b5b1b105bd27",
-  "activeVersionId": "bed6fb5f-a886-429c-9457-b5b1b105bd27",
-  "versionCounter": 8,
+  "versionId": "934f85c1-b7b1-415a-802d-882d88e10c26",
+  "activeVersionId": "934f85c1-b7b1-415a-802d-882d88e10c26",
+  "versionCounter": 9,
   "triggerCount": 1,
-  "shared": [
-    {
-      "updatedAt": "2026-06-01T14:38:59.809Z",
-      "createdAt": "2026-06-01T14:38:59.809Z",
-      "role": "workflow:owner",
-      "workflowId": "bKe96bOw97L3zmnI",
-      "projectId": "KTy0CYoApADUc5dz",
-      "project": {
-        "updatedAt": "2026-05-27T20:08:31.959Z",
-        "createdAt": "2026-05-27T20:06:00.436Z",
-        "id": "KTy0CYoApADUc5dz",
-        "name": "Nathan Ceniceros <nathanceniceros@gmail.com>",
-        "type": "personal",
-        "icon": null,
-        "description": null,
-        "creatorId": "3ab12d83-5a75-46b1-81de-fa097d522005"
-      }
-    }
-  ],
   "tags": [],
   "activeVersion": {
-    "updatedAt": "2026-06-03T00:11:50.158Z",
-    "createdAt": "2026-06-03T00:11:50.158Z",
-    "versionId": "bed6fb5f-a886-429c-9457-b5b1b105bd27",
+    "updatedAt": "2026-06-03T00:15:33.597Z",
+    "createdAt": "2026-06-03T00:15:33.597Z",
+    "versionId": "934f85c1-b7b1-415a-802d-882d88e10c26",
     "workflowId": "bKe96bOw97L3zmnI",
     "nodes": [
       {
@@ -340,7 +321,7 @@
             "parameters": []
           },
           "specifyBody": "json",
-          "jsonBody": "={\n  \"model\": \"llama3.2\",\n  \"prompt\": \"You are writing a helpful Reddit comment for TotalTechPicks, a no-nonsense tech gear recommendation site (slogan: Less Hype. More Hardware.). Write a genuinely helpful reply to this Reddit post. Be conversational, specific, and helpful. Mention 1-2 relevant products if appropriate. DO NOT be salesy. DO NOT mention the website unless it naturally fits. Keep it under 150 words.\\n\\nSubreddit: r/{{ $json.subreddit }}\\nPost title: {{ $json.title }}\\nPost body: {{ $json.body }}\\n\\nWrite only the reply text, nothing else.\",\n  \"stream\": false\n}",
+          "jsonBody": "={{ JSON.stringify({\n  model: \"llama3.2\",\n  prompt: \"You are writing a helpful Reddit comment for TotalTechPicks, a no-nonsense tech gear recommendation site (slogan: Less Hype. More Hardware.). Write a genuinely helpful reply to this Reddit post. Be conversational, specific, and helpful. Mention 1-2 relevant products if appropriate. DO NOT be salesy. DO NOT mention the website unless it naturally fits. Keep it under 150 words.\\n\\nSubreddit: r/\" + $json.subreddit + \"\\nPost title: \" + $json.title + \"\\nPost body: \" + ($json.body || \"\").substring(0, 500) + \"\\n\\nWrite only the reply text, nothing else.\",\n  stream: false\n}) }}",
           "options": {}
         },
         "id": "ollama-draft",
@@ -454,24 +435,6 @@
     "authors": "Nathan Ceniceros",
     "name": null,
     "description": null,
-    "autosaved": false,
-    "workflowPublishHistory": [
-      {
-        "createdAt": "2026-06-03T00:11:50.183Z",
-        "id": 82,
-        "workflowId": "bKe96bOw97L3zmnI",
-        "versionId": "bed6fb5f-a886-429c-9457-b5b1b105bd27",
-        "event": "activated",
-        "userId": "3ab12d83-5a75-46b1-81de-fa097d522005"
-      },
-      {
-        "createdAt": "2026-06-03T00:11:50.172Z",
-        "id": 81,
-        "workflowId": "bKe96bOw97L3zmnI",
-        "versionId": "bed6fb5f-a886-429c-9457-b5b1b105bd27",
-        "event": "deactivated",
-        "userId": "3ab12d83-5a75-46b1-81de-fa097d522005"
-      }
-    ]
+    "autosaved": false
   }
 }
