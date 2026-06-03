@@ -49,7 +49,7 @@ const SETUP: SetupCategory[] = [
         name: "ATEN CS724KM 4-Port USB KM Switch",
         note: "This is the actual secret weapon of the whole setup. One keyboard, one mouse, up to 4 computers — and you switch between them by sliding the cursor off the edge of the screen. No button. No hotkey. You just move the mouse past the border and you're on a different machine. As a DevOps engineer juggling 2 work laptops and a gaming PC, this single device changed everything.",
         tag: "Game Changer",
-        imageUrl: "https://m.media-amazon.com/images/I/51Q3M6YKUFL._SX300_QL70_.jpg",
+        imageUrl: "https://assets.aten.com/product/image/cs724km.kvm.desktop-kvm-switches.45.jpg",
         externalUrl: "https://www.aten.com/global/en/products/kvm/desktop-kvm-switches/cs724km/",
       },
       {
