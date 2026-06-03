@@ -48,7 +48,7 @@ export default function Footer() {
           <div className="flex-1">
             <p className="text-sm font-bold text-white mb-0.5">Built by a DevOps engineer who got tired of bad gear.</p>
             <p className="text-xs text-gray-400 leading-relaxed">
-              3 computers. 1 keyboard. 1 screen. Every pick on this site has been researched by someone who actually uses this stuff daily — not an AI, not a content farm.
+              3 computers. 1 keyboard. 1 screen. Every pick on this site has been researched by someone who actually uses this stuff daily — no corporate content farms, no sponsored fluff.
             </p>
           </div>
           <Link

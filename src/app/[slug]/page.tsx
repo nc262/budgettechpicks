@@ -6,6 +6,7 @@ import { getArticleBySlug, articles } from "@/data/articles";
 import { getProductsByArticle, affiliateUrl, amazonImageUrl, categoryEmoji } from "@/data/products";
 import ProductFilter, { RedditInsight } from "@/components/ProductFilter";
 import AdSlot from "@/components/AdSlot";
+import HeroProductCard from "@/components/HeroProductCard";
 import redditInsightsData from "@/data/reddit-insights.json";
 import productHealth from "@/data/product-health.json";
 import autoProductsRaw from "@/data/auto-products.json";
@@ -106,27 +107,49 @@ export default function ArticlePage({ params }: Props) {
     ],
   };
 
+  // Best product for this category — "Best Overall" badge first, else top rated
+  const heroProduct =
+    products.find((p) => p.badge === "🏆 Best Overall") ??
+    [...products].sort((a, b) => b.rating - a.rating)[0];
+
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10">
+    <div>
       <Script id="jsonld-itemlist" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
       <Script id="jsonld-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
+      {/* Category Hero */}
+      {heroProduct && (
+        <section className="relative overflow-hidden bg-gradient-to-br from-gray-950 via-[#0a0e1a] to-blue-950 text-white px-4 py-14">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="relative max-w-5xl mx-auto">
+            <div className="flex flex-col lg:flex-row items-center gap-10">
+              {/* Left: title + intro */}
+              <div className="flex-1 text-center lg:text-left">
+                <span className="inline-block bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
+                  {categoryEmoji[article.category] ?? "🛒"} {article.category}
+                </span>
+                <h1 className="text-4xl lg:text-5xl font-black mb-4 leading-[1.05]">{article.title}</h1>
+                <p className="text-gray-300 text-base max-w-xl mb-2 leading-relaxed">{article.intro}</p>
+                <p className="text-gray-500 text-xs">Last updated: {article.updatedAt}</p>
+              </div>
+              {/* Right: best product card */}
+              <div className="shrink-0 w-full lg:w-72">
+                <HeroProductCard product={heroProduct} />
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+    <div className="max-w-3xl mx-auto px-4 py-10">
+
       {/* Breadcrumb */}
-      <nav className="text-sm text-gray-500 mb-6 flex items-center gap-1.5">
+      <nav className="text-sm text-gray-500 mb-8 flex items-center gap-1.5">
         <Link href="/" className="hover:text-blue-400 transition-colors font-medium">Home</Link>
         <span>›</span>
         <span className="text-gray-300 font-semibold">{article.category}</span>
       </nav>
-
-      {/* Header */}
-      <div className="mb-8">
-        <span className="inline-block bg-blue-500/20 border border-blue-500/30 text-blue-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">
-          {article.category}
-        </span>
-        <h1 className="text-3xl md:text-4xl font-black text-white mb-3 leading-tight">{article.title}</h1>
-        <p className="text-sm text-gray-500 mb-4">Last updated: {article.updatedAt}</p>
-        <p className="text-lg text-gray-300 leading-relaxed">{article.intro}</p>
-      </div>
 
       {/* TL;DR Quick Picks */}
       {article.tldr && article.tldr.length > 0 && (
@@ -213,13 +236,13 @@ export default function ArticlePage({ params }: Props) {
       {/* Bottom ad */}
       <AdSlot slot="7683791736" style="horizontal" className="mt-4 mb-8" />
 
-      {/* Community Picks — auto-discovered by n8n from Reddit */}
+      {/* Community Picks — sourced from Reddit discussions */}
       {autoPicks.length > 0 && (
         <div className="bg-gray-900 rounded-2xl border border-gray-700/50 p-6 mb-8">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-xl">🤖</span>
             <h2 className="text-xl font-black text-white">Community Picks</h2>
-            <span className="ml-auto text-xs bg-blue-500/20 text-blue-300 border border-blue-500/30 px-2 py-0.5 rounded-full font-bold">Auto-discovered</span>
+            <span className="ml-auto text-xs bg-blue-500/20 text-blue-300 border border-blue-500/30 px-2 py-0.5 rounded-full font-bold">From Reddit</span>
           </div>
           <p className="text-xs text-gray-500 mb-4">Products spotted in Reddit discussions — not yet in our curated list.</p>
           <div className="grid gap-3">
@@ -267,6 +290,7 @@ export default function ArticlePage({ params }: Props) {
             ← Back to all picks
           </Link>
         </div>
+      </div>
       </div>
     </div>
   );

@@ -61,7 +61,7 @@ export default function AboutPage() {
           <span className="text-blue-400">More Hardware.</span>
         </h1>
         <p className="text-lg text-gray-300 leading-relaxed mb-4">
-          TotalTechPicks is an independent tech recommendation site. We exist because the internet is drowning in AI-generated affiliate sludge, influencer hot takes, and manufacturer-sponsored &quot;reviews.&quot;
+          TotalTechPicks is an independent tech recommendation site. We exist because the internet is drowning in SEO-optimized affiliate sludge, influencer hot takes, and manufacturer-sponsored &quot;reviews.&quot;
         </p>
         <p className="text-gray-400 leading-relaxed">
           We built TotalTechPicks to be the site we actually wanted to use when spending money on tech — one that gives you a straight answer, explains the trade-offs, and doesn&apos;t waste your time.

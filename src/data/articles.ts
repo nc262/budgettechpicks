@@ -78,7 +78,7 @@ export const articles: Article[] = [
         body: "A 78° FOV is standard for one person. 90°+ FOV is great if you have a home office backdrop you want to show. Too wide and your room looks like a fish-eye lens disaster.",
       },
     ],
-    verdict: "The Logitech C920s is the camera of record — millions of people use it, and there's a reason. But honestly? Get the Anker C200 2K if you're buying today. Better sensor, AI framing, and it makes you look like you care about your job. Which you do. Probably.",
+    verdict: "The Logitech C920s is the camera of record — millions of people use it, and there's a reason. But honestly? Get the Anker C200 2K if you're buying today. Better sensor, smart auto-framing, and it makes you look like you care about your job. Which you do. Probably.",
   },
   {
     slug: "best-wireless-earbuds-under-50",
