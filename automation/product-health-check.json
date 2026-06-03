@@ -1,9 +1,15 @@
 {
-  "name": "Product Health Check",
+  "updatedAt": "2026-06-03T00:07:17.232Z",
+  "createdAt": "2026-06-03T00:07:17.232Z",
+  "id": "NvoOkkVprj893mu9",
+  "name": "Nightly ASIN Health Check",
+  "description": null,
+  "active": true,
+  "isArchived": false,
   "nodes": [
     {
-      "id": "schedule",
-      "name": "Schedule ΓÇö Weekly",
+      "id": "01-schedule",
+      "name": "Schedule \u2014 Nightly 2am",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
       "position": [
@@ -14,20 +20,16 @@
         "rule": {
           "interval": [
             {
-              "field": "weeks",
-              "weeksInterval": 1,
-              "triggerAtDay": [
-                0
-              ],
-              "triggerAtHour": 2
+              "field": "cronExpression",
+              "expression": "0 2 * * *"
             }
           ]
         }
       }
     },
     {
-      "id": "get-products",
-      "name": "Get products.ts",
+      "id": "02-get-health-sha",
+      "name": "Get Health JSON SHA",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
@@ -36,99 +38,135 @@
       ],
       "parameters": {
         "method": "GET",
-        "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/products.ts",
-        "options": {},
+        "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/product-health.json",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
-            {
-              "name": "Authorization",
-              "value": "Bearer YOUR_GITHUB_PAT_HERE"
-            },
             {
               "name": "Accept",
               "value": "application/vnd.github+json"
             }
           ]
+        },
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi"
+      },
+      "credentials": {
+        "githubApi": {
+          "id": "JixM5IplKjCgdpw3",
+          "name": "GitHub account"
         }
       }
     },
     {
-      "id": "parse-asins",
-      "name": "Parse ASINs",
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
+      "id": "03-get-products",
+      "name": "Get products.ts",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
       "position": [
         440,
         0
       ],
       "parameters": {
-        "jsCode": "\nconst raw = $input.item.json;\nconst content = Buffer.from(raw.content, 'base64').toString('utf-8');\nconst asinMatches = [...content.matchAll(/asin:\\s*\"([A-Z0-9]{10})\"/g)];\nconst nameMatches = [...content.matchAll(/name:\\s*\"([^\"]+)\"/g)];\nconst items = [];\nfor (let i = 0; i < asinMatches.length; i++) {\n  const asin = asinMatches[i][1];\n  // Find the name closest before this asin match\n  items.push({ json: { asin, index: i } });\n}\nreturn items;\n",
-        "mode": "runOnceForAllItems"
-      }
-    },
-    {
-      "id": "get-current-health",
-      "name": "Get Current Health SHA",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [
-        220,
-        200
-      ],
-      "parameters": {
         "method": "GET",
-        "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/product-health.json",
-        "options": {},
+        "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/products.ts",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
-            {
-              "name": "Authorization",
-              "value": "Bearer YOUR_GITHUB_PAT_HERE"
-            },
             {
               "name": "Accept",
               "value": "application/vnd.github+json"
             }
           ]
+        },
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi"
+      },
+      "credentials": {
+        "githubApi": {
+          "id": "JixM5IplKjCgdpw3",
+          "name": "GitHub account"
         }
       }
     },
     {
-      "id": "build-health-json",
-      "name": "Build Health JSON",
+      "id": "04-parse-products",
+      "name": "Parse Products",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1760,
+        660,
         0
       ],
       "parameters": {
-        "jsCode": "\nconst sha = $input.first().json.sha;\nconst parseItems = $('Parse ASINs').all();\n\nconst healthMap = {};\nfor (const item of parseItems) {\n  const asin = item.json.asin;\n  healthMap[asin] = {\n    imageUrl: 'https://m.media-amazon.com/images/P/' + asin + '.01._SX300_QL70_.jpg',\n    isLive: true,\n    checkedAt: new Date().toISOString()\n  };\n}\n\nconst content = JSON.stringify(healthMap, null, 2);\nconst base64Content = Buffer.from(content).toString('base64');\nreturn [{ json: { sha, base64Content, count: Object.keys(healthMap).length } }];\n",
-        "mode": "runOnceForAllItems"
+        "mode": "runOnceForAllItems",
+        "jsCode": "const content = Buffer.from($input.item.json.content, 'base64').toString('utf-8');\nconst lines = content.split('\\n');\nconst items = [];\nconst seenAsins = new Set();\n\nfor (let i = 0; i < lines.length; i++) {\n  const asinMatch = lines[i].match(/^\\s+asin:\\s*\"([A-Z0-9]{10})\"/);\n  if (!asinMatch) continue;\n  const asin = asinMatch[1];\n  if (seenAsins.has(asin)) continue;\n  seenAsins.add(asin);\n\n  let id = '', name = '', price = '';\n  const start = Math.max(0, i - 15);\n  const end = Math.min(lines.length - 1, i + 10);\n  for (let j = start; j <= end; j++) {\n    if (!id) { const m = lines[j].match(/^\\s+id:\\s*\"([^\"]+)\"/); if (m) id = m[1]; }\n    if (!name) { const m = lines[j].match(/^\\s+name:\\s*\"([^\"]+)\"/); if (m) name = m[1]; }\n    if (!price) { const m = lines[j].match(/^\\s+price:\\s*\"([^\"]+)\"/); if (m) price = m[1]; }\n  }\n  items.push({ json: { asin, id, name, currentPrice: price } });\n}\n\nreturn items;"
       }
     },
     {
-      "id": "commit-health",
+      "id": "05-check-cdn",
+      "name": "Check ASIN Image CDN",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        880,
+        0
+      ],
+      "onError": "continueRegularOutput",
+      "parameters": {
+        "method": "GET",
+        "url": "={{ 'https://m.media-amazon.com/images/P/' + $json.asin + '.01._SX300_QL70_.jpg' }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "06-determine-live",
+      "name": "Determine Live Status",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1100,
+        0
+      ],
+      "parameters": {
+        "jsCode": "const original = $('Parse Products').item.json;\nconst asin = original.asin;\nconst id = original.id;\nconst name = original.name;\nconst currentPrice = original.currentPrice;\n\nlet isLive = false;\ntry {\n  const binaryData = $input.item.binary?.data;\n  if (binaryData) {\n    isLive = binaryData.mimeType === 'image/jpeg' ||\n             binaryData.mimeType === 'image/jpg' ||\n             (binaryData.fileSize !== undefined && binaryData.fileSize > 200);\n  }\n} catch(e) { isLive = false; }\n\nreturn [{ json: {\n  asin,\n  id,\n  name,\n  currentPrice,\n  isLive,\n  imageUrl: 'https://m.media-amazon.com/images/P/' + asin + '.01._SX300_QL70_.jpg',\n  checkedAt: new Date().toISOString()\n}}];"
+      }
+    },
+    {
+      "id": "07-aggregate",
+      "name": "Aggregate Health Results",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1320,
+        0
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const sha = $('Get Health JSON SHA').first().json.sha;\nconst healthMap = {};\n\nfor (const item of $input.all()) {\n  const { asin, isLive, imageUrl, checkedAt } = item.json;\n  if (!asin) continue;\n  healthMap[asin] = { isLive, imageUrl: imageUrl || ('https://m.media-amazon.com/images/P/' + asin + '.01._SX300_QL70_.jpg'), checkedAt };\n}\n\nconst liveCount = Object.values(healthMap).filter(h => h.isLive).length;\nconst deadCount = Object.values(healthMap).filter(h => !h.isLive).length;\nconst total = Object.keys(healthMap).length;\n\nconst content = JSON.stringify(healthMap, null, 2);\nconst base64Content = Buffer.from(content).toString('base64');\n\nreturn [{ json: { sha, base64Content, liveCount, deadCount, total } }];"
+      }
+    },
+    {
+      "id": "08-commit-health",
       "name": "Commit Health JSON",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1980,
+        1540,
         0
       ],
       "parameters": {
         "method": "PUT",
         "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/product-health.json",
-        "options": {},
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
-            {
-              "name": "Authorization",
-              "value": "Bearer YOUR_GITHUB_PAT_HERE"
-            },
             {
               "name": "Accept",
               "value": "application/vnd.github+json"
@@ -141,7 +179,7 @@
           "parameters": [
             {
               "name": "message",
-              "value": "chore: update product health data [automated]"
+              "value": "=chore: nightly ASIN health \u2014 {{ $json.liveCount }}/{{ $json.total }} live, {{ $json.deadCount }} dead [automated]"
             },
             {
               "name": "content",
@@ -156,12 +194,31 @@
               "value": "master"
             }
           ]
+        },
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi"
+      },
+      "credentials": {
+        "githubApi": {
+          "id": "JixM5IplKjCgdpw3",
+          "name": "GitHub account"
         }
       }
     }
   ],
   "connections": {
-    "Schedule ΓÇö Weekly": {
+    "Schedule \u2014 Nightly 2am": {
+      "main": [
+        [
+          {
+            "node": "Get Health JSON SHA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Health JSON SHA": {
       "main": [
         [
           {
@@ -176,40 +233,51 @@
       "main": [
         [
           {
-            "node": "Parse ASINs",
+            "node": "Parse Products",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Parse ASINs": {
+    "Parse Products": {
       "main": [
         [
           {
-            "node": "Get Current Health SHA",
+            "node": "Check ASIN Image CDN",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Build Health JSON": {
+    "Check ASIN Image CDN": {
+      "main": [
+        [
+          {
+            "node": "Determine Live Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Determine Live Status": {
+      "main": [
+        [
+          {
+            "node": "Aggregate Health Results",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate Health Results": {
       "main": [
         [
           {
             "node": "Commit Health JSON",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Get Current Health SHA": {
-      "main": [
-        [
-          {
-            "node": "Build Health JSON",
             "type": "main",
             "index": 0
           }
@@ -220,6 +288,322 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "active": true
+  "staticData": {
+    "node:Schedule \u2014 Nightly 2am": {
+      "recurrenceRules": []
+    }
+  },
+  "meta": null,
+  "pinData": null,
+  "versionId": "f5155980-91a9-4b3d-842e-8754795b0e6b",
+  "activeVersionId": "f5155980-91a9-4b3d-842e-8754795b0e6b",
+  "versionCounter": 1,
+  "triggerCount": 1,
+  "shared": [
+    {
+      "updatedAt": "2026-06-03T00:07:17.234Z",
+      "createdAt": "2026-06-03T00:07:17.234Z",
+      "role": "workflow:owner",
+      "workflowId": "NvoOkkVprj893mu9",
+      "projectId": "KTy0CYoApADUc5dz",
+      "project": {
+        "updatedAt": "2026-05-27T20:08:31.959Z",
+        "createdAt": "2026-05-27T20:06:00.436Z",
+        "id": "KTy0CYoApADUc5dz",
+        "name": "Nathan Ceniceros <nathanceniceros@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "3ab12d83-5a75-46b1-81de-fa097d522005"
+      }
+    }
+  ],
+  "tags": [],
+  "activeVersion": {
+    "updatedAt": "2026-06-03T00:07:17.234Z",
+    "createdAt": "2026-06-03T00:07:17.234Z",
+    "versionId": "f5155980-91a9-4b3d-842e-8754795b0e6b",
+    "workflowId": "NvoOkkVprj893mu9",
+    "nodes": [
+      {
+        "id": "01-schedule",
+        "name": "Schedule \u2014 Nightly 2am",
+        "type": "n8n-nodes-base.scheduleTrigger",
+        "typeVersion": 1.2,
+        "position": [
+          0,
+          0
+        ],
+        "parameters": {
+          "rule": {
+            "interval": [
+              {
+                "field": "cronExpression",
+                "expression": "0 2 * * *"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "02-get-health-sha",
+        "name": "Get Health JSON SHA",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          220,
+          0
+        ],
+        "parameters": {
+          "method": "GET",
+          "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/product-health.json",
+          "sendHeaders": true,
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "Authorization",
+                "value": "Bearer YOUR_GITHUB_PAT_HERE"
+              },
+              {
+                "name": "Accept",
+                "value": "application/vnd.github+json"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "03-get-products",
+        "name": "Get products.ts",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          440,
+          0
+        ],
+        "parameters": {
+          "method": "GET",
+          "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/products.ts",
+          "sendHeaders": true,
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "Authorization",
+                "value": "Bearer YOUR_GITHUB_PAT_HERE"
+              },
+              {
+                "name": "Accept",
+                "value": "application/vnd.github+json"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "04-parse-products",
+        "name": "Parse Products",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          660,
+          0
+        ],
+        "parameters": {
+          "mode": "runOnceForAllItems",
+          "jsCode": "const content = Buffer.from($input.item.json.content, 'base64').toString('utf-8');\nconst lines = content.split('\\n');\nconst items = [];\nconst seenAsins = new Set();\n\nfor (let i = 0; i < lines.length; i++) {\n  const asinMatch = lines[i].match(/^\\s+asin:\\s*\"([A-Z0-9]{10})\"/);\n  if (!asinMatch) continue;\n  const asin = asinMatch[1];\n  if (seenAsins.has(asin)) continue;\n  seenAsins.add(asin);\n\n  let id = '', name = '', price = '';\n  const start = Math.max(0, i - 15);\n  const end = Math.min(lines.length - 1, i + 10);\n  for (let j = start; j <= end; j++) {\n    if (!id) { const m = lines[j].match(/^\\s+id:\\s*\"([^\"]+)\"/); if (m) id = m[1]; }\n    if (!name) { const m = lines[j].match(/^\\s+name:\\s*\"([^\"]+)\"/); if (m) name = m[1]; }\n    if (!price) { const m = lines[j].match(/^\\s+price:\\s*\"([^\"]+)\"/); if (m) price = m[1]; }\n  }\n  items.push({ json: { asin, id, name, currentPrice: price } });\n}\n\nreturn items;"
+        }
+      },
+      {
+        "id": "05-check-cdn",
+        "name": "Check ASIN Image CDN",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          880,
+          0
+        ],
+        "onError": "continueRegularOutput",
+        "parameters": {
+          "method": "GET",
+          "url": "={{ 'https://m.media-amazon.com/images/P/' + $json.asin + '.01._SX300_QL70_.jpg' }}",
+          "options": {
+            "response": {
+              "response": {
+                "responseFormat": "file"
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "06-determine-live",
+        "name": "Determine Live Status",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          1100,
+          0
+        ],
+        "parameters": {
+          "jsCode": "const original = $('Parse Products').item.json;\nconst asin = original.asin;\nconst id = original.id;\nconst name = original.name;\nconst currentPrice = original.currentPrice;\n\nlet isLive = false;\ntry {\n  const binaryData = $input.item.binary?.data;\n  if (binaryData) {\n    isLive = binaryData.mimeType === 'image/jpeg' ||\n             binaryData.mimeType === 'image/jpg' ||\n             (binaryData.fileSize !== undefined && binaryData.fileSize > 200);\n  }\n} catch(e) { isLive = false; }\n\nreturn [{ json: {\n  asin,\n  id,\n  name,\n  currentPrice,\n  isLive,\n  imageUrl: 'https://m.media-amazon.com/images/P/' + asin + '.01._SX300_QL70_.jpg',\n  checkedAt: new Date().toISOString()\n}}];"
+        }
+      },
+      {
+        "id": "07-aggregate",
+        "name": "Aggregate Health Results",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          1320,
+          0
+        ],
+        "parameters": {
+          "mode": "runOnceForAllItems",
+          "jsCode": "const sha = $('Get Health JSON SHA').first().json.sha;\nconst healthMap = {};\n\nfor (const item of $input.all()) {\n  const { asin, isLive, imageUrl, checkedAt } = item.json;\n  if (!asin) continue;\n  healthMap[asin] = { isLive, imageUrl: imageUrl || ('https://m.media-amazon.com/images/P/' + asin + '.01._SX300_QL70_.jpg'), checkedAt };\n}\n\nconst liveCount = Object.values(healthMap).filter(h => h.isLive).length;\nconst deadCount = Object.values(healthMap).filter(h => !h.isLive).length;\nconst total = Object.keys(healthMap).length;\n\nconst content = JSON.stringify(healthMap, null, 2);\nconst base64Content = Buffer.from(content).toString('base64');\n\nreturn [{ json: { sha, base64Content, liveCount, deadCount, total } }];"
+        }
+      },
+      {
+        "id": "08-commit-health",
+        "name": "Commit Health JSON",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          1540,
+          0
+        ],
+        "parameters": {
+          "method": "PUT",
+          "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/product-health.json",
+          "sendHeaders": true,
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "Authorization",
+                "value": "Bearer YOUR_GITHUB_PAT_HERE"
+              },
+              {
+                "name": "Accept",
+                "value": "application/vnd.github+json"
+              }
+            ]
+          },
+          "sendBody": true,
+          "specifyBody": "keypair",
+          "bodyParameters": {
+            "parameters": [
+              {
+                "name": "message",
+                "value": "=chore: nightly ASIN health \u2014 {{ $json.liveCount }}/{{ $json.total }} live, {{ $json.deadCount }} dead [automated]"
+              },
+              {
+                "name": "content",
+                "value": "={{ $json.base64Content }}"
+              },
+              {
+                "name": "sha",
+                "value": "={{ $json.sha }}"
+              },
+              {
+                "name": "branch",
+                "value": "master"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "connections": {
+      "Schedule \u2014 Nightly 2am": {
+        "main": [
+          [
+            {
+              "node": "Get Health JSON SHA",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Get Health JSON SHA": {
+        "main": [
+          [
+            {
+              "node": "Get products.ts",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Get products.ts": {
+        "main": [
+          [
+            {
+              "node": "Parse Products",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Parse Products": {
+        "main": [
+          [
+            {
+              "node": "Check ASIN Image CDN",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Check ASIN Image CDN": {
+        "main": [
+          [
+            {
+              "node": "Determine Live Status",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Determine Live Status": {
+        "main": [
+          [
+            {
+              "node": "Aggregate Health Results",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Aggregate Health Results": {
+        "main": [
+          [
+            {
+              "node": "Commit Health JSON",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "authors": "Nathan Ceniceros",
+    "name": null,
+    "description": null,
+    "autosaved": false,
+    "workflowPublishHistory": [
+      {
+        "createdAt": "2026-06-03T00:07:17.262Z",
+        "id": 76,
+        "workflowId": "NvoOkkVprj893mu9",
+        "versionId": "f5155980-91a9-4b3d-842e-8754795b0e6b",
+        "event": "activated",
+        "userId": "3ab12d83-5a75-46b1-81de-fa097d522005"
+      }
+    ]
+  }
 }
-
