@@ -161,11 +161,10 @@ export default function MySetupPage() {
           <span className="text-blue-400">3 Computers. 1 Keyboard. 1 Screen.</span>
         </h1>
         <p className="text-lg text-gray-300 leading-relaxed mb-4">
-          I work from home as a DevOps engineer — 2 work laptops, 1 gaming PC, all running at the same time.
-          The whole setup has been built and refined over about 2 years to make it seamless to switch between work and play without touching a single cable.
+          I work from home as a DevOps engineer — 2 work laptops, 1 gaming PC, all running at the same time. My wife has always made fun of me for how long I research things before buying them. This page is basically the justification for all of that research.
         </p>
         <p className="text-gray-400 text-sm leading-relaxed">
-          Everything here I personally bought. No gifted units, no sponsored gear. Just what actually lives on my desk.
+          Everything here I personally bought. No gifted units, no sponsored gear. The whole setup has been built and refined over about 2 years — the goal was to switch between work and play without ever touching a cable.
         </p>
       </div>
 

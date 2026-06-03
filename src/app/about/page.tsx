@@ -61,10 +61,10 @@ export default function AboutPage() {
           <span className="text-blue-400">More Hardware.</span>
         </h1>
         <p className="text-lg text-gray-300 leading-relaxed mb-4">
-          TotalTechPicks is an independent tech recommendation site. We exist because the internet is drowning in SEO-optimized affiliate sludge, influencer hot takes, and manufacturer-sponsored &quot;reviews.&quot;
+          My wife used to make fun of me for spending hours researching TVs, desks, even cables before buying anything. She wasn&apos;t wrong — but I figured if I was going to do all that research anyway, I might as well write it down and share it.
         </p>
         <p className="text-gray-400 leading-relaxed">
-          We built TotalTechPicks to be the site we actually wanted to use when spending money on tech — one that gives you a straight answer, explains the trade-offs, and doesn&apos;t waste your time.
+          That&apos;s TotalTechPicks. Not a content studio. Not a media company. Just a DevOps engineer who&apos;s tired of sites that bury the actual answer in 3,000 words of padding — and wanted something straightforward to exist.
         </p>
       </div>
 
@@ -73,19 +73,36 @@ export default function AboutPage() {
         <div className="flex gap-4 items-start">
           <span className="text-4xl shrink-0">🎯</span>
           <div>
-            <h2 className="font-black text-white text-xl mb-2">Our Mission</h2>
+            <h2 className="font-black text-white text-xl mb-2">The philosophy</h2>
             <p className="text-gray-300 leading-relaxed">
-              To be the trusted armory where people go <em>before</em> spending money on tech — not after buyer&apos;s remorse kicks in. We care about your wallet and your desk more than our click-through rate.
+              Spending more doesn&apos;t automatically mean getting better — that&apos;s the whole point of this site. I&apos;d rather buy something once and have it be right than buy cheap and replace it in a year. But I&apos;ve also been burned by expensive gear that wasn&apos;t worth it. TotalTechPicks exists to help you tell the difference.
             </p>
           </div>
         </div>
       </div>
 
+      {/* Who's behind this */}
+      <section className="mb-12 bg-gray-900 rounded-2xl border border-gray-700/50 p-6">
+        <h2 className="text-2xl font-black text-white mb-4">⚙️ Who&apos;s behind this</h2>
+        <p className="text-gray-300 leading-relaxed mb-4">
+          I&apos;m a DevOps engineer running 3 computers off a single 57&quot; monitor and one keyboard. I spend probably too much time thinking about whether a product is actually worth what it costs — and now that obsession has a website.
+        </p>
+        <p className="text-gray-300 leading-relaxed mb-4">
+          My hot take: most people wildly overspend on keyboards and mice. If you&apos;re not a competitive gamer, a wired setup with basic switches works perfectly and costs a fraction of the price. RGB does nothing except look cool. (I still bought the clicky wireless keyboard. My wife works from home now and deeply regrets that decision.)
+        </p>
+        <p className="text-gray-300 leading-relaxed mb-4">
+          I also think the phone upgrade cycle is one of the biggest scams in consumer tech. Two-year-old flagship phones are genuinely fine. The manufacturers just need you to believe otherwise.
+        </p>
+        <p className="text-gray-400 leading-relaxed text-sm">
+          No sponsors. No paid placements. I don&apos;t even fully understand what a brand deal looks like at this point — I just like tech and I like writing about it honestly. The Amazon affiliate links help keep the lights on, but they don&apos;t change the rankings.
+        </p>
+      </section>
+
       {/* How we pick */}
       <section className="mb-12">
-        <h2 className="text-2xl font-black text-white mb-2">How We Pick Products</h2>
+        <h2 className="text-2xl font-black text-white mb-2">How picks are made</h2>
         <p className="text-gray-400 mb-6 text-sm">
-          Every product on TotalTechPicks passes the same filter. No exceptions.
+          Every product passes the same filter. No exceptions, no brand favoritism.
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
           {methodology.map((item) => (
