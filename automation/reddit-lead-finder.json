@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-03T00:21:12.944Z",
+  "updatedAt": "2026-06-03T00:22:28.254Z",
   "createdAt": "2026-06-01T14:38:59.809Z",
   "id": "bKe96bOw97L3zmnI",
   "name": "Reddit Lead Finder",
@@ -92,7 +92,7 @@
     },
     {
       "parameters": {
-        "url": "http://localhost:11434/api/generate",
+        "url": "http://127.0.0.1:11434/api/generate",
         "sendBody": true,
         "bodyParameters": {
           "parameters": []
@@ -126,7 +126,7 @@
     },
     {
       "parameters": {
-        "url": "http://localhost:3001/api/ingest",
+        "url": "http://127.0.0.1:3001/api/ingest",
         "sendBody": true,
         "specifyBody": "json",
         "jsonBody": "={{ JSON.stringify([$json]) }}",
@@ -223,15 +223,15 @@
   },
   "meta": null,
   "pinData": null,
-  "versionId": "4c20474d-bf45-434b-a186-2aaca0f64dec",
-  "activeVersionId": "4c20474d-bf45-434b-a186-2aaca0f64dec",
-  "versionCounter": 11,
+  "versionId": "0ce8658e-4958-4708-95ba-f76d7b4dae0b",
+  "activeVersionId": "0ce8658e-4958-4708-95ba-f76d7b4dae0b",
+  "versionCounter": 12,
   "triggerCount": 1,
   "tags": [],
   "activeVersion": {
-    "updatedAt": "2026-06-03T00:21:12.944Z",
-    "createdAt": "2026-06-03T00:21:12.944Z",
-    "versionId": "4c20474d-bf45-434b-a186-2aaca0f64dec",
+    "updatedAt": "2026-06-03T00:22:28.254Z",
+    "createdAt": "2026-06-03T00:22:28.254Z",
+    "versionId": "0ce8658e-4958-4708-95ba-f76d7b4dae0b",
     "workflowId": "bKe96bOw97L3zmnI",
     "nodes": [
       {
@@ -319,7 +319,7 @@
       },
       {
         "parameters": {
-          "url": "http://localhost:11434/api/generate",
+          "url": "http://127.0.0.1:11434/api/generate",
           "sendBody": true,
           "bodyParameters": {
             "parameters": []
@@ -353,7 +353,7 @@
       },
       {
         "parameters": {
-          "url": "http://localhost:3001/api/ingest",
+          "url": "http://127.0.0.1:3001/api/ingest",
           "sendBody": true,
           "specifyBody": "json",
           "jsonBody": "={{ JSON.stringify([$json]) }}",
