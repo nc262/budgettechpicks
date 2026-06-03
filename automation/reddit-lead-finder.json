@@ -1,1 +1,477 @@
-{"updatedAt":"2026-06-01T15:11:47.545Z","createdAt":"2026-06-01T14:38:59.809Z","id":"bKe96bOw97L3zmnI","name":"Reddit Lead Finder","description":null,"active":true,"isArchived":false,"nodes":[{"parameters":{"rule":{"interval":[{"field":"hours","hoursInterval":2}]}},"id":"schedule-node","name":"Every 2 Hours","type":"n8n-nodes-base.scheduleTrigger","typeVersion":1.1,"position":[240,300]},{"parameters":{"jsCode":"const subreddits = [\n  { sub: 'Monitors', queries: ['which monitor should', 'monitor recommendation', 'best monitor under', 'monitor help'] },\n  { sub: 'MechanicalKeyboards', queries: ['keyboard recommendation', 'best keyboard under', 'which keyboard', 'help choosing keyboard'] },\n  { sub: 'buildapc', queries: ['best mouse under', 'keyboard recommendation', 'monitor recommendation under', 'what headphones'] },\n  { sub: 'HomeOffice', queries: ['monitor for home office', 'best webcam', 'desk setup recommendation', 'keyboard recommendation'] },\n  { sub: 'gadgets', queries: ['best tech under', 'recommendation for', 'looking for a good'] },\n  { sub: 'BudgetAudiophile', queries: ['best headphones under', 'budget earbuds', 'headphone recommendation under'] }\n];\nconst tasks = [];\nfor (const { sub, queries } of subreddits) {\n  for (const q of queries) {\n    tasks.push({ subreddit: sub, query: q });\n  }\n}\nreturn tasks.map(t => ({ json: t }));"},"id":"build-tasks","name":"Build Search Tasks","type":"n8n-nodes-base.code","typeVersion":2,"position":[460,300]},{"parameters":{"url":"https://arctic-shift.photon-reddit.com/api/posts/search","sendQuery":true,"queryParameters":{"parameters":[{"name":"query","value":"={{ $json.query }}"},{"name":"subreddit","value":"={{ $json.subreddit }}"},{"name":"limit","value":"10"},{"name":"after","value":"={{ Math.floor(Date.now()/1000) - (72*3600) }}"}]},"options":{}},"id":"reddit-search","name":"Search Reddit","type":"n8n-nodes-base.httpRequest","typeVersion":4.1,"position":[680,300]},{"parameters":{"jsCode":"const posts = [];\nconst subreddit = $('Build Search Tasks').item.json.subreddit;\n\ntry {\n  const data = $input.item.json;\n  // Arctic Shift returns { data: [...] } — direct array, no .children wrapper\n  const items = data?.data || [];\n  const nowUtc = Math.floor(Date.now() / 1000);\n  const cutoff = nowUtc - (48 * 3600);\n\n  for (const p of items) {\n    if (!p) continue;\n    const title = (p.title || '').toLowerCase();\n    const isQuestion = title.includes('?') || title.includes('recommend') || title.includes('looking for') || title.includes('best ') || title.includes('help') || title.includes('which') || title.includes('should i') || title.includes('suggest');\n    if (!isQuestion) continue;\n    if (p.created_utc < cutoff) continue;\n    if (p.score < 0) continue;\n\n    posts.push({\n      id: p.id || p.name,\n      subreddit: p.subreddit || subreddit,\n      title: p.title || '',\n      url: 'https://reddit.com' + (p.permalink || ''),\n      body: (p.selftext || '').substring(0, 300),\n      score: p.score || 0,\n      num_comments: p.num_comments || 0,\n      created_utc: p.created_utc || nowUtc\n    });\n  }\n} catch(e) {}\n\nif (posts.length === 0) return [];\nreturn posts.map(p => ({ json: p }));"},"id":"filter-posts","name":"Filter Questions","type":"n8n-nodes-base.code","typeVersion":2,"position":[900,300]},{"parameters":{"url":"http://localhost:11434/api/generate","sendBody":true,"bodyParameters":{"parameters":[]},"specifyBody":"json","jsonBody":"={\n  \"model\": \"llama3.2\",\n  \"prompt\": \"You are writing a helpful Reddit comment for TotalTechPicks, a no-nonsense tech gear recommendation site (slogan: Less Hype. More Hardware.). Write a genuinely helpful reply to this Reddit post. Be conversational, specific, and helpful. Mention 1-2 relevant products if appropriate. DO NOT be salesy. DO NOT mention the website unless it naturally fits. Keep it under 150 words.\\n\\nSubreddit: r/{{ $json.subreddit }}\\nPost title: {{ $json.title }}\\nPost body: {{ $json.body }}\\n\\nWrite only the reply text, nothing else.\",\n  \"stream\": false\n}","options":{}},"id":"ollama-draft","name":"Draft Reply (Ollama)","type":"n8n-nodes-base.httpRequest","typeVersion":4.1,"position":[1120,300]},{"parameters":{"jsCode":"const post = $('Filter Questions').item.json;\nconst ollamaResp = $input.item.json;\nconst reply = ollamaResp?.response || '';\n\nreturn [{\n  json: {\n    ...post,\n    suggested_reply: reply.trim()\n  }\n}];"},"id":"merge-reply","name":"Merge Reply","type":"n8n-nodes-base.code","typeVersion":2,"position":[1340,300]},{"parameters":{"url":"http://localhost:3001/api/ingest","sendBody":true,"specifyBody":"json","jsonBody":"={{ JSON.stringify([$json]) }}","options":{}},"id":"save-lead","name":"Save Lead","type":"n8n-nodes-base.httpRequest","typeVersion":4.1,"position":[1560,300]}],"connections":{"Every 2 Hours":{"main":[[{"node":"Build Search Tasks","type":"main","index":0}]]},"Build Search Tasks":{"main":[[{"node":"Search Reddit","type":"main","index":0}]]},"Search Reddit":{"main":[[{"node":"Filter Questions","type":"main","index":0}]]},"Filter Questions":{"main":[[{"node":"Draft Reply (Ollama)","type":"main","index":0}]]},"Draft Reply (Ollama)":{"main":[[{"node":"Merge Reply","type":"main","index":0}]]},"Merge Reply":{"main":[[{"node":"Save Lead","type":"main","index":0}]]}},"settings":{"executionOrder":"v1"},"staticData":{"node:Every 2 Hours":{"recurrenceRules":[]}},"meta":null,"pinData":null,"versionId":"5b5cf98e-de5e-41c8-aea3-7c8c8c96de03","activeVersionId":"5b5cf98e-de5e-41c8-aea3-7c8c8c96de03","versionCounter":4,"triggerCount":1,"shared":[{"updatedAt":"2026-06-01T14:38:59.809Z","createdAt":"2026-06-01T14:38:59.809Z","role":"workflow:owner","workflowId":"bKe96bOw97L3zmnI","projectId":"KTy0CYoApADUc5dz","project":{"updatedAt":"2026-05-27T20:08:31.959Z","createdAt":"2026-05-27T20:06:00.436Z","id":"KTy0CYoApADUc5dz","name":"Nathan Ceniceros <nathanceniceros@gmail.com>","type":"personal","icon":null,"description":null,"creatorId":"3ab12d83-5a75-46b1-81de-fa097d522005"}}],"tags":[],"activeVersion":{"updatedAt":"2026-06-01T15:11:47.545Z","createdAt":"2026-06-01T15:11:47.545Z","versionId":"5b5cf98e-de5e-41c8-aea3-7c8c8c96de03","workflowId":"bKe96bOw97L3zmnI","nodes":[{"parameters":{"rule":{"interval":[{"field":"hours","hoursInterval":2}]}},"id":"schedule-node","name":"Every 2 Hours","type":"n8n-nodes-base.scheduleTrigger","typeVersion":1.1,"position":[240,300]},{"parameters":{"jsCode":"const subreddits = [\n  { sub: 'Monitors', queries: ['which monitor should', 'monitor recommendation', 'best monitor under', 'monitor help'] },\n  { sub: 'MechanicalKeyboards', queries: ['keyboard recommendation', 'best keyboard under', 'which keyboard', 'help choosing keyboard'] },\n  { sub: 'buildapc', queries: ['best mouse under', 'keyboard recommendation', 'monitor recommendation under', 'what headphones'] },\n  { sub: 'HomeOffice', queries: ['monitor for home office', 'best webcam', 'desk setup recommendation', 'keyboard recommendation'] },\n  { sub: 'gadgets', queries: ['best tech under', 'recommendation for', 'looking for a good'] },\n  { sub: 'BudgetAudiophile', queries: ['best headphones under', 'budget earbuds', 'headphone recommendation under'] }\n];\nconst tasks = [];\nfor (const { sub, queries } of subreddits) {\n  for (const q of queries) {\n    tasks.push({ subreddit: sub, query: q });\n  }\n}\nreturn tasks.map(t => ({ json: t }));"},"id":"build-tasks","name":"Build Search Tasks","type":"n8n-nodes-base.code","typeVersion":2,"position":[460,300]},{"parameters":{"url":"https://arctic-shift.photon-reddit.com/api/posts/search","sendQuery":true,"queryParameters":{"parameters":[{"name":"query","value":"={{ $json.query }}"},{"name":"subreddit","value":"={{ $json.subreddit }}"},{"name":"limit","value":"10"},{"name":"after","value":"={{ Math.floor(Date.now()/1000) - (72*3600) }}"}]},"options":{}},"id":"reddit-search","name":"Search Reddit","type":"n8n-nodes-base.httpRequest","typeVersion":4.1,"position":[680,300]},{"parameters":{"jsCode":"const posts = [];\nconst subreddit = $('Build Search Tasks').item.json.subreddit;\n\ntry {\n  const data = $input.item.json;\n  // Arctic Shift returns { data: [...] } — direct array, no .children wrapper\n  const items = data?.data || [];\n  const nowUtc = Math.floor(Date.now() / 1000);\n  const cutoff = nowUtc - (48 * 3600);\n\n  for (const p of items) {\n    if (!p) continue;\n    const title = (p.title || '').toLowerCase();\n    const isQuestion = title.includes('?') || title.includes('recommend') || title.includes('looking for') || title.includes('best ') || title.includes('help') || title.includes('which') || title.includes('should i') || title.includes('suggest');\n    if (!isQuestion) continue;\n    if (p.created_utc < cutoff) continue;\n    if (p.score < 0) continue;\n\n    posts.push({\n      id: p.id || p.name,\n      subreddit: p.subreddit || subreddit,\n      title: p.title || '',\n      url: 'https://reddit.com' + (p.permalink || ''),\n      body: (p.selftext || '').substring(0, 300),\n      score: p.score || 0,\n      num_comments: p.num_comments || 0,\n      created_utc: p.created_utc || nowUtc\n    });\n  }\n} catch(e) {}\n\nif (posts.length === 0) return [];\nreturn posts.map(p => ({ json: p }));"},"id":"filter-posts","name":"Filter Questions","type":"n8n-nodes-base.code","typeVersion":2,"position":[900,300]},{"parameters":{"url":"http://localhost:11434/api/generate","sendBody":true,"bodyParameters":{"parameters":[]},"specifyBody":"json","jsonBody":"={\n  \"model\": \"llama3.2\",\n  \"prompt\": \"You are writing a helpful Reddit comment for TotalTechPicks, a no-nonsense tech gear recommendation site (slogan: Less Hype. More Hardware.). Write a genuinely helpful reply to this Reddit post. Be conversational, specific, and helpful. Mention 1-2 relevant products if appropriate. DO NOT be salesy. DO NOT mention the website unless it naturally fits. Keep it under 150 words.\\n\\nSubreddit: r/{{ $json.subreddit }}\\nPost title: {{ $json.title }}\\nPost body: {{ $json.body }}\\n\\nWrite only the reply text, nothing else.\",\n  \"stream\": false\n}","options":{}},"id":"ollama-draft","name":"Draft Reply (Ollama)","type":"n8n-nodes-base.httpRequest","typeVersion":4.1,"position":[1120,300]},{"parameters":{"jsCode":"const post = $('Filter Questions').item.json;\nconst ollamaResp = $input.item.json;\nconst reply = ollamaResp?.response || '';\n\nreturn [{\n  json: {\n    ...post,\n    suggested_reply: reply.trim()\n  }\n}];"},"id":"merge-reply","name":"Merge Reply","type":"n8n-nodes-base.code","typeVersion":2,"position":[1340,300]},{"parameters":{"url":"http://localhost:3001/api/ingest","sendBody":true,"specifyBody":"json","jsonBody":"={{ JSON.stringify([$json]) }}","options":{}},"id":"save-lead","name":"Save Lead","type":"n8n-nodes-base.httpRequest","typeVersion":4.1,"position":[1560,300]}],"connections":{"Every 2 Hours":{"main":[[{"node":"Build Search Tasks","type":"main","index":0}]]},"Build Search Tasks":{"main":[[{"node":"Search Reddit","type":"main","index":0}]]},"Search Reddit":{"main":[[{"node":"Filter Questions","type":"main","index":0}]]},"Filter Questions":{"main":[[{"node":"Draft Reply (Ollama)","type":"main","index":0}]]},"Draft Reply (Ollama)":{"main":[[{"node":"Merge Reply","type":"main","index":0}]]},"Merge Reply":{"main":[[{"node":"Save Lead","type":"main","index":0}]]}},"authors":"Nathan Ceniceros","name":null,"description":null,"autosaved":false,"workflowPublishHistory":[{"createdAt":"2026-06-01T15:11:47.562Z","id":64,"workflowId":"bKe96bOw97L3zmnI","versionId":"5b5cf98e-de5e-41c8-aea3-7c8c8c96de03","event":"activated","userId":"3ab12d83-5a75-46b1-81de-fa097d522005"},{"createdAt":"2026-06-01T15:11:47.557Z","id":63,"workflowId":"bKe96bOw97L3zmnI","versionId":"5b5cf98e-de5e-41c8-aea3-7c8c8c96de03","event":"deactivated","userId":"3ab12d83-5a75-46b1-81de-fa097d522005"}]}}
+{
+  "updatedAt": "2026-06-03T00:11:50.156Z",
+  "createdAt": "2026-06-01T14:38:59.809Z",
+  "id": "bKe96bOw97L3zmnI",
+  "name": "Reddit Lead Finder",
+  "description": null,
+  "active": true,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 2
+            }
+          ]
+        }
+      },
+      "id": "schedule-node",
+      "name": "Every 2 Hours",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const subreddits = [\n  { sub: 'Monitors', queries: ['monitor recommendation', 'best monitor under'] },\n  { sub: 'MechanicalKeyboards', queries: ['keyboard recommendation', 'best keyboard under'] },\n  { sub: 'buildapc', queries: ['monitor recommendation under', 'best mouse under'] },\n  { sub: 'HomeOffice', queries: ['best webcam for work', 'standing desk recommendation'] },\n];\nconst tasks = [];\nfor (const { sub, queries } of subreddits) {\n  for (const q of queries) tasks.push({ subreddit: sub, query: q });\n}\nreturn tasks.map(t => ({ json: t }));"
+      },
+      "id": "build-tasks",
+      "name": "Build Search Tasks",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        460,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://arctic-shift.photon-reddit.com/api/posts/search",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "query",
+              "value": "={{ $json.query }}"
+            },
+            {
+              "name": "subreddit",
+              "value": "={{ $json.subreddit }}"
+            },
+            {
+              "name": "limit",
+              "value": "10"
+            },
+            {
+              "name": "after",
+              "value": "={{ Math.floor(Date.now()/1000) - (72*3600) }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "reddit-search",
+      "name": "Search Reddit",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        680,
+        300
+      ],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const posts = [];\nconst subreddit = $('Build Search Tasks').item.json.subreddit;\n\ntry {\n  const data = $input.item.json;\n  // Arctic Shift returns { data: [...] } — direct array, no .children wrapper\n  const items = data?.data || [];\n  const nowUtc = Math.floor(Date.now() / 1000);\n  const cutoff = nowUtc - (48 * 3600);\n\n  for (const p of items) {\n    if (!p) continue;\n    const title = (p.title || '').toLowerCase();\n    const isQuestion = title.includes('?') || title.includes('recommend') || title.includes('looking for') || title.includes('best ') || title.includes('help') || title.includes('which') || title.includes('should i') || title.includes('suggest');\n    if (!isQuestion) continue;\n    if (p.created_utc < cutoff) continue;\n    if (p.score < 0) continue;\n\n    posts.push({\n      id: p.id || p.name,\n      subreddit: p.subreddit || subreddit,\n      title: p.title || '',\n      url: 'https://reddit.com' + (p.permalink || ''),\n      body: (p.selftext || '').substring(0, 300),\n      score: p.score || 0,\n      num_comments: p.num_comments || 0,\n      created_utc: p.created_utc || nowUtc\n    });\n  }\n} catch(e) {}\n\nif (posts.length === 0) return [];\nreturn posts.map(p => ({ json: p }));"
+      },
+      "id": "filter-posts",
+      "name": "Filter Questions",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        900,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:11434/api/generate",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": []
+        },
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"llama3.2\",\n  \"prompt\": \"You are writing a helpful Reddit comment for TotalTechPicks, a no-nonsense tech gear recommendation site (slogan: Less Hype. More Hardware.). Write a genuinely helpful reply to this Reddit post. Be conversational, specific, and helpful. Mention 1-2 relevant products if appropriate. DO NOT be salesy. DO NOT mention the website unless it naturally fits. Keep it under 150 words.\\n\\nSubreddit: r/{{ $json.subreddit }}\\nPost title: {{ $json.title }}\\nPost body: {{ $json.body }}\\n\\nWrite only the reply text, nothing else.\",\n  \"stream\": false\n}",
+        "options": {}
+      },
+      "id": "ollama-draft",
+      "name": "Draft Reply (Ollama)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        1120,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const post = $('Filter Questions').item.json;\nconst ollamaResp = $input.item.json;\nconst reply = ollamaResp?.response || '';\n\nreturn [{\n  json: {\n    ...post,\n    suggested_reply: reply.trim()\n  }\n}];"
+      },
+      "id": "merge-reply",
+      "name": "Merge Reply",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1340,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/api/ingest",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify([$json]) }}",
+        "options": {}
+      },
+      "id": "save-lead",
+      "name": "Save Lead",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        1560,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Every 2 Hours": {
+      "main": [
+        [
+          {
+            "node": "Build Search Tasks",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Search Tasks": {
+      "main": [
+        [
+          {
+            "node": "Search Reddit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search Reddit": {
+      "main": [
+        [
+          {
+            "node": "Filter Questions",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter Questions": {
+      "main": [
+        [
+          {
+            "node": "Draft Reply (Ollama)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Draft Reply (Ollama)": {
+      "main": [
+        [
+          {
+            "node": "Merge Reply",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge Reply": {
+      "main": [
+        [
+          {
+            "node": "Save Lead",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": {
+    "node:Every 2 Hours": {
+      "recurrenceRules": [
+        18
+      ]
+    }
+  },
+  "meta": null,
+  "pinData": null,
+  "versionId": "bed6fb5f-a886-429c-9457-b5b1b105bd27",
+  "activeVersionId": "bed6fb5f-a886-429c-9457-b5b1b105bd27",
+  "versionCounter": 8,
+  "triggerCount": 1,
+  "shared": [
+    {
+      "updatedAt": "2026-06-01T14:38:59.809Z",
+      "createdAt": "2026-06-01T14:38:59.809Z",
+      "role": "workflow:owner",
+      "workflowId": "bKe96bOw97L3zmnI",
+      "projectId": "KTy0CYoApADUc5dz",
+      "project": {
+        "updatedAt": "2026-05-27T20:08:31.959Z",
+        "createdAt": "2026-05-27T20:06:00.436Z",
+        "id": "KTy0CYoApADUc5dz",
+        "name": "Nathan Ceniceros <nathanceniceros@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "3ab12d83-5a75-46b1-81de-fa097d522005"
+      }
+    }
+  ],
+  "tags": [],
+  "activeVersion": {
+    "updatedAt": "2026-06-03T00:11:50.158Z",
+    "createdAt": "2026-06-03T00:11:50.158Z",
+    "versionId": "bed6fb5f-a886-429c-9457-b5b1b105bd27",
+    "workflowId": "bKe96bOw97L3zmnI",
+    "nodes": [
+      {
+        "parameters": {
+          "rule": {
+            "interval": [
+              {
+                "field": "hours",
+                "hoursInterval": 2
+              }
+            ]
+          }
+        },
+        "id": "schedule-node",
+        "name": "Every 2 Hours",
+        "type": "n8n-nodes-base.scheduleTrigger",
+        "typeVersion": 1.1,
+        "position": [
+          240,
+          300
+        ]
+      },
+      {
+        "parameters": {
+          "jsCode": "const subreddits = [\n  { sub: 'Monitors', queries: ['monitor recommendation', 'best monitor under'] },\n  { sub: 'MechanicalKeyboards', queries: ['keyboard recommendation', 'best keyboard under'] },\n  { sub: 'buildapc', queries: ['monitor recommendation under', 'best mouse under'] },\n  { sub: 'HomeOffice', queries: ['best webcam for work', 'standing desk recommendation'] },\n];\nconst tasks = [];\nfor (const { sub, queries } of subreddits) {\n  for (const q of queries) tasks.push({ subreddit: sub, query: q });\n}\nreturn tasks.map(t => ({ json: t }));"
+        },
+        "id": "build-tasks",
+        "name": "Build Search Tasks",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          460,
+          300
+        ]
+      },
+      {
+        "parameters": {
+          "url": "https://arctic-shift.photon-reddit.com/api/posts/search",
+          "sendQuery": true,
+          "queryParameters": {
+            "parameters": [
+              {
+                "name": "query",
+                "value": "={{ $json.query }}"
+              },
+              {
+                "name": "subreddit",
+                "value": "={{ $json.subreddit }}"
+              },
+              {
+                "name": "limit",
+                "value": "10"
+              },
+              {
+                "name": "after",
+                "value": "={{ Math.floor(Date.now()/1000) - (72*3600) }}"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "id": "reddit-search",
+        "name": "Search Reddit",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.1,
+        "position": [
+          680,
+          300
+        ],
+        "continueOnFail": true
+      },
+      {
+        "parameters": {
+          "jsCode": "const posts = [];\nconst subreddit = $('Build Search Tasks').item.json.subreddit;\n\ntry {\n  const data = $input.item.json;\n  // Arctic Shift returns { data: [...] } — direct array, no .children wrapper\n  const items = data?.data || [];\n  const nowUtc = Math.floor(Date.now() / 1000);\n  const cutoff = nowUtc - (48 * 3600);\n\n  for (const p of items) {\n    if (!p) continue;\n    const title = (p.title || '').toLowerCase();\n    const isQuestion = title.includes('?') || title.includes('recommend') || title.includes('looking for') || title.includes('best ') || title.includes('help') || title.includes('which') || title.includes('should i') || title.includes('suggest');\n    if (!isQuestion) continue;\n    if (p.created_utc < cutoff) continue;\n    if (p.score < 0) continue;\n\n    posts.push({\n      id: p.id || p.name,\n      subreddit: p.subreddit || subreddit,\n      title: p.title || '',\n      url: 'https://reddit.com' + (p.permalink || ''),\n      body: (p.selftext || '').substring(0, 300),\n      score: p.score || 0,\n      num_comments: p.num_comments || 0,\n      created_utc: p.created_utc || nowUtc\n    });\n  }\n} catch(e) {}\n\nif (posts.length === 0) return [];\nreturn posts.map(p => ({ json: p }));"
+        },
+        "id": "filter-posts",
+        "name": "Filter Questions",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          900,
+          300
+        ]
+      },
+      {
+        "parameters": {
+          "url": "http://localhost:11434/api/generate",
+          "sendBody": true,
+          "bodyParameters": {
+            "parameters": []
+          },
+          "specifyBody": "json",
+          "jsonBody": "={\n  \"model\": \"llama3.2\",\n  \"prompt\": \"You are writing a helpful Reddit comment for TotalTechPicks, a no-nonsense tech gear recommendation site (slogan: Less Hype. More Hardware.). Write a genuinely helpful reply to this Reddit post. Be conversational, specific, and helpful. Mention 1-2 relevant products if appropriate. DO NOT be salesy. DO NOT mention the website unless it naturally fits. Keep it under 150 words.\\n\\nSubreddit: r/{{ $json.subreddit }}\\nPost title: {{ $json.title }}\\nPost body: {{ $json.body }}\\n\\nWrite only the reply text, nothing else.\",\n  \"stream\": false\n}",
+          "options": {}
+        },
+        "id": "ollama-draft",
+        "name": "Draft Reply (Ollama)",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.1,
+        "position": [
+          1120,
+          300
+        ]
+      },
+      {
+        "parameters": {
+          "jsCode": "const post = $('Filter Questions').item.json;\nconst ollamaResp = $input.item.json;\nconst reply = ollamaResp?.response || '';\n\nreturn [{\n  json: {\n    ...post,\n    suggested_reply: reply.trim()\n  }\n}];"
+        },
+        "id": "merge-reply",
+        "name": "Merge Reply",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          1340,
+          300
+        ]
+      },
+      {
+        "parameters": {
+          "url": "http://localhost:3001/api/ingest",
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify([$json]) }}",
+          "options": {}
+        },
+        "id": "save-lead",
+        "name": "Save Lead",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.1,
+        "position": [
+          1560,
+          300
+        ]
+      }
+    ],
+    "connections": {
+      "Every 2 Hours": {
+        "main": [
+          [
+            {
+              "node": "Build Search Tasks",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Build Search Tasks": {
+        "main": [
+          [
+            {
+              "node": "Search Reddit",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Search Reddit": {
+        "main": [
+          [
+            {
+              "node": "Filter Questions",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Filter Questions": {
+        "main": [
+          [
+            {
+              "node": "Draft Reply (Ollama)",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Draft Reply (Ollama)": {
+        "main": [
+          [
+            {
+              "node": "Merge Reply",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Merge Reply": {
+        "main": [
+          [
+            {
+              "node": "Save Lead",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "authors": "Nathan Ceniceros",
+    "name": null,
+    "description": null,
+    "autosaved": false,
+    "workflowPublishHistory": [
+      {
+        "createdAt": "2026-06-03T00:11:50.183Z",
+        "id": 82,
+        "workflowId": "bKe96bOw97L3zmnI",
+        "versionId": "bed6fb5f-a886-429c-9457-b5b1b105bd27",
+        "event": "activated",
+        "userId": "3ab12d83-5a75-46b1-81de-fa097d522005"
+      },
+      {
+        "createdAt": "2026-06-03T00:11:50.172Z",
+        "id": 81,
+        "workflowId": "bKe96bOw97L3zmnI",
+        "versionId": "bed6fb5f-a886-429c-9457-b5b1b105bd27",
+        "event": "deactivated",
+        "userId": "3ab12d83-5a75-46b1-81de-fa097d522005"
+      }
+    ]
+  }
+}
