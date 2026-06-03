@@ -1,0 +1,175 @@
+{
+  "name": "Nightly Product Discovery",
+  "nodes": [
+    {
+      "id": "01-schedule",
+      "name": "Schedule — Nightly 3am",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 3 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "02-define-searches",
+      "name": "Define Discovery Searches",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 0],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Subreddits + queries tuned to TotalTechPicks categories\nconst searches = [\n  { subreddit: 'techdeals', query: 'amazon deal keyboard mouse headset' },\n  { subreddit: 'techdeals', query: 'amazon deal webcam monitor hub' },\n  { subreddit: 'gadgets', query: 'best new tech gadget 2025' },\n  { subreddit: 'gadgets', query: 'recommend tech gift under 100' },\n  { subreddit: 'buildapc', query: 'best monitor keyboard mouse recommendation' },\n  { subreddit: 'homeoffice', query: 'best desk setup webcam monitor recommendation' },\n  { subreddit: 'MechanicalKeyboards', query: 'best keyboard recommendation budget' },\n  { subreddit: 'BudgetAudiophile', query: 'best headphones earbuds recommendation' },\n  { subreddit: 'Monitors', query: 'best monitor recommendation 2025' },\n  { subreddit: 'smarthome', query: 'best smart home device recommendation' },\n  { subreddit: 'pcmasterrace', query: 'best gaming gear peripherals recommendation' },\n  { subreddit: 'streaming', query: 'best webcam microphone streaming gear' }\n];\nreturn searches.map(s => ({ json: s }));"
+      }
+    },
+    {
+      "id": "03-reddit-search",
+      "name": "Search Reddit (Arctic Shift)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [440, 0],
+      "onError": "continueRegularOutput",
+      "parameters": {
+        "url": "https://arctic-shift.photon-reddit.com/api/posts/search",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "query", "value": "={{ $json.query }}" },
+            { "name": "subreddit", "value": "={{ $json.subreddit }}" },
+            { "name": "limit", "value": "15" },
+            { "name": "after", "value": "={{ Math.floor(Date.now()/1000) - (14*24*3600) }}" }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "04-filter-posts",
+      "name": "Filter High-Quality Posts",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 0],
+      "parameters": {
+        "jsCode": "const searchMeta = $('Define Discovery Searches').item.json;\nconst data = $input.item.json;\nconst posts = data?.data || [];\nconst nowUtc = Math.floor(Date.now() / 1000);\nconst cutoff = nowUtc - (14 * 24 * 3600);\n\nconst filtered = posts\n  .filter(p => p && p.score >= 30 && p.created_utc > cutoff)\n  .slice(0, 5);\n\nif (filtered.length === 0) return [];\n\nreturn filtered.map(p => ({\n  json: {\n    subreddit: p.subreddit || searchMeta.subreddit,\n    postId: p.id || p.name,\n    title: p.title || '',\n    body: (p.selftext || '').substring(0, 500),\n    score: p.score || 0,\n    numComments: p.num_comments || 0,\n    url: 'https://reddit.com' + (p.permalink || ''),\n    createdUtc: p.created_utc || nowUtc,\n    searchCategory: searchMeta.subreddit\n  }\n}));"
+      }
+    },
+    {
+      "id": "05-extract-products",
+      "name": "Extract Product Names (Ollama)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [880, 0],
+      "onError": "continueRegularOutput",
+      "parameters": {
+        "url": "http://localhost:11434/api/generate",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"llama3.2\",\n  \"prompt\": \"Extract all specific tech product names mentioned in this Reddit post. Return ONLY a valid JSON array of strings. If none found, return []. Do not include generic terms like 'keyboard' or 'monitor' — only specific named products like 'Logitech MX Keys', 'Samsung Odyssey G5', 'Sony WH-1000XM5'.\\n\\nTitle: {{ $json.title }}\\nBody: {{ $json.body }}\\n\\nReturn only the JSON array, nothing else.\",\n  \"stream\": false\n}",
+        "options": {}
+      }
+    },
+    {
+      "id": "06-parse-products",
+      "name": "Parse Extracted Products",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1100, 0],
+      "parameters": {
+        "jsCode": "const post = $('Filter High-Quality Posts').item.json;\nconst ollamaResp = $input.item.json;\nconst rawText = (ollamaResp?.response || '').trim();\n\nlet products = [];\ntry {\n  // Find JSON array in response\n  const match = rawText.match(/\\[.*\\]/s);\n  if (match) products = JSON.parse(match[0]);\n  if (!Array.isArray(products)) products = [];\n} catch(e) { products = []; }\n\n// Filter out obviously generic terms\nconst SKIP = ['keyboard','mouse','monitor','headset','webcam','headphones','earbuds','speaker','hub','charger','desk','chair'];\nproducts = products.filter(p =>\n  typeof p === 'string' &&\n  p.length > 5 &&\n  p.length < 80 &&\n  !SKIP.includes(p.toLowerCase().trim())\n);\n\nif (products.length === 0) return [];\n\nreturn products.map(productName => ({\n  json: {\n    productName: productName.trim(),\n    sourceUrl: post.url,\n    subreddit: post.subreddit,\n    postTitle: post.title,\n    postScore: post.score,\n    postComments: post.numComments,\n    addedAt: new Date().toISOString(),\n    status: 'pending'\n  }\n}));"
+      }
+    },
+    {
+      "id": "07-get-candidates-sha",
+      "name": "Get Candidates JSON SHA",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1320, 0],
+      "onError": "continueRegularOutput",
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/scripts/product-candidates.json",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Authorization", "value": "Bearer YOUR_GITHUB_PAT_HERE" },
+            { "name": "Accept", "value": "application/vnd.github+json" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "08-merge-candidates",
+      "name": "Merge & Deduplicate Candidates",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1540, 0],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Get SHA and existing candidates from GitHub response\nconst githubResp = $('Get Candidates JSON SHA').first().json;\nconst sha = githubResp?.sha || null;\n\nlet existing = [];\ntry {\n  if (githubResp?.content) {\n    const decoded = Buffer.from(githubResp.content, 'base64').toString('utf-8');\n    const parsed = JSON.parse(decoded);\n    existing = parsed.candidates || [];\n  }\n} catch(e) { existing = []; }\n\n// Collect all new candidates from this run\nconst newCandidates = $input.all()\n  .map(i => i.json)\n  .filter(c => c.productName && c.sourceUrl);\n\n// Deduplicate: keep existing + add new ones not already present\nconst existingNames = new Set(existing.map(c => c.productName.toLowerCase().trim()));\nconst toAdd = newCandidates.filter(c => !existingNames.has(c.productName.toLowerCase().trim()));\n\n// Prune: remove candidates older than 30 days, keep last 200\nconst thirtyDaysAgo = Date.now() - (30 * 24 * 3600 * 1000);\nconst pruned = existing.filter(c => {\n  const ts = c.addedAt ? new Date(c.addedAt).getTime() : 0;\n  return ts > thirtyDaysAgo || c.status !== 'pending';\n});\n\nconst allCandidates = [...pruned, ...toAdd].slice(-200);\n\nconst output = {\n  lastUpdated: new Date().toISOString(),\n  totalCandidates: allCandidates.length,\n  pendingReview: allCandidates.filter(c => c.status === 'pending').length,\n  candidates: allCandidates\n};\n\nconst base64Content = Buffer.from(JSON.stringify(output, null, 2)).toString('base64');\nreturn [{ json: { sha, base64Content, newCount: toAdd.length, totalCount: allCandidates.length } }];"
+      }
+    },
+    {
+      "id": "09-commit-candidates",
+      "name": "Commit Candidates JSON",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1760, 0],
+      "parameters": {
+        "method": "PUT",
+        "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/scripts/product-candidates.json",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Authorization", "value": "Bearer YOUR_GITHUB_PAT_HERE" },
+            { "name": "Accept", "value": "application/vnd.github+json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "keypair",
+        "bodyParameters": {
+          "parameters": [
+            { "name": "message", "value": "=chore: product discovery — {{ $json.newCount }} new candidates found [automated]" },
+            { "name": "content", "value": "={{ $json.base64Content }}" },
+            { "name": "sha", "value": "={{ $json.sha || undefined }}" },
+            { "name": "branch", "value": "master" }
+          ]
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Schedule — Nightly 3am": {
+      "main": [[{ "node": "Define Discovery Searches", "type": "main", "index": 0 }]]
+    },
+    "Define Discovery Searches": {
+      "main": [[{ "node": "Search Reddit (Arctic Shift)", "type": "main", "index": 0 }]]
+    },
+    "Search Reddit (Arctic Shift)": {
+      "main": [[{ "node": "Filter High-Quality Posts", "type": "main", "index": 0 }]]
+    },
+    "Filter High-Quality Posts": {
+      "main": [[{ "node": "Extract Product Names (Ollama)", "type": "main", "index": 0 }]]
+    },
+    "Extract Product Names (Ollama)": {
+      "main": [[{ "node": "Parse Extracted Products", "type": "main", "index": 0 }]]
+    },
+    "Parse Extracted Products": {
+      "main": [[{ "node": "Get Candidates JSON SHA", "type": "main", "index": 0 }]]
+    },
+    "Get Candidates JSON SHA": {
+      "main": [[{ "node": "Merge & Deduplicate Candidates", "type": "main", "index": 0 }]]
+    },
+    "Merge & Deduplicate Candidates": {
+      "main": [[{ "node": "Commit Candidates JSON", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": { "executionOrder": "v1" },
+  "active": true
+}
