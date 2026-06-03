@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-03T00:15:33.597Z",
+  "updatedAt": "2026-06-03T00:19:16.804Z",
   "createdAt": "2026-06-01T14:38:59.809Z",
   "id": "bKe96bOw97L3zmnI",
   "name": "Reddit Lead Finder",
@@ -97,8 +97,9 @@
           "parameters": []
         },
         "specifyBody": "json",
-        "jsonBody": "={{ JSON.stringify({\n  model: \"llama3.2\",\n  prompt: \"You are writing a helpful Reddit comment for TotalTechPicks, a no-nonsense tech gear recommendation site (slogan: Less Hype. More Hardware.). Write a genuinely helpful reply to this Reddit post. Be conversational, specific, and helpful. Mention 1-2 relevant products if appropriate. DO NOT be salesy. DO NOT mention the website unless it naturally fits. Keep it under 150 words.\\n\\nSubreddit: r/\" + $json.subreddit + \"\\nPost title: \" + $json.title + \"\\nPost body: \" + ($json.body || \"\").substring(0, 500) + \"\\n\\nWrite only the reply text, nothing else.\",\n  stream: false\n}) }}",
-        "options": {}
+        "jsonBody": "={{ JSON.stringify({\n  model: \"llama3.2:3b\",\n  prompt: \"You are writing a helpful Reddit comment for TotalTechPicks, a no-nonsense tech gear recommendation site (slogan: Less Hype. More Hardware.). Write a genuinely helpful reply to this Reddit post. Be conversational, specific, and helpful. Mention 1-2 relevant products if appropriate. DO NOT be salesy. DO NOT mention the website unless it naturally fits. Keep it under 150 words.\\n\\nSubreddit: r/\" + $json.subreddit + \"\\nPost title: \" + $json.title + \"\\nPost body: \" + ($json.body || \"\").substring(0, 500) + \"\\n\\nWrite only the reply text, nothing else.\",\n  stream: false\n}) }}",
+        "options": {},
+        "method": "POST"
       },
       "id": "ollama-draft",
       "name": "Draft Reply (Ollama)",
@@ -220,15 +221,15 @@
   },
   "meta": null,
   "pinData": null,
-  "versionId": "934f85c1-b7b1-415a-802d-882d88e10c26",
-  "activeVersionId": "934f85c1-b7b1-415a-802d-882d88e10c26",
-  "versionCounter": 9,
+  "versionId": "a173a310-67db-485a-a561-1f085979cada",
+  "activeVersionId": "a173a310-67db-485a-a561-1f085979cada",
+  "versionCounter": 10,
   "triggerCount": 1,
   "tags": [],
   "activeVersion": {
-    "updatedAt": "2026-06-03T00:15:33.597Z",
-    "createdAt": "2026-06-03T00:15:33.597Z",
-    "versionId": "934f85c1-b7b1-415a-802d-882d88e10c26",
+    "updatedAt": "2026-06-03T00:19:16.804Z",
+    "createdAt": "2026-06-03T00:19:16.804Z",
+    "versionId": "a173a310-67db-485a-a561-1f085979cada",
     "workflowId": "bKe96bOw97L3zmnI",
     "nodes": [
       {
@@ -321,8 +322,9 @@
             "parameters": []
           },
           "specifyBody": "json",
-          "jsonBody": "={{ JSON.stringify({\n  model: \"llama3.2\",\n  prompt: \"You are writing a helpful Reddit comment for TotalTechPicks, a no-nonsense tech gear recommendation site (slogan: Less Hype. More Hardware.). Write a genuinely helpful reply to this Reddit post. Be conversational, specific, and helpful. Mention 1-2 relevant products if appropriate. DO NOT be salesy. DO NOT mention the website unless it naturally fits. Keep it under 150 words.\\n\\nSubreddit: r/\" + $json.subreddit + \"\\nPost title: \" + $json.title + \"\\nPost body: \" + ($json.body || \"\").substring(0, 500) + \"\\n\\nWrite only the reply text, nothing else.\",\n  stream: false\n}) }}",
-          "options": {}
+          "jsonBody": "={{ JSON.stringify({\n  model: \"llama3.2:3b\",\n  prompt: \"You are writing a helpful Reddit comment for TotalTechPicks, a no-nonsense tech gear recommendation site (slogan: Less Hype. More Hardware.). Write a genuinely helpful reply to this Reddit post. Be conversational, specific, and helpful. Mention 1-2 relevant products if appropriate. DO NOT be salesy. DO NOT mention the website unless it naturally fits. Keep it under 150 words.\\n\\nSubreddit: r/\" + $json.subreddit + \"\\nPost title: \" + $json.title + \"\\nPost body: \" + ($json.body || \"\").substring(0, 500) + \"\\n\\nWrite only the reply text, nothing else.\",\n  stream: false\n}) }}",
+          "options": {},
+          "method": "POST"
         },
         "id": "ollama-draft",
         "name": "Draft Reply (Ollama)",
