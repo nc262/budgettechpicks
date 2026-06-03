@@ -35,12 +35,28 @@ export default function Footer() {
             <p className="text-white font-bold mb-3 text-sm uppercase tracking-widest">TotalTechPicks</p>
             <ul className="space-y-2 text-sm">
               <li><Link href="/" className="hover:text-blue-400 transition-colors">Home</Link></li>
+              <li><Link href="/my-setup" className="hover:text-blue-400 transition-colors">⚙️ My Actual Setup</Link></li>
               <li><Link href="/about" className="hover:text-blue-400 transition-colors">About &amp; Methodology</Link></li>
               <li><Link href="/privacy-policy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
               <li><a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Shop Amazon</a></li>
             </ul>
-
           </div>
+        </div>
+
+        {/* Founder strip */}
+        <div className="bg-gray-900/60 border border-gray-800/60 rounded-2xl px-6 py-4 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="text-sm font-bold text-white mb-0.5">Built by a DevOps engineer who got tired of bad gear.</p>
+            <p className="text-xs text-gray-400 leading-relaxed">
+              3 computers. 1 keyboard. 1 screen. Every pick on this site has been researched by someone who actually uses this stuff daily — not an AI, not a content farm.
+            </p>
+          </div>
+          <Link
+            href="/my-setup"
+            className="shrink-0 bg-gray-800 hover:bg-gray-700 border border-gray-700 hover:border-blue-500/40 text-gray-200 hover:text-blue-300 text-xs font-bold px-4 py-2.5 rounded-xl transition-all whitespace-nowrap"
+          >
+            ⚙️ See My Setup →
+          </Link>
         </div>
 
         <div className="border-t border-gray-800/50 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
