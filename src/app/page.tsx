@@ -6,6 +6,7 @@ import { articles } from "@/data/articles";
 import AdSlot from "@/components/AdSlot";
 import FeaturedGrid from "@/components/FeaturedGrid";
 import HeroProductCard from "@/components/HeroProductCard";
+import SetupItemImage from "@/components/SetupItemImage";
 
 const SITE_URL = "https://totaltechpicks.com";
 
@@ -126,7 +127,11 @@ export default function HomePage() {
                   className="bg-gray-900 rounded-2xl border border-gray-700/50 p-4 glow-card transition-all duration-200 flex flex-col"
                 >
                   <div className="flex items-center gap-3 mb-2">
-                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0 ${color}`}>{emoji}</div>
+                    {product.asin ? (
+                      <SetupItemImage asin={product.asin} name={product.name} className="w-10 h-10 object-contain rounded-xl bg-gray-800 shrink-0" />
+                    ) : (
+                      <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0 ${color}`}>{emoji}</div>
+                    )}
                     {product.badge && (
                       <span className="text-xs font-bold text-orange-400 bg-orange-400/10 border border-orange-400/20 px-2 py-0.5 rounded-full leading-tight">{product.badge}</span>
                     )}

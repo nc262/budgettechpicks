@@ -6,18 +6,21 @@ interface Props {
   asin?: string;
   imageUrl?: string;
   name: string;
+  className?: string;
 }
 
-export default function SetupItemImage({ asin, imageUrl, name }: Props) {
+export default function SetupItemImage({ asin, imageUrl, name, className }: Props) {
   const src = imageUrl ?? (asin ? amazonImageUrl(asin) : null);
   if (!src) return null;
+
+  const cls = className ?? "w-24 h-24 object-contain rounded-xl bg-gray-800 shrink-0";
 
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
       src={src}
       alt={name}
-      className="w-24 h-24 object-contain rounded-xl bg-gray-800 shrink-0"
+      className={cls}
       onError={(e) => {
         if (asin) {
           const t = e.currentTarget;
