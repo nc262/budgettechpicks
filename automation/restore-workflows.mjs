@@ -41,10 +41,12 @@ for (const file of files) {
       body: JSON.stringify({ name: workflow.name, nodes: workflow.nodes, connections: workflow.connections, settings: workflow.settings })
     }).then(r => r.json());
   } else {
+    // Strip read-only fields (active, meta, versionId) before creating
+    const { active, meta, versionId, activeVersionId, ...createPayload } = workflow;
     result = await fetch(`${BASE}/api/v1/workflows`, {
       method: 'POST',
       headers: { 'X-N8N-API-KEY': KEY, 'Content-Type': 'application/json' },
-      body: JSON.stringify(workflow)
+      body: JSON.stringify(createPayload)
     }).then(r => r.json());
   }
 
