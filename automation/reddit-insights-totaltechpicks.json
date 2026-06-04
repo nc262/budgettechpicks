@@ -42,7 +42,7 @@
           "parameters": [
             {
               "name": "q",
-              "value": "={{ \\.query }}"
+              "value": "={{ $json.query }}"
             },
             {
               "name": "limit",
