@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-04T13:13:24.766Z",
+  "updatedAt": "2026-06-04T13:24:15.927Z",
   "createdAt": "2026-05-27T20:09:01.296Z",
   "id": "iLTEZ62a1Ky7cfFl",
   "name": "Reddit Insights - TotalTechPicks",
@@ -60,7 +60,7 @@
             },
             {
               "name": "after",
-              "value": "2025-06-04"
+              "value": "2024-01-01"
             },
             {
               "name": "subreddit",
@@ -93,7 +93,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const input = $input.item.json;\nconst productName = $('Product Keyword List').item.json.productName;\nconst productSlug = $('Product Keyword List').item.json.productSlug;\n\nconst sixMonthsAgo = Date.now() / 1000 - (6 * 30 * 24 * 3600);\nconst posts = input?.data ?? [];\n\nconst filtered = posts\n  .map(p => p.data)\n  .filter(p => {\n    if (!p) return false;\n    if ((p.num_comments || 0) < 3) return false;\n    if (p.created_utc < sixMonthsAgo) return false;\n    if ((p.score || 0) < 1) return false;\n    return true;\n  })\n  .slice(0, 3);\n\nif (filtered.length === 0) {\n  return [{ json: { skip: true, productName, productSlug } }];\n}\n\nreturn filtered.map(p => ({\n  json: {\n    productName,\n    productSlug,\n    postId: p.id,\n    postTitle: p.title,\n    postScore: p.score,\n    numComments: p.num_comments,\n    subreddit: p.subreddit,\n    permalink: `https://www.reddit.com${p.permalink}`\n  }\n}));"
+        "jsCode": "const input = $input.item.json;\nconst productName = $('Product Keyword List').item.json.productName;\nconst productSlug = $('Product Keyword List').item.json.productSlug;\n\nconst sixMonthsAgo = Date.now() / 1000 - (6 * 30 * 24 * 3600);\nconst posts = input?.data ?? [];\n\nconst filtered = posts\n  .filter(p => {\n    if (!p) return false;\n    if ((p.num_comments || 0) < 1) return false;\n    if (p.created_utc < sixMonthsAgo) return false;\n    if ((p.score || 0) < 1) return false;\n    return true;\n  })\n  .slice(0, 3);\n\nif (filtered.length === 0) {\n  return [{ json: { skip: true, productName, productSlug } }];\n}\n\nreturn filtered.map(p => ({\n  json: {\n    productName,\n    productSlug,\n    postId: p.id,\n    postTitle: p.title,\n    postScore: p.score,\n    numComments: p.num_comments,\n    subreddit: p.subreddit,\n    permalink: `https://www.reddit.com${p.permalink}`\n  }\n}));"
       },
       "id": "d58585aa-dc4d-4edd-bbaf-37f243aac9ef",
       "name": "Filter Posts",
@@ -799,9 +799,9 @@
   },
   "meta": null,
   "pinData": {},
-  "versionId": "ea03511b-9834-4066-9607-f3b0ead9b8a5",
-  "activeVersionId": "ea03511b-9834-4066-9607-f3b0ead9b8a5",
-  "versionCounter": 20,
+  "versionId": "587dd5e8-d5f3-4c2a-8632-7b94667680d7",
+  "activeVersionId": "587dd5e8-d5f3-4c2a-8632-7b94667680d7",
+  "versionCounter": 22,
   "triggerCount": 1,
   "shared": [
     {
@@ -824,9 +824,9 @@
   ],
   "tags": [],
   "activeVersion": {
-    "updatedAt": "2026-06-04T13:13:24.766Z",
-    "createdAt": "2026-06-04T13:13:24.766Z",
-    "versionId": "ea03511b-9834-4066-9607-f3b0ead9b8a5",
+    "updatedAt": "2026-06-04T13:24:15.927Z",
+    "createdAt": "2026-06-04T13:24:15.927Z",
+    "versionId": "587dd5e8-d5f3-4c2a-8632-7b94667680d7",
     "workflowId": "iLTEZ62a1Ky7cfFl",
     "nodes": [
       {
@@ -882,7 +882,7 @@
               },
               {
                 "name": "after",
-                "value": "2025-06-04"
+                "value": "2024-01-01"
               },
               {
                 "name": "subreddit",
@@ -915,7 +915,7 @@
       },
       {
         "parameters": {
-          "jsCode": "const input = $input.item.json;\nconst productName = $('Product Keyword List').item.json.productName;\nconst productSlug = $('Product Keyword List').item.json.productSlug;\n\nconst sixMonthsAgo = Date.now() / 1000 - (6 * 30 * 24 * 3600);\nconst posts = input?.data ?? [];\n\nconst filtered = posts\n  .map(p => p.data)\n  .filter(p => {\n    if (!p) return false;\n    if ((p.num_comments || 0) < 3) return false;\n    if (p.created_utc < sixMonthsAgo) return false;\n    if ((p.score || 0) < 1) return false;\n    return true;\n  })\n  .slice(0, 3);\n\nif (filtered.length === 0) {\n  return [{ json: { skip: true, productName, productSlug } }];\n}\n\nreturn filtered.map(p => ({\n  json: {\n    productName,\n    productSlug,\n    postId: p.id,\n    postTitle: p.title,\n    postScore: p.score,\n    numComments: p.num_comments,\n    subreddit: p.subreddit,\n    permalink: `https://www.reddit.com${p.permalink}`\n  }\n}));"
+          "jsCode": "const input = $input.item.json;\nconst productName = $('Product Keyword List').item.json.productName;\nconst productSlug = $('Product Keyword List').item.json.productSlug;\n\nconst sixMonthsAgo = Date.now() / 1000 - (6 * 30 * 24 * 3600);\nconst posts = input?.data ?? [];\n\nconst filtered = posts\n  .filter(p => {\n    if (!p) return false;\n    if ((p.num_comments || 0) < 1) return false;\n    if (p.created_utc < sixMonthsAgo) return false;\n    if ((p.score || 0) < 1) return false;\n    return true;\n  })\n  .slice(0, 3);\n\nif (filtered.length === 0) {\n  return [{ json: { skip: true, productName, productSlug } }];\n}\n\nreturn filtered.map(p => ({\n  json: {\n    productName,\n    productSlug,\n    postId: p.id,\n    postTitle: p.title,\n    postScore: p.score,\n    numComments: p.num_comments,\n    subreddit: p.subreddit,\n    permalink: `https://www.reddit.com${p.permalink}`\n  }\n}));"
         },
         "id": "d58585aa-dc4d-4edd-bbaf-37f243aac9ef",
         "name": "Filter Posts",
@@ -1614,18 +1614,18 @@
     "autosaved": false,
     "workflowPublishHistory": [
       {
-        "createdAt": "2026-06-04T13:13:24.789Z",
-        "id": 102,
+        "createdAt": "2026-06-04T13:24:15.956Z",
+        "id": 106,
         "workflowId": "iLTEZ62a1Ky7cfFl",
-        "versionId": "ea03511b-9834-4066-9607-f3b0ead9b8a5",
+        "versionId": "587dd5e8-d5f3-4c2a-8632-7b94667680d7",
         "event": "activated",
         "userId": "3ab12d83-5a75-46b1-81de-fa097d522005"
       },
       {
-        "createdAt": "2026-06-04T13:13:24.782Z",
-        "id": 101,
+        "createdAt": "2026-06-04T13:24:15.946Z",
+        "id": 105,
         "workflowId": "iLTEZ62a1Ky7cfFl",
-        "versionId": "ea03511b-9834-4066-9607-f3b0ead9b8a5",
+        "versionId": "587dd5e8-d5f3-4c2a-8632-7b94667680d7",
         "event": "deactivated",
         "userId": "3ab12d83-5a75-46b1-81de-fa097d522005"
       }
