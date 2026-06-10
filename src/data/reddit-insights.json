@@ -1,19 +1,247 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-05T20:03:32.606Z",
+    "lastUpdated": "2026-06-10T19:38:05.775Z",
     "insights": [
       {
         "product": "Anker 7-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Community pick for this category.",
+        "summary": "Discussed in r/buildapc — 1 comments on this thread.",
         "pros": [],
         "cons": [],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
+        "commentCount": 0,
         "sourcePost": "Is My 2026 Setup Good?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1r2vgg8/is_my_2026_setup_good/",
-        "scrapedAt": "2026-06-05T20:03:32.598Z"
+        "scrapedAt": "2026-06-10T19:38:05.757Z"
+      }
+    ]
+  },
+  "best-wireless-earbuds-under-50": {
+    "lastUpdated": "2026-06-10T19:38:05.775Z",
+    "insights": [
+      {
+        "product": "Sony WF-1000XM5",
+        "productSlug": "best-wireless-earbuds-under-50",
+        "summary": "Discussed in r/headphones — 2 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 1,
+        "sourcePost": "Reviewing the best workout earbuds: comfort and hygiene checklist",
+        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1sg8nel/reviewing_the_best_workout_earbuds_comfort_and/",
+        "scrapedAt": "2026-06-10T19:38:05.757Z"
+      },
+      {
+        "product": "Apple AirPods Pro 2nd Gen",
+        "productSlug": "best-wireless-earbuds-under-50",
+        "summary": "Discussed in r/headphones — 15 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "sourcePost": "Meze Audio: Comparison of 105 Silva and 109 Pro",
+        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1tsfbqz/meze_audio_comparison_of_105_silva_and_109_pro/",
+        "scrapedAt": "2026-06-10T19:38:05.758Z"
+      }
+    ]
+  },
+  "best-desk-accessories-under-50": {
+    "lastUpdated": "2026-06-10T19:38:05.775Z",
+    "insights": [
+      {
+        "product": "Ergotron LX Desk Monitor Arm",
+        "productSlug": "best-desk-accessories-under-50",
+        "summary": "Discussed in r/battlestations — 24 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "sourcePost": "I like my setup - Dual OLED",
+        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1t16yg4/i_like_my_setup_dual_oled/",
+        "scrapedAt": "2026-06-10T19:38:05.759Z"
+      },
+      {
+        "product": "BenQ ScreenBar Monitor Light",
+        "productSlug": "best-desk-accessories-under-50",
+        "summary": "Discussed in r/battlestations — 8 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 9,
+        "sourcePost": "Here is my 2026 workspace refresh",
+        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1seo5c0/here_is_my_2026_workspace_refresh/",
+        "scrapedAt": "2026-06-10T19:38:05.759Z"
+      }
+    ]
+  },
+  "best-gaming-gear-under-50": {
+    "lastUpdated": "2026-06-10T19:38:05.775Z",
+    "insights": [
+      {
+        "product": "Razer Basilisk V3 Gaming Mouse",
+        "productSlug": "best-gaming-gear-under-50",
+        "summary": "Discussed in r/buildapc — 28 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "sourcePost": "Help me choose a sensible upgrade path for a gifted PC on a budget!",
+        "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1thnk9x/help_me_choose_a_sensible_upgrade_path_for_a/",
+        "scrapedAt": "2026-06-10T19:38:05.760Z"
+      }
+    ]
+  },
+  "best-desk-toys-under-50": {
+    "lastUpdated": "2026-06-10T19:38:05.775Z",
+    "insights": [
+      {
+        "product": "Govee LED Strip Lights",
+        "productSlug": "best-desk-toys-under-50",
+        "summary": "Discussed in r/homeautomation — 4 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 4,
+        "sourcePost": "Is Home Assistant the most viable option for my use case?",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1qg0sni/is_home_assistant_the_most_viable_option_for_my/",
+        "scrapedAt": "2026-06-10T19:38:05.761Z"
+      }
+    ]
+  },
+  "best-smart-home-under-50": {
+    "lastUpdated": "2026-06-10T19:38:05.775Z",
+    "insights": [
+      {
+        "product": "Philips Hue Smart Bulbs",
+        "productSlug": "best-smart-home-under-50",
+        "summary": "Discussed in r/homeautomation — 15 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "sourcePost": "Philips Hue open-source solution for auto-dim?",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
+        "scrapedAt": "2026-06-10T19:38:05.761Z"
+      }
+    ]
+  },
+  "best-monitors-and-displays": {
+    "lastUpdated": "2026-06-10T19:38:05.775Z",
+    "insights": [
+      {
+        "product": "Samsung 27 Odyssey G4 Monitor",
+        "productSlug": "best-monitors-and-displays",
+        "summary": "Discussed in r/Monitors — 1 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 0,
+        "sourcePost": "Going to buy a 4k monitor, but I need help choosing. I found 4. Please tell me what you think?",
+        "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1shtrbs/going_to_buy_a_4k_monitor_but_i_need_help/",
+        "scrapedAt": "2026-06-10T19:38:05.762Z"
+      },
+      {
+        "product": "LG 27 4K UHD Monitor",
+        "productSlug": "best-monitors-and-displays",
+        "summary": "Discussed in r/Monitors — 1 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 0,
+        "sourcePost": "Looking for similar to OLED quality blacks contrast ratio in a 4K mini LED [US)",
+        "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1tnzzd1/looking_for_similar_to_oled_quality_blacks/",
+        "scrapedAt": "2026-06-10T19:38:05.762Z"
+      }
+    ]
+  },
+  "best-streaming-gear": {
+    "lastUpdated": "2026-06-10T19:38:05.775Z",
+    "insights": [
+      {
+        "product": "Blue Yeti USB Microphone",
+        "productSlug": "best-streaming-gear",
+        "summary": "Discussed in r/Twitch — 3 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 3,
+        "sourcePost": "Upgrade USB mic or cheaper XLR setup?",
+        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1r94kwm/upgrade_usb_mic_or_cheaper_xlr_setup/",
+        "scrapedAt": "2026-06-10T19:38:05.763Z"
+      },
+      {
+        "product": "Elgato Stream Deck MK.2",
+        "productSlug": "best-streaming-gear",
+        "summary": "Discussed in r/Twitch — 7 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 9,
+        "sourcePost": "What mixer/audio interface should I get for my SM7B (no Cloudlifter, clean setup)?",
+        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1spv5hd/what_mixeraudio_interface_should_i_get_for_my/",
+        "scrapedAt": "2026-06-10T19:38:05.764Z"
+      }
+    ]
+  },
+  "best-audio-gear": {
+    "lastUpdated": "2026-06-10T19:38:05.775Z",
+    "insights": [
+      {
+        "product": "Sony WH-1000XM5 Headphones",
+        "productSlug": "best-audio-gear",
+        "summary": "Discussed in r/headphones — 87 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "sourcePost": "My AirPods Max 2 Review",
+        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1s9wmd1/my_airpods_max_2_review/",
+        "scrapedAt": "2026-06-10T19:38:05.764Z"
+      }
+    ]
+  },
+  "best-gaming-setups": {
+    "lastUpdated": "2026-06-10T19:38:05.775Z",
+    "insights": [
+      {
+        "product": "Herman Miller Aeron Chair",
+        "productSlug": "best-gaming-setups",
+        "summary": "Discussed in r/battlestations — 23 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "sourcePost": "The Nicest it's ever been.",
+        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s9z4ax/the_nicest_its_ever_been/",
+        "scrapedAt": "2026-06-10T19:38:05.765Z"
       }
     ]
   }
