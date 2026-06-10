@@ -99,9 +99,6 @@ export default function HomePage() {
       </section>
 
       <div className="max-w-5xl mx-auto px-4 py-10">
-        {/* Top ad */}
-        <AdSlot slot="5229018783" style="horizontal" className="mb-10" />
-
         {/* Featured picks */}
         <section className="mb-14" id="staff-picks">
           <div className="flex items-center justify-between mb-6">
@@ -185,9 +182,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Mid ad */}
-        <AdSlot slot="6127167489" style="horizontal" className="mb-10" />
-
         {/* Stats bar */}
         <section className="bg-gradient-to-r from-gray-900 to-blue-950 rounded-2xl p-6 mb-10 text-white border border-gray-700/50 glow-blue">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
@@ -230,6 +224,22 @@ export default function HomePage() {
           <div className="text-center">
             <Link href="/about" className="inline-block text-sm text-blue-400 hover:text-blue-300 font-bold transition-colors">
               Read our full methodology →
+            </Link>
+          </div>
+        </section>
+
+        {/* Editorial standards callout */}
+        <section className="mb-10 bg-gray-900 rounded-2xl border border-gray-700/50 p-6">
+          <h2 className="text-xl font-black text-white mb-2">How We Keep Recommendations Useful</h2>
+          <p className="text-sm text-gray-400 leading-relaxed mb-4">
+            Every page is reviewed for accuracy, value, and reader intent before it is published. We disclose affiliate links, update outdated picks, and publish corrections when needed.
+          </p>
+          <div className="flex flex-wrap gap-3 text-sm">
+            <Link href="/editorial-policy" className="text-blue-400 hover:text-blue-300 font-bold transition-colors">
+              Read Editorial Policy →
+            </Link>
+            <Link href="/contact" className="text-blue-400 hover:text-blue-300 font-bold transition-colors">
+              Contact the Editor →
             </Link>
           </div>
         </section>

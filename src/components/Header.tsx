@@ -17,6 +17,8 @@ const NAV_LINKS = [
   { label: "🖥 Desk Setup", href: "/best-desk-accessories-under-50" },
   { label: "🕹 Gaming Setups", href: "/best-gaming-setups" },
   { label: "⚙️ My Setup", href: "/my-setup" },
+  { label: "🧾 Editorial Policy", href: "/editorial-policy" },
+  { label: "✉️ Contact", href: "/contact" },
 ];
 
 export default function Header() {
@@ -56,6 +58,12 @@ export default function Header() {
             className="text-sm font-semibold text-gray-300 hover:text-blue-400 hover:bg-gray-800 px-3 py-1.5 rounded-lg transition-all"
           >
             About
+          </Link>
+          <Link
+            href="/editorial-policy"
+            className="text-sm font-semibold text-gray-300 hover:text-blue-400 hover:bg-gray-800 px-3 py-1.5 rounded-lg transition-all"
+          >
+            Policy
           </Link>
         </nav>
 

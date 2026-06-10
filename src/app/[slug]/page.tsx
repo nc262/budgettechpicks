@@ -13,6 +13,13 @@ import autoProductsRaw from "@/data/auto-products.json";
 
 const SITE_URL = "https://totaltechpicks.com";
 
+const reviewChecklist = [
+  "Price-to-performance compared against at least 3 direct alternatives",
+  "Recurring complaint patterns checked across user feedback and forums",
+  "Spec sheet claims validated against independent tests where available",
+  "Known weaknesses documented so buyers can make tradeoff decisions",
+];
+
 interface Props {
   params: { slug: string };
 }
@@ -183,9 +190,6 @@ export default function ArticlePage({ params }: Props) {
         </div>
       )}
 
-      {/* Top ad */}
-      <AdSlot slot="5229018783" style="horizontal" className="mb-8" />
-
       {/* Editor's Note */}
       {article.editorNote && (
         <div className="border-l-4 border-blue-500 bg-gray-900 rounded-r-2xl p-5 mb-8 flex gap-4 items-start border border-gray-700/50">
@@ -233,8 +237,23 @@ export default function ArticlePage({ params }: Props) {
         </div>
       )}
 
-      {/* Bottom ad */}
-      <AdSlot slot="7683791736" style="horizontal" className="mt-4 mb-8" />
+      {/* How we reviewed this category */}
+      <section className="mb-8 bg-gray-900 rounded-2xl border border-gray-700/50 p-6">
+        <h2 className="text-xl font-black text-white mb-2">How This List Was Reviewed</h2>
+        <p className="text-sm text-gray-400 leading-relaxed mb-4">
+          This page is maintained with a repeatable process so recommendations stay useful over time. We update picks when pricing shifts, better options appear, or products are discontinued.
+        </p>
+        <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300">
+          {reviewChecklist.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+        <div className="mt-4 text-sm">
+          <Link href="/editorial-policy" className="text-blue-400 hover:text-blue-300 font-bold transition-colors">
+            Full editorial standards →
+          </Link>
+        </div>
+      </section>
 
       {/* Community Picks — sourced from Reddit discussions */}
       {autoPicks.length > 0 && (
@@ -291,6 +310,9 @@ export default function ArticlePage({ params }: Props) {
           </Link>
         </div>
       </div>
+
+      {/* Bottom ad */}
+      <AdSlot slot="7683791736" style="horizontal" className="mt-8" />
       </div>
     </div>
   );

@@ -37,6 +37,8 @@ export default function Footer() {
               <li><Link href="/" className="hover:text-blue-400 transition-colors">Home</Link></li>
               <li><Link href="/my-setup" className="hover:text-blue-400 transition-colors">⚙️ My Actual Setup</Link></li>
               <li><Link href="/about" className="hover:text-blue-400 transition-colors">About &amp; Methodology</Link></li>
+              <li><Link href="/editorial-policy" className="hover:text-blue-400 transition-colors">Editorial Policy</Link></li>
+              <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
               <li><Link href="/privacy-policy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
               <li><a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Shop Amazon</a></li>
             </ul>
@@ -61,7 +63,11 @@ export default function Footer() {
 
         <div className="border-t border-gray-800/50 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
           <p>© {year} TotalTechPicks. Amazon affiliate — links may earn a commission at no extra cost to you.</p>
-          <p className="text-blue-400/60">Less Hype. More Hardware.</p>
+          <div className="flex items-center gap-3">
+            <Link href="/editorial-policy" className="hover:text-gray-400 transition-colors">Editorial Policy</Link>
+            <Link href="/contact" className="hover:text-gray-400 transition-colors">Contact</Link>
+            <p className="text-blue-400/60">Less Hype. More Hardware.</p>
+          </div>
         </div>
       </div>
     </footer>
