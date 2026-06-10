@@ -2,6 +2,23 @@
 
 n8n workflow backups for TotalTechPicks. Exported automatically whenever workflows are updated.
 
+> ⚠️ **Security note (June 2026):** the live Reddit Insights workflow had a GitHub PAT pasted
+> directly into HTTP nodes (committed exports only ever had a placeholder, so it never reached
+> this public repo). All workflows now use the n8n-stored "GitHub account" credential, which
+> never appears in exports. Never paste tokens into workflow nodes — rotating the old PAT is
+> still recommended.
+
+## Fixed June 10, 2026
+
+- **ASIN Health Check** only checked 1 of 131 products (Code node ran in "once for all items"
+  mode). Now checks all of them — first real run found 17 dead listings.
+- **Reddit Insights** timed out every run and analyzed only post titles. Now retries with
+  timeouts, fetches real comment threads from Arctic Shift, and feeds actual comment text to
+  Ollama. Insights with zero real comments are dropped instead of published.
+- **Product Discovery** could never commit (placeholder PAT), called a nonexistent Ollama model
+  (`llama3.2` → `llama3.2:3b`), sent GET instead of POST to Ollama, and filtered out every post.
+  All fixed; queries retuned toward r/buildapcsales where deal titles carry product names.
+
 ## Workflows
 
 | File | Schedule | Purpose |

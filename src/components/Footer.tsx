@@ -11,7 +11,8 @@ export default function Footer() {
           <div className="md:col-span-1">
             <img src="/logo.png" alt="TotalTechPicks" className="h-14 w-auto max-w-[160px] object-contain mb-4 brightness-0 invert" />
             <p className="text-sm leading-relaxed mb-3">
-              125+ expert-picked tech products across every budget. No fluff, no paid placements, just honest picks.
+              Curated tech picks across every budget — researched against real owner feedback, checked against
+              Amazon nightly, and funded by affiliate links we disclose up front.
             </p>
 
           </div>

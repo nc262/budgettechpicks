@@ -1,0 +1,215 @@
+{
+  "name": "Pinterest â€” Daily Product Pins (5/day)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 10,
+              "triggerAtMinute": 0
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Daily at 10am",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        100,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://totaltechpicks.com/products-for-pinterest.json",
+        "options": {}
+      },
+      "id": "fetch-products",
+      "name": "Fetch Products JSON",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Flatten all products from all boards into one array\nconst data = $input.first().json;\nconst allProducts = [];\nfor (const board of data.boards) {\n  for (const product of board.products) {\n    allProducts.push({ ...product, boardName: board.name });\n  }\n}\n\n// Get pinned tracking from workflow static data\nconst pinnedAsins = $getWorkflowStaticData('global').pinnedAsins ?? [];\n\n// Find unpinned products\nconst unpinned = allProducts.filter(p => !pinnedAsins.includes(p.asin));\n\nif (unpinned.length === 0) {\n  // All products pinned â€” reset to start a new cycle\n  $getWorkflowStaticData('global').pinnedAsins = [];\n  return allProducts.slice(0, 5).map(p => ({ json: p }));\n}\n\n// Return next 5 to pin\nreturn unpinned.slice(0, 5).map(p => ({ json: p }));"
+      },
+      "id": "pick-next-5",
+      "name": "Pick Next 5 Unpinned",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        500,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.pinterest.com/v5/boards?page_size=100",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "httpHeaderAuth",
+        "options": {}
+      },
+      "id": "get-boards",
+      "name": "Get My Pinterest Boards",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        700,
+        300
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "hdU8usLXg15qJvst",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Match product to its board ID\n// HTTP response from Pinterest API v5 returns { items: [...boards] }\nconst product = $('Pick Next 5 Unpinned').all()[$itemIndex].json;\nconst boardsResponse = $('Get My Pinterest Boards').first().json;\nconst boards = boardsResponse.items ?? boardsResponse;\n\nconst matchingBoard = boards.find(b => \n  b.name.toLowerCase() === product.boardName.toLowerCase()\n);\n\nif (!matchingBoard) {\n  // Fallback: use first board\n  return [{ json: { ...product, boardId: boards[0]?.id ?? 'unknown' } }];\n}\n\nreturn [{ json: { ...product, boardId: matchingBoard.id } }];"
+      },
+      "id": "match-board-id",
+      "name": "Match Board ID",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        900,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.pinterest.com/v5/pins",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "httpHeaderAuth",
+        "sendBody": true,
+        "contentType": "json",
+        "body": "={\n  \"board_id\": \"{{ $json.boardId }}\",\n  \"title\": \"{{ $json.title }}\",\n  \"description\": \"{{ $json.description }}\",\n  \"link\": \"{{ $json.link }}\",\n  \"media_source\": {\n    \"source_type\": \"image_url\",\n    \"url\": \"{{ $json.imageUrl }}\"\n  }\n}",
+        "options": {}
+      },
+      "id": "create-pin",
+      "name": "Create Pinterest Pin",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1100,
+        300
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "hdU8usLXg15qJvst",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Mark this product as pinned in static workflow data\nconst asin = $input.first().json.asin ?? $('Match Board ID').first().json.asin;\nconst storage = $getWorkflowStaticData('global');\nif (!storage.pinnedAsins) storage.pinnedAsins = [];\nif (asin && !storage.pinnedAsins.includes(asin)) {\n  storage.pinnedAsins.push(asin);\n}\nconsole.log(`Pinned: ${asin} (${storage.pinnedAsins.length} total pinned)`);\nreturn $input.all();"
+      },
+      "id": "mark-pinned",
+      "name": "Mark as Pinned",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1300,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "amount": 30,
+        "unit": "seconds"
+      },
+      "id": "wait-between-pins",
+      "name": "Wait 30s Between Pins",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1100,
+        500
+      ],
+      "webhookId": "pinterest-wait"
+    }
+  ],
+  "connections": {
+    "Daily at 10am": {
+      "main": [
+        [
+          {
+            "node": "Fetch Products JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Products JSON": {
+      "main": [
+        [
+          {
+            "node": "Pick Next 5 Unpinned",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pick Next 5 Unpinned": {
+      "main": [
+        [
+          {
+            "node": "Get My Pinterest Boards",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get My Pinterest Boards": {
+      "main": [
+        [
+          {
+            "node": "Match Board ID",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Match Board ID": {
+      "main": [
+        [
+          {
+            "node": "Create Pinterest Pin",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Pinterest Pin": {
+      "main": [
+        [
+          {
+            "node": "Mark as Pinned",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveDataSuccessExecution": "all",
+    "saveManualExecutions": true
+  },
+  "active": false
+}
