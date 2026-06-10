@@ -165,146 +165,148 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-10T19:58:01.233Z",
+    "lastUpdated": "2026-06-10T20:01:46.638Z",
     "insights": [
       {
         "product": "Philips Hue Smart Bulbs",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Real users can control Philips Hue bulbs using Home Assistant, with some using Zigbee2MQTT/mqtt and others directly integrating with HA's ZHA or zigbee2mqtt for seamless auto-dim capabilities.",
+        "summary": "Real users can control Philips Hue Smart Bulbs using Home Assistant, but some may need to use a bridge or Zigbee device to achieve full functionality.",
         "pros": [
-          "Using Home Assistant with ZHA or zigbee2mqtt",
-          "Direct integration with HA",
-          "Ability to control bulbs from other smart home systems like Lutron Aurora"
-        ],
-        "cons": [],
-        "sentiment": "positive",
-        "key_insights": [
-          "Some users may need to use additional hardware like a Zigbee receiver to configure for direct binding",
-          "The Philips Hue hub is more fault-tolerant and low-latency compared to some other smart home systems"
-        ],
-        "recommended_by_users": true,
-        "commentCount": 12,
-        "hasRealComments": true,
-        "sourcePost": "Philips Hue open-source solution for auto-dim?",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-10T19:58:01.224Z"
-      }
-    ]
-  },
-  "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-10T19:58:01.233Z",
-    "insights": [
-      {
-        "product": "LG 27 4K UHD Monitor",
-        "productSlug": "best-monitors-and-displays",
-        "summary": "Users prefer Dell U2725QE for coding and eye comfort, while some consider LG 27GM950B for its matte finish, but raise concerns about PWM issues. Some users recommend trying glossy options or investing in a 5K display.",
-        "pros": [
-          "strong eye-comfort features",
-          "excellent ergonomics",
-          "single-cable docking",
-          "better panel than usual 27"
+          "Home Assistant has ZHA built-in for ZigBee",
+          "Use of zigbee2mqtt and MQTT can provide more control over devices",
+          "Adaptive lighting integration works well with motion activation"
         ],
         "cons": [
-          "PWM issues",
-          "reflection problems with glossy options"
+          "May require additional hardware (bridge or dongles) to achieve full functionality",
+          "Some users have issues with latency"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Dell U2725QE is a top choice for coding and eye comfort.",
-          "LG 27GM950B's matte finish may solve reflection issues, but PWM concerns exist.",
-          "5K displays offer sharper text, but at a higher price."
+          "Home Assistant provides a flexible platform for controlling Philips Hue Smart Bulbs",
+          "ZigBee2MQTT and MQTT can provide more control over devices than using the standard Hue integration",
+          "Adaptive lighting integration is useful for adjusting brightness and color based on motion"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
         "hasRealComments": true,
+        "sourcePost": "Philips Hue open-source solution for auto-dim?",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
+        "scrapedAt": "2026-06-10T20:01:46.631Z"
+      }
+    ]
+  },
+  "best-monitors-and-displays": {
+    "lastUpdated": "2026-06-10T20:01:46.639Z",
+    "insights": [
+      {
+        "product": "LG 27 4K UHD Monitor",
+        "productSlug": "best-monitors-and-displays",
+        "summary": "Users generally recommend Dell U2725QE for its strong eye-comfort features, excellent ergonomics, and better panel quality compared to other options like Apple Studio Display or LG 27GM950B.",
+        "pros": [
+          "strong eye-comfort features",
+          "excellent ergonomics",
+          "single-cable docking"
+        ],
+        "cons": [
+          "PWM issue (flickering) with some monitors"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Dell U2725QE offers improved ComfortView Plus, ambient light sensor, and low-reflectance anti-glare coating.",
+          "Nano-texture XDR causes eye strain and blur in text for some users.",
+          "LG 27GM950B may have PWM issue, but users are hopeful it will be resolved"
+        ],
+        "recommended_by_users": true,
+        "commentCount": 12,
+        "hasRealComments": true,
         "sourcePost": "27” 4K monitor for MacBook Pro (coding 8–10h/day) – which one would you choose?",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1siicsu/27_4k_monitor_for_macbook_pro_coding_810hday/",
-        "scrapedAt": "2026-06-10T19:58:01.225Z"
+        "scrapedAt": "2026-06-10T20:01:46.632Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-10T19:58:01.233Z",
+    "lastUpdated": "2026-06-10T20:01:46.639Z",
     "insights": [
       {
         "product": "Blue Yeti USB Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users consider a USB microphone upgrade or a cheaper XLR setup with external audio interface and preamp as viable options, with some suggesting it will be more cost-effective in the long run.",
+        "summary": "Users weigh the cost and benefits of upgrading to a dedicated XLR setup versus using a cheaper USB microphone.",
         "pros": [
           "better sound quality",
           "more control",
-          "cheaper when upgrading"
+          "$XLR will be cheaper when you upgrade"
         ],
-        "cons": [],
+        "cons": [
+          "none mentioned"
+        ],
         "sentiment": "positive",
         "key_insights": [
-          "Upgrading to XLR setup with external audio interface and preamp will provide better sound quality.",
-          "Having a dedicated preamp will offer more control over the audio signal."
+          "Dedicated preamp will have better sound quality",
+          "XLR setup has more control",
+          "$XLR will be cheaper when upgraded"
         ],
         "recommended_by_users": true,
         "commentCount": 3,
         "hasRealComments": true,
         "sourcePost": "Upgrade USB mic or cheaper XLR setup?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1r94kwm/upgrade_usb_mic_or_cheaper_xlr_setup/",
-        "scrapedAt": "2026-06-10T19:58:01.226Z"
+        "scrapedAt": "2026-06-10T20:01:46.633Z"
       },
       {
         "product": "Elgato Stream Deck MK.2",
         "productSlug": "best-streaming-gear",
-        "summary": "Real users recommend using the Rode Procaster or Wave XLR Pro with their SM7B, citing them as sufficient for driving the mic and avoiding issues with other brands.",
+        "summary": "Users recommend using Rode products or Focusrite Scarlet Solo with caution, as they experienced issues with crackling and trust issues, while others suggest using Stream Deck Plus or Wave XLR Pro for optimal performance.",
         "pros": [
-          "enough to drive the SM7B",
-          "more than enough to run SM7B",
-          "solid options"
+          "Rode products",
+          "Wave XLR Pro",
+          "Stream Deck Plus"
         ],
         "cons": [
-          "may have issues with Focusrite Scarlet Solo",
-          "BEACN XLRs may have crackling issues"
+          "Focusrite Scarlet Solo (crackling issue), Rode (bad units?)"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "Rode Procaster and Wave XLR Pro are recommended for driving the SM7B.",
-          "Focusrite Scarlet Solo may develop a crackling issue after use.",
-          "Some users may prefer more buttons on the Stream Deck Plus."
+          "Some users have experienced issues with Focusrite Scarlet Solo, while others trust Rode products.",
+          "Wave XLR Pro is a suggested alternative for running SM7B."
         ],
         "recommended_by_users": true,
         "commentCount": 9,
         "hasRealComments": true,
         "sourcePost": "What mixer/audio interface should I get for my SM7B (no Cloudlifter, clean setup)?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1spv5hd/what_mixeraudio_interface_should_i_get_for_my/",
-        "scrapedAt": "2026-06-10T19:58:01.226Z"
+        "scrapedAt": "2026-06-10T20:01:46.633Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-10T19:58:01.233Z",
+    "lastUpdated": "2026-06-10T20:01:46.639Z",
     "insights": [
       {
         "product": "Sony WH-1000XM5 Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users praise the comfort and ANC quality of the Sony WH-1000XM5 Headphones, but some mention issues with mic quality and clamping pressure.",
+        "summary": "Users praise the Sony WH-1000XM5 Headphones for their excellent noise cancellation and comfort, but some have issues with mic quality and ergonomic design.",
         "pros": [
-          "The sound is fine",
-          "the ANC is super good",
-          "seamless switch from iPhone to MacBook to Apple TV"
+          "excellent noise cancellation",
+          "super good ANC"
         ],
         "cons": [
-          "clamping pressure is a bit much sometimes",
-          "mic quality issues",
-          "uncomfortable headphones if they're not Sony WH-1000XM5 Headphones"
+          "mic quality is a bit wonky",
+          "clamping pressure can be too much sometimes",
+          "some users find the headphones uncomfortable"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "The headphone show made an article about this with a mic in a human ear and the 5128 (the results are very similar).",
-          "Multipoint simply did not work the way it is supposed to on that headphone.",
-          "Bluetooth headphones will have similar issues regarding mic and headphone quality on windows, unfortunately."
+          "Users mention that HRTF (headphone show) and personal preference affect graph readings",
+          "Some users have issues with mic quality, especially in noisy environments",
+          "Travel case was not mentioned as an issue, but rather a benefit for Apple device switching"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "hasRealComments": true,
         "sourcePost": "My AirPods Max 2 Review",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1s9wmd1/my_airpods_max_2_review/",
-        "scrapedAt": "2026-06-10T19:58:01.227Z"
+        "scrapedAt": "2026-06-10T20:01:46.634Z"
       }
     ]
   },
