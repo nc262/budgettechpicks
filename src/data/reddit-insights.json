@@ -19,212 +19,323 @@
     ]
   },
   "best-wireless-earbuds-under-50": {
-    "lastUpdated": "2026-06-10T19:52:59.431Z",
+    "lastUpdated": "2026-06-10T19:58:01.233Z",
     "insights": [
       {
         "product": "Apple AirPods Pro 2nd Gen",
         "productSlug": "best-wireless-earbuds-under-50",
-        "summary": "Discussed in r/headphones — 15 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
+        "summary": "Users appreciate a comparison between Meze Audio headphones, highlighting differences and potential biases in sound quality.",
+        "pros": [
+          "the 109 Pros just sounded the best",
+          "copper Ares SII to $600 Vermilion and $1500+ GodFall hybrid cables"
+        ],
+        "cons": [
+          "the Aer sounded second best",
+          "$300 more for the headphones may not yield better results due to bias"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "the perceived sound quality of headphones can be influenced by biases such as cable quality",
+          "upgraded cables do not necessarily improve sound quality"
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "hasRealComments": true,
         "sourcePost": "Meze Audio: Comparison of 105 Silva and 109 Pro",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1tsfbqz/meze_audio_comparison_of_105_silva_and_109_pro/",
-        "scrapedAt": "2026-06-10T19:52:59.415Z"
+        "scrapedAt": "2026-06-10T19:58:01.221Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-10T19:52:59.431Z",
+    "lastUpdated": "2026-06-10T19:58:01.233Z",
     "insights": [
       {
         "product": "Ergotron LX Desk Monitor Arm",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Discussed in r/battlestations — 24 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Users praise the setup and ergonomic benefits, but mention some minor drawbacks and nitpicks.",
+        "pros": [
+          "flexibility",
+          "ease of use",
+          "quality",
+          "centering issue"
+        ],
+        "cons": [
+          "cost",
+          "size",
+          "shelf alignment"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "air purifier on top of MacBooks",
+          "cable management",
+          "shelf alignment"
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "hasRealComments": true,
         "sourcePost": "I like my setup - Dual OLED",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1t16yg4/i_like_my_setup_dual_oled/",
-        "scrapedAt": "2026-06-10T19:52:59.416Z"
+        "scrapedAt": "2026-06-10T19:58:01.222Z"
       },
       {
         "product": "BenQ ScreenBar Monitor Light",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Discussed in r/battlestations — 8 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Users praise the BenQ ScreenBar Monitor Light for its aesthetic and productivity benefits, while also noting some potential drawbacks.",
+        "pros": [
+          "limpio de cables y ordenado",
+          "fantastico",
+          "working ok"
+        ],
+        "cons": [
+          "productivity vs gaming balance is hard to nail",
+          "may require a KVM switch"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "users appreciate the monitor's cable management",
+          "some users mentioned productivity vs gaming balance issues",
+          "a few users noted potential reliability concerns with switching inputs through KVMs"
+        ],
+        "recommended_by_users": true,
         "commentCount": 9,
         "hasRealComments": true,
         "sourcePost": "Here is my 2026 workspace refresh",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1seo5c0/here_is_my_2026_workspace_refresh/",
-        "scrapedAt": "2026-06-10T19:52:59.417Z"
+        "scrapedAt": "2026-06-10T19:58:01.223Z"
       }
     ]
   },
   "best-gaming-gear-under-50": {
-    "lastUpdated": "2026-06-10T19:52:59.431Z",
+    "lastUpdated": "2026-06-10T19:58:01.233Z",
     "insights": [
       {
         "product": "Razer Basilisk V3 Gaming Mouse",
         "productSlug": "best-gaming-gear-under-50",
-        "summary": "Discussed in r/buildapc — 28 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Real users recommend upgrading a PC on a budget by prioritizing CPU and GPU upgrades, considering a power supply upgrade for high-performance components, and planning a sensible upgrade path with a focus on value.",
+        "pros": [
+          "better CPU",
+          "good GPU",
+          "optimal PSU wattage (750w)",
+          "upgrade monitor to 1440p OLED"
+        ],
+        "cons": [
+          "no specific cons mentioned in the comments, only general advice"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Low resolution gaming prioritizes CPU over GPU, while high resolution gaming prioritizes GPU.",
+          "A 750W PSU is necessary for a high-performance build with an RTX 3080 or similar GPU.",
+          "Upgrading the monitor to a 1440p OLED can improve overall performance and visual quality."
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "hasRealComments": true,
         "sourcePost": "Help me choose a sensible upgrade path for a gifted PC on a budget!",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1thnk9x/help_me_choose_a_sensible_upgrade_path_for_a/",
-        "scrapedAt": "2026-06-10T19:52:59.418Z"
+        "scrapedAt": "2026-06-10T19:58:01.224Z"
       }
     ]
   },
   "best-desk-toys-under-50": {
-    "lastUpdated": "2026-06-10T19:52:59.431Z",
+    "lastUpdated": "2026-06-10T19:58:01.233Z",
     "insights": [
       {
         "product": "Govee LED Strip Lights",
         "productSlug": "best-desk-toys-under-50",
-        "summary": "Discussed in r/homeautomation — 4 comments on this thread.",
-        "pros": [],
+        "summary": "Home Assistant is seen as a viable option for home automation, offering ease of use, extensibility, and local hosting capabilities.",
+        "pros": [
+          "easy to use",
+          "extensible",
+          "can be hosted locally"
+        ],
         "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "sentiment": "positive",
+        "key_insights": [
+          "Home Assistant is the easiest home automation software",
+          "it has native Yeelight integration for easy device pickup"
+        ],
+        "recommended_by_users": true,
         "commentCount": 4,
         "hasRealComments": true,
         "sourcePost": "Is Home Assistant the most viable option for my use case?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1qg0sni/is_home_assistant_the_most_viable_option_for_my/",
-        "scrapedAt": "2026-06-10T19:52:59.418Z"
+        "scrapedAt": "2026-06-10T19:58:01.224Z"
       }
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-10T19:52:59.431Z",
+    "lastUpdated": "2026-06-10T19:58:01.233Z",
     "insights": [
       {
         "product": "Philips Hue Smart Bulbs",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 15 comments on this thread.",
-        "pros": [],
+        "summary": "Real users can control Philips Hue bulbs using Home Assistant, with some using Zigbee2MQTT/mqtt and others directly integrating with HA's ZHA or zigbee2mqtt for seamless auto-dim capabilities.",
+        "pros": [
+          "Using Home Assistant with ZHA or zigbee2mqtt",
+          "Direct integration with HA",
+          "Ability to control bulbs from other smart home systems like Lutron Aurora"
+        ],
         "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "sentiment": "positive",
+        "key_insights": [
+          "Some users may need to use additional hardware like a Zigbee receiver to configure for direct binding",
+          "The Philips Hue hub is more fault-tolerant and low-latency compared to some other smart home systems"
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-10T19:52:59.420Z"
+        "scrapedAt": "2026-06-10T19:58:01.224Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-10T19:52:59.431Z",
+    "lastUpdated": "2026-06-10T19:58:01.233Z",
     "insights": [
       {
         "product": "LG 27 4K UHD Monitor",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Discussed in r/Monitors — 34 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users prefer Dell U2725QE for coding and eye comfort, while some consider LG 27GM950B for its matte finish, but raise concerns about PWM issues. Some users recommend trying glossy options or investing in a 5K display.",
+        "pros": [
+          "strong eye-comfort features",
+          "excellent ergonomics",
+          "single-cable docking",
+          "better panel than usual 27"
+        ],
+        "cons": [
+          "PWM issues",
+          "reflection problems with glossy options"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Dell U2725QE is a top choice for coding and eye comfort.",
+          "LG 27GM950B's matte finish may solve reflection issues, but PWM concerns exist.",
+          "5K displays offer sharper text, but at a higher price."
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "hasRealComments": true,
         "sourcePost": "27” 4K monitor for MacBook Pro (coding 8–10h/day) – which one would you choose?",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1siicsu/27_4k_monitor_for_macbook_pro_coding_810hday/",
-        "scrapedAt": "2026-06-10T19:52:59.421Z"
+        "scrapedAt": "2026-06-10T19:58:01.225Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-10T19:52:59.431Z",
+    "lastUpdated": "2026-06-10T19:58:01.233Z",
     "insights": [
       {
         "product": "Blue Yeti USB Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Discussed in r/Twitch — 3 comments on this thread.",
-        "pros": [],
+        "summary": "Users consider a USB microphone upgrade or a cheaper XLR setup with external audio interface and preamp as viable options, with some suggesting it will be more cost-effective in the long run.",
+        "pros": [
+          "better sound quality",
+          "more control",
+          "cheaper when upgrading"
+        ],
         "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "sentiment": "positive",
+        "key_insights": [
+          "Upgrading to XLR setup with external audio interface and preamp will provide better sound quality.",
+          "Having a dedicated preamp will offer more control over the audio signal."
+        ],
+        "recommended_by_users": true,
         "commentCount": 3,
         "hasRealComments": true,
         "sourcePost": "Upgrade USB mic or cheaper XLR setup?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1r94kwm/upgrade_usb_mic_or_cheaper_xlr_setup/",
-        "scrapedAt": "2026-06-10T19:52:59.421Z"
+        "scrapedAt": "2026-06-10T19:58:01.226Z"
       },
       {
         "product": "Elgato Stream Deck MK.2",
         "productSlug": "best-streaming-gear",
-        "summary": "Discussed in r/Twitch — 7 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Real users recommend using the Rode Procaster or Wave XLR Pro with their SM7B, citing them as sufficient for driving the mic and avoiding issues with other brands.",
+        "pros": [
+          "enough to drive the SM7B",
+          "more than enough to run SM7B",
+          "solid options"
+        ],
+        "cons": [
+          "may have issues with Focusrite Scarlet Solo",
+          "BEACN XLRs may have crackling issues"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Rode Procaster and Wave XLR Pro are recommended for driving the SM7B.",
+          "Focusrite Scarlet Solo may develop a crackling issue after use.",
+          "Some users may prefer more buttons on the Stream Deck Plus."
+        ],
+        "recommended_by_users": true,
         "commentCount": 9,
         "hasRealComments": true,
         "sourcePost": "What mixer/audio interface should I get for my SM7B (no Cloudlifter, clean setup)?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1spv5hd/what_mixeraudio_interface_should_i_get_for_my/",
-        "scrapedAt": "2026-06-10T19:52:59.421Z"
+        "scrapedAt": "2026-06-10T19:58:01.226Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-10T19:52:59.431Z",
+    "lastUpdated": "2026-06-10T19:58:01.233Z",
     "insights": [
       {
         "product": "Sony WH-1000XM5 Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Discussed in r/headphones — 87 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Real users praise the comfort and ANC quality of the Sony WH-1000XM5 Headphones, but some mention issues with mic quality and clamping pressure.",
+        "pros": [
+          "The sound is fine",
+          "the ANC is super good",
+          "seamless switch from iPhone to MacBook to Apple TV"
+        ],
+        "cons": [
+          "clamping pressure is a bit much sometimes",
+          "mic quality issues",
+          "uncomfortable headphones if they're not Sony WH-1000XM5 Headphones"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "The headphone show made an article about this with a mic in a human ear and the 5128 (the results are very similar).",
+          "Multipoint simply did not work the way it is supposed to on that headphone.",
+          "Bluetooth headphones will have similar issues regarding mic and headphone quality on windows, unfortunately."
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "hasRealComments": true,
         "sourcePost": "My AirPods Max 2 Review",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1s9wmd1/my_airpods_max_2_review/",
-        "scrapedAt": "2026-06-10T19:52:59.422Z"
+        "scrapedAt": "2026-06-10T19:58:01.227Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-06-10T19:52:59.431Z",
+    "lastUpdated": "2026-06-10T19:58:01.233Z",
     "insights": [
       {
         "product": "Herman Miller Aeron Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Discussed in r/battlestations — 23 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Users praise the design and features of a speaker system with an Aeron chair as its centerpiece, suggesting it is aesthetically pleasing and functional.",
+        "pros": [
+          "Aesthetically pleasing",
+          "Very interesting and unique",
+          "What a vibe.",
+          "I dig it."
+        ],
+        "cons": [
+          "Looks like a scene from a horror movie"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "The speaker system seems to be designed with a focus on aesthetics and functionality.",
+          "Some users are drawn to the unique design and features.",
+          "There is a sense of excitement and enthusiasm around this setup."
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "hasRealComments": true,
         "sourcePost": "The Nicest it's ever been.",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s9z4ax/the_nicest_its_ever_been/",
-        "scrapedAt": "2026-06-10T19:52:59.422Z"
+        "scrapedAt": "2026-06-10T19:58:01.227Z"
       }
     ]
   }
