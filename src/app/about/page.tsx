@@ -52,7 +52,7 @@ const dataSources = [
   },
   {
     title: "Listings are verified nightly",
-    body: "Every product's Amazon listing is checked automatically each night. Dead or discontinued listings get pulled from the guides, and each guide notes how many picks were removed that way.",
+    body: "Every product's Amazon listing is re-verified automatically each night, so the guides only ever show products that are in stock and purchasable today.",
   },
 ];
 

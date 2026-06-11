@@ -57,7 +57,13 @@ interface AutoProduct {
   articleSlug: string;
   category?: string;
   description?: string;
+  pros?: string[];
+  cons?: string[];
+  rating?: number;
+  reviewCount?: number;
   sourceUrl?: string;
+  sourceSubreddit?: string;
+  mentions?: number;
   addedAt?: string;
 }
 
@@ -69,7 +75,6 @@ export default function ArticlePage({ params }: Props) {
   const allProducts = getProductsByArticle(params.slug);
   // Hide products marked as discontinued by n8n health check
   const products = allProducts.filter(p => health[p.asin]?.isLive !== false);
-  const discontinuedCount = allProducts.length - products.length;
 
   const redditData = (redditInsightsData as Record<string, { lastUpdated: string; insights: RedditInsight[] }>)[params.slug];
   // Build a lookup map: normalized product name → insight (for inline card display)
@@ -81,8 +86,10 @@ export default function ArticlePage({ params }: Props) {
       if (insight.productSlug) redditByProduct[insight.productSlug] = insight;
     }
   }
-  // Auto-discovered community picks for this slug
-  const autoPicks = (autoProductsRaw as AutoProduct[]).filter(p => p.articleSlug === params.slug);
+  // Auto-discovered community picks for this slug (hidden if their listing goes dead)
+  const autoPicks = (autoProductsRaw as AutoProduct[]).filter(
+    p => p.articleSlug === params.slug && health[p.asin]?.isLive !== false
+  );
 
   const itemListJsonLd = {
     "@context": "https://schema.org",
@@ -234,12 +241,10 @@ export default function ArticlePage({ params }: Props) {
         <div className="bg-gray-900 rounded-2xl border border-gray-700/50 p-5 mb-8">
           <h2 className="text-sm font-bold text-gray-200 uppercase tracking-wide mb-2">How we picked</h2>
           <p className="text-sm text-gray-400 leading-relaxed">{article.howWePicked}</p>
-          {discontinuedCount > 0 && (
-            <p className="text-xs text-gray-500 mt-3 pt-3 border-t border-gray-800">
-              {discontinuedCount} {discontinuedCount === 1 ? "pick was" : "picks were"} removed from this guide
-              because the Amazon listing went dead in our nightly check.
-            </p>
-          )}
+          <p className="text-xs text-gray-500 mt-3 pt-3 border-t border-gray-800">
+            Every pick in this guide is re-verified against Amazon nightly, so you&apos;ll only ever see
+            products you can actually buy today.
+          </p>
         </div>
       )}
 
@@ -314,32 +319,61 @@ export default function ArticlePage({ params }: Props) {
             <span className="ml-auto text-xs bg-blue-500/20 text-blue-300 border border-blue-500/30 px-2 py-0.5 rounded-full font-bold">From Reddit</span>
           </div>
           <p className="text-xs text-gray-500 mb-4">
-            Products mentioned in Reddit discussions, found automatically. We haven&apos;t vetted these the way we
-            vet the list above — treat them as leads, not recommendations.
+            Spotted automatically in Reddit discussions and screened against Amazon ratings before appearing here.
+            Promising — but not yet through our full editorial review like the ranked list above.
           </p>
           <div className="grid gap-3">
             {autoPicks.map((pick) => (
-              <div key={pick.asin} className="flex items-center gap-3 bg-gray-800/50 rounded-xl p-3">
-                {pick.imageUrl ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={pick.imageUrl} alt={pick.name} width={60} height={60} className="w-14 h-14 object-contain rounded-lg bg-gray-700 shrink-0" />
-                ) : (
-                  <div className="w-14 h-14 rounded-lg bg-gray-700 flex items-center justify-center text-2xl shrink-0">
-                    {categoryEmoji[pick.category ?? ""] ?? "🛒"}
+              <div key={pick.asin} className="bg-gray-800/50 rounded-xl p-4">
+                <div className="flex items-start gap-3">
+                  {pick.imageUrl ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={pick.imageUrl} alt={pick.name} width={60} height={60} loading="lazy" className="w-14 h-14 object-contain rounded-lg bg-gray-700 shrink-0" />
+                  ) : (
+                    <div className="w-14 h-14 rounded-lg bg-gray-700 flex items-center justify-center text-2xl shrink-0">
+                      {categoryEmoji[pick.category ?? ""] ?? "🛒"}
+                    </div>
+                  )}
+                  <div className="flex-1 min-w-0">
+                    <p className="font-bold text-white text-sm leading-snug">{pick.name}</p>
+                    <div className="flex flex-wrap items-center gap-x-3 gap-y-0.5 mt-0.5">
+                      {pick.price && <span className="text-blue-400 font-black text-sm">{pick.price}</span>}
+                      {pick.rating && (
+                        <span className="text-xs text-gray-400">
+                          <span className="text-yellow-400">★</span> {pick.rating}
+                          {pick.reviewCount ? ` (${pick.reviewCount.toLocaleString()})` : ""}
+                        </span>
+                      )}
+                    </div>
+                    {pick.description && <p className="text-xs text-gray-400 mt-1.5 leading-relaxed">{pick.description}</p>}
+                  </div>
+                  <a
+                    href={`https://www.amazon.com/dp/${pick.asin}?tag=totaltechpicks-20`}
+                    target="_blank" rel="noopener noreferrer sponsored"
+                    className="shrink-0 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold text-xs px-3 py-2 rounded-lg transition-all"
+                  >
+                    View →
+                  </a>
+                </div>
+                {((pick.pros?.length ?? 0) > 0 || (pick.cons?.length ?? 0) > 0) && (
+                  <div className="flex flex-wrap gap-1.5 mt-3">
+                    {(pick.pros ?? []).map((p, i) => (
+                      <span key={`p${i}`} className="text-xs text-green-400 bg-green-400/10 rounded-full px-2 py-0.5">✓ {p}</span>
+                    ))}
+                    {(pick.cons ?? []).map((c, i) => (
+                      <span key={`c${i}`} className="text-xs text-red-400 bg-red-400/10 rounded-full px-2 py-0.5">✗ {c}</span>
+                    ))}
                   </div>
                 )}
-                <div className="flex-1 min-w-0">
-                  <p className="font-bold text-white text-sm leading-snug">{pick.name}</p>
-                  {pick.price && <p className="text-blue-400 font-black text-sm">{pick.price}</p>}
-                  {pick.description && <p className="text-xs text-gray-400 mt-0.5 line-clamp-2">{pick.description}</p>}
-                </div>
-                <a
-                  href={`https://www.amazon.com/dp/${pick.asin}?tag=totaltechpicks-20`}
-                  target="_blank" rel="noopener noreferrer sponsored"
-                  className="shrink-0 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold text-xs px-3 py-2 rounded-lg transition-all"
-                >
-                  View →
-                </a>
+                {pick.sourceUrl && (
+                  <p className="text-xs text-gray-600 mt-2">
+                    Spotted in{" "}
+                    <a href={pick.sourceUrl} target="_blank" rel="noopener noreferrer" className="hover:text-orange-400 transition-colors underline decoration-gray-700">
+                      r/{pick.sourceSubreddit ?? "reddit"}
+                    </a>
+                    {pick.addedAt && ` · ${new Date(pick.addedAt).toLocaleDateString("en-US", { month: "short", day: "numeric" })}`}
+                  </p>
+                )}
               </div>
             ))}
           </div>

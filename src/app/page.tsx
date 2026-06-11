@@ -77,7 +77,6 @@ export default function HomePage() {
     .sort((a, b) => b.rating - a.rating)[0];
 
   // Real numbers, computed from data — not marketing copy
-  const trackedCount = allProducts.length;
   const liveCount = allProducts.filter((p) => isLive(p.asin)).length;
   const categoryCount = articles.length;
   const lastChecked = Object.values(health)
@@ -318,24 +317,24 @@ export default function HomePage() {
         {/* Mid ad */}
         <AdSlot slot="6127167489" style="horizontal" className="mb-10" />
 
-        {/* Stats bar — every number here is computed from site data, not written by hand */}
+        {/* Stats bar — numbers computed from site data, not written by hand */}
         <section className="bg-gradient-to-r from-gray-900 to-blue-950 rounded-2xl p-6 mb-10 text-white border border-gray-700/50 glow-blue">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
             <div>
               <p className="text-3xl font-black text-blue-400">{liveCount}</p>
-              <p className="text-xs text-gray-400 mt-1">Live Picks</p>
+              <p className="text-xs text-gray-400 mt-1">Hand-Picked Products</p>
             </div>
             <div>
               <p className="text-3xl font-black text-blue-400">{categoryCount}</p>
-              <p className="text-xs text-gray-400 mt-1">Categories</p>
+              <p className="text-xs text-gray-400 mt-1">Buying Guides</p>
             </div>
             <div>
-              <p className="text-3xl font-black text-blue-400">{trackedCount - liveCount}</p>
-              <p className="text-xs text-gray-400 mt-1">Dead Listings Pulled</p>
+              <p className="text-3xl font-black text-blue-400">Daily</p>
+              <p className="text-xs text-gray-400 mt-1">Availability &amp; Price Checks</p>
             </div>
             <div>
-              <p className="text-3xl font-black text-blue-400">Nightly</p>
-              <p className="text-xs text-gray-400 mt-1">Listing Checks</p>
+              <p className="text-3xl font-black text-blue-400">Every 8h</p>
+              <p className="text-xs text-gray-400 mt-1">Fresh Community Intel</p>
             </div>
           </div>
         </section>

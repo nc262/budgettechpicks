@@ -94,7 +94,7 @@
       ],
       "parameters": {
         "mode": "runOnceForAllItems",
-        "jsCode": "const content = Buffer.from($input.item.json.content, 'base64').toString('utf-8');\nconst lines = content.split('\\n');\nconst items = [];\nconst seenAsins = new Set();\n\nfor (let i = 0; i < lines.length; i++) {\n  const asinMatch = lines[i].match(/^\\s+asin:\\s*\"([A-Z0-9]{10})\"/);\n  if (!asinMatch) continue;\n  const asin = asinMatch[1];\n  if (seenAsins.has(asin)) continue;\n  seenAsins.add(asin);\n\n  let id = '', name = '', price = '';\n  const start = Math.max(0, i - 15);\n  const end = Math.min(lines.length - 1, i + 10);\n  for (let j = start; j <= end; j++) {\n    if (!id) { const m = lines[j].match(/^\\s+id:\\s*\"([^\"]+)\"/); if (m) id = m[1]; }\n    if (!name) { const m = lines[j].match(/^\\s+name:\\s*\"([^\"]+)\"/); if (m) name = m[1]; }\n    if (!price) { const m = lines[j].match(/^\\s+price:\\s*\"([^\"]+)\"/); if (m) price = m[1]; }\n  }\n  items.push({ json: { asin, id, name, currentPrice: price } });\n}\n\nreturn items;"
+        "jsCode": "const content = Buffer.from($('Get products.ts').first().json.content, 'base64').toString('utf-8');\nconst lines = content.split('\\n');\nconst items = [];\nconst seenAsins = new Set();\n\nfor (let i = 0; i < lines.length; i++) {\n  const asinMatch = lines[i].match(/^\\s+asin:\\s*\"([A-Z0-9]{10})\"/);\n  if (!asinMatch) continue;\n  const asin = asinMatch[1];\n  if (seenAsins.has(asin)) continue;\n  seenAsins.add(asin);\n\n  let id = '', name = '', price = '';\n  const start = Math.max(0, i - 15);\n  const end = Math.min(lines.length - 1, i + 10);\n  for (let j = start; j <= end; j++) {\n    if (!id) { const m = lines[j].match(/^\\s+id:\\s*\"([^\"]+)\"/); if (m) id = m[1]; }\n    if (!name) { const m = lines[j].match(/^\\s+name:\\s*\"([^\"]+)\"/); if (m) name = m[1]; }\n    if (!price) { const m = lines[j].match(/^\\s+price:\\s*\"([^\"]+)\"/); if (m) price = m[1]; }\n  }\n  items.push({ json: { asin, id, name, currentPrice: price } });\n}\n\n// Auto-published products get the same nightly verification\ntry {\n  const autoRaw = $input.first().json;\n  if (autoRaw && autoRaw.content) {\n    const auto = JSON.parse(Buffer.from(autoRaw.content, 'base64').toString('utf-8'));\n    for (const p of (Array.isArray(auto) ? auto : [])) {\n      if (p.asin && !seenAsins.has(p.asin)) {\n        seenAsins.add(p.asin);\n        items.push({ json: { asin: p.asin, id: 'auto-' + p.asin, name: p.name || '', currentPrice: p.price || '' } });\n      }\n    }\n  }\n} catch (e) {}\n\nreturn items;"
       }
     },
     {
@@ -203,6 +203,38 @@
           "name": "GitHub account"
         }
       }
+    },
+    {
+      "id": "get-auto-products",
+      "name": "Get auto-products.json",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        550,
+        160
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.github.com/repos/nc262/budgettechpicks/contents/src/data/auto-products.json",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            }
+          ]
+        },
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi"
+      },
+      "credentials": {
+        "githubApi": {
+          "id": "JixM5IplKjCgdpw3",
+          "name": "GitHub account"
+        }
+      },
+      "onError": "continueRegularOutput"
     }
   ],
   "connections": {
@@ -232,7 +264,7 @@
       "main": [
         [
           {
-            "node": "Parse Products",
+            "node": "Get auto-products.json",
             "type": "main",
             "index": 0
           }
@@ -277,6 +309,17 @@
         [
           {
             "node": "Commit Health JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get auto-products.json": {
+      "main": [
+        [
+          {
+            "node": "Parse Products",
             "type": "main",
             "index": 0
           }
