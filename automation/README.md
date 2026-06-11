@@ -8,6 +8,27 @@ n8n workflow backups for TotalTechPicks. Exported automatically whenever workflo
 > never appears in exports. Never paste tokens into workflow nodes — rotating the old PAT is
 > still recommended.
 
+## Autonomous product pipeline (June 11, 2026)
+
+`scripts/discover-products.mjs` is the input-free discovery loop, triggered nightly by the
+"Nightly Product Discovery" n8n workflow via the `automation-runner` pm2 service
+(`http://127.0.0.1:7799/run/discovery` — n8n 2.x removed the Execute Command node):
+
+1. Searches 12 subreddit/query combos (Arctic Shift), keeps scored posts from the last 30 days
+2. Ollama extracts product names; names that don't literally appear in the post are discarded
+3. Candidates are deduped against `products.ts` + `auto-products.json`, classified into guide
+   slugs, ranked by mention count, PC components blocklisted
+4. Top candidates resolve on Amazon via real Chrome (Playwright `channel: 'chrome'` — plain
+   fetch and headless Chromium both hit the bot wall); quality gate: rating ≥ 4.3, ≥ 400
+   ratings, title must match the candidate's model tokens, component blocklist re-checked
+   against the resolved Amazon title
+5. Ollama writes a blurb grounded in the actual Reddit text (pros/cons only if supported)
+6. Survivors are committed to `src/data/auto-products.json` through a dedicated clone at
+   `C:\n8n-data\site-repo` (system git credentials, never touches your working copy) —
+   the push triggers a Cloudflare rebuild and they appear as "Community Picks"
+
+Test it manually any time: `node scripts/discover-products.mjs --dry-run --max=3`
+
 ## Fixed June 10, 2026
 
 - **ASIN Health Check** only checked 1 of 131 products (Code node ran in "once for all items"
