@@ -11,7 +11,9 @@ $checks += "guide comparison table:           " + ($a -match 'At a Glance')
 $checks += "guide head-to-head verdicts:      " + ($a -match 'Head-to-Head')
 $checks += "guide FAQ structured data:        " + ($a -match 'FAQPage')
 $checks += "guide affiliate disclosure:       " + ($a -match 'affiliate links')
-$checks += "guide intel freshness stamp:      " + ($a -match 'community intel refreshed')
+# Intel stamp only renders on guides that currently have insights — check across two guides
+$b = (Invoke-WebRequest -Uri "https://totaltechpicks.com/best-budget-webcams/" -TimeoutSec 30).Content
+$checks += "guide intel freshness stamp:      " + (($a -match 'community intel refreshed') -or ($b -match 'community intel refreshed'))
 
 $og = Invoke-WebRequest -Uri "https://totaltechpicks.com/og-default.png" -Method Head -TimeoutSec 20
 $checks += "social share image:               $($og.StatusCode -eq 200)"
