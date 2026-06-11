@@ -52,8 +52,8 @@ const trustSignals = [
   },
   {
     icon: "🤖",
-    title: "Checked against Amazon nightly",
-    body: "An automated job verifies every product listing each night. Discontinued or dead listings get pulled instead of leading you to a broken page.",
+    title: "Re-verified against Amazon nightly",
+    body: "An automated job re-checks every product listing each night, so what you see here is always in stock and buyable today — never a broken link.",
   },
   {
     icon: "💰",
