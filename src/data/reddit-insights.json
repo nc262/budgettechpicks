@@ -30,164 +30,9 @@
       }
     ]
   },
-  "best-wireless-earbuds-under-50": {
-    "lastUpdated": "2026-06-10T19:58:01.233Z",
-    "insights": [
-      {
-        "product": "Apple AirPods Pro 2nd Gen",
-        "productSlug": "best-wireless-earbuds-under-50",
-        "summary": "Users appreciate a comparison between Meze Audio headphones, highlighting differences and potential biases in sound quality.",
-        "pros": [
-          "the 109 Pros just sounded the best",
-          "copper Ares SII to $600 Vermilion and $1500+ GodFall hybrid cables"
-        ],
-        "cons": [
-          "the Aer sounded second best",
-          "$300 more for the headphones may not yield better results due to bias"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "the perceived sound quality of headphones can be influenced by biases such as cable quality",
-          "upgraded cables do not necessarily improve sound quality"
-        ],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "hasRealComments": true,
-        "sourcePost": "Meze Audio: Comparison of 105 Silva and 109 Pro",
-        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1tsfbqz/meze_audio_comparison_of_105_silva_and_109_pro/",
-        "scrapedAt": "2026-06-10T19:58:01.221Z"
-      }
-    ]
-  },
-  "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-11T00:43:18.032Z",
-    "insights": [
-      {
-        "product": "Ergotron LX Desk Monitor Arm",
-        "productSlug": "best-desk-accessories-under-50",
-        "summary": "Users like the product's design and functionality, with several praising its cable management features.",
-        "pros": [
-          "very clean",
-          "makes hardware support much sturdier",
-          "cable management",
-          "nice hidden surface for cable management"
-        ],
-        "cons": [],
-        "sentiment": "positive",
-        "key_insights": [
-          "users appreciate its design and functionality",
-          "it provides a nice hidden surface for cable management",
-          "some users had trouble finding a desk shelf that fit their aesthetic, but this product was a good solution"
-        ],
-        "recommended_by_users": true,
-        "commentCount": 7,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Productivity Station!",
-        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1t54lqb/productivity_station/",
-        "scrapedAt": "2026-06-11T00:43:18.011Z"
-      },
-      {
-        "product": "BenQ ScreenBar Monitor Light",
-        "productSlug": "best-desk-accessories-under-50",
-        "summary": "Users praise the monitor's compact size and clean design, but some find it too small compared to their speakers or monitors.",
-        "pros": [
-          "very optimal for competitive gaming",
-          "so slick",
-          "clean and complete build"
-        ],
-        "cons": [
-          "looks out of proportion due to being next to big Genelec studio monitors",
-          "screen looks so tiny"
-        ],
-        "sentiment": "neutral",
-        "key_insights": [
-          "the monitor's size is optimal for competitive gaming",
-          "the clean design is a notable feature",
-          "some users find the monitor too small compared to their speakers or monitors"
-        ],
-        "recommended_by_users": false,
-        "commentCount": 11,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Business in front, party in the back!",
-        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1stll1q/business_in_front_party_in_the_back/",
-        "scrapedAt": "2026-06-11T00:43:18.012Z"
-      },
-      {
-        "product": "Logitech MX Master 3S Wireless Mouse",
-        "productSlug": "best-desk-accessories-under-50",
-        "summary": "Discussed in r/homeoffice — 19 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
-        "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-11T00:43:18.012Z"
-      }
-    ]
-  },
   "best-gaming-gear-under-50": {
     "lastUpdated": "2026-06-11T04:03:57.709Z",
     "insights": [
-      {
-        "product": "Logitech G305 LIGHTSPEED Wireless Gaming Mouse",
-        "productSlug": "best-gaming-gear-under-50",
-        "summary": "Users have mixed opinions on compatibility, with one suggesting to upgrade to an ATX PSU for better performance and another expressing concern over inflated prices for certain components.",
-        "pros": [
-          "upgrading to an ATX PSU",
-          "dual tower cooler might work"
-        ],
-        "cons": [
-          "inflated RAM pricing",
-          "overpriced SSD"
-        ],
-        "sentiment": "neutral",
-        "key_insights": [
-          "ATX PSU recommended",
-          "dual tower cooler may fit but not guaranteed",
-          "inflated prices for certain components"
-        ],
-        "recommended_by_users": false,
-        "commentCount": 4,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Is everything compatible?",
-        "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1tr6o63/is_everything_compatible/",
-        "scrapedAt": "2026-06-11T04:03:57.693Z"
-      },
-      {
-        "product": "Razer Basilisk V3 Gaming Mouse",
-        "productSlug": "best-gaming-gear-under-50",
-        "summary": "Real users think upgrading a PC on a budget requires careful planning and consideration of components like CPU, GPU, and PSU to ensure a balanced performance. They also suggest that investing in quality peripherals like a gaming mouse can enhance the overall experience.",
-        "pros": [
-          "Upgrade the monitor for good 1440p resolution",
-          "Consider a better PSU (750W) for high-end GPUs like RTX 3080",
-          "Opt for a higher wattage and nicer quality PSU"
-        ],
-        "cons": [
-          "CPU might be limiting factor at low resolutions",
-          "GPU is more important than CPU on high resolutions"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "Upgrade to a better PSU for high-end GPUs",
-          "Monitor upgrade can make a noticeable difference",
-          "Consider swapping out components with lower-cost alternatives"
-        ],
-        "recommended_by_users": true,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Help me choose a sensible upgrade path for a gifted PC on a budget!",
-        "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1thnk9x/help_me_choose_a_sensible_upgrade_path_for_a/",
-        "scrapedAt": "2026-06-11T04:03:57.694Z"
-      },
       {
         "product": "HyperX Cloud Stinger Gaming Headset",
         "productSlug": "best-gaming-gear-under-50",
@@ -213,33 +58,6 @@
         "sourcePost": "Looking for a new headset with mic. What do you guys recommend from this list?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1s87hqe/looking_for_a_new_headset_with_mic_what_do_you/",
         "scrapedAt": "2026-06-11T04:03:57.695Z"
-      }
-    ]
-  },
-  "best-desk-toys-under-50": {
-    "lastUpdated": "2026-06-10T19:58:01.233Z",
-    "insights": [
-      {
-        "product": "Govee LED Strip Lights",
-        "productSlug": "best-desk-toys-under-50",
-        "summary": "Home Assistant is seen as a viable option for home automation, offering ease of use, extensibility, and local hosting capabilities.",
-        "pros": [
-          "easy to use",
-          "extensible",
-          "can be hosted locally"
-        ],
-        "cons": [],
-        "sentiment": "positive",
-        "key_insights": [
-          "Home Assistant is the easiest home automation software",
-          "it has native Yeelight integration for easy device pickup"
-        ],
-        "recommended_by_users": true,
-        "commentCount": 4,
-        "hasRealComments": true,
-        "sourcePost": "Is Home Assistant the most viable option for my use case?",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1qg0sni/is_home_assistant_the_most_viable_option_for_my/",
-        "scrapedAt": "2026-06-10T19:58:01.224Z"
       }
     ]
   },
@@ -296,55 +114,9 @@
       }
     ]
   },
-  "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-11T04:03:57.709Z",
-    "insights": [
-      {
-        "product": "Samsung Odyssey G5 27\" 165Hz Curved",
-        "productSlug": "best-monitors-and-displays",
-        "summary": "Discussed in r/Monitors — 5 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 5,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Help a brother with some suggestions (OLED or IPS)",
-        "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1u0f0ka/help_a_brother_with_some_suggestions_oled_or_ips/",
-        "scrapedAt": "2026-06-11T04:03:57.698Z"
-      }
-    ]
-  },
   "best-streaming-gear": {
     "lastUpdated": "2026-06-11T04:03:57.709Z",
     "insights": [
-      {
-        "product": "Blue Yeti USB Microphone",
-        "productSlug": "best-streaming-gear",
-        "summary": "Users advise against buying expensive gear before learning the basics, emphasizing the importance of practical experience and budgeting.",
-        "pros": [
-          "spend your money how you want",
-          "if you work for your money, you should spend it however you want"
-        ],
-        "cons": [
-          "policing other people's finances is weird",
-          "buying expensive gear before learning the basics might not be effective"
-        ],
-        "sentiment": "neutral",
-        "key_insights": [
-          "true drive and passion are needed to justify investing in gear",
-          "it's essential to have a good understanding of audio and visual quality before investing in equipment"
-        ],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Stop buying expensive gear before learning the basics",
-        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tcxgxs/stop_buying_expensive_gear_before_learning_the/",
-        "scrapedAt": "2026-06-11T04:03:57.698Z"
-      },
       {
         "product": "Elgato Stream Deck MK.2",
         "productSlug": "best-streaming-gear",
@@ -406,34 +178,6 @@
   "best-audio-gear": {
     "lastUpdated": "2026-06-11T04:03:57.709Z",
     "insights": [
-      {
-        "product": "Audio-Technica ATH-M50x Studio Headphones",
-        "productSlug": "best-audio-gear",
-        "summary": "Many users find Bose headphones to be fine, but not exceptional, with some acknowledging their neutral mid-range sound and comfort. Others criticize them for marketing themselves as premium but offering inferior products.",
-        "pros": [
-          "neutral mid-range sound",
-          "comfortable",
-          "lightweight"
-        ],
-        "cons": [
-          "inferior products",
-          "overpriced",
-          "bass is too emphasized in some EQ settings"
-        ],
-        "sentiment": "neutral",
-        "key_insights": [
-          "Bose's sound quality can be improved with EQ settings",
-          "The brand's marketing and pricing are seen as overvalued by some users",
-          "ANC is a key selling point for Bose headphones"
-        ],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Do Bose headphones really sound that bad, or are they just disliked by audiophiles?",
-        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1tzd2ze/do_bose_headphones_really_sound_that_bad_or_are/",
-        "scrapedAt": "2026-06-11T04:03:57.701Z"
-      },
       {
         "product": "Sony WH-1000XM5 Wireless ANC Headphones",
         "productSlug": "best-audio-gear",
@@ -524,36 +268,6 @@
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
         "scrapedAt": "2026-06-11T04:03:57.693Z"
-      }
-    ]
-  },
-  "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-11T04:03:57.709Z",
-    "insights": [
-      {
-        "product": "Apple AirTag (4-Pack)",
-        "productSlug": "best-portable-tech-under-50",
-        "summary": "Users appreciate the innovation of Energizer's battery design, which prevents ingestion burns, and some share personal anecdotes about their own experiences with DIY repairs and the importance of safety regulations.",
-        "pros": [
-          "Energizer Launches AirTag-Compatible Batteries That Prevent Ingestion Burns",
-          "The technology could stifle other brands from implementing anti-burn guards as well"
-        ],
-        "cons": [
-          "Some users express concern that this technology's patent could lead to a lack of innovation in the industry"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "Preventing ingestion burns through battery design",
-          "Personal experiences with DIY repairs and safety regulations",
-          "Concerns about patent impact on industry innovation"
-        ],
-        "recommended_by_users": true,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Energizer Launches AirTag-Compatible Batteries That Prevent Ingestion Burns",
-        "sourceUrl": "https://www.reddit.com/r/apple/comments/1t5yf1y/energizer_launches_airtagcompatible_batteries/",
-        "scrapedAt": "2026-06-11T04:03:57.697Z"
       }
     ]
   }

@@ -91,6 +91,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        {/* Scroll-reveal: cards below the fold fade in as they enter the viewport */}
+        <Script id="scroll-reveal" strategy="afterInteractive">
+          {`(function(){if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;var els=document.querySelectorAll('.glow-card');if(!els.length)return;var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in-view');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px',threshold:0.05});els.forEach(function(el){if(el.getBoundingClientRect().top<innerHeight){el.classList.add('in-view')}else{io.observe(el)}});document.documentElement.classList.add('reveal-ready')})();`}
+        </Script>
       </body>
     </html>
   );

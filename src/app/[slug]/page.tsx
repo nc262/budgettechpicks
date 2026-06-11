@@ -134,8 +134,8 @@ export default function ArticlePage({ params }: Props) {
       {/* Category Hero */}
       {heroProduct && (
         <section className="relative overflow-hidden bg-gradient-to-br from-gray-950 via-[#0a0e1a] to-blue-950 text-white px-4 py-14">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="orb-float absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="orb-float-2 absolute bottom-0 right-1/4 w-64 h-64 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
           <div className="relative max-w-5xl mx-auto">
             <div className="flex flex-col lg:flex-row items-center gap-10">
               {/* Left: title + intro */}

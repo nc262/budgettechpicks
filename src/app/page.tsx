@@ -89,6 +89,11 @@ export default function HomePage() {
     ? new Date(lastChecked).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })
     : null;
 
+  // Marquee strip: badged, verified-live picks with images
+  const marqueePicks = allProducts
+    .filter((p) => p.badge && isLive(p.asin) && health[p.asin]?.imageUrl)
+    .slice(0, 14);
+
   // Most recent community intel across all guides — refreshed by the pipeline every 8 hours
   const latestIntel: (IntelItem & { slug: string })[] = Object.entries(
     redditInsightsData as Record<string, { lastUpdated: string; insights: IntelItem[] }>
@@ -106,8 +111,8 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-950 via-[#0a0e1a] to-blue-950 text-white px-4 py-20">
         {/* Glow orbs */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="orb-float absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="orb-float-2 absolute bottom-0 right-1/4 w-64 h-64 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative max-w-5xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -148,6 +153,35 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Verified picks marquee — every item passed last night's listing check */}
+      {marqueePicks.length >= 6 && (
+        <div className="border-y border-gray-800/60 bg-gray-950/60 py-3">
+          <div className="marquee">
+            <div className="marquee-track">
+              {[...marqueePicks, ...marqueePicks].map((p, i) => (
+                <Link
+                  key={`${p.id}-${i}`}
+                  href={`/${p.articleSlug}`}
+                  className="flex items-center gap-2.5 shrink-0 px-3 py-1.5 rounded-xl hover:bg-white/5 transition-colors"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={(productHealth as Record<string, { imageUrl?: string }>)[p.asin]?.imageUrl ?? `/images/products/${p.asin}.jpg`}
+                    alt={p.name}
+                    width={32}
+                    height={32}
+                    loading="lazy"
+                    className="w-8 h-8 object-contain rounded-lg bg-gray-800"
+                  />
+                  <span className="text-xs font-bold text-gray-300 whitespace-nowrap">{p.name}</span>
+                  <span className="text-xs font-black text-blue-400 whitespace-nowrap">{p.price}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="max-w-5xl mx-auto px-4 py-10">
         {/* Top ad */}

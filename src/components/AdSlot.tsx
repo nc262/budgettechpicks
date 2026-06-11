@@ -45,7 +45,7 @@ export default function AdSlot({ slot, style = "rectangle", className = "" }: Pr
   };
 
   return (
-    <div className={`text-center ${className}`}>
+    <div className={`ad-wrap text-center ${className}`}>
       <ins
         className="adsbygoogle"
         style={{ display: "block" }}

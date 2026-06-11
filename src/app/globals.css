@@ -63,12 +63,86 @@
   }
 
   .text-gradient {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400;
+    @apply text-transparent bg-clip-text;
+    background-image: linear-gradient(90deg, #60a5fa, #818cf8, #38bdf8, #60a5fa);
+    background-size: 250% auto;
+    animation: gradient-pan 7s ease-in-out infinite;
   }
 
   /* Hairline gradient divider under sticky header */
   .header-hairline {
     background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.35), transparent);
     height: 1px;
+  }
+
+  /* Collapse AdSense slots Google leaves empty (pre-approval / no fill) — no blank gaps */
+  .ad-wrap:has(ins.adsbygoogle[data-ad-status="unfilled"]) {
+    display: none;
+  }
+
+  /* Drifting hero glow orbs */
+  .orb-float {
+    animation: orb-drift 16s ease-in-out infinite alternate;
+  }
+  .orb-float-2 {
+    animation: orb-drift 22s ease-in-out infinite alternate-reverse;
+  }
+
+  /* Scroll reveal — only active once JS adds .reveal-ready (no-JS users see everything) */
+  .reveal-ready .glow-card {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s cubic-bezier(0.2, 0.6, 0.2, 1), transform 0.6s cubic-bezier(0.2, 0.6, 0.2, 1), box-shadow 0.2s ease;
+  }
+  .reveal-ready .glow-card.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-ready .glow-card.in-view:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Verified-picks marquee */
+  .marquee {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  }
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    gap: 1.25rem;
+    animation: marquee-scroll 45s linear infinite;
+  }
+  .marquee:hover .marquee-track {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes gradient-pan {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+}
+
+@keyframes orb-drift {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(48px, -32px, 0) scale(1.18); }
+}
+
+@keyframes marquee-scroll {
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-gradient,
+  .orb-float,
+  .orb-float-2,
+  .marquee-track {
+    animation: none;
+  }
+  .reveal-ready .glow-card {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
