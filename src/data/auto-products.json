@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "asin": "B0DF7C4YPQ",
+    "name": "Corsair Nautilus 360 lcd",
+    "price": "$129.99",
+    "imageUrl": "https://m.media-amazon.com/images/I/510X4+092JL._AC_UY218_.jpg",
+    "rating": 4.6,
+    "reviewCount": 1949,
+    "articleSlug": "best-gaming-setups",
+    "description": "The CORSAIR Nautilus 360 RS ARGB Liquid CPU Cooler is a highly-rated AIO cooler with low-noise operation and direct motherboard connection.",
+    "pros": [
+      "Low-Noise",
+      "Direct Motherboard"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/pcmasterrace/comments/1tz0ljp/rate_my_setup/",
+    "sourceSubreddit": "pcmasterrace",
+    "mentions": 1,
+    "addedAt": "2026-06-11T15:37:24.023Z"
+  }
+]
