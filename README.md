@@ -46,15 +46,18 @@ npm run dev
 
 ---
 
-## Deploy to Vercel (free, set & forget)
+## Deployment (Cloudflare)
 
-1. Push this repo to GitHub
-2. Go to https://vercel.com and sign in with GitHub
-3. Click **"Add New Project"** → import your repo
-4. Add your environment variables in the Vercel dashboard under **Settings → Environment Variables**
-5. Click **Deploy** — done!
+The site is served at **https://totaltechpicks.com** through Cloudflare, built as a static
+export (`next build` with `output: "export"` → `out/`).
 
-Vercel auto-deploys on every git push. Your site will be live at `https://yourproject.vercel.app`.
+- Every push to `master` triggers a rebuild (this is also how the n8n automation publishes:
+  it commits data files like `product-health.json` and `reddit-insights.json` to GitHub, and
+  the deploy picks them up).
+- Environment variables (`NEXT_PUBLIC_AMAZON_TAG`, `NEXT_PUBLIC_ADSENSE_ID`) must be set in
+  the Cloudflare Pages project settings — the build fails loudly if they're missing
+  (see `next.config.js`).
+- `netlify.toml` and `vercel.json` are leftovers from earlier hosting experiments.
 
 ---
 

@@ -1,6 +1,5 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
-import Script from "next/script";
 import { getFeaturedProducts, products as allProducts, categoryEmoji, categoryColor, affiliateUrl } from "@/data/products";
 import { articles } from "@/data/articles";
 import AdSlot from "@/components/AdSlot";
@@ -30,27 +29,59 @@ const websiteJsonLd = {
 };
 
 const trustSignals = [
-  { icon: "🔬", title: "Spec-Verified Picks", body: "We cross-reference specs, benchmarks, and real-world tests — not just box copy." },
-  { icon: "🚫", title: "Zero Paid Placements", body: "No brand ever pays to be ranked here. Affiliate links fund the site, not our opinions." },
-  { icon: "⚡", title: "No-BS Scoring", body: "Every product gets an honest score. A 6/10 means a 6/10, not a polite 8." },
-  { icon: "📦", title: "Build Quality Focus", body: "We flag flimsy plastics, bad cables, and products that won't survive six months." },
-  { icon: "💰", title: "Value Over Brand", body: "An unknown brand that outperforms a famous one gets ranked higher. Always." },
+  {
+    icon: "🔍",
+    title: "Researched, not lab-tested",
+    body: "We don't pretend to have a test lab. Picks are built from spec sheets, teardowns, and thousands of long-term owner reports — and we tell you where each conclusion comes from.",
+  },
+  {
+    icon: "💬",
+    title: "Real Reddit feedback, cited",
+    body: "Product pages pull in what actual owners say in subreddit discussions — including the complaints — with links to the source threads so you can read them yourself.",
+  },
+  {
+    icon: "🤖",
+    title: "Checked against Amazon nightly",
+    body: "An automated job verifies every product listing each night. Discontinued or dead listings get pulled instead of leading you to a broken page.",
+  },
+  {
+    icon: "💰",
+    title: "Affiliate-funded, honestly",
+    body: "We earn a commission if you buy through our links — that's the business model, stated plainly. No brand pays for placement, and a product we wouldn't buy doesn't get listed.",
+  },
 ];
 
 export default function HomePage() {
-  const featured = getFeaturedProducts();
-  const trendingPicks = allProducts
-    .filter((p) => p.badge === "🏆 Best Overall" || p.badge === "🔥 Editor's Pick")
+  const health = productHealth as Record<string, { imageUrl?: string; isLive?: boolean; checkedAt?: string }>;
+  const isLive = (asin: string) => health[asin]?.isLive !== false;
+
+  const featured = getFeaturedProducts().filter((p) => isLive(p.asin));
+  const topRatedPicks = allProducts
+    .filter((p) => (p.badge === "🏆 Best Overall" || p.badge === "🔥 Editor's Pick") && isLive(p.asin))
     .slice(0, 6);
 
-  // Featured hero product — highest-rated "Best Overall"
+  // Featured hero product — highest-rated "Best Overall" that's still purchasable
   const heroProduct = allProducts
-    .filter((p) => p.badge === "🏆 Best Overall")
+    .filter((p) => p.badge === "🏆 Best Overall" && isLive(p.asin))
     .sort((a, b) => b.rating - a.rating)[0];
+
+  // Real numbers, computed from data — not marketing copy
+  const trackedCount = allProducts.length;
+  const liveCount = allProducts.filter((p) => isLive(p.asin)).length;
+  const categoryCount = articles.length;
+  const lastChecked = Object.values(health)
+    .map((h) => h.checkedAt)
+    .filter(Boolean)
+    .sort()
+    .pop();
+  const lastCheckedLabel = lastChecked
+    ? new Date(lastChecked).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })
+    : null;
 
   return (
     <div>
-      <Script id="jsonld-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
+      {/* Plain script tag (not next/script) so structured data is present in the static HTML */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-950 via-[#0a0e1a] to-blue-950 text-white px-4 py-20">
@@ -63,27 +94,27 @@ export default function HomePage() {
             {/* Left: copy */}
             <div className="flex-1 text-center lg:text-left">
               <span className="inline-block bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
-                🔥 125+ Products Reviewed · Updated May 2026
+                {liveCount} picks tracked{lastCheckedLabel ? ` · verified ${lastCheckedLabel}` : ""}
               </span>
-              <h1 className="text-5xl lg:text-6xl font-black mb-5 leading-[1.05]">
+              <h1 className="text-5xl lg:text-6xl font-black mb-5 leading-[1.05] tracking-tight">
                 Less Hype.<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">More Hardware.</span>
+                <span className="text-gradient">More Hardware.</span>
               </h1>
               <p className="text-gray-300 text-lg max-w-xl mb-3 leading-relaxed">
-                Real-world tech recommendations tested for performance, value, and practicality. No fluff. No sponsored nonsense.
+                Tech picks built from spec sheets, owner reports, and real Reddit threads — with sources you can check.
               </p>
               <p className="text-gray-500 text-sm max-w-lg mb-8">
-                125+ picks across gaming, audio, streaming, home office, and more.
+                {categoryCount} categories covering gaming, audio, streaming, home office, and more.
               </p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                <Link href="/best-gaming-gear-under-50" className="bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-blue-600/25">
-                  🔥 Best Tech Deals →
+                <Link href="#staff-picks" className="bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-blue-600/25">
+                  See the picks →
                 </Link>
                 <Link href="/about" className="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 rounded-xl transition-all border border-white/10 hover:border-blue-400/30">
-                  🧠 Buying Guides →
+                  How we work
                 </Link>
-                <Link href="#staff-picks" className="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 rounded-xl transition-all border border-white/10 hover:border-blue-400/30">
-                  🛠 Staff Picks →
+                <Link href="/my-setup" className="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 rounded-xl transition-all border border-white/10 hover:border-blue-400/30">
+                  My real setup
                 </Link>
               </div>
             </div>
@@ -105,21 +136,20 @@ export default function HomePage() {
         {/* Featured picks */}
         <section className="mb-14" id="staff-picks">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-black text-white">⭐ Editor&apos;s Top Picks</h2>
+            <h2 className="text-2xl font-black text-white">Editor&apos;s Top Picks</h2>
             <span className="text-sm text-gray-400 bg-gray-800/80 px-3 py-1 rounded-full border border-gray-700/50">All price ranges</span>
           </div>
           <FeaturedGrid products={featured} />
         </section>
 
-        {/* Trending This Week */}
+        {/* Top rated picks */}
         <section className="mb-14">
           <div className="flex items-center gap-2 mb-6">
-            <span className="text-2xl">🔥</span>
-            <h2 className="text-2xl font-black text-white">Trending This Week</h2>
-            <span className="text-xs bg-red-500/20 text-red-400 border border-red-500/30 font-bold px-2 py-0.5 rounded-full uppercase tracking-wide ml-1">Hot</span>
+            <h2 className="text-2xl font-black text-white">Highest-Rated Picks</h2>
+            <span className="text-xs text-gray-500 ml-1">our &ldquo;Best Overall&rdquo; winners across categories</span>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            {trendingPicks.map((product) => {
+            {topRatedPicks.map((product) => {
               const emoji = categoryEmoji[product.category] ?? "🛒";
               const color = categoryColor[product.category] ?? "bg-gray-800 text-gray-300";
               return (
@@ -154,7 +184,7 @@ export default function HomePage() {
                     rel="noopener noreferrer sponsored"
                     className="mt-3 w-full text-center bg-yellow-400 hover:bg-yellow-300 active:bg-yellow-500 text-gray-900 font-bold text-xs px-3 py-2 rounded-xl transition-all hover:-translate-y-0.5 shadow-sm hover:shadow-yellow-400/20 hover:shadow-md"
                   >
-                    🛒 Buy on Amazon →
+                    View on Amazon →
                   </a>
                 </div>
               );
@@ -188,24 +218,24 @@ export default function HomePage() {
         {/* Mid ad */}
         <AdSlot slot="6127167489" style="horizontal" className="mb-10" />
 
-        {/* Stats bar */}
+        {/* Stats bar — every number here is computed from site data, not written by hand */}
         <section className="bg-gradient-to-r from-gray-900 to-blue-950 rounded-2xl p-6 mb-10 text-white border border-gray-700/50 glow-blue">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
             <div>
-              <p className="text-3xl font-black text-blue-400">125+</p>
-              <p className="text-xs text-gray-400 mt-1">Products Reviewed</p>
+              <p className="text-3xl font-black text-blue-400">{liveCount}</p>
+              <p className="text-xs text-gray-400 mt-1">Live Picks</p>
             </div>
             <div>
-              <p className="text-3xl font-black text-blue-400">12</p>
+              <p className="text-3xl font-black text-blue-400">{categoryCount}</p>
               <p className="text-xs text-gray-400 mt-1">Categories</p>
             </div>
             <div>
-              <p className="text-3xl font-black text-blue-400">$10</p>
-              <p className="text-xs text-gray-400 mt-1">Cheapest Pick</p>
+              <p className="text-3xl font-black text-blue-400">{trackedCount - liveCount}</p>
+              <p className="text-xs text-gray-400 mt-1">Dead Listings Pulled</p>
             </div>
             <div>
-              <p className="text-3xl font-black text-blue-400">Premium Picks</p>
-              <p className="text-xs text-gray-400 mt-1">Top of Price Range</p>
+              <p className="text-3xl font-black text-blue-400">Nightly</p>
+              <p className="text-xs text-gray-400 mt-1">Listing Checks</p>
             </div>
           </div>
         </section>
@@ -215,10 +245,11 @@ export default function HomePage() {
           <div className="text-center mb-8">
             <h2 className="text-2xl font-black text-white mb-2">Why Trust TotalTechPicks?</h2>
             <p className="text-gray-400 text-sm max-w-lg mx-auto">
-              The internet is full of affiliate sludge. Here&apos;s what makes us different.
+              Honestly? You shouldn&apos;t trust any review site by default — including this one.
+              Here&apos;s exactly how this site works, so you can judge for yourself.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+          <div className="grid sm:grid-cols-2 gap-4 mb-6">
             {trustSignals.map((signal) => (
               <div key={signal.title} className="bg-gray-900 rounded-2xl border border-gray-700/50 p-5 glow-card transition-all">
                 <div className="text-3xl mb-3">{signal.icon}</div>

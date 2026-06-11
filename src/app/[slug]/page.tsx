@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Script from "next/script";
 import type { Metadata } from "next";
 import { getArticleBySlug, articles } from "@/data/articles";
 import { getProductsByArticle, affiliateUrl, amazonImageUrl, categoryEmoji } from "@/data/products";
@@ -93,10 +92,20 @@ export default function ArticlePage({ params }: Props) {
     itemListElement: products.map((p, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      url: affiliateUrl(p.name),
+      url: affiliateUrl(p.name, p.asin),
       name: p.name,
     })),
   };
+
+  const faqJsonLd = article.faq && article.faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: article.faq.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  } : null;
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -114,8 +123,12 @@ export default function ArticlePage({ params }: Props) {
 
   return (
     <div>
-      <Script id="jsonld-itemlist" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
-      <Script id="jsonld-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      {/* Plain script tags (not next/script) so structured data is present in the static HTML */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      {faqJsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      )}
 
       {/* Category Hero */}
       {heroProduct && (
@@ -129,7 +142,7 @@ export default function ArticlePage({ params }: Props) {
                 <span className="inline-block bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
                   {categoryEmoji[article.category] ?? "🛒"} {article.category}
                 </span>
-                <h1 className="text-4xl lg:text-5xl font-black mb-4 leading-[1.05]">{article.title}</h1>
+                <h1 className="text-4xl lg:text-5xl font-black mb-4 leading-[1.05] tracking-tight">{article.title}</h1>
                 <p className="text-gray-300 text-base max-w-xl mb-2 leading-relaxed">{article.intro}</p>
                 <p className="text-gray-500 text-xs">Last updated: {article.updatedAt}</p>
               </div>
@@ -145,11 +158,17 @@ export default function ArticlePage({ params }: Props) {
     <div className="max-w-3xl mx-auto px-4 py-10">
 
       {/* Breadcrumb */}
-      <nav className="text-sm text-gray-500 mb-8 flex items-center gap-1.5">
+      <nav className="text-sm text-gray-500 mb-4 flex items-center gap-1.5">
         <Link href="/" className="hover:text-blue-400 transition-colors font-medium">Home</Link>
         <span>›</span>
         <span className="text-gray-300 font-semibold">{article.category}</span>
       </nav>
+
+      {/* Affiliate disclosure — required before any affiliate links */}
+      <p className="text-xs text-gray-500 mb-8 leading-relaxed">
+        This page contains affiliate links. If you buy through them, we earn a small commission from Amazon at no
+        extra cost to you. It doesn&apos;t change what we recommend — but you deserve to know before you click.
+      </p>
 
       {/* TL;DR Quick Picks */}
       {article.tldr && article.tldr.length > 0 && (
@@ -198,6 +217,20 @@ export default function ArticlePage({ params }: Props) {
         </div>
       )}
 
+      {/* How we picked — methodology */}
+      {article.howWePicked && (
+        <div className="bg-gray-900 rounded-2xl border border-gray-700/50 p-5 mb-8">
+          <h2 className="text-sm font-bold text-gray-200 uppercase tracking-wide mb-2">How we picked</h2>
+          <p className="text-sm text-gray-400 leading-relaxed">{article.howWePicked}</p>
+          {discontinuedCount > 0 && (
+            <p className="text-xs text-gray-500 mt-3 pt-3 border-t border-gray-800">
+              {discontinuedCount} {discontinuedCount === 1 ? "pick was" : "picks were"} removed from this guide
+              because the Amazon listing went dead in our nightly check.
+            </p>
+          )}
+        </div>
+      )}
+
       {/* Product list with price filter */}
       <ProductFilter products={products} redditByProduct={redditByProduct} />
 
@@ -209,26 +242,27 @@ export default function ArticlePage({ params }: Props) {
             <h2 className="text-xl font-black text-white">Buying Guide — What to Look For</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
-            {article.buyingGuide.map((tip, i) => {
-              const colors = [
-                "bg-blue-500/10 border-blue-500/20",
-                "bg-green-500/10 border-green-500/20",
-                "bg-orange-500/10 border-orange-500/20",
-                "bg-purple-500/10 border-purple-500/20",
-              ];
-              const headingColors = [
-                "text-blue-300",
-                "text-green-300",
-                "text-orange-300",
-                "text-purple-300",
-              ];
-              return (
-                <div key={i} className={`border rounded-xl p-4 ${colors[i % 4]}`}>
-                  <p className={`font-bold text-sm mb-1 ${headingColors[i % 4]}`}>{tip.heading}</p>
-                  <p className="text-sm text-gray-400 leading-relaxed">{tip.body}</p>
-                </div>
-              );
-            })}
+            {article.buyingGuide.map((tip, i) => (
+              <div key={i} className="bg-gray-900 border border-gray-700/50 rounded-2xl p-5 glow-card transition-all duration-200">
+                <p className="font-bold text-sm mb-1.5 text-blue-300">{tip.heading}</p>
+                <p className="text-sm text-gray-400 leading-relaxed">{tip.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* FAQ */}
+      {article.faq && article.faq.length > 0 && (
+        <div className="mt-12 mb-8">
+          <h2 className="text-xl font-black text-white mb-5">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {article.faq.map((f, i) => (
+              <div key={i} className="bg-gray-900 rounded-2xl border border-gray-700/50 p-5">
+                <h3 className="font-bold text-gray-100 mb-2">{f.question}</h3>
+                <p className="text-sm text-gray-400 leading-relaxed">{f.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       )}
@@ -240,11 +274,13 @@ export default function ArticlePage({ params }: Props) {
       {autoPicks.length > 0 && (
         <div className="bg-gray-900 rounded-2xl border border-gray-700/50 p-6 mb-8">
           <div className="flex items-center gap-2 mb-1">
-            <span className="text-xl">🤖</span>
             <h2 className="text-xl font-black text-white">Community Picks</h2>
             <span className="ml-auto text-xs bg-blue-500/20 text-blue-300 border border-blue-500/30 px-2 py-0.5 rounded-full font-bold">From Reddit</span>
           </div>
-          <p className="text-xs text-gray-500 mb-4">Products spotted in Reddit discussions — not yet in our curated list.</p>
+          <p className="text-xs text-gray-500 mb-4">
+            Products mentioned in Reddit discussions, found automatically. We haven&apos;t vetted these the way we
+            vet the list above — treat them as leads, not recommendations.
+          </p>
           <div className="grid gap-3">
             {autoPicks.map((pick) => (
               <div key={pick.asin} className="flex items-center gap-3 bg-gray-800/50 rounded-xl p-3">

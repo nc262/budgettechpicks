@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About TotalTechPicks — Our Methodology",
   description:
-    "TotalTechPicks is an independent tech review site built on real-world testing, value analysis, and zero corporate sponsorships. Learn how we pick products and score them.",
+    "TotalTechPicks is an independent, affiliate-funded tech picks site built on spec research, owner-feedback analysis, and zero corporate sponsorships. Here's exactly how it works.",
   alternates: { canonical: "https://totaltechpicks.com/about" },
 };
 
@@ -41,11 +41,19 @@ const methodology = [
   },
 ];
 
-const scores = [
-  { range: "9.0–10", label: "Exceptional", color: "text-green-400 border-green-400/30 bg-green-400/10", desc: "Punches well above its price. Buy it without hesitation." },
-  { range: "8.0–8.9", label: "Great", color: "text-blue-400 border-blue-400/30 bg-blue-400/10", desc: "Solid pick with only minor compromises." },
-  { range: "7.0–7.9", label: "Good", color: "text-yellow-400 border-yellow-400/30 bg-yellow-400/10", desc: "Worth buying, but know what you're getting into." },
-  { range: "< 7.0", label: "Skip It", color: "text-orange-400 border-orange-400/30 bg-orange-400/10", desc: "Better options exist at this price. We'll tell you what they are." },
+const dataSources = [
+  {
+    title: "Star ratings come from Amazon",
+    body: "The stars and review counts on product cards are Amazon's, labeled as such. We don't invent our own score — we'd rather show you the real number and tell you when its pattern looks suspicious.",
+  },
+  {
+    title: "Reddit feedback is quoted with sources",
+    body: "An automated pipeline pulls real comment threads about our picks from relevant subreddits every few hours, summarizes what owners actually said — complaints included — and links the source thread so you can verify.",
+  },
+  {
+    title: "Listings are verified nightly",
+    body: "Every product's Amazon listing is checked automatically each night. Dead or discontinued listings get pulled from the guides, and each guide notes how many picks were removed that way.",
+  },
 ];
 
 export default function AboutPage() {
@@ -115,22 +123,17 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* No-BS Score explanation */}
+      {/* Where the numbers come from */}
       <section className="mb-12">
-        <h2 className="text-2xl font-black text-white mb-2">The ⚡ No-BS Score</h2>
+        <h2 className="text-2xl font-black text-white mb-2">Where the numbers on this site come from</h2>
         <p className="text-gray-400 mb-6 text-sm">
-          Every product gets a score out of 10. It&apos;s derived from verified customer ratings, weighted by review volume, and cross-referenced with editorial assessments. Here&apos;s what each range means:
+          We&apos;d rather show you real data with its source than invent an official-sounding score. Three rules:
         </p>
         <div className="space-y-3">
-          {scores.map((s) => (
-            <div key={s.range} className="flex items-center gap-4 bg-gray-900 rounded-xl border border-gray-700/50 p-4">
-              <span className={`text-sm font-black px-3 py-1 rounded-full border whitespace-nowrap ${s.color}`}>
-                ⚡ {s.range}
-              </span>
-              <div>
-                <p className="font-bold text-white text-sm">{s.label}</p>
-                <p className="text-xs text-gray-400">{s.desc}</p>
-              </div>
+          {dataSources.map((s) => (
+            <div key={s.title} className="bg-gray-900 rounded-xl border border-gray-700/50 p-4">
+              <p className="font-bold text-white text-sm mb-1">{s.title}</p>
+              <p className="text-xs text-gray-400 leading-relaxed">{s.body}</p>
             </div>
           ))}
         </div>

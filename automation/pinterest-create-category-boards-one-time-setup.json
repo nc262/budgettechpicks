@@ -1,5 +1,5 @@
 {
-  "name": "Pinterest — Create Category Boards (One-Time Setup)",
+  "name": "Pinterest â€” Create Category Boards (One-Time Setup)",
   "nodes": [
     {
       "parameters": {},
@@ -7,7 +7,10 @@
       "name": "Manual Trigger",
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
-      "position": [100, 300]
+      "position": [
+        100,
+        300
+      ]
     },
     {
       "parameters": {
@@ -18,7 +21,10 @@
       "name": "Fetch Products JSON",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [300, 300]
+      "position": [
+        300,
+        300
+      ]
     },
     {
       "parameters": {
@@ -29,7 +35,10 @@
       "name": "Split Boards",
       "type": "n8n-nodes-base.splitOut",
       "typeVersion": 1,
-      "position": [500, 300]
+      "position": [
+        500,
+        300
+      ]
     },
     {
       "parameters": {
@@ -40,9 +49,18 @@
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
-            { "name": "name", "value": "={{ $json.name }}" },
-            { "name": "description", "value": "={{ $json.description }}" },
-            { "name": "privacy", "value": "PUBLIC" }
+            {
+              "name": "name",
+              "value": "={{ $json.name }}"
+            },
+            {
+              "name": "description",
+              "value": "={{ $json.description }}"
+            },
+            {
+              "name": "privacy",
+              "value": "PUBLIC"
+            }
           ]
         },
         "options": {}
@@ -51,11 +69,14 @@
       "name": "Create Pinterest Board",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [700, 300],
+      "position": [
+        700,
+        300
+      ],
       "credentials": {
         "httpHeaderAuth": {
-          "id": "pinterest-creds",
-          "name": "Pinterest Bearer Token"
+          "id": "hdU8usLXg15qJvst",
+          "name": "Header Auth account"
         }
       }
     },
@@ -76,29 +97,60 @@
       "name": "Log Board ID",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
-      "position": [900, 300]
+      "position": [
+        900,
+        300
+      ]
     }
   ],
   "connections": {
     "Manual Trigger": {
-      "main": [[{ "node": "Fetch Products JSON", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Fetch Products JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "Fetch Products JSON": {
-      "main": [[{ "node": "Split Boards", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Split Boards",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "Split Boards": {
-      "main": [[{ "node": "Create Pinterest Board", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Create Pinterest Board",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "Create Pinterest Board": {
-      "main": [[{ "node": "Log Board ID", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Log Board ID",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
     "executionOrder": "v1"
   },
-  "staticData": null,
-  "meta": {
-    "templateId": "pinterest-board-setup",
-    "description": "One-time workflow: creates 12 category boards on Pinterest for TotalTechPicks. Uses Header Auth (Bearer token) — no OAuth2 required. Run once after linking Pinterest credentials."
-  }
+  "active": false
 }

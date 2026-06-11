@@ -11,7 +11,8 @@ export default function Footer() {
           <div className="md:col-span-1">
             <img src="/logo.png" alt="TotalTechPicks" className="h-14 w-auto max-w-[160px] object-contain mb-4 brightness-0 invert" />
             <p className="text-sm leading-relaxed mb-3">
-              125+ expert-picked tech products across every budget. No fluff, no paid placements, just honest picks.
+              Curated tech picks across every budget — researched against real owner feedback, checked against
+              Amazon nightly, and funded by affiliate links we disclose up front.
             </p>
 
           </div>
@@ -38,7 +39,7 @@ export default function Footer() {
               <li><Link href="/my-setup" className="hover:text-blue-400 transition-colors">⚙️ My Actual Setup</Link></li>
               <li><Link href="/about" className="hover:text-blue-400 transition-colors">About &amp; Methodology</Link></li>
               <li><Link href="/privacy-policy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
-              <li><a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Shop Amazon</a></li>
+              <li><a href={`https://www.amazon.com?tag=${process.env.NEXT_PUBLIC_AMAZON_TAG ?? "totaltechpicks-20"}`} target="_blank" rel="noopener noreferrer sponsored" className="hover:text-blue-400 transition-colors">Shop Amazon</a></li>
             </ul>
           </div>
         </div>

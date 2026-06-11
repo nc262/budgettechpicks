@@ -32,13 +32,6 @@ const rankColors: Record<number, string> = {
   3: "bg-amber-600 text-white",
 };
 
-function getScoreColor(score: number): string {
-  if (score >= 9) return "text-green-400 border-green-400/30 bg-green-400/10";
-  if (score >= 8) return "text-blue-400 border-blue-400/30 bg-blue-400/10";
-  if (score >= 7) return "text-yellow-400 border-yellow-400/30 bg-yellow-400/10";
-  return "text-orange-400 border-orange-400/30 bg-orange-400/10";
-}
-
 export default function ProductCard({ product, rank, redditInsight, isCompareSelected = false, onToggleCompare, compareDisabled = false }: Props) {
   const stars = Math.round(product.rating);
   // Use n8n-verified image URL if available, otherwise fall back to CDN pattern
@@ -51,8 +44,6 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
   const colorClass = categoryColor[product.category] ?? "bg-gray-800 text-gray-300";
   const badgeColor = product.badge ? (badgeColors[product.badge] ?? "bg-gray-700 text-gray-300") : null;
   const isTopPick = rank === 1;
-  const nobsScore = Math.round(product.rating * 2 * 10) / 10;
-  const scoreColor = getScoreColor(nobsScore);
 
   return (
     <div
@@ -135,13 +126,9 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
                   ))}
                 </div>
                 <span className="text-xs text-gray-400">
-                  {product.rating} ({product.reviewCount.toLocaleString()})
+                  {product.rating} · {product.reviewCount.toLocaleString()} Amazon ratings
                 </span>
               </div>
-              {/* No-BS Score */}
-              <span className={`text-xs font-black px-2 py-0.5 rounded-full border ${scoreColor}`}>
-                ⚡ {nobsScore}/10
-              </span>
             </div>
 
             <p className="text-sm text-gray-400 mb-3 leading-relaxed">{product.description}</p>
@@ -157,7 +144,7 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
                 rel="noopener noreferrer sponsored"
                 className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold text-sm px-5 py-2.5 rounded-xl transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
               >
-                🛒 View on Amazon →
+                View on Amazon →
               </a>
               {onToggleCompare && (
                 <button
@@ -223,7 +210,7 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
                 redditInsight.sentiment === "negative" ? "bg-red-400/10 text-red-400 border-red-400/30" :
                 "bg-gray-500/20 text-gray-400 border-gray-500/30"
               }`}>
-                {redditInsight.sentiment === "positive" ? "👍 Loved" : redditInsight.sentiment === "negative" ? "👎 Mixed" : "😐 Neutral"}
+                {redditInsight.sentiment === "positive" ? "Mostly positive" : redditInsight.sentiment === "negative" ? "Mostly negative" : "Mixed"}
               </span>
             </div>
             <p className="text-xs text-gray-400 italic leading-relaxed mb-2">&ldquo;{redditInsight.summary}&rdquo;</p>
@@ -245,7 +232,7 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
             <div className="flex items-center justify-between mt-1">
               {redditInsight.scrapedAt && (
                 <span className="text-xs text-gray-600">
-                  Live Data · Updated {new Date(redditInsight.scrapedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+                  Pulled from Reddit {new Date(redditInsight.scrapedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
                 </span>
               )}
               {redditInsight.sourceUrl && (

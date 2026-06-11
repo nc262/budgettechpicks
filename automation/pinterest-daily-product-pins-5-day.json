@@ -1,5 +1,5 @@
 {
-  "name": "Pinterest — Daily Product Pins (5/day)",
+  "name": "Pinterest â€” Daily Product Pins (5/day)",
   "nodes": [
     {
       "parameters": {
@@ -16,7 +16,10 @@
       "name": "Daily at 10am",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
-      "position": [100, 300]
+      "position": [
+        100,
+        300
+      ]
     },
     {
       "parameters": {
@@ -27,17 +30,23 @@
       "name": "Fetch Products JSON",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [300, 300]
+      "position": [
+        300,
+        300
+      ]
     },
     {
       "parameters": {
-        "jsCode": "// Flatten all products from all boards into one array\nconst data = $input.first().json;\nconst allProducts = [];\nfor (const board of data.boards) {\n  for (const product of board.products) {\n    allProducts.push({ ...product, boardName: board.name });\n  }\n}\n\n// Get pinned tracking from workflow static data\nconst pinnedAsins = $getWorkflowStaticData('global').pinnedAsins ?? [];\n\n// Find unpinned products\nconst unpinned = allProducts.filter(p => !pinnedAsins.includes(p.asin));\n\nif (unpinned.length === 0) {\n  // All products pinned — reset to start a new cycle\n  $getWorkflowStaticData('global').pinnedAsins = [];\n  return allProducts.slice(0, 5).map(p => ({ json: p }));\n}\n\n// Return next 5 to pin\nreturn unpinned.slice(0, 5).map(p => ({ json: p }));"
+        "jsCode": "// Flatten all products from all boards into one array\nconst data = $input.first().json;\nconst allProducts = [];\nfor (const board of data.boards) {\n  for (const product of board.products) {\n    allProducts.push({ ...product, boardName: board.name });\n  }\n}\n\n// Get pinned tracking from workflow static data\nconst pinnedAsins = $getWorkflowStaticData('global').pinnedAsins ?? [];\n\n// Find unpinned products\nconst unpinned = allProducts.filter(p => !pinnedAsins.includes(p.asin));\n\nif (unpinned.length === 0) {\n  // All products pinned â€” reset to start a new cycle\n  $getWorkflowStaticData('global').pinnedAsins = [];\n  return allProducts.slice(0, 5).map(p => ({ json: p }));\n}\n\n// Return next 5 to pin\nreturn unpinned.slice(0, 5).map(p => ({ json: p }));"
       },
       "id": "pick-next-5",
       "name": "Pick Next 5 Unpinned",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [500, 300]
+      "position": [
+        500,
+        300
+      ]
     },
     {
       "parameters": {
@@ -50,11 +59,14 @@
       "name": "Get My Pinterest Boards",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [700, 300],
+      "position": [
+        700,
+        300
+      ],
       "credentials": {
         "httpHeaderAuth": {
-          "id": "pinterest-creds",
-          "name": "Pinterest Bearer Token"
+          "id": "hdU8usLXg15qJvst",
+          "name": "Header Auth account"
         }
       }
     },
@@ -66,7 +78,10 @@
       "name": "Match Board ID",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [900, 300]
+      "position": [
+        900,
+        300
+      ]
     },
     {
       "parameters": {
@@ -83,11 +98,14 @@
       "name": "Create Pinterest Pin",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [1100, 300],
+      "position": [
+        1100,
+        300
+      ],
       "credentials": {
         "httpHeaderAuth": {
-          "id": "pinterest-creds",
-          "name": "Pinterest Bearer Token"
+          "id": "hdU8usLXg15qJvst",
+          "name": "Header Auth account"
         }
       }
     },
@@ -99,7 +117,10 @@
       "name": "Mark as Pinned",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [1300, 300]
+      "position": [
+        1300,
+        300
+      ]
     },
     {
       "parameters": {
@@ -110,28 +131,79 @@
       "name": "Wait 30s Between Pins",
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
-      "position": [1100, 500],
+      "position": [
+        1100,
+        500
+      ],
       "webhookId": "pinterest-wait"
     }
   ],
   "connections": {
     "Daily at 10am": {
-      "main": [[{ "node": "Fetch Products JSON", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Fetch Products JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "Fetch Products JSON": {
-      "main": [[{ "node": "Pick Next 5 Unpinned", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Pick Next 5 Unpinned",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "Pick Next 5 Unpinned": {
-      "main": [[{ "node": "Get My Pinterest Boards", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Get My Pinterest Boards",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "Get My Pinterest Boards": {
-      "main": [[{ "node": "Match Board ID", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Match Board ID",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "Match Board ID": {
-      "main": [[{ "node": "Create Pinterest Pin", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Create Pinterest Pin",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "Create Pinterest Pin": {
-      "main": [[{ "node": "Mark as Pinned", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Mark as Pinned",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
@@ -139,13 +211,5 @@
     "saveDataSuccessExecution": "all",
     "saveManualExecutions": true
   },
-  "staticData": {
-    "global": {
-      "pinnedAsins": []
-    }
-  },
-  "meta": {
-    "templateId": "pinterest-daily-pins",
-    "description": "Pins 5 products/day to TotalTechPicks Pinterest boards. Tracks which products have been pinned using workflow static data. Cycles through all 125 products (takes ~25 days per cycle)."
-  }
+  "active": false
 }
