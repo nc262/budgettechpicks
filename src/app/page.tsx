@@ -7,6 +7,17 @@ import FeaturedGrid from "@/components/FeaturedGrid";
 import HeroProductCard from "@/components/HeroProductCard";
 import SetupItemImage from "@/components/SetupItemImage";
 import productHealth from "@/data/product-health.json";
+import redditInsightsData from "@/data/reddit-insights.json";
+
+interface IntelItem {
+  product: string;
+  productSlug?: string;
+  summary: string;
+  sentiment: string;
+  sourceUrl?: string;
+  scrapedAt?: string;
+  commentCount?: number;
+}
 
 const SITE_URL = "https://totaltechpicks.com";
 
@@ -77,6 +88,15 @@ export default function HomePage() {
   const lastCheckedLabel = lastChecked
     ? new Date(lastChecked).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })
     : null;
+
+  // Most recent community intel across all guides — refreshed by the pipeline every 8 hours
+  const latestIntel: (IntelItem & { slug: string })[] = Object.entries(
+    redditInsightsData as Record<string, { lastUpdated: string; insights: IntelItem[] }>
+  )
+    .flatMap(([slug, data]) => (data.insights || []).map((i) => ({ ...i, slug })))
+    .filter((i) => i.scrapedAt && i.summary && (i.commentCount ?? 0) > 0)
+    .sort((a, b) => new Date(b.scrapedAt!).getTime() - new Date(a.scrapedAt!).getTime())
+    .slice(0, 4);
 
   return (
     <div>
@@ -191,6 +211,52 @@ export default function HomePage() {
             })}
           </div>
         </section>
+
+        {/* Latest community intel — live data from the pipeline */}
+        {latestIntel.length > 0 && (
+          <section className="mb-14">
+            <div className="flex items-center justify-between mb-2">
+              <h2 className="text-2xl font-black text-white">Latest Community Intel</h2>
+              <span className="flex items-center gap-1.5 text-xs text-green-400 bg-green-400/10 border border-green-400/20 px-2.5 py-1 rounded-full font-bold">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+                Auto-refreshed every 8h
+              </span>
+            </div>
+            <p className="text-gray-400 text-sm mb-6">
+              What real owners are saying right now — pulled from live Reddit threads and summarized, with sources.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {latestIntel.map((intel, i) => (
+                <div key={i} className="bg-gray-900 rounded-2xl border border-gray-700/50 p-5 glow-card transition-all duration-200 flex flex-col">
+                  <div className="flex items-start justify-between gap-2 mb-2">
+                    <Link href={`/${intel.slug}`} className="font-bold text-gray-100 hover:text-blue-400 transition-colors text-sm leading-snug">
+                      {intel.product}
+                    </Link>
+                    <span className={`shrink-0 text-xs font-bold px-2 py-0.5 rounded-full border ${
+                      intel.sentiment === "positive" ? "bg-green-400/10 text-green-400 border-green-400/30" :
+                      intel.sentiment === "negative" ? "bg-red-400/10 text-red-400 border-red-400/30" :
+                      "bg-gray-500/20 text-gray-400 border-gray-500/30"
+                    }`}>
+                      {intel.sentiment === "positive" ? "Positive" : intel.sentiment === "negative" ? "Negative" : "Mixed"}
+                    </span>
+                  </div>
+                  <p className="text-xs text-gray-400 leading-relaxed italic flex-1">&ldquo;{intel.summary}&rdquo;</p>
+                  <div className="flex items-center justify-between mt-3 pt-3 border-t border-gray-800">
+                    <span className="text-xs text-gray-600">
+                      {intel.commentCount} comments analyzed
+                      {intel.scrapedAt && ` · ${new Date(intel.scrapedAt).toLocaleDateString("en-US", { month: "short", day: "numeric" })}`}
+                    </span>
+                    {intel.sourceUrl && (
+                      <a href={intel.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-orange-400 font-semibold transition-colors">
+                        Source thread →
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Category grid */}
         <section className="mb-14">

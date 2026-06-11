@@ -11,6 +11,7 @@ export interface Article {
   verdict: string;
   howWePicked?: string;
   faq?: { question: string; answer: string }[];
+  headToHead?: { matchup: string; verdict: string }[];
 }
 
 export const articles: Article[] = [
@@ -66,6 +67,16 @@ export const articles: Article[] = [
         answer: "For a monitor, keyboard, mouse, Ethernet, and SD cards — USB-C is plenty, and Thunderbolt docks cost 4–6x more. Thunderbolt earns its price when you need dual 4K@60Hz displays, external SSDs at full NVMe speed, or an eGPU. Most people don't.",
       },
     ],
+    headToHead: [
+      {
+        matchup: "Anker 7-in-1 vs UGREEN 9-in-1",
+        verdict: "Same chipset family, different priorities. The Anker is smaller, runs cooler, and is the one to throw in a laptop bag. The UGREEN adds Gigabit Ethernet and a second display output for $10 more — if your hub lives on a desk and you take video calls over Wi-Fi you shouldn't be using, the Ethernet port alone settles it. Travel: Anker. Desk: UGREEN.",
+      },
+      {
+        matchup: "Baseus 13-in-1 vs CalDigit TS4",
+        verdict: "This is really 'do you need Thunderbolt or not' in product form. The Baseus does dual HDMI, Ethernet, and a full card-reader spread for around $50; the CalDigit costs 7x more and earns it only if you push dual 4K@60Hz, 10Gbps drives, and 98W charging through one cable every day. Most people who buy the TS4 needed the Baseus. The ones who actually need the TS4 already know who they are.",
+      },
+    ],
   },
   {
     slug: "best-budget-webcams",
@@ -113,6 +124,16 @@ export const articles: Article[] = [
       {
         question: "Should I just use my phone as a webcam?",
         answer: "It's genuinely good — Apple's Continuity Camera and apps like Camo beat most webcams on pure image quality. The catch is friction: mounting it, keeping it charged, and having your phone unavailable during every call. If you take one important call a week, use the phone. Daily meetings, get a dedicated camera.",
+      },
+    ],
+    headToHead: [
+      {
+        matchup: "Logitech C920s vs Anker PowerConf C200",
+        verdict: "The C920s is the proven default with a decade of driver maturity; the C200 is the better camera. Anker's 2K sensor resolves visibly more detail, handles mixed lighting better, and costs about the same. The C920s still wins on universal compatibility — it works on everything from Raspberry Pis to ancient conference-room PCs. Buying for yourself: C200. Buying for a fleet: C920s.",
+      },
+      {
+        matchup: "Logitech Brio 4K vs Insta360 Link",
+        verdict: "The Brio is a great sensor in a static box; the Link is a great sensor on a motorized gimbal that tracks you around the room. For seated meetings the Brio's simplicity wins — nothing to update, nothing to recenter. If you stand, whiteboard, or present, the Link's tracking is the closest thing to having a camera operator, and it genuinely shocks people on first use.",
       },
     ],
   },
@@ -164,6 +185,16 @@ export const articles: Article[] = [
         answer: "Plan on 2–3 years. The battery is the limiting part — it's tiny, charges daily, and isn't replaceable in most models. This is a real argument for not overspending: a $250 earbud and a $50 earbud age on the same chemistry clock.",
       },
     ],
+    headToHead: [
+      {
+        matchup: "Sony WF-1000XM5 vs Apple AirPods Pro 2",
+        verdict: "Sony wins on sound quality and raw ANC depth; Apple wins on everything that touches an iPhone — instant pairing, spatial audio, Find My, hearing-aid features. On Android the AirPods lose half their tricks, which makes the Sony the default for anyone not in the Apple ecosystem. iPhone users should flip that logic: integration you use daily beats fidelity you notice occasionally.",
+      },
+      {
+        matchup: "TOZO T6 vs Soundcore Life P3i",
+        verdict: "Both are 'wait, they cost how much?' earbuds. The TOZO T6 sounds slightly punchier and has the better fit for small ears; the P3i adds real ANC and a wireless-charging case at roughly the same price. Commuters and open-office workers should take the P3i — budget ANC is imperfect but it's miles better than none. Gym-first buyers take the T6.",
+      },
+    ],
   },
   {
     slug: "best-desk-accessories-under-50",
@@ -211,6 +242,16 @@ export const articles: Article[] = [
       {
         question: "Is a $130 monitor arm really better than a $35 one?",
         answer: "For a single light monitor, the $35 arm is fine. The Ergotron's price buys silky adjustment, a 10-year warranty, and the ability to hold a heavy ultrawide without drooping over time — which is exactly the failure mode cheap arms develop after a few months. Buy once, or buy twice.",
+      },
+    ],
+    headToHead: [
+      {
+        matchup: "Ergotron LX vs Mount-It! Dual Arm",
+        verdict: "One premium arm or two budget arms for the same money. The Ergotron moves like furniture from a much more expensive store and will outlive several monitors; the Mount-It! holds two screens adequately but you'll feel the difference every time you adjust it. One monitor you reposition often: Ergotron. Two monitors you set once and forget: the dual Mount-It! is the pragmatic call.",
+      },
+      {
+        matchup: "BenQ ScreenBar vs a regular desk lamp",
+        verdict: "The unfair fight we get asked about most. A $20 lamp lights your desk and your screen — meaning glare. The ScreenBar's asymmetric optics light the desk surface only, auto-dim to ambient light, and take zero desk space. If you work past sunset more than twice a week, it's the single most 'why didn't I buy this sooner' item on this page.",
       },
     ],
   },
@@ -262,6 +303,16 @@ export const articles: Article[] = [
         answer: "For feel and durability, yes — switches rated for 50M+ keypresses versus membrane domes that mush out in a couple of years. For raw performance, the difference is marginal. Get mechanical because typing and gaming feel better, not because it'll improve your reaction time.",
       },
     ],
+    headToHead: [
+      {
+        matchup: "Logitech G305 vs Razer Basilisk V3",
+        verdict: "Wireless simplicity versus wired features. The G305 runs a year on one AA battery with a sensor that embarrassed $100 mice when it launched — it's still the best 'just works' gaming mouse. The Basilisk V3 counters with 11 buttons, a smart scroll wheel, and a better shape for large hands, but it's tethered. Fingertip/claw grip and clean desk: G305. Palm grip and MMO habits: Basilisk.",
+      },
+      {
+        matchup: "Redragon K552 vs Keychron C3 Pro",
+        verdict: "The K552 is the $40 gateway drug — loud, clicky, fun, and built like a brick. The Keychron C3 Pro costs a little more and is simply a better keyboard: gasket-ish typing feel, QMK/VIA remapping, quieter switches your housemates won't hate. The only reason to pick the Redragon today is if the blue-switch clack is the point. Otherwise the Keychron is the answer r/MechanicalKeyboards will give you anyway.",
+      },
+    ],
   },
   {
     slug: "best-desk-toys-under-50",
@@ -309,6 +360,12 @@ export const articles: Article[] = [
       {
         question: "What's a good desk gadget gift under $60?",
         answer: "The Divoom Ditoo is the safest hit on this page — pixel-art display, Bluetooth speaker, retro look, works for gamers and non-gamers, and the app keeps people fiddling happily for hours. The moon lamp is the runner-up if the recipient appreciates ambiance over interaction.",
+      },
+    ],
+    headToHead: [
+      {
+        matchup: "Divoom Ditoo vs LaMetric TIME",
+        verdict: "Both are pixel displays; the philosophies differ. The Ditoo is playful — speaker, retro keyboard styling, community pixel art, half the price. The LaMetric is a grown-up information appliance: calendar, stocks, smart-home status, with corporate-grade app polish. Desk at home: Ditoo, no contest for fun-per-dollar. Desk on camera in meetings all day: the LaMetric reads as intentional rather than cute.",
       },
     ],
   },
@@ -360,6 +417,16 @@ export const articles: Article[] = [
         answer: "If you own Android and live in Google's world (Gmail, YouTube, Nest), Google Home is more natural. For everyone else, Alexa supports more devices and the Echo Dot hardware is cheaper and more frequently discounted. Both work with everything on this page — just don't try to run both as your main system.",
       },
     ],
+    headToHead: [
+      {
+        matchup: "Kasa Smart Bulbs vs Philips Hue",
+        verdict: "Kasa gives you four color bulbs for the price of one Hue bulb, and for app control plus voice schedules they're 90% as good. Hue's premium buys the Zigbee bridge — instant response, no Wi-Fi congestion, works during internet outages, and accessories (dimmers, motion sensors) that snap in cleanly. Start with Kasa; the people who should start with Hue are the ones planning 15+ bulbs and wall controls.",
+      },
+      {
+        matchup: "Echo Dot vs Google Nest Hub",
+        verdict: "The Dot is the better speaker-per-dollar and Alexa still has the deepest device support. The Nest Hub's screen changes the category though — recipes, camera feeds, a dashboard your household can touch. As a first device for a kitchen or living room, the screen wins arguments the speaker can't. As the cheap room-expander once you've picked an ecosystem, the Dot is unbeatable.",
+      },
+    ],
   },
   {
     slug: "best-portable-tech-under-50",
@@ -407,6 +474,16 @@ export const articles: Article[] = [
       {
         question: "AirTag vs Tile — which tracker should I get?",
         answer: "iPhone users: AirTag, no contest — Apple's finding network is enormous. Android users: Tile or Samsung SmartTag (Samsung phones only). Tile's cross-platform support is its real advantage, plus it can make your phone ring from the tracker — the feature you'll use most.",
+      },
+    ],
+    headToHead: [
+      {
+        matchup: "Anker PowerCore 10000 vs Anker Prime 20000",
+        verdict: "Same brand, different missions. The PowerCore 10000 disappears into a pocket and tops up a phone twice — it's the daily-carry answer. The Prime 20000 is a 200W desk-in-a-bag that fast-charges a laptop and two phones simultaneously, at triple the price and weight. If you've ever needed to charge a MacBook in an airport, the Prime pays for itself; if not, the 10000 is all the power bank most people will ever need.",
+      },
+      {
+        matchup: "Apple AirTag vs Tile Mate",
+        verdict: "AirTag's finding network is simply bigger — in a city, a lost AirTag gets pinged within minutes by passing iPhones. Tile counters with Android support and a louder ring for find-it-in-the-couch duty. The decision is your phone's logo: iPhone → AirTag, Android → Tile. The 4-packs of both cost about the same, so price won't save you from choosing.",
       },
     ],
   },
@@ -458,6 +535,16 @@ export const articles: Article[] = [
         answer: "Refresh rate first — the jump from 60Hz to 144Hz is transformative; 144 to 240 is noticeable for serious FPS players. Response time only matters when it's bad enough to smear (cheap VA panels). Any monitor on this page is fast enough that your rank is on you, not the panel.",
       },
     ],
+    headToHead: [
+      {
+        matchup: "Samsung Odyssey G5 vs ASUS TUF VG27AQ",
+        verdict: "The two budget-1440p kings, and the panels decide it. The G5's VA gives deeper blacks and the 1000R curve pulls you in — great for immersive single-player. The TUF's IPS is faster, more color-accurate, and has ELMB-Sync for motion clarity — better for competitive shooters and any color work. Story games in a dark room: G5. Ranked queues and daylight offices: TUF.",
+      },
+      {
+        matchup: "Alienware AW3423DWF vs LG C3 OLED",
+        verdict: "Both will ruin LCD for you; pick by desk versus couch. The Alienware's 34-inch QD-OLED ultrawide is the best desk gaming experience money reasonably buys — 175Hz, perfect blacks, fits in a normal field of view. The LG C3 is a 55-inch TV that happens to be an elite 120Hz gaming display, ideal if your 'desk' is a living room. Same money, different rooms, zero wrong answers.",
+      },
+    ],
   },
   {
     slug: "best-streaming-gear",
@@ -505,6 +592,16 @@ export const articles: Article[] = [
       {
         question: "Is the Shure SM7B worth it for a beginner?",
         answer: "Honestly, no. It needs an audio interface and a lot of clean gain (often a preamp booster too), so the real cost is $500+. Its famous sound assumes good technique and a decent room. Start with a USB mic, learn positioning and levels, and let the SM7B be the reward for outgrowing it.",
+      },
+    ],
+    headToHead: [
+      {
+        matchup: "Blue Yeti vs RØDE NT-USB Mini",
+        verdict: "The Yeti is the famous one; the RØDE is the better-sounding one for most rooms. The Yeti's multiple pickup patterns are flexibility almost nobody uses, and its sensitivity picks up every keyboard clack and room echo. The NT-USB Mini's tighter cardioid pattern and built-in pop protection forgive untreated rooms. Podcasting with two people around one mic: Yeti. Solo streaming at a desk: RØDE.",
+      },
+      {
+        matchup: "Shure SM7B vs Audio-Technica AT2020USB+",
+        verdict: "A $400 broadcast legend versus a $150 do-it-all. The honest truth: in an untreated bedroom, the AT2020USB+ often sounds better, because the SM7B's low sensitivity demands a $100+ interface, a gain booster, and mic technique. The SM7B is the endgame when your room and workflow are ready for it. Buying it first is paying for a destination before you've started the trip.",
       },
     ],
   },
@@ -556,6 +653,16 @@ export const articles: Article[] = [
         answer: "The Sony XM5 and Bose QC45 sound genuinely good, and ANC plus no cable wins for travel and offices. But Bluetooth compression and DSP still put a ceiling on them — a wired ATH-M50x at half the price resolves more detail. Wireless for life, wired for listening is the honest split.",
       },
     ],
+    headToHead: [
+      {
+        matchup: "ATH-M50x vs Beyerdynamic DT 770 Pro",
+        verdict: "The two studio standards. The M50x folds, runs from anything, and has the more energetic tuning — it's the better all-rounder and travel can. The DT 770 Pro (80Ω) is more comfortable for marathon sessions, with a wider stage and famously crisp treble that some find sharp. With an interface or amp on your desk: DT 770. Plugging straight into a laptop: M50x, and it isn't close.",
+      },
+      {
+        matchup: "Sony WH-1000XM5 vs Bose QuietComfort 45",
+        verdict: "Sony wins the spec sheet — better sound, better mics, smarter features. Bose wins your skull: the QC45 is lighter, clamps less, and disappears on 10-hour flights in a way the XM5 doesn't quite. ANC is effectively a tie in real use. Feature people and bass lovers: Sony. The 'I just want silence and comfort' crowd keeps buying Bose, and they're not wrong.",
+      },
+    ],
   },
   {
     slug: "best-gaming-setups",
@@ -603,6 +710,16 @@ export const articles: Article[] = [
       {
         question: "What order should I upgrade my setup in?",
         answer: "Chair, monitor, mouse, keyboard, audio, then desk — roughly in order of hours-of-contact and impact. The chair affects every hour you sit; the RGB desk pad affects nothing. The most common regret pattern we see is people doing it in exactly the reverse order.",
+      },
+    ],
+    headToHead: [
+      {
+        matchup: "Steam Deck OLED vs ASUS ROG Ally X",
+        verdict: "The Deck OLED is the better product; the Ally X is the better computer. SteamOS means the Deck just works — suspend/resume, battery life, a store curated for the hardware. The Ally X's Windows runs Game Pass, every launcher, and mods natively, with more raw power, at the cost of constant fiddling. People who want a console: Deck. People who enjoy tinkering and own a Game Pass sub: Ally X.",
+      },
+      {
+        matchup: "Logitech G Pro X Superlight 2 vs Razer Viper V3 Pro",
+        verdict: "The two mice at the top of every pro-play spreadsheet. The Viper V3 Pro has the newer sensor and 8K polling; the Superlight 2 has the shape more hands already know and Logitech's flawless wireless track record. Measured performance differences are smaller than your aim variance on a bad night. Buy whichever shape matches your grip — that's the entire decision at this tier.",
       },
     ],
   },

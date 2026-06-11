@@ -6,6 +6,7 @@ import { getProductsByArticle, affiliateUrl, amazonImageUrl, categoryEmoji } fro
 import ProductFilter, { RedditInsight } from "@/components/ProductFilter";
 import AdSlot from "@/components/AdSlot";
 import HeroProductCard from "@/components/HeroProductCard";
+import ComparisonTable from "@/components/ComparisonTable";
 import redditInsightsData from "@/data/reddit-insights.json";
 import productHealth from "@/data/product-health.json";
 import autoProductsRaw from "@/data/auto-products.json";
@@ -144,7 +145,18 @@ export default function ArticlePage({ params }: Props) {
                 </span>
                 <h1 className="text-4xl lg:text-5xl font-black mb-4 leading-[1.05] tracking-tight">{article.title}</h1>
                 <p className="text-gray-300 text-base max-w-xl mb-2 leading-relaxed">{article.intro}</p>
-                <p className="text-gray-500 text-xs">Last updated: {article.updatedAt}</p>
+                <p className="text-gray-500 text-xs">
+                  Guide updated {article.updatedAt}
+                  {redditData?.lastUpdated && (
+                    <>
+                      {" · "}
+                      <span className="text-blue-400/80">
+                        community intel refreshed{" "}
+                        {new Date(redditData.lastUpdated).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+                      </span>
+                    </>
+                  )}
+                </p>
               </div>
               {/* Right: best product card */}
               <div className="shrink-0 w-full lg:w-72">
@@ -231,6 +243,9 @@ export default function ArticlePage({ params }: Props) {
         </div>
       )}
 
+      {/* Spec comparison table — generated from product data */}
+      <ComparisonTable products={products} />
+
       {/* Product list with price filter */}
       <ProductFilter products={products} redditByProduct={redditByProduct} />
 
@@ -246,6 +261,27 @@ export default function ArticlePage({ params }: Props) {
               <div key={i} className="bg-gray-900 border border-gray-700/50 rounded-2xl p-5 glow-card transition-all duration-200">
                 <p className="font-bold text-sm mb-1.5 text-blue-300">{tip.heading}</p>
                 <p className="text-sm text-gray-400 leading-relaxed">{tip.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Head-to-Head verdicts */}
+      {article.headToHead && article.headToHead.length > 0 && (
+        <div className="mt-12 mb-8">
+          <div className="flex items-center gap-3 mb-5">
+            <h2 className="text-xl font-black text-white">Head-to-Head</h2>
+            <span className="text-xs text-gray-500">the matchups readers actually ask about</span>
+          </div>
+          <div className="space-y-4">
+            {article.headToHead.map((h, i) => (
+              <div key={i} className="bg-gradient-to-br from-gray-900 to-blue-950/40 rounded-2xl border border-gray-700/50 p-5 glow-card transition-all duration-200">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-xs font-black text-blue-400 bg-blue-400/10 border border-blue-400/20 px-2 py-0.5 rounded-full uppercase tracking-wide">VS</span>
+                  <h3 className="font-bold text-gray-100">{h.matchup}</h3>
+                </div>
+                <p className="text-sm text-gray-400 leading-relaxed">{h.verdict}</p>
               </div>
             ))}
           </div>
