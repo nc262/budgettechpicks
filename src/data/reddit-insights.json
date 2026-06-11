@@ -1,23 +1,24 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-11T12:03:48.204Z",
+    "lastUpdated": "2026-06-11T20:03:43.703Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users had issues with mouse sluggishness, suggesting it might be due to power or hub quality.",
+        "summary": "Users reported issues with a mouse's slowness when connected to a USB-C hub, and suggested solutions such as using Bluetooth mice or adjusting laptop settings.",
         "pros": [
-          "Bluetooth peripherals can solve the issue"
+          "Using Bluetooth mice",
+          "Powering the mouse via a Type C cable"
         ],
         "cons": [
-          "Power issues",
-          "Hub quality could be a problem"
+          "Slowness of the mouse when connected to the USB-C hub",
+          "Need for more power from the hub"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "USB-C hub's power settings",
-          "Type C cable powering the mouse",
-          "Bluetooth connection on board"
+          "Laptop settings can affect performance",
+          "Powering the mouse via a Type C cable can help",
+          "Bluetooth mice are a viable solution"
         ],
         "recommended_by_users": false,
         "commentCount": 9,
@@ -25,7 +26,7 @@
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-11T12:03:48.187Z"
+        "scrapedAt": "2026-06-11T20:03:43.690Z"
       }
     ]
   },
@@ -61,26 +62,27 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-11T12:03:48.204Z",
+    "lastUpdated": "2026-06-11T20:03:43.703Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users can reuse Amazon Alexa Echo Dot, but it requires root access and custom OS installation, and may void warranty.",
+        "summary": "Users can reuse Amazon Alexa Echo Dot by rooting it and installing Android Lineage, allowing for custom functionality like Spotify integration. However, users note that the process is more common with other devices like the Echo Show.",
         "pros": [
-          "can be used with Spotify",
-          "custom PCB for Google Mini is available",
-          "can be integrated with Home Assistant"
+          "runs Spotify",
+          "good enough Kitchen speaker",
+          "can run Home Assistant successfully"
         ],
         "cons": [
-          "cannot install other OS on the device without soldering or special access",
-          "may require soldering and manual adjustments to reuse components"
+          "cannot get it to run Smart Things or Bixby",
+          "no confirmed jailbreak method",
+          "Amazon locks bootloaders down hard"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "users can customize Echo Dot with Lineage OS for music playback",
-          "Home Assistant integration is possible, but requires specific setup",
-          "jailbreaking is less common compared to other devices like Echo Show and Fire tablets"
+          "users can install Android Lineage on Echo Dot for custom functionality",
+          "jailbreaking is more common with other devices like the Echo Show",
+          "Amazon's bootloader security prevents users from running their own OS on Echo Dot"
         ],
         "recommended_by_users": false,
         "commentCount": 9,
@@ -88,25 +90,26 @@
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-11T12:03:48.192Z"
+        "scrapedAt": "2026-06-11T20:03:43.695Z"
       },
       {
         "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users can control Philips Hue with Home Assistant, but may face limitations and technical challenges when using Zigbee or ZHA integrations.",
+        "summary": "Users praise Home Assistant for its control and state model, but express concerns about potential complexity and the need for technical expertise.",
         "pros": [
           "can be controlled from Home Assistant",
-          "uses Zigbee2MQTT/mqtt for adaptive lighting integration"
+          "supports ZigBee devices",
+          "adaptive lighting integration"
         ],
         "cons": [
-          "may require more technical expertise",
-          "can be limited by Hue bridge or Zigbee connectivity issues"
+          "may require technical expertise",
+          "not fault tolerant and low latency compared to direct pairing with Hue bridge"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Home Assistant provides a unified control model for devices like Philips Hue",
-          "Zigbee2MQTT/mqtt can enable advanced lighting automation",
-          "Some users prefer to use ESPhome switch things with direct binding instead of the hub"
+          "Home Assistant has built-in support for ZigBee",
+          "users can control Philips Hue devices using Home Assistant",
+          "users have successfully integrated Philips Hue with Home Assistant for adaptive lighting"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -114,32 +117,31 @@
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-11T12:03:48.192Z"
+        "scrapedAt": "2026-06-11T20:03:43.695Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-11T12:03:48.204Z",
+    "lastUpdated": "2026-06-11T20:03:43.703Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Real users suggest using handheld dynamic mics for vocals, especially when the singer prefers holding a mic, and some recommend adjusting mic placement or using additional windscreen protection to minimize plosives.",
+        "summary": "Real users agree that a good, comfortable performance yields the best results, and suggest trying out different mic placements and techniques to accommodate the vocalist's preference for holding a dynamic mic. Some also mention that it's essential to prioritize artistic decision-making over technical optimization.",
         "pros": [
-          "Use a handheld dynamic mic",
           "Hand them an SM7B and record greatness",
-          "Put a foam windscreen on the outside of an sm58 for another layer of plosive defense"
+          "Put a foam windscreen on the outside of an sm58 for another layer of plosive defense",
+          "If that’s the way to get the best performance then try it out"
         ],
         "cons": [
-          "May not be ideal for technical optimization",
-          "Cupping the mic can screw up the acoustics of the head basket",
-          "Using a handheld dynamic mic may never get you a high-end sound"
+          "cupping the mic with hands",
+          "using a handheld dynamic mic when it's not ideal"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "Handheld dynamic mics can work well with certain vocalists",
-          "Adjusting mic placement or using additional protection can help minimize plosives",
-          "Artistic decisions, such as using a handheld dynamic mic, should be respected by the artist and engineer"
+          "Using an SM7B can help achieve good results even if the vocalist prefers holding a dynamic mic",
+          "Prioritizing artistic decision-making over technical optimization is essential",
+          "Different mic placements and techniques should be tried to accommodate the vocalist's preference"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -147,7 +149,7 @@
         "hasRealComments": true,
         "sourcePost": "Tips on tracking a vocalist who prefers holding a dynamic mic when singing",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1tl25fw/tips_on_tracking_a_vocalist_who_prefers_holding_a/",
-        "scrapedAt": "2026-06-11T12:03:48.197Z"
+        "scrapedAt": "2026-06-11T20:03:43.698Z"
       }
     ]
   },
@@ -216,60 +218,59 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-11T12:03:48.204Z",
+    "lastUpdated": "2026-06-11T20:03:43.703Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users recommend using a dedicated camera for streaming, with some suggesting the Logitech C920s HD Pro Webcam is still a good option but noting it's old and its software can be problematic.",
+        "summary": "Real users generally agree that a dedicated lighting setup can improve low-light performance, and some recommend spending more money on lighting than on the webcam itself.",
         "pros": [
           "decent in low light",
-          "auto tracking",
-          "good image quality (mentioned as an alternative)"
+          "has auto tracking",
+          "built-in ring light"
         ],
         "cons": [
-          "low light can be rough on sub $100 cams",
-          "old technology",
-          "software is horrendous"
+          "low light is gonna be rough on any sub $100 cam tbh",
+          "old now"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "Lighting makes a huge difference with a webcam under $100",
-          "A dedicated camera or other alternatives like Razer Kiyo or Elgato Facecam MK2 may be better options"
+          "Investing in a good lighting setup can greatly improve the webcam's performance, especially in low-light conditions.",
+          "The C920 is still a great option despite being old, but it may not be the best value for money.",
+          "Other webcams like the Emeet Pixy or Razer Kiyo are also worth considering"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-11T12:03:48.187Z"
+        "scrapedAt": "2026-06-11T20:03:43.691Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-11T12:03:48.204Z",
+    "lastUpdated": "2026-06-11T20:03:43.703Z",
     "insights": [
       {
         "product": "Logitech MX Master 3S Wireless Mouse",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Most users recommend the Logitech MX Master 3S for its performance and battery life, but some users have experienced issues with reliability and size.",
+        "summary": "Users generally recommend the Logitech MX Master 3S for its performance, design, and long battery life, but also mention some potential drawbacks such as short battery life in certain conditions.",
         "pros": [
           "The Logitech MX Masters are the best",
-          "You won't regret it",
-          "the design just looks so slick",
+          "They’re the best overall mouse for sure. You won’t regret it",
+          "And the design just looks so slick",
           "it still goes weeks between charges"
         ],
         "cons": [
-          " horrible software that comes with it",
-          "started double clicking after a year",
-          "smaller size might be less ergonomic for bigger hands"
+          "Just don't get Logitech and that horrible software it comes with",
+          "I used the 3s one year +/- and it started double clicking",
+          "ngl i worry the smaller size of the anywhere might actually be less ergonomic for my bigger hands over long periods"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "some users have experienced issues with reliability",
-          "size can be an issue for some users",
-          "battery life is generally very good"
+          "The Logitech MX Master 3S has a good design and long battery life",
+          "There are potential issues with the device's reliability and ergonomics"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -277,28 +278,37 @@
         "hasRealComments": true,
         "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
         "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-11T12:03:48.190Z"
+        "scrapedAt": "2026-06-11T20:03:43.693Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-11T12:03:48.204Z",
+    "lastUpdated": "2026-06-11T20:03:43.703Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Discussed in r/apple — 191 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Commenters generally view the new batteries as a necessary innovation to prevent ingestion burns, praising their safety feature, while some express concern about potential patent stifleing of similar technology by other brands.",
+        "pros": [
+          "Prevent ingestion burns",
+          "Necessary innovation",
+          "Safety feature"
+        ],
+        "cons": [
+          "Potential patent stifleing by other brands"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "New batteries prevent ingestion burns",
+          "Patent could potentially stifle similar technology by other brands"
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Energizer Launches AirTag-Compatible Batteries That Prevent Ingestion Burns",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1t5yf1y/energizer_launches_airtagcompatible_batteries/",
-        "scrapedAt": "2026-06-11T12:03:48.193Z"
+        "scrapedAt": "2026-06-11T20:03:43.696Z"
       }
     ]
   }
