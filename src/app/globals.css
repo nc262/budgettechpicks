@@ -3,15 +3,36 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: #0a0e1a;
     @apply text-gray-100 antialiased;
     background-image: radial-gradient(circle, rgba(59, 130, 246, 0.06) 1px, transparent 1px);
     background-size: 28px 28px;
+    text-rendering: optimizeLegibility;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading), var(--font-inter), sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background: rgba(59, 130, 246, 0.35);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgba(96, 165, 250, 0.7);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  [id] {
+    scroll-margin-top: 90px;
   }
 
   ::-webkit-scrollbar { width: 8px; height: 8px; }
@@ -38,6 +59,16 @@
 
   .glow-card:hover {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(59, 130, 246, 0.25);
+    transform: translateY(-2px);
+  }
+
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400;
+  }
+
+  /* Hairline gradient divider under sticky header */
+  .header-hairline {
+    background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.35), transparent);
+    height: 1px;
   }
 }
-

@@ -233,7 +233,7 @@ export default function MySetupPage() {
                             <a
                               href={buyUrl}
                               target="_blank"
-                              rel="noopener noreferrer"
+                              rel="noopener noreferrer sponsored"
                               className="inline-flex items-center gap-1.5 bg-orange-500 hover:bg-orange-400 text-white text-xs font-bold px-4 py-2 rounded-xl transition-colors"
                             >
                               {isExternal ? "🛍️ Buy Direct" : "🛒 Check on Amazon"}

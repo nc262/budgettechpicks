@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Script from "next/script";
 import type { Metadata } from "next";
 import { getArticleBySlug, articles } from "@/data/articles";
 import { getProductsByArticle, affiliateUrl, amazonImageUrl, categoryEmoji } from "@/data/products";
@@ -124,10 +123,11 @@ export default function ArticlePage({ params }: Props) {
 
   return (
     <div>
-      <Script id="jsonld-itemlist" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
-      <Script id="jsonld-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      {/* Plain script tags (not next/script) so structured data is present in the static HTML */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {faqJsonLd && (
-        <Script id="jsonld-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       )}
 
       {/* Category Hero */}
@@ -142,7 +142,7 @@ export default function ArticlePage({ params }: Props) {
                 <span className="inline-block bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
                   {categoryEmoji[article.category] ?? "🛒"} {article.category}
                 </span>
-                <h1 className="text-4xl lg:text-5xl font-black mb-4 leading-[1.05]">{article.title}</h1>
+                <h1 className="text-4xl lg:text-5xl font-black mb-4 leading-[1.05] tracking-tight">{article.title}</h1>
                 <p className="text-gray-300 text-base max-w-xl mb-2 leading-relaxed">{article.intro}</p>
                 <p className="text-gray-500 text-xs">Last updated: {article.updatedAt}</p>
               </div>
@@ -242,26 +242,12 @@ export default function ArticlePage({ params }: Props) {
             <h2 className="text-xl font-black text-white">Buying Guide — What to Look For</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
-            {article.buyingGuide.map((tip, i) => {
-              const colors = [
-                "bg-blue-500/10 border-blue-500/20",
-                "bg-green-500/10 border-green-500/20",
-                "bg-orange-500/10 border-orange-500/20",
-                "bg-purple-500/10 border-purple-500/20",
-              ];
-              const headingColors = [
-                "text-blue-300",
-                "text-green-300",
-                "text-orange-300",
-                "text-purple-300",
-              ];
-              return (
-                <div key={i} className={`border rounded-xl p-4 ${colors[i % 4]}`}>
-                  <p className={`font-bold text-sm mb-1 ${headingColors[i % 4]}`}>{tip.heading}</p>
-                  <p className="text-sm text-gray-400 leading-relaxed">{tip.body}</p>
-                </div>
-              );
-            })}
+            {article.buyingGuide.map((tip, i) => (
+              <div key={i} className="bg-gray-900 border border-gray-700/50 rounded-2xl p-5 glow-card transition-all duration-200">
+                <p className="font-bold text-sm mb-1.5 text-blue-300">{tip.heading}</p>
+                <p className="text-sm text-gray-400 leading-relaxed">{tip.body}</p>
+              </div>
+            ))}
           </div>
         </div>
       )}

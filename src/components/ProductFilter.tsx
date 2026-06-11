@@ -43,6 +43,26 @@ interface Props {
 
 const MAX_COMPARE = 4;
 
+// Match insights to products even when names differ slightly
+// ("Sony WF-1000XM5" vs "Sony WF-1000XM5 — Best ANC Earbuds")
+function normalizeName(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+function findInsight(
+  productName: string,
+  redditByProduct: Record<string, RedditInsight>
+): RedditInsight | undefined {
+  const exact = redditByProduct[productName.toLowerCase()] ?? redditByProduct[productName];
+  if (exact) return exact;
+  const target = normalizeName(productName);
+  for (const [key, insight] of Object.entries(redditByProduct)) {
+    const k = normalizeName(key);
+    if (k && (target.includes(k) || k.includes(target))) return insight;
+  }
+  return undefined;
+}
+
 export default function ProductFilter({ products, redditByProduct = {} }: Props) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [compareIds, setCompareIds] = useState<string[]>([]);
@@ -150,7 +170,7 @@ export default function ProductFilter({ products, redditByProduct = {} }: Props)
       ) : (
         <div className={`space-y-6 ${compareProducts.length >= 2 ? "pb-64" : ""}`}>
           {filtered.map((product, index) => {
-            const insight = redditByProduct[product.name.toLowerCase()] ?? redditByProduct[product.name];
+            const insight = findInsight(product.name, redditByProduct);
             const isSelected = compareIds.includes(product.id);
             return (
               <div key={product.id}>

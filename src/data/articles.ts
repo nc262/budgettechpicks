@@ -1,4 +1,4 @@
-﻿export interface Article {
+export interface Article {
   slug: string;
   title: string;
   metaDescription: string;
@@ -19,7 +19,7 @@ export const articles: Article[] = [
     title: "Best USB-C Hubs in 2026 — From Budget to Pro",
     metaDescription: "The best USB-C hubs for MacBooks and Windows laptops across every price range — tested and ranked.",
     intro: "Modern laptops ship with fewer ports than ever. A good USB-C hub solves that instantly — and you don't need to spend $100+ to get one that works great.",
-    updatedAt: "May 2026",
+    updatedAt: "June 2026",
     category: "USB-C Hubs",
     editorNote: "I have two work laptops and a gaming PC on the same desk. The number of times I've swapped the same hub between machines because I didn't buy enough of them — I've stopped counting. One hub per machine is the move. These are the ones that actually work.",
     tldr: [
@@ -72,7 +72,7 @@ export const articles: Article[] = [
     title: "Best Webcams for Work & Streaming (2026)",
     metaDescription: "Upgrade your video calls without overspending. The best webcams from $40 to $200 — 1080p to 4K, for every setup.",
     intro: "Your laptop's built-in webcam makes you look like you're in witness protection. These picks cost less than a dinner out and look ten times better.",
-    updatedAt: "May 2026",
+    updatedAt: "June 2026",
     category: "Webcams",
     editorNote: "I was on video calls for months before someone finally said something. Laptop webcam. Working from home means people see your face all day — that is not the time to be using the camera that came free with your laptop.",
     tldr: [
@@ -121,7 +121,7 @@ export const articles: Article[] = [
     title: "Best Wireless Earbuds That Actually Sound Good (2026)",
     metaDescription: "You don't need to spend $250 on AirPods. These wireless earbuds deliver great audio, long battery, and solid call quality at every price.",
     intro: "Premium earbuds cost $250+. But the gap between $50 and $250 has never been smaller. Here are the picks that punch way above their price.",
-    updatedAt: "May 2026",
+    updatedAt: "June 2026",
     category: "Wireless Earbuds",
     editorNote: "I already have a headset I love for the desk. But earbuds are for everything else — commuting, errands, not wanting to look like you're running air traffic control at the grocery store. These are the ones that actually stay in your ears.",
     tldr: [
@@ -170,7 +170,7 @@ export const articles: Article[] = [
     title: "Best Desk Accessories for Home Office (2026)",
     metaDescription: "Small upgrades, big impact. The best desk accessories for a more organized, productive workspace — from quick wins to serious upgrades.",
     intro: "You don't need a $5,000 standing desk setup to have a great workspace. A few well-chosen accessories can transform a cluttered desk without breaking the bank.",
-    updatedAt: "May 2026",
+    updatedAt: "June 2026",
     category: "Desk Accessories",
     editorNote: "Before I got a proper desk setup I had zip ties holding cables to the underside of my IKEA desk like some kind of IT infrastructure held together with prayers. Cable management matters more than people think. Start here before you buy anything else.",
     tldr: [
@@ -219,7 +219,7 @@ export const articles: Article[] = [
     title: "Best Gaming Gear for Every Budget (2026)",
     metaDescription: "Level up your setup at any price point. The best gaming mice, keyboards, headsets, and peripherals — from $30 budget picks to enthusiast-grade gear.",
     intro: "You don't need to spend $200 on a gaming mouse to dominate. These picks deliver real gaming performance at a fraction of the price.",
-    updatedAt: "May 2026",
+    updatedAt: "June 2026",
     category: "Gaming Gear",
     editorNote: "I'm a Logitech guy through and through — G502 mouse, G915 keyboard, G733 headset. But I can still tell a good deal when I see one. These picks are for where I was before I went all-in. Don't run a $20 mouse for a year like I did.",
     tldr: [
@@ -268,7 +268,7 @@ export const articles: Article[] = [
     title: "Best AI Desk Gadgets & Robot Companions (2026)",
     metaDescription: "The coolest tech you can actually put on your desk — AI robot companions, pixel art speakers, levitating lights, and programmable gadgets. Your desk should say something about you.",
     intro: "Forget stress balls. The best desk tech has a personality. It responds to your voice, reacts to music, or floats in mid-air like it's ignoring gravity. These picks are for the people who spend 10+ hours at a desk and want that desk to feel like theirs.",
-    updatedAt: "May 2026",
+    updatedAt: "June 2026",
     category: "Desk Toys & Fun",
     editorNote: "Two work laptops, a 49-inch monitor, a KVM switch, and barely any room — but I still made space for the Anki Vector. He rolls around, makes sounds, and occasionally tilts his head at me like I should be working. He's right. Also the Divoom Ditoo sitting next to it showing a pixel art equalizer while music plays? That's the vibe.",
     tldr: [
@@ -317,7 +317,7 @@ export const articles: Article[] = [
     title: "Best Smart Home Gadgets for Every Budget (2026)",
     metaDescription: "Start your smart home without spending a fortune. The best smart plugs, bulbs, speakers, and automation gear from budget to premium.",
     intro: "A smart home doesn't require a $500 setup. These gadgets work with Alexa and Google Home at every price point.",
-    updatedAt: "May 2026",
+    updatedAt: "June 2026",
     category: "Smart Home",
     editorNote: "Working from home means the line between 'at work' and 'not at work' disappears fast. I have my office lights on a smart schedule — they turn on when I start and off when I should stop. It's the only reason I maintain any kind of boundary. Start with one smart plug.",
     tldr: [
@@ -366,7 +366,7 @@ export const articles: Article[] = [
     title: "Best Portable Tech Gadgets (2026)",
     metaDescription: "Power banks, Bluetooth speakers, item trackers, and drones — the best portable tech for life on the go.",
     intro: "The best portable tech keeps you charged, connected, and never losing your stuff — at any budget.",
-    updatedAt: "May 2026",
+    updatedAt: "June 2026",
     category: "Portable Tech",
     editorNote: "I carry a laptop basically everywhere. Which means I carry a charger. Which means I need a bag that fits all of it. I've had the Anker PowerCore in every bag I've owned for years at this point — not exciting, but it's never let me down.",
     tldr: [
@@ -415,7 +415,7 @@ export const articles: Article[] = [
     title: "Best Monitors & Displays for Every Budget (2026)",
     metaDescription: "From $229 budget gaming monitors to $1,300 OLED masterpieces — the best displays for gaming, work, and content creation.",
     intro: "Your monitor is the one piece of tech you stare at for 8+ hours a day. It deserves more thought than your GPU. Whether you're on a tight budget or ready to splurge on QD-OLED, here's what's actually worth buying.",
-    updatedAt: "May 2026",
+    updatedAt: "June 2026",
     category: "Monitors & Displays",
     editorNote: "I ran three monitors for two years and thought I was maximizing productivity. Then I tried the Samsung Odyssey G95C — one 49-inch ultrawide that takes three separate inputs — and sold all three monitors within the month. This upgrade is genuinely not reversible.",
     tldr: [
@@ -464,7 +464,7 @@ export const articles: Article[] = [
     title: "Best Streaming & Content Creator Gear (2026)",
     metaDescription: "Microphones, capture cards, key lights, and stream decks — everything you need to go from bedroom streamer to professional creator.",
     intro: "Great content doesn't need a $10,000 studio. A few hundred dollars of the right gear turns your desk into a broadcast setup. Here's exactly what to buy and in what order.",
-    updatedAt: "May 2026",
+    updatedAt: "June 2026",
     category: "Streaming Gear",
     editorNote: "I'm not a streamer but I've been on enough all-day video calls to know this: bad audio ends conversations. People will tolerate a blurry camera. Bad audio and they'll find a reason to wrap up the meeting. Fix the mic first, everything else second.",
     tldr: [
@@ -513,7 +513,7 @@ export const articles: Article[] = [
     title: "Best Headphones & Microphones for Every Budget (2026)",
     metaDescription: "From $149 studio reference headphones to $399 broadcast microphones — the best audio gear for music, gaming, and work.",
     intro: "Good audio is felt before it's understood. Whether you're mixing music, gaming, or just tired of hearing every noise in your office, these picks represent the best sound per dollar at every price point.",
-    updatedAt: "May 2026",
+    updatedAt: "June 2026",
     category: "Audio & Microphones",
     editorNote: "I have 3 computers on my desk and a Logitech G733 headset I actually like. I spent way too long trying cheap hubs and splitters to get audio from all three machines into one headset. None of them worked the way they should. If I was doing it over I'd just buy a real audio mixer from the jump and skip all of that.",
     tldr: [
@@ -562,7 +562,7 @@ export const articles: Article[] = [
     title: "Best Gaming Setup Gear: Budget to Extreme (2026)",
     metaDescription: "Gaming keyboards, mice, chairs, handhelds, standing desks — the full gaming setup breakdown from $80 to over-the-top.",
     intro: "A great gaming setup isn't about spending the most — it's about spending smart. We cover everything from the $80 mechanical keyboard that competes with $200 boards to the Steam Deck and ROG Ally that put your entire PC in your hands.",
-    updatedAt: "May 2026",
+    updatedAt: "June 2026",
     category: "Gaming Setups",
     editorNote: "My SecretLab Magnus Pro desk and Titan XL chair are the two things I'd order again the same day if they broke. Everything else on my desk has been swapped out at least once in two years. Those two have never moved. Build around your chair and desk first.",
     tldr: [

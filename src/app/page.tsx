@@ -1,6 +1,5 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
-import Script from "next/script";
 import { getFeaturedProducts, products as allProducts, categoryEmoji, categoryColor, affiliateUrl } from "@/data/products";
 import { articles } from "@/data/articles";
 import AdSlot from "@/components/AdSlot";
@@ -81,7 +80,8 @@ export default function HomePage() {
 
   return (
     <div>
-      <Script id="jsonld-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
+      {/* Plain script tag (not next/script) so structured data is present in the static HTML */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-950 via-[#0a0e1a] to-blue-950 text-white px-4 py-20">
@@ -96,9 +96,9 @@ export default function HomePage() {
               <span className="inline-block bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
                 {liveCount} picks tracked{lastCheckedLabel ? ` · verified ${lastCheckedLabel}` : ""}
               </span>
-              <h1 className="text-5xl lg:text-6xl font-black mb-5 leading-[1.05]">
+              <h1 className="text-5xl lg:text-6xl font-black mb-5 leading-[1.05] tracking-tight">
                 Less Hype.<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">More Hardware.</span>
+                <span className="text-gradient">More Hardware.</span>
               </h1>
               <p className="text-gray-300 text-lg max-w-xl mb-3 leading-relaxed">
                 Tech picks built from spec sheets, owner reports, and real Reddit threads — with sources you can check.
@@ -114,7 +114,7 @@ export default function HomePage() {
                   How we work
                 </Link>
                 <Link href="/my-setup" className="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 rounded-xl transition-all border border-white/10 hover:border-blue-400/30">
-                  The desk this site is written from
+                  My real setup
                 </Link>
               </div>
             </div>
@@ -136,7 +136,7 @@ export default function HomePage() {
         {/* Featured picks */}
         <section className="mb-14" id="staff-picks">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-black text-white">⭐ Editor&apos;s Top Picks</h2>
+            <h2 className="text-2xl font-black text-white">Editor&apos;s Top Picks</h2>
             <span className="text-sm text-gray-400 bg-gray-800/80 px-3 py-1 rounded-full border border-gray-700/50">All price ranges</span>
           </div>
           <FeaturedGrid products={featured} />
