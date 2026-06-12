@@ -13,7 +13,18 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_ID;
-const gaId = process.env.NEXT_PUBLIC_GA_ID;
+// GA4 measurement IDs are public (they ship to every browser), but only default to the
+// production property in production builds — dev servers, forks, and preview builds
+// must not pollute real analytics. Env var still overrides; placeholder is rejected
+// (same pattern as the AdSense gate below).
+const GA_PLACEHOLDER = "G-XXXXXXXXXX";
+const rawGaId = process.env.NEXT_PUBLIC_GA_ID;
+const gaId =
+  rawGaId && rawGaId !== GA_PLACEHOLDER
+    ? rawGaId
+    : process.env.NODE_ENV === "production"
+      ? "G-747QVQ0GFB"
+      : undefined;
 
 const SITE_URL = "https://totaltechpicks.com";
 const SITE_NAME = "TotalTechPicks";
