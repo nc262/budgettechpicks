@@ -8,6 +8,7 @@ import AdSlot from "@/components/AdSlot";
 import HeroProductCard from "@/components/HeroProductCard";
 import ComparisonTable from "@/components/ComparisonTable";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import { vsPages } from "@/data/vs-pages";
 import redditInsightsData from "@/data/reddit-insights.json";
 import productHealth from "@/data/product-health.json";
 import autoProductsRaw from "@/data/auto-products.json";
@@ -286,15 +287,23 @@ export default function ArticlePage({ params }: Props) {
             <span className="text-xs text-gray-500">the matchups readers actually ask about</span>
           </div>
           <div className="space-y-4">
-            {article.headToHead.map((h, i) => (
-              <div key={i} className="bg-gradient-to-br from-gray-900 to-blue-950/40 rounded-2xl border border-gray-700/50 p-5 glow-card transition-all duration-200">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-xs font-black text-blue-400 bg-blue-400/10 border border-blue-400/20 px-2 py-0.5 rounded-full uppercase tracking-wide">VS</span>
-                  <h3 className="font-bold text-gray-100">{h.matchup}</h3>
+            {article.headToHead.map((h, i) => {
+              const vsPage = vsPages.find((v) => v.matchup === h.matchup);
+              return (
+                <div key={i} className="bg-gradient-to-br from-gray-900 to-blue-950/40 rounded-2xl border border-gray-700/50 p-5 glow-card transition-all duration-200">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-xs font-black text-blue-400 bg-blue-400/10 border border-blue-400/20 px-2 py-0.5 rounded-full uppercase tracking-wide">VS</span>
+                    <h3 className="font-bold text-gray-100">{h.matchup}</h3>
+                  </div>
+                  <p className="text-sm text-gray-400 leading-relaxed">{h.verdict}</p>
+                  {vsPage && (
+                    <Link href={`/vs/${vsPage.slug}`} className="inline-block text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors mt-2">
+                      Full side-by-side comparison →
+                    </Link>
+                  )}
                 </div>
-                <p className="text-sm text-gray-400 leading-relaxed">{h.verdict}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}

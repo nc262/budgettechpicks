@@ -86,6 +86,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Script id="ga-init" strategy="afterInteractive">
               {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${gaId}');`}
             </Script>
+            {/* Affiliate click tracking — which products/pages actually drive Amazon clicks */}
+            <Script id="ga-affiliate-clicks" strategy="afterInteractive">
+              {`document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a[href*="amazon.com"]'):null;if(!a||typeof gtag!=='function')return;var m=a.href.match(/\\/dp\\/([A-Z0-9]{10})/);gtag('event','affiliate_click',{asin:m?m[1]:'search_link',page_path:location.pathname,link_text:(a.textContent||'').trim().slice(0,40)});});`}
+            </Script>
           </>
         )}
         <Header />

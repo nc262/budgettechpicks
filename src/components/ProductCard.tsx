@@ -1,8 +1,14 @@
 "use client";
 
+import { useState } from "react";
+import Link from "next/link";
 import { Product, affiliateUrl, amazonImageUrl, amazonImageFallback, amazonImageFallback2, amazonImageHighRes, categoryEmoji, categoryColor } from "@/data/products";
 import productHealth from "@/data/product-health.json";
+import salesVelocity from "@/data/sales-velocity.json";
+import { getReview } from "@/data/reviews";
 import { RedditInsight } from "./ProductFilter";
+
+const HOT_SELLERS = new Set((salesVelocity as { hot?: string[] }).hot ?? []);
 
 interface Props {
   product: Product;
@@ -32,7 +38,16 @@ const rankColors: Record<number, string> = {
   3: "bg-amber-600 text-white",
 };
 
+const TAKE_SECTIONS: { key: "whyItWins" | "whoItsFor" | "longTerm" | "watchOut"; label: string; color: string }[] = [
+  { key: "whyItWins", label: "Why it wins", color: "text-blue-300" },
+  { key: "whoItsFor", label: "Who it's for", color: "text-green-300" },
+  { key: "longTerm", label: "How it holds up", color: "text-purple-300" },
+  { key: "watchOut", label: "Watch out for", color: "text-amber-300" },
+];
+
 export default function ProductCard({ product, rank, redditInsight, isCompareSelected = false, onToggleCompare, compareDisabled = false }: Props) {
+  const [takeOpen, setTakeOpen] = useState(false);
+  const ourTake = getReview(product.id);
   const stars = Math.round(product.rating);
   // Use n8n-verified image URL if available, otherwise fall back to CDN pattern
   const healthData = (productHealth as Record<string, { imageUrl?: string; isLive?: boolean }>)[product.asin];
@@ -111,11 +126,21 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
                   </h3>
                 </a>
               </div>
-              {badgeColor && product.badge && (
-                <span className={`shrink-0 text-xs font-bold px-2 py-1 rounded-full whitespace-nowrap ${badgeColor}`}>
-                  {product.badge}
-                </span>
-              )}
+              <div className="shrink-0 flex flex-col items-end gap-1">
+                {badgeColor && product.badge && (
+                  <span className={`text-xs font-bold px-2 py-1 rounded-full whitespace-nowrap ${badgeColor}`}>
+                    {product.badge}
+                  </span>
+                )}
+                {HOT_SELLERS.has(product.asin) && (
+                  <span
+                    className="text-xs font-bold px-2 py-1 rounded-full whitespace-nowrap bg-orange-400/20 text-orange-300 border border-orange-400/30"
+                    title="Among the fastest-growing review counts on the site this month — a real sales-velocity signal"
+                  >
+                    🔥 Hot Seller
+                  </span>
+                )}
+              </div>
             </div>
 
             <div className="flex items-center gap-3 mb-2">
@@ -189,6 +214,38 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
             </ul>
           </div>
         </div>
+
+        {/* Our Take — expandable deep review */}
+        {ourTake && (
+          <div className="mt-4 pt-4 border-t border-gray-700/50">
+            <button
+              onClick={() => setTakeOpen(!takeOpen)}
+              className="w-full flex items-center justify-between text-left group"
+              aria-expanded={takeOpen}
+            >
+              <span className="text-xs font-bold text-blue-400 uppercase tracking-wide group-hover:text-blue-300 transition-colors">
+                Our Take — full review
+              </span>
+              <span className={`text-gray-500 text-xs transition-transform ${takeOpen ? "rotate-180" : ""}`}>▼</span>
+            </button>
+            {takeOpen && (
+              <div className="mt-3 space-y-3">
+                {TAKE_SECTIONS.map((s) => (
+                  <div key={s.key}>
+                    <p className={`text-xs font-bold uppercase tracking-wide mb-1 ${s.color}`}>{s.label}</p>
+                    <p className="text-sm text-gray-300 leading-relaxed">{ourTake[s.key]}</p>
+                  </div>
+                ))}
+                <Link
+                  href={`/reviews/${product.id}`}
+                  className="inline-block text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  Open standalone review page →
+                </Link>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Reddit Insight — inline per product */}
         {redditInsight && (
