@@ -1,59 +1,14 @@
 {
-  "updatedAt": "2026-06-12T07:01:30.305Z",
+  "updatedAt": "2026-06-12T11:49:04.694Z",
   "deals": [
     {
-      "product": "Apple AirPods (3rd Generation)",
-      "asin": "B09JQMJHXY",
-      "slug": "best-wireless-earbuds-under-50",
-      "title": "[Headphones] Apple Airpods Pro 3 - $179.99 - Walmart (New - Sold and Shipped by Walmart)",
-      "url": "https://reddit.com/r/buildapcsales/comments/1u22blw/headphones_apple_airpods_pro_3_17999_walmart_new/",
-      "score": 356,
-      "postedAt": "2026-06-10T13:31:37.000Z"
-    },
-    {
-      "product": "EarFun Air Pro 4 ANC Earbuds",
-      "asin": "B0FQFB8FMG",
-      "slug": "best-wireless-earbuds-under-50",
-      "title": "[RAM]CORSAIR Vengeance 32GB DDR5-6000 Memory $269.99",
-      "url": "https://reddit.com/r/buildapcsales/comments/1u2509f/ramcorsair_vengeance_32gb_ddr56000_memory_26999/",
-      "score": 200,
-      "postedAt": "2026-06-10T15:12:09.000Z"
-    },
-    {
-      "product": "Steam Deck OLED 512GB",
-      "asin": "B0CQ3L4726",
+      "product": "ASUS ROG Ally X Gaming Handheld",
+      "asin": "B0FM6C3ZMN",
       "slug": "best-gaming-setups",
       "title": "[Handheld] Rog Ally Z1 Non-Extreme 16GB 512GB - $389.99 (On sale at Woot)",
       "url": "https://reddit.com/r/buildapcsales/comments/1u2b19y/handheld_rog_ally_z1_nonextreme_16gb_512gb_38999/",
       "score": 111,
       "postedAt": "2026-06-10T18:44:08.000Z"
-    },
-    {
-      "product": "Kindle Paperwhite (16GB, 2023)",
-      "asin": "B0CFPJYX7P",
-      "slug": "best-portable-tech-under-50",
-      "title": "[GPU] XFX Mercury AMD Radeon RX 9070XT 16GB $699.99",
-      "url": "https://reddit.com/r/buildapcsales/comments/1u27nmq/gpu_xfx_mercury_amd_radeon_rx_9070xt_16gb_69999/",
-      "score": 37,
-      "postedAt": "2026-06-10T16:46:03.000Z"
-    },
-    {
-      "product": "Apple iPad mini (7th Generation, A17 Pro)",
-      "asin": "B0DK3XM94S",
-      "slug": "best-portable-tech-under-50",
-      "title": "[Cooler] Cooler Master Hyper 212 Halo (LGA1700/AM5) $10.80",
-      "url": "https://reddit.com/r/buildapcsales/comments/1u1vlsf/cooler_cooler_master_hyper_212_halo_lga1700am5/",
-      "score": 35,
-      "postedAt": "2026-06-10T07:51:49.000Z"
-    },
-    {
-      "product": "Kindle Paperwhite (16GB, 2023)",
-      "asin": "B0CFPJYX7P",
-      "slug": "best-portable-tech-under-50",
-      "title": "[GPU] Microcenter In Store Only - ASRock AMD Radeon RX 9070 Challenger Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card - $579.99",
-      "url": "https://reddit.com/r/buildapcsales/comments/1u209og/gpu_microcenter_in_store_only_asrock_amd_radeon/",
-      "score": 27,
-      "postedAt": "2026-06-10T12:05:43.000Z"
     }
   ]
 }

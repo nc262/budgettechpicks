@@ -2,11 +2,12 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getArticleBySlug, articles } from "@/data/articles";
-import { getProductsByArticle, affiliateUrl, amazonImageUrl, categoryEmoji } from "@/data/products";
+import { getProductsByArticle, products as allSiteProducts, affiliateUrl, amazonImageUrl, categoryEmoji } from "@/data/products";
 import ProductFilter, { RedditInsight } from "@/components/ProductFilter";
 import AdSlot from "@/components/AdSlot";
 import HeroProductCard from "@/components/HeroProductCard";
 import ComparisonTable from "@/components/ComparisonTable";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import redditInsightsData from "@/data/reddit-insights.json";
 import productHealth from "@/data/product-health.json";
 import autoProductsRaw from "@/data/auto-products.json";
@@ -72,7 +73,12 @@ export default function ArticlePage({ params }: Props) {
   if (!article) notFound();
 
   const health = productHealth as Record<string, { imageUrl?: string; isLive?: boolean }>;
-  const allProducts = getProductsByArticle(params.slug);
+  // Cross-category guides (gifts) curate existing products by ASIN; normal guides own a slug
+  const allProducts = article.curatedAsins
+    ? article.curatedAsins
+        .map((asin) => allSiteProducts.find((p) => p.asin === asin))
+        .filter((p): p is NonNullable<typeof p> => !!p)
+    : getProductsByArticle(params.slug);
   // Hide products marked as discontinued by n8n health check
   const products = allProducts.filter(p => health[p.asin]?.isLive !== false);
 
@@ -397,6 +403,9 @@ export default function ArticlePage({ params }: Props) {
           </Link>
         </div>
       </div>
+
+      {/* Newsletter */}
+      <NewsletterSignup className="mt-8" />
       </div>
     </div>
   );

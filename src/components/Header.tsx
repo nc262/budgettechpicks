@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { label: "Gaming", href: "/best-gaming-gear-under-50" },
   { label: "Audio", href: "/best-audio-gear" },
   { label: "Monitors", href: "/best-monitors-and-displays" },
+  { label: "Gifts", href: "/best-tech-gifts" },
   { label: "Streaming", href: "/best-streaming-gear" },
   { label: "Earbuds", href: "/best-wireless-earbuds-under-50" },
   { label: "Desk Toys", href: "/best-desk-toys-under-50" },

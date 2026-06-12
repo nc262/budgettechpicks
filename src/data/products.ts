@@ -54,6 +54,7 @@ export const categoryEmoji: Record<string, string> = {
   "Streaming Gear": "🎙️",
   "Audio & Microphones": "🎵",
   "Gaming Setups": "🕹️",
+  "Gift Ideas": "🎁",
 };
 
 export const categoryColor: Record<string, string> = {
@@ -69,6 +70,7 @@ export const categoryColor: Record<string, string> = {
   "Streaming Gear": "bg-pink-100 text-pink-700",
   "Audio & Microphones": "bg-violet-100 text-violet-700",
   "Gaming Setups": "bg-rose-100 text-rose-700",
+  "Gift Ideas": "bg-amber-100 text-amber-700",
 };
 
 export const products: Product[] = [
@@ -437,8 +439,8 @@ export const products: Product[] = [
     description: "App-controlled, music-syncing, 16-million-color LED strips. Cover your desk, shelves, or entire room in RGB glory — and yes, your PC runs faster with more RGB.",
     pros: ["App + voice control", "Music sync mode", "Super easy to install"],
     cons: ["Adhesive weakens over time", "Requires 2.4GHz WiFi"],
-    category: "Gaming Gear",
-    articleSlug: "best-gaming-gear-under-50",
+    category: "Smart Home",
+    articleSlug: "best-smart-home-under-50",
     badge: "✨ Staff Fave",
   },
   {
@@ -758,8 +760,8 @@ export const products: Product[] = [
     description: "Turns your Steam Deck into a desktop in 30 seconds: HDMI 2.0 (4K/60Hz), 3x USB-A, USB-C 100W passthrough charging, Gigabit Ethernet. Also works as a universal USB-C hub for any laptop. More useful than its price suggests.",
     pros: ["4K HDMI output", "100W passthrough charge", "Works with any USB-C laptop"],
     cons: ["No DisplayPort", "HDMI limited to 60Hz at 4K"],
-    category: "Portable Tech",
-    articleSlug: "best-portable-tech-under-50",
+    category: "Gaming Setups",
+    articleSlug: "best-gaming-setups",
     badge: "🎮 Steam Deck Pick",
   },
 
@@ -1395,8 +1397,8 @@ export const products: Product[] = [
     description: "A $20 IEM that makes audiophiles visibly uncomfortable. Single dynamic driver tuned to Moondrop's VDSF target curve — which is a fancy way of saying they sound exactly right. r/headphones recommends these to everyone who says they can't afford good audio.",
     pros: ["Audiophile-tuned for $20", "Detachable cable", "Excellent imaging for price"],
     cons: ["Wired only (IEM style)", "No mic on base model"],
-    category: "Wireless Earbuds",
-    articleSlug: "best-wireless-earbuds-under-50",
+    category: "Audio & Microphones",
+    articleSlug: "best-audio-gear",
     badge: "💰 Best Value",
   },
   {
@@ -1410,8 +1412,8 @@ export const products: Product[] = [
     description: "The Chu II's closest competition — and r/headphones loves pitting them against each other. Wider soundstage, slightly different tuning, same absolutely unacceptable-for-the-price performance. Buy both. Seriously. They're $20 each.",
     pros: ["Wide soundstage for the price", "Harman-adjacent tuning", "Comfortable long-wear fit"],
     cons: ["Wired only", "Build feels plasticky"],
-    category: "Wireless Earbuds",
-    articleSlug: "best-wireless-earbuds-under-50",
+    category: "Audio & Microphones",
+    articleSlug: "best-audio-gear",
     badge: "🚀 Community Fave",
   },
 

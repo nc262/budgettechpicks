@@ -8,6 +8,18 @@ import HeroProductCard from "@/components/HeroProductCard";
 import SetupItemImage from "@/components/SetupItemImage";
 import productHealth from "@/data/product-health.json";
 import redditInsightsData from "@/data/reddit-insights.json";
+import dealRadarData from "@/data/deal-radar.json";
+import NewsletterSignup from "@/components/NewsletterSignup";
+
+interface Deal {
+  product: string;
+  asin: string;
+  slug: string;
+  title: string;
+  url: string;
+  score: number;
+  postedAt: string;
+}
 
 interface IntelItem {
   product: string;
@@ -92,6 +104,12 @@ export default function HomePage() {
   const marqueePicks = allProducts
     .filter((p) => p.badge && isLive(p.asin) && health[p.asin]?.imageUrl)
     .slice(0, 14);
+
+  // Deal radar — only shown while the data is fresh (refreshed nightly by the pipeline)
+  const radar = dealRadarData as { updatedAt: string | null; deals: Deal[] };
+  const radarFresh = radar.updatedAt &&
+    Date.now() - new Date(radar.updatedAt).getTime() < 4 * 24 * 3600 * 1000;
+  const liveDeals = radarFresh ? (radar.deals || []).slice(0, 4) : [];
 
   // Most recent community intel across all guides — refreshed by the pipeline every 8 hours
   const latestIntel: (IntelItem & { slug: string })[] = Object.entries(
@@ -185,6 +203,38 @@ export default function HomePage() {
       <div className="max-w-5xl mx-auto px-4 py-10">
         {/* Top ad */}
         <AdSlot slot="5229018783" style="horizontal" className="mb-10" />
+
+        {/* Deal radar — live deal threads matching our picks, refreshed nightly */}
+        {liveDeals.length > 0 && (
+          <section className="mb-14">
+            <div className="flex items-center justify-between mb-2">
+              <h2 className="text-2xl font-black text-white">Deal Radar</h2>
+              <span className="flex items-center gap-1.5 text-xs text-orange-400 bg-orange-400/10 border border-orange-400/20 px-2.5 py-1 rounded-full font-bold">
+                <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
+                Live from r/buildapcsales
+              </span>
+            </div>
+            <p className="text-gray-400 text-sm mb-6">
+              Deal threads the community is upvoting right now on products we cover — always verify the current price before buying.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {liveDeals.map((deal, i) => (
+                <div key={i} className="bg-gray-900 rounded-2xl border border-orange-400/20 p-5 glow-card transition-all duration-200 flex flex-col">
+                  <p className="font-bold text-gray-100 text-sm leading-snug flex-1">{deal.title}</p>
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-3 pt-3 border-t border-gray-800 text-xs">
+                    <Link href={`/${deal.slug}`} className="text-blue-400 hover:text-blue-300 font-bold transition-colors">
+                      Our take on {deal.product.split(" ").slice(0, 3).join(" ")} →
+                    </Link>
+                    <span className="text-gray-600">▲ {deal.score} upvotes</span>
+                    <a href={deal.url} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-orange-400 font-semibold transition-colors ml-auto">
+                      Deal thread →
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Featured picks */}
         <section className="mb-14" id="staff-picks">
@@ -290,6 +340,9 @@ export default function HomePage() {
             </div>
           </section>
         )}
+
+        {/* Newsletter */}
+        <NewsletterSignup className="mb-14" />
 
         {/* Category grid */}
         <section className="mb-14">

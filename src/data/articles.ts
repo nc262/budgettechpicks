@@ -12,6 +12,8 @@ export interface Article {
   howWePicked?: string;
   faq?: { question: string; answer: string }[];
   headToHead?: { matchup: string; verdict: string }[];
+  /** Cross-category guides (e.g. gifts) list existing products by ASIN instead of owning a slug */
+  curatedAsins?: string[];
 }
 
 export const articles: Article[] = [
@@ -722,6 +724,79 @@ export const articles: Article[] = [
         verdict: "The two mice at the top of every pro-play spreadsheet. The Viper V3 Pro has the newer sensor and 8K polling; the Superlight 2 has the shape more hands already know and Logitech's flawless wireless track record. Measured performance differences are smaller than your aim variance on a bad night. Buy whichever shape matches your grip — that's the entire decision at this tier.",
       },
     ],
+  },
+  {
+    slug: "best-tech-gifts",
+    title: "Best Tech Gifts That Actually Get Used (2026)",
+    metaDescription: "Tech gifts people keep, not return — from $20 crowd-pleasers to big-ticket showstoppers. Every pick is community-vetted and verified in stock.",
+    intro: "The best tech gift isn't the most expensive one — it's the one that's still on their desk in March. These picks come from across all our guides, chosen for one trait: people who receive them actually use them.",
+    updatedAt: "June 2026",
+    category: "Gift Ideas",
+    editorNote: "My test for a tech gift is simple: would the person buy it for themselves if they knew it existed? Most gadget gifts fail that test — they're novelties. Everything on this page passes it. The moon lamp is the one I've personally gifted three times, and all three are still floating.",
+    curatedAsins: [
+      "B07VPZF11N", // Levitating Moon Lamp
+      "B07H7L1PLD", // Divoom Ditoo
+      "B0BFC7WQ6R", // Echo Dot 5th Gen
+      "B0932QJ2JZ", // AirTag 4-pack
+      "B0D63573CF", // Tile Mate 4-pack
+      "B0F53L8J78", // TOZO T6
+      "B0BMDYV6X5", // Anker PowerCore 10000
+      "B091FXLMS8", // Kasa Smart Plug 4-pack
+      "B076VNFZJG", // BenQ ScreenBar
+      "B09HM94VDS", // Logitech MX Master 3S
+      "B09B83GQKR", // Nanoleaf Shapes
+      "B0CQ3L4726", // Steam Deck OLED
+    ],
+    tldr: [
+      { label: "The Reaction Gift", name: "Levitating Moon Lamp", asin: "B07VPZF11N" },
+      { label: "Safest Crowd-Pleaser", name: "Divoom Ditoo Pixel Art Speaker", asin: "B07H7L1PLD" },
+      { label: "Under $30 Hero", name: "Anker PowerCore 10000 Power Bank", asin: "B0BMDYV6X5" },
+      { label: "Big-Ticket Winner", name: "Steam Deck OLED 512GB", asin: "B0CQ3L4726" },
+    ],
+    buyingGuide: [
+      {
+        heading: "Gift utility, wrapped as fun",
+        body: "The keep-rate champions are products that look like toys but solve a real problem — a pixel-art speaker that's also their alarm clock, a floating lamp that's also their bedside light. Pure novelty gets shelved by February; useful novelty survives.",
+      },
+      {
+        heading: "Match the ecosystem, not the spec sheet",
+        body: "An AirTag for an Android user is a paperweight; a Tile for an iPhone user is second-best. Thirty seconds of knowing what phone someone carries beats an hour of comparing features. When in doubt, ecosystem-neutral gifts (power banks, lamps, speakers) can't miss.",
+      },
+      {
+        heading: "The $25–$60 zone is the sweet spot",
+        body: "Cheap enough that it doesn't create reciprocity anxiety, expensive enough to be quality. Most returns happen at the extremes: $10 gadgets that feel disposable and $200 surprises in the wrong ecosystem or color.",
+      },
+      {
+        heading: "Skip anything that needs a subscription",
+        body: "A gift that starts charging the recipient monthly is a bill, not a present. Everything on this page works fully out of the box — the one nuance is the Echo Dot, where the optional music subscription is exactly that: optional.",
+      },
+    ],
+    howWePicked: "These aren't new products — they're the proven winners pulled from across all twelve of our guides, re-filtered through one question: does it work as a gift? That means broad appeal over enthusiast appeal, zero-setup over configurable, and ecosystem-safe over spec-maximal. Every pick is re-verified in stock nightly, because nothing kills a gift plan like a dead listing two days before the occasion.",
+    faq: [
+      {
+        question: "What's a safe tech gift when I don't know what they already own?",
+        answer: "Power bank, moon lamp, or the Divoom Ditoo — none of them care what phone, computer, or smart-home system the person uses, none need an account, and none duplicate awkwardly (a second power bank is genuinely useful; a second smart speaker is a problem).",
+      },
+      {
+        question: "Are smart home devices good gifts?",
+        answer: "Only if you know their ecosystem. An Echo Dot delights an Alexa household and annoys a Google one. Smart plugs are the exception — the Kasa 4-pack works with everything, costs about $25, and 'your lamps now obey voice commands' is a great gift pitch.",
+      },
+      {
+        question: "What do you get the person who has every gadget already?",
+        answer: "Something they'd never justify buying themselves. Nobody who owns $2,000 of tech buys a $35 floating moon lamp — which is exactly why it works. For the truly impossible person, the Steam Deck OLED is the 'I didn't know I wanted this' gift at the top of the budget.",
+      },
+    ],
+    headToHead: [
+      {
+        matchup: "AirTag vs Tile Mate — as a gift",
+        verdict: "Same rule as buying for yourself, but stricter: check their phone before you wrap it. AirTag for iPhone people, Tile for Android people, and if you genuinely can't find out, give the Tile — it works on both, just shines a little less. The 4-packs make better gifts than singles; trackers multiply onto keys, bags, and remotes fast.",
+      },
+      {
+        matchup: "Divoom Ditoo vs Echo Dot — the desk gift duel",
+        verdict: "The Echo Dot is the more capable device; the Ditoo is the better gift. A Dot needs their Amazon account, their Wi-Fi, their ecosystem buy-in. The Ditoo pairs to anything over Bluetooth and starts being charming in ninety seconds. Give capability to family you share a house with; give charm to everyone else.",
+      },
+    ],
+    verdict: "Start with the moon lamp or the Ditoo if you want the unwrapping reaction, the PowerCore or Kasa plugs if you want to be quietly thanked for months, and the Steam Deck OLED if it's a big year. Everything here is in stock, community-vetted, and — most importantly — still in use when the next gift-giving occasion rolls around.",
   },
 ];
 
