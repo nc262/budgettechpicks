@@ -15,6 +15,9 @@ $checks += "guide affiliate disclosure:       " + ($a -match 'affiliate links')
 $b = (Invoke-WebRequest -Uri "https://totaltechpicks.com/best-budget-webcams/" -TimeoutSec 30).Content
 $checks += "guide intel freshness stamp:      " + (($a -match 'community intel refreshed') -or ($b -match 'community intel refreshed'))
 
+$g = (Invoke-WebRequest -Uri "https://totaltechpicks.com/best-tech-gifts/" -TimeoutSec 30).Content
+$checks += "gift guide live:                  " + ($g -match 'Best Tech Gifts That Actually Get Used')
+
 $og = Invoke-WebRequest -Uri "https://totaltechpicks.com/og-default.png" -Method Head -TimeoutSec 20
 $checks += "social share image:               $($og.StatusCode -eq 200)"
 
