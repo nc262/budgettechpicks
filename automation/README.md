@@ -29,6 +29,17 @@ n8n workflow backups for TotalTechPicks. Exported automatically whenever workflo
 
 Test it manually any time: `node scripts/discover-products.mjs --dry-run --max=3`
 
+## Traffic & research jobs (June 12, 2026)
+
+- **Daily Pinterest CSV** (n8n, 6am → runner job `pinterest-csv`): writes
+  `C:\n8n-data\pinterest-queue\pins-YYYY-MM-DD.csv` — 8 pins (live deals first, then
+  rotating deep-review pins). Upload it at pinterest.com → Create → Bulk create pins.
+  Old CSVs auto-delete after 14 days. Manual run: `node scripts/generate-pinterest-csv.mjs`
+- **Weekly Sales Velocity** (n8n, Sundays 4am → runner job `velocity`): snapshots every
+  product's Amazon review count via Chrome; growth across snapshots = real sales-velocity
+  signal. Top growers get the 🔥 Hot Seller badge on product cards (first badges appear
+  after the second weekly snapshot). Manual test: `node scripts/track-velocity.mjs --dry-run --limit=5`
+
 ## Fixed June 10, 2026
 
 - **ASIN Health Check** only checked 1 of 131 products (Code node ran in "once for all items"
