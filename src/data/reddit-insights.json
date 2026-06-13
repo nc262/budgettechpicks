@@ -1,31 +1,31 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-13T12:03:46.900Z",
+    "lastUpdated": "2026-06-13T20:03:53.285Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users experienced issues with mouse responsiveness, suggesting power settings or hub quality might be the cause.",
+        "summary": "Users are discussing issues with mouse performance when used with a USB-C hub, suggesting it sounds more like a dock and recommending Bluetooth mice or adjusting power settings.",
         "pros": [
-          "Bluetooth peripherals can provide reliable connectivity"
+          "Bluetooth peripherals"
         ],
         "cons": [
-          "Power settings",
-          "Hub quality",
-          "Lack of bandwidth"
+          "Sluggish performance",
+          "Power issues"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Power settings in laptops may affect mouse performance",
-          "Quality of the hub or Type-C port might be a bottleneck"
+          "Power settings can affect performance",
+          "Bluetooth peripherals are a viable option",
+          "Adjusting power settings to laptop's ports can resolve issues"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 9,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-13T12:03:46.880Z"
+        "scrapedAt": "2026-06-13T20:03:53.269Z"
       }
     ]
   },
@@ -61,84 +61,64 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-13T04:03:57.531Z",
+    "lastUpdated": "2026-06-13T20:03:53.285Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users can successfully jailbreak and install alternative operating systems on their Amazon Echo Dot 5th Gen, but it requires significant technical expertise and is not a straightforward process.",
-        "pros": [
-          "can be rooted and installed with Android Lineage",
-          "runs Spotify and can serve as a good kitchen speaker",
-          "custom PCB for Google Minis can be used"
-        ],
-        "cons": [
-          "locked down tightly, making it difficult to install alternative OS",
-          "Amazon locks bootloaders down hard"
-        ],
+        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Users can jailbreak the Echo Dot 5th Gen with Android Lineage",
-          "Custom PCB for Google Minis is a viable option for some users",
-          "Alternative OS may require soldering and technical expertise"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 10,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-13T04:03:57.522Z"
+        "scrapedAt": "2026-06-13T20:03:53.274Z"
       },
       {
         "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users can control Philips Hue bulbs using Home Assistant, but may need to use a Zigbee bridge or install additional software for more advanced features.",
-        "pros": [
-          "can be controlled from Home Assistant",
-          "uses ZHA for ZigBee",
-          "supports adaptive lighting integration"
-        ],
-        "cons": [
-          "requires additional setup and software",
-          "may require more technical expertise"
-        ],
+        "summary": "Discussed in r/homeautomation — 15 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Home Assistant supports Philips Hue bulbs with a bridge or ZHA binding",
-          "Users can use Zigbee2MQTT/mqtt for control and automation",
-          "Adaptive lighting integration is available"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-13T04:03:57.522Z"
+        "scrapedAt": "2026-06-13T20:03:53.275Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-13T12:03:46.900Z",
+    "lastUpdated": "2026-06-13T20:03:53.285Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Several commenters mention EMI/RFI interference as an issue, with some suggesting it's not a problem with the mic itself but rather with cables, grounding, or environment.",
+        "summary": "Real users mention EMI/RFI interference as a potential issue, but most attribute it to external factors such as cable quality and studio location. The SM7B microphone itself is not commonly blamed for causing interference.",
         "pros": [
-          "SM7B works for this user",
-          "balanced cables help deal with interference"
+          "balanced cables can deal with interference on the trip from the mic to the pre",
+          "mic selection doesn't seem to be a common issue (though some mics are mentioned as alternatives)",
+          "some users have had issues but attribute them to other factors"
         ],
         "cons": [
-          "EMI/RFI interference is a common issue",
-          "cable and grounding issues can cause problems"
+          "RFI/EMI interference is a potential issue, especially in certain locations or with specific equipment",
+          "cable quality and termination can affect the problem",
+          "mic placement and grounding can make a difference for some users"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Some users experience EMI/RFI interference",
-          "grounding issues are a common problem",
-          "balanced cables can help mitigate interference"
+          "RFI/EMI interference is more related to external factors than the mic itself",
+          "balanced cables can help mitigate RFI/EMI issues",
+          "some users have had issues with RFI/EMI but didn't find it to be a problem"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -146,26 +126,28 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-13T12:03:46.888Z"
+        "scrapedAt": "2026-06-13T20:03:53.277Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-13T12:03:46.900Z",
+    "lastUpdated": "2026-06-13T20:03:53.285Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Many commenters believe the Audio-Technica ATH-M50x headphones sold by a particular seller are counterfeit, citing differences in serial numbers, design, and sound quality. Some have already returned them.",
+        "summary": "Commenters report seeing fake Audio-Technica ATH-M50x Studio Headphones, with several users sharing their experiences of receiving counterfeit items and warning others about the issue.",
         "pros": [],
         "cons": [
-          "100% fake",
-          "sound quality not impressive",
-          "assembly looks different"
+          "100% FAKE",
+          "assembly looks different",
+          "no serial number"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "Serial sticker covers the serial number"
+          "Fake ATH M50x have a different assembly design compared to genuine ones.",
+          "Some users noticed that fake ATH M50x do not have the acoustic fabric inside the bevel.",
+          "Several users received counterfeit items and were disappointed with the experience."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -173,7 +155,7 @@
         "hasRealComments": true,
         "sourcePost": "Fake ATH M50x ??? Please help me spot this",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u303gt/fake_ath_m50x_please_help_me_spot_this/",
-        "scrapedAt": "2026-06-13T12:03:46.890Z"
+        "scrapedAt": "2026-06-13T20:03:53.278Z"
       }
     ]
   },
@@ -209,27 +191,28 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-13T12:03:46.900Z",
+    "lastUpdated": "2026-06-13T20:03:53.285Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users generally recommend investing in a separate lighting solution to improve low-light performance, and some prefer newer webcams like Emee or Elgato's Facecam MK2 for better image quality.",
+        "summary": "Users generally recommend the Logitech C920s HD Pro Webcam for streaming under $100, with some suggesting it's a good value considering the added benefit of lighting, while others express reservations about its age and software issues.",
         "pros": [
           "decent in low light",
-          "has auto tracking if you move around",
-          "gets the job done",
-          "is still a great webcam for the price"
+          "auto tracking if you move around",
+          "good image quality",
+          "easy to use"
         ],
         "cons": [
+          "old now",
           "low light is gonna be rough on any sub $100 cam",
-          "software can be horrendous"
+          "software is horrendous (Logitech)"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "separate lighting can make a big difference",
-          "newer webcams may offer better performance",
-          "previous user found it fine but old"
+          "Adding lighting can make a big difference in low-light conditions",
+          "Investing in good lighting can surpass webcam quality",
+          "Elgato Facecam MK2 is a recommended alternative to Logitech"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -237,26 +220,28 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-13T12:03:46.880Z"
+        "scrapedAt": "2026-06-13T20:03:53.269Z"
       },
       {
         "product": "Logitech Brio 4K Ultra HD Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users mention several common issues with the Logitech Brio 4K Ultra HD Webcam, including light sensitivity and difficulty in finding good lighting settings. Some users have found alternative solutions such as using mobile apps or external cameras.",
+        "summary": "Real users report issues with lighting sensitivity and image quality, but some have found workarounds or alternatives that suit their needs.",
         "pros": [
-          "Works great",
-          "Significantly less expensive and more reliable than a dedicated camera or webcam"
+          "manual settings for exposure, white balance, etc can help improve image quality",
+          "using a phone with DroidCam allows 4K video recording with OBS plugin",
+          "Yolocam S3 provides good bang for buck for an upgrade",
+          "Razer Kiyo Pro works well with some adjustments"
         ],
         "cons": [
-          "Light sensitive",
-          "May go out of focus sometimes",
-          "Soft and noisy images with backlight"
+          "lighting sensitivity issues",
+          "image quality can be soft and noisy",
+          "webcams from other brands (e.g. C930, Emeet C960) may perform better in certain situations"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Lighting is key, but you don't need to be lit like the weatherman to get a better image",
-          "Manual settings for exposure, white balance, etc can improve image quality",
-          "Other cameras may offer better performance or features"
+          "Lighting is a crucial factor in image quality",
+          "Manual settings can help improve image quality",
+          "Alternative webcams and software solutions exist that may offer better performance"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -264,54 +249,32 @@
         "hasRealComments": true,
         "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-13T12:03:46.881Z"
+        "scrapedAt": "2026-06-13T20:03:53.270Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-13T12:03:46.900Z",
+    "lastUpdated": "2026-06-13T20:03:53.285Z",
     "insights": [
-      {
-        "product": "Ergotron LX Desk Monitor Arm",
-        "productSlug": "best-desk-accessories-under-50",
-        "summary": "Users appreciate the aesthetic mix of vintage and tech elements, but one user expressed a desire to use the desk setup",
-        "pros": [
-          "function over aesthetics energy hits different",
-          "vintage + tech mix works so perfectly"
-        ],
-        "cons": [],
-        "sentiment": "positive",
-        "key_insights": [
-          "users value the unique combination of old and new components",
-          "the setup's aesthetic appeal is a key aspect of its design"
-        ],
-        "recommended_by_users": false,
-        "commentCount": 3,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "warm vintage desk setup 🌍",
-        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-13T12:03:46.883Z"
-      },
       {
         "product": "Logitech MX Master 3S Wireless Mouse",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Users recommend the Logitech MX Master 3S for its performance and battery life, with some mentioning potential issues with reliability and ergonomic fit.",
+        "summary": "Users generally recommend the Logitech MX Master 3S for its battery life, performance, and design, but also mention some drawbacks such as software issues and potential ergonomic concerns.",
         "pros": [
-          "The Logitech MX Masters are the best",
-          "They're the best overall mouse for sure",
-          "It still goes weeks between charges",
-          "It's still going strong on the original battery"
+          "the Logitech MX Masters are the best",
+          "they’re the best overall mouse for sure",
+          "it's still goes weeks between charges"
         ],
         "cons": [
-          "horrible software that comes with it",
-          "it started double clicking after a year",
-          "smaller size might be less ergonomic for bigger hands"
+          "horrible software it comes with",
+          "double clicking issue with one user's experience",
+          "potential ergonomic concerns for bigger hands"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "The Logitech MX Master 3S is praised for its battery life and performance.",
-          "Some users have experienced issues with reliability, including double-clicking and software problems."
+          "some users have experienced issues with the mouse's battery life and performance over time",
+          "users appreciate the design and functionality of the MX Master 3S",
+          "software issues are a concern for some users"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -319,27 +282,29 @@
         "hasRealComments": true,
         "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
         "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-13T12:03:46.884Z"
+        "scrapedAt": "2026-06-13T20:03:53.272Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-13T04:03:57.531Z",
+    "lastUpdated": "2026-06-13T20:03:53.285Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Commenters appreciate the innovation of anti-burn guards in Energizer's AirTag-compatible batteries, seeing it as a practical solution to prevent accidents and injuries.",
+        "summary": "Users appreciate the innovation of anti-burn guards in Energizer's AirTag-compatible batteries, which prevents ingestion burns and aligns with their desire for self-repair capabilities and safer products.",
         "pros": [
-          "Prevents Ingestion Burns",
-          "More useful innovation than half the AI gadgets announced lately",
-          "Can last 6-8 months on average"
+          "Prevents ingestion burns",
+          "Enables self-repairs",
+          "Safer products"
         ],
-        "cons": [],
+        "cons": [
+          "Patent could stifle other brands from implementing anti-burn guards"
+        ],
         "sentiment": "positive",
         "key_insights": [
-          "The product prevents accidental ingestion burns with anti-burn guards.",
-          "Some users are concerned about patent stifling other brands from implementing similar technology."
+          "The technology's patent may impact other brands",
+          "Parents can leave objects that pose a risk to children due to lack of regulation"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -347,32 +312,30 @@
         "hasRealComments": true,
         "sourcePost": "Energizer Launches AirTag-Compatible Batteries That Prevent Ingestion Burns",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1t5yf1y/energizer_launches_airtagcompatible_batteries/",
-        "scrapedAt": "2026-06-13T04:03:57.523Z"
+        "scrapedAt": "2026-06-13T20:03:53.275Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-13T12:03:46.900Z",
+    "lastUpdated": "2026-06-13T20:03:53.285Z",
     "insights": [
       {
         "product": "Samsung Odyssey G5 27\" 165Hz Curved",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users suggest considering budget OLED monitors with 165Hz, such as AOC Q27G41ZDP, due to their affordability ($380) and good port options, but express difficulties finding them in the US and higher prices compared to European sales.",
+        "summary": "Users are looking for recommendations on a new monitor, with some mentioning their own purchase experiences and budget constraints.",
         "pros": [
           "cheap ($380)",
-          "good enough ports",
-          "great motion performance"
+          "good enough port",
+          "glossy"
         ],
         "cons": [
-          "high price in the US ($330)",
-          "difficult to find in the US",
-          "some issues have been fixed, but not all of them"
+          "can't find it anywhere in the US",
+          "way more than my budget (330$)"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Budget OLED monitors with 165Hz are a viable option",
-          "Higher prices and availability issues for AOC Q27G41ZDP in the US",
-          "Some users mention ongoing issues with Xiaomi G Pro 27i"
+          "considering a new OLED monitor from AOC or Samsung",
+          "looking for a monitor with great motion performance"
         ],
         "recommended_by_users": false,
         "commentCount": 5,
@@ -380,7 +343,7 @@
         "hasRealComments": true,
         "sourcePost": "Help picking a monitor. Upgrading from 24\", 1080p, 165hz",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1u37zja/help_picking_a_monitor_upgrading_from_24_1080p/",
-        "scrapedAt": "2026-06-13T12:03:46.886Z"
+        "scrapedAt": "2026-06-13T20:03:53.275Z"
       }
     ]
   }
