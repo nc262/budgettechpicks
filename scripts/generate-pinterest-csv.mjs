@@ -109,10 +109,27 @@ mkdirSync(OUT_DIR, { recursive: true });
 const outPath = join(OUT_DIR, `pins-${dateStr}.csv`);
 writeFileSync(outPath, csv);
 
-// Keep two weeks of history
+// Keep two weeks of dated history in the queue
 for (const f of readdirSync(OUT_DIR).filter((f) => f.startsWith("pins-") && f.endsWith(".csv"))) {
   if (Date.now() - statSync(join(OUT_DIR, f)).mtimeMs > 14 * 86400000) unlinkSync(join(OUT_DIR, f));
 }
 
+// Drop a copy somewhere obvious: one stable file on the Desktop, overwritten daily,
+// so there's always exactly one "upload this to Pinterest today" file to grab.
+const desktopCandidates = [
+  process.env.PINTEREST_CSV_DEST,                                    // explicit override wins
+  join(process.env.OneDrive || "", "Desktop"),                       // OneDrive-redirected Desktop
+  join(process.env.USERPROFILE || "", "OneDrive", "Desktop"),
+  join(process.env.USERPROFILE || "", "Desktop"),                    // classic Desktop
+].filter(Boolean);
+const desktop = desktopCandidates.find((d) => existsSync(d));
+let desktopPath = null;
+if (desktop) {
+  desktopPath = join(desktop, "Pinterest-Pins-Upload-Today.csv");
+  writeFileSync(desktopPath, csv);
+}
+
 console.log(`WROTE ${pins.length} pins -> ${outPath}`);
+if (desktopPath) console.log(`Desktop copy -> ${desktopPath}`);
+else console.log("WARN: no Desktop found — set PINTEREST_CSV_DEST to choose a copy location");
 for (const p of pins) console.log(`  - [${p["Pinterest board"]}] ${p.Title}`);
