@@ -1,24 +1,23 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-13T04:03:57.531Z",
+    "lastUpdated": "2026-06-13T12:03:46.900Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users report issues with mouse responsiveness and suggest alternatives or solutions, including using Bluetooth mice, adjusting power settings, and ensuring enough bandwidth through the hub.",
+        "summary": "Users experienced issues with mouse responsiveness, suggesting power settings or hub quality might be the cause.",
         "pros": [
-          "Using a Bluetooth mouse",
-          "Powering the mouse directly from the laptop's power cable"
+          "Bluetooth peripherals can provide reliable connectivity"
         ],
         "cons": [
-          "Hub feeling like more of a USB dock",
-          "Sluggish performance"
+          "Power settings",
+          "Hub quality",
+          "Lack of bandwidth"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Adjusting power settings can help",
-          "Bluetooth mice may solve issues",
-          "Enough bandwidth through the hub is crucial for smooth performance"
+          "Power settings in laptops may affect mouse performance",
+          "Quality of the hub or Type-C port might be a bottleneck"
         ],
         "recommended_by_users": false,
         "commentCount": 9,
@@ -26,7 +25,7 @@
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-13T04:03:57.515Z"
+        "scrapedAt": "2026-06-13T12:03:46.880Z"
       }
     ]
   },
@@ -121,44 +120,60 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-13T04:03:57.531Z",
+    "lastUpdated": "2026-06-13T12:03:46.900Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Discussed in r/audioengineering — 14 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Several commenters mention EMI/RFI interference as an issue, with some suggesting it's not a problem with the mic itself but rather with cables, grounding, or environment.",
+        "pros": [
+          "SM7B works for this user",
+          "balanced cables help deal with interference"
+        ],
+        "cons": [
+          "EMI/RFI interference is a common issue",
+          "cable and grounding issues can cause problems"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Some users experience EMI/RFI interference",
+          "grounding issues are a common problem",
+          "balanced cables can help mitigate interference"
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-13T04:03:57.526Z"
+        "scrapedAt": "2026-06-13T12:03:46.888Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-13T04:03:57.531Z",
+    "lastUpdated": "2026-06-13T12:03:46.900Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Discussed in r/headphones — 15 comments on this thread.",
+        "summary": "Many commenters believe the Audio-Technica ATH-M50x headphones sold by a particular seller are counterfeit, citing differences in serial numbers, design, and sound quality. Some have already returned them.",
         "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "cons": [
+          "100% fake",
+          "sound quality not impressive",
+          "assembly looks different"
+        ],
+        "sentiment": "negative",
+        "key_insights": [
+          "Serial sticker covers the serial number"
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Fake ATH M50x ??? Please help me spot this",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u303gt/fake_ath_m50x_please_help_me_spot_this/",
-        "scrapedAt": "2026-06-13T04:03:57.527Z"
+        "scrapedAt": "2026-06-13T12:03:46.890Z"
       }
     ]
   },
@@ -194,26 +209,27 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-13T04:03:57.531Z",
+    "lastUpdated": "2026-06-13T12:03:46.900Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users recommend spending money on lighting to improve low light performance, and some swear by dedicated cameras like Elgato Facecam MK2 for better image quality.",
+        "summary": "Users generally recommend investing in a separate lighting solution to improve low-light performance, and some prefer newer webcams like Emee or Elgato's Facecam MK2 for better image quality.",
         "pros": [
           "decent in low light",
-          "auto tracking if you move around",
-          "decent",
-          "good image quality"
+          "has auto tracking if you move around",
+          "gets the job done",
+          "is still a great webcam for the price"
         ],
         "cons": [
           "low light is gonna be rough on any sub $100 cam",
-          "software is horrendous (Logitech)"
+          "software can be horrendous"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Low-light performance can be compromised without extra lighting setup.",
-          "Dedicated cameras like Elgato Facecam MK2 offer better image quality than budget webcams."
+          "separate lighting can make a big difference",
+          "newer webcams may offer better performance",
+          "previous user found it fine but old"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -221,27 +237,26 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-13T04:03:57.517Z"
+        "scrapedAt": "2026-06-13T12:03:46.880Z"
       },
       {
         "product": "Logitech Brio 4K Ultra HD Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users express frustration with lighting sensitivity and image quality, but some find workarounds or alternatives to improve their experience.",
+        "summary": "Users mention several common issues with the Logitech Brio 4K Ultra HD Webcam, including light sensitivity and difficulty in finding good lighting settings. Some users have found alternative solutions such as using mobile apps or external cameras.",
         "pros": [
-          "using a phone app like DroidCam",
-          "manual settings for exposure and white balance can help",
-          "some webcams are more reliable and less expensive than dedicated cameras"
+          "Works great",
+          "Significantly less expensive and more reliable than a dedicated camera or webcam"
         ],
         "cons": [
-          "light sensitivity issues",
-          "image quality is soft or noisy, especially with backlight",
-          "dropping frame rate to 24fps can improve image quality"
+          "Light sensitive",
+          "May go out of focus sometimes",
+          "Soft and noisy images with backlight"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "manual settings for exposure and white balance can help",
-          "some webcams are more reliable and less expensive than dedicated cameras",
-          "lighting sensitivity is a common issue with this webcam"
+          "Lighting is key, but you don't need to be lit like the weatherman to get a better image",
+          "Manual settings for exposure, white balance, etc can improve image quality",
+          "Other cameras may offer better performance or features"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -249,48 +264,54 @@
         "hasRealComments": true,
         "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-13T04:03:57.517Z"
+        "scrapedAt": "2026-06-13T12:03:46.881Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-13T04:03:57.531Z",
+    "lastUpdated": "2026-06-13T12:03:46.900Z",
     "insights": [
       {
         "product": "Ergotron LX Desk Monitor Arm",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Discussed in r/battlestations — 3 comments on this thread.",
-        "pros": [],
+        "summary": "Users appreciate the aesthetic mix of vintage and tech elements, but one user expressed a desire to use the desk setup",
+        "pros": [
+          "function over aesthetics energy hits different",
+          "vintage + tech mix works so perfectly"
+        ],
         "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
+        "sentiment": "positive",
+        "key_insights": [
+          "users value the unique combination of old and new components",
+          "the setup's aesthetic appeal is a key aspect of its design"
+        ],
         "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "warm vintage desk setup 🌍",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-13T04:03:57.518Z"
+        "scrapedAt": "2026-06-13T12:03:46.883Z"
       },
       {
         "product": "Logitech MX Master 3S Wireless Mouse",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Commenters generally recommend the Logitech MX Master 3S for its battery life and performance, but some express concerns about reliability and ergonomic fit.",
+        "summary": "Users recommend the Logitech MX Master 3S for its performance and battery life, with some mentioning potential issues with reliability and ergonomic fit.",
         "pros": [
-          "the best overall mouse",
-          "battery life is good (weeks between charges)",
-          "design looks sleek"
+          "The Logitech MX Masters are the best",
+          "They're the best overall mouse for sure",
+          "It still goes weeks between charges",
+          "It's still going strong on the original battery"
         ],
         "cons": [
-          "software issues",
-          "short lifespan (around 1 year)",
-          "size might be less ergonomic for bigger hands"
+          "horrible software that comes with it",
+          "it started double clicking after a year",
+          "smaller size might be less ergonomic for bigger hands"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "some users mention software issues with Logitech mice",
-          "the MX Master 3S has reliable battery life for its class",
-          "users value a mouse with 4 side buttons and custom programmable button"
+          "The Logitech MX Master 3S is praised for its battery life and performance.",
+          "Some users have experienced issues with reliability, including double-clicking and software problems."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -298,7 +319,7 @@
         "hasRealComments": true,
         "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
         "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-13T04:03:57.519Z"
+        "scrapedAt": "2026-06-13T12:03:46.884Z"
       }
     ]
   },
@@ -327,6 +348,39 @@
         "sourcePost": "Energizer Launches AirTag-Compatible Batteries That Prevent Ingestion Burns",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1t5yf1y/energizer_launches_airtagcompatible_batteries/",
         "scrapedAt": "2026-06-13T04:03:57.523Z"
+      }
+    ]
+  },
+  "best-monitors-and-displays": {
+    "lastUpdated": "2026-06-13T12:03:46.900Z",
+    "insights": [
+      {
+        "product": "Samsung Odyssey G5 27\" 165Hz Curved",
+        "productSlug": "best-monitors-and-displays",
+        "summary": "Users suggest considering budget OLED monitors with 165Hz, such as AOC Q27G41ZDP, due to their affordability ($380) and good port options, but express difficulties finding them in the US and higher prices compared to European sales.",
+        "pros": [
+          "cheap ($380)",
+          "good enough ports",
+          "great motion performance"
+        ],
+        "cons": [
+          "high price in the US ($330)",
+          "difficult to find in the US",
+          "some issues have been fixed, but not all of them"
+        ],
+        "sentiment": "neutral",
+        "key_insights": [
+          "Budget OLED monitors with 165Hz are a viable option",
+          "Higher prices and availability issues for AOC Q27G41ZDP in the US",
+          "Some users mention ongoing issues with Xiaomi G Pro 27i"
+        ],
+        "recommended_by_users": false,
+        "commentCount": 5,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "Help picking a monitor. Upgrading from 24\", 1080p, 165hz",
+        "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1u37zja/help_picking_a_monitor_upgrading_from_24_1080p/",
+        "scrapedAt": "2026-06-13T12:03:46.886Z"
       }
     ]
   }
