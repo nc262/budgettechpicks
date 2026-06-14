@@ -18,6 +18,9 @@ $checks += "guide intel freshness stamp:      " + (($a -match 'community intel r
 $g = (Invoke-WebRequest -Uri "https://totaltechpicks.com/best-tech-gifts/" -TimeoutSec 30).Content
 $checks += "gift guide live:                  " + ($g -match 'Best Tech Gifts That Actually Get Used')
 
+$bg = Invoke-WebRequest -Uri "https://totaltechpicks.com/best/monitors-under-300/" -TimeoutSec 30 -SkipHttpErrorCheck
+$checks += "budget pages live:                " + ($bg.StatusCode -eq 200)
+
 $og = Invoke-WebRequest -Uri "https://totaltechpicks.com/og-default.png" -Method Head -TimeoutSec 20
 $checks += "social share image:               $($og.StatusCode -eq 200)"
 
