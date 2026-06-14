@@ -32,6 +32,8 @@ try { autoProducts = JSON.parse(readFileSync(join(ROOT, "src/data/auto-products.
 
 const isLive = (asin) => health[asin]?.isLive !== false;
 function mediaUrl(asin) {
+  // Prefer the branded 2:3 pin (product + bold headline) when one's been rendered
+  if (existsSync(join(ROOT, "public/images/pinterest/auto", asin + ".jpg"))) return `${SITE}/images/pinterest/auto/${asin}.jpg`;
   if (existsSync(join(ROOT, "public/images/products", asin + ".jpg"))) return `${SITE}/images/products/${asin}.jpg`;
   return health[asin]?.imageUrl ?? `https://m.media-amazon.com/images/P/${asin}.01._SX500_QL70_.jpg`;
 }

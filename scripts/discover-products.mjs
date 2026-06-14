@@ -465,8 +465,20 @@ log(`${deals.length} live deal(s) matched site products`);
 writeFileSync(join(CLONE_DIR, "src/data/deal-radar.json"),
   JSON.stringify({ updatedAt: new Date().toISOString(), deals }, null, 2) + "\n");
 
+// Render branded Pinterest pins for anything new — best-effort, never blocks the commit
+const newPinAsins = [...published.map((p) => p.asin), ...(promoted ? [promoted.asin] : [])];
+if (!DRY_RUN && newPinAsins.length) {
+  try {
+    execSync(`node "${join(CLONE_DIR, "scripts/generate-pin-images.mjs")}" --asins=${newPinAsins.join(",")}`,
+      { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
+    log(`rendered Pinterest pins for ${newPinAsins.length} new product(s)`);
+  } catch (e) {
+    log(`pin render skipped: ${String(e.message).slice(0, 100)}`);
+  }
+}
+
 // Single commit for everything that changed tonight
-const DATA_PATHS = "src/data/auto-products.json src/data/deal-radar.json src/data/products.ts";
+const DATA_PATHS = "src/data/auto-products.json src/data/deal-radar.json src/data/products.ts public/images/pinterest/auto";
 const changed = sh(`git -C "${CLONE_DIR}" status --porcelain -- ${DATA_PATHS}`);
 if (!changed) {
   log("no data changes tonight — no commit");
