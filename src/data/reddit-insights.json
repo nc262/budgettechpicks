@@ -1,23 +1,24 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-14T12:03:31.497Z",
+    "lastUpdated": "2026-06-14T20:03:52.265Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users report that a USB-C hub can cause mouse sluggishness, and some solutions include using Bluetooth mice or plugging the laptop's power cable into a different port.",
+        "summary": "Users report issues with slowness and sluggishness of a Bluetooth mouse connected to the UGREEN 9-in-1 USB-C Hub, suggesting power settings or hub quality might be the cause.",
         "pros": [
-          "Using a Bluetooth mouse"
+          "Using a Bluetooth mouse can eliminate the need for a USB-dongle"
         ],
         "cons": [
-          "Sluggish mouse performance",
-          "Insufficient power to USB-C hub"
+          "Hub feels like it's more of a USB dock",
+          "Power issues with mouse",
+          "Hub might not provide enough power"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Power settings can affect hub performance",
+          "Power settings can affect performance",
           "Bluetooth peripherals are being overlooked",
-          "Laptop's power cable power issues with the hub"
+          "Hub quality and bandwidth might be the cause of power issues"
         ],
         "recommended_by_users": false,
         "commentCount": 9,
@@ -25,7 +26,7 @@
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-14T12:03:31.481Z"
+        "scrapedAt": "2026-06-14T20:03:52.247Z"
       }
     ]
   },
@@ -61,83 +62,59 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-14T12:03:31.497Z",
+    "lastUpdated": "2026-06-14T20:03:52.265Z",
     "insights": [
-      {
-        "product": "Amazon Echo Dot (5th Gen)",
-        "productSlug": "best-smart-home-under-50",
-        "summary": "Users can root and install custom Android Lineage on Echo Dots, enabling compatibility with alternative voice assistants like Bixby, but note Amazon's strict bootloader lock-downs make it challenging.",
-        "pros": [
-          "customizable",
-          "runs Android Lineage",
-          "compatible with Bixby"
-        ],
-        "cons": [
-          "strict bootloader lock-downs",
-          "difficult to jailbreak"
-        ],
-        "sentiment": "neutral",
-        "key_insights": [
-          "users can root Echo Dots for alternative voice assistants",
-          "Amazon's strict lock-downs make it hard to install custom OS"
-        ],
-        "recommended_by_users": false,
-        "commentCount": 10,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Reusing Amazon Alexa Echo Dot",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-14T12:03:31.484Z"
-      },
       {
         "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users can control Philips Hue with Home Assistant, but may require additional setup and dongles for Zigbee devices.",
+        "summary": "Users can control Philips Hue with Home Assistant, using either a Hue bridge integration or joining to a Zigbee bridge, but some may require custom solutions for auto-dim and pairing Lutron Aurora to bulbs.",
         "pros": [
-          "Home Assistant has ZHA built-in for ZigBee",
-          "Zigbee2MQTT/mqtt controlled by Home Assistant works well",
-          "Philips Hue hub compatible with Home Assistant"
+          "can be controlled with Home Assistant",
+          "uses zigbee2mqtt/mqtt",
+          "adaptive lighting integration works well"
         ],
         "cons": [
-          "May require more technical setup compared to 'just a UI' ",
-          "Some users experience latency issues"
+          " requires custom solutions for auto-dim and certain features",
+          "not compatible with all devices",
+          "some users prefer not using the Hue hub"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Home Assistant has ZHA built-in for ZigBee",
-          "Using zigbee2mqtt or binding can be done directly in HA",
-          "Adaptive lighting integration works well with motion activation"
+          "Home Assistant is a popular ecosystem for registering plugins devices in the same control and state model",
+          "Zigbee2MQTT/mqtt can be used to control ZigBee devices",
+          " adaptive lighting integration can adjust color and brightness during the day automatically"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-14T12:03:31.485Z"
+        "scrapedAt": "2026-06-14T20:03:52.254Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-14T12:03:31.497Z",
+    "lastUpdated": "2026-06-14T20:03:52.265Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Commenters mention EMI/RFI interference as a potential issue with audio equipment, but note that it's often caused by external factors such as cables, studio location, and nearby emitters. The SM7B is generally considered to be less prone to this issue.",
+        "summary": "Users report occasional EMI/RFI interference issues, but note that these can often be caused by external factors such as cables, studio location, and nearby emitters.",
         "pros": [
-          "balanced cable can deal with any interference on the trip from the mic to the pre"
+          "balanced cable design helps deal with interference on the trip from the mic to the pre",
+          "grounding issues can cause noise in a setup",
+          "mic is not typically the culprit for EMI/RFI interference"
         ],
         "cons": [
-          "can be affected by cell repeaters installed on a tower near the studio",
-          "may not work in environments with high levels of EMI/RFI noise, such as certain power strips or fluorescent lighting",
-          "grounding issues can cause interference with some microphones"
+          "EMI/RFI interference can be caused by external factors",
+          "cell repeaters on nearby towers can cause RFI issues",
+          "cable and grounding problems are common causes of noise in a setup"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Studio location and nearby emitters can affect the presence of EMI/RFI interference",
-          "Grounding issues can be a common culprit for interference with certain microphones",
-          "Balanced cables can help mitigate EMI/RFI interference"
+          "RFI is only really an issue if it's not filtered away at the interface and demodulates into the audio band",
+          "EMI/RFI interference can be mitigated with proper grounding and shielding of cables and equipment"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -145,17 +122,17 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-14T12:03:31.488Z"
+        "scrapedAt": "2026-06-14T20:03:52.260Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-14T12:03:31.497Z",
+    "lastUpdated": "2026-06-14T20:03:52.265Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Commenters believe that some Audio-Technica ATH-M50x headphones sold as authentic may be counterfeit, with issues including mismatched assembly, incorrect colors, and poor sound quality.",
+        "summary": "Many commenters believe the ATH-M50x headphones sold to them were counterfeit, with common issues including fake packaging, incorrect serial numbers, and poor sound quality.",
         "pros": [
           "Sometimes there is a sale bro"
         ],
@@ -166,17 +143,17 @@
         ],
         "sentiment": "negative",
         "key_insights": [
-          "Commenters have noticed discrepancies in the assembly and materials used in what they believe are counterfeit M50x headphones.",
-          "Some commenters have experienced poor sound quality with what they suspect are fake M50x headphones.",
-          "The prices of counterfeit products can be significantly lower than authentic ones, which may contribute to their popularity."
+          "Some commenters report seeing fake packaging or differences in assembly compared to authentic models.",
+          "The presence of a serial sticker was seen as a potential indicator of authenticity.",
+          "Others mention issues with sound quality and box colors."
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Fake ATH M50x ??? Please help me spot this",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u303gt/fake_ath_m50x_please_help_me_spot_this/",
-        "scrapedAt": "2026-06-14T12:03:31.490Z"
+        "scrapedAt": "2026-06-14T20:03:52.261Z"
       }
     ]
   },
@@ -212,26 +189,25 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-14T12:03:31.497Z",
+    "lastUpdated": "2026-06-14T20:03:52.265Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users think a good webcam for streaming under $100 requires extra lighting, with some recommending the Logitech C920 or other options despite its age, while others suggest spending less on the camera and more on lighting.",
+        "summary": "Users generally recommend spending around $100 on a webcam and investing in good lighting to improve streaming quality, with some recommending the Logitech C920s HD Pro Webcam as a decent option.",
         "pros": [
           "decent in low light",
           "auto tracking if you move around",
-          "good image quality"
+          "great webcam for the price"
         ],
         "cons": [
-          "rough in low light",
-          "old technology"
+          "low light is gonna be rough on any sub $100 cam",
+          "Logitech software is horrendous, at least IMO"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Extra lighting is crucial for good video quality under $100",
-          "Spending less on the webcam and more on lighting can improve image quality",
-          "The Logitech C920 is still a recommended option despite its age"
+          "Adding a ring light or good lighting can greatly improve low-light streaming quality.",
+          "Investing in good lighting is more important than upgrading to the latest webcam specs."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -239,96 +215,95 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-14T12:03:31.481Z"
+        "scrapedAt": "2026-06-14T20:03:52.247Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-14T12:03:31.497Z",
+    "lastUpdated": "2026-06-14T20:03:52.265Z",
     "insights": [
       {
-        "product": "Ergotron LX Desk Monitor Arm",
+        "product": "Logitech MX Master 3S Wireless Mouse",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Users appreciate the unique blend of vintage and tech elements in a desk setup, with one commenter expressing excitement for the Ergotron LX Desk Monitor Arm.",
+        "summary": "Users recommend the Logitech MX Master 3S for its battery life, design, and functionality, but some have experienced issues with reliability and software.",
         "pros": [
-          "function over aesthetics energy",
-          "vintage + tech mix works so perfectly"
+          "the Logitech MX Masters are the best",
+          "They’re the best overall mouse for sure",
+          "it lasts weeks between charges",
+          "it has a spinning wheel magnetic mechanism"
         ],
-        "cons": [],
-        "sentiment": "positive",
+        "cons": [
+          " horrible software it comes with",
+          "it started double clicking after only 1 year",
+          "smaller size might be less ergonomic for bigger hands"
+        ],
+        "sentiment": "neutral",
         "key_insights": [
-          "Ergotron LX Desk Monitor Arm is not mentioned explicitly but the setup resembles one.",
-          "Some users enjoy a mix of vintage and modern elements."
+          "some users have experienced reliability issues",
+          "the battery life is a major selling point",
+          "users are looking for alternative options with similar functionality, such as light switches or ergonomic design"
         ],
-        "recommended_by_users": false,
-        "commentCount": 3,
+        "recommended_by_users": true,
+        "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "warm vintage desk setup 🌍",
-        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-14T12:03:31.482Z"
+        "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
+        "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
+        "scrapedAt": "2026-06-14T20:03:52.250Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-14T12:03:31.497Z",
+    "lastUpdated": "2026-06-14T20:03:52.265Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Users appreciate the innovation of AirTag-compatible batteries with anti-burn guards, acknowledging its potential to prevent emergency incidents and promote self-repairability, but some express concerns about patent protection and positioning as a luxury product.",
+        "summary": "Commenters appreciate the innovation and potential life-saving impact of airtag-compatible batteries with anti-burn guards, while others express concerns about patent implications and the positioning of this product as a luxury item.",
         "pros": [
-          "Prevents emergency incidents",
-          "Promotes self-repairability",
-          "Mandate that motor oil tastes worse"
+          "Prevent ingestion burns",
+          "More useful innovation than AI gadgets",
+          "Could stifle other brands from implementing anti-burn guards"
         ],
         "cons": [
-          "Patent protection could stifle other brands",
-          "Positioned as a specialty/luxury product"
+          "Patent could stifle competition",
+          "Positioned as a specialty/luxury product",
+          "Some batteries sold online are fakes"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Regulation of battery safety",
-          "Self-repairability",
-          "Ingestion burns prevention"
+          "The new airtag-compatible batteries with anti-burn guards could prevent emergency incidents and save lives.",
+          "There is a concern that this technology's patent could limit the availability of similar products from other brands.",
+          "Some commenters feel that the product is marketed as a luxury item, making it inaccessible to those who need it most."
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Energizer Launches AirTag-Compatible Batteries That Prevent Ingestion Burns",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1t5yf1y/energizer_launches_airtagcompatible_batteries/",
-        "scrapedAt": "2026-06-14T12:03:31.485Z"
+        "scrapedAt": "2026-06-14T20:03:52.258Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-14T12:03:31.497Z",
+    "lastUpdated": "2026-06-14T20:03:52.265Z",
     "insights": [
       {
         "product": "Samsung Odyssey G5 27\" 165Hz Curved",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users are considering upgrading to a new monitor and are weighing options such as the Samsung Odyssey G5 27",
-        "pros": [
-          "good motion performance",
-          "cheap ($380)"
-        ],
-        "cons": [
-          "hard to find in the US",
-          "more expensive than budget ($330)"
-        ],
+        "summary": "Users are considering purchasing a new 27",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "some countries have it around $200 on sale",
-          " Xiaomi G Pro 27i is a viable alternative with fixed issues and mini-LED technology"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 5,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Help picking a monitor. Upgrading from 24\", 1080p, 165hz",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1u37zja/help_picking_a_monitor_upgrading_from_24_1080p/",
-        "scrapedAt": "2026-06-14T12:03:31.486Z"
+        "scrapedAt": "2026-06-14T20:03:52.258Z"
       }
     ]
   }
