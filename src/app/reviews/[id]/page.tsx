@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { products, affiliateUrl, amazonImageUrl, categoryEmoji } from "@/data/products";
+import { products, affiliateUrl, amazonImageUrl, categoryEmoji, liveReviewCount } from "@/data/products";
 import { reviews } from "@/data/reviews";
 import { getArticleBySlug } from "@/data/articles";
 import productHealth from "@/data/product-health.json";
@@ -115,7 +115,7 @@ export default function ReviewPage({ params }: Props) {
               {product.name} Review
             </h1>
             <p className="text-sm text-gray-400 mb-3">
-              <span className="text-yellow-400">★</span> {product.rating} · {product.reviewCount.toLocaleString()} Amazon ratings
+              <span className="text-yellow-400">★</span> {product.rating} · {liveReviewCount(product.asin, product.reviewCount).toLocaleString()} Amazon ratings
               {product.badge && <span className="ml-2 text-blue-400 font-semibold">{product.badge}</span>}
             </p>
             <div className="flex flex-wrap items-center gap-3">

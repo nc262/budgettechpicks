@@ -10,6 +10,7 @@ import productHealth from "@/data/product-health.json";
 import redditInsightsData from "@/data/reddit-insights.json";
 import dealRadarData from "@/data/deal-radar.json";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import { budgetGuides } from "@/data/budget-guides";
 
 interface Deal {
   product: string;
@@ -338,6 +339,25 @@ export default function HomePage() {
 
         {/* Newsletter */}
         <NewsletterSignup className="mb-14" />
+
+        {/* Shop by budget — programmatic high-intent guides */}
+        {budgetGuides.length > 0 && (
+          <section className="mb-14">
+            <h2 className="text-2xl font-black text-white mb-2">Shop by Budget</h2>
+            <p className="text-gray-400 mb-6 text-sm">Straight to the picks at your price ceiling — ranked, in stock, no scrolling.</p>
+            <div className="flex flex-wrap gap-2.5">
+              {budgetGuides.map((g) => (
+                <Link
+                  key={g.slug}
+                  href={`/best/${g.slug}`}
+                  className="bg-gray-900 border border-gray-700/50 hover:border-blue-500/50 hover:text-blue-300 text-gray-300 text-sm font-semibold px-3.5 py-2 rounded-xl transition-all"
+                >
+                  {g.category} under ${g.threshold}
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Category grid */}
         <section className="mb-14">

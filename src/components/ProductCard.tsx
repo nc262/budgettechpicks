@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Product, affiliateUrl, amazonImageUrl, amazonImageFallback, amazonImageFallback2, amazonImageHighRes, categoryEmoji, categoryColor } from "@/data/products";
+import { Product, affiliateUrl, amazonImageUrl, amazonImageFallback, amazonImageFallback2, amazonImageHighRes, categoryEmoji, categoryColor, liveReviewCount } from "@/data/products";
 import productHealth from "@/data/product-health.json";
 import salesVelocity from "@/data/sales-velocity.json";
 import { getReview } from "@/data/reviews";
@@ -151,7 +151,7 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
                   ))}
                 </div>
                 <span className="text-xs text-gray-400">
-                  {product.rating} · {product.reviewCount.toLocaleString()} Amazon ratings
+                  {product.rating} · {liveReviewCount(product.asin, product.reviewCount).toLocaleString()} Amazon ratings
                 </span>
               </div>
             </div>

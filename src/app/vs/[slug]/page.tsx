@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { vsPages, getVsPage } from "@/data/vs-pages";
-import { affiliateUrl, amazonImageUrl, Product } from "@/data/products";
+import { affiliateUrl, amazonImageUrl, Product, liveReviewCount } from "@/data/products";
 import { reviews } from "@/data/reviews";
 import productHealth from "@/data/product-health.json";
 import AdSlot from "@/components/AdSlot";
@@ -43,7 +43,7 @@ function ContenderCard({ product }: { product: Product }) {
       <img src={imgUrl} alt={product.name} width={120} height={120} loading="lazy" className="w-28 h-28 object-contain rounded-xl bg-gray-800 mb-3" />
       <p className="font-bold text-white leading-snug mb-1">{product.name}</p>
       <p className="text-xs text-gray-400 mb-1">
-        <span className="text-yellow-400">★</span> {product.rating} · {product.reviewCount.toLocaleString()} ratings
+        <span className="text-yellow-400">★</span> {product.rating} · {liveReviewCount(product.asin, product.reviewCount).toLocaleString()} ratings
       </p>
       <p className="text-xl font-black text-blue-400 mb-3">{product.price}</p>
       <div className="flex flex-col gap-2 w-full mt-auto">

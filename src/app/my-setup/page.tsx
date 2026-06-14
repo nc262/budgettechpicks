@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SetupItemImage from "@/components/SetupItemImage";
+import { affiliateUrl } from "@/data/products";
 
 export const metadata: Metadata = {
   title: "My Actual Setup — DevOps Engineer Daily Gear",
@@ -37,7 +38,7 @@ const SETUP: SetupCategory[] = [
         tag: "The Centerpiece",
         asin: "B09FBJT84P",
         imageUrl: "https://m.media-amazon.com/images/P/B09FBJT84P.01._SX300_QL70_.jpg",
-        amazonUrl:"https://www.amazon.com/s?k=Samsung+57+Odyssey+Neo+G9+LS57CG952NNXZA&tag=totaltechpicks-20",
+        amazonUrl:"https://www.amazon.com/s?k=Samsung+57+Odyssey+Neo+G9+LS57CG952NNXZA",
       },
     ],
   },
@@ -58,7 +59,7 @@ const SETUP: SetupCategory[] = [
         tag: "Daily Driver",
         asin: "B07GBZ4Q68",
         imageUrl: "https://m.media-amazon.com/images/P/B07GBZ4Q68.01._SX300_QL70_.jpg",
-        amazonUrl: "https://www.amazon.com/dp/B07GBZ4Q68?tag=totaltechpicks-20",
+        amazonUrl: "https://www.amazon.com/dp/B07GBZ4Q68",
         siteUrl: "/best-gaming-gear-under-50",
       },
       {
@@ -67,7 +68,7 @@ const SETUP: SetupCategory[] = [
         tag: "Daily Driver",
         asin: "B07NY9ZT92",
         imageUrl: "https://m.media-amazon.com/images/P/B07NY9ZT92.01._SX300_QL70_.jpg",
-        amazonUrl: "https://www.amazon.com/dp/B07NY9ZT92?tag=totaltechpicks-20",
+        amazonUrl: "https://www.amazon.com/dp/B07NY9ZT92",
       },
     ],
   },
@@ -101,7 +102,7 @@ const SETUP: SetupCategory[] = [
         tag: "Daily Driver",
         asin: "B08DF98XFH",
         imageUrl: "https://m.media-amazon.com/images/P/B08DF98XFH.01._SX300_QL70_.jpg",
-        amazonUrl: "https://www.amazon.com/dp/B08DF98XFH?tag=totaltechpicks-20",
+        amazonUrl: "https://www.amazon.com/dp/B08DF98XFH",
       },
       {
         name: "HECATE G1500 Gaming Speakers",
@@ -109,7 +110,7 @@ const SETUP: SetupCategory[] = [
         tag: "Solid Value",
         asin: "B09KWTF8YN",
         imageUrl: "https://m.media-amazon.com/images/P/B09KWTF8YN.01._SX300_QL70_.jpg",
-        amazonUrl: "https://www.amazon.com/dp/B09KWTF8YN?tag=totaltechpicks-20",
+        amazonUrl: "https://www.amazon.com/dp/B09KWTF8YN",
       },
     ],
   },
@@ -123,7 +124,7 @@ const SETUP: SetupCategory[] = [
         tag: "Does The Job",
         asin: "B07W3T6VJV",
         imageUrl: "https://m.media-amazon.com/images/P/B07W3T6VJV.01._SX300_QL70_.jpg",
-        amazonUrl: "https://www.amazon.com/dp/B07W3T6VJV?tag=totaltechpicks-20",
+        amazonUrl: "https://www.amazon.com/dp/B07W3T6VJV",
         siteUrl: "/best-budget-webcams",
       },
     ],
@@ -138,7 +139,7 @@ const SETUP: SetupCategory[] = [
         tag: "Love It",
         asin: "B0G6DX394S",
         imageUrl: "https://m.media-amazon.com/images/P/B0G6DX394S.01._SX300_QL70_.jpg",
-        amazonUrl: "https://www.amazon.com/dp/B0G6DX394S?tag=totaltechpicks-20",
+        amazonUrl: "https://www.amazon.com/dp/B0G6DX394S",
       },
     ],
   },
@@ -199,7 +200,10 @@ export default function MySetupPage() {
             </h2>
             <div className="space-y-4">
               {cat.items.map((item) => {
-                const buyUrl = item.amazonUrl ?? item.externalUrl;
+                // Route Amazon links through the central affiliate helper (one tag source);
+                // derive ASIN from the link when not set explicitly.
+                const derivedAsin = item.asin ?? item.amazonUrl?.match(/\/dp\/([A-Z0-9]{10})/)?.[1];
+                const buyUrl = item.amazonUrl ? affiliateUrl(item.name, derivedAsin) : item.externalUrl;
                 const isExternal = !item.amazonUrl && !!item.externalUrl;
                 const tagStyle = TAG_STYLES[item.tag] ?? "bg-gray-700/50 border-gray-600/50 text-gray-300";
 

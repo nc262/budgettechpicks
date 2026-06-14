@@ -477,6 +477,25 @@ if (!DRY_RUN && newPinAsins.length) {
   }
 }
 
+// Validate before committing — never push data that would break the production build.
+function validateBeforeCommit() {
+  for (const f of ["src/data/auto-products.json", "src/data/deal-radar.json"]) {
+    const parsed = JSON.parse(readFileSync(join(CLONE_DIR, f), "utf8")); // throws on malformed JSON
+    if (f.endsWith("auto-products.json") && !Array.isArray(parsed)) throw new Error(`${f} is not an array`);
+  }
+  const ts = readFileSync(join(CLONE_DIR, "src/data/products.ts"), "utf8");
+  if (!/export const products: Product\[\] = \[/.test(ts)) throw new Error("products.ts: array declaration missing");
+  if (!/\n\];/.test(ts)) throw new Error("products.ts: array close `];` missing");
+  if (!/export function getProductsByArticle/.test(ts)) throw new Error("products.ts: trailing helpers missing (structure corrupted)");
+  if (promoted && (ts.split(promoted.asin).length - 1) < 1) throw new Error(`products.ts: promoted asin ${promoted.asin} not found`);
+}
+try {
+  validateBeforeCommit();
+} catch (e) {
+  log(`VALIDATION FAILED — aborting commit (working clone will reset next run): ${e.message}`);
+  process.exit(1);
+}
+
 // Single commit for everything that changed tonight
 const DATA_PATHS = "src/data/auto-products.json src/data/deal-radar.json src/data/products.ts public/images/pinterest/auto";
 const changed = sh(`git -C "${CLONE_DIR}" status --porcelain -- ${DATA_PATHS}`);

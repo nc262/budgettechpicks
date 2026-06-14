@@ -3,6 +3,7 @@ import { articles } from "@/data/articles";
 import { products } from "@/data/products";
 import { reviews } from "@/data/reviews";
 import { vsPages } from "@/data/vs-pages";
+import { budgetGuides } from "@/data/budget-guides";
 
 const BASE = "https://totaltechpicks.com";
 
@@ -30,6 +31,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  const budgetPages = budgetGuides.map((g) => ({
+    url: `${BASE}/best/${g.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
   return [
     { url: BASE, lastModified: new Date(), changeFrequency: "daily", priority: 1.0 },
     { url: `${BASE}/my-setup`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
@@ -38,5 +46,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...categoryPages,
     ...reviewPages,
     ...versusPages,
+    ...budgetPages,
   ];
 }

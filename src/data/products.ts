@@ -1,3 +1,5 @@
+import salesVelocity from "./sales-velocity.json";
+
 export interface Product {
   id: string;
   name: string;
@@ -15,6 +17,20 @@ export interface Product {
 }
 
 const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "totaltechpicks-20";
+
+// Live Amazon rating counts captured by the weekly sales-velocity tracker.
+// Keeps displayed social proof current instead of frozen at authoring time.
+const velocityHistory = (salesVelocity as { history?: Record<string, Record<string, number>> }).history ?? {};
+
+export function liveReviewCount(asin: string, fallback: number): number {
+  const snaps = velocityHistory[asin];
+  if (!snaps) return fallback;
+  const dates = Object.keys(snaps).sort();
+  const latest = dates.length ? snaps[dates[dates.length - 1]] : undefined;
+  // Use the live count only when it's at least the authored figure — a scrape that
+  // returns a smaller number is more likely a parse miss than products losing ratings.
+  return typeof latest === "number" && latest >= fallback ? latest : fallback;
+}
 
 export function affiliateUrl(name: string, asin?: string, isLive?: boolean): string {
   if (asin && isLive !== false) return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}`;

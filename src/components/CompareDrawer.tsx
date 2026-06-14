@@ -1,6 +1,6 @@
 "use client";
 
-import { Product, affiliateUrl, amazonImageUrl } from "@/data/products";
+import { Product, affiliateUrl, amazonImageUrl, liveReviewCount } from "@/data/products";
 import productHealth from "@/data/product-health.json";
 
 interface Props {
@@ -43,7 +43,7 @@ export default function CompareDrawer({ products, onRemove, onClear }: Props) {
         return (
           <div className="w-full">
             <ReviewBar rating={product.rating} />
-            <p className="text-xs text-gray-400 mt-1">{product.reviewCount.toLocaleString()} reviews</p>
+            <p className="text-xs text-gray-400 mt-1">{liveReviewCount(product.asin, product.reviewCount).toLocaleString()} reviews</p>
           </div>
         );
       case "reviews":

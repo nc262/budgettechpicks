@@ -1,4 +1,4 @@
-import { Product, affiliateUrl, amazonImageUrl } from "@/data/products";
+import { Product, affiliateUrl, amazonImageUrl, liveReviewCount } from "@/data/products";
 import productHealth from "@/data/product-health.json";
 
 interface Props {
@@ -54,7 +54,7 @@ export default function ComparisonTable({ products }: Props) {
                   <td className="px-4 py-3 whitespace-nowrap">
                     <span className="text-yellow-400">★</span>{" "}
                     <span className="text-gray-200 font-bold">{p.rating}</span>{" "}
-                    <span className="text-gray-500 text-xs">({p.reviewCount.toLocaleString()})</span>
+                    <span className="text-gray-500 text-xs">({liveReviewCount(p.asin, p.reviewCount).toLocaleString()})</span>
                   </td>
                   <td className="px-4 py-3 text-gray-400 hidden md:table-cell">{p.pros[0]}</td>
                   <td className="px-4 py-3 text-right">

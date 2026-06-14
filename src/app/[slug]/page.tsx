@@ -363,7 +363,7 @@ export default function ArticlePage({ params }: Props) {
                     {pick.description && <p className="text-xs text-gray-400 mt-1.5 leading-relaxed">{pick.description}</p>}
                   </div>
                   <a
-                    href={`https://www.amazon.com/dp/${pick.asin}?tag=totaltechpicks-20`}
+                    href={affiliateUrl(pick.name, pick.asin)}
                     target="_blank" rel="noopener noreferrer sponsored"
                     className="shrink-0 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold text-xs px-3 py-2 rounded-lg transition-all"
                   >
