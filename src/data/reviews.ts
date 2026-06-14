@@ -248,6 +248,152 @@ export const reviews: Record<string, OurTake> = {
     longTerm: "The hybrid optical-mechanical switches address the double-click failures that hit the original GPX at scale — early-adopter reports across two years are clean. PTFE feet and a swappable shell keep it serviceable.",
     watchOut: "No RGB, no weight system, no extra buttons — minimalism is the product, and feature-seekers will feel shortchanged. The symmetric shape has no thumb rest; Basilisk-style ergo fans won't convert.",
   },
+
+  // ── Wave 2: highest-traffic products across categories ──────────────────
+  "ps5-dualsense-controller": {
+    whyItWins: "The DualSense did something controllers hadn't in years: it made you feel the game. Adaptive triggers that stiffen as you draw a bow and haptics precise enough to distinguish rain from gravel turn rumble from a buzz into information. Even on PC, where the fancy features are hit-or-miss, it's a superbly comfortable pad.",
+    whoItsFor: "PS5 owners (obviously) and PC players who want the best-feeling controller in the box and will tolerate occasional Bluetooth/wired fiddling for the haptics. Steam supports it natively, which covers most PC libraries.",
+    longTerm: "Build quality is a clear step up from the DualShock 4, but stick drift remains the category's unsolved disease — budget on developing it in 1–2 years of heavy play. Sony's warranty process exists but is slow; many owners just rebuild sticks for a few dollars.",
+    watchOut: "Battery life is mediocre (~6–8 hours) thanks to the haptics — a charging cable or dock is effectively mandatory. On PC, adaptive triggers and haptics only work in a minority of titles; don't buy it expecting them everywhere.",
+  },
+  "xbox-wireless-controller": {
+    whyItWins: "The reliability default. The Xbox pad's shape is the one most hands find instantly right, the battery sips power, and it pairs cleanly with Xbox, PC, phones, and tablets over Bluetooth. It's the controller you hand a guest without explaining anything.",
+    whoItsFor: "Xbox and PC players, Game Pass streamers, and anyone who wants one controller that works everywhere with zero drama. The textured grips on current models suit larger hands especially well.",
+    longTerm: "These are workhorses — units survive years of nightly use, and the AA-battery design (love it or hate it) means no internal pack to degrade. Stick drift can still appear eventually, but later than most rivals in our reading of owner reports.",
+    watchOut: "AA batteries in 2026 feel dated — budget for a rechargeable kit, which erases the cost gap with the DualSense. No 3.5mm jack on the very oldest units; check the model if a wired headset matters.",
+  },
+  "anker-soundcore-mini": {
+    whyItWins: "A genuinely good speaker the size of a soda can for around $26. The Soundcore Mini punches absurdly above its size with surprisingly full sound, a metal grille that survives a backpack, and 15-hour battery. It's the 'just keep one in the bag' speaker.",
+    whoItsFor: "Anyone who wants portable sound without thinking about it — desk, shower shelf, picnic table, dorm. Bass-heads and party hosts should look at the JBL Charge 5; this is about convenience and value, not volume.",
+    longTerm: "Tens of thousands of owners, and the failure rate is famously low — these things just keep working. The micro-USB charging on older stock is the only real age tell; the battery outlasts most people's interest in it.",
+    watchOut: "It's mono and tops out at modest volume — great for a room, not a backyard. Don't expect deep bass from a can-sized driver; it's clean and balanced, not thumping.",
+  },
+  "kindle-paperwhite-5": {
+    whyItWins: "The Paperwhite is the e-reader that got everything right: a glare-free 6.8\" 300ppi screen that reads like paper, weeks of battery, full waterproofing for the bath and beach, and a warm front light that won't wreck your sleep. It disappears and leaves just the book.",
+    whoItsFor: "Anyone who reads more than a few books a year, travelers who don't want to haul paperbacks, and bedtime readers who want the adjustable warm light. Heavy comic/PDF readers want a bigger screen (Scribe or a tablet).",
+    longTerm: "Kindles routinely last 5+ years; the battery is the slow limit and it's a long one. Amazon's content ecosystem isn't going anywhere, which is exactly why some prefer Kobo — know which side of that you're on before buying.",
+    watchOut: "The cheaper configuration shows lock-screen ads unless you pay to remove them — factor that in. It's locked to Amazon's store and formats; library/EPUB users will do some converting.",
+  },
+  "airpods-3rd-gen": {
+    whyItWins: "For iPhone users who find in-ear tips uncomfortable, the open-fit AirPods 3 are the sweet spot — spatial audio, sweat resistance, and that one-tap Apple pairing magic, without jamming silicone into your ear canal. They vanish on your head and just work across all your Apple devices.",
+    whoItsFor: "iPhone owners who dislike the sealed feel of the Pro and don't need active noise cancellation. If you commute or want ANC, the AirPods Pro 2 are the better buy; if you hate eartips, these win.",
+    longTerm: "AirPods batteries are the known lifespan ceiling — 2–3 years before noticeably shorter playtime, and they're not user-replaceable. Apple's trade-in/service softens it slightly, but plan on them being a consumable.",
+    watchOut: "The open fit means no passive isolation — on a noisy train, music fights the world and loses. And the value proposition collapses on Android, where they lose nearly every smart feature.",
+  },
+  "apple-airpods-pro-2": {
+    whyItWins: "The most complete earbud for anyone in Apple's world. The H2 chip's noise cancellation rivals over-ears, Adaptive Transparency tames sudden loud sounds, and the USB-C case plus hearing-aid-grade features make these closer to a health device than a toy. Pairing and handoff are effortless.",
+    whoItsFor: "iPhone owners, full stop — commuters, travelers, gym-goers. Their ANC and fit suit almost everyone. Android users should buy the Sony WF-1000XM5 instead; half the magic here is iOS-only.",
+    longTerm: "Same battery-aging reality as all earbuds (2–3 strong years), but Apple's firmware support and Find My precision are best-in-class, and the silicone tips are cheap, replaceable consumables. The USB-C case ended the old Lightning annoyance.",
+    watchOut: "Premium price for features you only fully unlock on Apple hardware. The eartip fit test matters — a poor seal guts both the ANC and the bass, so run Apple's fit check.",
+  },
+  "amazon-fire-tv-stick-4k": {
+    whyItWins: "The cheapest competent way to make any TV smart and fast. The 4K Stick streams HDR cleanly, the remote has real TV/volume control, and Alexa voice search actually finds what you mean. For ~$50 it fixes a sluggish smart TV overnight.",
+    whoItsFor: "Anyone with a dumb TV, a slow built-in smart platform, or an Alexa household. Apple-ecosystem die-hards may prefer Apple TV 4K; cord-cutters and Prime members are the perfect fit here.",
+    longTerm: "These last for years and keep getting software updates; the usual reason to replace is wanting the newer Max's extra speed, not failure. Tucked behind the TV on the included HDMI extender, it's out of sight and out of mind.",
+    watchOut: "The interface pushes Amazon content and ads hard — it's a storefront as much as a launcher. It's locked to Amazon's ecosystem feel; if that bothers you, Google TV or Apple TV are calmer.",
+  },
+  "anker-powercore-20100": {
+    whyItWins: "Twenty thousand milliamp-hours of trustworthy Anker capacity — enough to refill a phone four-plus times or top a tablet — with the brand's reliable cells and a price that undercuts flashier banks. It's the 'weekend away, no outlet' insurance policy.",
+    whoItsFor: "Travelers, festival-goers, and anyone who charges multiple devices between outlets. If you only ever top a phone once and want pocketable, the PowerCore 10000 is the smarter, lighter buy.",
+    longTerm: "Anker cells age gracefully — expect ~80% capacity after a couple of years of regular cycles. The brick-like build shrugs off drops that would kill a phone; it'll outlast several of the devices it charges.",
+    watchOut: "It's heavy and recharges slowly over its older input — fine as a base-camp bank, not a fast-turnaround one. Airlines cap you at 100Wh; this sits under it, but it's the big one in your bag.",
+  },
+  "anker-wireless-charger-pad": {
+    whyItWins: "A no-nonsense Qi pad that just charges — no hunting for the sweet spot, no buzzing, no cooking your phone. Anker's reliability at a low price made this the default 'set it on the nightstand' charger for tens of thousands of people.",
+    whoItsFor: "Anyone with a Qi phone who wants to drop-and-go at a desk or bedside. iPhone MagSafe devotees who want magnetic alignment should step up to a MagSafe puck; for everyone else this is plenty.",
+    longTerm: "Solid-state with no moving parts — these run for years. The soft pad surface resists scuffs and grips the phone; the only real aging is dust on the coil, which wipes off.",
+    watchOut: "Wireless charging is slower and warmer than cable, and you must supply a capable wall adapter — the pad alone won't hit rated speed. Thick or metal cases can block it; check yours.",
+  },
+  "jbl-charge-5-speaker": {
+    whyItWins: "The portable speaker that does it all: genuinely big, bassy sound, IP67 dust-and-water ruggedness, 20-hour battery, and a built-in power bank to charge your phone. It's the one you grab for the beach, the shower, and the backyard alike.",
+    whoItsFor: "Anyone who wants real volume and bass outdoors and doesn't mind the heft. If you want pocketable and cheap, the Anker Soundcore Mini is the call; the Charge 5 is for filling a space.",
+    longTerm: "JBL's rugged line is built to be abused — owners report years of poolside and campsite use. The battery is the eventual limit, but 20 hours of runtime means infrequent cycles and a long life.",
+    watchOut: "It's a chunky brick, not a pocket speaker, and the price reflects the feature set. JBL's newer models occasionally fragment the app's multi-speaker pairing across generations — stick within a generation for stereo pairs.",
+  },
+  "google-nest-hub-2nd-gen": {
+    whyItWins: "A smart display that earns its counter space: a genuinely good photo frame, a hands-free kitchen recipe assistant, a whole-home control panel, and — uniquely — sleep tracking with no wearable via Soli radar. The screen turns Google Assistant from a voice into a dashboard.",
+    whoItsFor: "Google/Nest households, kitchens, and bedside tables. Alexa homes should buy the Echo Show instead; this only shines if you're already in Google's ecosystem.",
+    longTerm: "Google's smart-display support has been steady, and the fabric-and-glass build ages well on a counter. The one strategic caution: Google has a history of sunsetting hardware lines, so it's a bet on continued support.",
+    watchOut: "No camera — great for bedroom privacy, a dealbreaker if you wanted video calls (the Echo Show has one). Free sleep sensing was time-limited and may now require a Fitbit subscription; verify current terms.",
+  },
+  "redragon-k552-keyboard": {
+    whyItWins: "The $40 mechanical keyboard that introduced a generation to the hobby. Loud blue switches, a metal backplate that feels far costlier than it is, and tank-like build — the K552 is loud, clicky, fun, and almost impossible to kill.",
+    whoItsFor: "First-time mechanical buyers, budget battlestations, and anyone who wants that clack without spending real money. Typists who value refinement (or quiet) should jump to a Keychron; this is about cheap, durable fun.",
+    longTerm: "The steel frame means it survives drops and years of abuse that crack pricier plastic boards. Switches aren't hot-swappable, so a dead switch means soldering — but at this price, owners usually just keep using it.",
+    watchOut: "Blue switches are genuinely loud — your housemates and your Zoom calls will hear every keystroke. Keycaps are basic ABS that shine over time, and software/customization is minimal versus QMK boards.",
+  },
+  "fifine-usb-podcast-mic": {
+    whyItWins: "Proof that decent USB audio doesn't cost much. The FiFine delivers clear, warm voice pickup with a real metal build and an included arm or stand for a fraction of a Blue Yeti's price. For starting a podcast or fixing meeting audio, it removes every excuse.",
+    whoItsFor: "Budget streamers, new podcasters, and remote workers who want to sound human without studying audio gear. Serious creators chasing broadcast quality should look at the RØDE NT-USB Mini or an XLR chain.",
+    longTerm: "Simple, sturdy, and cheap enough that there's little to regret — owners keep them as backup mics long after upgrading. No firmware or batteries to fail; it's a plug-and-talk device that ages well.",
+    watchOut: "Like all sensitive desk mics it hears your room — get close and treat echo, or it'll sound worse than a forgiving headset mic. The bundled arm is fine, not Elgato-sturdy; heavy daily mounting may loosen it.",
+  },
+  "razer-kiyo": {
+    whyItWins: "A webcam with the light built in. The Kiyo's ring light wraps the lens, so it solves the single biggest cause of bad video — poor lighting — without a separate panel. Flip it on and you go from murky to broadcast-lit instantly.",
+    whoItsFor: "Streamers and callers whose desks face away from a window, or anyone in a dim room who doesn't want to buy and mount a key light separately. In a well-lit room, a plain sensor like the Anker C200 gives a better image for the money.",
+    longTerm: "The ring light is the differentiator and it holds up; the autofocus motor is the part most likely to age. Razer Synapse adds control but, as ever, nags for updates.",
+    watchOut: "The image is good, not elite — you're partly paying for the light. The dial-mounted ring runs warm over long sessions, and the design is bulkier on a monitor than a bare webcam.",
+  },
+  "amazon-echo-show-10": {
+    whyItWins: "The smart display that follows you. Its motorized base rotates to keep you in frame on calls and faces you across the kitchen, the sound is the best of any Echo Show, and it doubles as a security camera you can pan remotely from anywhere.",
+    whoItsFor: "Alexa households that want a kitchen hub and video-calling centerpiece, and anyone who'll use the pan-and-zoom home-monitoring. If you don't want a camera or moving parts, a smaller Show or Echo Dot is cheaper and calmer.",
+    longTerm: "The motor is the one mechanical wear point to watch, but Amazon supports Show hardware with updates for years and the speaker quality keeps it useful as a music device long-term.",
+    watchOut: "It's big, pricey, and the motion can feel surveillance-y — the camera shutter and mic-off are worth using. Overkill if you just want timers and weather; this is the maximalist Echo.",
+  },
+  "beyerdynamic-dt770-pro": {
+    whyItWins: "A studio reference that's also a phenomenal long-haul comfort headphone. The DT 770 Pro's velour pads and legendary clamp-that-relaxes let you wear them for eight hours, while the closed-back design and crisp, detailed sound have kept them in studios for decades.",
+    whoItsFor: "Producers, editors, and desk workers who want accurate, isolating sound for marathon sessions and have (or will add) a DAC/amp. Plug-and-go laptop users wanting one-and-done should take the lower-impedance ATH-M50x.",
+    longTerm: "These are buy-it-for-a-decade headphones — every pad, cable, and headband part is a cheap, available replacement, so they're effectively immortal. Beyerdynamic's German build is famously durable.",
+    watchOut: "The 80-ohm version benefits from an amp and the 250-ohm version requires one — buy the impedance that matches your gear or you'll be disappointed. The treble is famously crisp to the point some find it sharp; audition if you're treble-sensitive.",
+  },
+  "kasa-smart-plug": {
+    whyItWins: "The gateway drug of smart homes, done right. Kasa plugs are cheap, set up in under a minute with no hub, work with both Alexa and Google, and reliably make any dumb lamp, fan, or coffee maker obey a schedule or your voice. Nothing about them fights you.",
+    whoItsFor: "Smart-home beginners and anyone who wants scheduling/voice control without committing to an ecosystem. The 4-pack is the standard recommendation — you'll always find one more thing to automate.",
+    longTerm: "TP-Link's Kasa line has years of stable firmware and a low failure rate; these quietly run for years. They're Wi-Fi direct, so no hub to obsolete — but that also means they lean on your router's 2.4GHz band.",
+    watchOut: "Wi-Fi (not Zigbee/Thread), so a flaky router means flaky plugs, and a big install can crowd your 2.4GHz network. They control whatever's plugged in but don't measure energy on the cheapest model — check the variant if you want monitoring.",
+  },
+  "bose-soundlink-flex": {
+    whyItWins: "Bose tuning in a rugged, pocketable slab. The Flex sounds noticeably richer and clearer than its size suggests — Bose's voice is warm and balanced, not just loud — and it's IP67-waterproof, floats, and clips to a bag. It punches above both its size and many bigger speakers.",
+    whoItsFor: "People who care about sound quality in a grab-and-go speaker and will pay a little extra for the Bose tuning. Pure value-per-watt shoppers should weigh the JBL Charge 5 (bigger, power bank); the Flex wins on refinement and portability.",
+    longTerm: "Rugged, sealed, and built to Bose's usual standard — these survive years of outdoor use. The battery (~12 hours) is the eventual limit, shorter than some rivals but plenty for day trips.",
+    watchOut: "Battery life and the lack of a built-in power bank trail the JBL Charge line, and there's no aux input. It's mono — fine for personal use, pair two for stereo.",
+  },
+  "bose-qc45": {
+    whyItWins: "The comfort-and-quiet champion. The QC45 is lighter on the head and clamps gentler than almost any rival, so it genuinely disappears on a long flight, and Bose's noise cancellation remains best-in-class at killing engine drone. For travel, comfort is a feature and Bose owns it.",
+    whoItsFor: "Frequent flyers, open-office workers, and anyone who's found other ANC headphones fatiguing to wear for hours. Spec-chasers who want the best sound and app features should compare the Sony WH-1000XM5.",
+    longTerm: "Bose build quality and multi-year firmware support are reliable, and the earpads are replaceable to refresh them down the line. The folding design travels well and survives bag life.",
+    watchOut: "Sound is tuned for easy listening, not detail — audiophiles will find it polite, and the app EQ is basic versus Sony's. Multipoint works but switching can be fussier than rivals.",
+  },
+  "jabra-elite-3": {
+    whyItWins: "The budget earbud that nails the fundamentals: secure fit, punchy sound, genuinely good call quality from four mics, and a comfortable shape — for around $40. Where many cheap buds cut the microphone, Jabra (a headset company) made calls the strength.",
+    whoItsFor: "Remote workers and anyone who takes a lot of calls on a budget, plus Android users (aptX support). If you specifically want noise cancellation at this price, the Soundcore P3i adds it; the Jabra counters with better calls and fit.",
+    longTerm: "Jabra's build and app support are a cut above generic budget buds, and the physical buttons (no finicky touch) age well. Same 2-year battery reality as the category, but the fundamentals don't degrade.",
+    watchOut: "No active noise cancellation (just passive seal) and no wireless charging case at this price. The companion app is lighter on features than Jabra's flagships — you're getting essentials done well, not extras.",
+  },
+  "kasa-smart-bulb-4pack": {
+    whyItWins: "Full-color smart lighting without the Hue tax or a hub. Four app- and voice-controllable bulbs for the price of one premium bulb, with 16 million colors, scheduling, and reliable Alexa/Google support straight out of the socket. It's the easiest, cheapest way to make a room programmable.",
+    whoItsFor: "Smart-home starters and budget setups who want color and scheduling in a few rooms. People planning a whole-house system with wall dimmers and instant response should invest in Philips Hue's hub ecosystem instead.",
+    longTerm: "Kasa's firmware is stable and the bulbs are rated for years of use; replacing a single bulb is cheap and they all share one app. Wi-Fi direct means no hub to obsolete.",
+    watchOut: "Being Wi-Fi, a dozen-plus bulbs can strain your 2.4GHz network and response is a beat slower than Hue's Zigbee. They also lose their schedule if cut at the wall switch — smart bulbs want constant power.",
+  },
+  "audio-technica-at2020usb": {
+    whyItWins: "A legitimate studio cardioid condenser with USB convenience. The AT2020USB+ brings Audio-Technica's respected capsule — clear, natural, detailed — to a plug-and-play package with headphone monitoring built in, often outperforming pricier 'gaming' USB mics in a normal room.",
+    whoItsFor: "Podcasters, voice-over folks, and streamers who want a real condenser without an audio interface. Two-people-one-mic podcast setups or those wanting hardware mute/gain may prefer a Blue Yeti's multi-pattern flexibility.",
+    longTerm: "Condenser capsules and metal bodies like this last decades; there's no battery or firmware to fail. It holds resale value well, and many owners later move it onto an XLR interface via the standard AT2020.",
+    watchOut: "As a sensitive cardioid condenser it wants a treated-ish room and a shock mount/pop filter to shine — bare on a desk it grabs keyboard and echo. Cardioid means one direction only; it's a solo mic, not a roundtable.",
+  },
+  "razer-blackwidow-v3-tkl": {
+    whyItWins: "A tenkeyless mechanical that balances gaming and typing without the deck-clearing footprint. Razer's Green switches give a crisp, clicky response, the doubleshot keycaps resist shine, and dedicated media controls plus solid RGB make it a complete battlestation board at a fair price.",
+    whoItsFor: "Gamers who want desk space for big mouse sweeps and a clicky feel, plus anyone who likes the TKL form. Quiet-office workers should pick a linear/silent switch board; Green switches are unmistakably audible.",
+    longTerm: "Razer's mechanical switches are rated for 80M presses and the V3 build is sturdy; the cable is fixed but thick. Synapse software is the usual double-edged sword — powerful, but resident and update-happy.",
+    watchOut: "Clicky and loud — not a meeting-friendly keyboard. Not hot-swappable, so a failed switch is a soldering job, and Synapse is effectively required for full RGB/macro control.",
+  },
+  "gopro-hero12-black": {
+    whyItWins: "The action camera that finally fixed the pain points: dramatically better battery life, 5.3K video with class-leading HyperSmooth stabilization, and built-in mounting that works with a decade of GoPro accessories. Footage looks gimbal-smooth handheld, underwater, or bar-mounted.",
+    whoItsFor: "Cyclists, divers, skiers, vloggers, and parents capturing chaos — anyone who needs a tiny, rugged, waterproof camera that stabilizes violent motion. Casual users who just want better-than-phone clips occasionally may find it (and its subscription nudges) more than they need.",
+    longTerm: "GoPros are built to be thrashed and the accessory ecosystem is enormous and cross-compatible, so the platform investment carries forward. The battery is a cheap, swappable consumable — carry spares and it lasts for years.",
+    watchOut: "GoPro pushes its cloud subscription hard (some deals even assume it), so read the pricing. Tiny sensors struggle in low light, and 5.3K footage demands big, fast memory cards and storage.",
+  },
 };
 
 export function getReview(productId: string): OurTake | undefined {
