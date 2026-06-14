@@ -8,6 +8,8 @@ import productHealth from "@/data/product-health.json";
 import redditInsightsData from "@/data/reddit-insights.json";
 import AdSlot from "@/components/AdSlot";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import ByLine from "@/components/ByLine";
+import { AUTHOR } from "@/data/author";
 
 const SITE_URL = "https://totaltechpicks.com";
 
@@ -60,15 +62,20 @@ export default function ReviewPage({ params }: Props) {
     (i) => i.product.toLowerCase().replace(/[^a-z0-9]+/g, "") === product.name.toLowerCase().replace(/[^a-z0-9]+/g, "")
   );
 
+  const updatedLabel = article?.updatedAt ?? "June 2026";
   const articleJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "Review",
     headline: `${product.name} Review`,
     description: take.whyItWins.split(".")[0],
-    author: { "@type": "Organization", name: "TotalTechPicks", url: SITE_URL },
+    author: { "@type": "Person", name: AUTHOR.name, url: `${SITE_URL}/about`, jobTitle: AUTHOR.role },
     publisher: { "@type": "Organization", name: "TotalTechPicks", url: SITE_URL },
+    datePublished: "2026-01-15",
+    dateModified: new Date().toISOString().slice(0, 10),
     mainEntityOfPage: `${SITE_URL}/reviews/${params.id}`,
     image: imgUrl.startsWith("http") ? imgUrl : `${SITE_URL}${imgUrl}`,
+    itemReviewed: { "@type": "Product", name: product.name, image: imgUrl.startsWith("http") ? imgUrl : `${SITE_URL}${imgUrl}` },
+    reviewRating: { "@type": "Rating", ratingValue: product.rating, bestRating: 5 },
   };
 
   const breadcrumbJsonLd = {
@@ -114,6 +121,7 @@ export default function ReviewPage({ params }: Props) {
             <h1 className="text-2xl sm:text-3xl font-black text-white leading-tight mb-2 tracking-tight">
               {product.name} Review
             </h1>
+            <ByLine updated={updatedLabel} className="mb-2" />
             <p className="text-sm text-gray-400 mb-3">
               <span className="text-yellow-400">★</span> {product.rating} · {liveReviewCount(product.asin, product.reviewCount).toLocaleString()} Amazon ratings
               {product.badge && <span className="ml-2 text-blue-400 font-semibold">{product.badge}</span>}

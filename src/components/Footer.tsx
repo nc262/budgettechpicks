@@ -38,6 +38,8 @@ export default function Footer() {
               <li><Link href="/" className="hover:text-blue-400 transition-colors">Home</Link></li>
               <li><Link href="/my-setup" className="hover:text-blue-400 transition-colors">⚙️ My Actual Setup</Link></li>
               <li><Link href="/about" className="hover:text-blue-400 transition-colors">About &amp; Methodology</Link></li>
+              <li><Link href="/editorial-policy" className="hover:text-blue-400 transition-colors">Editorial Policy</Link></li>
+              <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
               <li><Link href="/privacy-policy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
               <li><a href={`https://www.amazon.com?tag=${process.env.NEXT_PUBLIC_AMAZON_TAG ?? "totaltechpicks-20"}`} target="_blank" rel="noopener noreferrer sponsored" className="hover:text-blue-400 transition-colors">Shop Amazon</a></li>
             </ul>

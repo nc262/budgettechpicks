@@ -107,8 +107,10 @@ export default function HomePage() {
     Date.now() - new Date(radar.updatedAt).getTime() < 4 * 24 * 3600 * 1000;
   const liveDeals = radarFresh ? (radar.deals || []).slice(0, 4) : [];
 
-  // Most recent community intel across all guides — refreshed by the pipeline every 8 hours
-  const latestIntel: (IntelItem & { slug: string })[] = Object.entries(
+  // Most recent community intel across all guides — refreshed by the pipeline every 8 hours.
+  // Gated off during AdSense review (auto-generated summaries); re-enable with NEXT_PUBLIC_SHOW_AUTO_PICKS=1.
+  const showAutoContent = process.env.NEXT_PUBLIC_SHOW_AUTO_PICKS === "1";
+  const latestIntel: (IntelItem & { slug: string })[] = !showAutoContent ? [] : Object.entries(
     redditInsightsData as Record<string, { lastUpdated: string; insights: IntelItem[] }>
   )
     .flatMap(([slug, data]) => (data.insights || []).map((i) => ({ ...i, slug })))

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { AUTHOR } from "@/data/author";
 
 export const metadata: Metadata = {
   title: "About TotalTechPicks — Our Methodology",
@@ -90,10 +91,18 @@ export default function AboutPage() {
       </div>
 
       {/* Who's behind this */}
-      <section className="mb-12 bg-gray-900 rounded-2xl border border-gray-700/50 p-6">
-        <h2 className="text-2xl font-black text-white mb-4">⚙️ Who&apos;s behind this</h2>
+      <section className="mb-12 bg-gray-900 rounded-2xl border border-gray-700/50 p-6" id="author">
+        <div className="flex items-center gap-4 mb-5">
+          <span className="flex items-center justify-center w-14 h-14 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 font-black text-2xl shrink-0">
+            {AUTHOR.shortName.charAt(0)}
+          </span>
+          <div>
+            <h2 className="text-2xl font-black text-white leading-tight">{AUTHOR.name}</h2>
+            <p className="text-sm text-blue-400 font-semibold">{AUTHOR.role} · TotalTechPicks</p>
+          </div>
+        </div>
         <p className="text-gray-300 leading-relaxed mb-4">
-          I&apos;m a DevOps engineer running 3 computers off a single 57&quot; monitor and one keyboard. I spend probably too much time thinking about whether a product is actually worth what it costs — and now that obsession has a website.
+          I&apos;m a DevOps engineer running 3 computers off a single 57&quot; monitor and one keyboard. I spend probably too much time thinking about whether a product is actually worth what it costs — and now that obsession has a website. Every review here carries my name because I stand behind the picks.
         </p>
         <p className="text-gray-300 leading-relaxed mb-4">
           My hot take: most people wildly overspend on keyboards and mice. If you&apos;re not a competitive gamer, a wired setup with basic switches works perfectly and costs a fraction of the price. RGB does nothing except look cool. (I still bought the clicky wireless keyboard. My wife works from home now and deeply regrets that decision.)

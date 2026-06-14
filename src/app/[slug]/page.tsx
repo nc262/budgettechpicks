@@ -8,6 +8,8 @@ import AdSlot from "@/components/AdSlot";
 import HeroProductCard from "@/components/HeroProductCard";
 import ComparisonTable from "@/components/ComparisonTable";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import ByLine from "@/components/ByLine";
+import { AUTHOR } from "@/data/author";
 import { vsPages } from "@/data/vs-pages";
 import redditInsightsData from "@/data/reddit-insights.json";
 import productHealth from "@/data/product-health.json";
@@ -93,10 +95,16 @@ export default function ArticlePage({ params }: Props) {
       if (insight.productSlug) redditByProduct[insight.productSlug] = insight;
     }
   }
-  // Auto-discovered community picks for this slug (hidden if their listing goes dead)
-  const autoPicks = (autoProductsRaw as AutoProduct[]).filter(
-    p => p.articleSlug === params.slug && health[p.asin]?.isLive !== false
-  );
+  // Auto-discovered community picks for this slug (hidden if their listing goes dead).
+  // SHOW_AUTO_PICKS gates the auto-generated section off during AdSense review — these
+  // AI-written blurbs are the clearest "low value / auto-generated" trigger. Flip back
+  // to true (or set NEXT_PUBLIC_SHOW_AUTO_PICKS=1) once the site is approved.
+  const SHOW_AUTO_PICKS = process.env.NEXT_PUBLIC_SHOW_AUTO_PICKS === "1";
+  const autoPicks = SHOW_AUTO_PICKS
+    ? (autoProductsRaw as AutoProduct[]).filter(
+        p => p.articleSlug === params.slug && health[p.asin]?.isLive !== false
+      )
+    : [];
 
   const itemListJsonLd = {
     "@context": "https://schema.org",
@@ -189,6 +197,9 @@ export default function ArticlePage({ params }: Props) {
         <span>›</span>
         <span className="text-gray-300 font-semibold">{article.category}</span>
       </nav>
+
+      {/* Author byline — E-E-A-T */}
+      <ByLine updated={article.updatedAt} className="mb-4" />
 
       {/* Affiliate disclosure — required before any affiliate links */}
       <p className="text-xs text-gray-500 mb-8 leading-relaxed">
