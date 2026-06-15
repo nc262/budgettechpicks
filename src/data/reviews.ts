@@ -394,6 +394,152 @@ export const reviews: Record<string, OurTake> = {
     longTerm: "GoPros are built to be thrashed and the accessory ecosystem is enormous and cross-compatible, so the platform investment carries forward. The battery is a cheap, swappable consumable — carry spares and it lasts for years.",
     watchOut: "GoPro pushes its cloud subscription hard (some deals even assume it), so read the pricing. Tiny sensors struggle in low light, and 5.3K footage demands big, fast memory cards and storage.",
   },
+
+  // ── Wave 3: filling out the catalog ─────────────────────────────────────
+  "tonor-tc-30-usb-mic": {
+    whyItWins: "The mic that proves you don't need to spend much to stop sounding like a laptop. The TC-30 bundles a cardioid USB condenser, a desk tripod, a pop filter, and a shock mount for around $40 — clear, warm voice pickup with everything you need to start in one box.",
+    whoItsFor: "First-time streamers, students, and remote workers who want an instant upgrade over built-in mics without studying audio gear. Pros chasing broadcast polish should look at the RØDE NT-USB Mini or an XLR setup.",
+    longTerm: "There's nothing here to fail — no battery, no firmware — and the metal capsule holds up. The bundled tripod is the weak point; many owners eventually move it to a proper boom arm, which is the natural next upgrade.",
+    watchOut: "Like any sensitive desk condenser it hears the whole room — get close and tame echo or it'll sound worse than a headset. Cardioid means it captures one direction only; it's a solo mic, not a roundtable.",
+  },
+  "elgato-key-light": {
+    whyItWins: "The single biggest jump in on-camera quality you can buy. 2500+ lumens of edge-lit, fully diffused light with app- and Stream-Deck-controlled brightness and color temperature — it makes a $40 webcam look professional, because lighting matters more than the camera.",
+    whoItsFor: "Streamers, video-callers, and content creators who've maxed out what their camera can do and realized the room is the problem. If you have a bright window to face, that's the free version; this is the controllable, after-dark answer.",
+    longTerm: "LED panels like this run for years, and Elgato's software support and mounting ecosystem keep it relevant. The desk-clamp arm is sturdy enough to forget about once positioned.",
+    watchOut: "Pricey for 'a light,' and it's app/network-controlled — occasional Wi-Fi reconnect fiddling comes with the convenience. You ideally want two (key + fill) for even lighting, which doubles the cost.",
+  },
+  "aoc-27g2-ips-gaming": {
+    whyItWins: "The budget gaming monitor that punched so far above its price it became a cult pick. A genuine 144Hz IPS panel with good color and low input lag for around $180 — for years it was the default 'first real gaming monitor' recommendation, and it still over-delivers.",
+    whoItsFor: "Budget 1080p gamers and dual-monitor builders who want smooth, color-accurate panels without paying 1440p prices. If you're on a modern GPU and want sharper desktop space, step up to a 1440p panel instead.",
+    longTerm: "These have years of reliability behind them and the three-sided thin bezel still looks modern in a multi-monitor array. IPS panels of this generation age well with minimal backlight degradation.",
+    watchOut: "It's 1080p — sharp at 24–25\" but a touch soft at 27\". The included stand is tilt-only (no height), so budget for a VESA arm if ergonomics matter.",
+  },
+  "plasma-globe": {
+    whyItWins: "Pure desk theater for not much money. The classic glass sphere throws lightning to your fingertips, reacts to touch and sound, and still stops first-time visitors mid-sentence. It's nostalgia and physics in one cheap, satisfying object.",
+    whoItsFor: "Desk decorators, gift-buyers, and anyone who wants one conversation-starter that needs zero setup. Minimalists who keep a bare desk will find it gimmicky — this is for the personality-on-display crowd.",
+    longTerm: "Simple tech with little to break; the most common aging is the surface coating attracting dust. It's a novelty, so the real question is whether it stays charming past month two — for most people the touch/sound reactivity keeps it alive.",
+    watchOut: "It emits a faint electrical hum and can interfere with nearby touchscreens or speakers — don't sit it next to a trackpad. It's a toy, not a light source; manage expectations on brightness.",
+  },
+  "fiio-e10k-dac-amp": {
+    whyItWins: "The cheapest real upgrade an audio newcomer can make. This little USB DAC/amp cleans up your computer's noisy headphone output and supplies the power that demanding headphones need — a clearer, fuller, hiss-free sound for around $75, with a bass-boost switch for fun.",
+    whoItsFor: "Anyone running 80–250 ohm headphones (DT 770 Pro, etc.) from a laptop and wondering why they sound thin, plus desktop listeners bothered by motherboard hiss. AirPods/wireless users gain nothing here.",
+    longTerm: "Solid aluminum, no battery to die, and a fixed-purpose device that doesn't go obsolete — these run for many years as a set-and-forget desk fixture. FiiO's been refining this line for over a decade.",
+    watchOut: "It's desktop-only (USB-powered, not portable) and won't drive the very hungriest 300-ohm cans to their full potential — that's a step up the amp ladder. Overkill if your headphones are already efficient.",
+  },
+  "mountup-dual-monitor-arm": {
+    whyItWins: "Two monitors floating off the desk for the price most brands charge for one arm. The MountUp dual frees up the whole desk surface, brings both screens to eye level, and makes repositioning effortless — the single biggest ergonomic win for a two-screen setup, cheaply.",
+    whoItsFor: "Dual-monitor desk workers who want their neck at a healthy angle and their desk clear. If you run one heavy ultrawide or demand silky single-arm motion, the Ergotron LX is the premium single-arm move.",
+    longTerm: "Gas-spring arms in this price tier can sag slightly over a year with heavier monitors — fine for standard panels, worth checking weight ratings for big ones. The clamp and VESA hardware are standard and replaceable.",
+    watchOut: "Match your monitors' weight to the arm's per-arm rating or you'll fight droop. Cable management is basic versus premium arms, and very large/curved panels can collide in the middle.",
+  },
+  "jsaux-steam-deck-dock": {
+    whyItWins: "Turns a Steam Deck into a desktop in 30 seconds — 4K HDMI, gigabit Ethernet, three USB-A ports, and 100W pass-through charging — for a fraction of Valve's official dock. It also works as a plain USB-C hub for any laptop, so it pulls double duty.",
+    whoItsFor: "Steam Deck and ROG Ally owners who want couch-to-TV or desk docking, and anyone wanting a cheap second USB-C hub. If you never dock your handheld, you don't need it.",
+    longTerm: "JSAUX built a whole accessory ecosystem around the Deck and supports it well; the dock itself is simple and durable. The detachable cable design avoids the usual built-in-cable failure point.",
+    watchOut: "HDMI tops out at 4K60, so it's not for high-refresh external displays. As with any dock, charge quality depends on the brick you plug in — use a capable 100W USB-C charger.",
+  },
+  "anker-soundcore-liberty-4-nc": {
+    whyItWins: "Flagship features at a midrange price. Genuinely effective adaptive noise cancellation, punchy customizable sound, multipoint pairing, wireless charging, and long battery — Soundcore packed the things that used to cost $200 into a ~$80 earbud that embarrasses pricier rivals.",
+    whoItsFor: "Value-focused commuters and Android users who want real ANC and app EQ without AirPods Pro money. iPhone users who live in Apple's ecosystem still get smoother integration from the AirPods Pro 2.",
+    longTerm: "Soundcore's firmware support is the best in the budget-to-midrange tier, and the case/hinge quality is a step above cheap buds. Same 2–3 year battery arc as all earbuds, softened by the low replacement cost.",
+    watchOut: "The bass-forward default tuning needs an EQ tweak for neutral listeners. ANC is strong for the price but a notch below Sony/Bose flagships in the hardest environments.",
+  },
+  "lg-c3-oled-tv": {
+    whyItWins: "A 55-inch OLED that doubles as the ultimate console gaming display: perfect per-pixel blacks, 120Hz with VRR, near-instant response, and four HDMI 2.1 ports. For movies and big-screen gaming alike, nothing at this price delivers this picture.",
+    whoItsFor: "Console gamers and home-theater builders who game from the couch, and anyone who wants one screen that's elite at both film and play. Desk users wanting an ultrawide monitor should look at the Alienware QD-OLED instead.",
+    longTerm: "Modern OLED panel-care features have made burn-in a non-issue for mixed TV/gaming use within the warranty window, and LG's webOS gets years of updates. It holds its value better than most TVs.",
+    watchOut: "Static desktop UI all day (taskbars, HUDs) is still the burn-in risk case — it's a TV first. It's big and glossy, so control room light, and peak brightness trails Mini-LED in a bright sunlit room.",
+  },
+  "asus-proart-pa278cv": {
+    whyItWins: "Factory-calibrated color accuracy at a price creatives can actually justify. This 1440p IPS ProArt covers sRGB with a Delta-E under 2 out of the box, adds USB-C with 65W charging, and includes a genuinely good ergonomic stand — a color-work monitor without the color-work premium.",
+    whoItsFor: "Photo and video editors, designers, and developers who want accurate color and a one-cable laptop hookup. Pure gamers are better served by a 144Hz+ panel; this is tuned for accuracy over speed (75Hz).",
+    longTerm: "ProArt panels are built for professional duty cycles and age gracefully; the calibration holds well over years. USB-C charging future-proofs it as laptops standardize on the port.",
+    watchOut: "At 75Hz it's not a gaming display, and it's sRGB-focused — wide-gamut (Adobe RGB/DCI-P3) pro work wants a pricier model. The included hood is sold separately on some variants.",
+  },
+  "elgato-hd60x": {
+    whyItWins: "The capture card that just works for console streaming. It passes 4K60 HDR through to your TV with no lag while capturing 1080p60/4K30 to your PC, with flexible software support beyond Elgato's own — the reliable default for getting a PS5 or Switch into OBS.",
+    whoItsFor: "Console streamers and creators who record gameplay from a separate device. PC-only streamers capturing their own screen don't need a capture card at all.",
+    longTerm: "Elgato's capture line has a long track record and strong driver/software support across years and OS updates. No moving parts; it's a buy-once device until capture standards jump.",
+    watchOut: "It captures up to 4K30 (or 1080p60) — true 4K60 recording needs the pricier 4K models. You also need a reasonably powerful PC and fast storage to handle the footage smoothly.",
+  },
+  "anker-prime-power-bank": {
+    whyItWins: "A desk-in-a-bag. The Prime line pushes serious wattage (enough to fast-charge a laptop) across multiple ports at once, with a smart display showing exact power draw and remaining charge — it replaces the pile of bricks travelers used to carry.",
+    whoItsFor: "Power users who charge a laptop plus phones away from outlets — frequent flyers, digital nomads, conference-goers. If you only ever top a phone, the pocketable PowerCore 10000 is the smarter, lighter, cheaper buy.",
+    longTerm: "Anker's premium cells and build are made for heavy cycling; expect years of service. The matching charging base (sold for the line) makes refills painless and extends its usefulness on a desk.",
+    watchOut: "Heavy and expensive — overkill unless you genuinely charge laptops on the go, and near the airline 100Wh ceiling on the largest models. The smart display is lovely but adds a small standby drain.",
+  },
+  "wiz-smart-bulb-tunable": {
+    whyItWins: "Smart lighting at its lowest friction. WiZ bulbs connect over plain Wi-Fi with no hub, cost very little, and handle scheduling, dimming, and tunable white from warm to daylight through a simple app or voice — the cheapest way to make a room's lighting programmable.",
+    whoItsFor: "Budget smart-home starters who want schedules and voice control in a few fixtures without committing to an ecosystem or buying a bridge. Whole-home builders who want instant response and accessories should invest in Hue.",
+    longTerm: "Wi-Fi bulbs are simple and these have been stable, but a large install leans on your router's 2.4GHz band. No hub means nothing to obsolete; replacing one bulb is cheap.",
+    watchOut: "This variant is tunable white, not full color — check the model if you want RGB. Like all smart bulbs, cutting power at the wall switch takes them offline, and Wi-Fi response lags Zigbee/Thread slightly.",
+  },
+  "steelseries-arctis-nova-7": {
+    whyItWins: "The all-rounder wireless headset that nails the essentials: comfortable ski-goggle headband, a retractable mic that's genuinely clear, simultaneous 2.4GHz + Bluetooth so you hear game and phone at once, and strong battery. It does the most things well at its price.",
+    whoItsFor: "Multi-platform gamers who want one comfortable wireless headset across PC, console, and phone. Audiophiles wanting the absolute best wireless sound and a hot-swap battery should stretch to the Nova Pro.",
+    longTerm: "SteelSeries' Arctis comfort and build have a long reputation, and the replaceable headband strap extends life. The internal battery is the eventual limit, but it's a multi-year one.",
+    watchOut: "Sound is very good, not endgame, and there's no active noise cancellation. The software (Sonar/GG) is powerful but heavier than it needs to be on a PC.",
+  },
+  "flexispot-e7-standing-desk": {
+    whyItWins: "The standing desk that made sit/stand mainstream. A genuinely stable dual-motor frame with a high weight capacity and smooth, quiet height presets — the E7 holds a multi-monitor setup rock-steady at standing height where cheaper desks wobble, for a fair price.",
+    whoItsFor: "Anyone working long hours who wants to alternate sitting and standing, especially heavy-setup users (multiple monitors, gear). If you never stand, a fixed desk saves money; the value here is the motorized flexibility and stability.",
+    longTerm: "Dual-motor frames like this are built for years of daily cycling and FlexiSpot honors its multi-year frame warranty. The motors and presets are the parts to mind; owner reports on longevity are strong.",
+    watchOut: "It ships heavy and assembly is a real two-person, set-aside-an-hour job. The frame is the product — choose a quality top, and budget for cable management since raising the desk pulls every cable taut.",
+  },
+  "sennheiser-hd-650": {
+    whyItWins: "A two-decade audiophile reference for a reason: a famously natural, smooth, detailed midrange and an open soundstage that makes acoustic and vocal music feel real. The HD 650 is the headphone people stop upgrading at — the destination, not a step.",
+    whoItsFor: "Home listeners and mixing engineers who value accuracy and long-session comfort and own a proper headphone amp. Commuters and bass-heads should look elsewhere — these leak sound and need power.",
+    longTerm: "Every part — pads, cable, headband, even drivers — is replaceable and still sold, so these are effectively immortal; decades-old pairs run fine. Resale value barely moves, which tells you how durable the appeal is.",
+    watchOut: "Open-back means everyone near you hears your music and you hear the room — home use only. They genuinely require a DAC/amp; run them off a laptop jack and you'll wrongly think they're quiet and lifeless.",
+  },
+  "dell-s2722qc-4k": {
+    whyItWins: "A sharp 27-inch 4K IPS with USB-C that charges your laptop over the same cable carrying video — desk-clutter gone. Dependable color, a height-adjustable stand, and Dell's support and warranty make it the no-drama productivity and content-consumption monitor.",
+    whoItsFor: "Laptop-based professionals who want one-cable docking, crisp text for long workdays, and accurate-enough color for light creative work. Competitive gamers want a high-refresh panel; this is a 60Hz productivity display.",
+    longTerm: "Dell monitors are workhorses with strong panel longevity and a warranty (including dead-pixel coverage) that's among the best. USB-C charging keeps it relevant as laptops standardize on the port.",
+    watchOut: "60Hz only — fine for work and video, not for fast gaming. 4K at 27\" needs display scaling to keep UI readable, and the 65W USB-C power may not fully feed the hungriest workstation laptops under load.",
+  },
+  "steelseries-arctis-nova-pro": {
+    whyItWins: "A wireless headset system that removes every compromise: a swappable two-battery base station means you're never out of power, active noise cancellation, a near-flagship retractable mic, and multi-device switching from a desktop hub. It's the do-everything endgame.",
+    whoItsFor: "Serious gamers who want the best wireless experience and hate charging downtime, across PC and console. Most players don't need this much — the Nova 7 delivers the core experience for far less.",
+    longTerm: "The hot-swap battery system sidesteps the usual headset death (a worn internal cell you can't replace), which genuinely extends usable life for years. Build and comfort are top-tier SteelSeries.",
+    watchOut: "Expensive and feature-dense — you're paying for the base station and ANC most rivals omit. The Sonar software suite is powerful but a lot to manage, and it's overkill for casual use.",
+  },
+  "logitech-mx-keys-s": {
+    whyItWins: "The productivity keyboard professionals keep coming back to. Low-profile, perfectly-weighted keys with subtle dished caps make for fast, quiet, accurate typing; smart backlighting and three-device switching plus USB-C round it out. It's a joy to type on for eight hours.",
+    whoItsFor: "Writers, coders, and office workers who want a premium typing feel that won't annoy a shared room, and who juggle multiple computers. Gamers and mechanical-switch lovers will want a different board.",
+    longTerm: "MX-series peripherals routinely outlast the machines they're bought with; the rechargeable battery lasts weeks and the build doesn't loosen. Logitech Options+ keeps adding per-app customization over time.",
+    watchOut: "Not mechanical — if you crave tactile switch feel, this scratches a different itch. It's a full-size board (no compact option in this model), and the software is optional but unlocks the best features.",
+  },
+  "logitech-g502x-plus": {
+    whyItWins: "The legendary G502 shape, finally wireless and lighter. Eleven controls including the famous free-spin scroll wheel, Logitech's flawless Lightspeed wireless and HERO sensor, and crisp optical switches — it's the feature-rich gaming mouse for people who actually use the buttons.",
+    whoItsFor: "MMO/MOBA players, productivity power users, and palm-grippers with medium-to-large hands who want buttons and heft. Featherweight-chasing FPS purists should take the Superlight; this trades grams for capability.",
+    longTerm: "Optical switches dodge the double-click failure that aged earlier G502s, so longevity is much improved. PTFE feet and the durable shell wear well; the battery lasts long and recharges over USB-C.",
+    watchOut: "Still on the heavy side for a modern wireless mouse, and pricey. The dense button cluster is wasted if you won't program it — simpler hands should save money with the G305.",
+  },
+  "samsung-m8-smart-monitor": {
+    whyItWins: "A 4K monitor that's also a full smart TV with no PC required — stream apps, cast, even use it as a SmartThings hub, all through a strikingly thin, colorful design with a magnetic webcam. It collapses a monitor, a TV, and a streaming box into one tidy package.",
+    whoItsFor: "Dorms, small apartments, and clean-desk minimalists who want one screen that does work, streaming, and casual use. Color-critical creatives and high-refresh gamers should buy a dedicated monitor instead.",
+    longTerm: "Samsung supports its Tizen smart platform for years and the panel is a solid 4K VA/IPS depending on variant. The all-in-one nature is the risk: if one function dates, you replace the whole thing.",
+    watchOut: "60Hz and smart-TV-grade color, not a creator or gaming panel, and the OS shows ads like a Samsung TV. The slick stand is tilt-limited, so consider a VESA arm for ergonomics.",
+  },
+  "eufy-smart-lock-c254": {
+    whyItWins: "Keyless entry without a subscription. Fingerprint, keypad code, app, or physical key — the eufy opens however you need, stores everything locally (no monthly fee), and installs on a standard deadbolt in under half an hour. Convenience and privacy in one.",
+    whoItsFor: "Homeowners and long-term renters who want to ditch keys for family, guests, or dog-walkers without paying a cloud fee. Apartment dwellers who can't change hardware, or those needing deep HomeKit integration, should check compatibility first.",
+    longTerm: "eufy's local-storage approach and solid build have a good reliability record, and firmware updates have been steady. Battery life is months per charge; the physical-key backup means you're never locked out if electronics fail.",
+    watchOut: "Confirm it fits your door's backset and deadbolt before buying — fit is the #1 install issue. Fingerprint readers can struggle in extreme cold/wet, and any connected lock is a device to keep updated.",
+  },
+  "corsair-k70-pro-mini": {
+    whyItWins: "A 60% enthusiast keyboard that doesn't make you choose between compact and quality. Hot-swappable switches, dense doubleshot PBT keycaps, wireless plus wired, and per-key RGB in a footprint that frees huge mouse space — it's a tinkerer's board built to last.",
+    whoItsFor: "Gamers chasing desk space for low-sensitivity aim and keyboard hobbyists who want to swap switches without soldering. Anyone who relies on arrow/function keys daily should weigh the 60% layout's missing keys first.",
+    longTerm: "Hot-swap sockets mean a dead switch is a 10-second fix, not a dead board, and PBT caps resist the shine that ages cheaper keycaps — this is a buy-once, mod-forever board. Corsair's build is tank-like.",
+    watchOut: "The 60% layout drops arrows, function row, and nav cluster to fan-key layers — a real adjustment, and a dealbreaker for spreadsheet and productivity work. iCUE software is powerful but heavy.",
+  },
+  "rode-nt-usb-mini": {
+    whyItWins: "Studio-brand voice quality in a desktop-friendly package. RØDE's tighter cardioid pattern and built-in pop shield forgive untreated rooms better than most USB mics, the sound is broadcast-warm, and the magnetic desk stand and zero-latency monitoring make it plug-and-sound-great.",
+    whoItsFor: "Solo streamers, podcasters, and remote workers at a desk who want noticeably better, more room-forgiving sound than a Blue Yeti without going XLR. Two-people-one-mic setups want a multi-pattern mic instead.",
+    longTerm: "RØDE's build and reputation are studio-grade, and there's no battery or firmware to age — it holds value and keeps working for years. The capsule quality is the kind people keep after upgrading interfaces around it.",
+    watchOut: "Tight cardioid means you must stay fairly on-axis — drift off to the side and you fade. It's a focused solo mic with one pattern; flexibility-seekers pay more elsewhere.",
+  },
 };
 
 export function getReview(productId: string): OurTake | undefined {
