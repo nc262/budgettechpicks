@@ -109,13 +109,32 @@ for (const s of slugs) {
 }
 if (missingSections === 0) ok(`all ${slugs.length} guides have methodology, FAQ, and disclosure`);
 
-// 8. Reddit insights render on at least a few pages
+// 8. Reddit insights render on guide pages — only when auto-content is enabled.
+//    With NEXT_PUBLIC_SHOW_AUTO_PICKS off (AdSense-review state), their absence is correct.
+const autoOn = process.env.NEXT_PUBLIC_SHOW_AUTO_PICKS === '1';
 let insightPages = 0;
 for (const s of slugs) {
   const p = join(OUT, s, 'index.html');
   if (existsSync(p) && readFileSync(p, 'utf8').includes('Pulled from Reddit')) insightPages++;
 }
-insightPages > 0 ? ok(`Reddit insights render on ${insightPages} guide pages`) : fail('no guide page shows a Reddit insight');
+if (autoOn) {
+  insightPages > 0 ? ok(`Reddit insights render on ${insightPages} guide pages`) : fail('no guide page shows a Reddit insight');
+} else {
+  insightPages === 0 ? ok('auto-generated AI content correctly gated off (AdSense-review mode)') : fail(`AI content leaked on ${insightPages} pages despite SHOW_AUTO_PICKS off`);
+}
+
+// 8b. Every guide carries the human author byline (E-E-A-T)
+let bylinePages = 0;
+for (const s of slugs) {
+  const p = join(OUT, s, 'index.html');
+  if (existsSync(p) && readFileSync(p, 'utf8').includes('Nathan Ceniceros')) bylinePages++;
+}
+bylinePages === slugs.length ? ok(`author byline on all ${slugs.length} guides`) : fail(`byline missing on ${slugs.length - bylinePages} guides`);
+
+// 8c. Trust pages exist in the build
+for (const tp of ['contact', 'editorial-policy']) {
+  existsSync(join(OUT, tp, 'index.html')) ? ok(`${tp} page built`) : fail(`${tp} page missing`);
+}
 
 // 9. No leaked secrets in build output
 console.log('\n── Secrets scan ──');

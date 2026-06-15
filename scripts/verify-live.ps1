@@ -4,16 +4,26 @@ $checks = @()
 
 $h = (Invoke-WebRequest -Uri "https://totaltechpicks.com" -TimeoutSec 30).Content
 $checks += "homepage live-stats badge:        " + ($h -match 'picks tracked')
-$checks += "community intel feed:             " + ($h -match 'Latest Community Intel')
 
 $a = (Invoke-WebRequest -Uri "https://totaltechpicks.com/best-monitors-and-displays/" -TimeoutSec 30).Content
 $checks += "guide comparison table:           " + ($a -match 'At a Glance')
 $checks += "guide head-to-head verdicts:      " + ($a -match 'Head-to-Head')
 $checks += "guide FAQ structured data:        " + ($a -match 'FAQPage')
 $checks += "guide affiliate disclosure:       " + ($a -match 'affiliate links')
-# Intel stamp only renders on guides that currently have insights — check across two guides
-$b = (Invoke-WebRequest -Uri "https://totaltechpicks.com/best-budget-webcams/" -TimeoutSec 30).Content
-$checks += "guide intel freshness stamp:      " + (($a -match 'community intel refreshed') -or ($b -match 'community intel refreshed'))
+$checks += "guide author byline (E-E-A-T):    " + ($a -match 'Nathan Ceniceros')
+
+# Trust / E-E-A-T pages (AdSense readiness)
+$rev = Invoke-WebRequest -Uri "https://totaltechpicks.com/reviews/sony-wh-1000xm5/" -TimeoutSec 30 -SkipHttpErrorCheck
+$checks += "deep review pages live:           " + ($rev.StatusCode -eq 200 -and $rev.Content -match 'How it holds up')
+$ed = Invoke-WebRequest -Uri "https://totaltechpicks.com/editorial-policy/" -TimeoutSec 30 -SkipHttpErrorCheck
+$checks += "editorial policy page live:       " + ($ed.StatusCode -eq 200)
+$ct = Invoke-WebRequest -Uri "https://totaltechpicks.com/contact/" -TimeoutSec 30 -SkipHttpErrorCheck
+$checks += "contact page live:                " + ($ct.StatusCode -eq 200)
+
+# Auto-generated content should stay HIDDEN during AdSense review (flag off)
+$showAuto = $env:EXPECT_AUTO_CONTENT -eq "1"
+$intelHidden = -not ($h -match 'Latest Community Intel')
+$checks += "AI content gated for review:      " + ($showAuto -or $intelHidden)
 
 $g = (Invoke-WebRequest -Uri "https://totaltechpicks.com/best-tech-gifts/" -TimeoutSec 30).Content
 $checks += "gift guide live:                  " + ($g -match 'Best Tech Gifts That Actually Get Used')

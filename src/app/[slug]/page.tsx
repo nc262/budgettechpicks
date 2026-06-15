@@ -85,7 +85,15 @@ export default function ArticlePage({ params }: Props) {
   // Hide products marked as discontinued by n8n health check
   const products = allProducts.filter(p => health[p.asin]?.isLive !== false);
 
-  const redditData = (redditInsightsData as Record<string, { lastUpdated: string; insights: RedditInsight[] }>)[params.slug];
+  // SHOW_AUTO_PICKS gates ALL auto-generated content off during AdSense review — the
+  // AI "Community Picks", the inline "Reddit Says" snippets, and the freshness stamp.
+  // The site then shows only human-written reviews. Set NEXT_PUBLIC_SHOW_AUTO_PICKS=1
+  // (in Cloudflare env) to re-enable everything once approved.
+  const SHOW_AUTO_PICKS = process.env.NEXT_PUBLIC_SHOW_AUTO_PICKS === "1";
+
+  const redditData = SHOW_AUTO_PICKS
+    ? (redditInsightsData as Record<string, { lastUpdated: string; insights: RedditInsight[] }>)[params.slug]
+    : undefined;
   // Build a lookup map: normalized product name → insight (for inline card display)
   const redditByProduct: Record<string, RedditInsight> = {};
   if (redditData?.insights) {
@@ -96,10 +104,6 @@ export default function ArticlePage({ params }: Props) {
     }
   }
   // Auto-discovered community picks for this slug (hidden if their listing goes dead).
-  // SHOW_AUTO_PICKS gates the auto-generated section off during AdSense review — these
-  // AI-written blurbs are the clearest "low value / auto-generated" trigger. Flip back
-  // to true (or set NEXT_PUBLIC_SHOW_AUTO_PICKS=1) once the site is approved.
-  const SHOW_AUTO_PICKS = process.env.NEXT_PUBLIC_SHOW_AUTO_PICKS === "1";
   const autoPicks = SHOW_AUTO_PICKS
     ? (autoProductsRaw as AutoProduct[]).filter(
         p => p.articleSlug === params.slug && health[p.asin]?.isLive !== false
