@@ -1,31 +1,22 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-16T04:03:56.228Z",
+    "lastUpdated": "2026-06-16T12:04:03.568Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Real users report issues with mice using the UGREEN 9-in-1 USB-C Hub, with some suggesting Bluetooth peripherals or adjusting power settings might improve performance.",
-        "pros": [
-          "Bluetooth peripherals"
-        ],
-        "cons": [
-          "sluggish performance",
-          "needs more power",
-          "no power to mouse when plugged into hub and laptop's USB C power cable"
-        ],
+        "summary": "Discussed in r/buildapc — 8 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Adjusting power settings might improve performance.",
-          "Bluetooth peripherals can be a viable solution."
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 9,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-16T04:03:56.212Z"
+        "scrapedAt": "2026-06-16T12:04:03.542Z"
       }
     ]
   },
@@ -61,53 +52,42 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-16T04:03:56.228Z",
+    "lastUpdated": "2026-06-16T12:04:03.568Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users can root and install custom OS on Echo Dot, enabling alternative voice assistants like Bixby and Spotify, but note security concerns and limitations due to Amazon's locked bootloaders.",
-        "pros": [
-          "can run Spotify",
-          "can be used as a kitchen speaker",
-          "can be rooted for alternative OS installation"
-        ],
-        "cons": [
-          "Amazon locks bootloaders down hard, making it difficult to install custom OS without soldering directly onto the device",
-          "no straightforward way to wipe and reinstall with custom OS"
-        ],
+        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "rooting and installing custom OS on Echo Dot requires technical expertise and soldering skills",
-          "alternative voice assistants like Bixby can be installed, but may require external hardware or workarounds"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 10,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-16T04:03:56.217Z"
+        "scrapedAt": "2026-06-16T12:04:03.552Z"
       },
       {
         "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users praise Philips Hue for integration with Home Assistant, but note limitations and potential need for additional hardware or expertise.",
+        "summary": "Users can control Philips Hue with Home Assistant using Zigbee or ZHA, but may need to use a hub for some features.",
         "pros": [
-          "integrated with Home Assistant",
-          "uses Zigbee2MQTT/mqtt for control",
-          "adaptive lighting integration works well"
+          "Home Assistant has built-in support for ZigBee",
+          "Zigbee2MQTT/mqtt and Home Assistant provide adaptive lighting integration",
+          "Some users have successfully paired Lutron Aurora with Hue bulbs using a hub"
         ],
         "cons": [
-          "may require additional hardware or expertise",
-          "can be fault tolerant and low latency when paired directly",
-          "some users prefer to use other products (e.g. M150, Lutron Aurora)"
+          "May require a hub for some features",
+          "Can be complex to set up"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Some users pair Philips Hue with Home Assistant for seamless control.",
-          "Using Zigbee2MQTT/mqtt or other binding methods can provide more flexibility.",
-          "Home Assistant's adaptive lighting integration works well with Philips Hue."
+          "Home Assistant provides ZHA or Zigbee2MQTT/mqtt integration for seamless control of Philips Hue",
+          "Pairing Lutron Aurora with Hue bulbs can be challenging",
+          "Some users prefer using a hub for control and state management"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -115,67 +95,58 @@
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-16T04:03:56.217Z"
+        "scrapedAt": "2026-06-16T12:04:03.552Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-16T04:03:56.228Z",
+    "lastUpdated": "2026-06-16T12:04:03.568Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users report EMI/RFI interference issues, but some note it may be related to cable quality or studio location, while others attribute it to grounding issues or studio setup",
-        "pros": [
-          "balanced cables can deal with interference on the trip from the mic to the pre"
-        ],
-        "cons": [
-          "mic itself may not be the culprit for EMI/RFI interference"
-        ],
+        "summary": "Discussed in r/audioengineering — 14 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "cable quality and termination can affect RF interference",
-          "grounding issues are a common cause of EMI/RFI interference",
-          "studio location and nearby emitters can contribute to RFI"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-16T04:03:56.219Z"
+        "scrapedAt": "2026-06-16T12:04:03.556Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-16T04:03:56.228Z",
+    "lastUpdated": "2026-06-16T12:04:03.568Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Commenters report finding Audio-Technica ATH-M50x headphones to be counterfeit, with noticeable differences in design and quality compared to authentic models.",
+        "summary": "Users compare Sennheiser HD25 and Audio-Technica ATH-M50x, with some highlighting pros of each while others mention cons and outdated technology.",
         "pros": [
-          "Sometimes there is a sale bro"
+          "Well balanced overall",
+          "Fun factor balance",
+          "Passive isolation is second to none"
         ],
         "cons": [
-          "100% FAKE",
-          "The whole assembly looks different",
-          "No serial number when i took the pads out"
+          "Sounds terrible"
         ],
-        "sentiment": "negative",
+        "sentiment": "neutral",
         "key_insights": [
-          "Fake headphones were found to be sold on Amazon",
-          "Counterfeit ATH-M50x have noticeable design differences",
-          "Sound quality is not impressive compared to authentic models"
+          "HD25 have a firm bass shelf, highs can be sibilant",
+          "Both are outdated"
         ],
-        "recommended_by_users": true,
-        "commentCount": 12,
+        "recommended_by_users": false,
+        "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "Fake ATH M50x ??? Please help me spot this",
-        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u303gt/fake_ath_m50x_please_help_me_spot_this/",
-        "scrapedAt": "2026-06-16T04:03:56.221Z"
+        "sourcePost": "sennheiser hd25 vs ath m50x",
+        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u421cp/sennheiser_hd25_vs_ath_m50x/",
+        "scrapedAt": "2026-06-16T12:04:03.558Z"
       }
     ]
   },
@@ -211,52 +182,43 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-16T04:03:56.228Z",
+    "lastUpdated": "2026-06-16T12:04:03.568Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users recommend spending under $100 on a webcam, with lighting being a crucial factor to improve image quality, and some recommending specific webcams like Logitech C920s HD Pro Webcam or Emeet Pixy.",
-        "pros": [
-          "decent in low light",
-          "has auto tracking if you move around",
-          "leaves money left over for a light to put above the monitor"
-        ],
-        "cons": [
-          "low light is gonna be rough on any sub $100 cam tbh"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "Lighting can greatly improve image quality with a webcam.",
-          "Spending extra money on lighting can make up for lower webcam specs."
-        ],
-        "recommended_by_users": true,
+        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-16T04:03:56.212Z"
+        "scrapedAt": "2026-06-16T12:04:03.542Z"
       },
       {
         "product": "Logitech Brio 4K Ultra HD Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users experience issues with lighting sensitivity and image quality, but some find workarounds or alternatives.",
+        "summary": "Users have mixed opinions about the Logitech Brio 4K Ultra HD Webcam, with some experiencing issues with lighting sensitivity and poor image quality, while others find it satisfactory or prefer using alternative solutions.",
         "pros": [
-          "Using a phone's camera with DroidCam for 4K video",
-          "Manual settings for exposure, white balance, etc.",
-          "Razer Kiyo Pro works well at default settings"
+          "Manual settings for exposure and white balance can help improve image quality",
+          "Using a phone's camera app (e.g., DroidCam) can be a reliable alternative",
+          "Yolocam S3 offers good bang for buck as an upgrade"
         ],
         "cons": [
-          "Light sensitivity issues",
-          "Image quality can be soft and noisy",
-          "Not ideal for high-light situations"
+          "Lighting sensitivity issues",
+          "Image quality is soft and noisy, especially with backlight",
+          "Auto-focus can sometimes cause image to go out of focus"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Lighting is a significant issue",
-          "Manual settings can improve image quality",
-          "Some users find dedicated webcams too expensive"
+          "Proper lighting setup can improve image quality",
+          "Some users prefer using alternative solutions (e.g., phone camera apps) due to sensitivity issues",
+          "Yolocam S3 offers a good balance between quality and price"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -264,29 +226,29 @@
         "hasRealComments": true,
         "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-16T04:03:56.213Z"
+        "scrapedAt": "2026-06-16T12:04:03.543Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-16T04:03:56.228Z",
+    "lastUpdated": "2026-06-16T12:04:03.568Z",
     "insights": [
       {
         "product": "Ergotron LX Desk Monitor Arm",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Users appreciate the unique blend of vintage and tech elements, but have some mixed feelings about the setup.",
+        "summary": "Users appreciate the unique blend of vintage and tech elements in a desk setup, with some mentioning they would love to have a similar monitor arm like Ergotron LX.",
         "pros": [
-          "function over aesthetics",
-          "so much personality in this setup"
+          "function over aesthetics energy",
+          "vintage + tech mix works perfectly",
+          "personality in this setup"
         ],
         "cons": [
-          "repeatedly reposting your own battlestation with little to no changes"
+          "none mentioned"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "the \"function over aesthetics\" energy hits different",
-          "every hobby and work tool has its spot",
-          "vintage + tech mix works so perfectly"
+          "the importance of blending vintage and modern elements",
+          "the value of personality in a desk setup"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -294,31 +256,45 @@
         "hasRealComments": true,
         "sourcePost": "warm vintage desk setup 🌍",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-16T04:03:56.213Z"
+        "scrapedAt": "2026-06-16T12:04:03.544Z"
+      },
+      {
+        "product": "Logitech MX Master 3S Wireless Mouse",
+        "productSlug": "best-desk-accessories-under-50",
+        "summary": "Discussed in r/homeoffice — 19 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
+        "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
+        "scrapedAt": "2026-06-16T12:04:03.548Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-16T04:03:56.228Z",
+    "lastUpdated": "2026-06-16T12:04:03.568Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Users praise the innovation of Energizer's AirTag-compatible batteries, which prevent ingestion burns and are seen as a more useful solution than some AI gadgets, while expressing concerns about patent limitations and the positioning of this product as a specialty item.",
+        "summary": "Users appreciate the innovation of the new batteries, which prevent ingestion burns and are designed for use with AirTags, while also noting potential drawbacks such as the possibility of stifling competition in anti-burn guard technology.",
         "pros": [
-          "Prevent ingestion burns",
-          "More useful innovation than half the AI gadgets announced lately",
-          "Can be used with AirTags"
+          "Prevents ingestion burns",
+          "Enables self-repairs"
         ],
         "cons": [
-          "Patent limitations may stifle other brands from implementing anti-burn guards",
-          "Positioned as a specialty/luxury product which may not be accessible to all parents"
+          "Patent could stifle other brands from implementing anti-burn guards"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Energizer's AirTag-compatible batteries prevent ingestion burns and can be used with AirTags",
-          "Patent limitations may stifle the development of similar technology by other brands",
-          "The product is positioned as a specialty item, which may limit its accessibility"
+          "Ingestion burn prevention is a valuable innovation",
+          "Self-repair capabilities are desirable for car owners",
+          "Potential patent issues may limit competition in safety technology"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -326,7 +302,7 @@
         "hasRealComments": true,
         "sourcePost": "Energizer Launches AirTag-Compatible Batteries That Prevent Ingestion Burns",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1t5yf1y/energizer_launches_airtagcompatible_batteries/",
-        "scrapedAt": "2026-06-16T04:03:56.217Z"
+        "scrapedAt": "2026-06-16T12:04:03.553Z"
       }
     ]
   },
