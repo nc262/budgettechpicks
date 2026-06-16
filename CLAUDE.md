@@ -49,3 +49,10 @@ security, operational, and cost impact (the four review docs below).
 | [testing-strategy.md](docs/testing-strategy.md) | Build/verify gates, what to check before shipping |
 | [troubleshooting.md](docs/troubleshooting.md) | Common pipeline/site failures and RCAs |
 | [code-style.md](docs/code-style.md) | Conventions for the codebase and the automation scripts |
+
+## Design review gate (this is a user-facing site — read before any UI change)
+| Doc | Covers |
+|-----|--------|
+| [PRODUCT.md](PRODUCT.md) | What the product is for, who it serves, success metrics, hard product constraints |
+| [DESIGN.md](DESIGN.md) | The real design system — color/type/spacing tokens, components, motion, a11y, anti-patterns |
+| [DESIGN-MEMORY.md](DESIGN-MEMORY.md) | Why the UI is the way it is — settled design decisions and patterns we deliberately killed |
