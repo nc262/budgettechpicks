@@ -1,22 +1,33 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-17T04:05:37.632Z",
+    "lastUpdated": "2026-06-17T12:05:19.165Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Discussed in r/buildapc — 8 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users experience sluggish mouse performance when connected to a USB-C hub, with some suggesting Bluetooth peripherals or adjusting power settings might help.",
+        "pros": [
+          "Bluetooth peripherals",
+          "adjusting power settings"
+        ],
+        "cons": [
+          "USB hub issues",
+          "insufficient bandwidth",
+          "poorly powered hubs"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Power settings can affect performance",
+          "Insufficient bandwidth might cause issues with USB-C hubs",
+          "Bluetooth peripherals are a viable solution"
+        ],
         "recommended_by_users": false,
         "commentCount": 9,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-17T04:05:37.615Z"
+        "scrapedAt": "2026-06-17T12:05:19.140Z"
       }
     ]
   },
@@ -52,41 +63,24 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-17T04:05:37.632Z",
+    "lastUpdated": "2026-06-17T12:05:19.165Z",
     "insights": [
-      {
-        "product": "Amazon Echo Dot (5th Gen)",
-        "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 10,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Reusing Amazon Alexa Echo Dot",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-17T04:05:37.622Z"
-      },
       {
         "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Real users can control Philips Hue bulbs using Home Assistant, with various pros and cons mentioned, but overall think it's a viable solution for auto-dimming.",
+        "summary": "Users praise Philips Hue White & Color Starter Kit for its compatibility with Home Assistant, but note limitations and potential drawbacks",
         "pros": [
-          "can be controlled from Home Assistant",
-          "Zigbee2MQTT/mqtt integration",
-          "adaptive lighting integration"
+          "can be controlled from Home Assistant using a Hue bridge integration"
         ],
         "cons": [
-          "not fault tolerant or low latency compared to direct pairing"
+          "may require additional hardware or setup for Zigbee compatibility",
+          "limited technical discussion on Reddit"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "Using Home Assistant with ZigBee2MQTT/mqtt integration can control Philips Hue bulbs",
-          "Adaptive lighting integration works well",
-          "Direct pairing might be more fault tolerant and low latency"
+          "users can control Philips Hue bulbs with Home Assistant",
+          "Zigbee2MQTT/mqtt and ZigBee bridges offer more flexibility",
+          "some users have experience with adaptive lighting integration"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -94,12 +88,12 @@
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-17T04:05:37.622Z"
+        "scrapedAt": "2026-06-17T12:05:19.145Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-17T04:05:37.632Z",
+    "lastUpdated": "2026-06-17T12:05:19.165Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
@@ -115,12 +109,12 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-17T04:05:37.625Z"
+        "scrapedAt": "2026-06-17T12:05:19.151Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-17T04:05:37.632Z",
+    "lastUpdated": "2026-06-17T12:05:19.165Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
@@ -136,7 +130,7 @@
         "hasRealComments": true,
         "sourcePost": "sennheiser hd25 vs ath m50x",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u421cp/sennheiser_hd25_vs_ath_m50x/",
-        "scrapedAt": "2026-06-17T04:05:37.626Z"
+        "scrapedAt": "2026-06-17T12:05:19.152Z"
       }
     ]
   },
@@ -172,7 +166,7 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-17T04:05:37.632Z",
+    "lastUpdated": "2026-06-17T12:05:19.165Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
@@ -188,36 +182,13 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-17T04:05:37.615Z"
+        "scrapedAt": "2026-06-17T12:05:19.141Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-17T04:05:37.632Z",
+    "lastUpdated": "2026-06-17T12:05:19.165Z",
     "insights": [
-      {
-        "product": "Ergotron LX Desk Monitor Arm",
-        "productSlug": "best-desk-accessories-under-50",
-        "summary": "Users appreciate the unique setup and personal touch, but have mixed opinions on aesthetics.",
-        "pros": [
-          "That “function over aesthetics” energy hits different!",
-          "Every hobby and work tool has its spot, and the vintage + tech mix works so perfectly here."
-        ],
-        "cons": [],
-        "sentiment": "positive",
-        "key_insights": [
-          "Users value the unique combination of function and aesthetic in their desk setup.",
-          "Some users appreciate the ability to incorporate personal touches (e.g., vintage elements) into their workspace.",
-          "Not all users are convinced by the 'function over aesthetics' approach, but they seem to accept it."
-        ],
-        "recommended_by_users": false,
-        "commentCount": 3,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "warm vintage desk setup 🌍",
-        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-17T04:05:37.616Z"
-      },
       {
         "product": "Logitech MX Master 3S Wireless Mouse",
         "productSlug": "best-desk-accessories-under-50",
@@ -232,12 +203,12 @@
         "hasRealComments": true,
         "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
         "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-17T04:05:37.617Z"
+        "scrapedAt": "2026-06-17T12:05:19.142Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-17T04:05:37.632Z",
+    "lastUpdated": "2026-06-17T12:05:19.165Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
@@ -253,7 +224,7 @@
         "hasRealComments": true,
         "sourcePost": "Energizer Launches AirTag-Compatible Batteries That Prevent Ingestion Burns",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1t5yf1y/energizer_launches_airtagcompatible_batteries/",
-        "scrapedAt": "2026-06-17T04:05:37.623Z"
+        "scrapedAt": "2026-06-17T12:05:19.147Z"
       }
     ]
   },
