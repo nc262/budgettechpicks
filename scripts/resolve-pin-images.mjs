@@ -63,7 +63,16 @@ async function download(url) {
 
 const cachedOk = (asin) => existsSync(join(CACHE, asin + ".jpg")) && statSync(join(CACHE, asin + ".jpg")).size >= MIN_BYTES;
 
-let selected = products.filter((p) => isLive(p.asin) && (onlyAsins ? onlyAsins.has(p.asin) : true));
+// In --asins mode resolve exactly those ASINs (search is by ASIN, so a catalog entry is
+// only needed for a friendly log name) — this lets the discovery job request pins for
+// products that were just added to the clone but aren't in this repo's products.ts yet.
+let selected;
+if (onlyAsins) {
+  const byAsin = Object.fromEntries(products.map((p) => [p.asin, p]));
+  selected = [...onlyAsins].map((asin) => byAsin[asin] || { asin, name: asin });
+} else {
+  selected = products.filter((p) => isLive(p.asin));
+}
 if (!FORCE) selected = selected.filter((p) => !cachedOk(p.asin));
 selected = selected.slice(0, limit);
 
@@ -85,15 +94,33 @@ if (needBrowser.length) {
   const browser = await chromium.launch({ channel: "chrome", headless: true, args: ["--disable-blink-features=AutomationControlled"] });
   try {
     const ctx = await browser.newContext({ viewport: { width: 1366, height: 900 }, locale: "en-US" });
+    // Grab the s-image src for a query. fuzzy=true (name searches) accepts the exact-ASIN
+    // card if present, else the first result whose image alt shares the product's tokens —
+    // so we never grab an unrelated product's photo, but still match listings whose ASIN
+    // differs from ours (variants).
+    const grabSrc = async (page, query, asin, name, fuzzy) => {
+      await page.goto("https://www.amazon.com/s?k=" + encodeURIComponent(query), { waitUntil: "domcontentloaded", timeout: 30000 });
+      try { await page.waitForSelector('div[data-component-type="s-search-result"]', { timeout: 10000 }); }
+      catch { return null; } // no results / captcha — caller falls back or skips
+      return await page.evaluate(({ a, nm, fz }) => {
+        const exact = document.querySelector(`div[data-asin="${a}"] img.s-image`);
+        if (exact) return exact.getAttribute("src");
+        if (!fz) return document.querySelector('div[data-component-type="s-search-result"] img.s-image')?.getAttribute("src") || null;
+        const tokens = (nm.toLowerCase().match(/[a-z0-9]{4,}/g) || []);
+        for (const img of document.querySelectorAll('div[data-component-type="s-search-result"] img.s-image')) {
+          const alt = (img.getAttribute("alt") || "").toLowerCase();
+          if (tokens.filter((t) => alt.includes(t)).length >= 2) return img.getAttribute("src");
+        }
+        return null;
+      }, { a: asin, nm: name, fz: fuzzy });
+    };
     for (const p of needBrowser) {
       const page = await ctx.newPage();
       try {
-        await page.goto("https://www.amazon.com/s?k=" + encodeURIComponent(p.asin), { waitUntil: "domcontentloaded", timeout: 30000 });
-        await page.waitForSelector("img.s-image", { timeout: 12000 });
-        const src = await page.evaluate((asin) => {
-          const exact = document.querySelector(`div[data-asin="${asin}"] img.s-image`);
-          return (exact || document.querySelector('div[data-component-type="s-search-result"] img.s-image'))?.getAttribute("src") || null;
-        }, p.asin);
+        // ASIN search first (precise); if nothing, fall back to a name search that
+        // token-matches the result so we don't grab the wrong product's image.
+        let src = await grabSrc(page, p.asin, p.asin, p.name, false);
+        if (!src && p.name && p.name !== p.asin) src = await grabSrc(page, p.name, p.asin, p.name, true);
         const buf = await download(upsize(src));
         if (buf) { writeFileSync(join(CACHE, p.asin + ".jpg"), buf); viaSearch++; log(`  ✓ ${p.asin}  ${(buf.length / 1024 | 0)}KB`); }
         else { failed++; log(`  ✗ ${p.asin} "${p.name}" — no high-res found`); }

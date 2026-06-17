@@ -13,9 +13,12 @@
 //   - rating >= 4.3 and >= 400 ratings (only proven, widely-bought products)
 
 import { execSync } from "child_process";
-import { readFileSync, writeFileSync, existsSync } from "fs";
-import { join } from "path";
+import { readFileSync, writeFileSync, existsSync, statSync } from "fs";
+import { join, dirname } from "path";
+import { fileURLToPath } from "url";
 import { chromium } from "playwright";
+
+const SELF_DIR = dirname(fileURLToPath(import.meta.url)); // this repo's scripts/ (has playwright)
 
 const DRY_RUN = process.argv.includes("--dry-run");
 const MAX_NEW = Number((process.argv.find((a) => a.startsWith("--max=")) || "").split("=")[1] || 4);
@@ -476,6 +479,44 @@ if (!DRY_RUN && newPinAsins.length) {
     log(`pin render skipped: ${String(e.message).slice(0, 100)}`);
   }
 }
+
+// Self-healing pin coverage: ensure every reviewed, live product has a HIGH-RES branded
+// pin — whether it arrived via discovery or was added to the catalog by hand (e.g. a review
+// wave). New products change constantly, so this runs every night, bounded per run so a
+// backlog drains over a few nights. Best-effort; never blocks the commit. The rendered pins
+// land in the clone's public/images/pinterest/auto, which the nightly commit already pushes.
+async function backfillMissingPins(cap = 12) {
+  try {
+    const reviewedIds = new Set(
+      [...readFileSync(join(CLONE_DIR, "src/data/reviews.ts"), "utf8").matchAll(/^  "([a-z0-9-]+)": \{/gm)].map((m) => m[1])
+    );
+    const idAsin = [...readFileSync(join(CLONE_DIR, "src/data/products.ts"), "utf8")
+      .matchAll(/id:\s*"([^"]+)",\s*\n\s*name:\s*".+?",\s*\n\s*asin:\s*"([A-Z0-9]{10})"/g)]
+      .map((m) => ({ id: m[1], asin: m[2] }));
+    let h = {};
+    try { h = JSON.parse(readFileSync(join(CLONE_DIR, "src/data/product-health.json"), "utf8")); } catch {}
+    const HIRES = "C:\\n8n-data\\pin-cache-hd";
+    const hiResMissing = (asin) => { try { return statSync(join(HIRES, asin + ".jpg")).size < 9000; } catch { return true; } };
+    const need = idAsin
+      .filter((p) => reviewedIds.has(p.id) && h[p.asin]?.isLive !== false && hiResMissing(p.asin))
+      .map((p) => p.asin)
+      .slice(0, cap);
+    if (!need.length) { log("pin backfill: coverage complete"); return; }
+    log(`pin backfill: ${need.length} product(s) missing a high-res pin → resolving…`);
+    try {
+      execSync(`node "${join(SELF_DIR, "resolve-pin-images.mjs")}" --asins=${need.join(",")}`,
+        { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], timeout: 8 * 60 * 1000 });
+    } catch (e) { log(`  backfill resolver: ${String(e.message).slice(0, 80)}`); }
+    try {
+      execSync(`node "${join(CLONE_DIR, "scripts/generate-pin-images.mjs")}" --asins=${need.join(",")} --force`,
+        { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], timeout: 5 * 60 * 1000 });
+      log(`pin backfill: rendered ${need.length} pin(s)`);
+    } catch (e) { log(`  backfill render: ${String(e.message).slice(0, 80)}`); }
+  } catch (e) {
+    log(`pin backfill skipped: ${String(e.message).slice(0, 100)}`);
+  }
+}
+if (!DRY_RUN) await backfillMissingPins();
 
 // Validate before committing — never push data that would break the production build.
 function validateBeforeCommit() {
