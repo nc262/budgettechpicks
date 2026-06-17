@@ -52,17 +52,32 @@ export default function BudgetGuidePage({ params }: Props) {
       url: `${SITE_URL}/best/${params.slug}`,
     })),
   };
+  // One source of truth for the FAQ — rendered visibly below AND emitted as FAQPage
+  // JSON-LD, so the structured data always matches what's on the page.
+  const cat = g.category.toLowerCase();
+  const top = g.products[0];
+  const faqs = [
+    {
+      q: `What is the best ${cat} under $${g.threshold}?`,
+      a: `Our top pick is the ${top.name} (${top.price}) — ${top.rating}★ across ${top.reviewCount.toLocaleString()} Amazon ratings. We rank ${g.products.length} options under $${g.threshold} by rating, review volume, and long-term reliability.`,
+    },
+    {
+      q: `How many options does this guide compare?`,
+      a: `${g.products.length}, all priced under $${g.threshold} and verified in stock on Amazon at last check. Anything that sells out or jumps over the budget is removed automatically, so you won't land on a dead listing.`,
+    },
+    {
+      q: `How often are these picks updated?`,
+      a: `Every listing is re-checked against Amazon nightly, and the rankings use live rating and review-count data. When a price or spec shifts enough to change the verdict, we re-rank — not just bump the date.`,
+    },
+  ];
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [{
+    mainEntity: faqs.map((f) => ({
       "@type": "Question",
-      name: `What is the best ${g.category.toLowerCase()} under $${g.threshold}?`,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: `Our top pick is the ${g.products[0].name} (${g.products[0].price}) — ${g.products[0].rating}★ across ${g.products[0].reviewCount.toLocaleString()} Amazon ratings. We rank ${g.products.length} options under $${g.threshold} by rating, review volume, and long-term reliability.`,
-      },
-    }],
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
   };
 
   return (
@@ -83,7 +98,7 @@ export default function BudgetGuidePage({ params }: Props) {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10">
-        <nav className="text-sm text-gray-500 mb-4 flex items-center gap-1.5 flex-wrap">
+        <nav className="text-sm text-gray-400 mb-4 flex items-center gap-1.5 flex-wrap">
           <Link href="/" className="hover:text-blue-400 transition-colors font-medium">Home</Link>
           <span>›</span>
           {categoryArticle ? (
@@ -95,7 +110,7 @@ export default function BudgetGuidePage({ params }: Props) {
           <span className="text-gray-300 font-semibold">Under ${g.threshold}</span>
         </nav>
 
-        <p className="text-xs text-gray-500 mb-8 leading-relaxed">
+        <p className="text-xs text-gray-400 mb-8 leading-relaxed">
           This page contains affiliate links — we earn a small commission if you buy through them, at no extra cost to you.
         </p>
 
@@ -103,10 +118,27 @@ export default function BudgetGuidePage({ params }: Props) {
 
         <AdSlot slot="5229018783" style="horizontal" className="mb-8" />
 
+        <h2 className="text-xl font-black text-white mb-2">The picks, ranked</h2>
+        <p className="text-sm text-gray-400 mb-6">
+          Ordered by rating, review volume, and how well each one holds up over time — top pick first.
+        </p>
         <div className="space-y-6">
           {g.products.map((product, i) => (
             <ProductCard key={product.id} product={product} rank={i + 1} />
           ))}
+        </div>
+
+        {/* FAQ — same content as the FAQPage structured data above */}
+        <div className="mt-12">
+          <h2 className="text-xl font-black text-white mb-5">Frequently asked questions</h2>
+          <div className="space-y-4">
+            {faqs.map((f) => (
+              <div key={f.q} className="bg-gray-900 rounded-2xl border border-gray-700/50 p-5">
+                <h3 className="font-bold text-gray-100 mb-2">{f.q}</h3>
+                <p className="text-sm text-gray-400 leading-relaxed">{f.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {categoryArticle && (

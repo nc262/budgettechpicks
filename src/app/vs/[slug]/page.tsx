@@ -69,6 +69,11 @@ export default function VsPage({ params }: Props) {
   const vs = getVsPage(params.slug);
   if (!vs) notFound();
 
+  // Pull each contender's hand-written take so the comparison carries real
+  // editorial substance, not just a one-paragraph verdict.
+  const takeA = vs.a ? reviews[vs.a.id] : undefined;
+  const takeB = vs.b ? reviews[vs.b.id] : undefined;
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -84,7 +89,7 @@ export default function VsPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 
       {/* Breadcrumb */}
-      <nav className="text-sm text-gray-500 mb-4 flex items-center gap-1.5 flex-wrap">
+      <nav className="text-sm text-gray-400 mb-4 flex items-center gap-1.5 flex-wrap">
         <Link href="/" className="hover:text-blue-400 transition-colors font-medium">Home</Link>
         <span>›</span>
         <Link href={`/${vs.articleSlug}`} className="hover:text-blue-400 transition-colors font-medium">{vs.category}</Link>
@@ -92,7 +97,7 @@ export default function VsPage({ params }: Props) {
         <span className="text-gray-300 font-semibold">Head-to-Head</span>
       </nav>
 
-      <p className="text-xs text-gray-500 mb-8 leading-relaxed">
+      <p className="text-xs text-gray-400 mb-8 leading-relaxed">
         This page contains affiliate links — we earn a small commission if you buy through them, at no extra cost to you.
       </p>
 
@@ -110,6 +115,26 @@ export default function VsPage({ params }: Props) {
           {vs.a && <ContenderCard product={vs.a} />}
           {vs.b && <ContenderCard product={vs.b} />}
         </div>
+      )}
+
+      {/* The case for each — sourced from our full hands-on reviews */}
+      {(takeA || takeB) && (
+        <section className="mb-8">
+          <h2 className="text-xl font-black text-white mb-4">The case for each</h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {([[vs.a, takeA], [vs.b, takeB]] as const).map(([p, take], i) =>
+              p && take ? (
+                <div key={i} className="bg-gray-900 rounded-2xl border border-gray-700/50 p-5">
+                  <h3 className="font-bold text-white leading-snug mb-3">{p.name}</h3>
+                  <p className="text-xs font-bold text-blue-300 uppercase tracking-wide mb-1">Why it wins</p>
+                  <p className="text-sm text-gray-300 leading-relaxed mb-3">{take.whyItWins}</p>
+                  <p className="text-xs font-bold text-amber-300 uppercase tracking-wide mb-1">Watch out for</p>
+                  <p className="text-sm text-gray-300 leading-relaxed">{take.watchOut}</p>
+                </div>
+              ) : null
+            )}
+          </div>
+        </section>
       )}
 
       {/* Verdict */}

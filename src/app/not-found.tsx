@@ -16,7 +16,7 @@ export default function NotFound() {
         ← Back to Homepage
       </Link>
       <div>
-        <p className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4">
+        <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4">
           Or browse a category
         </p>
         <div className="flex flex-wrap gap-2 justify-center">

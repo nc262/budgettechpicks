@@ -13,8 +13,8 @@ export default function ByLine({ updated, className = "" }: { updated?: string; 
         <Link href="/about" className="font-semibold text-gray-200 hover:text-blue-400 transition-colors">
           {AUTHOR.name}
         </Link>
-        <span className="text-gray-500">, {AUTHOR.role}</span>
-        {updated && <span className="text-gray-500"> · Updated {updated}</span>}
+        <span className="text-gray-400">, {AUTHOR.role}</span>
+        {updated && <span className="text-gray-400"> · Updated {updated}</span>}
       </span>
     </div>
   );

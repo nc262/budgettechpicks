@@ -62,7 +62,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div className="border-t border-gray-800/50 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
+        <div className="border-t border-gray-800/50 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-400">
           <p>© {year} TotalTechPicks. Amazon affiliate — links may earn a commission at no extra cost to you.</p>
           <p className="text-blue-400/60">Less Hype. More Hardware.</p>
         </div>

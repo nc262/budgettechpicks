@@ -51,7 +51,7 @@ export default function NewsletterSignup({ className = "" }: { className?: strin
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
                 aria-label="Email address"
-                className="flex-1 sm:w-56 bg-gray-950/70 border border-gray-700 focus:border-blue-500 rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-600 outline-none transition-colors"
+                className="flex-1 sm:w-56 bg-gray-950/70 border border-gray-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/40 rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-500 outline-none transition-colors"
               />
               <button
                 type="submit"

@@ -171,7 +171,7 @@ export default function ArticlePage({ params }: Props) {
                 </span>
                 <h1 className="text-4xl lg:text-5xl font-black mb-4 leading-[1.05] tracking-tight">{article.title}</h1>
                 <p className="text-gray-300 text-base max-w-xl mb-2 leading-relaxed">{article.intro}</p>
-                <p className="text-gray-500 text-xs">
+                <p className="text-gray-400 text-xs">
                   Guide updated {article.updatedAt}
                   {redditData?.lastUpdated && (
                     <>
@@ -196,7 +196,7 @@ export default function ArticlePage({ params }: Props) {
     <div className="max-w-3xl mx-auto px-4 py-10">
 
       {/* Breadcrumb */}
-      <nav className="text-sm text-gray-500 mb-4 flex items-center gap-1.5">
+      <nav className="text-sm text-gray-400 mb-4 flex items-center gap-1.5">
         <Link href="/" className="hover:text-blue-400 transition-colors font-medium">Home</Link>
         <span>›</span>
         <span className="text-gray-300 font-semibold">{article.category}</span>
@@ -206,7 +206,7 @@ export default function ArticlePage({ params }: Props) {
       <ByLine updated={article.updatedAt} className="mb-4" />
 
       {/* Affiliate disclosure — required before any affiliate links */}
-      <p className="text-xs text-gray-500 mb-8 leading-relaxed">
+      <p className="text-xs text-gray-400 mb-8 leading-relaxed">
         This page contains affiliate links. If you buy through them, we earn a small commission from Amazon at no
         extra cost to you. It doesn&apos;t change what we recommend — but you deserve to know before you click.
       </p>
@@ -253,7 +253,7 @@ export default function ArticlePage({ params }: Props) {
           <div>
             <p className="text-xs font-bold text-blue-400 uppercase tracking-wide mb-1">Editor&apos;s Note</p>
             <p className="text-gray-300 italic leading-relaxed">&ldquo;{article.editorNote}&rdquo;</p>
-            <p className="text-xs text-gray-500 mt-2">— The TotalTechPicks Team</p>
+            <p className="text-xs text-gray-400 mt-2">— The TotalTechPicks Team</p>
           </div>
         </div>
       )}
@@ -263,7 +263,7 @@ export default function ArticlePage({ params }: Props) {
         <div className="bg-gray-900 rounded-2xl border border-gray-700/50 p-5 mb-8">
           <h2 className="text-sm font-bold text-gray-200 uppercase tracking-wide mb-2">How we picked</h2>
           <p className="text-sm text-gray-400 leading-relaxed">{article.howWePicked}</p>
-          <p className="text-xs text-gray-500 mt-3 pt-3 border-t border-gray-800">
+          <p className="text-xs text-gray-400 mt-3 pt-3 border-t border-gray-800">
             Every pick in this guide is re-verified against Amazon nightly, so you&apos;ll only ever see
             products you can actually buy today.
           </p>
@@ -299,7 +299,7 @@ export default function ArticlePage({ params }: Props) {
         <div className="mt-12 mb-8">
           <div className="flex items-center gap-3 mb-5">
             <h2 className="text-xl font-black text-white">Head-to-Head</h2>
-            <span className="text-xs text-gray-500">the matchups readers actually ask about</span>
+            <span className="text-xs text-gray-400">the matchups readers actually ask about</span>
           </div>
           <div className="space-y-4">
             {article.headToHead.map((h, i) => {
@@ -348,7 +348,7 @@ export default function ArticlePage({ params }: Props) {
             <h2 className="text-xl font-black text-white">Community Picks</h2>
             <span className="ml-auto text-xs bg-blue-500/20 text-blue-300 border border-blue-500/30 px-2 py-0.5 rounded-full font-bold">From Reddit</span>
           </div>
-          <p className="text-xs text-gray-500 mb-4">
+          <p className="text-xs text-gray-400 mb-4">
             Spotted automatically in Reddit discussions and screened against Amazon ratings before appearing here.
             Promising — but not yet through our full editorial review like the ranked list above.
           </p>
@@ -396,7 +396,7 @@ export default function ArticlePage({ params }: Props) {
                   </div>
                 )}
                 {pick.sourceUrl && (
-                  <p className="text-xs text-gray-600 mt-2">
+                  <p className="text-xs text-gray-400 mt-2">
                     Spotted in{" "}
                     <a href={pick.sourceUrl} target="_blank" rel="noopener noreferrer" className="hover:text-orange-400 transition-colors underline decoration-gray-700">
                       r/{pick.sourceSubreddit ?? "reddit"}

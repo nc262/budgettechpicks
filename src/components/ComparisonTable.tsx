@@ -14,7 +14,7 @@ export default function ComparisonTable({ products }: Props) {
     <div className="mb-10">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-xl font-black text-white">At a Glance — Full Comparison</h2>
-        <span className="text-xs text-gray-500">ratings from Amazon · prices approximate</span>
+        <span className="text-xs text-gray-400">ratings from Amazon · prices approximate</span>
       </div>
       <div className="overflow-x-auto rounded-2xl border border-gray-700/50 bg-gray-900">
         <table className="w-full text-sm min-w-[640px]">
@@ -39,7 +39,7 @@ export default function ComparisonTable({ products }: Props) {
                     isTop ? "bg-yellow-400/[0.04]" : ""
                   }`}
                 >
-                  <td className="px-4 py-3 font-black text-gray-500">{i + 1}</td>
+                  <td className="px-4 py-3 font-black text-gray-400">{i + 1}</td>
                   <td className="px-4 py-3">
                     <div className="flex items-center gap-3">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -54,7 +54,7 @@ export default function ComparisonTable({ products }: Props) {
                   <td className="px-4 py-3 whitespace-nowrap">
                     <span className="text-yellow-400">★</span>{" "}
                     <span className="text-gray-200 font-bold">{p.rating}</span>{" "}
-                    <span className="text-gray-500 text-xs">({liveReviewCount(p.asin, p.reviewCount).toLocaleString()})</span>
+                    <span className="text-gray-400 text-xs">({liveReviewCount(p.asin, p.reviewCount).toLocaleString()})</span>
                   </td>
                   <td className="px-4 py-3 text-gray-400 hidden md:table-cell">{p.pros[0]}</td>
                   <td className="px-4 py-3 text-right">

@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
             ← Back to Home
           </Link>
           <h1 className="text-3xl font-black text-white mb-2">Privacy Policy</h1>
-          <p className="text-gray-500 text-sm">Last updated: {LAST_UPDATED}</p>
+          <p className="text-gray-400 text-sm">Last updated: {LAST_UPDATED}</p>
         </div>
 
         <div className="prose prose-invert prose-sm max-w-none space-y-8 text-gray-300 leading-relaxed">
@@ -139,7 +139,7 @@ export default function PrivacyPolicyPage() {
         </div>
 
         {/* Footer nav */}
-        <div className="mt-12 pt-8 border-t border-gray-800 flex gap-6 text-sm text-gray-600">
+        <div className="mt-12 pt-8 border-t border-gray-800 flex gap-6 text-sm text-gray-400">
           <Link href="/" className="hover:text-gray-400 transition-colors">Home</Link>
           <Link href="/about" className="hover:text-gray-400 transition-colors">About</Link>
           <Link href="/privacy-policy" className="text-gray-400">Privacy Policy</Link>

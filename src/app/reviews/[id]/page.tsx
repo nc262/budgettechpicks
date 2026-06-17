@@ -94,7 +94,7 @@ export default function ReviewPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       {/* Breadcrumb */}
-      <nav className="text-sm text-gray-500 mb-4 flex items-center gap-1.5 flex-wrap">
+      <nav className="text-sm text-gray-400 mb-4 flex items-center gap-1.5 flex-wrap">
         <Link href="/" className="hover:text-blue-400 transition-colors font-medium">Home</Link>
         <span>›</span>
         <Link href={`/${product.articleSlug}`} className="hover:text-blue-400 transition-colors font-medium">
@@ -104,7 +104,7 @@ export default function ReviewPage({ params }: Props) {
         <span className="text-gray-300 font-semibold">Review</span>
       </nav>
 
-      <p className="text-xs text-gray-500 mb-8 leading-relaxed">
+      <p className="text-xs text-gray-400 mb-8 leading-relaxed">
         This review contains affiliate links — we earn a small commission if you buy through them, at no extra
         cost to you. It doesn&apos;t change our verdicts.
       </p>
@@ -180,7 +180,7 @@ export default function ReviewPage({ params }: Props) {
           <p className="text-xs font-bold text-orange-400 uppercase tracking-wide mb-2">What Reddit says</p>
           <p className="text-sm text-gray-300 italic leading-relaxed">&ldquo;{insight.summary}&rdquo;</p>
           {insight.sourceUrl && (
-            <a href={insight.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-orange-400 transition-colors mt-2 inline-block">
+            <a href={insight.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-gray-400 hover:text-orange-400 transition-colors mt-2 inline-block">
               Source thread →
             </a>
           )}

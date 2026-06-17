@@ -26,14 +26,17 @@ export default function AdSlot({ slot, style = "rectangle", className = "" }: Pr
   }, []);
 
   if (!adsenseId || adsenseId === "pub-XXXXXXXXXXXXXXXX") {
-    // Placeholder shown in dev / before AdSense approval
+    // No AdSense ID configured. In production, render nothing — never show a placeholder
+    // box on the live dark site (a light "Ad Slot" box would look broken). The dev-only
+    // placeholder below is dark-themed so it doesn't break the layout while building.
+    if (process.env.NODE_ENV === "production") return null;
     return (
       <div
-        className={`bg-gray-100 border-2 border-dashed border-gray-300 rounded flex items-center justify-center text-gray-400 text-sm ${
+        className={`bg-gray-900/40 border border-dashed border-gray-700 rounded-xl flex items-center justify-center text-gray-500 text-xs ${
           style === "horizontal" ? "h-24 w-full" : style === "square" ? "h-64 w-64" : "h-64 w-full"
         } ${className}`}
       >
-        Ad Slot ({slot})
+        Ad slot ({slot}) — dev placeholder
       </div>
     );
   }

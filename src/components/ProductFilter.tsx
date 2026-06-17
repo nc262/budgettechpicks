@@ -115,12 +115,12 @@ export default function ProductFilter({ products, redditByProduct = {} }: Props)
                     ? "bg-blue-600 text-white border-blue-600 shadow-md"
                     : hasItems
                     ? "bg-gray-800 text-gray-300 border-gray-700 hover:border-blue-500 hover:text-blue-400 cursor-pointer"
-                    : "bg-gray-900 text-gray-600 border-gray-800 cursor-not-allowed"
+                    : "bg-gray-900 text-gray-500 border-gray-800 cursor-not-allowed"
                 }`}
               >
                 {range.label}
                 <span className={`text-xs rounded-full px-1.5 py-0.5 font-bold ${
-                  active ? "bg-white/20 text-white" : hasItems ? "bg-gray-700 text-gray-400" : "bg-gray-800 text-gray-600"
+                  active ? "bg-white/20 text-white" : hasItems ? "bg-gray-700 text-gray-400" : "bg-gray-800 text-gray-500"
                 }`}>
                   {count}
                 </span>

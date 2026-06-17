@@ -147,7 +147,7 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
               <div className="flex items-center gap-1">
                 <div className="flex">
                   {Array.from({ length: 5 }).map((_, i) => (
-                    <span key={i} className={i < stars ? "text-yellow-400" : "text-gray-600"}>★</span>
+                    <span key={i} className={i < stars ? "text-yellow-400" : "text-gray-400"}>★</span>
                   ))}
                 </div>
                 <span className="text-xs text-gray-400">
@@ -161,7 +161,7 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
             <div className="flex flex-wrap items-center gap-3">
               <div className="flex flex-col leading-tight">
                 <span className="text-2xl font-black text-blue-400">{product.price}</span>
-                <span className="text-xs text-gray-500">est. · check Amazon for current price</span>
+                <span className="text-xs text-gray-400">est. · check Amazon for current price</span>
               </div>
               <a
                 href={url}
@@ -180,7 +180,7 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
                     isCompareSelected
                       ? "bg-blue-500/20 text-blue-300 border-blue-400/60 hover:bg-red-500/20 hover:text-red-300 hover:border-red-400/60"
                       : compareDisabled
-                      ? "bg-gray-800 text-gray-600 border-gray-700 cursor-not-allowed"
+                      ? "bg-gray-800 text-gray-500 border-gray-700 cursor-not-allowed"
                       : "bg-gray-800 text-gray-400 border-gray-700 hover:border-blue-400/60 hover:text-blue-300 hover:bg-blue-500/10"
                   }`}
                 >
@@ -226,7 +226,7 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
               <span className="text-xs font-bold text-blue-400 uppercase tracking-wide group-hover:text-blue-300 transition-colors">
                 Our Take — full review
               </span>
-              <span className={`text-gray-500 text-xs transition-transform ${takeOpen ? "rotate-180" : ""}`}>▼</span>
+              <span className={`text-gray-400 text-xs transition-transform ${takeOpen ? "rotate-180" : ""}`}>▼</span>
             </button>
             {takeOpen && (
               <div className="mt-3 space-y-3">
@@ -257,7 +257,7 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
               {redditInsight.sourceUrl && (() => {
                 const match = redditInsight.sourceUrl.match(/reddit\.com\/r\/([^/]+)/);
                 return match ? (
-                  <span className="text-xs text-gray-500 bg-gray-800 border border-gray-700 rounded-full px-2 py-0.5">
+                  <span className="text-xs text-gray-400 bg-gray-800 border border-gray-700 rounded-full px-2 py-0.5">
                     r/{match[1]}
                   </span>
                 ) : null;
@@ -288,13 +288,13 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
             {/* Last scraped date + source link */}
             <div className="flex items-center justify-between mt-1">
               {redditInsight.scrapedAt && (
-                <span className="text-xs text-gray-600">
+                <span className="text-xs text-gray-400">
                   Pulled from Reddit {new Date(redditInsight.scrapedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
                 </span>
               )}
               {redditInsight.sourceUrl && (
                 <a href={redditInsight.sourceUrl} target="_blank" rel="noopener noreferrer"
-                  className="text-xs text-gray-600 hover:text-orange-400 transition-colors">
+                  className="text-xs text-gray-400 hover:text-orange-400 transition-colors">
                   📎 Source →
                 </a>
               )}

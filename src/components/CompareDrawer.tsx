@@ -51,7 +51,7 @@ export default function CompareDrawer({ products, onRemove, onClear }: Props) {
       case "badge":
         return product.badge
           ? <span className="text-xs font-bold text-gray-200">{product.badge}</span>
-          : <span className="text-xs text-gray-600">—</span>;
+          : <span className="text-xs text-gray-400">—</span>;
       case "pros":
         return (
           <ul className="space-y-1">
@@ -90,7 +90,7 @@ export default function CompareDrawer({ products, onRemove, onClear }: Props) {
             <span className="font-black text-white text-sm">
               Comparing {products.length} products
             </span>
-            <span className="text-xs text-gray-500 hidden sm:inline">— select up to 4</span>
+            <span className="text-xs text-gray-400 hidden sm:inline">— select up to 4</span>
           </div>
           <button
             onClick={onClear}
@@ -106,7 +106,7 @@ export default function CompareDrawer({ products, onRemove, onClear }: Props) {
             {/* Product header row */}
             <thead>
               <tr>
-                <th className="w-24 py-4 pr-4 text-xs font-bold text-gray-500 uppercase tracking-wider align-top" />
+                <th className="w-24 py-4 pr-4 text-xs font-bold text-gray-400 uppercase tracking-wider align-top" />
                 {products.map((p) => {
                   const imgUrl = health[p.asin]?.imageUrl ?? amazonImageUrl(p.asin);
                   return (
@@ -126,7 +126,7 @@ export default function CompareDrawer({ products, onRemove, onClear }: Props) {
                         <p className="text-xs font-bold text-white leading-snug line-clamp-2">{p.name}</p>
                         <button
                           onClick={() => onRemove(p.id)}
-                          className="text-xs text-gray-500 hover:text-red-400 transition-colors"
+                          className="text-xs text-gray-400 hover:text-red-400 transition-colors"
                           aria-label={`Remove ${p.name} from comparison`}
                         >
                           ✕ Remove
@@ -145,7 +145,7 @@ export default function CompareDrawer({ products, onRemove, onClear }: Props) {
                   key={row.key}
                   className={rowIdx % 2 === 0 ? "bg-gray-900/60" : ""}
                 >
-                  <td className="py-3 pr-4 text-xs font-bold text-gray-500 uppercase tracking-wider whitespace-nowrap align-top">
+                  <td className="py-3 pr-4 text-xs font-bold text-gray-400 uppercase tracking-wider whitespace-nowrap align-top">
                     {row.label}
                   </td>
                   {products.map((p) => (

@@ -143,7 +143,7 @@ export default function HomePage() {
               <p className="text-gray-300 text-lg max-w-xl mb-3 leading-relaxed">
                 Tech picks built from spec sheets, owner reports, and real Reddit threads — with sources you can check.
               </p>
-              <p className="text-gray-500 text-sm max-w-lg mb-8">
+              <p className="text-gray-400 text-sm max-w-lg mb-8">
                 {categoryCount} categories covering gaming, audio, streaming, home office, and more.
               </p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
@@ -223,8 +223,8 @@ export default function HomePage() {
                     <Link href={`/${deal.slug}`} className="text-blue-400 hover:text-blue-300 font-bold transition-colors">
                       Our take on {deal.product.split(" ").slice(0, 3).join(" ")} →
                     </Link>
-                    <span className="text-gray-600">▲ {deal.score} upvotes</span>
-                    <a href={deal.url} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-orange-400 font-semibold transition-colors ml-auto">
+                    <span className="text-gray-400">▲ {deal.score} upvotes</span>
+                    <a href={deal.url} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-400 font-semibold transition-colors ml-auto">
                       Deal thread →
                     </a>
                   </div>
@@ -247,7 +247,7 @@ export default function HomePage() {
         <section className="mb-14">
           <div className="flex items-center gap-2 mb-6">
             <h2 className="text-2xl font-black text-white">Highest-Rated Picks</h2>
-            <span className="text-xs text-gray-500 ml-1">our &ldquo;Best Overall&rdquo; winners across categories</span>
+            <span className="text-xs text-gray-400 ml-1">our &ldquo;Best Overall&rdquo; winners across categories</span>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {topRatedPicks.map((product) => {
@@ -277,7 +277,7 @@ export default function HomePage() {
                   <Link href={`/${product.articleSlug}`} className="group flex-1">
                     <p className="font-bold text-gray-100 group-hover:text-blue-400 transition-colors text-sm leading-snug">{product.name}</p>
                     <p className="text-xs text-blue-400 font-black mt-0.5">{product.price}</p>
-                    <p className="text-xs text-gray-500 mt-1 font-medium group-hover:text-gray-400 transition-colors">Full review →</p>
+                    <p className="text-xs text-gray-400 mt-1 font-medium group-hover:text-gray-400 transition-colors">Full review →</p>
                   </Link>
                   <a
                     href={affiliateUrl(product.name, product.asin)}
@@ -323,12 +323,12 @@ export default function HomePage() {
                   </div>
                   <p className="text-xs text-gray-400 leading-relaxed italic flex-1">&ldquo;{intel.summary}&rdquo;</p>
                   <div className="flex items-center justify-between mt-3 pt-3 border-t border-gray-800">
-                    <span className="text-xs text-gray-600">
+                    <span className="text-xs text-gray-400">
                       {intel.commentCount} comments analyzed
                       {intel.scrapedAt && ` · ${new Date(intel.scrapedAt).toLocaleDateString("en-US", { month: "short", day: "numeric" })}`}
                     </span>
                     {intel.sourceUrl && (
-                      <a href={intel.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-orange-400 font-semibold transition-colors">
+                      <a href={intel.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-gray-400 hover:text-orange-400 font-semibold transition-colors">
                         Source thread →
                       </a>
                     )}
@@ -377,7 +377,7 @@ export default function HomePage() {
                 >
                   <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-3 ${color}`}>{emoji}</div>
                   <p className="font-bold text-gray-100 group-hover:text-blue-400 transition-colors text-sm leading-snug">{article.category}</p>
-                  <p className="text-xs text-gray-500 mt-1">See picks →</p>
+                  <p className="text-xs text-gray-400 mt-1">See picks →</p>
                 </Link>
               );
             })}
