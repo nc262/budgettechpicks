@@ -12,7 +12,6 @@ interface Product {
 }
 
 export default function HeroProductCard({ product }: { product: Product }) {
-  const nobsScore = Math.round(product.rating * 2 * 10) / 10;
   const healthData = (productHealth as Record<string, { imageUrl?: string; isLive?: boolean }>)[product.asin];
   const imgUrl = healthData?.imageUrl ?? amazonImageUrl(product.asin);
 
@@ -40,8 +39,8 @@ export default function HeroProductCard({ product }: { product: Product }) {
         <h3 className="font-bold text-white text-sm leading-snug mb-3">{product.name}</h3>
         <div className="flex items-center justify-between">
           <span className="text-2xl font-black text-blue-400">{product.price}</span>
-          <span className="text-xs font-black px-2 py-1 rounded-full border bg-green-400/10 text-green-400 border-green-400/30">
-            ⚡ {nobsScore}/10
+          <span className="text-xs font-bold px-2 py-1 rounded-full border bg-yellow-400/10 text-yellow-300 border-yellow-400/30">
+            ★ {product.rating} <span className="text-yellow-300/60 font-medium">on Amazon</span>
           </span>
         </div>
         <div className="mt-4 w-full text-center bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold text-sm px-4 py-2.5 rounded-xl transition-all">

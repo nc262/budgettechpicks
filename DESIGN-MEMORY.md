@@ -15,12 +15,34 @@ light, generic affiliate templates.
 **Apply:** keep the palette tight (see DESIGN.md token table). Resist adding new hues — the semantic
 accent set already covers badge meanings.
 
-### Killed the fake "No-BS Score"
-**Decision:** removed a fabricated numeric score that used to appear on cards.
-**Why:** it was an invented trust signal with no real methodology behind it — directly at odds with
-the product's honesty promise (see [PRODUCT.md](PRODUCT.md)) and a credibility risk for AdSense/E-E-A-T.
-**Apply:** **never reintroduce fabricated metrics.** Trust comes from the named editor's `OurTake`,
-checkable sources, and real owner feedback — not from numbers we made up. This is a hard line.
+### Design-review pass (2026-06-16) — three slop tells removed
+A full `impeccable` critique + audit found three of the skill's hard "AI slop" tells shipping live.
+All three are now removed; the detector reports zero. Do not reintroduce them (now also codified in
+[DESIGN.md](DESIGN.md) anti-patterns):
+- **Animated gradient text** on the homepage hero (`.text-gradient` on "More Hardware.") → replaced
+  with a solid `text-blue-400`; the `.text-gradient` utility, its `gradient-pan` keyframe, and the
+  reduced-motion reference were deleted from `globals.css`. Gradient text is a classic AI tell and adds
+  nothing over weight + color.
+- **Side-stripe accent borders** (`border-l-4` colored edge) in three places — the Editor's Note
+  callout, the four review "take" sections, and the #1 ProductCard. Replaced with full borders plus the
+  element's existing leading cue (🎙️ icon / a small colored dot / the gold rank medal). The skill calls
+  the side-stripe "the most recognizable tell of AI-generated UIs."
+- **Hero-metric stats bar** (four identical big-number columns on a gradient + `glow-blue` panel) →
+  reworked into a quiet inline credibility strip on a plain bordered surface. Same real figures
+  (products tracked, guides, daily checks, 8h intel), none of the SaaS-cliché framing.
+
+### Killed the fake "No-BS Score" (for real this time)
+**Decision:** removed a fabricated numeric score that appeared on product cards.
+**What actually happened:** it was removed from `ProductCard` earlier, but the 2026-06-16 audit found it
+**still live in `HeroProductCard`** (`nobsScore = rating × 2`, shown as `⚡ {n}/10`) — i.e. on the
+homepage hero *and* every category-page hero. Worse, the [about page](src/app/about/page.tsx) explicitly
+promises "We don't invent our own score," so the card was breaking a stated promise on every page. Now
+replaced with the **real Amazon star rating** (`★ {rating} on Amazon`).
+**Why:** an invented trust signal with no methodology — directly at odds with the product's honesty
+promise (see [PRODUCT.md](PRODUCT.md)) and a credibility/AdSense-E-E-A-T risk.
+**Apply:** **never reintroduce fabricated metrics**, and when you "remove" one, grep the whole tree —
+the same fake metric can survive in a sibling component. Trust comes from the named editor's `OurTake`,
+checkable sources, and real owner feedback — not from numbers we made up. Hard line.
 
 ### Replaced "dead listings" stat with positive freshness framing
 **Decision:** the homepage stats section talks about live picks "updated daily / best finds," never

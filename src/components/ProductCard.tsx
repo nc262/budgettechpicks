@@ -66,7 +66,7 @@ export default function ProductCard({ product, rank, redditInsight, isCompareSel
         isCompareSelected
           ? "border-2 border-blue-400 shadow-blue-500/20"
           : isTopPick
-          ? "border-l-4 border-l-yellow-400 border-t border-r border-b border-gray-700/50"
+          ? "border-yellow-400/40"
           : "border-gray-700/50"
       }`}
     >

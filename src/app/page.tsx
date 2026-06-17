@@ -136,9 +136,9 @@ export default function HomePage() {
               <span className="inline-block bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
                 {liveCount} picks tracked{lastCheckedLabel ? ` · verified ${lastCheckedLabel}` : ""}
               </span>
-              <h1 className="text-5xl lg:text-6xl font-black mb-5 leading-[1.05] tracking-tight">
+              <h1 className="text-5xl lg:text-6xl font-black mb-5 leading-[1.05] tracking-tight text-balance">
                 Less Hype.<br />
-                <span className="text-gradient">More Hardware.</span>
+                <span className="text-blue-400">More Hardware.</span>
               </h1>
               <p className="text-gray-300 text-lg max-w-xl mb-3 leading-relaxed">
                 Tech picks built from spec sheets, owner reports, and real Reddit threads — with sources you can check.
@@ -387,25 +387,16 @@ export default function HomePage() {
         {/* Mid ad */}
         <AdSlot slot="6127167489" style="horizontal" className="mb-10" />
 
-        {/* Stats bar — numbers computed from site data, not written by hand */}
-        <section className="bg-gradient-to-r from-gray-900 to-blue-950 rounded-2xl p-6 mb-10 text-white border border-gray-700/50 glow-blue">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
-            <div>
-              <p className="text-3xl font-black text-blue-400">{liveCount}</p>
-              <p className="text-xs text-gray-400 mt-1">Hand-Picked Products</p>
-            </div>
-            <div>
-              <p className="text-3xl font-black text-blue-400">{categoryCount}</p>
-              <p className="text-xs text-gray-400 mt-1">Buying Guides</p>
-            </div>
-            <div>
-              <p className="text-3xl font-black text-blue-400">Daily</p>
-              <p className="text-xs text-gray-400 mt-1">Availability &amp; Price Checks</p>
-            </div>
-            <div>
-              <p className="text-3xl font-black text-blue-400">Every 8h</p>
-              <p className="text-xs text-gray-400 mt-1">Fresh Community Intel</p>
-            </div>
+        {/* Credibility strip — real figures computed from site data, framed as a quiet trust line */}
+        <section className="mb-10 rounded-2xl border border-gray-800 bg-gray-900/40 px-5 py-4">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-gray-400">
+            <span><strong className="text-gray-100 font-bold">{liveCount}</strong> products tracked</span>
+            <span className="text-gray-700" aria-hidden="true">•</span>
+            <span><strong className="text-gray-100 font-bold">{categoryCount}</strong> buying guides</span>
+            <span className="text-gray-700" aria-hidden="true">•</span>
+            <span>Availability &amp; pricing checked <strong className="text-gray-100 font-bold">daily</strong></span>
+            <span className="text-gray-700" aria-hidden="true">•</span>
+            <span>Owner-feedback intel refreshed <strong className="text-gray-100 font-bold">every 8h</strong></span>
           </div>
         </section>
 

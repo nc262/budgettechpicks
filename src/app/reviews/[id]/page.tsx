@@ -40,10 +40,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const SECTIONS = [
-  { key: "whyItWins", label: "Why it wins", color: "text-blue-300", border: "border-blue-500/30" },
-  { key: "whoItsFor", label: "Who it's for", color: "text-green-300", border: "border-green-500/30" },
-  { key: "longTerm", label: "How it holds up long-term", color: "text-purple-300", border: "border-purple-500/30" },
-  { key: "watchOut", label: "Watch out for", color: "text-amber-300", border: "border-amber-500/30" },
+  { key: "whyItWins", label: "Why it wins", color: "text-blue-300", dot: "bg-blue-400" },
+  { key: "whoItsFor", label: "Who it's for", color: "text-green-300", dot: "bg-green-400" },
+  { key: "longTerm", label: "How it holds up long-term", color: "text-purple-300", dot: "bg-purple-400" },
+  { key: "watchOut", label: "Watch out for", color: "text-amber-300", dot: "bg-amber-400" },
 ] as const;
 
 export default function ReviewPage({ params }: Props) {
@@ -144,8 +144,11 @@ export default function ReviewPage({ params }: Props) {
       {/* The take */}
       <div className="space-y-5 mb-8">
         {SECTIONS.map((s) => (
-          <section key={s.key} className={`bg-gray-900 rounded-2xl border-l-4 ${s.border} border-t border-r border-b border-gray-700/50 p-5`}>
-            <h2 className={`text-sm font-bold uppercase tracking-wide mb-2 ${s.color}`}>{s.label}</h2>
+          <section key={s.key} className="bg-gray-900 rounded-2xl border border-gray-700/50 p-5">
+            <h2 className={`flex items-center gap-2 text-sm font-bold uppercase tracking-wide mb-2 ${s.color}`}>
+              <span className={`w-1.5 h-1.5 rounded-full ${s.dot}`} aria-hidden="true" />
+              {s.label}
+            </h2>
             <p className="text-gray-300 leading-relaxed">{take[s.key]}</p>
           </section>
         ))}

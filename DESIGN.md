@@ -18,7 +18,7 @@ fast: every effect must survive a mobile Lighthouse run and `prefers-reduced-mot
 | Surface (cards) | `bg-gray-900` | ProductCard, panels |
 | Surface (header) | `bg-gray-950/90` + `backdrop-blur-md` | Header |
 | Brand blue | `brand.500 #3b82f6` / `600 #2563eb` / `700 #1d4ed8` / `50 #eff6ff` | `tailwind.config.ts` |
-| Accent gradient | `#60a5fa → #818cf8 → #38bdf8` | `.text-gradient`, hairline, glows |
+| Accent gradient | `#60a5fa → #818cf8 → #38bdf8` | hairline divider, glows, hero/verdict backgrounds |
 | Text primary | `text-gray-100` | body |
 | Text secondary | `text-gray-300` | nav, labels |
 | Text muted | `text-gray-400` | meta, captions |
@@ -52,13 +52,13 @@ yellow = #1/best-overall, orange = editor's pick, red = overkill, teal = work, p
   This is the workhorse — new product surfaces should reuse it, not reinvent it.
 - **Buttons (primary):** `bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl shadow-md
   shadow-blue-600/20 hover:-translate-y-px`. Secondary: ghost (`hover:bg-white/5`).
-- **Utilities:** `.glow-card` (depth + hover lift), `.glow-blue`, `.text-gradient` (animated),
+- **Utilities:** `.glow-card` (depth + hover lift), `.glow-blue`,
   `.header-hairline`, `.marquee` (verified-picks ticker), `.ad-wrap` (collapses unfilled AdSense slots
   so there are never blank gaps).
 
 ## Motion (restrained, always escapable)
 - Hover: cards lift `translateY(-2px)`; buttons `-translate-y-px`. 200ms.
-- Ambient: drifting hero glow orbs (16s/22s), animated gradient text (7s), verified-picks marquee
+- Ambient: drifting hero glow orbs (16s/22s), verified-picks marquee
   (45s linear, pauses on hover, edge-masked).
 - Entrance: scroll-reveal fade+rise — **gated behind a JS-added `.reveal-ready` class so no-JS users
   see all content immediately.** Never hide content behind animation by default.
@@ -81,6 +81,11 @@ grid). Test one-handed mobile before desktop — the primary user is on a phone.
 ## Anti-patterns — REJECT in review (per global standard)
 - **Generic AI-generated UI** — default Tailwind cards with no glow/depth, centered hero + 3 feature
   boxes, lorem-ipsum trust badges. If it looks like every other AI site, it's wrong here.
+- **The three banned visual tells** (removed 2026-06-16, do not reintroduce): **gradient text**
+  (`bg-clip-text` + gradient — use a solid color + weight), **side-stripe accent borders**
+  (`border-l-4`/`border-r-*` colored edge — use a full border + a leading icon/dot/medal), and the
+  **hero-metric template** (four identical big-number columns on a gradient+glow panel — use a quiet
+  inline credibility strip). See [DESIGN-MEMORY.md](DESIGN-MEMORY.md).
 - **Fabricated signals** — fake scores, invented review counts, fake scarcity/urgency. (We removed a
   fake "No-BS Score" — see [DESIGN-MEMORY.md](DESIGN-MEMORY.md).)
 - **Inconsistent spacing/radii** — new values outside the ladders above.

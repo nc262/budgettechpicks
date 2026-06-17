@@ -248,7 +248,7 @@ export default function ArticlePage({ params }: Props) {
 
       {/* Editor's Note */}
       {article.editorNote && (
-        <div className="border-l-4 border-blue-500 bg-gray-900 rounded-r-2xl p-5 mb-8 flex gap-4 items-start border border-gray-700/50">
+        <div className="bg-gray-900 rounded-2xl p-5 mb-8 flex gap-4 items-start border border-gray-700/50">
           <div className="text-3xl shrink-0">🎙️</div>
           <div>
             <p className="text-xs font-bold text-blue-400 uppercase tracking-wide mb-1">Editor&apos;s Note</p>

@@ -62,13 +62,6 @@
     transform: translateY(-2px);
   }
 
-  .text-gradient {
-    @apply text-transparent bg-clip-text;
-    background-image: linear-gradient(90deg, #60a5fa, #818cf8, #38bdf8, #60a5fa);
-    background-size: 250% auto;
-    animation: gradient-pan 7s ease-in-out infinite;
-  }
-
   /* Hairline gradient divider under sticky header */
   .header-hairline {
     background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.35), transparent);
@@ -119,11 +112,6 @@
   }
 }
 
-@keyframes gradient-pan {
-  0%, 100% { background-position: 0% center; }
-  50% { background-position: 100% center; }
-}
-
 @keyframes orb-drift {
   from { transform: translate3d(0, 0, 0) scale(1); }
   to { transform: translate3d(48px, -32px, 0) scale(1.18); }
@@ -134,7 +122,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .text-gradient,
   .orb-float,
   .orb-float-2,
   .marquee-track {
