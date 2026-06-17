@@ -38,6 +38,16 @@ let health = {};
 try { health = JSON.parse(readFileSync(join(ROOT, "src/data/product-health.json"), "utf8")); } catch {}
 const isLive = (asin) => health[asin]?.isLive !== false;
 
+// Discovered products carry the real `I/<imageId>` image URL (vs the catalog's low-res
+// `P/<asin>` one), so we can upsize them to a crisp source without any scraping.
+let autoImg = {};
+try {
+  autoImg = Object.fromEntries(
+    JSON.parse(readFileSync(join(ROOT, "src/data/auto-products.json"), "utf8"))
+      .filter((p) => p.imageUrl).map((p) => [p.asin, p.imageUrl])
+  );
+} catch {}
+
 // Strip emojis / non-ASCII so the .NET renderer never sees tofu glyphs
 const cleanText = (s) => (s || "").replace(/[^\x20-\x7E]/g, "").replace(/\s+/g, " ").trim();
 
@@ -54,28 +64,54 @@ if (selected.length === 0) {
   process.exit(0);
 }
 
-// ── Resolve an image for each: local file, else download the health-check CDN
-//    image into a cache so every selected product gets a real photo ────────────
-const CACHE = "C:\\n8n-data\\pin-cache";
+// ── Resolve a HIGH-RES image for each product ─────────────────────────────────
+// The health-check imageUrl is often a small (~300px) variant; drawn onto a 660px
+// pin card it upscales and looks blurry. Amazon's image CDN serves on-demand sizes
+// via the `_SL<px>_` token and is NOT bot-walled like the product HTML, so we can
+// request a large variant directly and fall back through smaller ones.
+// New cache dir (…-hd) so we don't reuse the old low-res pin-cache.
+const CACHE = "C:\\n8n-data\\pin-cache-hd";
 mkdirSync(CACHE, { recursive: true });
 
-async function resolveImage(p) {
-  const local = join(ROOT, "public/images/products", p.asin + ".jpg");
-  if (existsSync(local)) return local;
-  const cached = join(CACHE, p.asin + ".jpg");
-  if (existsSync(cached)) return cached;
-  const url = health[p.asin]?.imageUrl;
+async function tryFetch(url, minBytes = 9000) {
   if (!url || !url.startsWith("http")) return null;
   try {
     const r = await fetch(url, { signal: AbortSignal.timeout(20000) });
     if (!r.ok) return null;
     const buf = Buffer.from(await r.arrayBuffer());
-    if (buf.length < 1500) return null; // CDN placeholder / dead image
-    writeFileSync(cached, buf);
-    return cached;
+    return buf.length >= minBytes ? buf : null; // reject CDN placeholders / tiny thumbs
   } catch {
     return null;
   }
+}
+
+// Rewrite an Amazon image URL's size token up to a large variant.
+function upsize(url) {
+  if (!url || !url.startsWith("http")) return null;
+  if (/\._[^.]*_\.(jpg|jpeg|png)/i.test(url)) return url.replace(/\._[^.]*_\.(jpg|jpeg|png)/i, "._SL1500_.$1");
+  return url.replace(/\.(jpg|jpeg|png)(\?.*)?$/i, "._SL1500_.$1");
+}
+
+async function resolveImage(p) {
+  // The cache is the authoritative high-res source (populated by resolve-pin-images.mjs).
+  // Always prefer it — --force re-renders the pin but should NOT discard a good source.
+  const cached = join(CACHE, p.asin + ".jpg");
+  if (existsSync(cached)) return cached;
+  // The 9KB floor rejects thumbnails so we never cache a blurry source. The catalog's
+  // `P/<asin>` URL is capped ~300px (useless here), so real high-res for catalog products
+  // comes from resolve-pin-images.mjs pre-populating this cache; the candidates below cover
+  // discovered products (auto I/ url) and a last-resort low-res fallback.
+  const candidates = [
+    upsize(autoImg[p.asin]),   // discovered products → real high-res
+    health[p.asin]?.imageUrl,  // low-res P/ fallback so a pin still renders if nothing better
+  ];
+  for (const url of candidates) {
+    const buf = await tryFetch(url);
+    if (buf) { writeFileSync(cached, buf); return cached; }
+  }
+  // Last resort: a committed local product asset (rare).
+  const local = join(ROOT, "public/images/products", p.asin + ".jpg");
+  return existsSync(local) ? local : null;
 }
 
 // ── Build manifest ───────────────────────────────────────────────────────────

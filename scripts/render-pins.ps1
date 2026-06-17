@@ -81,10 +81,10 @@ foreach ($it in $items) {
   $kicker = ($it.kicker -as [string])
   if ($kicker) { $g.DrawString($kicker.ToUpper(), $kickerFont, $blue, 60, 70) }
 
-  # Headline (auto-fit, bold white)
-  $maxW = $W - 120
-  $maxHeadlineH = 330
-  $size = 68
+  # Headline (auto-fit, bold white, with a drop shadow so it pops in a busy Pinterest feed)
+  $maxW = $W - 116
+  $maxHeadlineH = 340
+  $size = 74
   $hFont = $null; $hLines = @()
   while ($true) {
     $hFont = New-Object System.Drawing.Font($family, $size, [System.Drawing.FontStyle]::Bold)
@@ -92,8 +92,13 @@ foreach ($it in $items) {
     if (($hLines.Count * $hFont.Height) -le $maxHeadlineH -or $size -le 40) { break }
     $size -= 4
   }
+  $hShadow = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(150, 0, 0, 0))
   $hy = 120
-  foreach ($ln in $hLines) { $g.DrawString($ln, $hFont, $white, 58, $hy); $hy += $hFont.Height }
+  foreach ($ln in $hLines) {
+    $g.DrawString($ln, $hFont, $hShadow, 61, ($hy + 3))
+    $g.DrawString($ln, $hFont, $white, 58, $hy)
+    $hy += $hFont.Height
+  }
 
   # Product image on a white rounded card
   $cardX = 120; $cardY = 560; $cardW = 760; $cardH = 540
@@ -130,15 +135,15 @@ foreach ($it in $items) {
   $footRect = New-Object System.Drawing.Rectangle(0, 1380, $W, 120)
   $foot = New-Object System.Drawing.Drawing2D.LinearGradientBrush($footRect, [System.Drawing.Color]::FromArgb(37, 99, 235), [System.Drawing.Color]::FromArgb(67, 56, 202), 0)
   $g.FillRectangle($foot, $footRect)
-  $brandFont = New-Object System.Drawing.Font($family, 30, [System.Drawing.FontStyle]::Bold)
-  $tagFont = New-Object System.Drawing.Font($family, 20, [System.Drawing.FontStyle]::Regular)
+  $brandFont = New-Object System.Drawing.Font($family, 28, [System.Drawing.FontStyle]::Bold)
+  $tagFont = New-Object System.Drawing.Font($family, 24, [System.Drawing.FontStyle]::Bold)
   $sf = New-Object System.Drawing.StringFormat
   $sf.Alignment = [System.Drawing.StringAlignment]::Center
-  $g.DrawString("TOTALTECHPICKS.COM", $brandFont, $white, ($W / 2), 1405, $sf)
-  $g.DrawString("Less Hype. More Hardware.", $tagFont, (New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(200, 215, 255))), ($W / 2), 1450, $sf)
+  $g.DrawString("TOTALTECHPICKS.COM", $brandFont, $white, ($W / 2), 1398, $sf)
+  $g.DrawString("Less Hype. More Hardware.", $tagFont, (New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(228, 236, 255))), ($W / 2), 1442, $sf)
 
   $g.Dispose()
-  Save-Jpeg $bmp $outPath 88
+  Save-Jpeg $bmp $outPath 92
   $bmp.Dispose()
   $rendered++
 }

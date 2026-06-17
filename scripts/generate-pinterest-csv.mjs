@@ -32,10 +32,12 @@ try { autoProducts = JSON.parse(readFileSync(join(ROOT, "src/data/auto-products.
 
 const isLive = (asin) => health[asin]?.isLive !== false;
 function mediaUrl(asin) {
-  // Prefer the branded 2:3 pin (product + bold headline) when one's been rendered
+  // Prefer the branded 2:3 pin (product + bold headline + slogan) when one's been rendered.
+  // Pinterest needs a public URL, so this only works once the pin is committed + deployed.
   if (existsSync(join(ROOT, "public/images/pinterest/auto", asin + ".jpg"))) return `${SITE}/images/pinterest/auto/${asin}.jpg`;
-  if (existsSync(join(ROOT, "public/images/products", asin + ".jpg"))) return `${SITE}/images/products/${asin}.jpg`;
-  return health[asin]?.imageUrl ?? `https://m.media-amazon.com/images/P/${asin}.01._SX500_QL70_.jpg`;
+  // Fallback to a HIGH-RES raw Amazon image (never the 300px thumbnail — that's what made
+  // un-branded pins look blurry on Pinterest).
+  return health[asin]?.imageUrl ?? `https://m.media-amazon.com/images/P/${asin}.01._SL1500_.jpg`;
 }
 
 // ── Build today's pin set ────────────────────────────────────────────────────
