@@ -1,5 +1,24 @@
 [
   {
+    "asin": "B0F3GWXLTS",
+    "name": "Nintendo Switch 2 System",
+    "price": "$449.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/714-Fh3ngmL._AC_UY218_.jpg",
+    "rating": 4.8,
+    "reviewCount": 3681,
+    "articleSlug": "best-audio-gear",
+    "description": "Recommended for its large screen size and high-quality projector setup, allowing users to set up a home theater system.",
+    "pros": [
+      "Large 150\" screen",
+      "BenQ TK710 True 4K laser projector"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/hometheater/comments/1u4kyhv/my_150_screen_512_home_theater/",
+    "sourceSubreddit": "hometheater",
+    "mentions": 1,
+    "addedAt": "2026-06-17T07:01:09.771Z"
+  },
+  {
     "asin": "B0CFWQP9MC",
     "name": "Denon X1800H",
     "price": "$849.00",
