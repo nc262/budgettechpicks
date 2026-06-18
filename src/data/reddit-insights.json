@@ -1,6 +1,6 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-18T12:05:24.077Z",
+    "lastUpdated": "2026-06-18T20:03:58.221Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
@@ -16,7 +16,7 @@
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-18T12:05:24.036Z"
+        "scrapedAt": "2026-06-18T20:03:58.159Z"
       }
     ]
   },
@@ -52,7 +52,7 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-18T12:05:24.077Z",
+    "lastUpdated": "2026-06-18T20:03:58.221Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
@@ -68,40 +68,12 @@
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-18T12:05:24.058Z"
-      },
-      {
-        "product": "Philips Hue White & Color Starter Kit",
-        "productSlug": "best-smart-home-under-50",
-        "summary": "Users can control Philips Hue bulbs using Home Assistant, but some mention limitations and alternatives, such as Zigbee2MQTT/mqtt and ZHA bindings.",
-        "pros": [
-          "can be controlled from Home Assistant",
-          "uses Zigbee2MQTT/mqtt and ZHA bindings for more features",
-          "has adaptive lighting integration"
-        ],
-        "cons": [
-          "limited functionality without Hue hub",
-          "no direct pairing with Lutron Aurora and other devices",
-          "some users prefer alternative products like M150"
-        ],
-        "sentiment": "neutral",
-        "key_insights": [
-          "users can use Home Assistant for seamless control",
-          " Zigbee2MQTT/mqtt and ZHA bindings offer more features than standard Hue integration",
-          "some users have limitations with the Hue hub"
-        ],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Philips Hue open-source solution for auto-dim?",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-18T12:05:24.059Z"
+        "scrapedAt": "2026-06-18T20:03:58.211Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-18T12:05:24.077Z",
+    "lastUpdated": "2026-06-18T20:03:58.221Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
@@ -117,30 +89,28 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-18T12:05:24.067Z"
+        "scrapedAt": "2026-06-18T20:03:58.214Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-18T12:05:24.077Z",
+    "lastUpdated": "2026-06-18T20:03:58.221Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Users compare Sennheiser HD25 to Audio-Technica ATH-M50x, noting unique bass response and balanced sound of HD25, while criticizing M50x as outdated and sounding poor.",
+        "summary": "The Sennheiser HD25 and Audio-Technica ATH-M50x have different characteristics and user opinions.",
         "pros": [
           "unique bass shelf",
           "well-balanced overall",
           "passive isolation is second to none"
         ],
-        "cons": [
-          "sound terrible"
-        ],
-        "sentiment": "negative",
+        "cons": [],
+        "sentiment": "positive",
         "key_insights": [
-          "HD25 has a firm bass response",
-          "M50x sound terrible",
-          "passive isolation of HD25 is exceptional"
+          "HD25 has a firm bass shelf",
+          "HD25 is well-balanced with a fun factor balance",
+          "M50x may sound terrible to some users"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -148,7 +118,7 @@
         "hasRealComments": true,
         "sourcePost": "sennheiser hd25 vs ath m50x",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u421cp/sennheiser_hd25_vs_ath_m50x/",
-        "scrapedAt": "2026-06-18T12:05:24.069Z"
+        "scrapedAt": "2026-06-18T20:03:58.215Z"
       }
     ]
   },
@@ -184,26 +154,27 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-18T12:05:24.077Z",
+    "lastUpdated": "2026-06-18T20:03:58.221Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users generally recommend the Logitech C920s HD Pro Webcam for its value, but note it's an old camera and may have limitations in low light conditions.",
+        "summary": "Users generally agree that a webcam under $100 can provide decent streaming quality, but may compromise on low-light performance without additional lighting setup. They recommend investing in lighting to improve overall image quality.",
         "pros": [
           "decent in low light",
-          "auto tracking if you move around",
-          "good",
-          "still decent"
+          "has auto tracking if you move around",
+          "built-in ring light"
         ],
         "cons": [
-          "old now",
-          "low light is gonna be rough on any sub $100 cam"
+          "low light is gonna be rough on any sub $100 cam tbh",
+          "old technology now",
+          "subpar software (at least IMO)"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "adding lighting can greatly improve image quality",
-          "a dedicated camera or GoPro can provide better image quality and more versatility"
+          "Using a separate lighting setup can greatly improve image quality",
+          "Investing in lighting is key to getting the best out of a sub $100 webcam",
+          "A dedicated camera or GoPro may be worth considering for better image quality"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -211,28 +182,12 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-18T12:05:24.036Z"
-      },
-      {
-        "product": "Logitech Brio 4K Ultra HD Webcam",
-        "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 36 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
-        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-18T12:05:24.047Z"
+        "scrapedAt": "2026-06-18T20:03:58.160Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-18T04:05:38.988Z",
+    "lastUpdated": "2026-06-18T20:03:58.221Z",
     "insights": [
       {
         "product": "Ergotron LX Desk Monitor Arm",
@@ -248,44 +203,36 @@
         "hasRealComments": true,
         "sourcePost": "warm vintage desk setup 🌍",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-18T04:05:38.968Z"
-      },
-      {
-        "product": "Logitech MX Master 3S Wireless Mouse",
-        "productSlug": "best-desk-accessories-under-50",
-        "summary": "Discussed in r/homeoffice — 19 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
-        "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-18T04:05:38.969Z"
+        "scrapedAt": "2026-06-18T20:03:58.207Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-18T12:05:24.077Z",
+    "lastUpdated": "2026-06-18T20:03:58.221Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Discussed in r/apple — 7 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users express skepticism about the new firmware update, with some jokingly leaving a post after reading a comment and others speculating about potential improvements.",
+        "pros": [
+          "The Fast and the Findable"
+        ],
+        "cons": [
+          "no details on what this one might include",
+          "I hope they improve the screen. I can't make out jack on these things"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Users are skeptical about the update's content",
+          "Some users want an improvement in screen readability"
+        ],
         "recommended_by_users": false,
         "commentCount": 5,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-18T12:05:24.060Z"
+        "scrapedAt": "2026-06-18T20:03:58.211Z"
       }
     ]
   },
