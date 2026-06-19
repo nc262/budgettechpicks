@@ -1,22 +1,30 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-18T20:03:58.221Z",
+    "lastUpdated": "2026-06-19T04:03:55.336Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Discussed in r/buildapc — 8 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Users report issues with a mouse being sluggish in a USB-C hub, and some suggest solutions such as using a Bluetooth mouse or adjusting power settings.",
+        "pros": [
+          "Using a Bluetooth mouse"
+        ],
+        "cons": [
+          "Sluggish performance",
+          "Power setting issues"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Adjusting power settings may improve performance",
+          "Using a USB-C cable to power the mouse can resolve the issue"
+        ],
+        "recommended_by_users": true,
         "commentCount": 9,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-18T20:03:58.159Z"
+        "scrapedAt": "2026-06-19T04:03:55.322Z"
       }
     ]
   },
@@ -52,129 +60,141 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-18T20:03:58.221Z",
+    "lastUpdated": "2026-06-19T04:03:55.336Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Users can reuse their Amazon Echo Dot by rooting and installing a custom operating system like Lineage, and some have successfully integrated it with Home Assistant or Bixby.",
+        "pros": [
+          "can run Spotify",
+          "can be used with other AI backends",
+          "can be reused with another microcontroller"
+        ],
+        "cons": [
+          "cannot install Smart Things or Bixby without rooting",
+          "Amazon locks bootloaders down hard",
+          "jailbreaking is less common"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "some users have successfully integrated their Echo Dot with Home Assistant using custom PCBs",
+          "users can run Spotify and other Android apps on their Echo Dot by rooting it",
+          "Amazon's lockdown of bootloaders makes it difficult to install alternative OSes"
+        ],
+        "recommended_by_users": true,
         "commentCount": 10,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-18T20:03:58.211Z"
+        "scrapedAt": "2026-06-19T04:03:55.326Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-18T20:03:58.221Z",
+    "lastUpdated": "2026-06-19T04:03:55.336Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Discussed in r/audioengineering — 14 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Reddit commenters generally acknowledge EMI/RFI interference as a potential issue with audio equipment, but most attribute it to external sources or cable quality rather than the Shure SM7B microphone itself.",
+        "pros": [
+          "The mic has never caused EMI/RFI interference in his experience",
+          "Balanced cables are usually enough to deal with interference on the trip from the mic to the preamp"
+        ],
+        "cons": [
+          "RFI was an issue before installing cell repeaters on a nearby tower"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "EMI/RFI interference can be caused by external sources such as cell towers or power strips, rather than the mic itself",
+          "Cable quality and grounding issues can contribute to EMI/RFI problems",
+          "A Faraday cage can sometimes help block EMI/RFI interference"
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-18T20:03:58.214Z"
+        "scrapedAt": "2026-06-19T04:03:55.329Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-18T20:03:58.221Z",
+    "lastUpdated": "2026-06-19T04:03:55.336Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "The Sennheiser HD25 and Audio-Technica ATH-M50x have different characteristics and user opinions.",
-        "pros": [
-          "unique bass shelf",
-          "well-balanced overall",
-          "passive isolation is second to none"
-        ],
+        "summary": "Discussed in r/headphones — 3 comments on this thread.",
+        "pros": [],
         "cons": [],
-        "sentiment": "positive",
-        "key_insights": [
-          "HD25 has a firm bass shelf",
-          "HD25 is well-balanced with a fun factor balance",
-          "M50x may sound terrible to some users"
-        ],
+        "sentiment": "neutral",
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "sennheiser hd25 vs ath m50x",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u421cp/sennheiser_hd25_vs_ath_m50x/",
-        "scrapedAt": "2026-06-18T20:03:58.215Z"
+        "scrapedAt": "2026-06-19T04:03:55.330Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-06-11T04:03:57.709Z",
+    "lastUpdated": "2026-06-19T04:03:55.336Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users report that a white Secretlab Titan Evo 2022 Gaming Chair is expensive and may have durability issues with certain materials, but some find it aesthetically pleasing.",
+        "summary": "Users generally like their SecretLab setup, but some mention design flaws and potential issues with updating BIOS or switching between Windows and Mac.",
         "pros": [
-          "Get a chairmat to prevent the wheels from damaging the carpet",
-          "A white setup looks really nice"
+          "Great specs",
+          "First one lasted 6 years and was still comfortable",
+          "Great chair overall"
         ],
         "cons": [
-          "Prepare to pay more for everything and be limited by your color choices",
-          "a harder exterior shell for mouse would make cleaning better",
-          "it's expensive"
+          "That doesn’t sound like a good quality chair…",
+          "Design flaws in the first models which have been rectified on these later models"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Some users recommend getting a chairmat for wheel protection and suggest using it with other IKEA products.",
-          "Users warn that going all white may be more expensive than choosing a black setup."
+          "Some design flaws were present in earlier models, but newer models have addressed them",
+          "Importance of updating BIOS for optimal performance"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "Pivoting to white now - any advice?",
-        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1sqmb01/pivoting_to_white_now_any_advice/",
-        "scrapedAt": "2026-06-11T04:03:57.703Z"
+        "sourcePost": "Secret Lab Setup Coming Along",
+        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
+        "scrapedAt": "2026-06-19T04:03:55.331Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-18T20:03:58.221Z",
+    "lastUpdated": "2026-06-19T04:03:55.336Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users generally agree that a webcam under $100 can provide decent streaming quality, but may compromise on low-light performance without additional lighting setup. They recommend investing in lighting to improve overall image quality.",
+        "summary": "Real users generally recommend spending money on lighting to improve webcam quality, especially for streaming, and consider the Logitech C920 a decent option but acknowledge it's old technology.",
         "pros": [
           "decent in low light",
-          "has auto tracking if you move around",
-          "built-in ring light"
+          "auto tracking if you move around",
+          "decent image quality"
         ],
         "cons": [
-          "low light is gonna be rough on any sub $100 cam tbh",
-          "old technology now",
-          "subpar software (at least IMO)"
+          "low light is gonna be rough on any sub $100 cam",
+          "software is horrendous (Logitech)",
+          "old technology"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Using a separate lighting setup can greatly improve image quality",
-          "Investing in lighting is key to getting the best out of a sub $100 webcam",
-          "A dedicated camera or GoPro may be worth considering for better image quality"
+          "Investing in good lighting can greatly improve webcam quality.",
+          "The C920 has auto tracking and decent image quality, but it's old tech."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -182,7 +202,35 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-18T20:03:58.160Z"
+        "scrapedAt": "2026-06-19T04:03:55.322Z"
+      },
+      {
+        "product": "Logitech Brio 4K Ultra HD Webcam",
+        "productSlug": "best-budget-webcams",
+        "summary": "Real users report issues with light sensitivity and image quality, but some find the Logitech Brio 4K Ultra HD Webcam acceptable for their needs.",
+        "pros": [
+          "can be used for gaming",
+          "works fantastically when it comes down to it",
+          "less expensive and more reliable than a dedicated camera or webcam"
+        ],
+        "cons": [
+          "face cam looks bad",
+          "light sensitivity issues",
+          "image quality can drop out of focus sometimes"
+        ],
+        "sentiment": "neutral",
+        "key_insights": [
+          "Lighting is key",
+          "Manual settings for exposure, white balance, etc. can help improve image quality",
+          "Lowering output resolution can reduce pick-up of every detail"
+        ],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
+        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
+        "scrapedAt": "2026-06-19T04:03:55.323Z"
       }
     ]
   },
@@ -208,12 +256,12 @@
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-18T20:03:58.221Z",
+    "lastUpdated": "2026-06-19T04:03:55.336Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Users express skepticism about the new firmware update, with some jokingly leaving a post after reading a comment and others speculating about potential improvements.",
+        "summary": "Users express skepticism about the new firmware update for Apple AirTag, with some speculating about potential improvements while others remain unimpressed or even dismissive.",
         "pros": [
           "The Fast and the Findable"
         ],
@@ -221,10 +269,11 @@
           "no details on what this one might include",
           "I hope they improve the screen. I can't make out jack on these things"
         ],
-        "sentiment": "neutral",
+        "sentiment": "negative",
         "key_insights": [
-          "Users are skeptical about the update's content",
-          "Some users want an improvement in screen readability"
+          "Speculation about potential updates",
+          "Concerns about screen clarity",
+          "Skepticism towards new firmware"
         ],
         "recommended_by_users": false,
         "commentCount": 5,
@@ -232,7 +281,7 @@
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-18T20:03:58.211Z"
+        "scrapedAt": "2026-06-19T04:03:55.326Z"
       }
     ]
   },
