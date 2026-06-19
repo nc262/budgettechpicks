@@ -1,6 +1,6 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-19T12:04:01.712Z",
+    "lastUpdated": "2026-06-19T20:03:56.293Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
@@ -16,7 +16,7 @@
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-19T12:04:01.691Z"
+        "scrapedAt": "2026-06-19T20:03:56.279Z"
       }
     ]
   },
@@ -52,27 +52,26 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-19T12:04:01.712Z",
+    "lastUpdated": "2026-06-19T20:03:56.293Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users can reuse their Amazon Echo Dot by rooting and installing Android Lineage, allowing for alternative voice assistants like Bixby or Spotify to be used. However, they note that it's a complex process and requires technical expertise.",
+        "summary": "Users can root and install alternative operating systems on their Echo Dot, allowing them to customize its functionality and use it with third-party voice assistants like Bixby. However, Amazon's security measures make it difficult for users to successfully jailbreak the device.",
         "pros": [
-          "Can run Spotify",
-          "Bixby speaker in every room",
-          "Custom PCB for Google Mini devices"
+          "can be rooted and installed with alternative OS",
+          "can be used with third-party voice assistants like Bixby",
+          "custom PCB available for Google Minis"
         ],
         "cons": [
-          "Cannot install Smart Things or Bixby on the Echo Dot 5th Gen directly",
-          "Bootloaders are locked down hard by Amazon",
-          "Requires technical expertise to root and install Android Lineage"
+          "Amazon locks bootloaders down hard making it difficult to jailbreak",
+          "difficult to successfully wipe and re-flash the device"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Using a custom PCB for Google Mini devices is an option",
-          "Bixby can be used as an alternative voice assistant",
-          "Reusing the speaker with a DAC and soldering might be straightforward"
+          "users can use alternative OS on Echo Dot",
+          "custom PCBs are available for some devices",
+          "Amazon's security measures make it difficult to jailbreak the Echo Dot"
         ],
         "recommended_by_users": false,
         "commentCount": 10,
@@ -80,45 +79,55 @@
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-19T12:04:01.697Z"
+        "scrapedAt": "2026-06-19T20:03:56.283Z"
       },
       {
         "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 15 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users can control Philips Hue with Home Assistant using a bridge integration or Zigbee bridge, but may need to use third-party dongles and plugins for advanced features.",
+        "pros": [
+          "Controlled by Home Assistant",
+          "Zigbee2MQTT/mqtt compatible",
+          "Adaptive lighting integration"
+        ],
+        "cons": [
+          "May require additional hardware (e.g. dongle)",
+          "Not as fault tolerant as direct pairing"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Using Home Assistant for control",
+          "Need to use third-party plugins and hardware for advanced features",
+          "Zigbee2MQTT/mqtt can be used for binding"
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-19T12:04:01.697Z"
+        "scrapedAt": "2026-06-19T20:03:56.284Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-19T12:04:01.712Z",
+    "lastUpdated": "2026-06-19T20:03:56.294Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Real users mention that EMI/RFI interference is a potential issue with some microphones, but rarely attribute it to the SM7B specifically. They suggest various ways to mitigate RFI, such as cable selection, grounding issues, and using Faraday cages.",
+        "summary": "Users acknowledge that EMI/RFI interference can be a problem, but it's often related to cables, grounding issues, or studio location, and some consider the SM7B to be less prone to this issue.",
         "pros": [
-          "balanced cables are enough to deal with any interference on the trip from the mic to the pre"
+          "Humbucker coil may help eliminate RFI interference",
+          "Balanced cable is usually enough to deal with interference on the trip from mic to pre"
         ],
         "cons": [
-          "RFI can be a problem in noisy environments",
-          "some mics pick up more interference than others (e.g., SM57)"
+          "RFI/EMI interference can be a problem, especially in certain studio locations or near power strips/fluorescent lighting"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Many users report EMI/RFI issues but don't pinpoint the SM7B as a common culprit.",
-          "Cable quality and grounding are often cited as solutions to RFI problems.",
-          "Users note that some mics (like SM57) are more prone to picking up interference."
+          "RFI/EMI interference depends on various factors such as studio location and nearby emitters.",
+          "Cables and grounding issues are often the culprits behind RFI/EMI interference, not the mic itself."
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -126,12 +135,12 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-19T12:04:01.701Z"
+        "scrapedAt": "2026-06-19T20:03:56.286Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-19T12:04:01.712Z",
+    "lastUpdated": "2026-06-19T20:03:56.294Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
@@ -147,33 +156,32 @@
         "hasRealComments": true,
         "sourcePost": "sennheiser hd25 vs ath m50x",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u421cp/sennheiser_hd25_vs_ath_m50x/",
-        "scrapedAt": "2026-06-19T12:04:01.702Z"
+        "scrapedAt": "2026-06-19T20:03:56.287Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-06-19T12:04:01.712Z",
+    "lastUpdated": "2026-06-19T20:03:56.294Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users praise the chair's quality and durability, but some mention design flaws in earlier models have been rectified. Some users appreciate the high-end specs of their build.",
+        "summary": "Users have mixed experiences with their SecretLab Titan Evo 2022 Gaming Chairs, noting both positive and negative aspects. Some praise the chair's quality and comfort, while others mention design flaws and issues with arm rests.",
         "pros": [
-          "Good quality",
-          "Comfortable",
-          "Durable",
-          "High-end specs"
+          "good quality",
+          "comfortable",
+          "improved design from previous models"
         ],
         "cons": [
-          "Design flaws in earlier models",
-          "Arm rest cracking",
-          "No way to change out arm rest"
+          "design flaws",
+          "arm rest cracking",
+          "no way to change out just the arm rest"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "Users appreciate the chair's durability and high-end build specs.",
-          "Earlier design flaws have been rectified in newer models.",
-          "Some users experienced issues with their earlier SecretLab chair (cracking arm rest)"
+          "Users have experienced issues with the chair's arm rests, including cracking and difficulty replacing them.",
+          "The first models had design flaws that were later rectified in newer models.",
+          "Some users have reported long-term satisfaction with their chairs, even after multiple years of use."
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -181,40 +189,28 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-06-19T12:04:01.703Z"
+        "scrapedAt": "2026-06-19T20:03:56.289Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-19T12:04:01.712Z",
+    "lastUpdated": "2026-06-19T20:03:56.293Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users consider the Logitech C920s HD Pro Webcam a decent option for streaming under $100, with some noting its limitations in low light conditions and recommending additional lighting investments.",
-        "pros": [
-          "decent",
-          "good",
-          "still worth considering"
-        ],
-        "cons": [
-          "low light is gonna be rough",
-          "old now",
-          "not ideal for very dark spaces"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "Investing in lighting can greatly improve the webcam's performance",
-          "A dedicated camera or GoPro may be worth considering for better image quality",
-          "Software issues with Logitech webcams are a concern"
-        ],
-        "recommended_by_users": true,
+        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-19T12:04:01.692Z"
+        "scrapedAt": "2026-06-19T20:03:56.280Z"
       },
       {
         "product": "Logitech Brio 4K Ultra HD Webcam",
@@ -230,92 +226,49 @@
         "hasRealComments": true,
         "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-19T12:04:01.693Z"
+        "scrapedAt": "2026-06-19T20:03:56.281Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-19T12:04:01.712Z",
+    "lastUpdated": "2026-06-19T20:03:56.293Z",
     "insights": [
       {
         "product": "Ergotron LX Desk Monitor Arm",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Users appreciate the unique blend of vintage and tech elements in a desk setup, with some mentioning the Ergotron LX Desk Monitor Arm as part of their battlestation.",
-        "pros": [
-          "function over aesthetics",
-          "personality in this setup"
-        ],
+        "summary": "Discussed in r/battlestations — 3 comments on this thread.",
+        "pros": [],
         "cons": [],
-        "sentiment": "positive",
-        "key_insights": [
-          "the importance of mixing different aesthetics in a hobby or work space",
-          "the uniqueness of the vintage + tech mix"
-        ],
+        "sentiment": "neutral",
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "warm vintage desk setup 🌍",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-19T12:04:01.693Z"
-      },
-      {
-        "product": "Logitech MX Master 3S Wireless Mouse",
-        "productSlug": "best-desk-accessories-under-50",
-        "summary": "Users generally recommend the Logitech MX Master 3S for its performance, design, and battery life, but some express concerns with software issues and potential ergonomic limitations.",
-        "pros": [
-          "The Logitech MX Masters are the best",
-          "the best overall mouse for sure",
-          "weeks between charges",
-          "still goes weeks between charges"
-        ],
-        "cons": [
-          "horrible software it comes with",
-          "short battery life compared to similar devices",
-          "potential ergonomic limitations for bigger hands"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "some users had issues with the mouse's battery life",
-          "software concerns were raised by u/LucinaBartleson",
-          "ergonomic limitations were mentioned by a few users"
-        ],
-        "recommended_by_users": true,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
-        "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-19T12:04:01.695Z"
+        "scrapedAt": "2026-06-19T20:03:56.281Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-19T12:04:01.712Z",
+    "lastUpdated": "2026-06-19T20:03:56.294Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Users express skepticism about the new AirTag 2 firmware update, with some hoping for improvements and others being dismissive.",
-        "pros": [
-          "The Fast and the Findable"
-        ],
-        "cons": [
-          "There are still no details on what this one might include.",
-          "I hope they improve the screen. I can't make out jack on these things"
-        ],
+        "summary": "Discussed in r/apple — 7 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "No clear information about the update's content",
-          "Screen visibility is an issue with current AirTags"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 5,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-19T12:04:01.698Z"
+        "scrapedAt": "2026-06-19T20:03:56.284Z"
       }
     ]
   },
