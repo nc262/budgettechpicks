@@ -1,6 +1,6 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-20T12:05:29.682Z",
+    "lastUpdated": "2026-06-20T20:03:59.109Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
@@ -16,7 +16,7 @@
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-20T12:05:29.664Z"
+        "scrapedAt": "2026-06-20T20:03:59.094Z"
       }
     ]
   },
@@ -52,28 +52,55 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-20T12:05:29.682Z",
+    "lastUpdated": "2026-06-20T20:03:59.109Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users can reuse an Amazon Echo Dot by rooting it and installing Android Lineage, but acknowledge that Amazon locks down these devices tightly.",
+        "pros": [
+          "runs Spotify",
+          "can be used as a kitchen speaker",
+          "custom PCB for Google Minis"
+        ],
+        "cons": [
+          "cannot run Smart Things or Bixby on the original dot",
+          "Amazon locks down bootloaders hard"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "jailbreaking is possible with Android Lineage",
+          "Amazon locks down devices tightly",
+          "custom PCBs are available for Google Minis"
+        ],
         "recommended_by_users": false,
         "commentCount": 10,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-20T12:05:29.669Z"
+        "scrapedAt": "2026-06-20T20:03:59.097Z"
+      },
+      {
+        "product": "Philips Hue White & Color Starter Kit",
+        "productSlug": "best-smart-home-under-50",
+        "summary": "Discussed in r/homeautomation — 15 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "Philips Hue open-source solution for auto-dim?",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
+        "scrapedAt": "2026-06-20T20:03:59.098Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-20T12:05:29.682Z",
+    "lastUpdated": "2026-06-20T20:03:59.109Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
@@ -89,12 +116,12 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-20T12:05:29.673Z"
+        "scrapedAt": "2026-06-20T20:03:59.101Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-20T12:05:29.682Z",
+    "lastUpdated": "2026-06-20T20:03:59.109Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
@@ -110,49 +137,17 @@
         "hasRealComments": true,
         "sourcePost": "sennheiser hd25 vs ath m50x",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u421cp/sennheiser_hd25_vs_ath_m50x/",
-        "scrapedAt": "2026-06-20T12:05:29.675Z"
+        "scrapedAt": "2026-06-20T20:03:59.103Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-06-20T12:05:29.682Z",
+    "lastUpdated": "2026-06-20T20:03:59.109Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users seem to be satisfied with their SecretLab setup, but some mention design flaws in earlier models and issues with arm rests cracking.",
-        "pros": [
-          "Great specs",
-          "Comfortable chair (especially for long-term use)",
-          "Good build quality"
-        ],
-        "cons": [
-          "Design flaws in earlier models",
-          "Arm rest cracked and needed replacement"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "SecretLab has rectified design flaws from earlier models",
-          "Chairs hold up well over time (6 years or more)",
-          "High-end gaming components are compatible with the chair"
-        ],
-        "recommended_by_users": true,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Secret Lab Setup Coming Along",
-        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-06-20T12:05:29.676Z"
-      }
-    ]
-  },
-  "best-budget-webcams": {
-    "lastUpdated": "2026-06-20T12:05:29.682Z",
-    "insights": [
-      {
-        "product": "Logitech C920s HD Pro Webcam",
-        "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
+        "summary": "Discussed in r/battlestations — 24 comments on this thread.",
         "pros": [],
         "cons": [],
         "sentiment": "neutral",
@@ -161,9 +156,41 @@
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
+        "sourcePost": "Secret Lab Setup Coming Along",
+        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
+        "scrapedAt": "2026-06-20T20:03:59.104Z"
+      }
+    ]
+  },
+  "best-budget-webcams": {
+    "lastUpdated": "2026-06-20T20:03:59.109Z",
+    "insights": [
+      {
+        "product": "Logitech C920s HD Pro Webcam",
+        "productSlug": "best-budget-webcams",
+        "summary": "Users generally recommend spending money on lighting to improve the overall quality of a webcam, and some mention that the Logitech C920s HD Pro Webcam is still a decent option despite being old.",
+        "pros": [
+          "decent in low light",
+          "auto tracking if you move around",
+          "get the job done",
+          "improve how natural you look on stream"
+        ],
+        "cons": [
+          "low light is gonna be rough on any sub $100 cam",
+          "software is horrendous (Logitech)"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Investing in lighting can greatly improve webcam quality",
+          "C920s HD Pro Webcam still has its fans despite being old"
+        ],
+        "recommended_by_users": true,
+        "commentCount": 12,
+        "relevant": true,
+        "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-20T12:05:29.665Z"
+        "scrapedAt": "2026-06-20T20:03:59.094Z"
       },
       {
         "product": "Logitech Brio 4K Ultra HD Webcam",
@@ -179,34 +206,28 @@
         "hasRealComments": true,
         "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-20T12:05:29.666Z"
+        "scrapedAt": "2026-06-20T20:03:59.095Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-20T12:05:29.682Z",
+    "lastUpdated": "2026-06-20T20:03:59.109Z",
     "insights": [
       {
         "product": "Ergotron LX Desk Monitor Arm",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Users appreciate the unique setup's personality and think it looks good, but there's no clear opinion on its functionality.",
-        "pros": [
-          "function over aesthetics",
-          "vintage + tech mix works perfectly"
-        ],
+        "summary": "Discussed in r/battlestations — 3 comments on this thread.",
+        "pros": [],
         "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "the setup has a lot of personality",
-          "it works well with the vintage and tech elements"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "warm vintage desk setup 🌍",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-20T12:05:29.666Z"
+        "scrapedAt": "2026-06-20T20:03:59.095Z"
       }
     ]
   },
