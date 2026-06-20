@@ -1,29 +1,22 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-20T04:03:56.292Z",
+    "lastUpdated": "2026-06-20T12:05:29.682Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users experienced sluggishness with a USB-C mouse connected to the UGREEN 9-in-1 USB-C Hub, suggesting power or connectivity issues.",
+        "summary": "Discussed in r/buildapc — 8 comments on this thread.",
         "pros": [],
-        "cons": [
-          "Sound more like a usb dock",
-          "The hub and/or your Type-C port doesn't have enough bandwidth"
-        ],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Powering the mouse with just the laptop's USB C power cable may not be sufficient",
-          "Plugging in a separate power source for the mouse improves performance",
-          "Bluetooth peripherals can improve responsiveness and speed"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 9,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-20T04:03:56.277Z"
+        "scrapedAt": "2026-06-20T12:05:29.664Z"
       }
     ]
   },
@@ -59,65 +52,28 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-20T04:03:56.292Z",
+    "lastUpdated": "2026-06-20T12:05:29.682Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Real users have successfully rooted and installed custom Android Lineage on their Amazon Echo Dot devices, allowing for alternative OS options and integration with other smart home systems.",
-        "pros": [
-          "runs Spotify",
-          "can be used as a kitchen speaker",
-          "can run Smart Things or Bixby with proper configuration"
-        ],
-        "cons": [
-          "Amazon locks bootloaders down hard",
-          "cannot just wipe Echo Dot and put own OS on it"
-        ],
+        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Using Lineage on an Echo Dot allows for integration with alternative smart home systems like Smart Things or Bixby.",
-          "Some users have successfully rooted their Echo Shows, which are more common than jailbroken Echo Dots."
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 10,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-20T04:03:56.282Z"
-      },
-      {
-        "product": "Philips Hue White & Color Starter Kit",
-        "productSlug": "best-smart-home-under-50",
-        "summary": "Users can control Philips Hue bulbs using Home Assistant, but may need to navigate complexity and potentially require custom setup or additional hardware.",
-        "pros": [
-          "can be controlled from Home Assistant",
-          "uses Zigbee bridge for integration",
-          "offers adaptive lighting integration"
-        ],
-        "cons": [
-          "requires additional hardware (Zigbee dongle) for seamless control",
-          "may require custom setup or binding configuration",
-          "some users experience latency with direct pairing"
-        ],
-        "sentiment": "neutral",
-        "key_insights": [
-          "Home Assistant offers a robust ecosystem for controlling Philips Hue bulbs",
-          "Direct pairing and seamless control may require additional hardware or custom setup"
-        ],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Philips Hue open-source solution for auto-dim?",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-20T04:03:56.283Z"
+        "scrapedAt": "2026-06-20T12:05:29.669Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-20T04:03:56.292Z",
+    "lastUpdated": "2026-06-20T12:05:29.682Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
@@ -133,65 +89,65 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-20T04:03:56.285Z"
+        "scrapedAt": "2026-06-20T12:05:29.673Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-20T04:03:56.292Z",
+    "lastUpdated": "2026-06-20T12:05:29.682Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Users think Sennheiser HD25 and Audio-Technica ATH-M50x have unique features, but also consider them outdated, with some users expressing negative opinions about the M50x.",
-        "pros": [
-          "Well balanced overall",
-          "Passive isolation is second to none",
-          "Fun factor balance"
-        ],
-        "cons": [
-          "Sibilant highs",
-          "Sound terrible"
-        ],
+        "summary": "Discussed in r/headphones — 3 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "HD25 have a unique bass shelf design",
-          "M50x have sibilant highs",
-          "Both are considered outdated"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "sennheiser hd25 vs ath m50x",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u421cp/sennheiser_hd25_vs_ath_m50x/",
-        "scrapedAt": "2026-06-20T04:03:56.286Z"
+        "scrapedAt": "2026-06-20T12:05:29.675Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-06-20T04:03:56.292Z",
+    "lastUpdated": "2026-06-20T12:05:29.682Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Discussed in r/battlestations — 24 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Users seem to be satisfied with their SecretLab setup, but some mention design flaws in earlier models and issues with arm rests cracking.",
+        "pros": [
+          "Great specs",
+          "Comfortable chair (especially for long-term use)",
+          "Good build quality"
+        ],
+        "cons": [
+          "Design flaws in earlier models",
+          "Arm rest cracked and needed replacement"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "SecretLab has rectified design flaws from earlier models",
+          "Chairs hold up well over time (6 years or more)",
+          "High-end gaming components are compatible with the chair"
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-06-20T04:03:56.287Z"
+        "scrapedAt": "2026-06-20T12:05:29.676Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-20T04:03:56.292Z",
+    "lastUpdated": "2026-06-20T12:05:29.682Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
@@ -207,7 +163,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-20T04:03:56.278Z"
+        "scrapedAt": "2026-06-20T12:05:29.665Z"
       },
       {
         "product": "Logitech Brio 4K Ultra HD Webcam",
@@ -223,28 +179,34 @@
         "hasRealComments": true,
         "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-20T04:03:56.279Z"
+        "scrapedAt": "2026-06-20T12:05:29.666Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-20T04:03:56.292Z",
+    "lastUpdated": "2026-06-20T12:05:29.682Z",
     "insights": [
       {
         "product": "Ergotron LX Desk Monitor Arm",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Discussed in r/battlestations — 3 comments on this thread.",
-        "pros": [],
+        "summary": "Users appreciate the unique setup's personality and think it looks good, but there's no clear opinion on its functionality.",
+        "pros": [
+          "function over aesthetics",
+          "vintage + tech mix works perfectly"
+        ],
         "cons": [],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "the setup has a lot of personality",
+          "it works well with the vintage and tech elements"
+        ],
         "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "warm vintage desk setup 🌍",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-20T04:03:56.280Z"
+        "scrapedAt": "2026-06-20T12:05:29.666Z"
       }
     ]
   },
