@@ -1,22 +1,30 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-21T12:05:32.620Z",
+    "lastUpdated": "2026-06-21T20:03:46.368Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Discussed in r/buildapc — 8 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users experience sluggishness with a mouse connected to a UGREEN 9-in-1 USB-C Hub and suggest possible solutions, such as switching to a Bluetooth mouse or adjusting power settings.",
+        "pros": [
+          "Bluetooth peripherals"
+        ],
+        "cons": [
+          "Sluggish performance",
+          "Power issue"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Power settings can impact performance",
+          "Using a Bluetooth mouse might improve experience"
+        ],
         "recommended_by_users": false,
         "commentCount": 9,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-21T12:05:32.607Z"
+        "scrapedAt": "2026-06-21T20:03:46.346Z"
       }
     ]
   },
@@ -52,102 +60,77 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-21T12:05:32.620Z",
+    "lastUpdated": "2026-06-21T20:03:46.368Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Some Reddit users have successfully rooted and installed custom OS on Amazon Echo Dot 5th Gen, enabling features like Spotify integration and Bixby functionality, but acknowledge the challenge of installing SmartThings or Home Assistant.",
-        "pros": [
-          "Spotify for music playback",
-          "Bixby speaker in every room",
-          "Custom PCB for Google Mini devices"
-        ],
-        "cons": [
-          "Difficulty in installing SmartThings or Home Assistant",
-          "Amazon locks bootloaders down hard",
-          "Limited success with jailbreaking Echo Dot"
-        ],
+        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Users have successfully rooted and installed custom OS on the Echo Dot 5th Gen.",
-          "Custom PCBs for Google Mini devices are a viable option for those who want to install alternative OS."
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 10,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-21T12:05:32.610Z"
-      },
-      {
-        "product": "Philips Hue White & Color Starter Kit",
-        "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 15 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Philips Hue open-source solution for auto-dim?",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-21T12:05:32.610Z"
+        "scrapedAt": "2026-06-21T20:03:46.350Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-21T12:05:32.620Z",
+    "lastUpdated": "2026-06-21T20:03:46.368Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Discussed in r/audioengineering — 14 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Some users have experienced EMI/RFI interference issues with their microphones, but few believe the SM7B is a common culprit and most point fingers at other causes such as cables, grounding issues, or environmental conditions.",
+        "pros": [
+          "balanced cable",
+          "mic setup",
+          "Faraday cage"
+        ],
+        "cons": [
+          "cables",
+          "grounding issues",
+          "environmental conditions (location)"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "RFI is often a problem in dynamic mics",
+          "EMI/RFI interference can be caused by cable quality, grounding issues, and environmental conditions",
+          "some users have not experienced EMI/RFI issues with SM7B despite other mics experiencing problems"
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-21T12:05:32.613Z"
+        "scrapedAt": "2026-06-21T20:03:46.353Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-21T12:05:32.620Z",
+    "lastUpdated": "2026-06-21T20:03:46.368Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Users debate whether Sennheiser HD25 or Audio-Technica ATH-M50x headphones sound better, with some praising their unique features and others criticizing them as outdated.",
-        "pros": [
-          "Unique bass shelf",
-          "Well-balanced overall",
-          "Passive isolation is second to none"
-        ],
-        "cons": [
-          "Sibilant highs",
-          "Sound terrible"
-        ],
+        "summary": "Discussed in r/headphones — 3 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "HD25's unique bass shelf and passive isolation are notable features",
-          "M50x may sound sibilant at times"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "sennheiser hd25 vs ath m50x",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u421cp/sennheiser_hd25_vs_ath_m50x/",
-        "scrapedAt": "2026-06-21T12:05:32.614Z"
+        "scrapedAt": "2026-06-21T20:03:46.354Z"
       }
     ]
   },
@@ -173,23 +156,35 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-21T12:05:32.620Z",
+    "lastUpdated": "2026-06-21T20:03:46.368Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Real users recommend spending money on lighting to improve the quality of a sub $100 webcam, and some recommend dedicated cameras or other options for streaming, but also acknowledge the C920 is still a good option for its price.",
+        "pros": [
+          "decent in low light",
+          "auto tracking if you move around",
+          "plug-and-play",
+          "good image quality"
+        ],
+        "cons": [
+          "low light will always be a bit of a compromise without extra setup",
+          "software can be horrendous (Logitech)"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "key_insights": [
+          "Adding lighting greatly improves webcam performance",
+          "Dedicated cameras or other options may offer better image quality for streaming",
+          "The C920 is still a good option despite being old"
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-21T12:05:32.607Z"
+        "scrapedAt": "2026-06-21T20:03:46.347Z"
       },
       {
         "product": "Logitech Brio 4K Ultra HD Webcam",
@@ -205,7 +200,7 @@
         "hasRealComments": true,
         "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-21T12:05:32.607Z"
+        "scrapedAt": "2026-06-21T20:03:46.347Z"
       }
     ]
   },
@@ -231,44 +226,62 @@
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-21T12:05:32.620Z",
+    "lastUpdated": "2026-06-21T20:03:46.368Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Discussed in r/apple — 7 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users are curious and skeptical about the upcoming firmware update, with one comment jokingly stating they're leaving after reading a brief comment.",
+        "pros": [
+          "The Fast and the Findable"
+        ],
+        "cons": [
+          "no details on what this one might include",
+          "can't make out jack on these things",
+          "conspiracy theories"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "No information about the update's content",
+          "Difficulty viewing screen text on AirTags"
+        ],
         "recommended_by_users": false,
         "commentCount": 5,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-21T12:05:32.611Z"
+        "scrapedAt": "2026-06-21T20:03:46.351Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-21T12:05:32.620Z",
+    "lastUpdated": "2026-06-21T20:03:46.368Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Discussed in r/Monitors — 4 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
+        "summary": "Users caution against buying a 1440p QD-OLED monitor for work due to potential text smearing and viewing angle issues, while also noting a used one may be overpriced.",
+        "pros": [
+          "Some users do not notice any issues with their own OLED monitor"
+        ],
+        "cons": [
+          "Text smearing from VA panels",
+          "Poor viewing angles",
+          "Burn-in issues"
+        ],
+        "sentiment": "negative",
+        "key_insights": [
+          "QD-OLED monitors may not be suitable for work due to text smearing and viewing angle issues",
+          "Burn-in can be a problem with OLED monitors, especially when using the taskbar"
+        ],
         "recommended_by_users": false,
-        "commentCount": 4,
+        "commentCount": 6,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-06-21T12:05:32.612Z"
+        "scrapedAt": "2026-06-21T20:03:46.352Z"
       }
     ]
   }
