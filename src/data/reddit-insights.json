@@ -1,30 +1,22 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-21T20:03:46.368Z",
+    "lastUpdated": "2026-06-22T04:03:56.802Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users experience sluggishness with a mouse connected to a UGREEN 9-in-1 USB-C Hub and suggest possible solutions, such as switching to a Bluetooth mouse or adjusting power settings.",
-        "pros": [
-          "Bluetooth peripherals"
-        ],
-        "cons": [
-          "Sluggish performance",
-          "Power issue"
-        ],
+        "summary": "Discussed in r/buildapc — 8 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Power settings can impact performance",
-          "Using a Bluetooth mouse might improve experience"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 9,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-21T20:03:46.346Z"
+        "scrapedAt": "2026-06-22T04:03:56.784Z"
       }
     ]
   },
@@ -60,48 +52,56 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-21T20:03:46.368Z",
+    "lastUpdated": "2026-06-22T04:03:56.802Z",
     "insights": [
       {
-        "product": "Amazon Echo Dot (5th Gen)",
+        "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users can control Philips Hue with Home Assistant, but some mention limitations and potential need for additional setup or hardware.",
+        "pros": [
+          "can be controlled with Home Assistant",
+          "Zigbee2MQTT/mqtt integration works well"
+        ],
+        "cons": [
+          "may require additional setup",
+          "some users prefer alternative solutions"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Home Assistant provides ZigBee binding for seamless control",
+          "ZigBee2MQTT/mqtt integration offers adaptability and motion activation features",
+          "Some users prefer alternative solutions or may have had issues with initial setup"
+        ],
         "recommended_by_users": false,
-        "commentCount": 10,
+        "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "Reusing Amazon Alexa Echo Dot",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-21T20:03:46.350Z"
+        "sourcePost": "Philips Hue open-source solution for auto-dim?",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
+        "scrapedAt": "2026-06-22T04:03:56.789Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-21T20:03:46.368Z",
+    "lastUpdated": "2026-06-22T04:03:56.802Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Some users have experienced EMI/RFI interference issues with their microphones, but few believe the SM7B is a common culprit and most point fingers at other causes such as cables, grounding issues, or environmental conditions.",
+        "summary": "Users note that EMI/RFI interference can be a problem, especially for dynamic microphones like the SM7B, but many attribute it to environmental factors or improper setup rather than the mic itself.",
         "pros": [
-          "balanced cable",
-          "mic setup",
-          "Faraday cage"
+          "SM7B stopped interference issues in one user's apartment",
+          "balanced cables often deal with interference on the way from the mic to the pre"
         ],
         "cons": [
-          "cables",
-          "grounding issues",
-          "environmental conditions (location)"
+          "RFI/EMI can be a problem, especially for studio locations near emitters like FM stations",
+          "cable and ground termination issues are common culprits"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "RFI is often a problem in dynamic mics",
-          "EMI/RFI interference can be caused by cable quality, grounding issues, and environmental conditions",
-          "some users have not experienced EMI/RFI issues with SM7B despite other mics experiencing problems"
+          "RFI can occur in certain environments (e.g. near emitters), cable and grounding issues are often the cause of interference",
+          "balanced cables can mitigate interference on the way to the preamp",
+          "SM7B itself may not be the source of EMI/RFI problems"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -109,12 +109,12 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-21T20:03:46.353Z"
+        "scrapedAt": "2026-06-22T04:03:56.792Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-21T20:03:46.368Z",
+    "lastUpdated": "2026-06-22T04:03:56.802Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
@@ -130,66 +130,47 @@
         "hasRealComments": true,
         "sourcePost": "sennheiser hd25 vs ath m50x",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u421cp/sennheiser_hd25_vs_ath_m50x/",
-        "scrapedAt": "2026-06-21T20:03:46.354Z"
+        "scrapedAt": "2026-06-22T04:03:56.793Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-06-21T12:05:32.620Z",
+    "lastUpdated": "2026-06-22T04:03:56.802Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Discussed in r/battlestations — 24 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users are generally satisfied with their SecretLab Titan Evo 2022 Gaming Chair setup, mentioning some minor issues and suggesting potential upgrades.",
+        "pros": [
+          "Great specs especially with the 4090 FE",
+          "First one lasted 6 years and it was still comfortable when I handed down to my son"
+        ],
+        "cons": [
+          "That doesn't sound like a good quality chair...",
+          "Will do this is my second SecretLab chair and I had to get them to replace the whole arm when the arm rest started cracking"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Some users have experienced design flaws in earlier models of the Titan chair",
+          "Users are considering upgrades such as under-desk mounts, black acoustic panels, or updating their BIOS for optimal performance"
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-06-21T12:05:32.615Z"
+        "scrapedAt": "2026-06-22T04:03:56.795Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-21T20:03:46.368Z",
+    "lastUpdated": "2026-06-22T04:03:56.802Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users recommend spending money on lighting to improve the quality of a sub $100 webcam, and some recommend dedicated cameras or other options for streaming, but also acknowledge the C920 is still a good option for its price.",
-        "pros": [
-          "decent in low light",
-          "auto tracking if you move around",
-          "plug-and-play",
-          "good image quality"
-        ],
-        "cons": [
-          "low light will always be a bit of a compromise without extra setup",
-          "software can be horrendous (Logitech)"
-        ],
-        "sentiment": "neutral",
-        "key_insights": [
-          "Adding lighting greatly improves webcam performance",
-          "Dedicated cameras or other options may offer better image quality for streaming",
-          "The C920 is still a good option despite being old"
-        ],
-        "recommended_by_users": true,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
-        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-21T20:03:46.347Z"
-      },
-      {
-        "product": "Logitech Brio 4K Ultra HD Webcam",
-        "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 36 comments on this thread.",
+        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
         "pros": [],
         "cons": [],
         "sentiment": "neutral",
@@ -198,14 +179,42 @@
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
+        "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
+        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
+        "scrapedAt": "2026-06-22T04:03:56.785Z"
+      },
+      {
+        "product": "Logitech Brio 4K Ultra HD Webcam",
+        "productSlug": "best-budget-webcams",
+        "summary": "Users experience various issues with lighting sensitivity and image quality, but some find workarounds or alternatives that suit their needs.",
+        "pros": [
+          "Using a phone app like DroidCam to achieve 4K resolution",
+          "Manual adjustments for exposure and white balance can improve image quality",
+          "Alternative webcams like the Razer Kiyo Pro or Yolocam S3"
+        ],
+        "cons": [
+          "Lighting sensitivity issues",
+          "Image out of focus sometimes",
+          "Auto-focus not always reliable"
+        ],
+        "sentiment": "neutral",
+        "key_insights": [
+          "Lighting is a significant issue for many users",
+          "Manual adjustments can improve image quality, but may require trial and error",
+          "Alternative webcams are viable options for those with similar needs"
+        ],
+        "recommended_by_users": true,
+        "commentCount": 12,
+        "relevant": true,
+        "hasRealComments": true,
         "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-21T20:03:46.347Z"
+        "scrapedAt": "2026-06-22T04:03:56.785Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-21T12:05:32.620Z",
+    "lastUpdated": "2026-06-22T04:03:56.802Z",
     "insights": [
       {
         "product": "Ergotron LX Desk Monitor Arm",
@@ -221,29 +230,44 @@
         "hasRealComments": true,
         "sourcePost": "warm vintage desk setup 🌍",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-21T12:05:32.608Z"
+        "scrapedAt": "2026-06-22T04:03:56.786Z"
+      },
+      {
+        "product": "Logitech MX Master 3S Wireless Mouse",
+        "productSlug": "best-desk-accessories-under-50",
+        "summary": "Discussed in r/homeoffice — 19 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
+        "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
+        "scrapedAt": "2026-06-22T04:03:56.788Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-21T20:03:46.368Z",
+    "lastUpdated": "2026-06-22T04:03:56.802Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Users are curious and skeptical about the upcoming firmware update, with one comment jokingly stating they're leaving after reading a brief comment.",
+        "summary": "Users are skeptical about the new firmware update, and one user hopes for an improved screen display.",
         "pros": [
           "The Fast and the Findable"
         ],
         "cons": [
-          "no details on what this one might include",
-          "can't make out jack on these things",
-          "conspiracy theories"
+          "As is often the case with fresh firmware updates, there are still no details on what this one might include",
+          "I hope they improve the screen. I can't make out jack on these things"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "No information about the update's content",
-          "Difficulty viewing screen text on AirTags"
+          "No specific information about the new firmware update",
+          "Screen display improvement is a desired feature"
         ],
         "recommended_by_users": false,
         "commentCount": 5,
@@ -251,29 +275,28 @@
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-21T20:03:46.351Z"
+        "scrapedAt": "2026-06-22T04:03:56.790Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-21T20:03:46.368Z",
+    "lastUpdated": "2026-06-22T04:03:56.802Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users caution against buying a 1440p QD-OLED monitor for work due to potential text smearing and viewing angle issues, while also noting a used one may be overpriced.",
-        "pros": [
-          "Some users do not notice any issues with their own OLED monitor"
-        ],
+        "summary": "Users generally advise against purchasing a 1440p QD-OLED monitor for work due to issues with text smearing and viewing angles, while also mentioning potential burn-in concerns.",
+        "pros": [],
         "cons": [
-          "Text smearing from VA panels",
-          "Poor viewing angles",
-          "Burn-in issues"
+          "Smearing from VA when scrolling text",
+          "Bad viewing angles",
+          "Fringing in OLED displays"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "QD-OLED monitors may not be suitable for work due to text smearing and viewing angle issues",
-          "Burn-in can be a problem with OLED monitors, especially when using the taskbar"
+          "1440p QD-OLED panels have text smearing issues",
+          "Newer models might address some of these issues, but used ones may still have problems",
+          "Mini LED IPS 34"
         ],
         "recommended_by_users": false,
         "commentCount": 6,
@@ -281,7 +304,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-06-21T20:03:46.352Z"
+        "scrapedAt": "2026-06-22T04:03:56.791Z"
       }
     ]
   }
