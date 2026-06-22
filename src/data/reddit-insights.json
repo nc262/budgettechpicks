@@ -1,22 +1,31 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-22T04:03:56.802Z",
+    "lastUpdated": "2026-06-22T12:03:41.091Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Discussed in r/buildapc — 8 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users experienced sluggishness with a USB-C mouse plugged into the UGREEN 9-in-1 hub, but some found solutions by adjusting power settings or using Bluetooth peripherals.",
+        "pros": [
+          "Using a Bluetooth peripheral can solve the problem",
+          "Increasing power to the hub can help"
+        ],
+        "cons": [
+          "Sluggishness with USB-C mouse",
+          "Power settings may need to be adjusted"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Using a different power source for the mouse can improve performance.",
+          "Adjusting laptop power settings (performance vs efficiency) might help resolve issues."
+        ],
         "recommended_by_users": false,
         "commentCount": 9,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-22T04:03:56.784Z"
+        "scrapedAt": "2026-06-22T12:03:41.071Z"
       }
     ]
   },
@@ -83,38 +92,28 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-22T04:03:56.802Z",
+    "lastUpdated": "2026-06-22T12:03:41.091Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users note that EMI/RFI interference can be a problem, especially for dynamic microphones like the SM7B, but many attribute it to environmental factors or improper setup rather than the mic itself.",
-        "pros": [
-          "SM7B stopped interference issues in one user's apartment",
-          "balanced cables often deal with interference on the way from the mic to the pre"
-        ],
-        "cons": [
-          "RFI/EMI can be a problem, especially for studio locations near emitters like FM stations",
-          "cable and ground termination issues are common culprits"
-        ],
+        "summary": "Discussed in r/audioengineering — 14 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "RFI can occur in certain environments (e.g. near emitters), cable and grounding issues are often the cause of interference",
-          "balanced cables can mitigate interference on the way to the preamp",
-          "SM7B itself may not be the source of EMI/RFI problems"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-22T04:03:56.792Z"
+        "scrapedAt": "2026-06-22T12:03:41.079Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-22T04:03:56.802Z",
+    "lastUpdated": "2026-06-22T12:03:41.091Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
@@ -130,7 +129,7 @@
         "hasRealComments": true,
         "sourcePost": "sennheiser hd25 vs ath m50x",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u421cp/sennheiser_hd25_vs_ath_m50x/",
-        "scrapedAt": "2026-06-22T04:03:56.793Z"
+        "scrapedAt": "2026-06-22T12:03:41.080Z"
       }
     ]
   },
@@ -165,73 +164,56 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-22T04:03:56.802Z",
+    "lastUpdated": "2026-06-22T12:03:41.091Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
-        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-22T04:03:56.785Z"
-      },
-      {
-        "product": "Logitech Brio 4K Ultra HD Webcam",
-        "productSlug": "best-budget-webcams",
-        "summary": "Users experience various issues with lighting sensitivity and image quality, but some find workarounds or alternatives that suit their needs.",
+        "summary": "Many users agree that a good webcam can make a significant difference in streaming quality, and recommend spending money on lighting to improve low-light performance. Some also mention that older webcams like the Logitech C920 still hold up well.",
         "pros": [
-          "Using a phone app like DroidCam to achieve 4K resolution",
-          "Manual adjustments for exposure and white balance can improve image quality",
-          "Alternative webcams like the Razer Kiyo Pro or Yolocam S3"
+          "decent in low light",
+          "auto tracking if you move around",
+          "great for the price",
+          "leaves room for a good light setup"
         ],
         "cons": [
-          "Lighting sensitivity issues",
-          "Image out of focus sometimes",
-          "Auto-focus not always reliable"
+          "low light is gonna be rough on any sub $100 cam",
+          "software can be horrendous (specifically mentioned about Logitech)"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "Lighting is a significant issue for many users",
-          "Manual adjustments can improve image quality, but may require trial and error",
-          "Alternative webcams are viable options for those with similar needs"
+          "Good lighting makes a big difference in low-light performance",
+          "Older webcams like the C920 still hold up well with proper setup"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
-        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-22T04:03:56.785Z"
-      }
-    ]
-  },
-  "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-22T04:03:56.802Z",
-    "insights": [
+        "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
+        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
+        "scrapedAt": "2026-06-22T12:03:41.073Z"
+      },
       {
-        "product": "Ergotron LX Desk Monitor Arm",
-        "productSlug": "best-desk-accessories-under-50",
-        "summary": "Discussed in r/battlestations — 3 comments on this thread.",
+        "product": "Logitech Brio 4K Ultra HD Webcam",
+        "productSlug": "best-budget-webcams",
+        "summary": "Discussed in r/Twitch — 36 comments on this thread.",
         "pros": [],
         "cons": [],
         "sentiment": "neutral",
         "key_insights": [],
         "recommended_by_users": false,
-        "commentCount": 3,
+        "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "warm vintage desk setup 🌍",
-        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-22T04:03:56.786Z"
-      },
+        "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
+        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
+        "scrapedAt": "2026-06-22T12:03:41.074Z"
+      }
+    ]
+  },
+  "best-desk-accessories-under-50": {
+    "lastUpdated": "2026-06-22T12:03:41.091Z",
+    "insights": [
       {
         "product": "Logitech MX Master 3S Wireless Mouse",
         "productSlug": "best-desk-accessories-under-50",
@@ -246,7 +228,7 @@
         "hasRealComments": true,
         "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
         "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-22T04:03:56.788Z"
+        "scrapedAt": "2026-06-22T12:03:41.074Z"
       }
     ]
   },
