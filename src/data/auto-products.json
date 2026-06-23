@@ -1,5 +1,43 @@
 [
   {
+    "asin": "B0DG8H6LT4",
+    "name": "RD75 Pro",
+    "price": "$95.99",
+    "imageUrl": "https://m.media-amazon.com/images/I/718hlmAo+TL._AC_UY218_.jpg",
+    "rating": 4.3,
+    "reviewCount": 426,
+    "articleSlug": "best-gaming-gear-under-50",
+    "description": "Evoworks Evo75 is a popular choice among Reddit users in the mechanical keyboard community, recommended for its sound quality and affordability.",
+    "pros": [
+      "popular among Reddit users",
+      "sound quality"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/MechanicalKeyboards/comments/1u9a7z9/decided_to_buy_evoworks_evo75/",
+    "sourceSubreddit": "MechanicalKeyboards",
+    "mentions": 1,
+    "addedAt": "2026-06-23T07:00:52.512Z"
+  },
+  {
+    "asin": "B0DT71KNGX",
+    "name": "YUNZII AL80",
+    "price": "$87.91",
+    "imageUrl": "https://m.media-amazon.com/images/I/71x4yHHNiOL._AC_UY218_.jpg",
+    "rating": 4.5,
+    "reviewCount": 405,
+    "articleSlug": "best-gaming-gear-under-50",
+    "description": "Recommended by the r/MechanicalKeyboards community due to its competitive price point and high customer rating on Amazon.",
+    "pros": [
+      "Competitive price point ($169)",
+      "4.5 stars across 405 ratings on Amazon"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/MechanicalKeyboards/comments/1u9a7z9/decided_to_buy_evoworks_evo75/",
+    "sourceSubreddit": "MechanicalKeyboards",
+    "mentions": 1,
+    "addedAt": "2026-06-23T07:01:01.643Z"
+  },
+  {
     "asin": "B07GBZ4Q68",
     "name": "NZXT Lift Wired Gaming Mouse",
     "price": "$37.99",
