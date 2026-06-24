@@ -1,22 +1,31 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-23T20:05:30.292Z",
+    "lastUpdated": "2026-06-24T12:03:27.814Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Discussed in r/buildapc — 8 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users experienced sluggishness with a USB-C hub-powered mouse, suggesting that it may be related to power settings, cable quality, or hub capacity.",
+        "pros": [
+          "Powering the mouse directly from the laptop's second USB port"
+        ],
+        "cons": [
+          "Hub feels like a usb dock",
+          "Sluggishness despite sufficient power supply"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Power settings may affect performance",
+          "Type-C cable quality is crucial for smooth operation",
+          "Insufficient bandwidth in the hub can cause issues"
+        ],
         "recommended_by_users": false,
         "commentCount": 9,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-23T20:05:30.275Z"
+        "scrapedAt": "2026-06-24T12:03:27.803Z"
       }
     ]
   },
@@ -52,44 +61,66 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-23T20:05:30.292Z",
+    "lastUpdated": "2026-06-24T12:03:27.814Z",
     "insights": [
       {
-        "product": "Philips Hue White & Color Starter Kit",
+        "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 15 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Real users have successfully rooted and installed Android Lineage on their Echo Dot 5th Gen, running third-party OS like Spotify, but most cannot jailbreak it or get SmartThings or Bixby to work.",
+        "pros": [
+          "can be rooted with Android Lineage",
+          "runs Spotify"
+        ],
+        "cons": [
+          "jailbreaking is not common",
+          "Amazon locks bootloaders down hard",
+          "cannot install SmartThings or Bixby on the device"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Instructions are available on YouTube for running Home Assistant and Lineage on these devices",
+          "Some users have successfully reused buttons and mics with another microcontroller by tracing ribbon cable connections",
+          "Custom PCBs are available for Google Minis, but not widely discussed in this context"
+        ],
         "recommended_by_users": false,
-        "commentCount": 12,
+        "commentCount": 10,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "Philips Hue open-source solution for auto-dim?",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-23T20:05:30.279Z"
+        "sourcePost": "Reusing Amazon Alexa Echo Dot",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
+        "scrapedAt": "2026-06-24T12:03:27.806Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-23T20:05:30.292Z",
+    "lastUpdated": "2026-06-24T12:03:27.814Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Discussed in r/audioengineering — 14 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users mention that EMI/RFI interference can be a problem, but it's often related to external factors such as location and cables, rather than the microphone itself.",
+        "pros": [
+          "balanced cables can deal with interference on the trip from the mic to the pre",
+          "the SM57's humbucker coil may be effective in rejecting low frequency inductive noise"
+        ],
+        "cons": [
+          "RFI/EMI interference can be a problem",
+          "cable and ground issues can cause interference",
+          "some mics are more prone to interference than others"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "RFI/EMI interference is not typically caused by the microphone itself, but rather by external factors or cable issues.",
+          "Cable quality and grounding issues can cause interference.",
+          "The SM57's humbucker coil may be effective in rejecting low frequency inductive noise."
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-23T20:05:30.283Z"
+        "scrapedAt": "2026-06-24T12:03:27.807Z"
       }
     ]
   },
@@ -115,115 +146,142 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-06-23T20:05:30.292Z",
+    "lastUpdated": "2026-06-24T12:03:27.814Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Discussed in r/battlestations — 24 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Users are generally satisfied with their Secretlab Titan Evo 2022 Gaming Chairs, noting improvements over previous models and sharing their own gaming setup configurations.",
+        "pros": [
+          "Good quality chair",
+          "Improved design",
+          "High-performance components"
+        ],
+        "cons": [
+          "Design flaws in first models"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "First one lasted 6 years and was still comfortable when handed down to my son",
+          "I am happy with the chairs so far. The first models did have some design flaws which have been rectified on these later models.",
+          "Will do this is my second SecretLab chair"
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-06-23T20:05:30.285Z"
+        "scrapedAt": "2026-06-24T12:03:27.809Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-23T20:05:30.292Z",
+    "lastUpdated": "2026-06-24T12:03:27.814Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Real users believe that a webcam under $100 has limitations, especially in low-light conditions, but can still deliver decent results with proper lighting setup. Many users also recommend investing money on external lighting instead of relying solely on the webcam's built-in light.",
+        "pros": [
+          "decent performance",
+          "can be improved with good lighting setup"
+        ],
+        "cons": [
+          "low light performance is rough under $100"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "key_insights": [
+          "Investing in external lighting can greatly improve webcam performance",
+          "Low-light conditions are a compromise without extra setup",
+          "The C920 is still a great webcam for the price"
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-23T20:05:30.276Z"
+        "scrapedAt": "2026-06-24T12:03:27.803Z"
       },
       {
         "product": "Logitech Brio 4K Ultra HD Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 36 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users experience issues with lighting sensitivity and image quality, but some have found workarounds or alternatives.",
+        "pros": [
+          "manual settings for exposure",
+          "using a different camera like DroidCam or Razer Kiyo Pro",
+          "Yolocam S3 provides good bang for buck"
+        ],
+        "cons": [
+          "lighting issues",
+          "image quality can be soft and noisy",
+          "can be expensive"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Lighting is a significant issue, especially for those who are light-sensitive.",
+          "Using alternative cameras or software can improve image quality.",
+          "Some users have found workarounds to mitigate lighting issues."
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-23T20:05:30.277Z"
+        "scrapedAt": "2026-06-24T12:03:27.804Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-23T12:05:20.237Z",
+    "lastUpdated": "2026-06-24T12:03:27.814Z",
     "insights": [
       {
         "product": "Ergotron LX Desk Monitor Arm",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Discussed in r/battlestations — 3 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Users appreciate the aesthetic of the vintage desk setup and think it has 'personality', but some commenters mentioned that their original post was removed due to violating Reddit rules.",
+        "pros": [
+          "function over aesthetics",
+          "the vintage + tech mix works so perfectly"
+        ],
+        "cons": [
+          "repeatedly reposting own battlestation with little to no changes"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "vintage and tech combination is key to personality",
+          "functionality over appearance",
+          "original post was removed due to Reddit rule violations"
+        ],
+        "recommended_by_users": true,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "warm vintage desk setup 🌍",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-23T12:05:20.222Z"
-      },
-      {
-        "product": "Logitech MX Master 3S Wireless Mouse",
-        "productSlug": "best-desk-accessories-under-50",
-        "summary": "Discussed in r/homeoffice — 19 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
-        "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-23T12:05:20.223Z"
+        "scrapedAt": "2026-06-24T12:03:27.804Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-23T20:05:30.292Z",
+    "lastUpdated": "2026-06-24T12:03:27.814Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Users express skepticism about the new firmware update, with one suggesting there are no known details on what it includes.",
-        "pros": [],
-        "cons": [
-          "I hope they improve the screen. I can't make out jack on these things"
+        "summary": "Users are skeptical and curious about the new firmware update for AirTags, with some hoping for improvements but others being dismissive.",
+        "pros": [
+          "The Fast and the Findable"
         ],
-        "sentiment": "negative",
+        "cons": [
+          "No details on what this one might include",
+          "I hope they improve the screen"
+        ],
+        "sentiment": "neutral",
         "key_insights": [
-          "No details on what the firmware update might include",
-          "Improve screen visibility"
+          "There are still no details on what this one might include",
+          "some users want improvements to the screen"
         ],
         "recommended_by_users": false,
         "commentCount": 5,
@@ -231,7 +289,7 @@
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-23T20:05:30.279Z"
+        "scrapedAt": "2026-06-24T12:03:27.806Z"
       }
     ]
   },
