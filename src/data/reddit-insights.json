@@ -1,24 +1,24 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-24T20:03:50.072Z",
+    "lastUpdated": "2026-06-25T04:05:14.477Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users report issues with mouse slowness when connected to the USB-C hub, and suggest solutions such as using Bluetooth peripherals or adjusting power settings.",
+        "summary": "Users suggest checking power settings and using Bluetooth peripherals to resolve sluggishness, with some experiencing issues when plugging the mouse into a USB hub or when the laptop's power cable is plugged into the hub.",
         "pros": [
-          "using Bluetooth peripherals",
-          "plugging a type C cable into the hub to power it"
+          "Using Bluetooth peripherals",
+          "Powering the mouse directly from a Type-C cable"
         ],
         "cons": [
-          "hub sounds like a USB dock",
-          "mouse slowness"
+          "USB-dongle",
+          "Hub not providing enough bandwidth"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Power settings may affect mouse performance",
-          "Bluetooth peripherals can improve mouse responsiveness",
-          "Hub design might be the cause of issues"
+          "Checking laptop power settings can resolve issues",
+          "Bluetooth peripherals can be a solution",
+          "Powering the mouse directly from a Type-C cable can improve performance"
         ],
         "recommended_by_users": false,
         "commentCount": 9,
@@ -26,7 +26,7 @@
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-24T20:03:50.057Z"
+        "scrapedAt": "2026-06-25T04:05:14.464Z"
       }
     ]
   },
@@ -62,7 +62,7 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-24T20:03:50.072Z",
+    "lastUpdated": "2026-06-25T04:05:14.477Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
@@ -78,7 +78,23 @@
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-24T20:03:50.062Z"
+        "scrapedAt": "2026-06-25T04:05:14.468Z"
+      },
+      {
+        "product": "Philips Hue White & Color Starter Kit",
+        "productSlug": "best-smart-home-under-50",
+        "summary": "Discussed in r/homeautomation — 15 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "Philips Hue open-source solution for auto-dim?",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
+        "scrapedAt": "2026-06-25T04:05:14.469Z"
       }
     ]
   },
@@ -104,90 +120,66 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-24T20:03:50.072Z",
+    "lastUpdated": "2026-06-25T04:05:14.477Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "The Sennheiser HD25 and Audio-Technica ATH-M50x headphones have contrasting opinions, with some praising the HD25 for its unique bass shelf and passive isolation, while others criticize the M50x for outdated sound quality.",
-        "pros": [
-          "unique bass shelf",
-          "passive isolation is second to none",
-          "well balanced overall"
-        ],
-        "cons": [
-          "sound terrible"
-        ],
+        "summary": "Discussed in r/headphones — 3 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "HD25 has a unique bass shelf",
-          "M50x has outdated sound quality",
-          "HD25 was the \"Concorde headphones\" since its release in 1987"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "sennheiser hd25 vs ath m50x",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u421cp/sennheiser_hd25_vs_ath_m50x/",
-        "scrapedAt": "2026-06-24T20:03:50.066Z"
+        "scrapedAt": "2026-06-25T04:05:14.471Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-06-24T20:03:50.072Z",
+    "lastUpdated": "2026-06-25T04:05:14.477Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Discussed in r/battlestations — 24 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Secret Lab Setup Coming Along",
-        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-06-24T20:03:50.067Z"
-      }
-    ]
-  },
-  "best-budget-webcams": {
-    "lastUpdated": "2026-06-24T20:03:50.072Z",
-    "insights": [
-      {
-        "product": "Logitech C920s HD Pro Webcam",
-        "productSlug": "best-budget-webcams",
-        "summary": "Users generally agree that a good webcam under $100 requires additional lighting, and some recommend spending extra on lighting rather than upgrading to a more expensive camera.",
+        "summary": "Users generally like their SecretLab Titan Evo 2022 Gaming Chair experience, with some mentioning design flaws in earlier models and issues with the armrest, but overall being satisfied with the quality.",
         "pros": [
-          "decent in low light",
-          "auto tracking",
-          "great for the price"
+          "Great specs",
+          "Comfortable for a long time (6 years)",
+          "Good build quality"
         ],
         "cons": [
-          "low light can be rough without extra lighting"
+          "Design flaws in earlier models",
+          "Armrest cracking issue",
+          "Some design imperfections"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "adding good lighting makes a huge difference",
-          "a $15 ring light can make a big impact",
-          "spending money on lighting is more important than upgrading to a pricier camera"
+          "The first model had some design flaws which have been rectified on later models.",
+          "Users like the comfort and build quality of the chair, with one user mentioning it was still comfortable after 6 years.",
+          "Some users had issues with armrests cracking in older Titan chairs."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
-        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-24T20:03:50.057Z"
-      },
+        "sourcePost": "Secret Lab Setup Coming Along",
+        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
+        "scrapedAt": "2026-06-25T04:05:14.472Z"
+      }
+    ]
+  },
+  "best-budget-webcams": {
+    "lastUpdated": "2026-06-25T04:05:14.477Z",
+    "insights": [
       {
-        "product": "Logitech Brio 4K Ultra HD Webcam",
+        "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 36 comments on this thread.",
+        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
         "pros": [],
         "cons": [],
         "sentiment": "neutral",
@@ -196,14 +188,14 @@
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
-        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-24T20:03:50.058Z"
+        "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
+        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
+        "scrapedAt": "2026-06-25T04:05:14.465Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-24T20:03:50.072Z",
+    "lastUpdated": "2026-06-25T04:05:14.477Z",
     "insights": [
       {
         "product": "Logitech MX Master 3S Wireless Mouse",
@@ -219,57 +211,57 @@
         "hasRealComments": true,
         "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
         "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-24T20:03:50.059Z"
+        "scrapedAt": "2026-06-25T04:05:14.466Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-24T20:03:50.072Z",
+    "lastUpdated": "2026-06-25T04:05:14.477Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Users are skeptical and curious about the new firmware update for Apple AirTag 2, wondering what improvements it might bring.",
-        "pros": [
-          "The Fast and the Findable"
-        ],
-        "cons": [
-          "I hope they improve the screen. I can't make out jack on these things",
-          "there are still no details on what this one might include."
-        ],
+        "summary": "Discussed in r/apple — 7 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "users want to know what improvements the firmware update will bring",
-          "some users are skeptical about the update, questioning why there's no information available"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 5,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-24T20:03:50.063Z"
+        "scrapedAt": "2026-06-25T04:05:14.469Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-24T20:03:50.072Z",
+    "lastUpdated": "2026-06-25T04:05:14.477Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Discussed in r/Monitors — 4 comments on this thread.",
+        "summary": "Users generally agree that the Alienware AW3423DWF QD-OLED monitor may have issues with text smearing, viewing angles, and burn-in, making it less suitable for heavy work use.",
         "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
+        "cons": [
+          "smearing from VA when scrolling text",
+          "bad viewing angles",
+          "fringing"
+        ],
+        "sentiment": "negative",
+        "key_insights": [
+          "OLED panels may not be suitable for heavy work due to text smearing and burn-in issues.",
+          "Newer models might have improved panel quality, but used ones can still have problems.",
+          "Mini LED IPS ultrawides with current-gen panels are a better option for heavy work use."
+        ],
         "recommended_by_users": false,
         "commentCount": 7,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-06-24T20:03:50.064Z"
+        "scrapedAt": "2026-06-25T04:05:14.470Z"
       }
     ]
   }
