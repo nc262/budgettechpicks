@@ -52,7 +52,7 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-25T12:07:56.558Z",
+    "lastUpdated": "2026-06-25T20:05:22.718Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
@@ -68,7 +68,7 @@
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-25T12:07:56.547Z"
+        "scrapedAt": "2026-06-25T20:05:22.707Z"
       },
       {
         "product": "Philips Hue White & Color Starter Kit",
@@ -84,12 +84,12 @@
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-25T12:07:56.548Z"
+        "scrapedAt": "2026-06-25T20:05:22.708Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-25T12:07:56.558Z",
+    "lastUpdated": "2026-06-25T20:05:22.718Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
@@ -105,12 +105,12 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-25T12:07:56.550Z"
+        "scrapedAt": "2026-06-25T20:05:22.711Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-25T12:07:56.558Z",
+    "lastUpdated": "2026-06-25T20:05:22.718Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
@@ -126,57 +126,72 @@
         "hasRealComments": true,
         "sourcePost": "sennheiser hd25 vs ath m50x",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1u421cp/sennheiser_hd25_vs_ath_m50x/",
-        "scrapedAt": "2026-06-25T12:07:56.551Z"
+        "scrapedAt": "2026-06-25T20:05:22.712Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-06-25T12:07:56.558Z",
+    "lastUpdated": "2026-06-25T20:05:22.718Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Real users have mixed opinions, with some mentioning design flaws in previous models but being satisfied with their current SecretLab chairs, while others share their impressive gaming setup and display choices.",
+        "summary": "Users share their thoughts on setting up a gaming station, mentioning various hardware components and Secretlab's chair, with some praising its quality and design.",
         "pros": [
-          "Great specs especially with the 4090 FE!",
-          "First one lasted 6 years and it was still comfortable when I handed down to my son."
+          "Good quality chair",
+          "Great specs",
+          "Design flaws have been rectified in later models"
         ],
         "cons": [
-          "That doesn’t sound like a good quality chair…"
+          "Not sound like good quality chair"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Design flaws in previous models have been rectified in newer versions.",
-          "Users are satisfied with their SecretLab chairs despite some initial issues."
+          "Users have positive experiences with Secretlab chairs, mentioning their comfort and design improvements over previous models.",
+          "Some users have had issues with chair parts cracking, but were satisfied with the overall build.",
+          "Setting up a gaming station involves various hardware components, and users share their choices and configurations."
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-06-25T12:07:56.552Z"
+        "scrapedAt": "2026-06-25T20:05:22.713Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-25T12:07:56.558Z",
+    "lastUpdated": "2026-06-25T20:05:22.718Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users recommend spending money on lighting to improve image quality, and some prefer newer models like Emeet Pixy or Elgato Facecam MK2, but also mention that Logitech C920s HD Pro Webcam is still a good option",
+        "pros": [
+          "decent in low light",
+          "auto tracking",
+          "built-in ring light",
+          "good for the price"
+        ],
+        "cons": [
+          "old now",
+          "low light can be rough without extra setup",
+          "software is horrendous"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "key_insights": [
+          "using lighting to improve image quality",
+          "older models like C920s are still good options",
+          "newer models have advantages over older ones"
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-25T12:07:56.543Z"
+        "scrapedAt": "2026-06-25T20:05:22.704Z"
       },
       {
         "product": "Logitech Brio 4K Ultra HD Webcam",
@@ -192,49 +207,44 @@
         "hasRealComments": true,
         "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-25T12:07:56.544Z"
+        "scrapedAt": "2026-06-25T20:05:22.705Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-25T12:07:56.558Z",
+    "lastUpdated": "2026-06-25T20:05:22.718Z",
     "insights": [
-      {
-        "product": "Ergotron LX Desk Monitor Arm",
-        "productSlug": "best-desk-accessories-under-50",
-        "summary": "Discussed in r/battlestations — 3 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 3,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "warm vintage desk setup 🌍",
-        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-25T12:07:56.544Z"
-      },
       {
         "product": "Logitech MX Master 3S Wireless Mouse",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Discussed in r/homeoffice — 19 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Commenters generally recommend the Logitech MX Master 3S for its performance, battery life, and design, but some users have experienced issues with the device's longevity.",
+        "pros": [
+          "best overall mouse",
+          "looks so slick",
+          "weeks between charges"
+        ],
+        "cons": [
+          "horrible software",
+          "short lifespan (double clicking)",
+          "small size might be less ergonomic for bigger hands"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "key_insights": [
+          "some users have experienced issues with the device's longevity, including short battery life and double clicking",
+          "the design is generally well-received"
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
         "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-25T12:07:56.546Z"
+        "scrapedAt": "2026-06-25T20:05:22.706Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-25T12:07:56.558Z",
+    "lastUpdated": "2026-06-25T20:05:22.718Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
@@ -250,12 +260,12 @@
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-25T12:07:56.548Z"
+        "scrapedAt": "2026-06-25T20:05:22.708Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-25T12:07:56.558Z",
+    "lastUpdated": "2026-06-25T20:05:22.718Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
@@ -271,7 +281,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-06-25T12:07:56.549Z"
+        "scrapedAt": "2026-06-25T20:05:22.709Z"
       }
     ]
   }
