@@ -52,23 +52,34 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-26T04:06:40.473Z",
+    "lastUpdated": "2026-06-26T12:03:30.020Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users can successfully install Android Lineage on the Echo Dot 5 and run custom AI-powered voice assistants, but it's a complex process with limitations due to Amazon's locked bootloaders.",
+        "pros": [
+          "can be rooted",
+          "runs Spotify",
+          "enables smart home automation"
+        ],
+        "cons": [
+          "locked by Amazon",
+          "cannot install certain OSes like Smart Things or Bixby without jailbreaking",
+          "limited DIY options for customizing the device"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Amazon locks down bootloaders hard, making it difficult to install alternative OSes on the Echo Dot 5.",
+          "Users have successfully installed Android Lineage and run custom AI-powered voice assistants on other Echo Show models."
+        ],
         "recommended_by_users": false,
         "commentCount": 10,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-26T04:06:40.453Z"
+        "scrapedAt": "2026-06-26T12:03:30.009Z"
       },
       {
         "product": "Philips Hue White & Color Starter Kit",
@@ -84,12 +95,12 @@
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-26T04:06:40.454Z"
+        "scrapedAt": "2026-06-26T12:03:30.009Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-26T04:06:40.473Z",
+    "lastUpdated": "2026-06-26T12:03:30.020Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
@@ -105,7 +116,7 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-26T04:06:40.457Z"
+        "scrapedAt": "2026-06-26T12:03:30.014Z"
       }
     ]
   },
@@ -131,32 +142,23 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-06-26T04:06:40.473Z",
+    "lastUpdated": "2026-06-26T12:03:30.020Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users share their experiences with building a gaming station and mention the Secretlab Titan Evo 2022 chair, noting some design flaws but generally being satisfied with its quality.",
-        "pros": [
-          "Great specs especially with the 4090 FE!",
-          "I am happy with the chairs so far.",
-          "The first one lasted 6 years and it was still comfortable when I handed down to my son."
-        ],
-        "cons": [
-          "That doesn’t sound like a good quality chair…"
-        ],
+        "summary": "Discussed in r/battlestations — 24 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Some users mention design flaws in the first models, but later models have rectified these issues.",
-          "Users appreciate the comfort and durability of the Secretlab chairs."
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-06-26T04:06:40.462Z"
+        "scrapedAt": "2026-06-26T12:03:30.015Z"
       }
     ]
   },
@@ -182,24 +184,8 @@
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-26T04:06:40.473Z",
+    "lastUpdated": "2026-06-26T12:03:30.020Z",
     "insights": [
-      {
-        "product": "Ergotron LX Desk Monitor Arm",
-        "productSlug": "best-desk-accessories-under-50",
-        "summary": "Discussed in r/battlestations — 3 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 3,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "warm vintage desk setup 🌍",
-        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-26T04:06:40.448Z"
-      },
       {
         "product": "Logitech MX Master 3S Wireless Mouse",
         "productSlug": "best-desk-accessories-under-50",
@@ -214,12 +200,12 @@
         "hasRealComments": true,
         "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
         "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-26T04:06:40.450Z"
+        "scrapedAt": "2026-06-26T12:03:30.008Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-26T04:06:40.473Z",
+    "lastUpdated": "2026-06-26T12:03:30.020Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
@@ -235,12 +221,12 @@
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-26T04:06:40.455Z"
+        "scrapedAt": "2026-06-26T12:03:30.010Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-26T04:06:40.473Z",
+    "lastUpdated": "2026-06-26T12:03:30.020Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
@@ -256,7 +242,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-06-26T04:06:40.456Z"
+        "scrapedAt": "2026-06-26T12:03:30.013Z"
       }
     ]
   }
