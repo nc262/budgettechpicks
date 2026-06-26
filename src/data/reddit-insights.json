@@ -1,6 +1,6 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-25T12:07:56.558Z",
+    "lastUpdated": "2026-06-26T20:05:10.777Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
@@ -16,7 +16,7 @@
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-25T12:07:56.542Z"
+        "scrapedAt": "2026-06-26T20:05:10.768Z"
       }
     ]
   },
@@ -52,34 +52,23 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-26T12:03:30.020Z",
+    "lastUpdated": "2026-06-26T20:05:10.777Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users can successfully install Android Lineage on the Echo Dot 5 and run custom AI-powered voice assistants, but it's a complex process with limitations due to Amazon's locked bootloaders.",
-        "pros": [
-          "can be rooted",
-          "runs Spotify",
-          "enables smart home automation"
-        ],
-        "cons": [
-          "locked by Amazon",
-          "cannot install certain OSes like Smart Things or Bixby without jailbreaking",
-          "limited DIY options for customizing the device"
-        ],
+        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Amazon locks down bootloaders hard, making it difficult to install alternative OSes on the Echo Dot 5.",
-          "Users have successfully installed Android Lineage and run custom AI-powered voice assistants on other Echo Show models."
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 10,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-26T12:03:30.009Z"
+        "scrapedAt": "2026-06-26T20:05:10.769Z"
       },
       {
         "product": "Philips Hue White & Color Starter Kit",
@@ -95,28 +84,38 @@
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-26T12:03:30.009Z"
+        "scrapedAt": "2026-06-26T20:05:10.770Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-26T12:03:30.020Z",
+    "lastUpdated": "2026-06-26T20:05:10.778Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Discussed in r/audioengineering — 14 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users report mixed experiences with EMI/RFI interference, with some attributing issues to location and emitters nearby, while others attribute them to poor cable quality or grounding issues.",
+        "pros": [
+          "Most users don't experience EMI/RFI interference",
+          "Balanced cables are often sufficient to deal with interference"
+        ],
+        "cons": [
+          "Some users experience interference from emitters or cell repeaters nearby",
+          "Grounding issues can cause noise"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Location and nearby emitters can contribute to EMI/RFI interference",
+          "Grounding issues are a common culprit for noise",
+          "Balanced cables often suffice to deal with interference"
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-26T12:03:30.014Z"
+        "scrapedAt": "2026-06-26T20:05:10.772Z"
       }
     ]
   },
@@ -163,12 +162,12 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-26T04:06:40.473Z",
+    "lastUpdated": "2026-06-26T20:05:10.777Z",
     "insights": [
       {
-        "product": "Logitech Brio 4K Ultra HD Webcam",
+        "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 36 comments on this thread.",
+        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
         "pros": [],
         "cons": [],
         "sentiment": "neutral",
@@ -177,9 +176,9 @@
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
-        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-26T04:06:40.447Z"
+        "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
+        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
+        "scrapedAt": "2026-06-26T20:05:10.768Z"
       }
     ]
   },
@@ -205,28 +204,36 @@
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-26T12:03:30.020Z",
+    "lastUpdated": "2026-06-26T20:05:10.778Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Discussed in r/apple — 7 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users are skeptical about the new firmware update for AirTag, with some hoping it includes screen improvements.",
+        "pros": [
+          "The Fast and the Findable"
+        ],
+        "cons": [
+          "no details on what this one might include",
+          "I hope they improve the screen. I can't make out jack on these things"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Users are looking forward to potential improvements in screen clarity",
+          "There is no information about what specific changes the firmware update will bring"
+        ],
         "recommended_by_users": false,
         "commentCount": 5,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-26T12:03:30.010Z"
+        "scrapedAt": "2026-06-26T20:05:10.770Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-26T12:03:30.020Z",
+    "lastUpdated": "2026-06-26T20:05:10.778Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
@@ -242,7 +249,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-06-26T12:03:30.013Z"
+        "scrapedAt": "2026-06-26T20:05:10.771Z"
       }
     ]
   }
