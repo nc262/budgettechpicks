@@ -1,6 +1,6 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-26T20:05:10.777Z",
+    "lastUpdated": "2026-06-27T04:03:40.160Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
@@ -16,7 +16,7 @@
         "hasRealComments": true,
         "sourcePost": "Mouse recommendation that won't be sluggish in a USB-C hub?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1pyjryg/mouse_recommendation_that_wont_be_sluggish_in_a/",
-        "scrapedAt": "2026-06-26T20:05:10.768Z"
+        "scrapedAt": "2026-06-27T04:03:40.147Z"
       }
     ]
   },
@@ -52,75 +52,61 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-26T20:05:10.777Z",
+    "lastUpdated": "2026-06-27T04:03:40.160Z",
     "insights": [
-      {
-        "product": "Amazon Echo Dot (5th Gen)",
-        "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 10,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Reusing Amazon Alexa Echo Dot",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-26T20:05:10.769Z"
-      },
       {
         "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 15 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users can control Philips Hue bulbs with Home Assistant, but some mention limitations and potential use of third-party devices for auto-dim functionality.",
+        "pros": [
+          "Home Assistant integration",
+          "Zigbee2MQTT/mqtt connectivity",
+          "Adaptive lighting integration"
+        ],
+        "cons": [
+          "Limited compatibility with certain ZigBee devices",
+          "Potential latency issues",
+          "Requires knowledge of binding and setup"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Using Home Assistant for auto-dim functionality",
+          "Third-party bindings like Zigbee2MQTT/mqtt can enhance control",
+          "Adaptive lighting integration offers flexible dimming options"
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-26T20:05:10.770Z"
+        "scrapedAt": "2026-06-27T04:03:40.149Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-26T20:05:10.778Z",
+    "lastUpdated": "2026-06-27T04:03:40.160Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users report mixed experiences with EMI/RFI interference, with some attributing issues to location and emitters nearby, while others attribute them to poor cable quality or grounding issues.",
-        "pros": [
-          "Most users don't experience EMI/RFI interference",
-          "Balanced cables are often sufficient to deal with interference"
-        ],
-        "cons": [
-          "Some users experience interference from emitters or cell repeaters nearby",
-          "Grounding issues can cause noise"
-        ],
+        "summary": "Discussed in r/audioengineering — 14 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Location and nearby emitters can contribute to EMI/RFI interference",
-          "Grounding issues are a common culprit for noise",
-          "Balanced cables often suffice to deal with interference"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-26T20:05:10.772Z"
+        "scrapedAt": "2026-06-27T04:03:40.151Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-26T04:06:40.473Z",
+    "lastUpdated": "2026-06-27T04:03:40.160Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
@@ -136,12 +122,12 @@
         "hasRealComments": true,
         "sourcePost": "Audio-Technica ATH-M50X headphones through a Focusrite Scarlett 2i2. Finally some decent equipment.",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1ueg505/audiotechnica_athm50x_headphones_through_a/",
-        "scrapedAt": "2026-06-26T04:06:40.460Z"
+        "scrapedAt": "2026-06-27T04:03:40.152Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-06-26T12:03:30.020Z",
+    "lastUpdated": "2026-06-27T04:03:40.160Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
@@ -157,12 +143,12 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-06-26T12:03:30.015Z"
+        "scrapedAt": "2026-06-27T04:03:40.153Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-26T20:05:10.777Z",
+    "lastUpdated": "2026-06-27T04:03:40.160Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
@@ -178,7 +164,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-26T20:05:10.768Z"
+        "scrapedAt": "2026-06-27T04:03:40.147Z"
       }
     ]
   },
@@ -204,36 +190,28 @@
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-26T20:05:10.778Z",
+    "lastUpdated": "2026-06-27T04:03:40.160Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Users are skeptical about the new firmware update for AirTag, with some hoping it includes screen improvements.",
-        "pros": [
-          "The Fast and the Findable"
-        ],
-        "cons": [
-          "no details on what this one might include",
-          "I hope they improve the screen. I can't make out jack on these things"
-        ],
+        "summary": "Discussed in r/apple — 7 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Users are looking forward to potential improvements in screen clarity",
-          "There is no information about what specific changes the firmware update will bring"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 5,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-26T20:05:10.770Z"
+        "scrapedAt": "2026-06-27T04:03:40.149Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-26T20:05:10.778Z",
+    "lastUpdated": "2026-06-27T04:03:40.160Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
@@ -249,7 +227,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-06-26T20:05:10.771Z"
+        "scrapedAt": "2026-06-27T04:03:40.151Z"
       }
     ]
   }
