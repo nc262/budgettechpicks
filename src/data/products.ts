@@ -2105,6 +2105,22 @@ export const products: Product[] = [
     articleSlug: "best-gaming-setups",
     badge: "🤯 Overkill Mode",
   },
+  // Promoted from community picks after 14+ days live (auto-pipeline)
+  {
+    id: "auto-b0cv24gq9w",
+    name: "ASUS ROG Strix 27 inch",
+    asin: "B0CV24GQ9W",
+    price: "$249.99",
+    priceNum: 249.99,
+    rating: 4.4,
+    reviewCount: 1009,
+    description: "Recommended for its fast refresh rate of up to 240Hz and low response time of 1ms.",
+    pros: ["Fast","Up to 240Hz","1ms"],
+    cons: ["Newer to our list — less long-term data"],
+    category: "Monitors & Displays",
+    articleSlug: "best-monitors-and-displays",
+    badge: "🚀 Community Fave",
+  },
 ];
 
 
