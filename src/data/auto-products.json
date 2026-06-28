@@ -1,5 +1,44 @@
 [
   {
+    "asin": "B081H8WMXT",
+    "name": "Secret Labs Vertical Monitor Arm",
+    "price": "$37.99",
+    "imageUrl": "https://m.media-amazon.com/images/I/61sH1G6ydEL._AC_UY218_.jpg",
+    "rating": 4.6,
+    "reviewCount": 1469,
+    "articleSlug": "best-monitors-and-displays",
+    "description": "Recommended for its sleek design and compatibility with high-end gaming components.",
+    "pros": [
+      "Specs match the build",
+      "Super proud of it!"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/pcmasterrace/comments/1udx2mj/2026_battle_station/",
+    "sourceSubreddit": "pcmasterrace",
+    "mentions": 1,
+    "addedAt": "2026-06-28T07:01:16.649Z"
+  },
+  {
+    "asin": "B0B3RHCV9R",
+    "name": "Secret Labs Titan Evo Lamborghini edition (2026)",
+    "price": "$669.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/41UZRUxHa4L._AC_UL320_.jpg",
+    "rating": 4.5,
+    "reviewCount": 414,
+    "articleSlug": "best-gaming-setups",
+    "description": "The author is proud of their new gaming setup featuring a Secretlab Titan Evo Black Gaming Chair.",
+    "pros": [
+      "Comfortable",
+      "Ergonomic",
+      "Reclining"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/pcmasterrace/comments/1udx2mj/2026_battle_station/",
+    "sourceSubreddit": "pcmasterrace",
+    "mentions": 1,
+    "addedAt": "2026-06-28T07:01:28.416Z"
+  },
+  {
     "asin": "B0DG8H6LT4",
     "name": "RD75 Pro",
     "price": "$95.99",
