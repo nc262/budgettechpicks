@@ -1,29 +1,22 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-28T04:05:17.076Z",
+    "lastUpdated": "2026-06-28T20:04:59.995Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users discuss the UGREEN 9-in-1 USB-C Hub and its suitability for a SATA SSD, with one user questioning the relevance of power delivery metrics.",
-        "pros": [
-          "works fine"
-        ],
-        "cons": [
-          " unclear if it's specifically designed for this use case"
-        ],
+        "summary": "Discussed in r/buildapc — 3 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Users question the device's design for a specific use case",
-          "One user provides a link to the product on Amazon"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-06-28T04:05:17.063Z"
+        "scrapedAt": "2026-06-28T20:04:59.985Z"
       }
     ]
   },
@@ -59,7 +52,7 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-28T12:03:49.521Z",
+    "lastUpdated": "2026-06-28T20:04:59.995Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
@@ -75,33 +68,32 @@
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-28T12:03:49.512Z"
+        "scrapedAt": "2026-06-28T20:04:59.987Z"
       },
       {
         "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users can control Philips Hue with Home Assistant, but may need to use Zigbee2MQTT or other plugins for more advanced features.",
+        "summary": "Users can control Philips Hue with Home Assistant, but some have issues with dimming and binding to Zigbee devices without a Hue hub.",
         "pros": [
-          "can be controlled with Home Assistant",
-          "uses Zigbee2MQTT/mqtt and controlled by Home Assistant",
-          "adaptive lighting integration works well"
+          "can be controlled from Home Assistant using either a Hue bridge integration or joining them to a Zigbee bridge"
         ],
         "cons": [
-          "requires additional setup and plugins (e.g. Zigbee2MQTT, Home Assistant)",
-          "may require using a separate hub or bridge (e.g. Lutron Aurora)"
+          "may not work as expected for users without a Hue hub",
+          "binding can be complicated and requires specific setup"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Home Assistant provides a control model for devices from various manufacturers",
-          "Zigbee2MQTT/mqtt can be used to integrate Philips Hue with Home Assistant"
+          "Home Assistant has ZHA built-in for ZigBee devices",
+          "Zigbee2MQTT/mqtt can be used for Zigbee control",
+          "Adaptive lighting integration in Home Assistant works well with Hue bulbs"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-28T12:03:49.513Z"
+        "scrapedAt": "2026-06-28T20:04:59.988Z"
       }
     ]
   },
@@ -217,24 +209,8 @@
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-28T12:03:49.521Z",
+    "lastUpdated": "2026-06-28T20:04:59.995Z",
     "insights": [
-      {
-        "product": "Ergotron LX Desk Monitor Arm",
-        "productSlug": "best-desk-accessories-under-50",
-        "summary": "Discussed in r/battlestations — 3 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 3,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "warm vintage desk setup 🌍",
-        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-28T12:03:49.509Z"
-      },
       {
         "product": "Logitech MX Master 3S Wireless Mouse",
         "productSlug": "best-desk-accessories-under-50",
@@ -249,12 +225,12 @@
         "hasRealComments": true,
         "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
         "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-28T12:03:49.510Z"
+        "scrapedAt": "2026-06-28T20:04:59.986Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-28T12:03:49.521Z",
+    "lastUpdated": "2026-06-28T20:04:59.995Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
@@ -270,12 +246,12 @@
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-28T12:03:49.513Z"
+        "scrapedAt": "2026-06-28T20:04:59.988Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-28T12:03:49.521Z",
+    "lastUpdated": "2026-06-28T20:04:59.995Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
@@ -291,7 +267,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-06-28T12:03:49.514Z"
+        "scrapedAt": "2026-06-28T20:04:59.990Z"
       }
     ]
   }
