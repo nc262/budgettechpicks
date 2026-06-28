@@ -59,55 +59,54 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-28T04:05:17.076Z",
+    "lastUpdated": "2026-06-28T12:03:49.521Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users can root and install custom operating systems like Lineage on Amazon Echo Dot 5th Gen, but it's not a straightforward process due to strict bootloaders.",
-        "pros": [
-          "runs Spotify",
-          "can be used with your own AI backend",
-          "speaker can be reused with DAC and soldering"
-        ],
-        "cons": [
-          "not compatible with Smart Things or Bixby",
-          "bootloaders are locked down tightly by Amazon"
-        ],
+        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Users have successfully rooted Echo Dot 5th Gen using Lineage",
-          "Custom PCBs can be used for other devices like Google Minis",
-          "Bootloaders on Echo Show and Fire tablets are also hackable"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 10,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-28T04:05:17.065Z"
+        "scrapedAt": "2026-06-28T12:03:49.512Z"
       },
       {
         "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 15 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users can control Philips Hue with Home Assistant, but may need to use Zigbee2MQTT or other plugins for more advanced features.",
+        "pros": [
+          "can be controlled with Home Assistant",
+          "uses Zigbee2MQTT/mqtt and controlled by Home Assistant",
+          "adaptive lighting integration works well"
+        ],
+        "cons": [
+          "requires additional setup and plugins (e.g. Zigbee2MQTT, Home Assistant)",
+          "may require using a separate hub or bridge (e.g. Lutron Aurora)"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "key_insights": [
+          "Home Assistant provides a control model for devices from various manufacturers",
+          "Zigbee2MQTT/mqtt can be used to integrate Philips Hue with Home Assistant"
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-28T04:05:17.066Z"
+        "scrapedAt": "2026-06-28T12:03:49.513Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-28T04:05:17.076Z",
+    "lastUpdated": "2026-06-28T12:03:49.521Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
@@ -123,12 +122,12 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-28T04:05:17.069Z"
+        "scrapedAt": "2026-06-28T12:03:49.515Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-28T04:05:17.076Z",
+    "lastUpdated": "2026-06-28T12:03:49.521Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
@@ -144,12 +143,12 @@
         "hasRealComments": true,
         "sourcePost": "Audio-Technica ATH-M50X headphones through a Focusrite Scarlett 2i2. Finally some decent equipment.",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1ueg505/audiotechnica_athm50x_headphones_through_a/",
-        "scrapedAt": "2026-06-28T04:05:17.069Z"
+        "scrapedAt": "2026-06-28T12:03:49.515Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-06-28T04:05:17.076Z",
+    "lastUpdated": "2026-06-28T12:03:49.521Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
@@ -165,13 +164,40 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-06-28T04:05:17.071Z"
+        "scrapedAt": "2026-06-28T12:03:49.517Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-27T20:05:04.543Z",
+    "lastUpdated": "2026-06-28T12:03:49.521Z",
     "insights": [
+      {
+        "product": "Logitech C920s HD Pro Webcam",
+        "productSlug": "best-budget-webcams",
+        "summary": "Real users recommend spending money on lighting to improve webcam performance, especially under $100, and note that some webcams like Logitech C920s HD Pro Webcam are decent but getting old.",
+        "pros": [
+          "decent performance for its price",
+          "good with proper lighting setup",
+          "auto tracking feature is a plus"
+        ],
+        "cons": [
+          "low light performance can be rough",
+          "software (Logitech) can be horrendous"
+        ],
+        "sentiment": "neutral",
+        "key_insights": [
+          "Adding lights to the webcam setup improves its quality significantly.",
+          "Low-light performance is a drawback for under $100 webcams.",
+          "Elgato Facecam MK2 is considered better than Logitech C920s HD Pro Webcam"
+        ],
+        "recommended_by_users": true,
+        "commentCount": 12,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
+        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
+        "scrapedAt": "2026-06-28T12:03:49.508Z"
+      },
       {
         "product": "Logitech Brio 4K Ultra HD Webcam",
         "productSlug": "best-budget-webcams",
@@ -186,13 +212,29 @@
         "hasRealComments": true,
         "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-27T20:05:04.527Z"
+        "scrapedAt": "2026-06-28T12:03:49.509Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-28T04:05:17.076Z",
+    "lastUpdated": "2026-06-28T12:03:49.521Z",
     "insights": [
+      {
+        "product": "Ergotron LX Desk Monitor Arm",
+        "productSlug": "best-desk-accessories-under-50",
+        "summary": "Discussed in r/battlestations — 3 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 3,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "warm vintage desk setup 🌍",
+        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
+        "scrapedAt": "2026-06-28T12:03:49.509Z"
+      },
       {
         "product": "Logitech MX Master 3S Wireless Mouse",
         "productSlug": "best-desk-accessories-under-50",
@@ -207,12 +249,12 @@
         "hasRealComments": true,
         "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
         "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-28T04:05:17.064Z"
+        "scrapedAt": "2026-06-28T12:03:49.510Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-28T04:05:17.076Z",
+    "lastUpdated": "2026-06-28T12:03:49.521Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
@@ -228,12 +270,12 @@
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-28T04:05:17.066Z"
+        "scrapedAt": "2026-06-28T12:03:49.513Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-28T04:05:17.076Z",
+    "lastUpdated": "2026-06-28T12:03:49.521Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
@@ -249,7 +291,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-06-28T04:05:17.067Z"
+        "scrapedAt": "2026-06-28T12:03:49.514Z"
       }
     ]
   }
