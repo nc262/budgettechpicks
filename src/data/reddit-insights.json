@@ -1,20 +1,21 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-27T20:05:04.543Z",
+    "lastUpdated": "2026-06-28T04:05:17.076Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the relevance of power delivery measured in mAh for a SATA SSD connection, but generally express confidence in the device's compatibility.",
+        "summary": "Users discuss the UGREEN 9-in-1 USB-C Hub and its suitability for a SATA SSD, with one user questioning the relevance of power delivery metrics.",
         "pros": [
-          "will work fine",
-          "standard SATA to USB controller"
+          "works fine"
         ],
-        "cons": [],
-        "sentiment": "positive",
+        "cons": [
+          " unclear if it's specifically designed for this use case"
+        ],
+        "sentiment": "neutral",
         "key_insights": [
-          "900mAH is not applicable to SATA SSD use case",
-          "device works well with WD 3D BLUE and SanDisk Plus 2TB SSDs"
+          "Users question the device's design for a specific use case",
+          "One user provides a link to the product on Amazon"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -22,7 +23,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-06-27T20:05:04.527Z"
+        "scrapedAt": "2026-06-28T04:05:17.063Z"
       }
     ]
   },
@@ -58,25 +59,26 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-27T20:05:04.543Z",
+    "lastUpdated": "2026-06-28T04:05:17.076Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Some users have successfully rooted and installed alternative OS on their Amazon Echo Dot 5th Gen, allowing them to use custom AI backends and integrate with Home Assistant, but this is not a straightforward process due to Amazon's lockdown of bootloaders.",
+        "summary": "Users can root and install custom operating systems like Lineage on Amazon Echo Dot 5th Gen, but it's not a straightforward process due to strict bootloaders.",
         "pros": [
           "runs Spotify",
-          "custom PCB for Google Mini things"
+          "can be used with your own AI backend",
+          "speaker can be reused with DAC and soldering"
         ],
         "cons": [
-          "cannot get it to run Smart Things or Bixby",
-          "Amazon locks those bootloaders down hard, making it difficult to install custom OS"
+          "not compatible with Smart Things or Bixby",
+          "bootloaders are locked down tightly by Amazon"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "some users have successfully rooted their Echo Dots and installed alternative OS",
-          "custom PCBs are available for other devices like Google Minis",
-          "Amazon's lockdown of bootloaders makes it difficult to install custom OS"
+          "Users have successfully rooted Echo Dot 5th Gen using Lineage",
+          "Custom PCBs can be used for other devices like Google Minis",
+          "Bootloaders on Echo Show and Fire tablets are also hackable"
         ],
         "recommended_by_users": false,
         "commentCount": 10,
@@ -84,7 +86,7 @@
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-06-27T20:05:04.530Z"
+        "scrapedAt": "2026-06-28T04:05:17.065Z"
       },
       {
         "product": "Philips Hue White & Color Starter Kit",
@@ -100,12 +102,12 @@
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-27T20:05:04.530Z"
+        "scrapedAt": "2026-06-28T04:05:17.066Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-27T20:05:04.543Z",
+    "lastUpdated": "2026-06-28T04:05:17.076Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
@@ -121,12 +123,12 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-27T20:05:04.532Z"
+        "scrapedAt": "2026-06-28T04:05:17.069Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-27T04:03:40.160Z",
+    "lastUpdated": "2026-06-28T04:05:17.076Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
@@ -142,12 +144,12 @@
         "hasRealComments": true,
         "sourcePost": "Audio-Technica ATH-M50X headphones through a Focusrite Scarlett 2i2. Finally some decent equipment.",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1ueg505/audiotechnica_athm50x_headphones_through_a/",
-        "scrapedAt": "2026-06-27T04:03:40.152Z"
+        "scrapedAt": "2026-06-28T04:05:17.069Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-06-27T12:04:58.438Z",
+    "lastUpdated": "2026-06-28T04:05:17.076Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
@@ -163,7 +165,7 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-06-27T12:04:58.434Z"
+        "scrapedAt": "2026-06-28T04:05:17.071Z"
       }
     ]
   },
@@ -189,7 +191,7 @@
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-27T20:05:04.543Z",
+    "lastUpdated": "2026-06-28T04:05:17.076Z",
     "insights": [
       {
         "product": "Logitech MX Master 3S Wireless Mouse",
@@ -205,12 +207,12 @@
         "hasRealComments": true,
         "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
         "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-27T20:05:04.528Z"
+        "scrapedAt": "2026-06-28T04:05:17.064Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-27T20:05:04.543Z",
+    "lastUpdated": "2026-06-28T04:05:17.076Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
@@ -226,12 +228,12 @@
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-27T20:05:04.531Z"
+        "scrapedAt": "2026-06-28T04:05:17.066Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-27T20:05:04.543Z",
+    "lastUpdated": "2026-06-28T04:05:17.076Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
@@ -247,7 +249,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-06-27T20:05:04.532Z"
+        "scrapedAt": "2026-06-28T04:05:17.067Z"
       }
     ]
   }
