@@ -1,4 +1,14 @@
 {
-  "updatedAt": "2026-06-29T07:01:14.089Z",
-  "deals": []
+  "updatedAt": "2026-06-30T07:01:45.309Z",
+  "deals": [
+    {
+      "product": "ASUS ROG Strix 27 inch",
+      "asin": "B0CV24GQ9W",
+      "slug": "best-monitors-and-displays",
+      "title": "[Bundle] ASUS ROG STRIX B650E-I GAMING WIFI and Team Group 2 x 8 GB DDR5 6000 CL38 and SAMSUNG 990 PRO 1TB - $470",
+      "url": "https://reddit.com/r/buildapcsales/comments/1ui2l8n/bundle_asus_rog_strix_b650ei_gaming_wifi_and_team/",
+      "score": 90,
+      "postedAt": "2026-06-28T17:03:41.000Z"
+    }
+  ]
 }

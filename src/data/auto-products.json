@@ -1,5 +1,61 @@
 [
   {
+    "asin": "B075FBRYM1",
+    "name": "Koss KPH30i",
+    "price": "$23.99",
+    "imageUrl": "https://m.media-amazon.com/images/I/51RrIJL0b0L._AC_UY218_.jpg",
+    "rating": 4.4,
+    "reviewCount": 3630,
+    "articleSlug": "best-audio-gear",
+    "description": "Community members recommend Koss KPH30iK for its recommended speaker upgrade context.",
+    "pros": [
+      "For those listening to music with bookshelf speakers"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/BudgetAudiophile/comments/1uezrfo/i_finally_understand_why_people_recommend/",
+    "sourceSubreddit": "BudgetAudiophile",
+    "mentions": 1,
+    "addedAt": "2026-06-30T07:01:10.849Z"
+  },
+  {
+    "asin": "B07HKSN1L3",
+    "name": "JBL Charge 4 - Waterproof Portable Bluetooth Speaker - Gray",
+    "price": "$99.95",
+    "imageUrl": "https://m.media-amazon.com/images/I/71J8ki51QwL._AC_UY218_.jpg",
+    "rating": 4.7,
+    "reviewCount": 57387,
+    "articleSlug": "best-audio-gear",
+    "description": "The JBL Charge 4 is recommended for its performance among budget speakers.",
+    "pros": [
+      "It's a good alternative to other portable Bluetooth speakers like the Koss KPH30i and JBL Charge 3.",
+      "One reviewer has high-end audio experience with it"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/BudgetAudiophile/comments/1uezrfo/i_finally_understand_why_people_recommend/",
+    "sourceSubreddit": "BudgetAudiophile",
+    "mentions": 1,
+    "addedAt": "2026-06-30T07:01:21.544Z"
+  },
+  {
+    "asin": "B0BS74M665",
+    "name": "Sony CH720N",
+    "price": "$149.00",
+    "imageUrl": "https://m.media-amazon.com/images/I/41tp0JPPlmL._AC_UY218_.jpg",
+    "rating": 4.4,
+    "reviewCount": 15872,
+    "articleSlug": "best-audio-gear",
+    "description": "Recommended for understanding budget speaker options and providing a cost-effective alternative to high-end speakers.",
+    "pros": [
+      "budget-friendly option",
+      "4.4 stars across 15872 ratings"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/BudgetAudiophile/comments/1uezrfo/i_finally_understand_why_people_recommend/",
+    "sourceSubreddit": "BudgetAudiophile",
+    "mentions": 1,
+    "addedAt": "2026-06-30T07:01:31.448Z"
+  },
+  {
     "asin": "B081H8WMXT",
     "name": "Secret Labs Vertical Monitor Arm",
     "price": "$37.99",
