@@ -1,6 +1,6 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-06-29T12:04:55.494Z",
+    "lastUpdated": "2026-06-30T04:06:37.107Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
@@ -16,7 +16,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-06-29T12:04:55.483Z"
+        "scrapedAt": "2026-06-30T04:06:37.084Z"
       }
     ]
   },
@@ -52,28 +52,55 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-06-29T12:04:55.494Z",
+    "lastUpdated": "2026-06-30T04:06:37.107Z",
     "insights": [
       {
-        "product": "Philips Hue White & Color Starter Kit",
+        "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 15 comments on this thread.",
+        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
         "pros": [],
         "cons": [],
         "sentiment": "neutral",
         "key_insights": [],
+        "recommended_by_users": false,
+        "commentCount": 10,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "Reusing Amazon Alexa Echo Dot",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
+        "scrapedAt": "2026-06-30T04:06:37.090Z"
+      },
+      {
+        "product": "Philips Hue White & Color Starter Kit",
+        "productSlug": "best-smart-home-under-50",
+        "summary": "Users believe Philips Hue can be controlled and integrated with Home Assistant for auto-dim functionality, but some note limitations and potential issues with binding and device compatibility.",
+        "pros": [
+          "Home Assistant allows control and integration of Philips Hue devices",
+          "Zigbee2MQTT/mqtt enables adaptive lighting control",
+          "Some users have successfully paired Lutron Aurora with Hue bulbs and Home Assistant"
+        ],
+        "cons": [
+          "Limitations in binding and device compatibility",
+          "Potential issues with pairing and low latency"
+        ],
+        "sentiment": "neutral",
+        "key_insights": [
+          "Users can use Home Assistant for Philips Hue control and integration",
+          "Zigbee2MQTT/mqtt enables adaptive lighting control",
+          "Some users have successfully paired Lutron Aurora with Hue bulbs and Home Assistant"
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-06-29T12:04:55.486Z"
+        "scrapedAt": "2026-06-30T04:06:37.091Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-06-29T12:04:55.494Z",
+    "lastUpdated": "2026-06-30T04:06:37.107Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
@@ -89,71 +116,75 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-06-29T12:04:55.488Z"
+        "scrapedAt": "2026-06-30T04:06:37.094Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-06-28T12:03:49.521Z",
+    "lastUpdated": "2026-06-30T04:06:37.107Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Discussed in r/headphones — 38 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users have mixed opinions on the Audio-Technica ATH-M50X, with some praising its familiarity and technical capabilities while others criticize it for being overhyped or lacking high-end sound quality.",
+        "pros": [
+          "they're awesome",
+          "equalized at every studio and film set",
+          "work well for tracking"
+        ],
+        "cons": [
+          "awful",
+          "complete trash for technical reasons"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "key_insights": [
+          "Some users prefer the M50X due to its familiarity and practicality in a studio setting.",
+          "Others criticize the M50X for being overhyped or lacking high-end sound quality."
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Audio-Technica ATH-M50X headphones through a Focusrite Scarlett 2i2. Finally some decent equipment.",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1ueg505/audiotechnica_athm50x_headphones_through_a/",
-        "scrapedAt": "2026-06-28T12:03:49.515Z"
+        "scrapedAt": "2026-06-30T04:06:37.094Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-06-29T04:05:10.640Z",
+    "lastUpdated": "2026-06-30T04:06:37.107Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Discussed in r/battlestations — 24 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Users generally like their SecretLab Titan Evo 2022 Gaming Chairs, but some have design flaws and recommend keeping BIOS updated for improved performance.",
+        "pros": [
+          "Great specs",
+          "Comfortable (especially with older models having design flaws which are now rectified)",
+          "Good build quality"
+        ],
+        "cons": [
+          "Design flaws in first models",
+          "Arm rest cracking issues"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Users mention the chair's comfort, especially for those who upgraded from previous models with design flaws.",
+          "Some users share their impressive build specs and system setups with the SecretLab Titan Evo 2022."
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-06-29T04:05:10.635Z"
+        "scrapedAt": "2026-06-30T04:06:37.096Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-06-29T12:04:55.494Z",
+    "lastUpdated": "2026-06-30T04:06:37.107Z",
     "insights": [
-      {
-        "product": "Logitech C920s HD Pro Webcam",
-        "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
-        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-06-29T12:04:55.484Z"
-      },
       {
         "product": "Logitech Brio 4K Ultra HD Webcam",
         "productSlug": "best-budget-webcams",
@@ -168,70 +199,108 @@
         "hasRealComments": true,
         "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-06-29T12:04:55.484Z"
+        "scrapedAt": "2026-06-30T04:06:37.085Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-29T04:05:10.640Z",
+    "lastUpdated": "2026-06-30T04:06:37.107Z",
     "insights": [
+      {
+        "product": "Ergotron LX Desk Monitor Arm",
+        "productSlug": "best-desk-accessories-under-50",
+        "summary": "Users appreciate the uniqueness of the vintage-tech mix and the Ergotron LX Desk Monitor Arm's role in creating a personalized workspace.",
+        "pros": [
+          "function over aesthetics",
+          "every hobby and work tool has its spot"
+        ],
+        "cons": [],
+        "sentiment": "positive",
+        "key_insights": [
+          "the 'function over aesthetics' energy hits different",
+          "the vintage + tech mix works so perfectly here",
+          "personality in this setup"
+        ],
+        "recommended_by_users": false,
+        "commentCount": 3,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "warm vintage desk setup 🌍",
+        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
+        "scrapedAt": "2026-06-30T04:06:37.086Z"
+      },
       {
         "product": "Logitech MX Master 3S Wireless Mouse",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Discussed in r/homeoffice — 19 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Commenters generally recommend the Logitech MX Master 3S for its battery life, design, and functionality, but some also mention cons such as reliability issues and software problems.",
+        "pros": [
+          "good battery life",
+          "design looks slick",
+          "functionalities with programmable buttons"
+        ],
+        "cons": [
+          "reliability issues (double-clicking problem)",
+          "software problems"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "key_insights": [
+          "some users experienced double-clicking issues",
+          "users are generally satisfied with the mouse's performance despite some software issues"
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
         "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-29T04:05:10.630Z"
+        "scrapedAt": "2026-06-30T04:06:37.088Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-06-29T12:04:55.494Z",
+    "lastUpdated": "2026-06-30T04:06:37.107Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Discussed in r/apple — 7 comments on this thread.",
-        "pros": [],
+        "summary": "Users express skepticism and curiosity about the new AirTag 2 firmware update, with some hoping for improvements like a better screen.",
+        "pros": [
+          "improvement",
+          "screen"
+        ],
         "cons": [],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "No details on what the firmware update includes",
+          "Hope for an improvement in screen quality"
+        ],
         "recommended_by_users": false,
         "commentCount": 5,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-06-29T12:04:55.486Z"
+        "scrapedAt": "2026-06-30T04:06:37.091Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-06-29T12:04:55.494Z",
+    "lastUpdated": "2026-06-30T04:06:37.107Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users warn against buying a 1440p QD-OLED monitor for work due to text smearing, viewing angle issues, and burn-in concerns.",
+        "summary": "Users advise against buying a 1440p OLED monitor for work due to text smearing, poor viewing angles, and burn-in issues, recommending IPS displays instead.",
         "pros": [],
         "cons": [
-          "text smearing from VA",
-          "bad viewing angles",
-          "burn-in"
+          "text smearing",
+          "poor viewing angles",
+          "burn-in issues"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "OLED panels don't have a proper subpixel layout, causing fringing issues.",
-          "VA monitors can cause text smearing when scrolling.",
-          "Burn-in is a concern, especially with static elements like the taskbar."
+          "OLED monitors may not be suitable for work due to text smearing and poor viewing angles",
+          "Burn-in issues can occur with OLED monitors, especially in high-use environments"
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -239,7 +308,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-06-29T12:04:55.487Z"
+        "scrapedAt": "2026-06-30T04:06:37.092Z"
       }
     ]
   }
