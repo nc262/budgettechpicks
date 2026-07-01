@@ -1,5 +1,42 @@
 [
   {
+    "asin": "B0GX9P19YV",
+    "name": "Samsung 2.1 soundbar",
+    "price": "$139.99",
+    "imageUrl": "https://m.media-amazon.com/images/I/616g7muFt+L._AC_UY218_.jpg",
+    "rating": 4.6,
+    "reviewCount": 1691,
+    "articleSlug": "best-audio-gear",
+    "description": "Recommended for those who may not fully appreciate audiophile-grade sound but still seek a good budget option.",
+    "pros": [
+      "has 4.6 star rating across 1691 ratings",
+      "comes with wireless subwoofer"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/BudgetAudiophile/comments/1uezrfo/i_finally_understand_why_people_recommend/",
+    "sourceSubreddit": "BudgetAudiophile",
+    "mentions": 1,
+    "addedAt": "2026-07-01T07:02:30.432Z"
+  },
+  {
+    "asin": "B0D9QD4Y2P",
+    "name": "FiiO FT1 32Ω Large Dynamic Driver Headphones with Solid Wood Cups",
+    "price": "$159.99",
+    "imageUrl": "https://m.media-amazon.com/images/I/51JfZINLCkL._AC_UY218_.jpg",
+    "rating": 4.5,
+    "reviewCount": 821,
+    "articleSlug": "best-audio-gear",
+    "description": "Bookshelf speakers are recommended due to their better sound quality compared to budget headphones like FiiO FT1.",
+    "pros": [
+      "sound quality is considered better than budget headphones"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/BudgetAudiophile/comments/1uezrfo/i_finally_understand_why_people_recommend/",
+    "sourceSubreddit": "BudgetAudiophile",
+    "mentions": 1,
+    "addedAt": "2026-07-01T07:02:40.591Z"
+  },
+  {
     "asin": "B075FBRYM1",
     "name": "Koss KPH30i",
     "price": "$23.99",
@@ -190,41 +227,6 @@
     "sourceSubreddit": "pcmasterrace",
     "mentions": 1,
     "addedAt": "2026-06-19T07:00:52.566Z"
-  },
-  {
-    "asin": "B0F3GWXLTS",
-    "name": "Nintendo Switch 2 System",
-    "price": "$449.00",
-    "imageUrl": "https://m.media-amazon.com/images/I/714-Fh3ngmL._AC_UY218_.jpg",
-    "rating": 4.8,
-    "reviewCount": 3681,
-    "articleSlug": "best-audio-gear",
-    "description": "Recommended for its large screen size and high-quality projector setup, allowing users to set up a home theater system.",
-    "pros": [
-      "Large 150\" screen",
-      "BenQ TK710 True 4K laser projector"
-    ],
-    "cons": [],
-    "sourceUrl": "https://reddit.com/r/hometheater/comments/1u4kyhv/my_150_screen_512_home_theater/",
-    "sourceSubreddit": "hometheater",
-    "mentions": 1,
-    "addedAt": "2026-06-17T07:01:09.771Z"
-  },
-  {
-    "asin": "B0CFWQP9MC",
-    "name": "Denon X1800H",
-    "price": "$849.00",
-    "imageUrl": "https://m.media-amazon.com/images/I/71GGZsQZQmL._AC_UY218_.jpg",
-    "rating": 4.3,
-    "reviewCount": 1125,
-    "articleSlug": "best-audio-gear",
-    "description": "",
-    "pros": [],
-    "cons": [],
-    "sourceUrl": "https://reddit.com/r/hometheater/comments/1u4kyhv/my_150_screen_512_home_theater/",
-    "sourceSubreddit": "hometheater",
-    "mentions": 1,
-    "addedAt": "2026-06-15T07:00:57.221Z"
   },
   {
     "asin": "B0C3H8NVJV",

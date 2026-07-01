@@ -2121,6 +2121,22 @@ export const products: Product[] = [
     articleSlug: "best-monitors-and-displays",
     badge: "🚀 Community Fave",
   },
+  // Promoted from community picks after 14+ days live (auto-pipeline)
+  {
+    id: "auto-b0f3gwxlts",
+    name: "Nintendo Switch 2 System",
+    asin: "B0F3GWXLTS",
+    price: "$449.00",
+    priceNum: 449,
+    rating: 4.8,
+    reviewCount: 3681,
+    description: "Recommended for its large screen size and high-quality projector setup, allowing users to set up a home theater system.",
+    pros: ["Large 150\" screen","BenQ TK710 True 4K laser projector"],
+    cons: ["Newer to our list — less long-term data"],
+    category: "Audio & Microphones",
+    articleSlug: "best-audio-gear",
+    badge: "🚀 Community Fave",
+  },
 ];
 
 
