@@ -147,25 +147,27 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-01T04:03:42.071Z",
+    "lastUpdated": "2026-07-01T12:04:34.587Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users have mixed opinions about the Audio-Technica ATH-M50X, with some finding it to be a great pair of headphones and others experiencing issues with it, especially when compared to high-end alternatives.",
+        "summary": "Users have mixed opinions on the Audio-Technica ATH-M50x, with some praising their familiarity and performance, while others express frustration or criticism towards them.",
         "pros": [
-          "awesome",
-          "equally lasted at every studio and film set"
+          "They work for me",
+          "equally lasted at every studio and film set I've been to",
+          "pretty good"
         ],
         "cons": [
           "awful",
-          "trash for technical reasons"
+          "complete trash",
+          "bad insulation"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Some users like the M50X's due to their familiarity and reliability",
-          "Others experience issues with high-end headphones",
-          "Experience in mixing and tracking can influence opinions on headphones"
+          "Familiarity means sound quality is subjective",
+          "Mixing and tracking require more than just headphones",
+          "High-end drivers don't necessarily make a difference in mixing"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -173,31 +175,31 @@
         "hasRealComments": true,
         "sourcePost": "Audio-Technica ATH-M50X headphones through a Focusrite Scarlett 2i2. Finally some decent equipment.",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1ueg505/audiotechnica_athm50x_headphones_through_a/",
-        "scrapedAt": "2026-07-01T04:03:42.063Z"
+        "scrapedAt": "2026-07-01T12:04:34.581Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-01T04:03:42.071Z",
+    "lastUpdated": "2026-07-01T12:04:34.587Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users have mixed opinions about their Secretlab Titan Evo 2022 Gaming Chair experience, with some mentioning positive aspects such as durability and design improvement from previous models.",
+        "summary": "Users share their positive experiences with their SecretLab Titan Evo 2022 Gaming Chair, mentioning its comfort and durability, while also discussing their gaming setup and peripherals.",
         "pros": [
-          " durable",
-          "design improvement from previous models",
-          "great specs",
-          "looks great"
+          "good quality chair",
+          "comfortable",
+          "durable",
+          "great specs"
         ],
         "cons": [
-          "not good quality chair"
+          "design flaws in earlier models",
+          "arm rest cracking"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "First one lasted 6 years and it was still comfortable when I handed down to my son.",
-          "The first models did have some design flaws which have been rectified on these later models.",
-          "I think that would look great."
+          "The first model had design flaws which have been rectified on later models.",
+          "Some users experienced issues with the arm rest cracking, requiring replacement."
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -205,7 +207,7 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-01T04:03:42.065Z"
+        "scrapedAt": "2026-07-01T12:04:34.583Z"
       }
     ]
   },
@@ -269,79 +271,51 @@
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-06-30T20:06:32.462Z",
+    "lastUpdated": "2026-07-01T12:04:34.587Z",
     "insights": [
       {
         "product": "Ergotron LX Desk Monitor Arm",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Users appreciate the unique blend of vintage and tech elements in a desk setup, but express skepticism towards the product due to its removal from the subreddit.",
+        "summary": "Users appreciate the aesthetic value of a vintage desk setup with tech components and enjoy its unique personality, while one user expresses enthusiasm for sitting at it.",
         "pros": [
           "function over aesthetics",
-          "vintage + tech mix works perfectly"
+          "vintage + tech mix works so perfectly",
+          "10/10 would love to sit and chill"
         ],
-        "cons": [
-          "repeatedly reposting own battlestation with little to no changes"
-        ],
-        "sentiment": "negative",
+        "cons": [],
+        "sentiment": "positive",
         "key_insights": [
-          "users value unique setups",
-          "product removal from subreddit raises concerns"
+          "the 'function over aesthetics' energy hits different",
+          "every hobby and work tool has its spot, and the vintage + tech mix works so perfectly"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "warm vintage desk setup 🌍",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-06-30T20:06:32.446Z"
-      },
-      {
-        "product": "Logitech MX Master 3S Wireless Mouse",
-        "productSlug": "best-desk-accessories-under-50",
-        "summary": "Users generally recommend the Logitech MX Master 3S Wireless Mouse for its long battery life, but some mention issues with durability and ergonomic fit.",
-        "pros": [
-          "The Logitech MX Masters are the best.",
-          "the design just looks so slick",
-          "it's still goes weeks between charges"
-        ],
-        "cons": [
-          " horrible software it comes with",
-          "double clicking issue after a year",
-          "smaller size might be less ergonomic for bigger hands"
-        ],
-        "sentiment": "neutral",
-        "key_insights": [
-          "some users have experienced durability issues despite its premium price",
-          "the mouse's design and battery life are key selling points",
-          "ergonomic fit is a concern for some users with larger hands"
-        ],
-        "recommended_by_users": true,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
-        "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
-        "scrapedAt": "2026-06-30T20:06:32.448Z"
+        "scrapedAt": "2026-07-01T12:04:34.578Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-07-01T04:03:42.071Z",
+    "lastUpdated": "2026-07-01T12:04:34.587Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Users are skeptical about the new firmware update, with some speculating on potential improvements and others questioning Apple's intentions.",
+        "summary": "Users are skeptical and curious about the new AirTag 2 firmware update, with some hoping for improvements to the screen.",
         "pros": [
           "The Fast and the Findable"
         ],
         "cons": [
-          "I hope they improve the screen. I can't make out jack on these things",
-          "As is often the case with fresh firmware updates, there are still no details on what this one might include."
+          "Still no details on what this one might include",
+          "I hope they improve the screen. I can't make out jack on these things"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Speculation about the update's purpose and potential improvements"
+          "Users are looking for information about the firmware update",
+          "Some users want improvements to the screen"
         ],
         "recommended_by_users": false,
         "commentCount": 5,
@@ -349,29 +323,27 @@
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-07-01T04:03:42.061Z"
+        "scrapedAt": "2026-07-01T12:04:34.580Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-07-01T04:03:42.071Z",
+    "lastUpdated": "2026-07-01T12:04:34.587Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Some users express concerns about using a 1440p OLED monitor for work, citing issues with text smearing and fringing, as well as potential burn-in problems.",
-        "pros": [
-          "$400 is a bad deal"
-        ],
+        "summary": "Users advise against buying a 1440p QD-OLED monitor for work due to text smearing, bad viewing angles, and burn-in issues, but some users with OLED monitors for work report no issues if using dark mode and adjusting brightness.",
+        "pros": [],
         "cons": [
-          "VA or OLED monitors are not suitable for 90% work due to smearing and viewing angle issues",
-          "Taskbar burn-in is possible with OLED monitors",
-          "Newer models may address some of these issues, but $400 for a used one is still considered a bad deal"
+          "text smearing",
+          "bad viewing angles",
+          "burn-in issues"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "1440p OLED monitors have text smearing and fringing issues",
-          "Burn-in problems are possible with OLED monitors, especially in bright environments"
+          "1440p OLED monitors may not be suitable for work due to text fringing",
+          "OLED monitors can have burn-in issues with static elements like the taskbar"
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -379,7 +351,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-07-01T04:03:42.062Z"
+        "scrapedAt": "2026-07-01T12:04:34.580Z"
       }
     ]
   }
