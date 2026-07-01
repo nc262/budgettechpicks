@@ -1,28 +1,29 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-01T04:03:42.071Z",
+    "lastUpdated": "2026-07-01T20:06:01.289Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users think the 900mAh power measure is irrelevant to a SATA SSD's performance, but some have purchased the UGREEN 9-in-1 USB-C Hub with no issues.",
+        "summary": "Users question the adequacy of 900mAh power for a SATA SSD, but ultimately consider it sufficient and recommend using with certain products.",
         "pros": [
-          "standard SATA to USB controller",
-          "will work fine"
+          "Considered sufficient",
+          "Will work fine",
+          "Standard SATA to USB controller has been around forever"
         ],
         "cons": [],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "900mAh is a measure of power delivered over time, not applicable to this use case",
-          "the device will work with a WD 3D BLUE SATA SSD (2TB) and a SanDisk Plus 2TB SSD"
+          "Power is not applicable to this use case",
+          "900mAh is considered sufficient for the device"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-01T04:03:42.058Z"
+        "scrapedAt": "2026-07-01T20:06:01.267Z"
       }
     ]
   },
@@ -58,83 +59,63 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-07-01T04:03:42.071Z",
+    "lastUpdated": "2026-07-01T20:06:01.289Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users can reuse Amazon Alexa Echo Dot by rooting it and installing a custom operating system, but acknowledge Amazon's strict bootloaders make it difficult to install non-Alexa OS.",
-        "pros": [
-          "can run Spotify",
-          "good enough Kitchen speaker"
-        ],
-        "cons": [
-          "cannot get it to run Smart Things or Bixby",
-          "Amazon locks bootloaders down hard"
-        ],
+        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "jailbreaking the Echo Dot is possible with some effort and specific instructions",
-          "Some OS can be installed on other Amazon products, like Fire tablets and Echo Shows",
-          "users who deal with smart home devices often prefer local control setups due to privacy concerns"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 10,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-07-01T04:03:42.060Z"
+        "scrapedAt": "2026-07-01T20:06:01.272Z"
       },
       {
         "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users can control Philips Hue lights using Home Assistant, but may need to use third-party hardware and software for more advanced features like auto-dimming.",
-        "pros": [
-          "Home Assistant has ZHA built into it for ZigBee",
-          "Zigbee2MQTT/mqtt provides control over Zigbee devices"
-        ],
-        "cons": [
-          "No direct pairing possible between Philips Hue and Lutron Aurora without a Hue bridge",
-          "No low latency option available"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "Home Assistant's plugin architecture allows users to extend its capabilities with third-party plugins",
-          "Some users have successfully integrated Zigbee devices with Home Assistant using various hardware and software combinations"
-        ],
+        "summary": "Discussed in r/homeautomation — 15 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Philips Hue open-source solution for auto-dim?",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-07-01T04:03:42.061Z"
+        "scrapedAt": "2026-07-01T20:06:01.273Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-01T04:03:42.071Z",
+    "lastUpdated": "2026-07-01T20:06:01.289Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Real users find EMI/RFI interference to be a potential issue with microphones, but emphasize it's often caused by external factors like cables or studio environment, rather than the microphone itself.",
+        "summary": "Users generally agree that EMI/RFI interference is not a common issue with the SM7B, but some have experienced problems depending on their studio location and setup. A few users suggest that grounding issues or using specific shielding methods can help mitigate RFI.",
         "pros": [
-          "EMI/RFI interference is rare in dynamic mics",
-          "Balanced cables can deal with most interference on the trip from mic to preamp",
-          "Humbucker coil in SM7B may reduce EMI/RFI issues"
+          "Not typically a culprit for EMI/RFI interference",
+          "Works well in most cases",
+          "Shielding methods such as faraday cages can be effective"
         ],
         "cons": [
-          "EMI/RFI interference can be a problem, especially near power strips or fluorescent lighting",
-          "Grounding issues can cause noise with dynamic mics",
-          "External environment and nearby emitters (like cell repeaters) can cause RFI issues"
+          "Can be affected by studio location and nearby emitters",
+          "Grounding issues can cause noise",
+          "May not be suitable for all environments with strong EMI/RFI signals"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "EMI/RFI interference is not a common issue with the SM7B itself, but rather external factors",
-          "Balanced cables are effective in dealing with most EMI/RFI issues",
-          "Grounding issues can cause noise with dynamic mics"
+          "EMI/RFI interference is a potential issue, but not a common one with the SM7B",
+          "Grounding issues can cause noise and are often the culprit for RFI problems"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -142,40 +123,38 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-01T04:03:42.063Z"
+        "scrapedAt": "2026-07-01T20:06:01.275Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-01T12:04:34.587Z",
+    "lastUpdated": "2026-07-01T20:06:01.289Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Users have mixed opinions on the Audio-Technica ATH-M50x, with some praising their familiarity and performance, while others express frustration or criticism towards them.",
+        "summary": "Real users have mixed opinions about Audio-Technica ATH-M50x, with some praising their performance and others criticizing them. The majority of users acknowledge that the M50x's popularity can lead to overhyped expectations.",
         "pros": [
-          "They work for me",
-          "equally lasted at every studio and film set I've been to",
-          "pretty good"
+          "Audio-Technica ATH-M50x are awesome",
+          "most Hifimans, Focals, ZMF etc. high end headphones are complete trash for technical reasons and people still likes them"
         ],
         "cons": [
-          "awful",
-          "complete trash",
-          "bad insulation"
+          "they're awful",
+          "most Hifimans, Focals, ZMF etc. high end headphones are complete trash for technical reasons"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Familiarity means sound quality is subjective",
-          "Mixing and tracking require more than just headphones",
-          "High-end drivers don't necessarily make a difference in mixing"
+          "Some users have worn the M50x professionally and found them to be good",
+          "Familiarity with a headphone can make it work well despite technical limitations",
+          "Experience and sound source take priority over equipment choices in a studio"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Audio-Technica ATH-M50X headphones through a Focusrite Scarlett 2i2. Finally some decent equipment.",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1ueg505/audiotechnica_athm50x_headphones_through_a/",
-        "scrapedAt": "2026-07-01T12:04:34.581Z"
+        "scrapedAt": "2026-07-01T20:06:01.275Z"
       }
     ]
   },
@@ -212,26 +191,25 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-01T04:03:42.071Z",
+    "lastUpdated": "2026-07-01T20:06:01.289Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users think the Logitech C920s HD Pro Webcam is a good option for streaming under $100, but low light performance can be an issue. Adding lighting can improve its performance.",
+        "summary": "Users generally agree that a good webcam under $100 requires extra lighting to compensate for low light issues, and some recommend spending more on lights rather than the camera itself.",
         "pros": [
           "decent",
           "good",
-          "leaves you money left over for a light to put above the monitor"
+          "leaves you money left over for a light"
         ],
         "cons": [
-          "low light is gonna be rough on any sub $100 cam",
-          "Logitech software is horrendous"
+          "low light is gonna be rough on any sub $100 cam"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "adding lighting can improve webcam performance",
-          "a good lighting setup can make up for low light issues",
-          "Elgato Facecam MK2 is a recommended alternative with better image quality"
+          "Low light is a significant issue under $100",
+          "Lighting makes a huge difference in webcam quality",
+          "The C920 is still a great option, but may be old technology"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -239,26 +217,26 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-01T04:03:42.058Z"
+        "scrapedAt": "2026-07-01T20:06:01.267Z"
       },
       {
         "product": "Logitech Brio 4K Ultra HD Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users experience light sensitivity and image quality issues with the Logitech Brio 4K Ultra HD Webcam, but some suggest alternative solutions or recommendations for similar webcams.",
+        "summary": "Users with light sensitivity issues and those looking for better image quality on Twitch reported difficulties with the Logitech Brio 4K Ultra HD Webcam, suggesting that lighting is a key factor and some users find it less effective than other cameras.",
         "pros": [
-          "manual settings for exposure, white balance",
-          "using a phone with DroidCam or OBS plugin can achieve better results"
+          "free version of DroidCam allows up to 720p",
+          "Yolocam S3 offers good bang for buck for an upgrade",
+          "Razer Kiyo Pro looks crisp and clean at default settings"
         ],
         "cons": [
-          "light sensitivity",
-          "image quality issues",
-          "poor autofocus"
+          "light sensitivity issues",
+          "auto-focus can be a problem for users with static focusable ranges",
+          "image quality is soft and noisy in certain lighting conditions"
         ],
-        "sentiment": "neutral",
+        "sentiment": "negative",
         "key_insights": [
-          "Lighting is key to good image quality",
-          "Manual settings and low light conditions can be challenging",
-          "Other webcams like Razer Kiyo Pro or Yolocam S3 may offer better alternatives"
+          "Lighting is crucial for good image quality",
+          "Some users find the webcam less effective than other cameras, such as Razer Kiyo Pro or Yolocam S3"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -266,56 +244,82 @@
         "hasRealComments": true,
         "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-07-01T04:03:42.059Z"
+        "scrapedAt": "2026-07-01T20:06:01.268Z"
       }
     ]
   },
   "best-desk-accessories-under-50": {
-    "lastUpdated": "2026-07-01T12:04:34.587Z",
+    "lastUpdated": "2026-07-01T20:06:01.289Z",
     "insights": [
       {
         "product": "Ergotron LX Desk Monitor Arm",
         "productSlug": "best-desk-accessories-under-50",
-        "summary": "Users appreciate the aesthetic value of a vintage desk setup with tech components and enjoy its unique personality, while one user expresses enthusiasm for sitting at it.",
+        "summary": "Users appreciate the unique blend of vintage and modern elements in a desk setup, with one user expressing love for the look but not necessarily using it themselves.",
         "pros": [
           "function over aesthetics",
-          "vintage + tech mix works so perfectly",
+          "works so perfectly",
           "10/10 would love to sit and chill"
         ],
         "cons": [],
         "sentiment": "positive",
         "key_insights": [
-          "the 'function over aesthetics' energy hits different",
-          "every hobby and work tool has its spot, and the vintage + tech mix works so perfectly"
+          "Users value functionality alongside aesthetics in a desk setup.",
+          "The mix of vintage and modern elements is well-received."
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "warm vintage desk setup 🌍",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1u02mew/warm_vintage_desk_setup/",
-        "scrapedAt": "2026-07-01T12:04:34.578Z"
+        "scrapedAt": "2026-07-01T20:06:01.268Z"
+      },
+      {
+        "product": "Logitech MX Master 3S Wireless Mouse",
+        "productSlug": "best-desk-accessories-under-50",
+        "summary": "Commenters have mixed opinions on mice for battery life, but some swear by the Logitech MX Master 3S, while others express concerns and recommend alternatives.",
+        "pros": [
+          "The Logitech MX Masters are the best",
+          "They’re the best overall mouse for sure. You won’t regret it",
+          "the basilisk v3 had the same spinning wheel magnetic mechanism (not as refined as the one in the 3"
+        ],
+        "cons": [
+          " horrible software that comes with it",
+          "it started double clicking after a year or so",
+          "the smaller size of the anywhere might actually be less ergonomic for my bigger hands"
+        ],
+        "sentiment": "neutral",
+        "key_insights": [
+          "Commenters recommend the Logitech MX Master 3S, citing its performance and design.",
+          "Some users express disappointment with the product's battery life, including a user who had to replace their original battery after 6 years."
+        ],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "What Mouse Do You Recommend For Battery In 2026?",
+        "sourceUrl": "https://www.reddit.com/r/homeoffice/comments/1tygz2f/what_mouse_do_you_recommend_for_battery_in_2026/",
+        "scrapedAt": "2026-07-01T20:06:01.271Z"
       }
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-07-01T12:04:34.587Z",
+    "lastUpdated": "2026-07-01T20:06:01.289Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Users are skeptical and curious about the new AirTag 2 firmware update, with some hoping for improvements to the screen.",
-        "pros": [
-          "The Fast and the Findable"
-        ],
+        "summary": "Users express skepticism and excitement about the upcoming firmware update for AirTag 2, with some joking about the lack of information.",
+        "pros": [],
         "cons": [
-          "Still no details on what this one might include",
-          "I hope they improve the screen. I can't make out jack on these things"
+          "The screen can't be read",
+          "There are no details on what this one might include"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Users are looking for information about the firmware update",
-          "Some users want improvements to the screen"
+          "No information is available on the new firmware update",
+          "Some users hope for improvements, such as better screens",
+          "Others believe there's a conspiracy behind Apple's silence"
         ],
         "recommended_by_users": false,
         "commentCount": 5,
@@ -323,7 +327,7 @@
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-07-01T12:04:34.580Z"
+        "scrapedAt": "2026-07-01T20:06:01.273Z"
       }
     ]
   },
