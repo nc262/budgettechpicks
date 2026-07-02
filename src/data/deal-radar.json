@@ -1,4 +1,14 @@
 {
-  "updatedAt": "2026-07-01T07:02:54.487Z",
-  "deals": []
+  "updatedAt": "2026-07-02T07:02:26.860Z",
+  "deals": [
+    {
+      "product": "FiiO FT1 32Ω Large Dynamic Driver Headphones with Solid Wood Cups",
+      "asin": "B0D9QD4Y2P",
+      "slug": "best-audio-gear",
+      "title": "[GPU] XFX Swift 16gb RX 9060 XT $399.99 ( $25 discount during checkout )",
+      "url": "https://reddit.com/r/buildapcsales/comments/1ukchu7/gpu_xfx_swift_16gb_rx_9060_xt_39999_25_discount/",
+      "score": 15,
+      "postedAt": "2026-07-01T05:18:49.000Z"
+    }
+  ]
 }
