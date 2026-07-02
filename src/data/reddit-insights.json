@@ -1,29 +1,27 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-01T20:06:01.289Z",
+    "lastUpdated": "2026-07-02T04:06:01.847Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the adequacy of 900mAh power for a SATA SSD, but ultimately consider it sufficient and recommend using with certain products.",
+        "summary": "Users question the power delivery of a 900mAh battery and verify the UGREEN 9-in-1 USB-C Hub's compatibility with SATA SSDs.",
         "pros": [
-          "Considered sufficient",
-          "Will work fine",
-          "Standard SATA to USB controller has been around forever"
+          "will work fine"
         ],
         "cons": [],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "Power is not applicable to this use case",
-          "900mAh is considered sufficient for the device"
+          "900mA is not applicable to this use case",
+          "device works with standard SATA to USB controller"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-01T20:06:01.267Z"
+        "scrapedAt": "2026-07-02T04:06:01.839Z"
       }
     ]
   },
@@ -96,26 +94,25 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-01T20:06:01.289Z",
+    "lastUpdated": "2026-07-02T04:06:01.847Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users generally agree that EMI/RFI interference is not a common issue with the SM7B, but some have experienced problems depending on their studio location and setup. A few users suggest that grounding issues or using specific shielding methods can help mitigate RFI.",
+        "summary": "Users note that EMI/RFI interference can be an issue, but it is often caused by external factors such as nearby emitters or cables, and may not necessarily be a problem with the mic itself.",
         "pros": [
-          "Not typically a culprit for EMI/RFI interference",
-          "Works well in most cases",
-          "Shielding methods such as faraday cages can be effective"
+          "balanced cables are enough to deal with most interference on the trip from the mic to the pre",
+          "mics like dynamic mics (specifically mentioned SM7B) do not inherently cause EMI/RFI interference"
         ],
         "cons": [
-          "Can be affected by studio location and nearby emitters",
-          "Grounding issues can cause noise",
-          "May not be suitable for all environments with strong EMI/RFI signals"
+          "EMI/RFI interference can be a problem, especially in environments with nearby emitters or high RF activity",
+          "cables and grounding issues can sometimes cause EMI/RFI interference"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "EMI/RFI interference is a potential issue, but not a common one with the SM7B",
-          "Grounding issues can cause noise and are often the culprit for RFI problems"
+          "environmental factors like nearby emitters and cables can cause EMI/RFI interference",
+          "grounding issues with the mic or its cables can also cause EMI/RFI interference",
+          "balanced cables are effective in filtering out most EMI/RFI interference"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -123,7 +120,7 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-01T20:06:01.275Z"
+        "scrapedAt": "2026-07-02T04:06:01.840Z"
       }
     ]
   },
@@ -159,34 +156,23 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-01T12:04:34.587Z",
+    "lastUpdated": "2026-07-02T04:06:01.847Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users share their positive experiences with their SecretLab Titan Evo 2022 Gaming Chair, mentioning its comfort and durability, while also discussing their gaming setup and peripherals.",
-        "pros": [
-          "good quality chair",
-          "comfortable",
-          "durable",
-          "great specs"
-        ],
-        "cons": [
-          "design flaws in earlier models",
-          "arm rest cracking"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "The first model had design flaws which have been rectified on later models.",
-          "Some users experienced issues with the arm rest cracking, requiring replacement."
-        ],
+        "summary": "Discussed in r/battlestations — 24 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-01T12:04:34.583Z"
+        "scrapedAt": "2026-07-02T04:06:01.841Z"
       }
     ]
   },
@@ -304,58 +290,44 @@
     ]
   },
   "best-portable-tech-under-50": {
-    "lastUpdated": "2026-07-01T20:06:01.289Z",
+    "lastUpdated": "2026-07-02T04:06:01.847Z",
     "insights": [
       {
         "product": "Apple AirTag (4-Pack)",
         "productSlug": "best-portable-tech-under-50",
-        "summary": "Users express skepticism and excitement about the upcoming firmware update for AirTag 2, with some joking about the lack of information.",
+        "summary": "Discussed in r/apple — 7 comments on this thread.",
         "pros": [],
-        "cons": [
-          "The screen can't be read",
-          "There are no details on what this one might include"
-        ],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "No information is available on the new firmware update",
-          "Some users hope for improvements, such as better screens",
-          "Others believe there's a conspiracy behind Apple's silence"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 5,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Apple rolling out new AirTag 2 firmware update",
         "sourceUrl": "https://www.reddit.com/r/apple/comments/1tou7ik/apple_rolling_out_new_airtag_2_firmware_update/",
-        "scrapedAt": "2026-07-01T20:06:01.273Z"
+        "scrapedAt": "2026-07-02T04:06:01.839Z"
       }
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-07-01T12:04:34.587Z",
+    "lastUpdated": "2026-07-02T04:06:01.847Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users advise against buying a 1440p QD-OLED monitor for work due to text smearing, bad viewing angles, and burn-in issues, but some users with OLED monitors for work report no issues if using dark mode and adjusting brightness.",
+        "summary": "Discussed in r/Monitors — 4 comments on this thread.",
         "pros": [],
-        "cons": [
-          "text smearing",
-          "bad viewing angles",
-          "burn-in issues"
-        ],
-        "sentiment": "negative",
-        "key_insights": [
-          "1440p OLED monitors may not be suitable for work due to text fringing",
-          "OLED monitors can have burn-in issues with static elements like the taskbar"
-        ],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 7,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-07-01T12:04:34.580Z"
+        "scrapedAt": "2026-07-02T04:06:01.840Z"
       }
     ]
   }
