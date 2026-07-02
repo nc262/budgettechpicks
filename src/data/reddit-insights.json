@@ -1,29 +1,30 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-02T12:03:36.618Z",
+    "lastUpdated": "2026-07-02T20:02:40.583Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users think the power rating of 900mAh is irrelevant for a SATA SSD and don't have concerns about using the UGREEN 9-in-1 USB-C Hub with these specific SSDs.",
+        "summary": "Users question the power consumption of a 900mAh unit and clarify its compatibility with SATA SSDs, emphasizing their confidence in its functionality.",
         "pros": [
-          "Will work fine",
-          "Standard SATA to USB controller"
+          "standard SATA to USB controller",
+          "works fine",
+          "will use with WD 3D BLUE SATA SSD (2TB) and SanDisk Plus 2TB SSD"
         ],
         "cons": [],
         "sentiment": "positive",
         "key_insights": [
-          "900mAh is not applicable to this use case",
-          "standard SATA to USB controller",
-          "will work with WD 3D BLUE and SanDisk Plus SSDs"
+          "900mAh is not applicable to the use case of a SATA SSD",
+          "the device is a standard SATA to USB controller",
+          "users plan to use it with specific SATA SSDs"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-02T12:03:36.607Z"
+        "scrapedAt": "2026-07-02T20:02:40.574Z"
       }
     ]
   },
@@ -96,25 +97,27 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-02T04:06:01.847Z",
+    "lastUpdated": "2026-07-02T20:02:40.583Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users note that EMI/RFI interference can be an issue, but it is often caused by external factors such as nearby emitters or cables, and may not necessarily be a problem with the mic itself.",
+        "summary": "Real users mention that EMI/RFI interference can be a problem with microphones, but most attribute it to external sources or poor setup rather than the mic itself. The SM7B is generally considered reliable in terms of RFI interference.",
         "pros": [
-          "balanced cables are enough to deal with most interference on the trip from the mic to the pre",
-          "mics like dynamic mics (specifically mentioned SM7B) do not inherently cause EMI/RFI interference"
+          "Reliable in terms of RFI interference",
+          "Good balanced cable design",
+          "Balanced cables can deal with interference on the trip from the mic to the pre"
         ],
         "cons": [
-          "EMI/RFI interference can be a problem, especially in environments with nearby emitters or high RF activity",
-          "cables and grounding issues can sometimes cause EMI/RFI interference"
+          "RFI interference can be a problem",
+          "EMI/RFI interference can occur in certain environments",
+          "Grounding issues can cause noise with dynamic mics"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "environmental factors like nearby emitters and cables can cause EMI/RFI interference",
-          "grounding issues with the mic or its cables can also cause EMI/RFI interference",
-          "balanced cables are effective in filtering out most EMI/RFI interference"
+          "RFI interference is not unique to the SM7B and can be caused by external sources.",
+          "Balanced cables are effective in dealing with RFI/EMI interference on the trip from the mic to the pre.",
+          "Grounding issues can cause noise with dynamic mics, especially if they're near electronics."
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -122,78 +125,102 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-02T04:06:01.840Z"
+        "scrapedAt": "2026-07-02T20:02:40.576Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-02T12:03:36.618Z",
+    "lastUpdated": "2026-07-02T20:02:40.583Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users generally praise the Audio-Technica ATH-M50X headphones for their sound quality and familiarity, but some express mixed opinions about their suitability for professional use or their comparison to high-end headphones.",
+        "summary": "Users have mixed opinions on the Audio-Technica ATH-M50x Studio Headphones, with some praising their sound quality and familiarity, while others criticize them for being overhyped or not suitable for certain applications.",
         "pros": [
-          "Sound quality",
-          "Familiarity means I am in tune with how music is supposed to sound on that headphone"
+          "good",
+          "familiarity means I am in tune with how music is supposed to sound",
+          "work well for me"
         ],
         "cons": [
-          "Awful"
+          "awful",
+          "complete trash",
+          "overhyped"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Some users have worn dozens of M50X's and been forced to work with them professionally, finding them awful.",
-          "Most Hifimans, Focals, ZMF etc. high end headphones are complete trash for technical reasons"
+          "Some users have experience working with the M50x and find them good, while others have negative experiences.",
+          "Familiarity is important when it comes to sound quality on headphones.",
+          "Mixing and live monitoring require different considerations than tracking."
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Audio-Technica ATH-M50X headphones through a Focusrite Scarlett 2i2. Finally some decent equipment.",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1ueg505/audiotechnica_athm50x_headphones_through_a/",
-        "scrapedAt": "2026-07-02T12:03:36.610Z"
+        "scrapedAt": "2026-07-02T20:02:40.577Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-02T12:03:36.618Z",
+    "lastUpdated": "2026-07-02T20:02:40.583Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Discussed in r/battlestations — 24 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Users generally have a positive opinion of their SecretLab Titan Evo 2022 Gaming Chair setup, noting its quality and compatibility with various hardware components.",
+        "pros": [
+          "Great specs especially with the 4090 FE!",
+          "I am happy with the chairs so far. The first models did have some design flaws which have been rectified on these later models.",
+          "First one lasted 6 years and it was still comfortable when I handed down to my son."
+        ],
+        "cons": [
+          "That doesn’t sound like a good quality chair…"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "The user had to replace the armrest of their previous SecretLab chair due to cracking.",
+          "They are considering adding black acoustic panels to their wall setup."
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-02T12:03:36.611Z"
+        "scrapedAt": "2026-07-02T20:02:40.579Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-02T12:03:36.618Z",
+    "lastUpdated": "2026-07-02T20:02:40.583Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Real users think that a good webcam for streaming under $100 can be had with proper lighting and some camera recommendations, but may still have compromises in low light conditions.",
+        "pros": [
+          "decent in low light",
+          "auto tracking if you move around",
+          "gets the job done"
+        ],
+        "cons": [
+          "low light is gonna be rough on any sub $100 cam tbh",
+          "old now"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "key_insights": [
+          "using a ring light or extra lighting can improve low-light performance",
+          "some users recommend using a dedicated camera or Gopro for better image quality",
+          "Logitech's software is considered poor by some users"
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-02T12:03:36.608Z"
+        "scrapedAt": "2026-07-02T20:02:40.575Z"
       }
     ]
   },
