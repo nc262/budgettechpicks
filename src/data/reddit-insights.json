@@ -1,19 +1,21 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-02T04:06:01.847Z",
+    "lastUpdated": "2026-07-02T12:03:36.618Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the power delivery of a 900mAh battery and verify the UGREEN 9-in-1 USB-C Hub's compatibility with SATA SSDs.",
+        "summary": "Users think the power rating of 900mAh is irrelevant for a SATA SSD and don't have concerns about using the UGREEN 9-in-1 USB-C Hub with these specific SSDs.",
         "pros": [
-          "will work fine"
+          "Will work fine",
+          "Standard SATA to USB controller"
         ],
         "cons": [],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "900mA is not applicable to this use case",
-          "device works with standard SATA to USB controller"
+          "900mAh is not applicable to this use case",
+          "standard SATA to USB controller",
+          "will work with WD 3D BLUE and SanDisk Plus SSDs"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -21,7 +23,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-02T04:06:01.839Z"
+        "scrapedAt": "2026-07-02T12:03:36.607Z"
       }
     ]
   },
@@ -125,38 +127,36 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-01T20:06:01.289Z",
+    "lastUpdated": "2026-07-02T12:03:36.618Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users have mixed opinions about Audio-Technica ATH-M50x, with some praising their performance and others criticizing them. The majority of users acknowledge that the M50x's popularity can lead to overhyped expectations.",
+        "summary": "Real users generally praise the Audio-Technica ATH-M50X headphones for their sound quality and familiarity, but some express mixed opinions about their suitability for professional use or their comparison to high-end headphones.",
         "pros": [
-          "Audio-Technica ATH-M50x are awesome",
-          "most Hifimans, Focals, ZMF etc. high end headphones are complete trash for technical reasons and people still likes them"
+          "Sound quality",
+          "Familiarity means I am in tune with how music is supposed to sound on that headphone"
         ],
         "cons": [
-          "they're awful",
-          "most Hifimans, Focals, ZMF etc. high end headphones are complete trash for technical reasons"
+          "Awful"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Some users have worn the M50x professionally and found them to be good",
-          "Familiarity with a headphone can make it work well despite technical limitations",
-          "Experience and sound source take priority over equipment choices in a studio"
+          "Some users have worn dozens of M50X's and been forced to work with them professionally, finding them awful.",
+          "Most Hifimans, Focals, ZMF etc. high end headphones are complete trash for technical reasons"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Audio-Technica ATH-M50X headphones through a Focusrite Scarlett 2i2. Finally some decent equipment.",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1ueg505/audiotechnica_athm50x_headphones_through_a/",
-        "scrapedAt": "2026-07-01T20:06:01.275Z"
+        "scrapedAt": "2026-07-02T12:03:36.610Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-02T04:06:01.847Z",
+    "lastUpdated": "2026-07-02T12:03:36.618Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
@@ -172,65 +172,28 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-02T04:06:01.841Z"
+        "scrapedAt": "2026-07-02T12:03:36.611Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-01T20:06:01.289Z",
+    "lastUpdated": "2026-07-02T12:03:36.618Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users generally agree that a good webcam under $100 requires extra lighting to compensate for low light issues, and some recommend spending more on lights rather than the camera itself.",
-        "pros": [
-          "decent",
-          "good",
-          "leaves you money left over for a light"
-        ],
-        "cons": [
-          "low light is gonna be rough on any sub $100 cam"
-        ],
+        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Low light is a significant issue under $100",
-          "Lighting makes a huge difference in webcam quality",
-          "The C920 is still a great option, but may be old technology"
-        ],
-        "recommended_by_users": true,
+        "key_insights": [],
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-01T20:06:01.267Z"
-      },
-      {
-        "product": "Logitech Brio 4K Ultra HD Webcam",
-        "productSlug": "best-budget-webcams",
-        "summary": "Users with light sensitivity issues and those looking for better image quality on Twitch reported difficulties with the Logitech Brio 4K Ultra HD Webcam, suggesting that lighting is a key factor and some users find it less effective than other cameras.",
-        "pros": [
-          "free version of DroidCam allows up to 720p",
-          "Yolocam S3 offers good bang for buck for an upgrade",
-          "Razer Kiyo Pro looks crisp and clean at default settings"
-        ],
-        "cons": [
-          "light sensitivity issues",
-          "auto-focus can be a problem for users with static focusable ranges",
-          "image quality is soft and noisy in certain lighting conditions"
-        ],
-        "sentiment": "negative",
-        "key_insights": [
-          "Lighting is crucial for good image quality",
-          "Some users find the webcam less effective than other cameras, such as Razer Kiyo Pro or Yolocam S3"
-        ],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "feel like my face cam looks bad… what camera are you all using?",
-        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1qe1bf9/feel_like_my_face_cam_looks_bad_what_camera_are/",
-        "scrapedAt": "2026-07-01T20:06:01.268Z"
+        "scrapedAt": "2026-07-02T12:03:36.608Z"
       }
     ]
   },
@@ -311,7 +274,7 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-07-02T04:06:01.847Z",
+    "lastUpdated": "2026-07-02T12:03:36.618Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
@@ -327,7 +290,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-07-02T04:06:01.840Z"
+        "scrapedAt": "2026-07-02T12:03:36.609Z"
       }
     ]
   }
