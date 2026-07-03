@@ -1,19 +1,20 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-03T12:02:27.700Z",
+    "lastUpdated": "2026-07-03T20:02:16.779Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the relevance of power delivery (900mAh) to a SATA SSD connection and confirm the device works with their chosen drives.",
+        "summary": "Users question the relevance of the 900mAh power rating to the use case of a SATA SSD, but ultimately confirm the device works with the product.",
         "pros": [
-          "works fine"
+          "works fine",
+          "standard SATA to USB controller"
         ],
         "cons": [],
         "sentiment": "neutral",
         "key_insights": [
-          "SATA SSD connection doesn't rely on 900mAh power delivery",
-          "Device is compatible with WD and SanDisk SATA SSDs"
+          "The 900mAh power rating is not applicable to this use case",
+          "The device is a standard SATA to USB controller"
         ],
         "recommended_by_users": true,
         "commentCount": 3,
@@ -21,7 +22,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-03T12:02:27.692Z"
+        "scrapedAt": "2026-07-03T20:02:16.772Z"
       }
     ]
   },
@@ -94,23 +95,27 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-03T12:02:27.701Z",
+    "lastUpdated": "2026-07-03T20:02:16.779Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Some users experience EMI/RFI interference issues, but most attribute it to environmental factors or improper cable management, while others suggest that the issue may be due to grounding problems or using a mic with inherent magnetic properties.",
+        "summary": "Users do not generally report EMI/RFI interference issues with the SM7B Broadcast Microphone, but some mention it can be a problem depending on their studio location and emitters nearby.",
         "pros": [
-          "Most users do not have issues with EMI/RFI interference",
-          "Balanced cables can help deal with interference on the trip from the mic to the preamp"
+          "balanced cables are enough to deal with any interference",
+          "the mic itself is usually not the culprit",
+          "hum-bucker coil in dynamic mics may limit effectiveness for RF"
         ],
         "cons": [
-          "Some users experience EMI/RFI interference issues, often attributed to environmental factors or improper cable management",
-          "Grounding issues can cause noise in some cases"
+          "RFI can be a problem if it's not filtered away at your interface and demodulates into the audio band",
+          "grounding issues can cause noise",
+          "studio location and emitters nearby can contribute to RFI problems"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Environmental factors like nearby emitters and cell repeaters can cause RFI issues"
+          "EMI/RFI interference is not a common issue with this mic",
+          "balanced cables are sufficient for dealing with EMI/RFI",
+          "grounding issues can cause noise"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -118,72 +123,74 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-03T12:02:27.694Z"
+        "scrapedAt": "2026-07-03T20:02:16.774Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-03T04:03:45.043Z",
+    "lastUpdated": "2026-07-03T20:02:16.779Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Most users agree that Audio-Technica ATH-M50x headphones have a strong reputation, with some users having negative experiences but acknowledging it's popular due to its widespread use.",
+        "summary": "Reddit commenters have mixed opinions on the Audio-Technica ATH-M50x Studio Headphones, with some praising their popularity and familiarity, while others criticize their technical limitations.",
         "pros": [
-          "They're awesome",
-          "equalled lasted at every studio and film set I've been to",
-          "work for me, and I choose familiarity over theoretical high end perfection"
+          "Are awesome",
+          "Lasted at every studio and film set",
+          "Work for me",
+          "Pretty good"
         ],
         "cons": [
-          "awful",
-          "complete trash for technical reasons"
+          "Awful",
+          "Complete trash for technical reasons",
+          "One of the worst headphones on pro market right now"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Some users have had negative experiences with M50x, but still praise their reliability",
-          "Familiarity plays a key role in user satisfaction",
-          "Technical differences can make some high-end headphones 'trash' despite popularity"
-        ],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Audio-Technica ATH-M50X headphones through a Focusrite Scarlett 2i2. Finally some decent equipment.",
-        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1ueg505/audiotechnica_athm50x_headphones_through_a/",
-        "scrapedAt": "2026-07-03T04:03:45.028Z"
-      }
-    ]
-  },
-  "best-gaming-setups": {
-    "lastUpdated": "2026-07-03T12:02:27.701Z",
-    "insights": [
-      {
-        "product": "Secretlab Titan Evo 2022 Gaming Chair",
-        "productSlug": "best-gaming-setups",
-        "summary": "Users share their positive experience with SecretLab chairs, mentioning comfort and durability, but also mention some design flaws in older models and need for updates to the BIOS.",
-        "pros": [
-          "comfortable",
-          "durable",
-          "good quality",
-          "good value"
-        ],
-        "cons": [
-          "design flaws",
-          "arm rest cracking",
-          "need for updates to BIOS"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "First one lasted 6 years and it was still comfortable when I handed down to my son",
-          "The first models did have some design flaws which have been rectified on these later models"
+          "Some users have worn M50X's professionally and still think they're not good enough.",
+          "Mixing is more about sound source and recording technique than headphone quality.",
+          "Familiarity with headphones matters, as experienced audio engineers can work well with basic equipment."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
+        "sourcePost": "Audio-Technica ATH-M50X headphones through a Focusrite Scarlett 2i2. Finally some decent equipment.",
+        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1ueg505/audiotechnica_athm50x_headphones_through_a/",
+        "scrapedAt": "2026-07-03T20:02:16.774Z"
+      }
+    ]
+  },
+  "best-gaming-setups": {
+    "lastUpdated": "2026-07-03T20:02:16.779Z",
+    "insights": [
+      {
+        "product": "Secretlab Titan Evo 2022 Gaming Chair",
+        "productSlug": "best-gaming-setups",
+        "summary": "Users generally have a positive sentiment towards their Secretlab Titan Evo 2022 gaming chairs, but note some design flaws and material quality issues in previous models.",
+        "pros": [
+          "comfortable",
+          "good quality",
+          "great specs"
+        ],
+        "cons": [
+          "design flaws",
+          "material quality issues",
+          "arm rest cracking"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Previous models had design flaws which have been rectified in later models.",
+          "Some users experienced arm rest cracking issues with older Titan chairs.",
+          "Material quality is a concern for some users."
+        ],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "relevant": true,
+        "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-03T12:02:27.696Z"
+        "scrapedAt": "2026-07-03T20:02:16.776Z"
       }
     ]
   },
