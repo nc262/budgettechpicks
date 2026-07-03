@@ -1,26 +1,27 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-03T04:03:45.043Z",
+    "lastUpdated": "2026-07-03T12:02:27.700Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Commenters express skepticism about the 900mAh power rating being relevant for a SATA SSD, and one user provides a link to the product for further information.",
-        "pros": [],
-        "cons": [
-          "Not sure where the '900mAH' is coming from"
+        "summary": "Users question the relevance of power delivery (900mAh) to a SATA SSD connection and confirm the device works with their chosen drives.",
+        "pros": [
+          "works fine"
         ],
+        "cons": [],
         "sentiment": "neutral",
         "key_insights": [
-          "The 900mAh power rating may not be relevant or applicable for this use case."
+          "SATA SSD connection doesn't rely on 900mAh power delivery",
+          "Device is compatible with WD and SanDisk SATA SSDs"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-03T04:03:45.025Z"
+        "scrapedAt": "2026-07-03T12:02:27.692Z"
       }
     ]
   },
@@ -93,26 +94,23 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-03T04:03:45.043Z",
+    "lastUpdated": "2026-07-03T12:02:27.701Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users generally agree that EMI/RFI interference is a common issue, but it's often caused by other factors such as cables, grounds, and environment, rather than the microphone itself.",
+        "summary": "Some users experience EMI/RFI interference issues, but most attribute it to environmental factors or improper cable management, while others suggest that the issue may be due to grounding problems or using a mic with inherent magnetic properties.",
         "pros": [
-          "Bad cable",
-          "Balanced cable",
-          "Dynamic mics don't typically have RFI issues"
+          "Most users do not have issues with EMI/RFI interference",
+          "Balanced cables can help deal with interference on the trip from the mic to the preamp"
         ],
         "cons": [
-          "Cell repeaters on a tower",
-          "Grounding issues"
+          "Some users experience EMI/RFI interference issues, often attributed to environmental factors or improper cable management",
+          "Grounding issues can cause noise in some cases"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "RFI interference depends on the environment and nearby emitters.",
-          "Dynamic mics don't typically have RFI issues, but specific conditions can cause problems.",
-          "Grounding issues are a common cause of EMI/RFI interference."
+          "Environmental factors like nearby emitters and cell repeaters can cause RFI issues"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -120,7 +118,7 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-03T04:03:45.027Z"
+        "scrapedAt": "2026-07-03T12:02:27.694Z"
       }
     ]
   },
@@ -157,54 +155,66 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-03T04:03:45.043Z",
+    "lastUpdated": "2026-07-03T12:02:27.701Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users have mixed opinions about their SecretLab Titan Evo 2022 Gaming Chair setup, with some praising the chair's quality and design, while others mention potential issues with arm rest cracking and design flaws.",
+        "summary": "Users share their positive experience with SecretLab chairs, mentioning comfort and durability, but also mention some design flaws in older models and need for updates to the BIOS.",
         "pros": [
-          "Great specs especially with the 4090 FE!",
-          "Still comfortable when I handed down to my son after 6 years",
-          "I think that would look great"
+          "comfortable",
+          "durable",
+          "good quality",
+          "good value"
         ],
         "cons": [
-          "That doesn’t sound like a good quality chair…"
+          "design flaws",
+          "arm rest cracking",
+          "need for updates to BIOS"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "The first models had design flaws, but later models have rectified these issues.",
-          "Some users experience arm rest cracking and need to replace it.",
-          "Users appreciate the comfort and durability of their SecretLab chairs."
+          "First one lasted 6 years and it was still comfortable when I handed down to my son",
+          "The first models did have some design flaws which have been rectified on these later models"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-03T04:03:45.029Z"
+        "scrapedAt": "2026-07-03T12:02:27.696Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-03T04:03:45.043Z",
+    "lastUpdated": "2026-07-03T12:02:27.701Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Real users think a webcam under $100 can be decent, but may have compromises in low light. They recommend spending extra money on lighting to improve image quality.",
+        "pros": [
+          "decent for streaming",
+          "good with good lighting",
+          "has auto tracking if you move around"
+        ],
+        "cons": [
+          "low light is gonna be rough",
+          "old model (c920 is still decent but kinda old)"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Low light performance can be a compromise without extra lighting.",
+          "Good lighting can make a significant difference in image quality."
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-03T04:03:45.025Z"
+        "scrapedAt": "2026-07-03T12:02:27.693Z"
       }
     ]
   },
