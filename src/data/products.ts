@@ -2137,6 +2137,22 @@ export const products: Product[] = [
     articleSlug: "best-audio-gear",
     badge: "🚀 Community Fave",
   },
+  // Promoted from community picks after 14+ days live (auto-pipeline)
+  {
+    id: "auto-b0bxbc26x8",
+    name: "Razer Basilisk V3 X Hyperspeed",
+    asin: "B0BXBC26X8",
+    price: "$48.99",
+    priceNum: 48.99,
+    rating: 4.4,
+    reviewCount: 2224,
+    description: "The community recommends the Razer Basilisk V3 X HyperSpeed Customizable Wireless Gaming Mouse due to its mechanical switches.",
+    pros: ["supports wireless gaming","customizable"],
+    cons: ["none mentioned in the text"],
+    category: "Gaming Setups",
+    articleSlug: "best-gaming-setups",
+    badge: "🚀 Community Fave",
+  },
 ];
 
 
