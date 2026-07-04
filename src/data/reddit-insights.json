@@ -1,22 +1,20 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-04T12:02:54.610Z",
+    "lastUpdated": "2026-07-04T20:02:29.895Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users doubt the relevance of 900mAh power measure for a SATA SSD and express confidence in the device's functionality.",
+        "summary": "Users questioned the relevance of power delivery capacity (900mAh) to a SATA SSD connection, and confirmed compatibility with a WD 3D BLUE and SanDisk Plus SSD.",
         "pros": [
-          "It's just a standard SATA to USB controller, they've been around forever.",
-          "Will work fine."
+          "will work fine"
         ],
-        "cons": [
-          "No specific concerns mentioned"
-        ],
-        "sentiment": "positive",
+        "cons": [],
+        "sentiment": "neutral",
         "key_insights": [
-          "The commenters question the relevance of 900mAh power measure for this use case.",
-          "The device is a standard SATA to USB controller, which has been around forever."
+          "power delivery capacity (900mAh) is not applicable to SATA SSD connection",
+          "device is a standard SATA to USB controller",
+          "compatible with WD 3D BLUE and SanDisk Plus SSDs"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -24,7 +22,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-04T12:02:54.595Z"
+        "scrapedAt": "2026-07-04T20:02:29.888Z"
       }
     ]
   },
@@ -129,27 +127,24 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-04T12:02:54.610Z",
+    "lastUpdated": "2026-07-04T20:02:29.895Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Users have mixed opinions about the Audio-Technica ATH-M50X headphones, with some praising their performance and familiarity, while others criticize them for being overhyped or insufficient for certain applications.",
+        "summary": "Real users have mixed opinions on the Audio-Technica ATH-M50x headphones, with some praising their familiarity and performance, while others criticize them for being popular but not necessarily great sounding. Some users also mentioned that technical quality is more important than brand or popularity.",
         "pros": [
-          "decent equipment",
-          "awful (contradictory statement, but still mentioned)",
-          "familiarity means I am in tune with how music is supposed to sound on that headphone"
+          "they're awesome",
+          "equally lasted at every studio and film set I’ve been to"
         ],
         "cons": [
           "awful",
-          "complete trash for technical reasons",
-          "some people have been forced to work with them professionally and think they're awful"
+          "complete trash for technical reasons"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Familiarity is key to enjoying a headphone's sound quality.",
-          "Some users find the M50X to be overhyped or underperforming in certain situations.",
-          "Technical reasons can affect a headphone's value, even if they're popular."
+          "Familiarity with the sound is more important than theoretical high-end perfection",
+          "Technical quality is more important than brand or popularity in mixing and audio production"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -157,31 +152,30 @@
         "hasRealComments": true,
         "sourcePost": "Audio-Technica ATH-M50X headphones through a Focusrite Scarlett 2i2. Finally some decent equipment.",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1ueg505/audiotechnica_athm50x_headphones_through_a/",
-        "scrapedAt": "2026-07-04T12:02:54.597Z"
+        "scrapedAt": "2026-07-04T20:02:29.890Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-04T04:02:33.655Z",
+    "lastUpdated": "2026-07-04T20:02:29.895Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users have a mixed opinion on the SecretLab Titan Evo 2022 Gaming Chair, with some mentioning design flaws in older models but generally being satisfied with their chairs and praising specific components of the setup.",
+        "summary": "Users have mixed opinions on their Secretlab Titan Evo 2022 gaming chair setup, with some experiencing design flaws but generally being satisfied with the chairs. One user mentions upgrading to a newer model and having issues with the arm rest.",
         "pros": [
-          "Great specs",
-          "I had to get them to replace the whole arm when the arm rest started cracking",
-          "First one lasted 6 years and it was still comfortable"
+          "Great specs especially with the 4090 FE!",
+          "First one lasted 6 years and it was still comfortable when I handed down to my son."
         ],
         "cons": [
           "That doesn’t sound like a good quality chair…",
-          "The first models did have some design flaws which have been rectified on these later models"
+          "Will do this is my second SecretLab chair and I had to get them to replace the whole arm when the arm rest started cracking."
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Design flaws in older models were addressed in newer versions",
-          "Users appreciate the comfort and durability of their chairs",
-          "Specific components like the 4090 FE are praised by users"
+          "Some users experienced design flaws in previous models, but newer versions seem to have rectified these issues.",
+          "The quality of the chair can vary, and some users had to deal with arm rest issues.",
+          "Users are satisfied with their chairs overall, but may need to upgrade or replace parts."
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -189,32 +183,31 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-04T04:02:33.651Z"
+        "scrapedAt": "2026-07-04T20:02:29.891Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-04T12:02:54.610Z",
+    "lastUpdated": "2026-07-04T20:02:29.895Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users generally consider the Logitech C920s HD Pro Webcam to be sufficient for streaming, but acknowledge its limitations, particularly in low-light conditions and comparison to other webcams.",
+        "summary": "Users generally acknowledge the Logitech C920s HD Pro Webcam as a standard option with limitations, such as requiring good lighting and having a smaller sensor size compared to more expensive alternatives.",
         "pros": [
-          "offers good quality for streaming",
-          "can be adjusted through the Ghub",
-          "is cheap and simple"
+          "good",
+          "great",
+          "fine"
         ],
         "cons": [
-          "has a small sensor which requires a lot of lighting",
           "locked to 1080p/30fps",
-          "no 4K resolution"
+          "smaller sensor size makes it less suitable for low-light conditions"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "sensor size affects performance in low light",
-          "comparison to other webcams like Elgato can be made",
-          "available at lower price points than some alternatives"
+          "sensor size affects low light performance",
+          " cheaper alternatives like Elgato offer higher FPS rates",
+          "some users have upgraded to a better camera on Amazon"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -222,7 +215,7 @@
         "hasRealComments": true,
         "sourcePost": "Logitech help?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1t5itcs/logitech_help/",
-        "scrapedAt": "2026-07-04T12:02:54.596Z"
+        "scrapedAt": "2026-07-04T20:02:29.889Z"
       }
     ]
   },
