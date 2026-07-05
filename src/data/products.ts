@@ -2153,6 +2153,22 @@ export const products: Product[] = [
     articleSlug: "best-gaming-setups",
     badge: "🚀 Community Fave",
   },
+  // Promoted from community picks after 14+ days live (auto-pipeline)
+  {
+    id: "auto-b08z7j4kv3",
+    name: "Logitech G413 TKL SE",
+    asin: "B08Z7J4KV3",
+    price: "$69.99",
+    priceNum: 69.99,
+    rating: 4.6,
+    reviewCount: 1036,
+    description: "The community recommends this keyboard due to its compact design and backlit feature.",
+    pros: ["Compact design","Backlit feature"],
+    cons: ["Newer to our list — less long-term data"],
+    category: "Gaming Setups",
+    articleSlug: "best-gaming-setups",
+    badge: "🚀 Community Fave",
+  },
 ];
 
 
