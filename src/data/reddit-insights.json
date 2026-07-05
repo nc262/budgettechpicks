@@ -324,23 +324,33 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-07-02T12:03:36.618Z",
+    "lastUpdated": "2026-07-05T12:04:18.776Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Discussed in r/Monitors — 4 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users generally advise against purchasing a 1440p OLED monitor for work due to issues such as text smearing, bad viewing angles, and burn-in, but acknowledge some potential benefits and alternatives.",
+        "pros": [
+          "may be suitable for gaming with games coming out later this year",
+          "can get away with it on newer models"
+        ],
+        "cons": [
+          "text smearing from VA when scrolling text",
+          "bad viewing angles",
+          "burn-in, especially static elements like the taskbar"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "OLED monitors may not be suitable for work due to text smearing and burn-in",
+          "Newer 34-inch ultrawide models with current-gen panels may address some of these issues"
+        ],
         "recommended_by_users": false,
         "commentCount": 7,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-07-02T12:03:36.609Z"
+        "scrapedAt": "2026-07-05T12:04:18.772Z"
       }
     ]
   }
