@@ -2169,6 +2169,22 @@ export const products: Product[] = [
     articleSlug: "best-gaming-setups",
     badge: "🚀 Community Fave",
   },
+  // Promoted from community picks after 14+ days live (auto-pipeline)
+  {
+    id: "auto-b07gbz4q68",
+    name: "NZXT Lift Wired Gaming Mouse",
+    asin: "B07GBZ4Q68",
+    price: "$37.99",
+    priceNum: 37.99,
+    rating: 4.6,
+    reviewCount: 58209,
+    description: "The Logitech G502 Hero is a popular gaming mouse choice among enthusiasts due to its high-performance features and wide availability.",
+    pros: ["High-performance features","Wide availability"],
+    cons: ["Newer to our list — less long-term data"],
+    category: "Gaming Gear",
+    articleSlug: "best-gaming-gear-under-50",
+    badge: "🚀 Community Fave",
+  },
 ];
 
 
