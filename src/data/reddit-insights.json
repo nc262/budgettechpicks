@@ -1,21 +1,23 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-06T20:03:15.027Z",
+    "lastUpdated": "2026-07-07T04:03:15.257Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users are skeptical about the relevance of 900mAh power rating for a SATA SSD, but the device seems functional and compatible with their plans.",
+        "summary": "Users discussed the capacity of a SATA SSD and its compatibility with the UGREEN 9-in-1 USB-C Hub, but did not express concerns about power consumption.",
         "pros": [
-          "it will work fine",
-          "standard SATA to USB controller",
-          "compatible with WD 3D BLUE SATA SSD (2TB) and SanDisk Plus 2TB SSD"
+          "Will work fine",
+          "Standard SATA to USB controller",
+          "Been around forever"
         ],
-        "cons": [],
+        "cons": [
+          "Unknown origin of 900mAh information"
+        ],
         "sentiment": "neutral",
         "key_insights": [
-          "900mAh is a measure of power delivered over time, not applicable to this use case",
-          "it's just a standard SATA to USB controller"
+          "The device is compatible with a standard SATA to USB controller",
+          "Power consumption does not appear to be an issue"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -23,7 +25,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-06T20:03:15.015Z"
+        "scrapedAt": "2026-07-07T04:03:15.249Z"
       }
     ]
   },
@@ -96,7 +98,7 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-06T20:03:15.027Z",
+    "lastUpdated": "2026-07-07T04:03:15.257Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
@@ -112,12 +114,12 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-06T20:03:15.017Z"
+        "scrapedAt": "2026-07-07T04:03:15.251Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-06T20:03:15.027Z",
+    "lastUpdated": "2026-07-07T04:03:15.257Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
@@ -133,12 +135,12 @@
         "hasRealComments": true,
         "sourcePost": "Audio-Technica ATH-M50X headphones through a Focusrite Scarlett 2i2. Finally some decent equipment.",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1ueg505/audiotechnica_athm50x_headphones_through_a/",
-        "scrapedAt": "2026-07-06T20:03:15.018Z"
+        "scrapedAt": "2026-07-07T04:03:15.251Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-06T20:03:15.027Z",
+    "lastUpdated": "2026-07-07T04:03:15.257Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
@@ -154,39 +156,40 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-06T20:03:15.020Z"
+        "scrapedAt": "2026-07-07T04:03:15.253Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-06T20:03:15.027Z",
+    "lastUpdated": "2026-07-07T04:03:15.257Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users generally recommend spending money on lighting to improve image quality, and some also suggest using a dedicated camera for better image quality. The Logitech C920s HD Pro Webcam is considered decent but old, while newer options like the Razer Kiyo or Elgato Facecam MK2 are recommended.",
+        "summary": "Users generally agree that a good webcam for streaming under $100 requires additional lighting to perform well in low light conditions, but some recommend specific options like the Logitech C920s HD Pro Webcam or the Emeet Pixy.",
         "pros": [
-          "decent in low light",
-          "auto tracking if you move around",
-          "good image quality with proper lighting",
-          "still a great webcam for the price"
+          "decent image quality",
+          "auto tracking feature",
+          "built-in ring light"
         ],
         "cons": [
-          "low light is gonna be rough on any sub $100 cam",
-          "software is horrendous (Logitech)"
+          "low light performance can be rough",
+          "software is horrendous (specifically for Logitech)",
+          "only suitable for streaming, not other uses"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "Low-light performance can be compromised without extra lighting setup.",
-          "Lighting makes a huge difference in image quality, and investing in it is recommended."
+          "lighting makes a huge difference in webcam performance",
+          "adding lighting to an existing webcam can improve image quality",
+          "some users prefer higher-end options like the Emeet Pixy or Elgato Facecam MK2"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-06T20:03:15.016Z"
+        "scrapedAt": "2026-07-07T04:03:15.250Z"
       }
     ]
   },
