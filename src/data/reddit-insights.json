@@ -1,22 +1,28 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-08T12:04:44.778Z",
+    "lastUpdated": "2026-07-08T20:02:26.715Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Discussed in r/buildapc — 3 comments on this thread.",
-        "pros": [],
+        "summary": "Users question the relevance of 900mAh power delivery for a SATA SSD and provide more information about the UGREEN 9-in-1 USB-C Hub.",
+        "pros": [
+          "Will work fine",
+          "Standard SATA to USB controller"
+        ],
         "cons": [],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Relevance of 900mAh power delivery for a SATA SSD is questionable",
+          "Device will work with certain SSD models"
+        ],
         "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-08T12:04:44.769Z"
+        "scrapedAt": "2026-07-08T20:02:26.706Z"
       }
     ]
   },
@@ -89,23 +95,32 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-08T12:04:44.778Z",
+    "lastUpdated": "2026-07-08T20:02:26.715Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Discussed in r/audioengineering — 14 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Commenters generally agree that EMI/RFI interference is a common issue, but it's often caused by environmental factors or improper cable management rather than the microphone itself.",
+        "pros": [
+          "EMI/RFI interference can be minimized with proper cable management",
+          "Balanced cables are usually enough to deal with interference on the trip from the mic to the pre"
+        ],
+        "cons": [
+          "Dynamic mics like the SM7B may not be effective in preventing EMI/RFI interference without proper shielding"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "RF interference is often caused by environmental factors such as nearby radio towers or cell repeaters",
+          "Cable management and grounding issues can also contribute to EMI/RFI problems",
+          "Proper shielding, like a Faraday cage, may be necessary in severe cases"
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-08T12:04:44.771Z"
+        "scrapedAt": "2026-07-08T20:02:26.707Z"
       }
     ]
   },
@@ -143,66 +158,64 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-08T12:04:44.778Z",
+    "lastUpdated": "2026-07-08T20:02:26.715Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Real users share their experiences with the SecretLab Titan Evo 2022 Gaming Chair, mentioning its quality and design, as well as suggesting potential accessories or modifications to enhance their gaming setup.",
+        "summary": "Real users have generally positive feedback on their Secretlab Titan Evo 2022 Gaming Chair setup, mentioning comfort and quality. However, some users have experienced design flaws with previous models.",
         "pros": [
-          "First one lasted 6 years and it was still comfortable when I handed down to my son",
-          "Great specs especially with the 4090 FE",
-          "I think that would look great"
+          "comfort",
+          "quality",
+          "good performance"
         ],
         "cons": [
-          "That doesn’t sound like a good quality chair…"
-        ],
-        "sentiment": "neutral",
-        "key_insights": [
-          "The first model had design flaws which have been rectified in later models",
-          "Some users had issues with the arm rest cracking and needed replacement",
-          "Users suggest using under desk mounts or acoustic panels to enhance their gaming setup"
-        ],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Secret Lab Setup Coming Along",
-        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-08T12:04:44.773Z"
-      }
-    ]
-  },
-  "best-budget-webcams": {
-    "lastUpdated": "2026-07-08T12:04:44.778Z",
-    "insights": [
-      {
-        "product": "Logitech C920s HD Pro Webcam",
-        "productSlug": "best-budget-webcams",
-        "summary": "Users generally recommend spending money on lighting to improve webcam quality, with some suggesting the Logitech C920s HD Pro Webcam is a decent option but somewhat old.",
-        "pros": [
-          "good for streaming under $100",
-          "decent in low light",
-          "has auto tracking if you move around",
-          "recommended by users"
-        ],
-        "cons": [
-          "low light is gonna be rough on any sub $100 cam",
-          "webcam software is horrendous"
+          "design flaws in previous models",
+          "arm rest cracking issue"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "spending money on lighting can improve webcam quality",
-          "auto tracking feature is useful",
-          "Logitech C920s HD Pro Webcam is a decent but old option"
+          "First one lasted 6 years and was still comfortable when handed down to son",
+          "Design flaws have been rectified on later models",
+          "Some users had issues with arm rest cracking in previous Titan chairs"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
-        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-08T12:04:44.769Z"
+        "sourcePost": "Secret Lab Setup Coming Along",
+        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
+        "scrapedAt": "2026-07-08T20:02:26.709Z"
+      }
+    ]
+  },
+  "best-budget-webcams": {
+    "lastUpdated": "2026-07-08T20:02:26.715Z",
+    "insights": [
+      {
+        "product": "Logitech C920s HD Pro Webcam",
+        "productSlug": "best-budget-webcams",
+        "summary": "Real users think the Logitech C920s HD Pro Webcam has a small sensor, requiring good lighting to look decent, and may have limited features compared to newer webcams like the Elgato webcam.",
+        "pros": [
+          "I use this, its great and is fine for my streams.",
+          "I have this it’s great tbh ! Cheap simple And can be adjusted through the ghub too."
+        ],
+        "cons": [
+          "Most of the classic desktop webcam options available, like the Logitech camera here, all have just about the same (very small) sensor.",
+          "I hate it."
+        ],
+        "sentiment": "neutral",
+        "key_insights": [
+          "Sensor size affects low-light conditions and overall image quality.",
+          "The 920 has limited features compared to newer webcams like the Elgato webcam."
+        ],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "Logitech help?",
+        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1t5itcs/logitech_help/",
+        "scrapedAt": "2026-07-08T20:02:26.707Z"
       }
     ]
   },
