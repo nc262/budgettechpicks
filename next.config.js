@@ -16,7 +16,9 @@ const REQUIRED_ENV = {
   },
 };
 
-if (process.env.NODE_ENV === "production") {
+// Only guard the real deploy (Cloudflare Pages sets CF_PAGES). CI and local prod
+// builds skip it: they verify data/build soundness and don't need live secrets.
+if (process.env.CF_PAGES) {
   const failures = [];
   for (const [key, cfg] of Object.entries(REQUIRED_ENV)) {
     if (!cfg.value || cfg.value === cfg.placeholder) {
@@ -26,7 +28,7 @@ if (process.env.NODE_ENV === "production") {
   if (failures.length > 0) {
     console.error("\n🚨 BUILD ABORTED — Required environment variables are missing or still placeholders:\n");
     failures.forEach((f) => console.error(f));
-    console.error("\nSet these in Vercel Dashboard → Project Settings → Environment Variables\n");
+    console.error("\nSet these in Cloudflare Pages → Settings → Environment Variables\n");
     process.exit(1);
   }
 }
