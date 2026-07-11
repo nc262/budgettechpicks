@@ -1,20 +1,21 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-10T12:02:22.376Z",
+    "lastUpdated": "2026-07-11T04:02:25.735Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the relevance of power delivery measured in mAh for a SATA SSD, but acknowledge the device will work fine as a standard SATA to USB controller.",
+        "summary": "Users seem skeptical about using the UGREEN 9-in-1 USB-C Hub with a SATA SSD, questioning its power delivery and functionality.",
         "pros": [
-          "will work fine",
-          "standard SATA to USB controller"
+          "Okay, yeah, it's this: The device will work fine."
         ],
-        "cons": [],
+        "cons": [
+          "> 900mAh That's a measure of power delivered over time and is not applicable to this use case."
+        ],
         "sentiment": "neutral",
         "key_insights": [
-          "power delivery measured in mAh is not relevant for this use case",
-          "device works as expected with WD and SanDisk SSDs"
+          "Users question the relevance of the 900mAh power rating for SATA SSD usage",
+          "The device works with standard SATA to USB controllers"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -22,7 +23,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-10T12:02:22.367Z"
+        "scrapedAt": "2026-07-11T04:02:25.727Z"
       }
     ]
   },
@@ -95,27 +96,27 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-10T12:02:22.376Z",
+    "lastUpdated": "2026-07-11T04:02:25.735Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Commenters have mixed experiences with EMI/RFI interference, but most attribute it to external factors like location, cables, and grounding issues rather than the microphone itself.",
+        "summary": "Real users have mixed experiences with EMI/RFI interference when using the Shure SM7B microphone, but most attribute it to external factors such as location and cable setup rather than the mic itself.",
         "pros": [
-          "Effective for dialogue recordings",
-          "Balanced cable can deal with interference on the trip from the mic to the pre",
-          "Humbucker coil likely helped eliminate a problem in one user's apartment"
+          "Hasn't experienced significant EMI/RFI interference",
+          "Works well in certain locations (e.g., not in proximity to cell repeaters)",
+          "Balanced cables can help filter out interference"
         ],
         "cons": [
-          "Can be affected by external factors like location and nearby emitters",
-          "Cable and grounding issues are common causes of EMI/RFI interference",
-          "RFI can be demodulated into the audio band at interfaces"
+          "Can be affected by external factors such as location and nearby emitters",
+          "May pick up interference near power strips or fluorescent lighting",
+          "Grounding issues can cause noise"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "External factors like location and cables play a significant role in EMI/RFI interference",
-          "Humbucker coils may help eliminate some types of interference",
-          "Grounding issues are common causes of EMI/RFI interference"
+          "EMI/RFI interference is often caused by external factors rather than the mic itself",
+          "Cable setup and grounding can play a significant role in filtering out interference",
+          "Dynamic mics are not inherently prone to EMI/RFI issues"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -123,31 +124,33 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-10T12:02:22.370Z"
+        "scrapedAt": "2026-07-11T04:02:25.729Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-10T12:02:22.376Z",
+    "lastUpdated": "2026-07-11T04:02:25.735Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users have mixed opinions on the Audio-Technica ATH-M50x Studio Headphones, with some praising their sound quality and familiarity, while others criticize them for being overhyped or unsuitable for certain applications.",
+        "summary": "Real users generally consider Audio-Technica ATH-M50x to be a good pair of headphones, with some praising their familiarity and durability, while others express frustration or skepticism towards their performance.",
         "pros": [
-          "They're awesome",
-          "equally lasted at every studio and film set I’ve been to",
-          "they work for me"
+          "are awesome",
+          "lasted at every studio and film set",
+          "work for me",
+          "familiarity means I am in tune with how music is supposed to sound on that headphone"
         ],
         "cons": [
           "awful",
-          "complete trash",
-          "for live monitoring anything with good insulation will work great"
+          "complete trash for technical reasons",
+          "bad (for mixing)"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "Some users have been forced to work with them professionally and find them 'awful'",
-          "Others praise their sound quality and choose familiarity over high-end perfection"
+          "Some users have been forced to work with M50x professionally and still prefer other headphones.",
+          "Mixing is more about the source and recording technique than the listening gear.",
+          "Familiarity is key when it comes to enjoying a headphone."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -155,7 +158,7 @@
         "hasRealComments": true,
         "sourcePost": "Audio-Technica ATH-M50X headphones through a Focusrite Scarlett 2i2. Finally some decent equipment.",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1ueg505/audiotechnica_athm50x_headphones_through_a/",
-        "scrapedAt": "2026-07-10T12:02:22.371Z"
+        "scrapedAt": "2026-07-11T04:02:25.729Z"
       }
     ]
   },
@@ -192,35 +195,33 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-10T12:02:22.376Z",
+    "lastUpdated": "2026-07-11T04:02:25.735Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users generally agree on the limitations of the Logitech C920s HD Pro Webcam, such as requiring a lot of lighting and limited low-light performance. However, some users have positive experiences with it.",
+        "summary": "Real users recommend spending extra on lighting to improve low-light performance, but also praise the Logitech C920s HD Pro Webcam for its quality and value.",
         "pros": [
-          "It is a classic desktop webcam option",
-          "Can be adjusted through the G Hub",
-          "Is fine for streaming"
+          "decent",
+          "good",
+          "leaves you money left over for a light"
         ],
         "cons": [
-          "Requires a ton of lighting to look decent",
-          "Limited low-light performance",
-          "Technically not suitable for 1080/60fps due to lack of this feature"
+          "low light is gonna be rough",
+          "software is horrendous"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "Sensor size is important for low-light conditions",
-          "Resolution numbers do not guarantee good quality",
-          "Higher-end webcams like Elgato offer better performance"
+          "adding lighting can improve low-light performance",
+          "the C920s HD Pro Webcam is still a great option despite its age"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "Logitech help?",
-        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1t5itcs/logitech_help/",
-        "scrapedAt": "2026-07-10T12:02:22.369Z"
+        "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
+        "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
+        "scrapedAt": "2026-07-11T04:02:25.728Z"
       }
     ]
   },
