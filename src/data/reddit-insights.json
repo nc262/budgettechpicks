@@ -59,39 +59,34 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-07-01T20:06:01.289Z",
+    "lastUpdated": "2026-07-11T20:04:11.433Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Some users successfully rooted their Echo Dot 5th Gen and installed custom Android Lineage OS, while others mention limitations due to Amazon's secure bootloaders.",
+        "pros": [
+          "Can be installed with custom Android Lineage OS",
+          "Can run Spotify",
+          "Custom PCB for Google Mini devices are available"
+        ],
+        "cons": [
+          "Amazon locks bootloaders down hard, making it difficult to install custom OS",
+          "No easy way to wipe and replace with a new OS"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Rooting the Echo Dot is possible but requires technical expertise",
+          "Custom PCBs for Google Mini devices are available for those who want more control",
+          "Amazon's secure bootloaders limit the ability to install custom OS"
+        ],
         "recommended_by_users": false,
         "commentCount": 10,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-07-01T20:06:01.272Z"
-      },
-      {
-        "product": "Philips Hue White & Color Starter Kit",
-        "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 15 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Philips Hue open-source solution for auto-dim?",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tl8l6a/philips_hue_opensource_solution_for_autodim/",
-        "scrapedAt": "2026-07-01T20:06:01.273Z"
+        "scrapedAt": "2026-07-11T20:04:11.427Z"
       }
     ]
   },
