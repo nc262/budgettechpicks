@@ -59,27 +59,25 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-07-12T04:04:14.123Z",
+    "lastUpdated": "2026-07-12T12:05:03.743Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users think reusing an Amazon Echo Dot 5th Gen is possible but requires root access and installation of Lineage OS, with some mentioning custom PCBs for Google Minis. They also note limitations and difficulties in jailbreaking or running alternative OS on the device.",
+        "summary": "Some users have successfully rooted their Echo Dot 5th Gen and installed custom operating systems, such as Android Lineage, to expand its functionality and compatibility with different voice assistants.",
         "pros": [
-          "can be rooted and installed Android Lineage OS",
-          "custom PCBs available for Google Minis",
-          "can run Spotify and other third-party apps"
+          "runs Spotify",
+          "can be used with own AI backend",
+          "custom PCB available for Google Minis"
         ],
         "cons": [
-          "cannot get it to run Smart Things or Bixby",
-          "cannot just wipe an Echo Dot and install own OS due to Amazon's locked bootloaders",
-          "jailbreaking is less common"
+          "locked down by Amazon, making it difficult to install custom OS"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Some users have successfully rooted their Echo Dots and installed alternative OS for more functionality.",
-          "There are custom PCBs available for Google Minis, but not specifically for the Echo Dot.",
-          "Amazon locks down bootloaders tightly, making jailbreaking or installing alternative OS difficult."
+          "some users have successfully rooted their Echo Dot and installed custom operating systems",
+          "custom PCBs are available for some devices, making it easier to jailbreak them",
+          "Amazon locks bootloaders down hard, making it difficult to install custom OS"
         ],
         "recommended_by_users": false,
         "commentCount": 10,
@@ -87,7 +85,7 @@
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-07-12T04:04:14.117Z"
+        "scrapedAt": "2026-07-12T12:05:03.738Z"
       }
     ]
   },
