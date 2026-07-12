@@ -1,21 +1,19 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-11T04:02:25.735Z",
+    "lastUpdated": "2026-07-12T20:02:42.591Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users seem skeptical about using the UGREEN 9-in-1 USB-C Hub with a SATA SSD, questioning its power delivery and functionality.",
+        "summary": "Users seem skeptical about the relevance of 900mAh for SATA SSD usage, but confirm the UGREEN device works well with their chosen storage.",
         "pros": [
-          "Okay, yeah, it's this: The device will work fine."
+          "works fine",
+          "standard SATA to USB controller"
         ],
-        "cons": [
-          "> 900mAh That's a measure of power delivered over time and is not applicable to this use case."
-        ],
+        "cons": [],
         "sentiment": "neutral",
         "key_insights": [
-          "Users question the relevance of the 900mAh power rating for SATA SSD usage",
-          "The device works with standard SATA to USB controllers"
+          "> 900mAh That's a measure of power delivered over time and is not applicable to this use case."
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -23,7 +21,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-11T04:02:25.727Z"
+        "scrapedAt": "2026-07-12T20:02:42.585Z"
       }
     ]
   },
@@ -157,34 +155,35 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-10T04:03:01.503Z",
+    "lastUpdated": "2026-07-12T20:02:42.591Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users have generally positive experiences with their Secretlab Titan Evo 2022 Gaming Chairs, noting improvements over earlier models and satisfaction with overall quality. However, some users had design flaws with their previous chairs.",
+        "summary": "Users have mixed experiences with their SecretLab Titan Evo 2022 Gaming Chairs, with some mentioning design flaws in earlier models and others having positive experiences with comfort and build quality.",
         "pros": [
-          "Great specs especially with the 4090 FE!",
-          "First one lasted 6 years and it was still comfortable when I handed down to my son.",
-          "Thinking about some black acoustic panels on the wall."
+          "Great specs",
+          "Comfortable",
+          "Good build quality"
         ],
         "cons": [
-          "That doesn’t sound like a good quality chair…” (note: this comment is not directly related to the product, but rather an opinion about general quality of chairs in general; could be removed for accuracy)",
-          "Will do this is my second SecretLab chair and I had to get them to replace the whole arm when the arm rest started cracking."
+          "Design flaws in earlier models",
+          "Arm rest cracking issue",
+          "Quality concerns"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "First one lasted 6 years and it was still comfortable when I handed down to my son.",
-          "Thinking about some black acoustic panels on the wall.",
-          "Will do this is my second SecretLab chair and I had to get them to replace the whole arm when the arm rest started cracking."
+          "Earlier models had design flaws that were rectified in newer models",
+          "Some users have experienced issues with the arm rest cracking",
+          "Users are generally happy with the chairs, despite some minor issues"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-10T04:03:01.499Z"
+        "scrapedAt": "2026-07-12T20:02:42.586Z"
       }
     ]
   },
