@@ -59,26 +59,27 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-07-11T20:04:11.433Z",
+    "lastUpdated": "2026-07-12T04:04:14.123Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Some users successfully rooted their Echo Dot 5th Gen and installed custom Android Lineage OS, while others mention limitations due to Amazon's secure bootloaders.",
+        "summary": "Users think reusing an Amazon Echo Dot 5th Gen is possible but requires root access and installation of Lineage OS, with some mentioning custom PCBs for Google Minis. They also note limitations and difficulties in jailbreaking or running alternative OS on the device.",
         "pros": [
-          "Can be installed with custom Android Lineage OS",
-          "Can run Spotify",
-          "Custom PCB for Google Mini devices are available"
+          "can be rooted and installed Android Lineage OS",
+          "custom PCBs available for Google Minis",
+          "can run Spotify and other third-party apps"
         ],
         "cons": [
-          "Amazon locks bootloaders down hard, making it difficult to install custom OS",
-          "No easy way to wipe and replace with a new OS"
+          "cannot get it to run Smart Things or Bixby",
+          "cannot just wipe an Echo Dot and install own OS due to Amazon's locked bootloaders",
+          "jailbreaking is less common"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Rooting the Echo Dot is possible but requires technical expertise",
-          "Custom PCBs for Google Mini devices are available for those who want more control",
-          "Amazon's secure bootloaders limit the ability to install custom OS"
+          "Some users have successfully rooted their Echo Dots and installed alternative OS for more functionality.",
+          "There are custom PCBs available for Google Minis, but not specifically for the Echo Dot.",
+          "Amazon locks down bootloaders tightly, making jailbreaking or installing alternative OS difficult."
         ],
         "recommended_by_users": false,
         "commentCount": 10,
@@ -86,7 +87,7 @@
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-07-11T20:04:11.427Z"
+        "scrapedAt": "2026-07-12T04:04:14.117Z"
       }
     ]
   },
