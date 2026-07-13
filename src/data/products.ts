@@ -2185,6 +2185,22 @@ export const products: Product[] = [
     articleSlug: "best-gaming-gear-under-50",
     badge: "🚀 Community Fave",
   },
+  // Promoted from community picks after 14+ days live (auto-pipeline)
+  {
+    id: "auto-b081h8wmxt",
+    name: "Secret Labs Vertical Monitor Arm",
+    asin: "B081H8WMXT",
+    price: "$37.99",
+    priceNum: 37.99,
+    rating: 4.6,
+    reviewCount: 1469,
+    description: "Recommended for its sleek design and compatibility with high-end gaming components.",
+    pros: ["Specs match the build","Super proud of it!"],
+    cons: ["Newer to our list — less long-term data"],
+    category: "Monitors & Displays",
+    articleSlug: "best-monitors-and-displays",
+    badge: "🚀 Community Fave",
+  },
 ];
 
 
