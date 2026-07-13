@@ -121,69 +121,66 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-11T04:02:25.735Z",
+    "lastUpdated": "2026-07-13T20:02:55.104Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users generally consider Audio-Technica ATH-M50x to be a good pair of headphones, with some praising their familiarity and durability, while others express frustration or skepticism towards their performance.",
+        "summary": "Users share their thoughts on the Audio-Technica ATH-M50x Studio Headphones, with some mentioning a decrease in clamp force over time and others discussing the color scheme.",
         "pros": [
-          "are awesome",
-          "lasted at every studio and film set",
-          "work for me",
-          "familiarity means I am in tune with how music is supposed to sound on that headphone"
+          "80 euros is such a great deal",
+          "The design is worth it"
         ],
         "cons": [
-          "awful",
-          "complete trash for technical reasons",
-          "bad (for mixing)"
+          "weak clamp",
+          "made it looser?"
+        ],
+        "sentiment": "neutral",
+        "key_insights": [
+          "clamp force may decrease over time",
+          "headband material can be adjusted to increase clamping force",
+          "color scheme is aesthetically pleasing"
+        ],
+        "recommended_by_users": false,
+        "commentCount": 7,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "ATH M50x Weak clamp",
+        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1unwc5s/ath_m50x_weak_clamp/",
+        "scrapedAt": "2026-07-13T20:02:55.100Z"
+      }
+    ]
+  },
+  "best-gaming-setups": {
+    "lastUpdated": "2026-07-13T20:02:55.104Z",
+    "insights": [
+      {
+        "product": "Secretlab Titan Evo 2022 Gaming Chair",
+        "productSlug": "best-gaming-setups",
+        "summary": "Users generally seem satisfied with their SecretLab Titan Evo 2022 Gaming Chairs, citing comfort and durability after previous models had design flaws, but some mention potential drawbacks such as needing to replace parts.",
+        "pros": [
+          "comfortable",
+          "durable",
+          "upgraded from previous model designs"
+        ],
+        "cons": [
+          "potential need for part replacements (e.g., armrest cracking)",
+          "design flaws in earlier models",
+          "not a major concern but might be for some users"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Some users have been forced to work with M50x professionally and still prefer other headphones.",
-          "Mixing is more about the source and recording technique than the listening gear.",
-          "Familiarity is key when it comes to enjoying a headphone."
+          "Previous SecretLab chairs had design flaws that have been addressed in newer models.",
+          "Users seem to appreciate the comfort and durability of their Titan Evo 2022 chairs.",
+          "Some users mentioned needing to replace parts, but it was resolved with a new chair."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "Audio-Technica ATH-M50X headphones through a Focusrite Scarlett 2i2. Finally some decent equipment.",
-        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1ueg505/audiotechnica_athm50x_headphones_through_a/",
-        "scrapedAt": "2026-07-11T04:02:25.729Z"
-      }
-    ]
-  },
-  "best-gaming-setups": {
-    "lastUpdated": "2026-07-12T20:02:42.591Z",
-    "insights": [
-      {
-        "product": "Secretlab Titan Evo 2022 Gaming Chair",
-        "productSlug": "best-gaming-setups",
-        "summary": "Users have mixed experiences with their SecretLab Titan Evo 2022 Gaming Chairs, with some mentioning design flaws in earlier models and others having positive experiences with comfort and build quality.",
-        "pros": [
-          "Great specs",
-          "Comfortable",
-          "Good build quality"
-        ],
-        "cons": [
-          "Design flaws in earlier models",
-          "Arm rest cracking issue",
-          "Quality concerns"
-        ],
-        "sentiment": "neutral",
-        "key_insights": [
-          "Earlier models had design flaws that were rectified in newer models",
-          "Some users have experienced issues with the arm rest cracking",
-          "Users are generally happy with the chairs, despite some minor issues"
-        ],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-12T20:02:42.586Z"
+        "scrapedAt": "2026-07-13T20:02:55.101Z"
       }
     ]
   },
