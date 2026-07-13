@@ -57,25 +57,25 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-07-12T12:05:03.743Z",
+    "lastUpdated": "2026-07-13T12:04:39.310Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Some users have successfully rooted their Echo Dot 5th Gen and installed custom operating systems, such as Android Lineage, to expand its functionality and compatibility with different voice assistants.",
+        "summary": "Users can root and install Android Lineage on Echo Dot 5, enabling alternative voice assistants like Spotify, but note Amazon locks down bootloaders tightly.",
         "pros": [
           "runs Spotify",
-          "can be used with own AI backend",
-          "custom PCB available for Google Minis"
+          "can be used as a kitchen speaker",
+          "can use alternative OS like Home Assistant"
         ],
         "cons": [
-          "locked down by Amazon, making it difficult to install custom OS"
+          "cannot run Smart Things or Bixby",
+          "Amazon locks down bootloaders"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "some users have successfully rooted their Echo Dot and installed custom operating systems",
-          "custom PCBs are available for some devices, making it easier to jailbreak them",
-          "Amazon locks bootloaders down hard, making it difficult to install custom OS"
+          "users can install Android Lineage on Echo Dot 5 for custom functionality",
+          "Amazon's lock-down of bootloaders makes it difficult to use alternative OS"
         ],
         "recommended_by_users": false,
         "commentCount": 10,
@@ -83,7 +83,7 @@
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-07-12T12:05:03.738Z"
+        "scrapedAt": "2026-07-13T12:04:39.306Z"
       }
     ]
   },
