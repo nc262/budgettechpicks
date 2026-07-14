@@ -2201,6 +2201,22 @@ export const products: Product[] = [
     articleSlug: "best-monitors-and-displays",
     badge: "🚀 Community Fave",
   },
+  // Promoted from community picks after 14+ days live (auto-pipeline)
+  {
+    id: "auto-b075fbrym1",
+    name: "Koss KPH30i",
+    asin: "B075FBRYM1",
+    price: "$23.99",
+    priceNum: 23.99,
+    rating: 4.4,
+    reviewCount: 3630,
+    description: "Community members recommend Koss KPH30iK for its recommended speaker upgrade context.",
+    pros: ["For those listening to music with bookshelf speakers"],
+    cons: ["Newer to our list — less long-term data"],
+    category: "Audio & Microphones",
+    articleSlug: "best-audio-gear",
+    badge: "🚀 Community Fave",
+  },
 ];
 
 
