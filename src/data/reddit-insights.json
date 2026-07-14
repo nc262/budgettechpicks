@@ -82,23 +82,32 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-14T04:04:19.268Z",
+    "lastUpdated": "2026-07-14T20:03:01.430Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Discussed in r/audioengineering — 14 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users mention that EMI/RFI interference can be a problem, but often it's due to issues with cables, grounding, or studio location, rather than the mic itself.",
+        "pros": [
+          "balanced cable can deal with most interference",
+          "mic has humbucker coil which may help with RF interference"
+        ],
+        "cons": [
+          "cables and grounds can cause interference",
+          "RFI can be a problem if not filtered away at the interface"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "EMI/RFI interference is often due to issues with cables or studio location rather than the mic itself.",
+          "Humbucker coil may help with RF interference in some cases."
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-14T04:04:19.259Z"
+        "scrapedAt": "2026-07-14T20:03:01.423Z"
       }
     ]
   },
@@ -133,34 +142,33 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-14T04:04:19.268Z",
+    "lastUpdated": "2026-07-14T20:03:01.430Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users seem to be satisfied with their SecretLab setup, mentioning great specs and durability, but also noting some design flaws and occasional issues like arm rest cracking.",
+        "summary": "Users share their experience with the SecretLab Titan Evo 2022 Gaming Chair, mentioning its quality and comfort, as well as sharing their own gaming setup and configurations.",
         "pros": [
-          "Great specs",
-          "Durable",
-          "Good quality"
+          "great specs",
+          "first one lasted 6 years and was still comfortable when handed down to my son",
+          "great for building a gaming station"
         ],
         "cons": [
-          "Design flaws",
-          "Arm rest cracking"
+          "that doesn't sound like a good quality chair..."
         ],
         "sentiment": "positive",
         "key_insights": [
-          "The first models of the Titan chair had design flaws, but later models have been rectified.",
-          "Some users have experienced arm rest cracking and needed replacement.",
-          "Users appreciate the durability of the chairs, with one lasting 6 years"
+          "First-hand experience with the SecretLab Titan Evo 2022 Gaming Chair's durability (6 years) and comfort.",
+          "Specs of users' gaming setups, such as high-end GPUs (e.g., GeForce 4090 FE), motherboards, and monitors.",
+          "Some design flaws in older models have been rectified."
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-14T04:04:19.262Z"
+        "scrapedAt": "2026-07-14T20:03:01.425Z"
       }
     ]
   },
