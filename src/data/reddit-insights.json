@@ -1,31 +1,27 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-14T04:04:19.268Z",
+    "lastUpdated": "2026-07-15T04:02:30.763Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the relevance of 900mAh power rating to a SATA SSD's usage, but overall consider it suitable for use with a WD and SanDisk SSD.",
+        "summary": "Users doubt the relevance of power consumption for SATA SSD usage and question the device's compatibility with a WD 3D BLUE SATA SSD and a SanDisk Plus 2TB SSD.",
         "pros": [
-          "standard SATA to USB controller",
-          "works fine",
-          "suitable"
+          "will work fine"
         ],
-        "cons": [
-          "no specific concerns mentioned"
-        ],
-        "sentiment": "positive",
+        "cons": [],
+        "sentiment": "neutral",
         "key_insights": [
-          "900mAh power rating is irrelevant to SATA SSD usage",
-          "users trust the product's compatibility"
+          "900mAh is not applicable to this use case for power consumption",
+          "The device is a standard SATA to USB controller"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-14T04:04:19.251Z"
+        "scrapedAt": "2026-07-15T04:02:30.754Z"
       }
     ]
   },
@@ -82,24 +78,24 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-14T20:03:01.430Z",
+    "lastUpdated": "2026-07-15T04:02:30.763Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users mention that EMI/RFI interference can be a problem, but often it's due to issues with cables, grounding, or studio location, rather than the mic itself.",
+        "summary": "Users mention EMI/RFI interference as a potential issue with microphones, but many emphasize it's often due to external factors like cables and grounds, rather than the mic itself.",
         "pros": [
-          "balanced cable can deal with most interference",
-          "mic has humbucker coil which may help with RF interference"
+          "balanced cable is enough to deal with any interference on the trip from the mic to the pre",
+          "humbucker coil likely solved issues for some users"
         ],
         "cons": [
-          "cables and grounds can cause interference",
-          "RFI can be a problem if not filtered away at the interface"
+          "RFI/EMI interference can be a problem in certain environments",
+          "grounding issues can cause noise, especially if touching metal parts of setup"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "EMI/RFI interference is often due to issues with cables or studio location rather than the mic itself.",
-          "Humbucker coil may help with RF interference in some cases."
+          "EMI/RFI interference is not inherent to the mic itself but rather external factors",
+          "balanced cables and proper grounding can mitigate interference issues"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -107,60 +103,61 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-14T20:03:01.423Z"
+        "scrapedAt": "2026-07-15T04:02:30.756Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-14T04:04:19.268Z",
+    "lastUpdated": "2026-07-15T04:02:30.763Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Some users believe the clamp force of the ATH-M50x has decreased over time, and a few mention the design is worth the price.",
+        "summary": "Users generally consider the Audio-Technica ATH-M50x Studio Headphones to be a good deal, but have some drawbacks such as heavy weight and limited customization options.",
         "pros": [
-          "pretty nice color",
-          "design is worth it"
+          "solid deal",
+          "good deals on local marketplace"
         ],
         "cons": [
-          "clamp force has decreased",
-          "previous user may have stretched the headband (metal) to decrease clamping force"
+          "heavy due to battery",
+          "no claim no return",
+          "lack bass and thin mids and kinda harsh treble"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Clamp force can decrease over time",
-          "Design of the ATH-M50x is worth the price despite potential issues with the headband"
+          "Some users found them heavier than regular M50x models, but were willing to overlook this for a good deal.",
+          "A few users mentioned the limited customization options through the Audio-Technica app."
         ],
         "recommended_by_users": false,
-        "commentCount": 7,
+        "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "ATH M50x Weak clamp",
-        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1unwc5s/ath_m50x_weak_clamp/",
-        "scrapedAt": "2026-07-14T04:04:19.260Z"
+        "sourcePost": "[ Removed by moderator ]",
+        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1urmti1/found_these_a_goodwill/",
+        "scrapedAt": "2026-07-15T04:02:30.757Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-14T20:03:01.430Z",
+    "lastUpdated": "2026-07-15T04:02:30.763Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users share their experience with the SecretLab Titan Evo 2022 Gaming Chair, mentioning its quality and comfort, as well as sharing their own gaming setup and configurations.",
+        "summary": "Users share their progress with setting up a home gaming station, mentioning some of the components used and expressing satisfaction with their current Secretlab Titan Evo 2022 Gaming Chair.",
         "pros": [
-          "great specs",
-          "first one lasted 6 years and was still comfortable when handed down to my son",
-          "great for building a gaming station"
+          "Great specs especially with the 4090 FE!",
+          "First one lasted 6 years and it was still comfortable when I handed down to my son.",
+          "I am happy with the chairs so far."
         ],
         "cons": [
-          "that doesn't sound like a good quality chair..."
+          "That doesn’t sound like a good quality chair…"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "First-hand experience with the SecretLab Titan Evo 2022 Gaming Chair's durability (6 years) and comfort.",
-          "Specs of users' gaming setups, such as high-end GPUs (e.g., GeForce 4090 FE), motherboards, and monitors.",
-          "Some design flaws in older models have been rectified."
+          "The user had to replace the arm rest on their previous SecretLab Titan chair, which suggests design flaws in the original model.",
+          "Users appreciate the comfort and durability of their current chair.",
+          "They seem satisfied with their Secretlab products overall."
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -168,7 +165,7 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-14T20:03:01.425Z"
+        "scrapedAt": "2026-07-15T04:02:30.758Z"
       }
     ]
   },
