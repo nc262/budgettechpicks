@@ -2217,6 +2217,22 @@ export const products: Product[] = [
     articleSlug: "best-audio-gear",
     badge: "🚀 Community Fave",
   },
+  // Promoted from community picks after 14+ days live (auto-pipeline)
+  {
+    id: "auto-b07hksn1l3",
+    name: "JBL Charge 4 - Waterproof Portable Bluetooth Speaker - Gray",
+    asin: "B07HKSN1L3",
+    price: "$99.95",
+    priceNum: 99.95,
+    rating: 4.7,
+    reviewCount: 57387,
+    description: "The JBL Charge 4 is recommended for its performance among budget speakers.",
+    pros: ["It's a good alternative to other portable Bluetooth speakers like the Koss KPH30i and JBL Charge 3.","One reviewer has high-end audio experience with it"],
+    cons: ["Newer to our list — less long-term data"],
+    category: "Audio & Microphones",
+    articleSlug: "best-audio-gear",
+    badge: "🚀 Community Fave",
+  },
 ];
 
 
