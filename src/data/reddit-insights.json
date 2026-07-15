@@ -1,19 +1,21 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-15T04:02:30.763Z",
+    "lastUpdated": "2026-07-15T12:01:44.918Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users doubt the relevance of power consumption for SATA SSD usage and question the device's compatibility with a WD 3D BLUE SATA SSD and a SanDisk Plus 2TB SSD.",
+        "summary": "Users question the relevance of the device's 900mAh power rating to its functionality and suggest it may be a misinterpretation or unrelated to the product's use case.",
         "pros": [
-          "will work fine"
+          "It will work fine"
         ],
-        "cons": [],
+        "cons": [
+          "Not sure where the '900mAH' is coming from"
+        ],
         "sentiment": "neutral",
         "key_insights": [
-          "900mAh is not applicable to this use case for power consumption",
-          "The device is a standard SATA to USB controller"
+          "Power rating might not be applicable",
+          "Device works as expected despite confusion about power rating"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -21,7 +23,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-15T04:02:30.754Z"
+        "scrapedAt": "2026-07-15T12:01:44.913Z"
       }
     ]
   },
@@ -108,33 +110,34 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-15T04:02:30.763Z",
+    "lastUpdated": "2026-07-15T12:01:44.918Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Users generally consider the Audio-Technica ATH-M50x Studio Headphones to be a good deal, but have some drawbacks such as heavy weight and limited customization options.",
+        "summary": "Users generally find the Audio-Technica ATH-M50x Studio Headphones to be a good deal, but some mention potential hygiene concerns and limited features.",
         "pros": [
           "solid deal",
-          "good deals on local marketplace"
+          "good fit",
+          "Audio Technica app works well"
         ],
         "cons": [
-          "heavy due to battery",
-          "no claim no return",
-          "lack bass and thin mids and kinda harsh treble"
+          "hygiene concerns",
+          "limited parametric eq",
+          "initial discomfort due to battery weight"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Some users found them heavier than regular M50x models, but were willing to overlook this for a good deal.",
-          "A few users mentioned the limited customization options through the Audio-Technica app."
+          "Some users found the headphones at a good price, while others mentioned potential issues with hygiene and limited features.",
+          "The Audio Technica app has a parametric eq feature, but it's only up to five bands."
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "[ Removed by moderator ]",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1urmti1/found_these_a_goodwill/",
-        "scrapedAt": "2026-07-15T04:02:30.757Z"
+        "scrapedAt": "2026-07-15T12:01:44.914Z"
       }
     ]
   },
