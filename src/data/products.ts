@@ -2233,6 +2233,22 @@ export const products: Product[] = [
     articleSlug: "best-audio-gear",
     badge: "🚀 Community Fave",
   },
+  // Promoted from community picks after 14+ days live (auto-pipeline)
+  {
+    id: "auto-b0gx9p19yv",
+    name: "Samsung 2.1 soundbar",
+    asin: "B0GX9P19YV",
+    price: "$139.99",
+    priceNum: 139.99,
+    rating: 4.6,
+    reviewCount: 1691,
+    description: "Recommended for those who may not fully appreciate audiophile-grade sound but still seek a good budget option.",
+    pros: ["has 4.6 star rating across 1691 ratings","comes with wireless subwoofer"],
+    cons: ["Newer to our list — less long-term data"],
+    category: "Audio & Microphones",
+    articleSlug: "best-audio-gear",
+    badge: "🚀 Community Fave",
+  },
 ];
 
 
