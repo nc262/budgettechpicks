@@ -142,54 +142,65 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-15T04:02:30.763Z",
+    "lastUpdated": "2026-07-16T12:01:54.569Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users share their progress with setting up a home gaming station, mentioning some of the components used and expressing satisfaction with their current Secretlab Titan Evo 2022 Gaming Chair.",
+        "summary": "Users seem generally satisfied with their Secretlab Titan Evo 2022 gaming chair, but also mention some design flaws and issues with arm rest replacement in previous models.",
         "pros": [
-          "Great specs especially with the 4090 FE!",
-          "First one lasted 6 years and it was still comfortable when I handed down to my son.",
-          "I am happy with the chairs so far."
+          "Great specs",
+          "First one lasted 6 years and was still comfortable"
         ],
         "cons": [
-          "That doesn’t sound like a good quality chair…"
+          "That doesn’t sound like a good quality chair…",
+          "Arm rest started cracking (with the old Titan chair)"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "The user had to replace the arm rest on their previous SecretLab Titan chair, which suggests design flaws in the original model.",
-          "Users appreciate the comfort and durability of their current chair.",
-          "They seem satisfied with their Secretlab products overall."
+          "Users were satisfied with their first experience with Secretlab, but mentioned some design flaws in previous models.",
+          "Some users had issues with arm rests cracking or needed replacement.",
+          "Users appreciate the quality of the chairs and seem happy to have made a second purchase."
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-15T04:02:30.758Z"
+        "scrapedAt": "2026-07-16T12:01:54.563Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-14T04:04:19.268Z",
+    "lastUpdated": "2026-07-16T12:01:54.569Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Real users recommend using a webcam with good lighting, such as an external light source or a dedicated ring light, to improve image quality, and some suggest spending more money on lighting than the webcam itself.",
+        "pros": [
+          "decent in low light",
+          "has auto tracking if you move around",
+          "good for streaming"
+        ],
+        "cons": [
+          "low light is gonna be rough on any sub $100 cam",
+          "software can be horrendous"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Good lighting makes a big difference",
+          "Auto tracking feature is helpful",
+          "Spending more money on lighting can improve image quality"
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-14T04:04:19.252Z"
+        "scrapedAt": "2026-07-16T12:01:54.562Z"
       }
     ]
   },
