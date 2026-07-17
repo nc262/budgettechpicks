@@ -2249,6 +2249,22 @@ export const products: Product[] = [
     articleSlug: "best-audio-gear",
     badge: "🚀 Community Fave",
   },
+  // Promoted from community picks after 14+ days live (auto-pipeline)
+  {
+    id: "auto-b0bs74m665",
+    name: "Sony CH720N",
+    asin: "B0BS74M665",
+    price: "$149.00",
+    priceNum: 149,
+    rating: 4.4,
+    reviewCount: 15872,
+    description: "Recommended for understanding budget speaker options and providing a cost-effective alternative to high-end speakers.",
+    pros: ["budget-friendly option","4.4 stars across 15872 ratings"],
+    cons: ["Newer to our list — less long-term data"],
+    category: "Audio & Microphones",
+    articleSlug: "best-audio-gear",
+    badge: "🚀 Community Fave",
+  },
 ];
 
 

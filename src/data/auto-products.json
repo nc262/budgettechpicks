@@ -1,5 +1,25 @@
 [
   {
+    "asin": "B0CLYH2DRN",
+    "name": "Acer Wireless Gaming Headset",
+    "price": "$32.99",
+    "imageUrl": "https://m.media-amazon.com/images/I/71xPWx9RrYL._AC_UY218_.jpg",
+    "rating": 4.3,
+    "reviewCount": 1536,
+    "articleSlug": "best-audio-gear",
+    "description": "Recommended by r/buildapcsales for its affordability and features with Bluetooth support.",
+    "pros": [
+      "$16 price",
+      "Bluetooth 5.3",
+      "Noise Canceling Mic"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/buildapcsales/comments/1uwo2xd/headphones_acer_wireless_gaming_headset_ps5/",
+    "sourceSubreddit": "buildapcsales",
+    "mentions": 1,
+    "addedAt": "2026-07-17T07:01:20.303Z"
+  },
+  {
     "asin": "B0D9QD4Y2P",
     "name": "FiiO FT1 32Ω Large Dynamic Driver Headphones with Solid Wood Cups",
     "price": "$159.99",
@@ -16,25 +36,6 @@
     "sourceSubreddit": "BudgetAudiophile",
     "mentions": 1,
     "addedAt": "2026-07-01T07:02:40.591Z"
-  },
-  {
-    "asin": "B0BS74M665",
-    "name": "Sony CH720N",
-    "price": "$149.00",
-    "imageUrl": "https://m.media-amazon.com/images/I/41tp0JPPlmL._AC_UY218_.jpg",
-    "rating": 4.4,
-    "reviewCount": 15872,
-    "articleSlug": "best-audio-gear",
-    "description": "Recommended for understanding budget speaker options and providing a cost-effective alternative to high-end speakers.",
-    "pros": [
-      "budget-friendly option",
-      "4.4 stars across 15872 ratings"
-    ],
-    "cons": [],
-    "sourceUrl": "https://reddit.com/r/BudgetAudiophile/comments/1uezrfo/i_finally_understand_why_people_recommend/",
-    "sourceSubreddit": "BudgetAudiophile",
-    "mentions": 1,
-    "addedAt": "2026-06-30T07:01:31.448Z"
   },
   {
     "asin": "B0B3RHCV9R",
