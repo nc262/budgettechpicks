@@ -91,24 +91,26 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-15T04:02:30.763Z",
+    "lastUpdated": "2026-07-17T04:01:55.123Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users mention EMI/RFI interference as a potential issue with microphones, but many emphasize it's often due to external factors like cables and grounds, rather than the mic itself.",
+        "summary": "Users note that EMI/RFI interference can be a problem, but many attribute it to external factors such as cables and studio environment, rather than the mic itself.",
         "pros": [
-          "balanced cable is enough to deal with any interference on the trip from the mic to the pre",
-          "humbucker coil likely solved issues for some users"
+          "balanced cable design",
+          "mic is effective for dialogue recordings",
+          "metal grille and body act as a faraday cage"
         ],
         "cons": [
-          "RFI/EMI interference can be a problem in certain environments",
-          "grounding issues can cause noise, especially if touching metal parts of setup"
+          "EMI/RFI interference can be a problem",
+          "grounding issues may cause noise",
+          "can be affected by external factors such as cables and studio environment"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "EMI/RFI interference is not inherent to the mic itself but rather external factors",
-          "balanced cables and proper grounding can mitigate interference issues"
+          "RFI interference is not always caused by the mic, but can be influenced by external factors.",
+          "Grounding issues can cause noise in the SM7B."
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -116,7 +118,7 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-15T04:02:30.756Z"
+        "scrapedAt": "2026-07-17T04:01:55.118Z"
       }
     ]
   },
