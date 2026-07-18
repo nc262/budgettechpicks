@@ -112,34 +112,33 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-15T12:01:44.918Z",
+    "lastUpdated": "2026-07-18T04:01:48.532Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Users generally find the Audio-Technica ATH-M50x Studio Headphones to be a good deal, but some mention potential hygiene concerns and limited features.",
+        "summary": "Users generally consider the Audio-Technica ATH-M50x Studio Headphones to be a good value, with some users finding them slightly heavier than regular M50x models and having issues with the battery life.",
         "pros": [
-          "solid deal",
-          "good fit",
-          "Audio Technica app works well"
+          "good deal",
+          "steal"
         ],
         "cons": [
-          "hygiene concerns",
-          "limited parametric eq",
-          "initial discomfort due to battery weight"
+          "slightly heavier due to battery",
+          "some people may find it uncomfortable",
+          "battery life could be better"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Some users found the headphones at a good price, while others mentioned potential issues with hygiene and limited features.",
-          "The Audio Technica app has a parametric eq feature, but it's only up to five bands."
+          "Some users have found similar deals elsewhere, like at HAM radio conventions or local marketplaces.",
+          "The Audio-Technica app on iOS works well with these headphones."
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "[ Removed by moderator ]",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1urmti1/found_these_a_goodwill/",
-        "scrapedAt": "2026-07-15T12:01:44.914Z"
+        "scrapedAt": "2026-07-18T04:01:48.526Z"
       }
     ]
   },
