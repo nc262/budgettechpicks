@@ -112,25 +112,26 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-18T04:01:48.532Z",
+    "lastUpdated": "2026-07-19T12:02:05.088Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Users generally consider the Audio-Technica ATH-M50x Studio Headphones to be a good value, with some users finding them slightly heavier than regular M50x models and having issues with the battery life.",
+        "summary": "Users generally found the deal on Audio-Technica ATH-M50x headphones to be a good value, but some mentioned hygiene concerns and minor issues with fit, while others discussed unrelated topics or had negative experiences with other products.",
         "pros": [
-          "good deal",
-          "steal"
+          "a solid deal",
+          "good deals on the local marketplace"
         ],
         "cons": [
-          "slightly heavier due to battery",
-          "some people may find it uncomfortable",
-          "battery life could be better"
+          "hygiene reasons for changing pads",
+          "heavier due to battery",
+          "parametric eq only up to five bands which sucks"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Some users have found similar deals elsewhere, like at HAM radio conventions or local marketplaces.",
-          "The Audio-Technica app on iOS works well with these headphones."
+          "Users mention that some models have different features or are not as heavy as expected",
+          "The Audio Technica app on iOS has a parametric eq but limited bands",
+          "Some users had negative experiences with other products, like gaming headphones and Sennheiser HD800"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -138,38 +139,38 @@
         "hasRealComments": true,
         "sourcePost": "[ Removed by moderator ]",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1urmti1/found_these_a_goodwill/",
-        "scrapedAt": "2026-07-18T04:01:48.526Z"
+        "scrapedAt": "2026-07-19T12:02:05.080Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-16T12:01:54.569Z",
+    "lastUpdated": "2026-07-19T12:02:05.088Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users seem generally satisfied with their Secretlab Titan Evo 2022 gaming chair, but also mention some design flaws and issues with arm rest replacement in previous models.",
+        "summary": "Users have generally positive experiences with their SecretLab Titan Evo 2022 Gaming Chairs, but some mention design flaws and need for replacement parts. They also share their impressive gaming setup specs.",
         "pros": [
-          "Great specs",
-          "First one lasted 6 years and was still comfortable"
+          "Great specs especially with the 4090 FE!",
+          "First one lasted 6 years and it was still comfortable when I handed down to my son",
+          "I am happy with the chairs so far"
         ],
         "cons": [
           "That doesn’t sound like a good quality chair…",
-          "Arm rest started cracking (with the old Titan chair)"
+          "Will do this is my second SecretLab chair and I had to get them to replace the whole arm when the arm rest started cracking."
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Users were satisfied with their first experience with Secretlab, but mentioned some design flaws in previous models.",
-          "Some users had issues with arm rests cracking or needed replacement.",
-          "Users appreciate the quality of the chairs and seem happy to have made a second purchase."
+          "Some users experienced design flaws with previous models, but later models have rectified these issues.",
+          "Users are excited about their impressive gaming setup specs."
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-16T12:01:54.563Z"
+        "scrapedAt": "2026-07-19T12:02:05.082Z"
       }
     ]
   },
