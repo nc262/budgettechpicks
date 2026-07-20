@@ -59,27 +59,25 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-07-19T20:03:58.205Z",
+    "lastUpdated": "2026-07-20T04:03:53.805Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users can reuse Amazon Alexa Echo Dot by rooting it and installing custom Android Lineage, but note that Amazon locks down the bootloaders tightly.",
+        "summary": "Some users have successfully rooted and installed custom Android Lineage on their Echo Dot 5th Gen, enabling Spotify playback and integration with Home Assistant or Bixby.",
         "pros": [
-          "Enables running Spotify",
-          "Good enough kitchen speaker",
-          "Can run with own AI backend"
+          "running Android Lineage",
+          "enabling Spotify playback",
+          "integration with Home Assistant"
         ],
         "cons": [
-          "Cannot get to run Smart Things or Bixby",
-          "Amazon locks down bootloaders hard",
-          "Requires soldering and expertise for some features"
+          "difficulty in jailbreaking the device",
+          "restricted by Amazon's locked bootloaders"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "Lineage OS can be installed on the Echo Dot 5",
-          "Google Minis have a custom PCB for jailbreaking",
-          "Amazon locks down bootloaders tightly, making it difficult to install custom OS"
+          "some users have successfully rooted their Echo Dot 5th Gen",
+          "custom Android Lineage enables Spotify playback and integration with Bixby or Home Assistant"
         ],
         "recommended_by_users": false,
         "commentCount": 10,
@@ -87,7 +85,7 @@
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-07-19T20:03:58.202Z"
+        "scrapedAt": "2026-07-20T04:03:53.802Z"
       }
     ]
   },
