@@ -155,33 +155,33 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-19T12:02:05.088Z",
+    "lastUpdated": "2026-07-21T04:01:50.571Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users have generally positive experiences with their SecretLab Titan Evo 2022 Gaming Chairs, but some mention design flaws and need for replacement parts. They also share their impressive gaming setup specs.",
+        "summary": "Users generally have a positive view of their SecretLab Titan Evo 2022 Gaming Chair, with some mentioning comfort and durability over previous models.",
         "pros": [
-          "Great specs especially with the 4090 FE!",
-          "First one lasted 6 years and it was still comfortable when I handed down to my son",
-          "I am happy with the chairs so far"
+          "good quality",
+          "comfortable",
+          "durable"
         ],
         "cons": [
-          "That doesn’t sound like a good quality chair…",
-          "Will do this is my second SecretLab chair and I had to get them to replace the whole arm when the arm rest started cracking."
+          "design flaws in earlier models"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "Some users experienced design flaws with previous models, but later models have rectified these issues.",
-          "Users are excited about their impressive gaming setup specs."
+          "First one lasted 6 years",
+          "I am happy with the chairs so far",
+          "The first models did have some design flaws which have been rectified on these later models"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-19T12:02:05.082Z"
+        "scrapedAt": "2026-07-21T04:01:50.559Z"
       }
     ]
   },
