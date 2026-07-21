@@ -1,4 +1,14 @@
 {
-  "updatedAt": "2026-07-19T07:01:40.384Z",
-  "deals": []
+  "updatedAt": "2026-07-21T07:00:55.139Z",
+  "deals": [
+    {
+      "product": "ASUS ROG Ally X Gaming Handheld",
+      "asin": "B0FM6C3ZMN",
+      "slug": "best-gaming-setups",
+      "title": "[Handheld] Refurbished ASUS ROG Ally Ryzen Z2 A, 16GB RAM, 512GB SSD - $485.99 ($529.99 - $44 Woot app discount)",
+      "url": "https://reddit.com/r/buildapcsales/comments/1v0wdds/handheld_refurbished_asus_rog_ally_ryzen_z2_a/",
+      "score": 139,
+      "postedAt": "2026-07-19T17:20:26.000Z"
+    }
+  ]
 }
