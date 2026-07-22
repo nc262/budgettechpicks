@@ -1,5 +1,24 @@
 [
   {
+    "asin": "B08QTXDBJ8",
+    "name": "Razer Huntsman V2",
+    "price": "$118.53",
+    "imageUrl": "https://m.media-amazon.com/images/I/514YQ-r7HfL._AC_UY218_.jpg",
+    "rating": 4.3,
+    "reviewCount": 868,
+    "articleSlug": "best-gaming-gear-under-50",
+    "description": "The Razer Huntsman V2 Analog Gaming Keyboard is a popular choice among Reddit users who have posted about it on r/buildapcsales. It features adjustable actuation via analog optical switches.",
+    "pros": [
+      "Adjustable actuation",
+      "Analog Optical Switches"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/buildapcsales/comments/1v19lwp/keyboardwoot_app_razer_huntsman_v2_analog_gaming/",
+    "sourceSubreddit": "buildapcsales",
+    "mentions": 1,
+    "addedAt": "2026-07-22T07:00:59.037Z"
+  },
+  {
     "asin": "B0CLYH2DRN",
     "name": "Acer Wireless Gaming Headset",
     "price": "$32.99",
