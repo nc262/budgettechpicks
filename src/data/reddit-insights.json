@@ -59,34 +59,36 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-07-20T12:04:11.921Z",
+    "lastUpdated": "2026-07-22T04:05:15.341Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users can root and install custom Android Lineage on Echo Dot 5, enabling features like Spotify playback and Home Assistant integration, but cannot run Smart Things or Bixby due to Amazon's locked bootloaders.",
+        "summary": "Users share their experiences with reusing Amazon Alexa Echo Dot, including rooting and installing custom Android Lineage OS and using it as a speaker or Bixby device.",
         "pros": [
-          "Spotify playback",
-          "Home Assistant integration",
-          "Reusing the speaker with a DAC"
+          "can be used as a speaker",
+          "can run Spotify",
+          "custom PCB for Google Mini devices available",
+          "works well as a Bixby device"
         ],
         "cons": [
-          "Smart Things compatibility issues",
-          "Bixby incompatibility",
-          "Locked bootloaders making custom OS installation difficult"
+          "cannot be used with SmartThings or Bixby natively without rooting",
+          "Amazon locks bootloaders down hard, making it difficult to install custom OS",
+          "some users experienced issues with compatibility"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "Rooting and installing custom Lineage on Echo Dot 5 enables various features.",
-          "Amazon's locked bootloaders make it challenging to run certain services like Smart Things or Bixby."
+          "Echo Show devices can be rooted for Lineage OS installation",
+          "Google Mini devices have a custom PCB for modifications",
+          "users value the flexibility of reusing Echo Dot as a speaker or Bixby device"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 10,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-07-20T12:04:11.914Z"
+        "scrapedAt": "2026-07-22T04:05:15.335Z"
       }
     ]
   },
