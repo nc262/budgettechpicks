@@ -91,23 +91,22 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-21T20:02:55.115Z",
+    "lastUpdated": "2026-07-23T04:02:16.368Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Real users have mixed experiences with EMI/RFI interference, but most attribute it to external factors such as nearby emitters or grounding issues, while some suggest using Faraday cages or specific cables can help mitigate the issue.",
+        "summary": "Real users mention EMI/RFI interference as a potential issue with their studio environments, but most say it's not necessarily a problem with the mic itself.",
         "pros": [
-          "Balanced cables are enough to deal with any interference on the trip from the mic to the pre"
+          "has stopped interference issues"
         ],
         "cons": [
-          "EMI/RFI interference can be a problem",
-          "RFI is only really a problem if it's not filtered away at your interface and demodulates into the audio band"
+          "can be affected by environment (cable, grounds termination)"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "RFI interference depends on external factors such as nearby emitters or grounding issues",
-          "Using Faraday cages can help mitigate EMI/RFI interference"
+          "RFI can be affected by studio location and nearby emitters",
+          "Humbucker coil in dynamic mics may not effectively reject RF"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -115,30 +114,30 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-21T20:02:55.106Z"
+        "scrapedAt": "2026-07-23T04:02:16.361Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-21T20:02:55.115Z",
+    "lastUpdated": "2026-07-23T04:02:16.368Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Users generally praise the ATH-M50xBT2 for its sound quality, battery life, and comfort, while criticizing the lack of ANC.",
+        "summary": "Real users generally praise the Audio-Technica ATH-M50x and M50xBT2 for their sound quality, comfort, and battery life, with some minor complaints about ANC on the M50xBT2.",
         "pros": [
-          "sounds like an ATH-M50x",
-          "soft and durable cables",
-          "battery life is astounding"
+          "sound quality",
+          "comfort",
+          "battery life"
         ],
         "cons": [
-          "lack of ANC",
-          "may affect sound with added ANC"
+          "lack of active noise cancellation (ANC)"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "The M50xBT2 sounds just like the regular M50x",
-          "the battery life is a major advantage"
+          "The sound quality is essentially the same for wired and Bluetooth playback.",
+          "The battery lasts a long time and has accurate charge level notifications.",
+          "The M50xBT2 has a standard 3.5mm connection but may not fit cables with thick plug housings."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -146,38 +145,38 @@
         "hasRealComments": true,
         "sourcePost": "audio-technica ATH-M50x and ATH-M50xBT2",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v00p1o/audiotechnica_athm50x_and_athm50xbt2/",
-        "scrapedAt": "2026-07-21T20:02:55.107Z"
+        "scrapedAt": "2026-07-23T04:02:16.363Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-21T20:02:55.115Z",
+    "lastUpdated": "2026-07-23T04:02:16.368Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users have generally positive experiences with their Secretlab Titan Evo 2022 Gaming Chairs, mentioning improved design and durability compared to older models.",
+        "summary": "Users have mixed thoughts on their Secretlab Titan Evo 2022 Gaming Chair setup, with some praising its quality and others mentioning design flaws or issues with previous models.",
         "pros": [
-          "Good quality chair",
-          "Improved design",
-          "Durability"
+          "Good quality",
+          "First one lasted 6 years and was still comfortable when handed down to son"
         ],
         "cons": [
-          "Design flaws in earlier models"
+          "Design flaws in older models",
+          "Arm rest cracking issue (requiring replacement)"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "First one lasted 6 years",
-          "The first models did have some design flaws which have been rectified on these later models",
-          "I had to get them to replace the whole arm when the arm rest started cracking"
+          "Previous model had design flaws, but newer models have rectified these issues",
+          "Chair held up well over time",
+          "Users appreciate the chair's quality and comfort"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-21T20:02:55.109Z"
+        "scrapedAt": "2026-07-23T04:02:16.364Z"
       }
     ]
   },
