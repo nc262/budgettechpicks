@@ -59,23 +59,31 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-07-24T04:05:15.525Z",
+    "lastUpdated": "2026-07-24T12:06:45.990Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Discussed in r/homeautomation — 8 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users have successfully rooted and installed custom operating systems on their Echo Dots, enabling various third-party services like Spotify and Home Assistant integration.",
+        "pros": [
+          "runs Spotify",
+          "can be used with Home Assistant integration"
+        ],
+        "cons": [
+          "not compatible with Smart Things or Bixby",
+          "bootloaders are locked down hard by Amazon"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "users can install custom OS like Lineage on Echo Show and Fire tablets, but not directly on Echo Dot; some have found workarounds to reuse Echo Dot components with other microcontrollers"
+        ],
         "recommended_by_users": false,
         "commentCount": 10,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-07-24T04:05:15.517Z"
+        "scrapedAt": "2026-07-24T12:06:45.980Z"
       }
     ]
   },
