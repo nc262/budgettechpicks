@@ -59,23 +59,26 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-07-24T12:06:45.990Z",
+    "lastUpdated": "2026-07-24T20:04:18.223Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users have successfully rooted and installed custom operating systems on their Echo Dots, enabling various third-party services like Spotify and Home Assistant integration.",
+        "summary": "Users have successfully rooted and installed custom operating systems on Amazon Echo Dot devices, allowing for alternative voice assistants like Bixby or Android Lineage to be used, but acknowledge Amazon's tight security measures making it challenging.",
         "pros": [
-          "runs Spotify",
-          "can be used with Home Assistant integration"
+          "Can run Spotify",
+          "Custom PCB for Google Mini things",
+          "Allows installing Android Lineage"
         ],
         "cons": [
-          "not compatible with Smart Things or Bixby",
-          "bootloaders are locked down hard by Amazon"
+          "Locked down hard by Amazon",
+          "No clear way to install alternative OS without soldering directly onto the device"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "users can install custom OS like Lineage on Echo Show and Fire tablets, but not directly on Echo Dot; some have found workarounds to reuse Echo Dot components with other microcontrollers"
+          "Some users have successfully rooted and installed custom operating systems on Echo Dot devices",
+          "Amazon's security measures make it difficult for users to install alternative OSes",
+          "Reusing components from other products like Google Minis or Fire tablets might be possible"
         ],
         "recommended_by_users": false,
         "commentCount": 10,
@@ -83,7 +86,7 @@
         "hasRealComments": true,
         "sourcePost": "Reusing Amazon Alexa Echo Dot",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-07-24T12:06:45.980Z"
+        "scrapedAt": "2026-07-24T20:04:18.218Z"
       }
     ]
   },
