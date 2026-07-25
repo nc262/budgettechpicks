@@ -1,21 +1,20 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-21T20:02:55.115Z",
+    "lastUpdated": "2026-07-25T12:05:01.208Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the relevance of 900mAh to a SATA SSD connection, but acknowledge that it's a standard SATA to USB controller.",
+        "summary": "Users question the relevance of a 900mAh rating for a SATA SSD and confirm the device is compatible with their external hard drives.",
         "pros": [
-          "will work fine"
+          "will work fine",
+          "standard SATA to USB controller"
         ],
-        "cons": [
-          "no specific issues mentioned"
-        ],
+        "cons": [],
         "sentiment": "neutral",
         "key_insights": [
-          "900mAh is not applicable to this use case",
-          "it's just a standard SATA to USB controller"
+          "The 900mAh rating is not applicable to this use case",
+          "WD 3D BLUE and SanDisk Plus compatible"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -23,7 +22,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-21T20:02:55.105Z"
+        "scrapedAt": "2026-07-25T12:05:01.199Z"
       }
     ]
   },
@@ -91,22 +90,23 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-23T04:02:16.368Z",
+    "lastUpdated": "2026-07-25T12:05:01.208Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Real users mention EMI/RFI interference as a potential issue with their studio environments, but most say it's not necessarily a problem with the mic itself.",
+        "summary": "Users report EMI/RFI interference issues with some microphones, but not the Shure SM7B",
         "pros": [
-          "has stopped interference issues"
+          "Balanced cables can deal with most interference"
         ],
         "cons": [
-          "can be affected by environment (cable, grounds termination)"
+          "Some users have experienced RFI/EMI interference"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "RFI can be affected by studio location and nearby emitters",
-          "Humbucker coil in dynamic mics may not effectively reject RF"
+          "Location and nearby emitters can cause RFI issues",
+          "Grounding issues can also cause noise",
+          "Cable quality (e.g. Cable Matters XLR) matters"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -114,30 +114,33 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-23T04:02:16.361Z"
+        "scrapedAt": "2026-07-25T12:05:01.201Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-23T04:02:16.368Z",
+    "lastUpdated": "2026-07-25T12:05:01.208Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users generally praise the Audio-Technica ATH-M50x and M50xBT2 for their sound quality, comfort, and battery life, with some minor complaints about ANC on the M50xBT2.",
+        "summary": "Real users generally love the Audio-Technica ATH-M50x and ATH-M50xBT2, with many praising their sound quality and comfort. However, some users note minor drawbacks such as a lack of ANC and differing cable designs.",
         "pros": [
-          "sound quality",
-          "comfort",
-          "battery life"
+          "sound just like an ATH-M50x",
+          "astounding battery life",
+          "high-quality audio",
+          "breathable earpads"
         ],
         "cons": [
-          "lack of active noise cancellation (ANC)"
+          "no active noise cancellation (ANC)",
+          "cable design difference compared to regular M50x",
+          "may not fit cables with thick plug housings"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "The sound quality is essentially the same for wired and Bluetooth playback.",
-          "The battery lasts a long time and has accurate charge level notifications.",
-          "The M50xBT2 has a standard 3.5mm connection but may not fit cables with thick plug housings."
+          "The ATH-M50xBT2's sound quality is comparable to the wired M50x, but with some minor differences.",
+          "Battery life is long-lasting and reliable.",
+          "Comfort features such as breathable earpads make for a more enjoyable listening experience."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -145,64 +148,63 @@
         "hasRealComments": true,
         "sourcePost": "audio-technica ATH-M50x and ATH-M50xBT2",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v00p1o/audiotechnica_athm50x_and_athm50xbt2/",
-        "scrapedAt": "2026-07-23T04:02:16.363Z"
+        "scrapedAt": "2026-07-25T12:05:01.202Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-23T04:02:16.368Z",
+    "lastUpdated": "2026-07-25T12:05:01.208Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users have mixed thoughts on their Secretlab Titan Evo 2022 Gaming Chair setup, with some praising its quality and others mentioning design flaws or issues with previous models.",
+        "summary": "Users are generally satisfied with their Secretlab Titan Evo 2022 Gaming Chair setup, mentioning pros such as durability (first chair lasted 6 years) and good quality components in their build, but also mention some cons like design flaws in older models.",
         "pros": [
-          "Good quality",
-          "First one lasted 6 years and was still comfortable when handed down to son"
+          "Good quality components",
+          "Durability (first chair lasted 6 years)",
+          "Great specs"
         ],
         "cons": [
           "Design flaws in older models",
-          "Arm rest cracking issue (requiring replacement)"
+          "Arm rest cracking issue"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "Previous model had design flaws, but newer models have rectified these issues",
-          "Chair held up well over time",
-          "Users appreciate the chair's quality and comfort"
+          "First model had design flaws which were rectified in later models",
+          "User had to replace the whole arm due to cracking issue with the old Titan chair",
+          "Users appreciate the durability and good quality of Secretlab chairs"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-23T04:02:16.364Z"
+        "scrapedAt": "2026-07-25T12:05:01.203Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-21T20:02:55.115Z",
+    "lastUpdated": "2026-07-25T12:05:01.208Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users recommend spending money on lighting to improve the overall image quality, as low light conditions can be challenging with under $100 webcams. The Logitech C920 is considered a good option.",
+        "summary": "Real users recommend spending under $100 on a webcam and investing in good lighting to improve image quality, with some recommending specific models like Logitech C920s HD Pro Webcam or EmeeT Pixy for their streaming needs.",
         "pros": [
           "decent in low light",
           "auto tracking if you move around",
-          "good for streaming and has a built-in ring light",
-          "leaves money left over for a light to put above the monitor"
+          "good lighting makes a huge difference",
+          "leaves money left over for additional lighting"
         ],
         "cons": [
-          "low light is gonna be rough on any sub $100 cam",
-          "software is horrendous (at least IMO)",
-          "not ideal for everyone due to low light conditions without extra setup"
+          "low light is gonna be rough on any sub $100 cam"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "adding lighting can significantly improve the webcam's performance",
-          "the Logitech C920 is still a good option despite being old",
-          "other webcams like Emeet, Razer Kiyo, and Elgato Facecam MK2 are also worth considering"
+          "Investing in good lighting can greatly improve image quality",
+          "A cheap ring light makes a huge difference",
+          "Using a webcam under $100 and spending the rest on lighting is a cost-effective solution"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -210,7 +212,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-21T20:02:55.106Z"
+        "scrapedAt": "2026-07-25T12:05:01.200Z"
       }
     ]
   },
