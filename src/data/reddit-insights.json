@@ -1,28 +1,27 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-25T12:05:01.208Z",
+    "lastUpdated": "2026-07-25T20:04:52.297Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the relevance of a 900mAh rating for a SATA SSD and confirm the device is compatible with their external hard drives.",
+        "summary": "Users question the relevance of 900mAh for a SATA SSD and share their experiences with the UGREEN 9-in-1 USB-C Hub.",
         "pros": [
-          "will work fine",
-          "standard SATA to USB controller"
+          "it's just a standard SATA to USB controller, they've been around forever"
         ],
         "cons": [],
         "sentiment": "neutral",
         "key_insights": [
-          "The 900mAh rating is not applicable to this use case",
-          "WD 3D BLUE and SanDisk Plus compatible"
+          "> 900mAh is a measure of power delivered over time and is not applicable to this use case.",
+          "the device will work fine with a WD 3D BLUE SATA SSD (2TB) and a SanDisk Plus 2TB SSD"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-25T12:05:01.199Z"
+        "scrapedAt": "2026-07-25T20:04:52.288Z"
       }
     ]
   },
@@ -90,23 +89,24 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-25T12:05:01.208Z",
+    "lastUpdated": "2026-07-25T20:04:52.297Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users report EMI/RFI interference issues with some microphones, but not the Shure SM7B",
+        "summary": "Users generally acknowledge that EMI/RFI interference is a potential issue with microphones, but some have found it to be a problem with certain placements or equipment, and others suggest it may be related to grounding issues.",
         "pros": [
-          "Balanced cables can deal with most interference"
+          "balanced cables can deal with interference"
         ],
         "cons": [
-          "Some users have experienced RFI/EMI interference"
+          "cable and ground termination",
+          "mic placement near power strips or fluorescent lighting"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Location and nearby emitters can cause RFI issues",
-          "Grounding issues can also cause noise",
-          "Cable quality (e.g. Cable Matters XLR) matters"
+          "some users have found RFI/EMI interference issues in certain locations or setups",
+          "grounding issues may be a common culprit for EMI/RFI noise",
+          "balanced cables can mitigate some interference issues"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -114,33 +114,33 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-25T12:05:01.201Z"
+        "scrapedAt": "2026-07-25T20:04:52.291Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-25T12:05:01.208Z",
+    "lastUpdated": "2026-07-25T20:04:52.297Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users generally love the Audio-Technica ATH-M50x and ATH-M50xBT2, with many praising their sound quality and comfort. However, some users note minor drawbacks such as a lack of ANC and differing cable designs.",
+        "summary": "Real users praise the Audio-Technica ATH-M50x and ATH-M50xBT2 for their sound quality, comfort, and battery life, but note some limitations such as lack of ANC and potential impact on sound.",
         "pros": [
-          "sound just like an ATH-M50x",
-          "astounding battery life",
-          "high-quality audio",
-          "breathable earpads"
+          "Great headphone",
+          "Comfortable and breathable",
+          "Long battery life",
+          "Sound quality is similar to the wired version"
         ],
         "cons": [
-          "no active noise cancellation (ANC)",
-          "cable design difference compared to regular M50x",
-          "may not fit cables with thick plug housings"
+          "Lack of ANC",
+          "No significant difference in sound quality compared to other wireless options",
+          "Cables with thick plug housings may not fit"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "The ATH-M50xBT2's sound quality is comparable to the wired M50x, but with some minor differences.",
-          "Battery life is long-lasting and reliable.",
-          "Comfort features such as breathable earpads make for a more enjoyable listening experience."
+          "The M50xBT2 has a similar sound quality to the wired version, but with additional features like battery life and Bluetooth connectivity.",
+          "The headphones are comfortable and breathable, making them suitable for long use.",
+          "Some users prefer to turn off the voice assistant feature due to personal preference."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -148,63 +148,61 @@
         "hasRealComments": true,
         "sourcePost": "audio-technica ATH-M50x and ATH-M50xBT2",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v00p1o/audiotechnica_athm50x_and_athm50xbt2/",
-        "scrapedAt": "2026-07-25T12:05:01.202Z"
+        "scrapedAt": "2026-07-25T20:04:52.292Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-25T12:05:01.208Z",
+    "lastUpdated": "2026-07-25T20:04:52.297Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users are generally satisfied with their Secretlab Titan Evo 2022 Gaming Chair setup, mentioning pros such as durability (first chair lasted 6 years) and good quality components in their build, but also mention some cons like design flaws in older models.",
+        "summary": "Users have mixed opinions, with some mentioning design flaws and potential issues with upgrading parts, but overall seem satisfied with their SecretLab chairs.",
         "pros": [
-          "Good quality components",
-          "Durability (first chair lasted 6 years)",
-          "Great specs"
+          "First one lasted 6 years",
+          "Great specs especially with the 4090 FE"
         ],
         "cons": [
-          "Design flaws in older models",
-          "Arm rest cracking issue"
+          "That doesn’t sound like a good quality chair…",
+          "Will do this is my second SecretLab chair and I had to get them to replace the whole arm when the arm rest started cracking."
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "First model had design flaws which were rectified in later models",
-          "User had to replace the whole arm due to cracking issue with the old Titan chair",
-          "Users appreciate the durability and good quality of Secretlab chairs"
+          "First model had design flaws, but later models have been improved.",
+          "Users mention potential issues with upgrading parts, such as cracking armrests."
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-25T12:05:01.203Z"
+        "scrapedAt": "2026-07-25T20:04:52.292Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-25T12:05:01.208Z",
+    "lastUpdated": "2026-07-25T20:04:52.297Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users recommend spending under $100 on a webcam and investing in good lighting to improve image quality, with some recommending specific models like Logitech C920s HD Pro Webcam or EmeeT Pixy for their streaming needs.",
+        "summary": "Real users generally recommend spending money on lighting to improve low-light performance, but also praise the Logitech C920s HD Pro Webcam for its value and image quality.",
         "pros": [
           "decent in low light",
           "auto tracking if you move around",
-          "good lighting makes a huge difference",
-          "leaves money left over for additional lighting"
+          "still a great webcam for the price"
         ],
         "cons": [
-          "low light is gonna be rough on any sub $100 cam"
+          "low light is gonna be rough on any sub $100 cam tbh",
+          "Logitech software is horrendous, at least IMO"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Investing in good lighting can greatly improve image quality",
-          "A cheap ring light makes a huge difference",
-          "Using a webcam under $100 and spending the rest on lighting is a cost-effective solution"
+          "Lighting makes a huge difference for low-light performance",
+          "The C920s HD Pro Webcam is still recommended for its value and image quality",
+          "Dedicated cameras or GoPros are also good options, but may be more expensive"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -212,7 +210,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-25T12:05:01.200Z"
+        "scrapedAt": "2026-07-25T20:04:52.288Z"
       }
     ]
   },
@@ -293,25 +291,54 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-07-05T12:04:18.776Z",
+    "lastUpdated": "2026-07-25T20:04:52.297Z",
     "insights": [
       {
-        "product": "Alienware AW3423DWF 34\" QD-OLED",
+        "product": "Samsung Odyssey G5 27\" 165Hz Curved",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users generally advise against purchasing a 1440p OLED monitor for work due to issues such as text smearing, bad viewing angles, and burn-in, but acknowledge some potential benefits and alternatives.",
+        "summary": "Users generally like the monitor's appearance and smoothness, but have some drawbacks such as limited brightness range on OLED models and no aux port, with some preferring cheaper alternatives.",
         "pros": [
-          "may be suitable for gaming with games coming out later this year",
-          "can get away with it on newer models"
+          "really nice looking",
+          "breathtaking colors",
+          "super smooth and crisp games"
         ],
         "cons": [
-          "text smearing from VA when scrolling text",
-          "bad viewing angles",
-          "burn-in, especially static elements like the taskbar"
+          "better blacks than OLED model",
+          "no aux port",
+          "firmware update required for 10bit color with 180Hz"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "OLED monitors may not be suitable for work due to text smearing and burn-in",
-          "Newer 34-inch ultrawide models with current-gen panels may address some of these issues"
+          "OLED panel may not be as dark as expected, especially in HDR games",
+          "Samsung Odyssey G5 G50F has a different firmware version than the OLED model",
+          "Some users prefer cheaper alternatives with similar specs"
+        ],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "Is the Samsung Odyssey G5 G50F 27\" 2K QHD (2560 x 1440) 180Hz Gaming Monitor a good choice?",
+        "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1v4mxpt/is_the_samsung_odyssey_g5_g50f_27_2k_qhd_2560_x/",
+        "scrapedAt": "2026-07-25T20:04:52.289Z"
+      },
+      {
+        "product": "Alienware AW3423DWF 34\" QD-OLED",
+        "productSlug": "best-monitors-and-displays",
+        "summary": "Real users express concerns about using a 1440p OLED monitor for work, citing issues with text smearing, bad viewing angles, and burn-in, but some users have had positive experiences.",
+        "pros": [
+          "may be suitable for light usage",
+          "can be used without issues by those who lower brightness and use dark mode"
+        ],
+        "cons": [
+          "poor subpixel layout causes fringing",
+          "bad viewing angles",
+          "burn-in susceptibility"
+        ],
+        "sentiment": "negative",
+        "key_insights": [
+          "OLED panels have issues with text smearing and bad viewing angles.",
+          "Burn-in is a concern, especially for tasks like the taskbar.",
+          "Light usage may not be enough to prevent some issues."
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -319,7 +346,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-07-05T12:04:18.772Z"
+        "scrapedAt": "2026-07-25T20:04:52.290Z"
       }
     ]
   }
