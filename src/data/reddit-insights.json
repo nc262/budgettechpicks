@@ -1,27 +1,29 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-25T20:04:52.297Z",
+    "lastUpdated": "2026-07-26T12:02:15.880Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the relevance of 900mAh for a SATA SSD and share their experiences with the UGREEN 9-in-1 USB-C Hub.",
+        "summary": "Users question the relevance of 900mAh power delivery to a SATA SSD's performance, but acknowledge the device can connect and work with their chosen SSDs.",
         "pros": [
-          "it's just a standard SATA to USB controller, they've been around forever"
+          "Will work fine",
+          "Standard SATA to USB controller"
         ],
         "cons": [],
         "sentiment": "neutral",
         "key_insights": [
-          "> 900mAh is a measure of power delivered over time and is not applicable to this use case.",
-          "the device will work fine with a WD 3D BLUE SATA SSD (2TB) and a SanDisk Plus 2TB SSD"
+          "900mAh power delivery is not relevant for SATA SSD performance",
+          "Device can connect and work with chosen SSDs",
+          "SDS choice (WD 3D BLUE and SanDisk Plus) does not impact the device's functionality"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-25T20:04:52.288Z"
+        "scrapedAt": "2026-07-26T12:02:15.873Z"
       }
     ]
   },
@@ -89,27 +91,22 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-26T04:05:34.169Z",
+    "lastUpdated": "2026-07-26T12:02:15.880Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Some users report EMI/RFI interference issues, but note it's often due to external factors like cable quality, studio location, and grounding issues. Others attribute the problem to mic placement or nearby emitters.",
+        "summary": "Users find EMI/RFI interference to be a potential issue with microphones, but many attribute it to environmental factors or setup issues rather than the mic itself.",
         "pros": [
-          "balanced cables",
-          "humbucker coil",
-          "stage boxes/snake"
+          "balanced cable is enough to deal with any interference on the trip from the mic to the pre"
         ],
         "cons": [
-          "EMI/RFI interference",
-          "bad cable",
-          "grounding issues"
+          "RFI can be an issue in noisy environments near emitters such as FM stations, cell repeaters, or fluorescent lighting"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "EMI/RFI can be caused by external factors like cable quality and studio location",
-          "some mics may pick up more interference than others",
-          "grounding issues are a common culprit for EMI/RFI problems"
+          "RFI interference depends on location and nearby emitters, not the mic itself.",
+          "Humbyucking coils in dynamic mics may not be effective against RF interference."
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -117,33 +114,30 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-26T04:05:34.165Z"
+        "scrapedAt": "2026-07-26T12:02:15.875Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-25T20:04:52.297Z",
+    "lastUpdated": "2026-07-26T12:02:15.880Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users praise the Audio-Technica ATH-M50x and ATH-M50xBT2 for their sound quality, comfort, and battery life, but note some limitations such as lack of ANC and potential impact on sound.",
+        "summary": "Users generally praise the Audio-Technica ATH-M50x and ATH-M50xBT2 for their sound quality, comfort, and battery life. Some users mention minor drawbacks such as the lack of ANC on the BT2 version.",
         "pros": [
-          "Great headphone",
-          "Comfortable and breathable",
-          "Long battery life",
-          "Sound quality is similar to the wired version"
+          "sound quality",
+          "comfort",
+          "battery life"
         ],
         "cons": [
-          "Lack of ANC",
-          "No significant difference in sound quality compared to other wireless options",
-          "Cables with thick plug housings may not fit"
+          "lack of ANC",
+          "proprietary connectors can be a drawback"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "The M50xBT2 has a similar sound quality to the wired version, but with additional features like battery life and Bluetooth connectivity.",
-          "The headphones are comfortable and breathable, making them suitable for long use.",
-          "Some users prefer to turn off the voice assistant feature due to personal preference."
+          "The M50xBT2 sounds like an ATH-M50x, with the battery being a notable advantage.",
+          "Some users prefer the comfort and breathability of the mesh earpads."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -151,29 +145,29 @@
         "hasRealComments": true,
         "sourcePost": "audio-technica ATH-M50x and ATH-M50xBT2",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v00p1o/audiotechnica_athm50x_and_athm50xbt2/",
-        "scrapedAt": "2026-07-25T20:04:52.292Z"
+        "scrapedAt": "2026-07-26T12:02:15.876Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-25T20:04:52.297Z",
+    "lastUpdated": "2026-07-26T12:02:15.880Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users have mixed opinions, with some mentioning design flaws and potential issues with upgrading parts, but overall seem satisfied with their SecretLab chairs.",
+        "summary": "Real users have mixed opinions about their Secretlab Titan Evo 2022 gaming chair experience, with some mentioning design flaws in previous models, while others appreciate its quality and comfort.",
         "pros": [
-          "First one lasted 6 years",
-          "Great specs especially with the 4090 FE"
+          "Great specs",
+          "I am happy with the chairs so far"
         ],
         "cons": [
-          "That doesn’t sound like a good quality chair…",
-          "Will do this is my second SecretLab chair and I had to get them to replace the whole arm when the arm rest started cracking."
+          "That doesn't sound like a good quality chair...",
+          "Will do this is my second SecretLab chair and I had to get them to replace the whole arm when the arm rest started cracking"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "First model had design flaws, but later models have been improved.",
-          "Users mention potential issues with upgrading parts, such as cracking armrests."
+          "Previous models had design flaws which have been rectified in newer versions.",
+          "Users appreciate the quality and comfort of their Secretlab chairs, especially considering they've lasted for 6 years."
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -181,31 +175,32 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-25T20:04:52.292Z"
+        "scrapedAt": "2026-07-26T12:02:15.876Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-25T20:04:52.297Z",
+    "lastUpdated": "2026-07-26T12:02:15.880Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users generally recommend spending money on lighting to improve low-light performance, but also praise the Logitech C920s HD Pro Webcam for its value and image quality.",
+        "summary": "Users generally agree that a webcam with good lighting is essential for streaming, and some recommend upgrading to a higher-quality option or investing in additional lighting to improve image quality.",
         "pros": [
           "decent in low light",
           "auto tracking if you move around",
-          "still a great webcam for the price"
+          "decent (but old)",
+          "good (with proper lighting)"
         ],
         "cons": [
-          "low light is gonna be rough on any sub $100 cam tbh",
-          "Logitech software is horrendous, at least IMO"
+          "low light is gonna be rough on any sub $100 cam",
+          "software is horrendous"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Lighting makes a huge difference for low-light performance",
-          "The C920s HD Pro Webcam is still recommended for its value and image quality",
-          "Dedicated cameras or GoPros are also good options, but may be more expensive"
+          "Investing in additional lighting can greatly improve image quality.",
+          "A good webcam with auto tracking is useful for streaming.",
+          "Older webcams can still be decent, but may not offer the best performance."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -213,7 +208,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-25T20:04:52.288Z"
+        "scrapedAt": "2026-07-26T12:02:15.874Z"
       }
     ]
   },
