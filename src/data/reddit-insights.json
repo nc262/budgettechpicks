@@ -295,55 +295,23 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-07-26T20:05:03.161Z",
+    "lastUpdated": "2026-07-27T04:05:06.931Z",
     "insights": [
-      {
-        "product": "Samsung Odyssey G5 27\" 165Hz Curved",
-        "productSlug": "best-monitors-and-displays",
-        "summary": "Users generally like the monitor's performance, but some mention drawbacks such as limited OLED features and firmware issues.",
-        "pros": [
-          "Super smooth and crisp games due to OLED response times",
-          "Colors are breathtaking",
-          "180Hz is great for gaming",
-          "Good value for the price"
-        ],
-        "cons": [
-          "Firmware updates may be needed for full 10bit color with 180Hz",
-          "No aux port for soundbar",
-          "Limited HDR performance in bright environments"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "Some users got a cheaper monitor with similar specs and better features",
-          "OLEDs aren't necessarily dark",
-          "Firmware updates are necessary for full color capabilities"
-        ],
-        "recommended_by_users": true,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Is the Samsung Odyssey G5 G50F 27\" 2K QHD (2560 x 1440) 180Hz Gaming Monitor a good choice?",
-        "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1v4mxpt/is_the_samsung_odyssey_g5_g50f_27_2k_qhd_2560_x/",
-        "scrapedAt": "2026-07-26T20:05:03.152Z"
-      },
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users warn against purchasing a 1440p OLED monitor for work due to text smearing and viewing angle issues, while others mention potential improvements on newer models or alternatives like Mini LED IPS monitors.",
-        "pros": [
-          "may be suitable for users with limited screen time",
-          "newer models may address some of the issues"
-        ],
+        "summary": "Real users advise against buying a 1440p OLED monitor for work due to text smearing, bad viewing angles, and burn-in issues.",
+        "pros": [],
         "cons": [
-          "text smearing from VA/low brightness",
-          "viewing angle issues",
-          "burn-in risk"
+          "text smearing",
+          "bad viewing angles",
+          "burn-in issues"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "1440p OLED monitors are not ideal for work due to text smearing and viewing angle issues",
-          "newer models may address some of the issues with 4K QD-OLED displays",
-          "Mini LED IPS monitors like Samsung's new lineup offer better brightness and burn-in resistance"
+          "OLED monitors have issues with text fringing",
+          "MSI and Asus ultrawides have better panels that fix these issues",
+          "Newer models might be more suitable for work use"
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -351,7 +319,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-07-26T20:05:03.153Z"
+        "scrapedAt": "2026-07-27T04:05:06.927Z"
       }
     ]
   }
