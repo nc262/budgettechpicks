@@ -121,27 +121,27 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-26T20:05:03.161Z",
+    "lastUpdated": "2026-07-27T12:03:21.652Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Users generally love the ATH-M50x and ATH-M50xBT2, praising their sound quality, comfort, and battery life. However, some users mention limitations such as lack of ANC on the BT2 model.",
+        "summary": "Users generally love their Audio-Technica ATH-M50x and ATH-M50xBT2 headphones, praising their sound quality, comfort, and battery life. Some mention the lack of ANC as a drawback.",
         "pros": [
-          "Great headphone",
-          "Love the mic",
-          "Battery is astounding",
-          "Sounds essentially the same as wired M50x"
+          "sound quality",
+          "comfort",
+          "battery life",
+          "compatibility with LDAC"
         ],
         "cons": [
-          "Lack of ANC",
-          "Not a fan of voice feature in app"
+          "lack of ANC",
+          "cable may not fit in thick plug housings"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "The ATH-M50xBT2 has the same sound quality as the wired M50x but with Bluetooth connectivity.",
-          "The battery life on the BT2 model is impressive, lasting over a week without charging.",
-          "Some users find the lack of ANC on the BT2 model to be a drawback."
+          "The M50xBT2 has a long battery life and the headphones feel breathable.",
+          "The sound quality is similar to the wired version, but with some differences due to the Bluetooth connection.",
+          "The mic on the XLR edition is useful for audio work."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -149,32 +149,29 @@
         "hasRealComments": true,
         "sourcePost": "audio-technica ATH-M50x and ATH-M50xBT2",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v00p1o/audiotechnica_athm50x_and_athm50xbt2/",
-        "scrapedAt": "2026-07-26T20:05:03.155Z"
+        "scrapedAt": "2026-07-27T12:03:21.644Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-26T20:05:03.161Z",
+    "lastUpdated": "2026-07-27T12:03:21.652Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users express satisfaction with their Secretlab Titan Evo 2022 gaming chairs, noting improvements over previous models and praising the chair's quality and comfort. However, some users mention design flaws in earlier versions.",
+        "summary": "Users share their positive experiences with their Secretlab Titan Evo 2022 gaming chairs, mentioning comfort and durability, but also mention some design flaws in older models.",
         "pros": [
-          "improved quality",
           "comfortable",
-          "good performance",
-          "improved from earlier models"
+          "durable",
+          "designed to be replaced with new parts"
         ],
         "cons": [
-          "design flaws in earlier models",
-          "cracking armrests"
+          "design flaws in older models"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "First one lasted 6 years and was still comfortable when handed down to my son",
-          "I had to get them to replace the whole arm when the arm rest started cracking.",
-          "The first models did have some design flaws which have been rectified on these later models"
+          "First one lasted 6 years and was still comfortable when handed down to their son",
+          "The first models had design flaws which have been rectified on later models"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -182,31 +179,32 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-26T20:05:03.156Z"
+        "scrapedAt": "2026-07-27T12:03:21.644Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-26T20:05:03.161Z",
+    "lastUpdated": "2026-07-27T12:03:21.652Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users find the Logitech C920s HD Pro Webcam to be still decent despite its age, with some recommending it for streaming under $100, while others suggest investing more in lighting to improve performance. Users also note that low-light performance can be rough and highlight the importance of additional lighting.",
+        "summary": "Real users think a webcam under $100 is decent but may have low light issues without extra lighting setup. Investing in additional lighting makes a significant difference.",
         "pros": [
           "decent",
-          "worth looking at",
-          "gets the job done"
+          "auto tracking",
+          "built-in ring light",
+          "good image quality"
         ],
         "cons": [
-          "low light is gonna be rough on any sub $100 cam tbh",
-          "old now"
+          "low light issues",
+          "old technology"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "Investing in lighting can greatly improve webcam performance.",
-          "Low-light performance can be a compromise without extra setup.",
-          "Other webcams like Elgato Facecam MK2 are considered better options."
+          "Investing in additional lighting can greatly improve webcam performance",
+          "The C920 is still a good option for its price",
+          "Other webcams like Emee, Razer Kiyo, and Logitech 1080p Pro Stream also have their pros"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -214,7 +212,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-26T20:05:03.151Z"
+        "scrapedAt": "2026-07-27T12:03:21.642Z"
       }
     ]
   },
