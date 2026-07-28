@@ -132,25 +132,25 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-28T04:04:20.707Z",
+    "lastUpdated": "2026-07-28T12:01:29.994Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users generally seem happy with their SecretLab Titan Evo 2022 chairs, citing comfort and durability, but some mention design flaws from earlier models have been rectified in newer ones.",
+        "summary": "Users generally like their SecretLab Titan Evo 2022 Gaming Chair setup, mentioning it's turning out well and is comfortable, but some have experienced design flaws in previous models.",
         "pros": [
-          "Great specs",
-          "Comfortable",
-          "Durable"
+          "comfortable",
+          "turning out well"
         ],
         "cons": [
-          "Doesn't sound like a good quality chair..."
+          "design flaws in previous models",
+          "arm rest cracking"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "The first model had design flaws which have been rectified in later models.",
-          "Some users mention the arm rest cracking and needed to be replaced.",
-          "Users appreciate the comfort and durability of the chair."
+          "First one lasted 6 years and was still comfortable when handed down to the son.",
+          "I think that would look great.",
+          "Great specs especially with the 4090 FE! I would suggest you to keep your BIOS updated for the CPU!"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -158,7 +158,7 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-28T04:04:20.702Z"
+        "scrapedAt": "2026-07-28T12:01:29.986Z"
       }
     ]
   },
