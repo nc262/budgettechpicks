@@ -1,21 +1,20 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-26T20:05:03.161Z",
+    "lastUpdated": "2026-07-28T04:04:20.707Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users express skepticism about the effectiveness of a 900mAh power measure for a SATA SSD, but confirm the UGREEN 9-in-1 USB-C Hub works with their SSDs.",
-        "pros": [
-          "works fine",
-          "standard SATA to USB controller"
+        "summary": "Users are skeptical about the UGREEN 9-in-1 USB-C Hub's power delivery, with one commenter pointing out that '900mAh' is a measure of power delivered over time and not applicable to this use case.",
+        "pros": [],
+        "cons": [
+          "power delivery",
+          "unclear specifications"
         ],
-        "cons": [],
         "sentiment": "neutral",
         "key_insights": [
-          "900mAh is not applicable for this use case",
-          "the device is a standard SATA to USB controller",
-          "it will work with WD 3D BLUE SATA SSD and SanDisk Plus 2TB SSD"
+          "Power delivery measure ('900mAh') might be misleading",
+          "Unclear product specifications"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -23,7 +22,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-26T20:05:03.150Z"
+        "scrapedAt": "2026-07-28T04:04:20.699Z"
       }
     ]
   },
@@ -91,87 +90,67 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-26T20:05:03.161Z",
+    "lastUpdated": "2026-07-28T04:04:20.707Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users mention EMI/RFI interference as a potential issue with microphones, but note it's often caused by external factors such as cables and electronics nearby, rather than the microphone itself.",
-        "pros": [
-          "balanced cables can deal with interference on the trip from the mic to the pre",
-          "humbucker coil may reduce RFI/EMI issues"
-        ],
-        "cons": [
-          "RFI can be a problem in certain environments (e.g. near FM stations)",
-          "grounding issues can cause noise"
-        ],
+        "summary": "Discussed in r/audioengineering — 14 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "External factors like cables and nearby electronics are often the culprit behind EMI/RFI interference",
-          "The SM7B's humbucker coil may help reduce RFI/EMI issues, but it's not a guarantee"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-26T20:05:03.154Z"
+        "scrapedAt": "2026-07-28T04:04:20.701Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-27T12:03:21.652Z",
+    "lastUpdated": "2026-07-28T04:04:20.707Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Users generally love their Audio-Technica ATH-M50x and ATH-M50xBT2 headphones, praising their sound quality, comfort, and battery life. Some mention the lack of ANC as a drawback.",
-        "pros": [
-          "sound quality",
-          "comfort",
-          "battery life",
-          "compatibility with LDAC"
-        ],
-        "cons": [
-          "lack of ANC",
-          "cable may not fit in thick plug housings"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "The M50xBT2 has a long battery life and the headphones feel breathable.",
-          "The sound quality is similar to the wired version, but with some differences due to the Bluetooth connection.",
-          "The mic on the XLR edition is useful for audio work."
-        ],
-        "recommended_by_users": true,
+        "summary": "Discussed in r/headphones — 12 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "audio-technica ATH-M50x and ATH-M50xBT2",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v00p1o/audiotechnica_athm50x_and_athm50xbt2/",
-        "scrapedAt": "2026-07-27T12:03:21.644Z"
+        "scrapedAt": "2026-07-28T04:04:20.702Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-27T12:03:21.652Z",
+    "lastUpdated": "2026-07-28T04:04:20.707Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users share their positive experiences with their Secretlab Titan Evo 2022 gaming chairs, mentioning comfort and durability, but also mention some design flaws in older models.",
+        "summary": "Users generally seem happy with their SecretLab Titan Evo 2022 chairs, citing comfort and durability, but some mention design flaws from earlier models have been rectified in newer ones.",
         "pros": [
-          "comfortable",
-          "durable",
-          "designed to be replaced with new parts"
+          "Great specs",
+          "Comfortable",
+          "Durable"
         ],
         "cons": [
-          "design flaws in older models"
+          "Doesn't sound like a good quality chair..."
         ],
         "sentiment": "positive",
         "key_insights": [
-          "First one lasted 6 years and was still comfortable when handed down to their son",
-          "The first models had design flaws which have been rectified on later models"
+          "The first model had design flaws which have been rectified in later models.",
+          "Some users mention the arm rest cracking and needed to be replaced.",
+          "Users appreciate the comfort and durability of the chair."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -179,7 +158,7 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-27T12:03:21.644Z"
+        "scrapedAt": "2026-07-28T04:04:20.702Z"
       }
     ]
   },
@@ -293,31 +272,23 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-07-27T04:05:06.931Z",
+    "lastUpdated": "2026-07-28T04:04:20.707Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Real users advise against buying a 1440p OLED monitor for work due to text smearing, bad viewing angles, and burn-in issues.",
+        "summary": "Discussed in r/Monitors — 4 comments on this thread.",
         "pros": [],
-        "cons": [
-          "text smearing",
-          "bad viewing angles",
-          "burn-in issues"
-        ],
-        "sentiment": "negative",
-        "key_insights": [
-          "OLED monitors have issues with text fringing",
-          "MSI and Asus ultrawides have better panels that fix these issues",
-          "Newer models might be more suitable for work use"
-        ],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 7,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-07-27T04:05:06.927Z"
+        "scrapedAt": "2026-07-28T04:04:20.700Z"
       }
     ]
   }
