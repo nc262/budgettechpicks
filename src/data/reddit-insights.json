@@ -90,44 +90,69 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-28T04:04:20.707Z",
+    "lastUpdated": "2026-07-28T20:02:40.069Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Discussed in r/audioengineering — 14 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users suggest that EMI/RFI interference is often a studio location and equipment issue, rather than with the mic itself, and recommend checking cable connections, grounding issues, or using a Faraday cage to mitigate problems.",
+        "pros": [
+          "can handle interference",
+          "balanced cables can deal with interference on the trip from the mic to the pre",
+          "mic can be used for dialogue recordings"
+        ],
+        "cons": [
+          "can be affected by nearby emitters and cell repeaters",
+          "RFI can be a problem in noisy environments",
+          "cable quality (e.g. Cable Matters XLR cables) may affect performance"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "RFI is often a studio location issue",
+          "balanced cables can mitigate RFI interference",
+          "mic cable and grounding issues can also cause problems"
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-28T04:04:20.701Z"
+        "scrapedAt": "2026-07-28T20:02:40.064Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-28T04:04:20.707Z",
+    "lastUpdated": "2026-07-28T20:02:40.070Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Discussed in r/headphones — 12 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Real users generally love the ATH-M50x and M50xBT2, praising their sound quality, comfort, and battery life. The main differences mentioned between the two models include the lack of ANC on the BT2 model and slightly different connector designs.",
+        "pros": [
+          "Great headphone",
+          "Great mic",
+          "Battery is astounding",
+          "Sound quality remains essentially the same as wired M50x"
+        ],
+        "cons": [
+          "Lack of ANC",
+          "Cable and protruding connector can get in the way on regular M50x",
+          "No real complaints about sound quality"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Some users mention the lack of ANC as a notable difference between the two models.",
+          "Battery life is a major selling point for the BT2 model, with some users reporting up to 50 hours of use before needing a charge.",
+          "The sound quality remains essentially the same on both models, according to one user."
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "audio-technica ATH-M50x and ATH-M50xBT2",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v00p1o/audiotechnica_athm50x_and_athm50xbt2/",
-        "scrapedAt": "2026-07-28T04:04:20.702Z"
+        "scrapedAt": "2026-07-28T20:02:40.065Z"
       }
     ]
   },
