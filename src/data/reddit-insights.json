@@ -52,34 +52,31 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-07-26T04:05:34.169Z",
+    "lastUpdated": "2026-07-29T12:04:32.058Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users have successfully rooted and customized their Amazon Echo Dot (5th Gen) devices, running alternative operating systems like Android Lineage or Home Assistant, but acknowledge the device's bootloader is heavily locked down by Amazon.",
+        "summary": "Real users found the Echo Dot Gen 2 to be a capable device, with some noting its ease of use and others mentioning potential drawbacks such as difficulties with rooting and setup.",
         "pros": [
-          "Can be run with Android Lineage",
-          "Can be used as a good Kitchen speaker",
-          "Home Assistant can be successfully installed on these devices"
+          "easy to use",
+          "works well"
         ],
         "cons": [
-          "Bootloader is heavily locked down by Amazon",
-          "Cannot install alternative OS like SmartThings or Bixby without rooting"
+          "difficulties with rooting",
+          "setup issues"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Users have successfully rooted their Echo Dots to run custom operating systems",
-          "Home Assistant can be installed on these devices, but requires some technical expertise",
-          "Alternative operating systems like Android Lineage are available for the device"
+          "Some users noted that moving the wakeword to the device could address concerns about privacy."
         ],
-        "recommended_by_users": false,
-        "commentCount": 10,
+        "recommended_by_users": true,
+        "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "Reusing Amazon Alexa Echo Dot",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1tzm0t9/reusing_amazon_alexa_echo_dot/",
-        "scrapedAt": "2026-07-26T04:05:34.162Z"
+        "sourcePost": "EchoMuse - Echo Dot Gen 2 Voice Assistant",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1v5zd07/echomuse_echo_dot_gen_2_voice_assistant/",
+        "scrapedAt": "2026-07-29T12:04:32.052Z"
       }
     ]
   },
@@ -279,21 +276,23 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-07-29T04:06:43.647Z",
+    "lastUpdated": "2026-07-29T12:04:32.058Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users advise against using a 1440p OLED monitor for work due to text smearing, viewing angle issues, and burn-in concerns, but some users may find it suitable with adjustments.",
+        "summary": "Users advise against buying a 1440p OLED monitor for work due to issues with text smearing, viewing angles, and burn-in, but some may find it suitable for light use.",
         "pros": [],
         "cons": [
-          "DO NOT BUY A 1440P OLED FOR WORK. Seriously, if you are doing 90% work do not get a VA or OLED. Smearing from VA when scrolling text and bad viewing angles."
+          "text smearing from VA or OLED monitors",
+          "burn-in on taskbar",
+          "limited brightness"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "OLED monitors can be prone to text smearing and bad viewing angles.",
-          "Burn-in is a concern, especially for tasks like working on the taskbar.",
-          "Newer models with improved panels may mitigate some of these issues."
+          "OLEDs don't have a proper subpixel layout",
+          "fringing is a thing in 1440p OLEDs",
+          "MSI and Asus models may be better for work use"
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -301,7 +300,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-07-29T04:06:43.640Z"
+        "scrapedAt": "2026-07-29T12:04:32.053Z"
       }
     ]
   }
