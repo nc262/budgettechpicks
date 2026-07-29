@@ -1,28 +1,22 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-28T04:04:20.707Z",
+    "lastUpdated": "2026-07-29T04:06:43.647Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users are skeptical about the UGREEN 9-in-1 USB-C Hub's power delivery, with one commenter pointing out that '900mAh' is a measure of power delivered over time and not applicable to this use case.",
+        "summary": "Discussed in r/buildapc — 3 comments on this thread.",
         "pros": [],
-        "cons": [
-          "power delivery",
-          "unclear specifications"
-        ],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Power delivery measure ('900mAh') might be misleading",
-          "Unclear product specifications"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-28T04:04:20.699Z"
+        "scrapedAt": "2026-07-29T04:06:43.638Z"
       }
     ]
   },
@@ -90,27 +84,27 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-28T20:02:40.069Z",
+    "lastUpdated": "2026-07-29T04:06:43.647Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users suggest that EMI/RFI interference is often a studio location and equipment issue, rather than with the mic itself, and recommend checking cable connections, grounding issues, or using a Faraday cage to mitigate problems.",
+        "summary": "Some users have experienced EMI/RFI interference with their microphones, but many attribute it to external factors such as location and nearby emitters, rather than the mic itself.",
         "pros": [
-          "can handle interference",
-          "balanced cables can deal with interference on the trip from the mic to the pre",
-          "mic can be used for dialogue recordings"
+          "No issues with RFI or EMI",
+          "Usually, balanced cables are enough to deal with any interference",
+          "Mic is not typically the culprit"
         ],
         "cons": [
-          "can be affected by nearby emitters and cell repeaters",
-          "RFI can be a problem in noisy environments",
-          "cable quality (e.g. Cable Matters XLR cables) may affect performance"
+          "RFI/EMI interference can be a problem",
+          "Cell repeaters on nearby towers can cause issues",
+          "Hum buckling coils may limit effectiveness for RF"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "RFI is often a studio location issue",
-          "balanced cables can mitigate RFI interference",
-          "mic cable and grounding issues can also cause problems"
+          "RFI/EMI interference is not typically caused by the mic itself, but rather external factors",
+          "Balanced cables can help mitigate RFI/EMI issues",
+          "Cell repeaters on nearby towers can cause RF interference"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -118,33 +112,33 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-28T20:02:40.064Z"
+        "scrapedAt": "2026-07-29T04:06:43.641Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-28T20:02:40.070Z",
+    "lastUpdated": "2026-07-29T04:06:43.647Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users generally love the ATH-M50x and M50xBT2, praising their sound quality, comfort, and battery life. The main differences mentioned between the two models include the lack of ANC on the BT2 model and slightly different connector designs.",
+        "summary": "Real users generally have a positive opinion of the Audio-Technica ATH-M50x and ATH-M50xBT2, praising their sound quality, comfort, and features like ANC on the M50xBT2.",
         "pros": [
-          "Great headphone",
-          "Great mic",
-          "Battery is astounding",
-          "Sound quality remains essentially the same as wired M50x"
+          "sound just like an ATH-M50x",
+          "great headphone and mic",
+          "astonishing battery life on BT2 version",
+          "highly accurate 50-hour battery life"
         ],
         "cons": [
-          "Lack of ANC",
-          "Cable and protruding connector can get in the way on regular M50x",
-          "No real complaints about sound quality"
+          "lack of ANC on M50xBT2",
+          "standard connector may not fit thick plug housings",
+          "voice assistant can be annoying to some users"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Some users mention the lack of ANC as a notable difference between the two models.",
-          "Battery life is a major selling point for the BT2 model, with some users reporting up to 50 hours of use before needing a charge.",
-          "The sound quality remains essentially the same on both models, according to one user."
+          "LDAC, AAC, and wired playback on the M50xBT2 sound essentially the same as the wired M50x",
+          "the battery is astounding on the BT2 version",
+          "ANC might change the sound if added"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -152,7 +146,7 @@
         "hasRealComments": true,
         "sourcePost": "audio-technica ATH-M50x and ATH-M50xBT2",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v00p1o/audiotechnica_athm50x_and_athm50xbt2/",
-        "scrapedAt": "2026-07-28T20:02:40.065Z"
+        "scrapedAt": "2026-07-29T04:06:43.642Z"
       }
     ]
   },
@@ -188,35 +182,23 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-27T12:03:21.652Z",
+    "lastUpdated": "2026-07-29T04:06:43.647Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users think a webcam under $100 is decent but may have low light issues without extra lighting setup. Investing in additional lighting makes a significant difference.",
-        "pros": [
-          "decent",
-          "auto tracking",
-          "built-in ring light",
-          "good image quality"
-        ],
-        "cons": [
-          "low light issues",
-          "old technology"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "Investing in additional lighting can greatly improve webcam performance",
-          "The C920 is still a good option for its price",
-          "Other webcams like Emee, Razer Kiyo, and Logitech 1080p Pro Stream also have their pros"
-        ],
-        "recommended_by_users": true,
+        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-27T12:03:21.642Z"
+        "scrapedAt": "2026-07-29T04:06:43.638Z"
       }
     ]
   },
@@ -297,23 +279,29 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-07-28T04:04:20.707Z",
+    "lastUpdated": "2026-07-29T04:06:43.647Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Discussed in r/Monitors — 4 comments on this thread.",
+        "summary": "Users advise against using a 1440p OLED monitor for work due to text smearing, viewing angle issues, and burn-in concerns, but some users may find it suitable with adjustments.",
         "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
+        "cons": [
+          "DO NOT BUY A 1440P OLED FOR WORK. Seriously, if you are doing 90% work do not get a VA or OLED. Smearing from VA when scrolling text and bad viewing angles."
+        ],
+        "sentiment": "negative",
+        "key_insights": [
+          "OLED monitors can be prone to text smearing and bad viewing angles.",
+          "Burn-in is a concern, especially for tasks like working on the taskbar.",
+          "Newer models with improved panels may mitigate some of these issues."
+        ],
         "recommended_by_users": false,
         "commentCount": 7,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-07-28T04:04:20.700Z"
+        "scrapedAt": "2026-07-29T04:06:43.640Z"
       }
     ]
   }
