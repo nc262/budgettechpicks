@@ -1,22 +1,28 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-07-29T04:06:43.647Z",
+    "lastUpdated": "2026-07-29T20:04:20.064Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Discussed in r/buildapc — 3 comments on this thread.",
-        "pros": [],
+        "summary": "Users question the relevance of a power rating (900mAh) for a SATA SSD, but ultimately state the UGREEN 9-in-1 USB-C Hub is compatible and will work with their chosen SSDs.",
+        "pros": [
+          "will work fine",
+          "standard SATA to USB controller"
+        ],
         "cons": [],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "power rating (900mAh) is not applicable for a SATA SSD",
+          "device is compatible with chosen SSDs (WD 3D BLUE and SanDisk Plus)"
+        ],
         "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-07-29T04:06:43.638Z"
+        "scrapedAt": "2026-07-29T20:04:20.054Z"
       }
     ]
   },
@@ -81,27 +87,25 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-29T04:06:43.647Z",
+    "lastUpdated": "2026-07-29T20:04:20.064Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Some users have experienced EMI/RFI interference with their microphones, but many attribute it to external factors such as location and nearby emitters, rather than the mic itself.",
+        "summary": "Many users have reported EMI/RFI interference issues, but most attribute it to environmental factors or poor setup rather than the mic itself.",
         "pros": [
-          "No issues with RFI or EMI",
-          "Usually, balanced cables are enough to deal with any interference",
-          "Mic is not typically the culprit"
+          "balanced cables can deal with interference on the trip from the mic to the pre"
         ],
         "cons": [
-          "RFI/EMI interference can be a problem",
-          "Cell repeaters on nearby towers can cause issues",
-          "Hum buckling coils may limit effectiveness for RF"
+          "EMI/RFI interference",
+          "cable and grounding issues",
+          "RFI (Radio Frequency Interference)"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "RFI/EMI interference is not typically caused by the mic itself, but rather external factors",
-          "Balanced cables can help mitigate RFI/EMI issues",
-          "Cell repeaters on nearby towers can cause RF interference"
+          "RFI can be affected by location and proximity to emitters like cell towers.",
+          "Humbucker coils may not be effective against RF interference, but can help with low-frequency noise.",
+          "Grounding issues can cause EMI/RFI problems"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -109,41 +113,39 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-29T04:06:43.641Z"
+        "scrapedAt": "2026-07-29T20:04:20.058Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-29T04:06:43.647Z",
+    "lastUpdated": "2026-07-29T20:04:20.064Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users generally have a positive opinion of the Audio-Technica ATH-M50x and ATH-M50xBT2, praising their sound quality, comfort, and features like ANC on the M50xBT2.",
+        "summary": "Real users warn against buying counterfeit Audio-Technica ATH-M50x headphones, noting they don't sound as good and may be made with inferior materials.",
         "pros": [
-          "sound just like an ATH-M50x",
-          "great headphone and mic",
-          "astonishing battery life on BT2 version",
-          "highly accurate 50-hour battery life"
+          "may be worth $50–70 if marketed under their own brand",
+          "don't sound terrible"
         ],
         "cons": [
-          "lack of ANC on M50xBT2",
-          "standard connector may not fit thick plug housings",
-          "voice assistant can be annoying to some users"
+          "sound worse than genuine ATH-M50x",
+          "made with potentially inferior materials",
+          "markeded as 'original' but are counterfeit"
         ],
-        "sentiment": "positive",
+        "sentiment": "negative",
         "key_insights": [
-          "LDAC, AAC, and wired playback on the M50xBT2 sound essentially the same as the wired M50x",
-          "the battery is astounding on the BT2 version",
-          "ANC might change the sound if added"
+          "Counterfeiters may modify internal driver details to make fakes harder to spot",
+          "Fake headphones may be worth $50–70 under their own brand",
+          "Some users have experience with low-quality Audio-Technica models"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "audio-technica ATH-M50x and ATH-M50xBT2",
-        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v00p1o/audiotechnica_athm50x_and_athm50xbt2/",
-        "scrapedAt": "2026-07-29T04:06:43.642Z"
+        "sourcePost": "Beware of Fake Audio-Technica ATH-M50x \"New\" and \"Open Box\" Headphones on eBay",
+        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v8axhf/beware_of_fake_audiotechnica_athm50x_new_and_open/",
+        "scrapedAt": "2026-07-29T20:04:20.059Z"
       }
     ]
   },
@@ -179,23 +181,34 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-29T04:06:43.647Z",
+    "lastUpdated": "2026-07-29T20:04:20.064Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Real users recommend investing in lighting to improve the webcam's performance, with some also mentioning that the Logitech C920 is still a good option despite being old, and that dedicated cameras like GoPro or Elgato Facecam MK2 offer better image quality.",
+        "pros": [
+          "decent in low light",
+          "auto tracking if you move around",
+          "built-in ring light"
+        ],
+        "cons": [
+          "low light is gonna be rough on any sub $100 cam",
+          "software is horrendous (Logitech)"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Lighting can greatly improve the webcam's performance.",
+          "The Logitech C920 is still a good option despite being old.",
+          "Dedicated cameras like GoPro or Elgato Facecam MK2 offer better image quality."
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-29T04:06:43.638Z"
+        "scrapedAt": "2026-07-29T20:04:20.055Z"
       }
     ]
   },
@@ -276,23 +289,22 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-07-29T12:04:32.058Z",
+    "lastUpdated": "2026-07-29T20:04:20.064Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users advise against buying a 1440p OLED monitor for work due to issues with text smearing, viewing angles, and burn-in, but some may find it suitable for light use.",
+        "summary": "Users warn against buying a 1440p QD-OLED monitor for work due to issues with text smearing and viewing angles, while some users report no major issues but acknowledge potential burn-in.",
         "pros": [],
         "cons": [
-          "text smearing from VA or OLED monitors",
-          "burn-in on taskbar",
-          "limited brightness"
+          "smearing from VA when scrolling text",
+          "bad viewing angles",
+          "OLEDs don't have a proper subpixel layout so fringing is a thing"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "OLEDs don't have a proper subpixel layout",
-          "fringing is a thing in 1440p OLEDs",
-          "MSI and Asus models may be better for work use"
+          "QD-OLED monitors may not be suitable for work due to text smearing and viewing angle issues.",
+          "Burn-in is a potential issue with QD-OLED monitors."
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -300,7 +312,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-07-29T12:04:32.053Z"
+        "scrapedAt": "2026-07-29T20:04:20.056Z"
       }
     ]
   }
