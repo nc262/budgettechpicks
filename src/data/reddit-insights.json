@@ -123,26 +123,26 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-07-29T20:04:20.064Z",
+    "lastUpdated": "2026-07-30T12:01:25.985Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users warn against buying counterfeit Audio-Technica ATH-M50x headphones, noting they don't sound as good and may be made with inferior materials.",
+        "summary": "Redditors warn of fake Audio-Technica ATH-M50x headphones sold on eBay, citing differences in appearance, sound quality, and price, with some having a soft spot for cheaper alternatives.",
         "pros": [
-          "may be worth $50–70 if marketed under their own brand",
-          "don't sound terrible"
+          "They don't sound terrible",
+          "If marketed under their own brand, they'd probably be worth $50–70"
         ],
         "cons": [
-          "sound worse than genuine ATH-M50x",
-          "made with potentially inferior materials",
-          "markeded as 'original' but are counterfeit"
+          "Ppl selling counterfeits should get like 5y in prison mandatory",
+          "Counterfeit factory rats will probably modify details to make fakes harder to spot",
+          "Originals are already terrible imo haha"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "Counterfeiters may modify internal driver details to make fakes harder to spot",
-          "Fake headphones may be worth $50–70 under their own brand",
-          "Some users have experience with low-quality Audio-Technica models"
+          "The internal driver is a giveaway for counterfeit headphones",
+          "Counterfeits should be punished more severely",
+          "Cheap alternatives can be comparable in quality"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -150,7 +150,7 @@
         "hasRealComments": true,
         "sourcePost": "Beware of Fake Audio-Technica ATH-M50x \"New\" and \"Open Box\" Headphones on eBay",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v8axhf/beware_of_fake_audiotechnica_athm50x_new_and_open/",
-        "scrapedAt": "2026-07-29T20:04:20.059Z"
+        "scrapedAt": "2026-07-30T12:01:25.978Z"
       }
     ]
   },
