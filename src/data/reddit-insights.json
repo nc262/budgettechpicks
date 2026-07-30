@@ -58,28 +58,22 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-07-30T04:04:41.659Z",
+    "lastUpdated": "2026-07-30T20:05:03.187Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users report mixed experiences with the EchoMuse project, with some issues related to rooting and setup, but overall praising the engineering quality and features such as noise cancellation and audio processing.",
+        "summary": "Users generally find the Echo Dot Gen 2 Voice Assistant easy to use and root, with some improvements proposed for audio storage and security concerns addressed by implementing a device sovereign mute feature.",
         "pros": [
-          "easy setup",
-          "noise cancellation",
-          "engineering quality",
-          "features such as audio processing"
+          "easy to root",
+          "easy to set up",
+          "can be used in home automation systems"
         ],
-        "cons": [
-          "rooting issues",
-          "setup problems",
-          "insecure origin warnings"
-        ],
-        "sentiment": "neutral",
+        "cons": [],
+        "sentiment": "positive",
         "key_insights": [
-          "Saving utterance audio for the last 10 turns to improve privacy and mitigate vectors.",
-          "Implementing storing audio samples on the controller for improved security.",
-          "Using a considerable audio processing pipeline to process audio from device mics."
+          "Users can save utterance audio for the last 10 turns and it's available to listen to under the device's activity tab.",
+          "Implementing a device sovereign mute feature can mitigate some vectors of concern about voice assistant security."
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -87,7 +81,7 @@
         "hasRealComments": true,
         "sourcePost": "EchoMuse - Echo Dot Gen 2 Voice Assistant",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1v5zd07/echomuse_echo_dot_gen_2_voice_assistant/",
-        "scrapedAt": "2026-07-30T04:04:41.653Z"
+        "scrapedAt": "2026-07-30T20:05:03.179Z"
       }
     ]
   },
@@ -294,26 +288,26 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-07-30T04:04:41.659Z",
+    "lastUpdated": "2026-07-30T20:05:03.187Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Some users advise against buying a 1440p QD-OLED monitor for work due to text smearing and viewing angle issues, while others mention their own positive experiences.",
+        "summary": "Some users recommend avoiding 1440p OLED monitors for work due to issues like text smearing, bad viewing angles, and fringing, while others have no issues with their own monitor.",
         "pros": [
-          "possible options if looking for a new ultrawide monitor",
-          "$400 is a good price for a used monitor"
+          " brighter options exist",
+          "newer models may be better suited"
         ],
         "cons": [
-          "text smearing from VA or OLED panels",
-          "burn in on static elements like the taskbar",
-          "viewing angle issues with OLEDs"
+          "text smearing from VA when scrolling",
+          "fringing from OLED subpixel layout",
+          "$400 is a bad deal for used monitor"
         ],
-        "sentiment": "neutral",
+        "sentiment": "negative",
         "key_insights": [
-          "OLED monitors may not be suitable for work due to text smearing and viewing angle issues",
-          "newer models might fix these issues",
-          "Mini LED IPS 34"
+          "text fringing from VA and OLED monitors",
+          "burn-in issues with static elements like the taskbar",
+          " newer models may be better suited for work use"
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -321,7 +315,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-07-30T04:04:41.655Z"
+        "scrapedAt": "2026-07-30T20:05:03.181Z"
       }
     ]
   }
