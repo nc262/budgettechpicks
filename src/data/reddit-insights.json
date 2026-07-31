@@ -86,25 +86,25 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-07-29T20:04:20.064Z",
+    "lastUpdated": "2026-07-31T04:03:57.411Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Many users have reported EMI/RFI interference issues, but most attribute it to environmental factors or poor setup rather than the mic itself.",
+        "summary": "Real users have mixed views on EMI/RFI interference with the SM7B, with some suggesting it's a studio location issue and others pointing out potential grounding issues or cable problems.",
         "pros": [
-          "balanced cables can deal with interference on the trip from the mic to the pre"
+          "balanced cables can deal with any interference",
+          "hum is not usually an issue with dynamic mics"
         ],
         "cons": [
-          "EMI/RFI interference",
-          "cable and grounding issues",
-          "RFI (Radio Frequency Interference)"
+          "cable issues (e.g. termination of grounds)",
+          "RFI/EMI interference can be a problem in certain environments"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "RFI can be affected by location and proximity to emitters like cell towers.",
-          "Humbucker coils may not be effective against RF interference, but can help with low-frequency noise.",
-          "Grounding issues can cause EMI/RFI problems"
+          "Studio location can affect RFI/EMI interference",
+          "Grounding issues are a common cause of EMI/RFI problems with dynamic mics",
+          "Balanced cables can mitigate some interference issues"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -112,7 +112,7 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-07-29T20:04:20.058Z"
+        "scrapedAt": "2026-07-31T04:03:57.406Z"
       }
     ]
   },
@@ -288,26 +288,23 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-07-30T20:05:03.187Z",
+    "lastUpdated": "2026-07-31T04:03:57.411Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Some users recommend avoiding 1440p OLED monitors for work due to issues like text smearing, bad viewing angles, and fringing, while others have no issues with their own monitor.",
-        "pros": [
-          " brighter options exist",
-          "newer models may be better suited"
-        ],
+        "summary": "Users generally advise against buying a 1440p OLED monitor for work due to text smearing and poor viewing angles, but some have had no issues with their own unit.",
+        "pros": [],
         "cons": [
-          "text smearing from VA when scrolling",
-          "fringing from OLED subpixel layout",
-          "$400 is a bad deal for used monitor"
+          "smearing from VA when scrolling text",
+          "bad viewing angles",
+          "fringing (due to OLED's subpixel layout)"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "text fringing from VA and OLED monitors",
-          "burn-in issues with static elements like the taskbar",
-          " newer models may be better suited for work use"
+          "1440p OLED monitors may not be suitable for work due to text issues",
+          "Newer models might have improved panels, but used ones are still not recommended",
+          "Mini LED IPS 34"
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -315,7 +312,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-07-30T20:05:03.181Z"
+        "scrapedAt": "2026-07-31T04:03:57.405Z"
       }
     ]
   }
