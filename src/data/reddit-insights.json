@@ -180,26 +180,26 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-29T20:04:20.064Z",
+    "lastUpdated": "2026-07-31T20:01:27.425Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users recommend investing in lighting to improve the webcam's performance, with some also mentioning that the Logitech C920 is still a good option despite being old, and that dedicated cameras like GoPro or Elgato Facecam MK2 offer better image quality.",
+        "summary": "Many commenters agree that a good webcam for streaming under $100 requires some additional investment in lighting, and some recommend using a dedicated camera or a more expensive option for better image quality.",
         "pros": [
           "decent in low light",
           "auto tracking if you move around",
-          "built-in ring light"
+          "good for the price"
         ],
         "cons": [
           "low light is gonna be rough on any sub $100 cam",
-          "software is horrendous (Logitech)"
+          "software is horrendous"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Lighting can greatly improve the webcam's performance.",
-          "The Logitech C920 is still a good option despite being old.",
-          "Dedicated cameras like GoPro or Elgato Facecam MK2 offer better image quality."
+          "Extra lighting can make a big difference in webcam performance",
+          "Some commenters recommend using a dedicated camera or a more expensive option for better image quality",
+          "Adding lighting to an existing webcam can improve its overall performance"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -207,7 +207,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-29T20:04:20.055Z"
+        "scrapedAt": "2026-07-31T20:01:27.421Z"
       }
     ]
   },
