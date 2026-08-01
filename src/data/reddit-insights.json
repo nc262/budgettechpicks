@@ -154,25 +154,24 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-07-28T12:01:29.994Z",
+    "lastUpdated": "2026-08-01T20:03:58.131Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users generally like their SecretLab Titan Evo 2022 Gaming Chair setup, mentioning it's turning out well and is comfortable, but some have experienced design flaws in previous models.",
+        "summary": "Users generally express satisfaction with their Secretlab Titan Evo 2022 Gaming Chair experience, noting improvements over previous models and mentioning some design flaws have been addressed.",
         "pros": [
-          "comfortable",
-          "turning out well"
+          "Great specs",
+          "Improved quality over previous models",
+          "Comfortable"
         ],
         "cons": [
-          "design flaws in previous models",
-          "arm rest cracking"
+          "Design flaws in the first model"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "First one lasted 6 years and was still comfortable when handed down to the son.",
-          "I think that would look great.",
-          "Great specs especially with the 4090 FE! I would suggest you to keep your BIOS updated for the CPU!"
+          "Users value comfort and appreciate improvements in design",
+          "Some mention using high-end gaming components with their chairs"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -180,31 +179,31 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-07-28T12:01:29.986Z"
+        "scrapedAt": "2026-08-01T20:03:58.127Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-07-31T20:01:27.425Z",
+    "lastUpdated": "2026-08-01T20:03:58.131Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Many commenters agree that a good webcam for streaming under $100 requires some additional investment in lighting, and some recommend using a dedicated camera or a more expensive option for better image quality.",
+        "summary": "Real users think that a good webcam under $100 requires additional lighting setup to compensate for low light issues and some users recommend spending more on lights than on the camera itself.",
         "pros": [
-          "decent in low light",
-          "auto tracking if you move around",
-          "good for the price"
+          "decent",
+          "auto tracking",
+          "plug-and-play",
+          "good"
         ],
         "cons": [
-          "low light is gonna be rough on any sub $100 cam",
-          "software is horrendous"
+          "low light is rough",
+          "$100 may not be enough for good image quality in low light"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "Extra lighting can make a big difference in webcam performance",
-          "Some commenters recommend using a dedicated camera or a more expensive option for better image quality",
-          "Adding lighting to an existing webcam can improve its overall performance"
+          "Adding extra lighting can greatly improve the webcam's performance, especially in low light",
+          "Spending more on lights than the camera itself is a common recommendation"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -212,7 +211,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-07-31T20:01:27.421Z"
+        "scrapedAt": "2026-08-01T20:03:58.126Z"
       }
     ]
   },
@@ -293,25 +292,23 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-08-01T12:04:20.755Z",
+    "lastUpdated": "2026-08-01T20:03:58.131Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users generally advise against buying a 1440p QD-OLED monitor for work due to issues with text smearing, viewing angles, and burn-in, but some claim to have no issues with their own monitors.",
+        "summary": "Users caution against using 1440p OLED monitors for work due to text smearing, poor viewing angles, and burn-in issues, but some users have had good experiences with their own 1440p OLED monitors.",
         "pros": [
-          "newer models may address these issues"
+          "newer models may be better suited for work use"
         ],
         "cons": [
-          "text smearing from VA or OLED panels",
-          "bad viewing angles",
-          "burn-in"
+          "text fringing, poor viewing angles, burn-in, limited brightness",
+          "VA panels can cause text smearing when scrolling"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "1440p OLED monitors have text smearing and bad viewing angles",
-          "newer models may be better suited for work use",
-          "$400 is a poor price for the monitor"
+          "1440p OLED monitors may not be practical for work due to various issues",
+          "newer models with improved panels may address some of these concerns"
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -319,7 +316,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-08-01T12:04:20.749Z"
+        "scrapedAt": "2026-08-01T20:03:58.126Z"
       }
     ]
   }
