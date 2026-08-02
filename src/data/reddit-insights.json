@@ -1,22 +1,28 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-08-02T04:06:33.247Z",
+    "lastUpdated": "2026-08-02T20:04:31.184Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Discussed in r/buildapc — 3 comments on this thread.",
-        "pros": [],
+        "summary": "Users question the relevance of the device's power delivery, but acknowledge its suitability for connecting a SATA SSD to USB-C.",
+        "pros": [
+          "will work fine",
+          "standard SATA to USB controller"
+        ],
         "cons": [],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "900mAh is not applicable to this use case",
+          "standard SATA to USB controller has been around forever"
+        ],
         "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-08-02T04:06:33.238Z"
+        "scrapedAt": "2026-08-02T20:04:31.175Z"
       }
     ]
   },
@@ -85,45 +91,54 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-08-02T12:02:58.494Z",
+    "lastUpdated": "2026-08-02T20:04:31.184Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Discussed in r/audioengineering — 14 comments on this thread.",
-        "pros": [],
-        "cons": [],
+        "summary": "Users note that while some may experience EMI/RFI interference, it is often due to external factors such as nearby emitters or poor grounding, rather than a inherent issue with the SM7B microphone itself.",
+        "pros": [
+          "balanced cables can handle interference on the trip from the mic to the pre",
+          "the humbucker coil in dynamic mics can help reject low frequency inductive noise"
+        ],
+        "cons": [
+          "EMI/RFI interference can be a problem, especially near power strips or fluorescent lighting"
+        ],
         "sentiment": "neutral",
-        "key_insights": [],
+        "key_insights": [
+          "Proper grounding is key to preventing EMI/RFI interference.",
+          "The location and emitters nearby can cause issues with RFI.",
+          "Balanced cables can mitigate interference on the signal path."
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-08-02T12:02:58.487Z"
+        "scrapedAt": "2026-08-02T20:04:31.178Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-08-02T12:02:58.494Z",
+    "lastUpdated": "2026-08-02T20:04:31.184Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Users warn against buying counterfeit Audio-Technica ATH-M50x headphones on eBay, citing poor sound quality and potentially misleading marketing.",
+        "summary": "Redditors warn against buying counterfeit Audio-Technica ATH-M50x headphones on eBay, citing differences in appearance, build quality, and sound quality compared to genuine models.",
         "pros": [
           "They don't sound terrible"
         ],
         "cons": [
-          "Poor sound quality",
-          "Counterfeit (made to look like original)"
+          "Defective counterfeits",
+          "Not original (sold as such)",
+          "Worth around $50-$70 if marketed under their own brand"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "Counterfeits are sold as original Audio-Technica ATH-M50x headphones",
-          "The genuine model is considered superior in terms of sound quality",
-          "Some users have experience with 'airpod ripoffs' and don't mind them being non-original"
+          "Counterfeit headphones can be sold at lower prices",
+          "Genuine model sounds better than counterfeit ones"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -131,7 +146,7 @@
         "hasRealComments": true,
         "sourcePost": "Beware of Fake Audio-Technica ATH-M50x \"New\" and \"Open Box\" Headphones on eBay",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v8axhf/beware_of_fake_audiotechnica_athm50x_new_and_open/",
-        "scrapedAt": "2026-08-02T12:02:58.488Z"
+        "scrapedAt": "2026-08-02T20:04:31.179Z"
       }
     ]
   },
@@ -157,26 +172,25 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-08-02T12:02:58.494Z",
+    "lastUpdated": "2026-08-02T20:04:31.184Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Many users agree that a good webcam under $100 can be achieved by investing in lighting, with some recommending specific options like ring lights or dedicated cameras for improved image quality.",
+        "summary": "Users generally agree that a webcam under $100 has its compromises, especially in low light conditions, but with proper lighting setup, it can still deliver good results.",
         "pros": [
           "decent in low light",
           "auto tracking if you move around",
-          "good image quality",
-          "better with additional lighting"
+          "decent image quality"
         ],
         "cons": [
-          "low light is gonna be rough on any sub $100 cam tbh",
-          "software is horrendous (Logitech)"
+          "low light is gonna be rough on any sub $100 cam",
+          "software is horrendous"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Lighting can greatly improve webcam performance, especially in low-light conditions.",
-          "Some users swear by specific webcams like the Logitech C920 or EmeePixel for their image quality and features."
+          "Lighting setup can greatly improve the webcam's performance",
+          "Adding lighting to a $20 webcam can make it look much better"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -184,7 +198,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-08-02T12:02:58.487Z"
+        "scrapedAt": "2026-08-02T20:04:31.176Z"
       }
     ]
   },
@@ -265,24 +279,25 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-08-02T04:06:33.247Z",
+    "lastUpdated": "2026-08-02T20:04:31.184Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users warn against using a 1440p OLED monitor for work due to text smearing and viewing angle issues, recommending IPS displays instead.",
+        "summary": "Many commenters advise against buying a 1440p OLED monitor for work due to text smearing and viewing angle issues, while others share their positive experiences with similar monitors.",
         "pros": [
-          "faster",
-          "more resistant to burn-in"
+          "They just have so many issues that make them unsuitable for an"
         ],
         "cons": [
-          "text smearing from VA/VA-OLED panels",
-          "bad viewing angles",
-          "not very bright"
+          "Smearing from VA when scrolling text",
+          "Bad viewing angles",
+          "Fringing due to OLED panel layout"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "4k 27"
+          "1440p OLED monitors may not be ideal for work due to text smearing and viewing angle issues",
+          "Newer models with improved panels might address some of these concerns",
+          "$400 is considered a poor price for a used monitor"
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -290,7 +305,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-08-02T04:06:33.240Z"
+        "scrapedAt": "2026-08-02T20:04:31.177Z"
       }
     ]
   }
