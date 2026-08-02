@@ -1,27 +1,22 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-08-01T12:04:20.755Z",
+    "lastUpdated": "2026-08-02T04:06:33.247Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the power requirement of the 900mAh device for a SATA SSD and provide more information on the product's functionality.",
-        "pros": [
-          "It's just a standard SATA to USB controller, they've been around forever."
-        ],
+        "summary": "Discussed in r/buildapc — 3 comments on this thread.",
+        "pros": [],
         "cons": [],
-        "sentiment": "positive",
-        "key_insights": [
-          "900mAh is not applicable to this use case",
-          "The device will work fine as a standard SATA to USB controller"
-        ],
-        "recommended_by_users": true,
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-08-01T12:04:20.748Z"
+        "scrapedAt": "2026-08-02T04:06:33.238Z"
       }
     ]
   },
@@ -90,128 +85,86 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-08-01T12:04:20.755Z",
+    "lastUpdated": "2026-08-02T04:06:33.247Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users mention that EMI/RFI interference is a potential issue, but many attribute it to external factors such as location and cable quality, rather than the mic itself. Some users find that certain mics are more prone to interference.",
-        "pros": [
-          "balanced cables can deal with interference on the trip from the mic to the pre",
-          "the metal grille and body of the mic act as a faraday cage"
-        ],
-        "cons": [
-          "EMI/RFI interference is a potential issue, especially in noisy environments",
-          "some mics (like the SM57) are more prone to picking up interference",
-          "cable quality and ground termination issues can cause interference"
-        ],
+        "summary": "Discussed in r/audioengineering — 14 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "RFI interference depends on external factors such as location and cable quality",
-          "the mic itself is not typically the culprit for EMI/RFI interference",
-          "using a Faraday cage or proper grounding can help mitigate interference"
-        ],
+        "key_insights": [],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-08-01T12:04:20.750Z"
+        "scrapedAt": "2026-08-02T04:06:33.240Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-08-01T12:04:20.755Z",
+    "lastUpdated": "2026-08-02T04:06:33.247Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users warn against buying counterfeit Audio-Technica ATH-M50x headphones on eBay, citing issues with quality and authenticity.",
-        "pros": [
-          "They don't sound terrible",
-          "If they had been marketed under their own brand instead of pretending to be Audio-Technica ATH-M50x headphones, I'd say they'd probably be worth $50–70"
-        ],
-        "cons": [
-          "Counterfeits are deceptive and absolutely fake",
-          "They're definitely not on par with the genuine ATH-M50x",
-          "Sound worse than the Sony wireless headphones I bought used for about $20"
-        ],
-        "sentiment": "negative",
-        "key_insights": [
-          "One user mentions that the counterfeit headphones are 'garbage' and sound worse than other products.",
-          "Another user notes that marketing as 'original' is misleading, but has respect for airpod ripoffs.",
-          "Some users have trouble spotting counterfeits due to subtle differences"
-        ],
-        "recommended_by_users": true,
+        "summary": "Discussed in r/headphones — 13 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Beware of Fake Audio-Technica ATH-M50x \"New\" and \"Open Box\" Headphones on eBay",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v8axhf/beware_of_fake_audiotechnica_athm50x_new_and_open/",
-        "scrapedAt": "2026-08-01T12:04:20.751Z"
+        "scrapedAt": "2026-08-02T04:06:33.241Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-08-01T20:03:58.131Z",
+    "lastUpdated": "2026-08-02T04:06:33.247Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users generally express satisfaction with their Secretlab Titan Evo 2022 Gaming Chair experience, noting improvements over previous models and mentioning some design flaws have been addressed.",
-        "pros": [
-          "Great specs",
-          "Improved quality over previous models",
-          "Comfortable"
-        ],
-        "cons": [
-          "Design flaws in the first model"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "Users value comfort and appreciate improvements in design",
-          "Some mention using high-end gaming components with their chairs"
-        ],
-        "recommended_by_users": true,
+        "summary": "Discussed in r/battlestations — 24 comments on this thread.",
+        "pros": [],
+        "cons": [],
+        "sentiment": "neutral",
+        "key_insights": [],
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-08-01T20:03:58.127Z"
+        "scrapedAt": "2026-08-02T04:06:33.242Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-08-01T20:03:58.131Z",
+    "lastUpdated": "2026-08-02T04:06:33.247Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users think that a good webcam under $100 requires additional lighting setup to compensate for low light issues and some users recommend spending more on lights than on the camera itself.",
-        "pros": [
-          "decent",
-          "auto tracking",
-          "plug-and-play",
-          "good"
-        ],
-        "cons": [
-          "low light is rough",
-          "$100 may not be enough for good image quality in low light"
-        ],
+        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
+        "pros": [],
+        "cons": [],
         "sentiment": "neutral",
-        "key_insights": [
-          "Adding extra lighting can greatly improve the webcam's performance, especially in low light",
-          "Spending more on lights than the camera itself is a common recommendation"
-        ],
-        "recommended_by_users": true,
+        "key_insights": [],
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-08-01T20:03:58.126Z"
+        "scrapedAt": "2026-08-02T04:06:33.239Z"
       }
     ]
   },
@@ -292,23 +245,24 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-08-01T20:03:58.131Z",
+    "lastUpdated": "2026-08-02T04:06:33.247Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users caution against using 1440p OLED monitors for work due to text smearing, poor viewing angles, and burn-in issues, but some users have had good experiences with their own 1440p OLED monitors.",
+        "summary": "Users warn against using a 1440p OLED monitor for work due to text smearing and viewing angle issues, recommending IPS displays instead.",
         "pros": [
-          "newer models may be better suited for work use"
+          "faster",
+          "more resistant to burn-in"
         ],
         "cons": [
-          "text fringing, poor viewing angles, burn-in, limited brightness",
-          "VA panels can cause text smearing when scrolling"
+          "text smearing from VA/VA-OLED panels",
+          "bad viewing angles",
+          "not very bright"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "1440p OLED monitors may not be practical for work due to various issues",
-          "newer models with improved panels may address some of these concerns"
+          "4k 27"
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -316,7 +270,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-08-01T20:03:58.126Z"
+        "scrapedAt": "2026-08-02T04:06:33.240Z"
       }
     ]
   }
