@@ -85,7 +85,7 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-08-02T04:06:33.247Z",
+    "lastUpdated": "2026-08-02T12:02:58.494Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
@@ -101,28 +101,37 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-08-02T04:06:33.240Z"
+        "scrapedAt": "2026-08-02T12:02:58.487Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-08-02T04:06:33.247Z",
+    "lastUpdated": "2026-08-02T12:02:58.494Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Discussed in r/headphones — 13 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
+        "summary": "Users warn against buying counterfeit Audio-Technica ATH-M50x headphones on eBay, citing poor sound quality and potentially misleading marketing.",
+        "pros": [
+          "They don't sound terrible"
+        ],
+        "cons": [
+          "Poor sound quality",
+          "Counterfeit (made to look like original)"
+        ],
+        "sentiment": "negative",
+        "key_insights": [
+          "Counterfeits are sold as original Audio-Technica ATH-M50x headphones",
+          "The genuine model is considered superior in terms of sound quality",
+          "Some users have experience with 'airpod ripoffs' and don't mind them being non-original"
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Beware of Fake Audio-Technica ATH-M50x \"New\" and \"Open Box\" Headphones on eBay",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v8axhf/beware_of_fake_audiotechnica_athm50x_new_and_open/",
-        "scrapedAt": "2026-08-02T04:06:33.241Z"
+        "scrapedAt": "2026-08-02T12:02:58.488Z"
       }
     ]
   },
@@ -148,23 +157,34 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-08-02T04:06:33.247Z",
+    "lastUpdated": "2026-08-02T12:02:58.494Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Discussed in r/Twitch — 26 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Many users agree that a good webcam under $100 can be achieved by investing in lighting, with some recommending specific options like ring lights or dedicated cameras for improved image quality.",
+        "pros": [
+          "decent in low light",
+          "auto tracking if you move around",
+          "good image quality",
+          "better with additional lighting"
+        ],
+        "cons": [
+          "low light is gonna be rough on any sub $100 cam tbh",
+          "software is horrendous (Logitech)"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "Lighting can greatly improve webcam performance, especially in low-light conditions.",
+          "Some users swear by specific webcams like the Logitech C920 or EmeePixel for their image quality and features."
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-08-02T04:06:33.239Z"
+        "scrapedAt": "2026-08-02T12:02:58.487Z"
       }
     ]
   },
