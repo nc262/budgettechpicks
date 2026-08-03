@@ -91,25 +91,26 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-08-03T12:04:31.433Z",
+    "lastUpdated": "2026-08-03T20:02:02.916Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users report experiencing hiss with their Shure SM7B Broadcast Microphone, attributing it to environmental factors such as location and electrical interference, rather than issues with the mic itself.",
+        "summary": "Commenters report that the Shure SM7B microphone is prone to hiss, with some suggesting it may be caused by location-specific electro interference or poor cable quality.",
         "pros": [
-          "some users have used other microphones in similar situations without issue",
-          "dynamic mics are sensitive to environmental noise"
+          "The SM7B sounds good at home",
+          "Using a Sound Devices 664 with the SM7B results in the same loud hiss"
         ],
         "cons": [
-          "electrical interference from locations or equipment",
-          "cables and preamps may affect performance"
+          "The SM7B requires too much gain to become usable",
+          "Cable quality may be an issue",
+          "Hiss can be caused by location-specific electrical interference"
         ],
-        "sentiment": "neutral",
+        "sentiment": "negative",
         "key_insights": [
-          "Environmental factors, such as location and electrical interference, can cause hiss with the SM7B",
-          "The mic itself is not necessarily the source of the issue, but rather how it interacts with its environment",
-          "Using a different preamp or mixer may help reduce hiss"
+          "Location and environmental factors may contribute to the hiss",
+          "Dynamic microphones have a noise floor informed by their environment",
+          "Using a different preamp or mixer on location can affect performance"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -117,7 +118,7 @@
         "hasRealComments": true,
         "sourcePost": "Shure SM7b Hiss Puzzling Me",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1vcssxe/shure_sm7b_hiss_puzzling_me/",
-        "scrapedAt": "2026-08-03T12:04:31.427Z"
+        "scrapedAt": "2026-08-03T20:02:02.911Z"
       }
     ]
   },
@@ -152,48 +153,26 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-08-03T12:04:31.433Z",
+    "lastUpdated": "2026-08-03T20:02:02.916Z",
     "insights": [
-      {
-        "product": "Secretlab Titan Evo 2022 Gaming Chair",
-        "productSlug": "best-gaming-setups",
-        "summary": "Users share their setup and provide feedback on Secretlab chairs, with some mentioning design flaws in older models but overall being satisfied with their experience.",
-        "pros": [
-          "Great specs especially with the 4090 FE",
-          "First one lasted 6 years and it was still comfortable when I handed down to my son"
-        ],
-        "cons": [
-          "That doesn’t sound like a good quality chair…"
-        ],
-        "sentiment": "positive",
-        "key_insights": [
-          "Some design flaws were rectified in later models",
-          "Users appreciate the comfort and durability of Secretlab chairs"
-        ],
-        "recommended_by_users": true,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "Secret Lab Setup Coming Along",
-        "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-08-03T12:04:31.429Z"
-      },
       {
         "product": "Steam Deck OLED 512GB",
         "productSlug": "best-gaming-setups",
-        "summary": "Users think the Steam Deck OLED 512GB is a good deal, but some question its authenticity and argue against Valve locking or remotely securing the device.",
+        "summary": "Users think the Steam Deck OLED 512GB is a good deal and has some features, but also mention potential issues with locking the device or confusion over case variations.",
         "pros": [
-          "It's pretty obvious that its stolen",
-          "I would be extremely surprised if Valve was able to remotely lock Decks"
+          "It's a steal",
+          "Great deal",
+          "Can be upgraded to 1TB SSD"
         ],
         "cons": [
-          "Generic images and new Steam Deck posts are limited to 'Show Off Saturday'",
-          "Valve cannot. It's just a linux operating system."
+          "Factory sealed 1TB case is a two-part design that can be confusing",
+          "Valve cannot lock the device remotely"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "Some users think the device is stolen, but others argue it's a good deal",
-          "Valve can't lock or remotely secure the Steam Deck"
+          "Some users confirmed that the device is indeed stolen, while others think it's a good deal.",
+          "There might be confusion over the case variants and their compatibility with different storage capacities.",
+          "Valve cannot lock the Steam Deck remotely, according to some users."
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -201,31 +180,31 @@
         "hasRealComments": true,
         "sourcePost": "Steam deck oled steal",
         "sourceUrl": "https://www.reddit.com/r/SteamDeck/comments/1ve2xjx/steam_deck_oled_steal/",
-        "scrapedAt": "2026-08-03T12:04:31.429Z"
+        "scrapedAt": "2026-08-03T20:02:02.912Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-08-03T12:04:31.433Z",
+    "lastUpdated": "2026-08-03T20:02:02.916Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users generally agree that a good webcam for streaming can be found under $100, but they recommend investing in additional lighting to improve low-light performance and overall quality.",
+        "summary": "Real users recommend spending money on lighting to improve webcam quality, especially under $100, and suggest using a dedicated camera or alternative options like the Elgato Facecam MK2.",
         "pros": [
           "decent in low light",
-          "auto tracking if you move around",
-          "built-in ring light",
-          "good image quality"
+          "auto tracking",
+          "good image quality",
+          "can be used for more than streaming"
         ],
         "cons": [
-          "low light is gonna be rough on any sub $100 cam tbh",
-          "software is horrendous (Logitech)"
+          "old now",
+          "low light is gonna be rough without extra setup",
+          "software can be horrible"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Investing in additional lighting can greatly improve low-light performance",
-          "A good webcam for streaming can be found under $100, but it's worth spending extra on lights"
+          "Using a dedicated camera or alternative options like the Elgato Facecam MK2 can provide better image quality."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -233,7 +212,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-08-03T12:04:31.426Z"
+        "scrapedAt": "2026-08-03T20:02:02.911Z"
       }
     ]
   },
