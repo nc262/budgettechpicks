@@ -91,24 +91,24 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-08-02T20:04:31.184Z",
+    "lastUpdated": "2026-08-03T04:02:41.789Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users note that while some may experience EMI/RFI interference, it is often due to external factors such as nearby emitters or poor grounding, rather than a inherent issue with the SM7B microphone itself.",
+        "summary": "Real users report EMI/RFI interference issues with microphones, but attribute it to their studio environment and improper grounding, rather than the mic itself.",
         "pros": [
-          "balanced cables can handle interference on the trip from the mic to the pre",
-          "the humbucker coil in dynamic mics can help reject low frequency inductive noise"
+          "balanced cables can deal with most interference on the trip from the mic to the pre"
         ],
         "cons": [
-          "EMI/RFI interference can be a problem, especially near power strips or fluorescent lighting"
+          "EMI/RFI interference",
+          "Grounding issues"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Proper grounding is key to preventing EMI/RFI interference.",
-          "The location and emitters nearby can cause issues with RFI.",
-          "Balanced cables can mitigate interference on the signal path."
+          "RFI interference depends on the studio location and nearby emitters.",
+          "Balanced cables can mitigate EMI/RFI interference.",
+          "Grounding issues are a common cause of EMI/RFI interference."
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -116,7 +116,7 @@
         "hasRealComments": true,
         "sourcePost": "Nobody talks about EMI / RFI interference!",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-08-02T20:04:31.178Z"
+        "scrapedAt": "2026-08-03T04:02:41.785Z"
       }
     ]
   },
@@ -151,46 +151,55 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-08-02T04:06:33.247Z",
+    "lastUpdated": "2026-08-03T04:02:41.789Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Discussed in r/battlestations — 24 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
-        "recommended_by_users": false,
+        "summary": "Users share their positive experiences with setting up their gaming stations, including their Secretlab Titan Evo 2022 chairs, and provide some technical specifications of their rigs.",
+        "pros": [
+          "Great specs especially with the 4090 FE!",
+          "First one lasted 6 years and it was still comfortable when I handed down to my son."
+        ],
+        "cons": [
+          "That doesn't sound like a good quality chair…"
+        ],
+        "sentiment": "positive",
+        "key_insights": [
+          "The Secretlab Titan Evo 2022 has been a reliable choice for users, with one lasting up to 6 years.",
+          "Users appreciate the high-end specs of their gaming rigs, including powerful GPUs and fast storage options."
+        ],
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-08-02T04:06:33.242Z"
+        "scrapedAt": "2026-08-03T04:02:41.786Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-08-02T20:04:31.184Z",
+    "lastUpdated": "2026-08-03T04:02:41.789Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users generally agree that a webcam under $100 has its compromises, especially in low light conditions, but with proper lighting setup, it can still deliver good results.",
+        "summary": "Many users agree that a webcam under $100 may have limitations, especially in low light conditions, but with proper lighting setup or additional equipment, it can still deliver decent results.",
         "pros": [
-          "decent in low light",
-          "auto tracking if you move around",
-          "decent image quality"
+          "decent",
+          "good",
+          "worse than others"
         ],
         "cons": [
-          "low light is gonna be rough on any sub $100 cam",
-          "software is horrendous"
+          "low light is gonna be rough",
+          "$100 is gonna be a compromise"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "Lighting setup can greatly improve the webcam's performance",
-          "Adding lighting to a $20 webcam can make it look much better"
+          " investing in good lighting makes a huge difference",
+          "some users swear by the Logitech C920 despite its age",
+          "adding extra equipment like a dedicated camera can improve image quality"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -198,7 +207,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-08-02T20:04:31.176Z"
+        "scrapedAt": "2026-08-03T04:02:41.785Z"
       }
     ]
   },
