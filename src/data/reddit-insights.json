@@ -1,20 +1,20 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-08-02T20:04:31.184Z",
+    "lastUpdated": "2026-08-03T12:04:31.433Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the relevance of the device's power delivery, but acknowledge its suitability for connecting a SATA SSD to USB-C.",
+        "summary": "Users questioned the relevance of 900mAh power rating to the device's functionality, but ultimately found it suitable for connecting a SATA SSD.",
         "pros": [
           "will work fine",
-          "standard SATA to USB controller"
+          "just a standard SATA to USB controller"
         ],
         "cons": [],
         "sentiment": "neutral",
         "key_insights": [
-          "900mAh is not applicable to this use case",
-          "standard SATA to USB controller has been around forever"
+          "Device has a standard SATA to USB controller",
+          "Power rating of 900mAh is not applicable"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -22,7 +22,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-08-02T20:04:31.175Z"
+        "scrapedAt": "2026-08-03T12:04:31.426Z"
       }
     ]
   },
@@ -91,32 +91,33 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-08-03T04:02:41.789Z",
+    "lastUpdated": "2026-08-03T12:04:31.433Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Real users report EMI/RFI interference issues with microphones, but attribute it to their studio environment and improper grounding, rather than the mic itself.",
+        "summary": "Users report experiencing hiss with their Shure SM7B Broadcast Microphone, attributing it to environmental factors such as location and electrical interference, rather than issues with the mic itself.",
         "pros": [
-          "balanced cables can deal with most interference on the trip from the mic to the pre"
+          "some users have used other microphones in similar situations without issue",
+          "dynamic mics are sensitive to environmental noise"
         ],
         "cons": [
-          "EMI/RFI interference",
-          "Grounding issues"
+          "electrical interference from locations or equipment",
+          "cables and preamps may affect performance"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "RFI interference depends on the studio location and nearby emitters.",
-          "Balanced cables can mitigate EMI/RFI interference.",
-          "Grounding issues are a common cause of EMI/RFI interference."
+          "Environmental factors, such as location and electrical interference, can cause hiss with the SM7B",
+          "The mic itself is not necessarily the source of the issue, but rather how it interacts with its environment",
+          "Using a different preamp or mixer may help reduce hiss"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "Nobody talks about EMI / RFI interference!",
-        "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1u2z1v2/nobody_talks_about_emi_rfi_interference/",
-        "scrapedAt": "2026-08-03T04:02:41.785Z"
+        "sourcePost": "Shure SM7b Hiss Puzzling Me",
+        "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1vcssxe/shure_sm7b_hiss_puzzling_me/",
+        "scrapedAt": "2026-08-03T12:04:31.427Z"
       }
     ]
   },
@@ -151,23 +152,23 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-08-03T04:02:41.789Z",
+    "lastUpdated": "2026-08-03T12:04:31.433Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users share their positive experiences with setting up their gaming stations, including their Secretlab Titan Evo 2022 chairs, and provide some technical specifications of their rigs.",
+        "summary": "Users share their setup and provide feedback on Secretlab chairs, with some mentioning design flaws in older models but overall being satisfied with their experience.",
         "pros": [
-          "Great specs especially with the 4090 FE!",
-          "First one lasted 6 years and it was still comfortable when I handed down to my son."
+          "Great specs especially with the 4090 FE",
+          "First one lasted 6 years and it was still comfortable when I handed down to my son"
         ],
         "cons": [
-          "That doesn't sound like a good quality chair…"
+          "That doesn’t sound like a good quality chair…"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "The Secretlab Titan Evo 2022 has been a reliable choice for users, with one lasting up to 6 years.",
-          "Users appreciate the high-end specs of their gaming rigs, including powerful GPUs and fast storage options."
+          "Some design flaws were rectified in later models",
+          "Users appreciate the comfort and durability of Secretlab chairs"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -175,31 +176,56 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-08-03T04:02:41.786Z"
+        "scrapedAt": "2026-08-03T12:04:31.429Z"
+      },
+      {
+        "product": "Steam Deck OLED 512GB",
+        "productSlug": "best-gaming-setups",
+        "summary": "Users think the Steam Deck OLED 512GB is a good deal, but some question its authenticity and argue against Valve locking or remotely securing the device.",
+        "pros": [
+          "It's pretty obvious that its stolen",
+          "I would be extremely surprised if Valve was able to remotely lock Decks"
+        ],
+        "cons": [
+          "Generic images and new Steam Deck posts are limited to 'Show Off Saturday'",
+          "Valve cannot. It's just a linux operating system."
+        ],
+        "sentiment": "neutral",
+        "key_insights": [
+          "Some users think the device is stolen, but others argue it's a good deal",
+          "Valve can't lock or remotely secure the Steam Deck"
+        ],
+        "recommended_by_users": false,
+        "commentCount": 12,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "Steam deck oled steal",
+        "sourceUrl": "https://www.reddit.com/r/SteamDeck/comments/1ve2xjx/steam_deck_oled_steal/",
+        "scrapedAt": "2026-08-03T12:04:31.429Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-08-03T04:02:41.789Z",
+    "lastUpdated": "2026-08-03T12:04:31.433Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Many users agree that a webcam under $100 may have limitations, especially in low light conditions, but with proper lighting setup or additional equipment, it can still deliver decent results.",
+        "summary": "Users generally agree that a good webcam for streaming can be found under $100, but they recommend investing in additional lighting to improve low-light performance and overall quality.",
         "pros": [
-          "decent",
-          "good",
-          "worse than others"
+          "decent in low light",
+          "auto tracking if you move around",
+          "built-in ring light",
+          "good image quality"
         ],
         "cons": [
-          "low light is gonna be rough",
-          "$100 is gonna be a compromise"
+          "low light is gonna be rough on any sub $100 cam tbh",
+          "software is horrendous (Logitech)"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          " investing in good lighting makes a huge difference",
-          "some users swear by the Logitech C920 despite its age",
-          "adding extra equipment like a dedicated camera can improve image quality"
+          "Investing in additional lighting can greatly improve low-light performance",
+          "A good webcam for streaming can be found under $100, but it's worth spending extra on lights"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -207,7 +233,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-08-03T04:02:41.785Z"
+        "scrapedAt": "2026-08-03T12:04:31.426Z"
       }
     ]
   },
@@ -288,25 +314,23 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-08-02T20:04:31.184Z",
+    "lastUpdated": "2026-08-03T12:04:31.433Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Many commenters advise against buying a 1440p OLED monitor for work due to text smearing and viewing angle issues, while others share their positive experiences with similar monitors.",
-        "pros": [
-          "They just have so many issues that make them unsuitable for an"
-        ],
+        "summary": "Real users recommend against buying a 1440p OLED monitor for work due to text smearing, bad viewing angles, and burn-in issues, but may be suitable for gaming or lower usage.",
+        "pros": [],
         "cons": [
-          "Smearing from VA when scrolling text",
-          "Bad viewing angles",
-          "Fringing due to OLED panel layout"
+          "smearing from VA when scrolling text",
+          "bad viewing angles",
+          "fringing"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "1440p OLED monitors may not be ideal for work due to text smearing and viewing angle issues",
-          "Newer models with improved panels might address some of these concerns",
-          "$400 is considered a poor price for a used monitor"
+          "1440p OLED monitors are not ideal for work due to smearing and bad viewing angles.",
+          "Burn-in issues can be a problem with OLEDs, especially with static elements like the taskbar.",
+          "Newer models or alternative technologies (like Mini LED IPS) may address these issues."
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -314,7 +338,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-08-02T20:04:31.177Z"
+        "scrapedAt": "2026-08-03T12:04:31.427Z"
       }
     ]
   }
