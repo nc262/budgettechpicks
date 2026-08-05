@@ -58,35 +58,33 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-08-01T04:04:49.407Z",
+    "lastUpdated": "2026-08-05T04:04:35.725Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users generally think the EchoMuse project is a success, with some mentioning ease of setup and others highlighting their own successes with integrating Alexa into Home Assistant. However, there are also concerns about usability and complexity.",
+        "summary": "Users are excited about the EchoMuse project, which aims to replace the Alexa on the Echo Dot Gen 2 with a custom firmware. Some users report success and improvements, while others encounter issues or wait for future updates.",
         "pros": [
-          "easy to set up",
-          "rooting process was straightforward",
-          "worked as expected after some issues"
+          "enhancements such as streaming TTS and music ducking make it feel genuinely usable",
+          "the device can be rooted to create a Voice Satellite",
+          "some users are able to update the device's firmware successfully"
         ],
         "cons": [
-          "some people had trouble with the rooting process",
-          "SETUP.md became their journal due to complexity",
-          "one person mentioned a couple of niggles during the rooting process"
+          "some devices have issues with updates or fail to update at all",
+          "the streaming TTS and music ducking may cause noticeable battery/heat situations"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "The rooting process can be complex, but it's manageable with some guidance.",
-          "The EchoMuse project requires careful consideration of security and engineering quality.",
-          "Ease of setup is an important factor for users."
+          "one of the main improvements is the reduction in latency and enhancement of speech recognition accuracy",
+          "users appreciate the ability to customize their experience with the EchoMuse firmware"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "EchoMuse - Echo Dot Gen 2 Voice Assistant",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1v5zd07/echomuse_echo_dot_gen_2_voice_assistant/",
-        "scrapedAt": "2026-08-01T04:04:49.400Z"
+        "sourcePost": "UPDATE: EchoMuse - Alexa Replacement for the Echo Dot Gen 2",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1ve6ane/update_echomuse_alexa_replacement_for_the_echo/",
+        "scrapedAt": "2026-08-05T04:04:35.721Z"
       }
     ]
   },
@@ -295,26 +293,24 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-08-04T20:04:57.395Z",
+    "lastUpdated": "2026-08-05T04:04:35.725Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users advise against buying a 1440p OLED monitor for work due to issues like text smearing and bad viewing angles, but some users with newer models or specific usage habits have not experienced these problems.",
+        "summary": "Users generally advise against buying a 1440p QD-OLED monitor for work due to text smearing, bad viewing angles, and burn-in issues, but acknowledge that it may be suitable for casual gaming use.",
         "pros": [
-          "Use of higher-gen panels",
-          "Dimming static elements"
+          "may be suitable for casual gaming"
         ],
         "cons": [
-          "Text smearing from VA",
-          "Bad viewing angles",
-          "Burn-in susceptibility"
+          "text smearing",
+          "bad viewing angles",
+          "burn-in issues"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "Newer models with current-gen panels may fix some issues",
-          "Using dark mode and adjusting brightness can mitigate burn-in",
-          "Mini LED IPS 34"
+          "QD-OLED panels have text fringing and bad viewing angles",
+          "$400 is a bad deal for a used monitor"
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -322,7 +318,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-08-04T20:04:57.389Z"
+        "scrapedAt": "2026-08-05T04:04:35.722Z"
       }
     ]
   }
