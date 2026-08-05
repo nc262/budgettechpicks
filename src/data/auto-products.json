@@ -1,5 +1,43 @@
 [
   {
+    "asin": "B0FC5SJNQX",
+    "name": "Logitech MX Master 4",
+    "price": "$119.99",
+    "imageUrl": "https://m.media-amazon.com/images/I/61z3ENJubZL._AC_UY218_.jpg",
+    "rating": 4.3,
+    "reviewCount": 1772,
+    "articleSlug": "best-gaming-gear-under-50",
+    "description": "The Logitech MX Master 4 is a recommended mouse due to its price drop and positive community sentiment, with many users having purchased it at a discounted rate.",
+    "pros": [
+      "Affordable after discount",
+      "Community recommends it"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/buildapcsales/comments/1v8o5t1/mouse_amazon_logitech_mx_master_4_and_m350s/",
+    "sourceSubreddit": "buildapcsales",
+    "mentions": 1,
+    "addedAt": "2026-08-05T07:01:32.774Z"
+  },
+  {
+    "asin": "B0FDKR293G",
+    "name": "Bose QC Ultra",
+    "price": "$369.99",
+    "imageUrl": "https://m.media-amazon.com/images/I/51revx-zToL._AC_UY218_.jpg",
+    "rating": 4.3,
+    "reviewCount": 2488,
+    "articleSlug": "best-audio-gear",
+    "description": "Some users have reported issues with the product's audio quality and recommend avoiding it.",
+    "pros": [
+      "Supports LDAC / aptX codecs for certain devices",
+      "Amazon rating: 4.3 stars across 2488 ratings"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/BudgetAudiophile/comments/1vej7q3/acoustune_atx001_tested_across_3_earphones_3/",
+    "sourceSubreddit": "BudgetAudiophile",
+    "mentions": 1,
+    "addedAt": "2026-08-05T07:02:03.892Z"
+  },
+  {
     "asin": "B07BQC7GNL",
     "name": "Fosi mini amp",
     "price": "$79.99",
