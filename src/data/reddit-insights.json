@@ -58,34 +58,33 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-08-05T12:04:34.677Z",
+    "lastUpdated": "2026-08-06T04:04:49.205Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users have mixed opinions, with some praising the EchoMuse as a reliable Alexa replacement for the Echo Dot Gen 2, while others mention issues such as syncing audio and device updates.",
+        "summary": "Users praise the EchoMuse project for replacing Alexa on the Echo Dot Gen 2, but highlight some limitations and areas for improvement, such as battery/heat situation and lack of support for normal Echo models.",
         "pros": [
-          "streaming TTS and music ducking are the changes that make this feel genuinely usable",
-          "The streaming TTS and music ducking are huge",
-          "It would be great to see wake-to-first-word latency plus false and missed wake counts per device in the dashboard"
+          "speaker output would be redirected automagically",
+          "streaming TTS and music ducking are the changes that make this feel genuinely usable"
         ],
         "cons": [
-          "one of my dots will not update, any tips?",
-          "I haven't actually tried it, but I assumed it would just work with speaker output redirected automagically",
-          "The ducking instead of pausing is huge, that was always the most annoying part of using an echo with any assistant"
+          "one of my dots will not update",
+          "battery/heat situation running the wake word model on-device"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "One user found a solution to their non-updating dot by correcting its firmware slot symlink and retried the update.",
-          "The EchoMuse's music ducking feature was particularly praised as making it feel 'genuinely usable'."
+          "One of the users' dot had issues updating to the new firmware",
+          "Users appreciate the improvements in audio quality, such as ducking instead of pausing",
+          "There is a concern about the battery/heat situation running the wake word model on-device"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "UPDATE: EchoMuse - Alexa Replacement for the Echo Dot Gen 2",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1ve6ane/update_echomuse_alexa_replacement_for_the_echo/",
-        "scrapedAt": "2026-08-05T12:04:34.671Z"
+        "scrapedAt": "2026-08-06T04:04:49.197Z"
       }
     ]
   },
@@ -294,25 +293,22 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-08-05T12:04:34.677Z",
+    "lastUpdated": "2026-08-06T04:04:49.205Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users generally agree that a 1440p QD-OLED monitor may not be suitable for work due to text smearing and bad viewing angles, but some users have had good experiences with the monitor.",
-        "pros": [
-          "can get away with it on newer models"
-        ],
+        "summary": "Most users advise against buying the Alienware AW3423DWF 1440p QD-OLED for work due to its limited brightness, subpixel layout issues and viewing angle problems, making IPS displays more suitable.",
+        "pros": [],
         "cons": [
-          "text smearing",
+          "text fringing",
           "bad viewing angles",
-          "burn-in issues"
+          "not bright enough"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "QD-OLED panels have text fringing and poor viewing angles",
-          "newer models may fix some of these issues",
-          "Mini LED IPS monitors are a better option for work use"
+          "OLEDs don't have a proper subpixel layout so fringing is a thing.",
+          "OLEDs aren't very bright and can cause burn-in."
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -320,7 +316,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-08-05T12:04:34.673Z"
+        "scrapedAt": "2026-08-06T04:04:49.200Z"
       }
     ]
   }
