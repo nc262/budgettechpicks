@@ -1,20 +1,21 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-08-04T12:02:21.327Z",
+    "lastUpdated": "2026-08-06T20:04:23.467Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the relevance of a power measure for a SATA SSD and confirm the device works fine with their specific storage drives.",
+        "summary": "Users question the reliability of a 900mAh power source for a SATA SSD, but ultimately consider it sufficient and confirm compatibility with the UGREEN 9-in-1 USB-C Hub.",
         "pros": [
+          "considered sufficient",
           "works fine"
         ],
         "cons": [],
         "sentiment": "positive",
         "key_insights": [
-          "The device uses a standard SATA to USB controller",
-          "900mAh is not applicable for this use case",
-          "Specific storage drives (WD 3D BLUE and SanDisk Plus) are compatible"
+          "Power source measure is not applicable to this use case",
+          "Device is a standard SATA to USB controller",
+          "Confirmed compatibility with UGREEN 9-in-1 USB-C Hub"
         ],
         "recommended_by_users": true,
         "commentCount": 3,
@@ -22,7 +23,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-08-04T12:02:21.320Z"
+        "scrapedAt": "2026-08-06T20:04:23.462Z"
       }
     ]
   },
