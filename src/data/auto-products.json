@@ -1,5 +1,24 @@
 [
   {
+    "asin": "B087LXCTFJ",
+    "name": "Logitech G PRO X Superlight 2 SE",
+    "price": "$109.99",
+    "imageUrl": "https://m.media-amazon.com/images/I/51uy8gOG-iL._AC_UY218_.jpg",
+    "rating": 4.6,
+    "reviewCount": 11451,
+    "articleSlug": "best-gaming-gear-under-50",
+    "description": "The Logitech G PRO X Superlight Wireless Gaming Mouse is a popular choice among users, with an average rating of 4.6 stars across 11451 ratings on Amazon.",
+    "pros": [
+      "Ultra-Lightweight",
+      "25600 DPI"
+    ],
+    "cons": [],
+    "sourceUrl": "https://reddit.com/r/buildapcsales/comments/1vaeuk5/mouse_logitech_g_pro_x_superlight_2_se_wireless/",
+    "sourceSubreddit": "buildapcsales",
+    "mentions": 1,
+    "addedAt": "2026-08-06T07:00:47.291Z"
+  },
+  {
     "asin": "B0FC5SJNQX",
     "name": "Logitech MX Master 4",
     "price": "$119.99",
@@ -207,24 +226,5 @@
     "sourceSubreddit": "MechanicalKeyboards",
     "mentions": 1,
     "addedAt": "2026-06-23T07:01:01.643Z"
-  },
-  {
-    "asin": "B0C3H8NVJV",
-    "name": "Akko Creamy Yellow Pro v5",
-    "price": "$10.39",
-    "imageUrl": "https://m.media-amazon.com/images/I/51TJPE0E64L._AC_UY218_.jpg",
-    "rating": 4.7,
-    "reviewCount": 846,
-    "articleSlug": "best-gaming-gear-under-50",
-    "description": "Recommended for its high-quality feel and sound, this keyboard features the Akko Creamy Yellow Pro v5 switches.",
-    "pros": [
-      "Feels like the nicest build",
-      "Sounds nice"
-    ],
-    "cons": [],
-    "sourceUrl": "https://reddit.com/r/MechanicalKeyboards/comments/1tmgp3j/latest_build_athena_1800/",
-    "sourceSubreddit": "MechanicalKeyboards",
-    "mentions": 1,
-    "addedAt": "2026-06-13T07:01:08.577Z"
   }
 ]
