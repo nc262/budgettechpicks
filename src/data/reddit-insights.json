@@ -59,33 +59,34 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-08-06T04:04:49.205Z",
+    "lastUpdated": "2026-08-07T04:04:22.631Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users praise the EchoMuse project for replacing Alexa on the Echo Dot Gen 2, but highlight some limitations and areas for improvement, such as battery/heat situation and lack of support for normal Echo models.",
+        "summary": "Users have mixed experiences with EchoMuse, an Alexa replacement for the Echo Dot Gen 2, but some praise its features and improvements over the original, while others face issues like updates and compatibility.",
         "pros": [
-          "speaker output would be redirected automagically",
-          "streaming TTS and music ducking are the changes that make this feel genuinely usable"
+          "streaming TTS and music ducking are the changes that make this feel genuinely usable",
+          "one of my dots will not update, any tips?",
+          "The streaming TTS and music ducking are the changes that make this feel genuinely usable"
         ],
         "cons": [
           "one of my dots will not update",
-          "battery/heat situation running the wake word model on-device"
+          "the normal Echo 2nd gen is not supported (only the dot)?"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "One of the users' dot had issues updating to the new firmware",
-          "Users appreciate the improvements in audio quality, such as ducking instead of pausing",
-          "There is a concern about the battery/heat situation running the wake word model on-device"
+          "EchoMuse's improvements over the original Echo Dot Gen 2",
+          "users are eager to see further updates and enhancements",
+          "compatibility issues with some devices"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "UPDATE: EchoMuse - Alexa Replacement for the Echo Dot Gen 2",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1ve6ane/update_echomuse_alexa_replacement_for_the_echo/",
-        "scrapedAt": "2026-08-06T04:04:49.197Z"
+        "scrapedAt": "2026-08-07T04:04:22.627Z"
       }
     ]
   },
