@@ -1,29 +1,28 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-08-06T20:04:23.467Z",
+    "lastUpdated": "2026-08-07T12:03:41.023Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the reliability of a 900mAh power source for a SATA SSD, but ultimately consider it sufficient and confirm compatibility with the UGREEN 9-in-1 USB-C Hub.",
+        "summary": "Users question the relevance of power delivery capacity for SATA SSD usage and mention that the device will work with a specific WD and SanDisk SSD.",
         "pros": [
-          "considered sufficient",
-          "works fine"
+          "will work fine",
+          "standard SATA to USB controller"
         ],
         "cons": [],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "Power source measure is not applicable to this use case",
-          "Device is a standard SATA to USB controller",
-          "Confirmed compatibility with UGREEN 9-in-1 USB-C Hub"
+          "power delivery capacity is not relevant for SATA SSD",
+          "device works with specific SSD models"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-08-06T20:04:23.462Z"
+        "scrapedAt": "2026-08-07T12:03:41.016Z"
       }
     ]
   },
@@ -296,22 +295,22 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-08-06T04:04:49.205Z",
+    "lastUpdated": "2026-08-07T12:03:41.023Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Most users advise against buying the Alienware AW3423DWF 1440p QD-OLED for work due to its limited brightness, subpixel layout issues and viewing angle problems, making IPS displays more suitable.",
+        "summary": "Users warn against buying a 1440p QD-OLED monitor for work due to issues like text smearing, poor viewing angles, and burn-in problems.",
         "pros": [],
         "cons": [
-          "text fringing",
-          "bad viewing angles",
-          "not bright enough"
+          "text smearing",
+          "poor viewing angles",
+          "burn-in"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "OLEDs don't have a proper subpixel layout so fringing is a thing.",
-          "OLEDs aren't very bright and can cause burn-in."
+          "QD-OLED panels don't have a proper subpixel layout causing fringing",
+          "1440p OLED is not suitable for work due to its limitations"
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -319,7 +318,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-08-06T04:04:49.200Z"
+        "scrapedAt": "2026-08-07T12:03:41.017Z"
       }
     ]
   }
