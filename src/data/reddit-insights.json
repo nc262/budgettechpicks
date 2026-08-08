@@ -1,11 +1,11 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-08-07T12:03:41.023Z",
+    "lastUpdated": "2026-08-08T20:04:31.741Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the relevance of power delivery capacity for SATA SSD usage and mention that the device will work with a specific WD and SanDisk SSD.",
+        "summary": "Users question the relevance of 900mAh power delivery for a SATA SSD and verify the product's compatibility with specific drives.",
         "pros": [
           "will work fine",
           "standard SATA to USB controller"
@@ -13,16 +13,17 @@
         "cons": [],
         "sentiment": "neutral",
         "key_insights": [
-          "power delivery capacity is not relevant for SATA SSD",
-          "device works with specific SSD models"
+          "power delivery of 900mAh is not applicable for this use case",
+          "the device is a standard SATA to USB controller",
+          "users will be able to use the product with specific drives (WD 3D BLUE and SanDisk Plus)"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-08-07T12:03:41.016Z"
+        "scrapedAt": "2026-08-08T20:04:31.733Z"
       }
     ]
   },
@@ -89,26 +90,25 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-08-04T12:02:21.327Z",
+    "lastUpdated": "2026-08-08T20:04:31.741Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users report hiss issues with the Shure SM7B microphone, suggesting it may be related to gain staging, room conditions, or electromagnetic interference (EMI), while others recommend using inline preamps to mitigate noise.",
+        "summary": "Users are experiencing hiss with the Shure SM7B microphone and are seeking advice on how to troubleshoot and resolve the issue.",
         "pros": [
-          "great on loud things",
-          "good quality"
+          "booster like sE DM1 might solve the problem",
+          "inline preamps can help reduce noise"
         ],
         "cons": [
-          "gain hungry",
-          "terrible microphone for spoken word applications",
-          "needs an inline preamp due to sensitivity to electromagnetic interference (EMI)"
+          "gain hungry dynamic microphones",
+          "electro interference at recording location"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Gain staging is crucial to avoid hiss with the SM7B.",
-          "The SM7B is sensitive to electromagnetic interference (EMI), which can cause hiss.",
-          "Using an inline preamp, such as a Cloudlifter Mini, can help mitigate noise and hiss."
+          "electro interference at recording location may be causing hiss",
+          "gain staging is crucial in reducing hiss",
+          "inline preamps can help reduce noise"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -116,31 +116,30 @@
         "hasRealComments": true,
         "sourcePost": "Shure SM7b Hiss Puzzling Me",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1vcssxe/shure_sm7b_hiss_puzzling_me/",
-        "scrapedAt": "2026-08-04T12:02:21.323Z"
+        "scrapedAt": "2026-08-08T20:04:31.736Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-08-06T12:03:59.278Z",
+    "lastUpdated": "2026-08-08T20:04:31.741Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Many users warn against buying counterfeit Audio-Technica ATH-M50x headphones on eBay, citing poor quality and deceptive marketing. Some have personal experiences with both genuine and fake models, highlighting the differences.",
+        "summary": "Commenters warn against buying counterfeit Audio-Technica ATH-M50x headphones on eBay, citing differences in appearance and performance compared to genuine models.",
         "pros": [
-          "They don't sound terrible",
-          "If they were marketed under their own brand, they might be worth $50–70"
+          "They don't sound terrible"
         ],
         "cons": [
-          "Defective counterfeits",
-          "Sound worse than the genuine ATH-M50x",
-          "Garbage, sound worse than Sony wireless headphones"
+          "Counterfeit",
+          "Deceptive",
+          "Price too low"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "Counterfeits should be clearly labeled as such",
-          "Comparison of genuine and fake models can reveal differences in quality and sound",
-          "Fake products can be difficult to distinguish from real ones without proper expertise or knowledge"
+          "Counterfeits can be difficult to spot without expert knowledge",
+          "Fakes may not sound as good as genuine models, even if marketed similarly",
+          "Some users have had negative experiences with Audio-Technica products"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -148,31 +147,31 @@
         "hasRealComments": true,
         "sourcePost": "Beware of Fake Audio-Technica ATH-M50x \"New\" and \"Open Box\" Headphones on eBay",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v8axhf/beware_of_fake_audiotechnica_athm50x_new_and_open/",
-        "scrapedAt": "2026-08-06T12:03:59.269Z"
+        "scrapedAt": "2026-08-08T20:04:31.737Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-08-06T12:03:59.278Z",
+    "lastUpdated": "2026-08-08T20:04:31.741Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users have mixed opinions on their SecretLab Titan Evo 2022 Gaming Chair experience, with some mentioning design flaws and comfort issues in previous models, while others praise the chair's quality and the user's build setup.",
+        "summary": "Users have a generally positive experience with their Secretlab Titan Evo 2022 Gaming Chair, but also mention some design flaws and hardware issues in previous models. They praise the chair's build quality and durability.",
         "pros": [
-          "great specs",
-          "good quality chair",
-          "first one lasted 6 years"
+          "Great specs",
+          "Build quality and durability",
+          "I had to get them to replace the whole arm when the arm rest started cracking"
         ],
         "cons": [
-          "design flaws",
-          "comfort issues"
+          "Some design flaws in previous models",
+          "Arm rest cracked after a short period of use"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "Previous SecretLab chairs had design flaws which have been rectified in newer models.",
-          "Comfort is a concern for some users.",
-          "The user's build setup is impressive but not directly related to the chair itself."
+          "Previous models had some design flaws, but later models have rectified these issues",
+          "Build quality and durability are key strengths",
+          "Users have experienced hardware issues with the arm rest in previous models"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -180,32 +179,33 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-08-06T12:03:59.270Z"
+        "scrapedAt": "2026-08-08T20:04:31.737Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-08-04T12:02:21.327Z",
+    "lastUpdated": "2026-08-08T20:04:31.741Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users generally recommend spending under $100 on a webcam and allocating the rest of the budget to lighting, as low light performance can be compromised without extra setup. The Logitech C920 is still considered a good option despite being old.",
+        "summary": "Users recommend spending under $100 on a webcam and investing in good lighting to improve streaming quality, with some recommending specific options like the Logitech C920s HD Pro Webcam or Elgato Facecam MK2.",
         "pros": [
           "decent in low light",
-          "auto tracking",
-          "good image quality"
+          "auto tracking if you move around",
+          "good for the price",
+          "can be improved with lighting"
         ],
         "cons": [
-          "low light performance is rough under $100",
-          "software can be horrendous",
-          "old model (but still decent)"
+          "low light will always be a bit of a compromise without extra setup",
+          "software is horrendous (Logitech)",
+          "old design"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Low light performance can be improved with additional lighting.",
-          "A good webcam can make a big difference in stream quality, but lighting is also crucial.",
-          "The Logitech C920 may not be the best option for those looking for cutting-edge technology."
+          "Investing in good lighting can greatly improve streaming quality",
+          "Low light performance can be improved with additional lighting or camera upgrades",
+          "The Logitech C920s HD Pro Webcam is a recommended option for its price"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -213,7 +213,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-08-04T12:02:21.321Z"
+        "scrapedAt": "2026-08-08T20:04:31.735Z"
       }
     ]
   },
