@@ -1,22 +1,22 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-08-09T04:02:17.365Z",
+    "lastUpdated": "2026-08-09T12:01:51.941Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the relevance of 900mAh for a SATA SSD and provide links to purchase the UGREEN 9-in-1 USB-C Hub.",
+        "summary": "Users question the relevance of the device's 900mAh rating to its use with a SATA SSD and express skepticism about its usefulness.",
         "pros": [
-          "works fine",
-          "standard SATA to USB controller"
+          "will work fine"
         ],
         "cons": [
-          "not sure where the '900mAH' is coming from"
+          "not sure where the \"900mAH\" is coming from",
+          "That's a measure of power delivered over time and is not applicable to this use case"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "The 9-in-1 hub is a standard SATA to USB controller, and users don't see any issues with its performance.",
-          "The power measurement (900mAh) seems irrelevant for this use case."
+          "Device has a SATA to USB controller",
+          "Relevance of 900mAh rating questioned"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -24,7 +24,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-08-09T04:02:17.357Z"
+        "scrapedAt": "2026-08-09T12:01:51.933Z"
       }
     ]
   },
@@ -156,26 +156,24 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-08-08T20:04:31.741Z",
+    "lastUpdated": "2026-08-09T12:01:51.941Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users have a generally positive experience with their Secretlab Titan Evo 2022 Gaming Chair, but also mention some design flaws and hardware issues in previous models. They praise the chair's build quality and durability.",
+        "summary": "Users share their positive experience with SecretLab chairs, mentioning comfortable durability and high-quality specs for their gaming setup.",
         "pros": [
-          "Great specs",
-          "Build quality and durability",
-          "I had to get them to replace the whole arm when the arm rest started cracking"
+          "comfortable",
+          "high-quality specs",
+          "durable"
         ],
         "cons": [
-          "Some design flaws in previous models",
-          "Arm rest cracked after a short period of use"
+          "design flaws in older models"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Previous models had some design flaws, but later models have rectified these issues",
-          "Build quality and durability are key strengths",
-          "Users have experienced hardware issues with the arm rest in previous models"
+          "The first model had design flaws, but later models have rectified these issues.",
+          "Users value the comfort and durability of SecretLab chairs."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -183,32 +181,31 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-08-08T20:04:31.737Z"
+        "scrapedAt": "2026-08-09T12:01:51.935Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-08-09T04:02:17.365Z",
+    "lastUpdated": "2026-08-09T12:01:51.941Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users recommend spending more money on lighting to improve low light performance, and some prefer dedicated cameras or GoPros for better image quality.",
+        "summary": "Real users recommend spending money on lighting to improve webcam quality, with some recommending specific products like the Logitech C920s HD Pro Webcam or the Emeet Pixy for decent performance under $100.",
         "pros": [
-          "decent",
-          "gets the job done",
-          "worth looking at",
-          "good with auto tracking"
+          "decent in low light",
+          "auto tracking",
+          "good for the price",
+          "decent quality"
         ],
         "cons": [
-          "old",
-          "low light is rough under $100",
-          "software is horrendous (Logitech)"
+          "rough in low light",
+          "software is horrendous (referring to Logitech's software)"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "Low light performance can be a compromise without extra setup.",
-          "Lighting makes a huge difference in webcam performance."
+          "Low light performance can be compromised without extra lighting setup.",
+          "A good webcam alone may not be enough, and lighting can make a big difference in quality."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -216,7 +213,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-08-09T04:02:17.358Z"
+        "scrapedAt": "2026-08-09T12:01:51.934Z"
       }
     ]
   },
