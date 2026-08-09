@@ -60,33 +60,58 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-08-08T04:04:38.930Z",
+    "lastUpdated": "2026-08-09T20:04:50.201Z",
     "insights": [
       {
         "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users are generally excited about the EchoMuse update for the Echo Dot 5G, praising features like synced audio and updated firmware, but also mentioning some issues with updates and compatibility.",
+        "summary": "Users are discussing an update for the Echo Dot Gen 2, dubbed 'EchoMuse', which aims to replace Alexa with a new AI assistant. The update has been successful for some users, but others have encountered issues.",
         "pros": [
           "synced audio",
-          "streaming TTS and music ducking"
+          "streaming TTS and music ducking",
+          "ability to root the device"
         ],
         "cons": [
-          "issues with updates",
+          "battery/heat situation running the wake word model on-device",
           "one of my dots will not update"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "implementation of sendspin client for synced audio",
-          "usefulness of streaming TTS and music ducking",
-          "update issues with specific devices"
+          "the update requires more involved setup than expected",
+          "streaming TTS and music ducking are significant improvements",
+          "battery/heat issues may be a concern for users"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "UPDATE: EchoMuse - Alexa Replacement for the Echo Dot Gen 2",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1ve6ane/update_echomuse_alexa_replacement_for_the_echo/",
-        "scrapedAt": "2026-08-08T04:04:38.924Z"
+        "scrapedAt": "2026-08-09T20:04:50.195Z"
+      },
+      {
+        "product": "Philips Hue White & Color Starter Kit",
+        "productSlug": "best-smart-home-under-50",
+        "summary": "Users share their experiences with tunable kitchen cabinet lighting and provide suggestions for powering it, such as using an LED driver and a short plug extension cord.",
+        "pros": [
+          "Countertop under-cabinet lighting is on my to do list",
+          "Nice. I used screws to mount the power supply under the recessed part of the cabinet",
+          "Thanks! Saved on my 'to-do' list"
+        ],
+        "cons": [],
+        "sentiment": "positive",
+        "key_insights": [
+          "Using an LED driver and a short plug extension cord for invisible mounting is a good idea",
+          "Powering under-cabinet lighting without visible mess requires creativity",
+          "Smart feeders like BirdNET-Go or Birdbuddy are a relevant consideration"
+        ],
+        "recommended_by_users": true,
+        "commentCount": 5,
+        "relevant": true,
+        "hasRealComments": true,
+        "sourcePost": "My Tunable Kitchen Cabinet Lighting",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1viij0l/my_tunable_kitchen_cabinet_lighting/",
+        "scrapedAt": "2026-08-09T20:04:50.195Z"
       }
     ]
   },
@@ -294,22 +319,23 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-08-08T04:04:38.930Z",
+    "lastUpdated": "2026-08-09T20:04:50.201Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users warn against buying a 1440p OLED monitor for work due to issues like text smearing, bad viewing angles, and burn-in, but one commenter mentions they don't experience these problems with their own device.",
+        "summary": "Users generally advise against buying a 1440p QD-OLED monitor for work due to text smearing, bad viewing angles, and potential burn-in issues.",
         "pros": [],
         "cons": [
-          "Text smearing from VA when scrolling text",
+          "Text smearing from VA panels",
           "Bad viewing angles",
-          "Burn-in"
+          "Potential burn-in issues"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "OLED monitors may not be suitable for work due to text smearing and bad viewing angles",
-          "Newer models with improved panels might alleviate some of these issues"
+          "OLED FOMO is a myth for work purposes due to text smearing and bad viewing angles.",
+          "Newer models might address some of these issues, but used ones are not recommended.",
+          "Mini LED IPS 34"
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -317,7 +343,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-08-08T04:04:38.926Z"
+        "scrapedAt": "2026-08-09T20:04:50.197Z"
       }
     ]
   }
