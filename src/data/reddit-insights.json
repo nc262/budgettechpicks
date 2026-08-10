@@ -119,26 +119,24 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-08-09T04:02:17.365Z",
+    "lastUpdated": "2026-08-10T12:01:42.794Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Users warn others about counterfeit Audio-Technica ATH-M50x headphones on eBay, citing poor quality and deceptive marketing.",
+        "summary": "Real users express concern over counterfeit Audio-Technica ATH-M50x headphones sold on eBay, with some having purchased them without realizing they were fake. They emphasize the importance of authenticity and provide insights into how to identify counterfeit products.",
         "pros": [
-          "- They don't sound terrible",
-          "- If marketed under their own brand instead of Audio-Technica, they might be worth $50-$70",
-          "- In some cases, the fakes may not be noticeably bad compared to non-genuine options"
+          "They don't sound terrible"
         ],
         "cons": [
-          "- Counterfeit quality and potentially harmful consequences for sellers",
-          "- Counterfeit headphones do not sound as good as genuine ones (owner of genuine model)",
-          "- Fake products can mislead consumers with false marketing claims"
+          "Counterfeit",
+          "Ppl selling counterfeits should get like 5y in prison mandatory",
+          "The genuine model ayyyy jkjk"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "Counterfeiters may modify details to make their fake headphones harder to spot, but users have noticed internal driver differences.",
-          "Some users think that if counterfeit manufacturers sold their own branded products instead of pretending to be Audio-Technica, they'd probably be worth less."
+          "Counterfeit products are sold as original on eBay, raising concerns about authenticity and quality.",
+          "Some users have purchased counterfeit headphones without realizing they were fake or understanding how to identify them."
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -146,7 +144,7 @@
         "hasRealComments": true,
         "sourcePost": "Beware of Fake Audio-Technica ATH-M50x \"New\" and \"Open Box\" Headphones on eBay",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v8axhf/beware_of_fake_audiotechnica_athm50x_new_and_open/",
-        "scrapedAt": "2026-08-09T04:02:17.360Z"
+        "scrapedAt": "2026-08-10T12:01:42.790Z"
       }
     ]
   },
@@ -181,26 +179,26 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-08-09T12:01:51.941Z",
+    "lastUpdated": "2026-08-10T12:01:42.794Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users recommend spending money on lighting to improve webcam quality, with some recommending specific products like the Logitech C920s HD Pro Webcam or the Emeet Pixy for decent performance under $100.",
+        "summary": "Users generally agree that a good webcam for streaming under $100 requires additional lighting to overcome low light issues, and some recommend spending extra on lighting over upgrading the webcam itself.",
         "pros": [
           "decent in low light",
           "auto tracking",
-          "good for the price",
-          "decent quality"
+          "gets the job done"
         ],
         "cons": [
-          "rough in low light",
-          "software is horrendous (referring to Logitech's software)"
+          "low light is gonna be rough",
+          "old technology now"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "Low light performance can be compromised without extra lighting setup.",
-          "A good webcam alone may not be enough, and lighting can make a big difference in quality."
+          "Low light performance can be a compromise without extra lighting.",
+          "Lighting makes a huge difference, with ring lights being particularly recommended.",
+          "The C920 is still a good option but may require additional spending on lighting."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -208,7 +206,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-08-09T12:01:51.934Z"
+        "scrapedAt": "2026-08-10T12:01:42.789Z"
       }
     ]
   },
