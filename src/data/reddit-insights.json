@@ -60,83 +60,53 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-08-09T20:04:50.201Z",
+    "lastUpdated": "2026-08-10T04:03:33.058Z",
     "insights": [
-      {
-        "product": "Amazon Echo Dot (5th Gen)",
-        "productSlug": "best-smart-home-under-50",
-        "summary": "Users are discussing an update for the Echo Dot Gen 2, dubbed 'EchoMuse', which aims to replace Alexa with a new AI assistant. The update has been successful for some users, but others have encountered issues.",
-        "pros": [
-          "synced audio",
-          "streaming TTS and music ducking",
-          "ability to root the device"
-        ],
-        "cons": [
-          "battery/heat situation running the wake word model on-device",
-          "one of my dots will not update"
-        ],
-        "sentiment": "neutral",
-        "key_insights": [
-          "the update requires more involved setup than expected",
-          "streaming TTS and music ducking are significant improvements",
-          "battery/heat issues may be a concern for users"
-        ],
-        "recommended_by_users": false,
-        "commentCount": 12,
-        "relevant": true,
-        "hasRealComments": true,
-        "sourcePost": "UPDATE: EchoMuse - Alexa Replacement for the Echo Dot Gen 2",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1ve6ane/update_echomuse_alexa_replacement_for_the_echo/",
-        "scrapedAt": "2026-08-09T20:04:50.195Z"
-      },
       {
         "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users share their experiences with tunable kitchen cabinet lighting and provide suggestions for powering it, such as using an LED driver and a short plug extension cord.",
+        "summary": "Users appreciate the tunable kitchen cabinet lighting idea and offer suggestions for smart feeder projects, sharing their experiences with power supply and mounting options.",
         "pros": [
-          "Countertop under-cabinet lighting is on my to do list",
-          "Nice. I used screws to mount the power supply under the recessed part of the cabinet",
-          "Thanks! Saved on my 'to-do' list"
+          "nice",
+          "saved on my “to-do” list"
         ],
         "cons": [],
         "sentiment": "positive",
         "key_insights": [
-          "Using an LED driver and a short plug extension cord for invisible mounting is a good idea",
-          "Powering under-cabinet lighting without visible mess requires creativity",
-          "Smart feeders like BirdNET-Go or Birdbuddy are a relevant consideration"
+          "countertop under-cabinet lighting is a great idea",
+          "users are interested in DIY smart feeder projects with BirdNET-Go and home assistant integration",
+          "there are various power supply options available, including the LightingWill LED Driver"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 5,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "My Tunable Kitchen Cabinet Lighting",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1viij0l/my_tunable_kitchen_cabinet_lighting/",
-        "scrapedAt": "2026-08-09T20:04:50.195Z"
+        "scrapedAt": "2026-08-10T04:03:33.053Z"
       }
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-08-09T04:02:17.365Z",
+    "lastUpdated": "2026-08-10T04:03:33.058Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users think hiss issues with Shure SM7B may be related to room elements, gain staging, or external interference, and some recommend using an inline preamp like sE DM1 to solve the problem.",
+        "summary": "Reddit users are experiencing hiss with their Shure SM7B Broadcast Microphone, and some think it might be due to location-based interference or gain staging issues.",
         "pros": [
-          "use of sE DM1 booster",
-          "recommended by users",
-          "inline preamps can make a difference"
+          "Using an inline preamp like the sE DM1 can solve the problem",
+          "Dynamic microphones are sensitive to electromagnetic interference"
         ],
         "cons": [
-          "hiss issues in general",
-          "gain staging challenges",
-          "noisy environment"
+          "The mic is 'gain hungry' and may require additional gain staging",
+          "Hiss might be caused by environmental factors such as LED lighting"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Dynamic microphones like SM7B are sensitive to electro interference from the environment.",
-          "Gain staging is crucial, and reducing gain can resolve hiss but also lowers mic level.",
-          "Location-based factors can significantly impact hiss levels."
+          "Location-based interference can have a significant impact on the amount of hiss",
+          "Gain staging issues can affect the microphone's performance",
+          "Using an inline preamp can reduce electromagnetic interference"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -144,7 +114,7 @@
         "hasRealComments": true,
         "sourcePost": "Shure SM7b Hiss Puzzling Me",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1vcssxe/shure_sm7b_hiss_puzzling_me/",
-        "scrapedAt": "2026-08-09T04:02:17.359Z"
+        "scrapedAt": "2026-08-10T04:03:33.054Z"
       }
     ]
   },
