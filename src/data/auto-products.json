@@ -1,5 +1,46 @@
 [
   {
+    "asin": "B0D14N2QZF",
+    "name": "Aula F75 Pro",
+    "price": "$69.99",
+    "imageUrl": "https://m.media-amazon.com/images/I/61MC8BK0w0L._AC_UY218_.jpg",
+    "rating": 4.6,
+    "reviewCount": 1725,
+    "articleSlug": "best-gaming-setups",
+    "description": "The AULA F75 Pro Wireless Mechanical Keyboard is recommended for its durability in water-resistant conditions.",
+    "pros": [
+      "durable",
+      "water-resistant"
+    ],
+    "cons": [
+      "vulnerable to flooding",
+      "sensitive to external moisture"
+    ],
+    "sourceUrl": "https://reddit.com/r/pcmasterrace/comments/1viuo9r/rain_rain_go_away_come_again_another_day/",
+    "sourceSubreddit": "pcmasterrace",
+    "mentions": 1,
+    "addedAt": "2026-08-10T07:01:00.348Z"
+  },
+  {
+    "asin": "B0CQXKMFHY",
+    "name": "Redragon M916",
+    "price": "$44.99",
+    "imageUrl": "https://m.media-amazon.com/images/I/51EBglsGc+L._AC_UY218_.jpg",
+    "rating": 4.5,
+    "reviewCount": 711,
+    "articleSlug": "best-gaming-setups",
+    "description": "Some users have experienced issues with water damage to their keyboard and mouse after a rainstorm.",
+    "pros": [],
+    "cons": [
+      "Water damage risk",
+      "Possible remapping key issues (not explicitly stated as a con, but mentioned in the context of DPI)"
+    ],
+    "sourceUrl": "https://reddit.com/r/pcmasterrace/comments/1viuo9r/rain_rain_go_away_come_again_another_day/",
+    "sourceSubreddit": "pcmasterrace",
+    "mentions": 1,
+    "addedAt": "2026-08-10T07:01:08.530Z"
+  },
+  {
     "asin": "B087LXCTFJ",
     "name": "Logitech G PRO X Superlight 2 SE",
     "price": "$109.99",
