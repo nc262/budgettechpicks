@@ -119,24 +119,25 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-08-10T12:01:42.794Z",
+    "lastUpdated": "2026-08-10T20:01:39.508Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users express concern over counterfeit Audio-Technica ATH-M50x headphones sold on eBay, with some having purchased them without realizing they were fake. They emphasize the importance of authenticity and provide insights into how to identify counterfeit products.",
+        "summary": "Commenters warn against buying counterfeit Audio-Technica ATH-M50x headphones on eBay, citing issues with quality and authenticity.",
         "pros": [
           "They don't sound terrible"
         ],
         "cons": [
-          "Counterfeit",
-          "Ppl selling counterfeits should get like 5y in prison mandatory",
-          "The genuine model ayyyy jkjk"
+          "Counterfeits",
+          "Not on par with genuine ATH-M50x",
+          "Fake price"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "Counterfeit products are sold as original on eBay, raising concerns about authenticity and quality.",
-          "Some users have purchased counterfeit headphones without realizing they were fake or understanding how to identify them."
+          "Purchasers can easily be misled by fake listings",
+          "Even if not marketed as original, counterfeiters may still try to pass them off as authentic",
+          "Counterfeit quality is unlikely to match the genuine product"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -144,7 +145,7 @@
         "hasRealComments": true,
         "sourcePost": "Beware of Fake Audio-Technica ATH-M50x \"New\" and \"Open Box\" Headphones on eBay",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v8axhf/beware_of_fake_audiotechnica_athm50x_new_and_open/",
-        "scrapedAt": "2026-08-10T12:01:42.790Z"
+        "scrapedAt": "2026-08-10T20:01:39.503Z"
       }
     ]
   },
