@@ -88,25 +88,25 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-08-10T04:03:33.058Z",
+    "lastUpdated": "2026-08-11T04:01:42.034Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Reddit users are experiencing hiss with their Shure SM7B Broadcast Microphone, and some think it might be due to location-based interference or gain staging issues.",
+        "summary": "Reddit users discussing issues with hiss on their Shure SM7B microphone, suggesting location-based interference and the need for an inline preamp as potential solutions.",
         "pros": [
-          "Using an inline preamp like the sE DM1 can solve the problem",
-          "Dynamic microphones are sensitive to electromagnetic interference"
+          "Using a booster like the sE DM1 could solve the problem",
+          "Investing in an inline preamp like the Cloudlifter mini or sE DM1 can help reduce noise"
         ],
         "cons": [
-          "The mic is 'gain hungry' and may require additional gain staging",
-          "Hiss might be caused by environmental factors such as LED lighting"
+          "Dynamic mics are sensitive to EMI and location-based interference",
+          "Reducing gain can make the mic level too quiet"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Location-based interference can have a significant impact on the amount of hiss",
-          "Gain staging issues can affect the microphone's performance",
-          "Using an inline preamp can reduce electromagnetic interference"
+          "Hiss is likely caused by location-based interference or EMI",
+          "Gain staging affects hiss levels, reducing gain can be counterproductive",
+          "Inline preamps like Cloudlifter mini or sE DM1 can help reduce noise"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -114,7 +114,7 @@
         "hasRealComments": true,
         "sourcePost": "Shure SM7b Hiss Puzzling Me",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1vcssxe/shure_sm7b_hiss_puzzling_me/",
-        "scrapedAt": "2026-08-10T04:03:33.054Z"
+        "scrapedAt": "2026-08-11T04:01:42.030Z"
       }
     ]
   },
