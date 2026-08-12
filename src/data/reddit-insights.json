@@ -1,22 +1,21 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-08-09T12:01:51.941Z",
+    "lastUpdated": "2026-08-12T04:04:42.519Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the relevance of the device's 900mAh rating to its use with a SATA SSD and express skepticism about its usefulness.",
+        "summary": "Users questioned the relevance of the 900mAh power rating for a SATA SSD, and one user provided a link to the product",
         "pros": [
-          "will work fine"
+          "It's just a standard SATA to USB controller"
         ],
         "cons": [
-          "not sure where the \"900mAH\" is coming from",
-          "That's a measure of power delivered over time and is not applicable to this use case"
+          "900mAh That's a measure of power delivered over time and is not applicable to this use case."
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Device has a SATA to USB controller",
-          "Relevance of 900mAh rating questioned"
+          "The 900mAh rating is irrelevant for a SATA SSD",
+          "The device is a standard SATA to USB controller"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -24,7 +23,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-08-09T12:01:51.933Z"
+        "scrapedAt": "2026-08-12T04:04:42.511Z"
       }
     ]
   },
@@ -150,56 +149,59 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-08-09T12:01:51.941Z",
+    "lastUpdated": "2026-08-12T04:04:42.519Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users share their positive experience with SecretLab chairs, mentioning comfortable durability and high-quality specs for their gaming setup.",
+        "summary": "Real users have mixed opinions on their SecretLab Titan Evo 2022 Gaming Chair setup, with some praising its quality and comfort while others mention design flaws and needing repairs.",
         "pros": [
-          "comfortable",
-          "high-quality specs",
-          "durable"
+          "First one lasted 6 years and it was still comfortable when I handed down to my son",
+          "Great specs especially with the 4090 FE!",
+          "I think that would look great"
         ],
         "cons": [
-          "design flaws in older models"
+          "That doesn’t sound like a good quality chair…"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "key_insights": [
-          "The first model had design flaws, but later models have rectified these issues.",
-          "Users value the comfort and durability of SecretLab chairs."
+          "Users mention that previous models had design flaws, but later versions have rectified these issues.",
+          "Some users have experienced repairs or needed to replace parts (e.g. the arm rest).",
+          "The quality of a SecretLab chair is questionable."
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-08-09T12:01:51.935Z"
+        "scrapedAt": "2026-08-12T04:04:42.515Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-08-10T12:01:42.794Z",
+    "lastUpdated": "2026-08-12T04:04:42.519Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users generally agree that a good webcam for streaming under $100 requires additional lighting to overcome low light issues, and some recommend spending extra on lighting over upgrading the webcam itself.",
+        "summary": "Users generally agree that a webcam under $100 has limitations, especially in low light conditions, but can still provide decent performance with proper lighting setup.",
         "pros": [
           "decent in low light",
-          "auto tracking",
-          "gets the job done"
+          "auto tracking if you move around",
+          "great for the price",
+          "looks good with additional lighting"
         ],
         "cons": [
-          "low light is gonna be rough",
-          "old technology now"
+          "low light is gonna be rough on any sub $100 cam",
+          "software can be horrendous (Logitech)",
+          "always a bit of a compromise without extra setup"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "Low light performance can be a compromise without extra lighting.",
-          "Lighting makes a huge difference, with ring lights being particularly recommended.",
-          "The C920 is still a good option but may require additional spending on lighting."
+          "Additional lighting makes a huge difference in webcam performance",
+          "The C920 is still a good option, but its age might show",
+          "Improving eye-level framing can make streams more engaging"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -207,7 +209,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-08-10T12:01:42.789Z"
+        "scrapedAt": "2026-08-12T04:04:42.512Z"
       }
     ]
   },
@@ -288,23 +290,24 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-08-09T20:04:50.201Z",
+    "lastUpdated": "2026-08-12T04:04:42.519Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users generally advise against buying a 1440p QD-OLED monitor for work due to text smearing, bad viewing angles, and potential burn-in issues.",
-        "pros": [],
+        "summary": "Users generally advise against using a 1440p QD-OLED monitor for work due to its limited brightness and text fringing issues, with some recommending IPS displays instead.",
+        "pros": [
+          "Some users may be able to tolerate it"
+        ],
         "cons": [
-          "Text smearing from VA panels",
-          "Bad viewing angles",
-          "Potential burn-in issues"
+          "Text fringing",
+          "Limited brightness",
+          "Burn-in susceptibility"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "OLED FOMO is a myth for work purposes due to text smearing and bad viewing angles.",
-          "Newer models might address some of these issues, but used ones are not recommended.",
-          "Mini LED IPS 34"
+          "OLEDs don't have a proper subpixel layout so fringing is a thing",
+          "4k 27"
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -312,7 +315,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-08-09T20:04:50.197Z"
+        "scrapedAt": "2026-08-12T04:04:42.512Z"
       }
     ]
   }
