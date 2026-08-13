@@ -1,21 +1,21 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-08-12T04:04:42.519Z",
+    "lastUpdated": "2026-08-13T04:02:31.926Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users questioned the relevance of the 900mAh power rating for a SATA SSD, and one user provided a link to the product",
+        "summary": "Users question the relevance of power rating for a SATA SSD, with one user providing a link to the product on Amazon.",
         "pros": [
-          "It's just a standard SATA to USB controller"
+          "It's just a standard SATA to USB controller",
+          "it will work fine"
         ],
-        "cons": [
-          "900mAh That's a measure of power delivered over time and is not applicable to this use case."
-        ],
+        "cons": [],
         "sentiment": "neutral",
         "key_insights": [
-          "The 900mAh rating is irrelevant for a SATA SSD",
-          "The device is a standard SATA to USB controller"
+          "Power rating of 900mAh is not applicable for SATA SSD use case",
+          "Users have successfully used the device with various SATA SSDs",
+          "No specific issues or concerns mentioned"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -23,7 +23,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-08-12T04:04:42.511Z"
+        "scrapedAt": "2026-08-13T04:02:31.918Z"
       }
     ]
   },
@@ -87,33 +87,32 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-08-11T04:01:42.034Z",
+    "lastUpdated": "2026-08-13T04:02:31.926Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Reddit users discussing issues with hiss on their Shure SM7B microphone, suggesting location-based interference and the need for an inline preamp as potential solutions.",
+        "summary": "Users experience hiss with Shure SM7B microphone and debate possible causes, including location-based interference and gain staging issues.",
         "pros": [
-          "Using a booster like the sE DM1 could solve the problem",
-          "Investing in an inline preamp like the Cloudlifter mini or sE DM1 can help reduce noise"
+          "A booster like sE DM1 might solve the problem",
+          "Cloudlifter inline preamp can help reduce noise"
         ],
         "cons": [
-          "Dynamic mics are sensitive to EMI and location-based interference",
-          "Reducing gain can make the mic level too quiet"
+          "Gain on preamps needs to be reduced to eliminate hiss"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Hiss is likely caused by location-based interference or EMI",
-          "Gain staging affects hiss levels, reducing gain can be counterproductive",
-          "Inline preamps like Cloudlifter mini or sE DM1 can help reduce noise"
+          "Location-based interference is a possible cause of the hiss",
+          "Gain staging issues may lead to excessive gain and hiss",
+          "Booster and inline preamp can help reduce noise from external sources"
         ],
-        "recommended_by_users": true,
+        "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Shure SM7b Hiss Puzzling Me",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1vcssxe/shure_sm7b_hiss_puzzling_me/",
-        "scrapedAt": "2026-08-11T04:01:42.030Z"
+        "scrapedAt": "2026-08-13T04:02:31.919Z"
       }
     ]
   },
@@ -139,59 +138,58 @@
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-08-12T04:04:42.519Z",
+    "lastUpdated": "2026-08-13T04:02:31.926Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Real users have mixed opinions on their SecretLab Titan Evo 2022 Gaming Chair setup, with some praising its quality and comfort while others mention design flaws and needing repairs.",
+        "summary": "Users generally have a positive sentiment towards their SecretLab Titan Evo 2022 Gaming Chairs, with one user mentioning design flaws in earlier models but being satisfied with the current version.",
         "pros": [
-          "First one lasted 6 years and it was still comfortable when I handed down to my son",
-          "Great specs especially with the 4090 FE!",
-          "I think that would look great"
+          "Great specs",
+          "High-quality components used (e.g., Intel i7-13700k, GeForce 4090 Founders Edition)",
+          "Comfortable even after 6 years"
         ],
         "cons": [
-          "That doesn’t sound like a good quality chair…"
+          "Some design flaws in earlier models"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "key_insights": [
-          "Users mention that previous models had design flaws, but later versions have rectified these issues.",
-          "Some users have experienced repairs or needed to replace parts (e.g. the arm rest).",
-          "The quality of a SecretLab chair is questionable."
+          "Users appreciate the comfort and quality of their chairs",
+          "Design flaws have been rectified in later SecretLab chair models",
+          "High-performance components are used in many setups"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-08-12T04:04:42.515Z"
+        "scrapedAt": "2026-08-13T04:02:31.922Z"
       }
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-08-12T04:04:42.519Z",
+    "lastUpdated": "2026-08-13T04:02:31.926Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users generally agree that a webcam under $100 has limitations, especially in low light conditions, but can still provide decent performance with proper lighting setup.",
+        "summary": "Users generally agree that under $100, a good webcam can be found with proper lighting setup, but some consider the C920 to be old and not ideal for streaming.",
         "pros": [
           "decent in low light",
-          "auto tracking if you move around",
-          "great for the price",
-          "looks good with additional lighting"
+          "auto tracking",
+          "good image quality",
+          " Leaves you money left over for a light"
         ],
         "cons": [
-          "low light is gonna be rough on any sub $100 cam",
-          "software can be horrendous (Logitech)",
-          "always a bit of a compromise without extra setup"
+          "low light is rough on sub $100 cams",
+          "old technology",
+          "software can be horrendous"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Additional lighting makes a huge difference in webcam performance",
-          "The C920 is still a good option, but its age might show",
-          "Improving eye-level framing can make streams more engaging"
+          "Proper lighting setup can greatly improve the webcam's performance.",
+          "The C920 is still a good option, but may not be ideal for streaming due to its age."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -199,7 +197,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-08-12T04:04:42.512Z"
+        "scrapedAt": "2026-08-13T04:02:31.918Z"
       }
     ]
   },
