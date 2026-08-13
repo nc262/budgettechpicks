@@ -59,30 +59,32 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-08-10T04:03:33.058Z",
+    "lastUpdated": "2026-08-13T12:04:05.093Z",
     "insights": [
       {
         "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users appreciate the tunable kitchen cabinet lighting idea and offer suggestions for smart feeder projects, sharing their experiences with power supply and mounting options.",
+        "summary": "Users appreciate the idea of under-cabinet lighting and share their own experiences with powering it, while also discussing related projects like smart bird feeders.",
         "pros": [
-          "nice",
-          "saved on my “to-do” list"
+          "Nice",
+          "Countertop under-cabinet lighting is on my to do list"
         ],
-        "cons": [],
+        "cons": [
+          "Relying on the cloud for the smart feeders"
+        ],
         "sentiment": "positive",
         "key_insights": [
-          "countertop under-cabinet lighting is a great idea",
-          "users are interested in DIY smart feeder projects with BirdNET-Go and home assistant integration",
-          "there are various power supply options available, including the LightingWill LED Driver"
+          "Consider using a LightingWill LED Driver power supply",
+          "Mounting can be done with screws and the tabs on the power supply",
+          "Smart bird feeders could be a great DIY project for home automation enthusiasts"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 5,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "My Tunable Kitchen Cabinet Lighting",
         "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1viij0l/my_tunable_kitchen_cabinet_lighting/",
-        "scrapedAt": "2026-08-10T04:03:33.053Z"
+        "scrapedAt": "2026-08-13T12:04:05.086Z"
       }
     ]
   },
@@ -117,23 +119,34 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-08-12T12:01:38.559Z",
+    "lastUpdated": "2026-08-13T12:04:05.093Z",
     "insights": [
       {
         "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Discussed in r/headphones — 13 comments on this thread.",
-        "pros": [],
-        "cons": [],
-        "sentiment": "neutral",
-        "key_insights": [],
+        "summary": "Reddit users warn against buying counterfeit Audio-Technica ATH-M50x headphones on eBay, citing poor sound quality and potentially misleading marketing.",
+        "pros": [
+          "They don't sound terrible",
+          "If marketed under their own brand, they might be worth $50-$70"
+        ],
+        "cons": [
+          "Deceptive counterfeits",
+          "Sound worse than the genuine ATH-M50x",
+          "Garbage in terms of sound quality"
+        ],
+        "sentiment": "negative",
+        "key_insights": [
+          "Counterfeit sellers may modify details to make fakes harder to spot",
+          "Users who bought fake headphones mention that they don't have anything to compare them to, despite having high-end equipment",
+          "Some users suggest that if the counterfeit headphones were marketed under their own brand, they might be worth $50-$70"
+        ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Beware of Fake Audio-Technica ATH-M50x \"New\" and \"Open Box\" Headphones on eBay",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v8axhf/beware_of_fake_audiotechnica_athm50x_new_and_open/",
-        "scrapedAt": "2026-08-12T12:01:38.554Z"
+        "scrapedAt": "2026-08-13T12:04:05.087Z"
       }
     ]
   },
@@ -169,27 +182,28 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-08-13T04:02:31.926Z",
+    "lastUpdated": "2026-08-13T12:04:05.093Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users generally agree that under $100, a good webcam can be found with proper lighting setup, but some consider the C920 to be old and not ideal for streaming.",
+        "summary": "Real users recommend spending under $100 on a webcam and investing in good lighting to improve image quality, especially for low-light conditions.",
         "pros": [
           "decent in low light",
-          "auto tracking",
-          "good image quality",
-          " Leaves you money left over for a light"
+          "auto tracking if you move around",
+          "decent",
+          "leaves money left over for a light"
         ],
         "cons": [
-          "low light is rough on sub $100 cams",
-          "old technology",
-          "software can be horrendous"
+          "low light is gonna be rough on any sub $100 cam tbh",
+          "software can be horrendous",
+          "old technology"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Proper lighting setup can greatly improve the webcam's performance.",
-          "The C920 is still a good option, but may not be ideal for streaming due to its age."
+          " investing in good lighting makes a huge difference",
+          "auto tracking feature is useful",
+          "the C920 is still a great webcam for the price"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -197,7 +211,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-08-13T04:02:31.918Z"
+        "scrapedAt": "2026-08-13T12:04:05.086Z"
       }
     ]
   },
