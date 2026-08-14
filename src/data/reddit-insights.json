@@ -1,21 +1,23 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-08-13T04:02:31.926Z",
+    "lastUpdated": "2026-08-14T04:02:01.581Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the relevance of power rating for a SATA SSD, with one user providing a link to the product on Amazon.",
+        "summary": "Users express skepticism about the device's power delivery and its compatibility with a SATA SSD, but one user provides more information about the product.",
         "pros": [
-          "It's just a standard SATA to USB controller",
-          "it will work fine"
+          "Will work fine",
+          "Standard SATA to USB controller"
         ],
-        "cons": [],
+        "cons": [
+          "900mAh not applicable for this use case"
+        ],
         "sentiment": "neutral",
         "key_insights": [
-          "Power rating of 900mAh is not applicable for SATA SSD use case",
-          "Users have successfully used the device with various SATA SSDs",
-          "No specific issues or concerns mentioned"
+          "Power delivery is not applicable to this use case",
+          "Device works with a standard SATA to USB controller",
+          "Compatibility with WD and SanDisk SSDs confirmed"
         ],
         "recommended_by_users": false,
         "commentCount": 3,
@@ -23,7 +25,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-08-13T04:02:31.918Z"
+        "scrapedAt": "2026-08-14T04:02:01.573Z"
       }
     ]
   },
@@ -89,24 +91,27 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-08-13T04:02:31.926Z",
+    "lastUpdated": "2026-08-14T04:02:01.581Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Users experience hiss with Shure SM7B microphone and debate possible causes, including location-based interference and gain staging issues.",
+        "summary": "Real Reddit users are experiencing hiss with their Shure SM7B microphone and are trying to figure out the cause, with some suggesting it might be related to gain staging or electromagnetic interference.",
         "pros": [
-          "A booster like sE DM1 might solve the problem",
-          "Cloudlifter inline preamp can help reduce noise"
+          "boosters like the sE DM1",
+          "get inline preamps",
+          "balanced cables"
         ],
         "cons": [
-          "Gain on preamps needs to be reduced to eliminate hiss"
+          "gain on preamps being too high",
+          "room elements causing hiss",
+          "preamp noise and self-noise"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "Location-based interference is a possible cause of the hiss",
-          "Gain staging issues may lead to excessive gain and hiss",
-          "Booster and inline preamp can help reduce noise from external sources"
+          "gain staging can affect the presence of hiss",
+          "electromagnetic interference from the environment might be causing the hiss",
+          "inline preamps can help reduce hiss"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
@@ -114,62 +119,63 @@
         "hasRealComments": true,
         "sourcePost": "Shure SM7b Hiss Puzzling Me",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1vcssxe/shure_sm7b_hiss_puzzling_me/",
-        "scrapedAt": "2026-08-13T04:02:31.919Z"
+        "scrapedAt": "2026-08-14T04:02:01.573Z"
       }
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-08-13T12:04:05.093Z",
+    "lastUpdated": "2026-08-14T04:02:01.581Z",
     "insights": [
       {
-        "product": "Audio-Technica ATH-M50x Studio Headphones",
+        "product": "Sony WH-1000XM5 Wireless ANC Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Reddit users warn against buying counterfeit Audio-Technica ATH-M50x headphones on eBay, citing poor sound quality and potentially misleading marketing.",
+        "summary": "Real users found the Noble FoKus artemis to be bright sounding with sibilant characteristics, but some praised its all-rounded sound and usability, while others criticized its volume output, especially with EQ settings.",
         "pros": [
-          "They don't sound terrible",
-          "If marketed under their own brand, they might be worth $50-$70"
+          "bright sounding",
+          "all-rounded"
         ],
         "cons": [
-          "Deceptive counterfeits",
-          "Sound worse than the genuine ATH-M50x",
-          "Garbage in terms of sound quality"
+          "too bright and sibilant",
+          "weak volume output",
+          "poor sound leakage"
         ],
-        "sentiment": "negative",
+        "sentiment": "neutral",
         "key_insights": [
-          "Counterfeit sellers may modify details to make fakes harder to spot",
-          "Users who bought fake headphones mention that they don't have anything to compare them to, despite having high-end equipment",
-          "Some users suggest that if the counterfeit headphones were marketed under their own brand, they might be worth $50-$70"
+          " users noted the product's brightness and sibilance, with some comparing it unfavorably to other products like Bathys MG",
+          " others praised the product's usability and all-rounded sound quality",
+          " volume output was a common criticism, especially when using EQ settings"
         ],
         "recommended_by_users": false,
-        "commentCount": 12,
+        "commentCount": 9,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "Beware of Fake Audio-Technica ATH-M50x \"New\" and \"Open Box\" Headphones on eBay",
-        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v8axhf/beware_of_fake_audiotechnica_athm50x_new_and_open/",
-        "scrapedAt": "2026-08-13T12:04:05.087Z"
+        "sourcePost": "Tried the new Noble FoKus artemis",
+        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1vmhd9z/tried_the_new_noble_fokus_artemis/",
+        "scrapedAt": "2026-08-14T04:02:01.574Z"
       }
     ]
   },
   "best-gaming-setups": {
-    "lastUpdated": "2026-08-13T04:02:31.926Z",
+    "lastUpdated": "2026-08-14T04:02:01.581Z",
     "insights": [
       {
         "product": "Secretlab Titan Evo 2022 Gaming Chair",
         "productSlug": "best-gaming-setups",
-        "summary": "Users generally have a positive sentiment towards their SecretLab Titan Evo 2022 Gaming Chairs, with one user mentioning design flaws in earlier models but being satisfied with the current version.",
+        "summary": "Users generally like their SecretLab Titan Evo 2022 Gaming Chair setup, but some mention design flaws with older models and issues with armrests. Some also praise the specs of their gaming PC and monitor.",
         "pros": [
           "Great specs",
-          "High-quality components used (e.g., Intel i7-13700k, GeForce 4090 Founders Edition)",
-          "Comfortable even after 6 years"
+          "comfortable chair",
+          "looking great"
         ],
         "cons": [
-          "Some design flaws in earlier models"
+          "Design flaws in older models",
+          "armrest cracking issue"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Users appreciate the comfort and quality of their chairs",
-          "Design flaws have been rectified in later SecretLab chair models",
-          "High-performance components are used in many setups"
+          "The user's experience with the SecretLab Titan Evo 2022 Gaming Chair has improved since the first model was released.",
+          "Some users mention that they had to get the company to replace a defective armrest.",
+          "One user praises their gaming PC and monitor specs."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -177,7 +183,7 @@
         "hasRealComments": true,
         "sourcePost": "Secret Lab Setup Coming Along",
         "sourceUrl": "https://www.reddit.com/r/battlestations/comments/1s86qu3/secret_lab_setup_coming_along/",
-        "scrapedAt": "2026-08-13T04:02:31.922Z"
+        "scrapedAt": "2026-08-14T04:02:01.575Z"
       }
     ]
   },
