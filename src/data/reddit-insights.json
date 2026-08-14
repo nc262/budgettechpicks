@@ -1,31 +1,27 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-08-14T04:02:01.581Z",
+    "lastUpdated": "2026-08-14T20:01:52.776Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users express skepticism about the device's power delivery and its compatibility with a SATA SSD, but one user provides more information about the product.",
+        "summary": "Users question the relevance of the 900mAh power rating to a SATA SSD and express confidence in the device's functionality.",
         "pros": [
-          "Will work fine",
-          "Standard SATA to USB controller"
+          "it's just a standard SATA to USB controller, they've been around forever"
         ],
-        "cons": [
-          "900mAh not applicable for this use case"
-        ],
-        "sentiment": "neutral",
+        "cons": [],
+        "sentiment": "positive",
         "key_insights": [
-          "Power delivery is not applicable to this use case",
-          "Device works with a standard SATA to USB controller",
-          "Compatibility with WD and SanDisk SSDs confirmed"
+          "The 900mAh power rating is not relevant for a SATA SSD",
+          "The device works fine with a WD 3D BLUE and SanDisk Plus SSD"
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 3,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-08-14T04:02:01.573Z"
+        "scrapedAt": "2026-08-14T20:01:52.770Z"
       }
     ]
   },
@@ -124,34 +120,35 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-08-14T04:02:01.581Z",
+    "lastUpdated": "2026-08-14T20:01:52.776Z",
     "insights": [
       {
         "product": "Sony WH-1000XM5 Wireless ANC Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users found the Noble FoKus artemis to be bright sounding with sibilant characteristics, but some praised its all-rounded sound and usability, while others criticized its volume output, especially with EQ settings.",
+        "summary": "Real users have mixed opinions about the Noble Audio FoKus Artemis, with some finding them bright and sibilant but lacking volume and sound quality compared to others' favorites.",
         "pros": [
-          "bright sounding",
-          "all-rounded"
+          "Sufficient SPL at even 40% of slider",
+          "Good build quality",
+          "All-rounded sound"
         ],
         "cons": [
-          "too bright and sibilant",
-          "weak volume output",
-          "poor sound leakage"
+          "Sound leakage is a major issue",
+          "Lack of volume, especially when using EQ",
+          "May not be as good in sound quality compared to other options like Bathys MG or HDB 630"
         ],
-        "sentiment": "neutral",
+        "sentiment": "negative",
         "key_insights": [
-          " users noted the product's brightness and sibilance, with some comparing it unfavorably to other products like Bathys MG",
-          " others praised the product's usability and all-rounded sound quality",
-          " volume output was a common criticism, especially when using EQ settings"
+          "Sound leakage can be damaging for some users",
+          "Volume may require customization through EQ",
+          "Artemis is all-rounded but not as good in sound quality as other options like MG or HDB 630"
         ],
         "recommended_by_users": false,
-        "commentCount": 9,
+        "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Tried the new Noble FoKus artemis",
         "sourceUrl": "https://www.reddit.com/r/headphones/comments/1vmhd9z/tried_the_new_noble_fokus_artemis/",
-        "scrapedAt": "2026-08-14T04:02:01.574Z"
+        "scrapedAt": "2026-08-14T20:01:52.771Z"
       }
     ]
   },
@@ -188,28 +185,26 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-08-13T12:04:05.093Z",
+    "lastUpdated": "2026-08-14T20:01:52.776Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Real users recommend spending under $100 on a webcam and investing in good lighting to improve image quality, especially for low-light conditions.",
+        "summary": "Users generally agree that a good webcam for streaming under $100 requires proper lighting, with some recommending additional investments like ring lights or dedicated cameras.",
         "pros": [
           "decent in low light",
           "auto tracking if you move around",
-          "decent",
-          "leaves money left over for a light"
+          "gets the job done"
         ],
         "cons": [
-          "low light is gonna be rough on any sub $100 cam tbh",
-          "software can be horrendous",
-          "old technology"
+          "low light is gonna be rough on any sub $100 cam",
+          "software is horrendous (specifically Logitech)"
         ],
         "sentiment": "positive",
         "key_insights": [
-          " investing in good lighting makes a huge difference",
-          "auto tracking feature is useful",
-          "the C920 is still a great webcam for the price"
+          "Additional lighting can improve low-light performance",
+          "Auto tracking feature is a valuable addition",
+          "Proper setup can enhance overall image quality"
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -217,7 +212,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-08-13T12:04:05.086Z"
+        "scrapedAt": "2026-08-14T20:01:52.770Z"
       }
     ]
   },
