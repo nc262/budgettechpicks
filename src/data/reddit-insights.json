@@ -1,19 +1,20 @@
 {
   "best-usb-c-hubs-under-50": {
-    "lastUpdated": "2026-08-14T20:01:52.776Z",
+    "lastUpdated": "2026-08-15T12:01:49.470Z",
     "insights": [
       {
         "product": "UGREEN 9-in-1 USB-C Hub",
         "productSlug": "best-usb-c-hubs-under-50",
-        "summary": "Users question the relevance of the 900mAh power rating to a SATA SSD and express confidence in the device's functionality.",
+        "summary": "Users question the relevance of the device's 900mAh rating to its use with a SATA SSD and provide context for the product, indicating it's a standard SATA to USB controller.",
         "pros": [
-          "it's just a standard SATA to USB controller, they've been around forever"
+          "Will work fine",
+          "Standard SATA to USB controller"
         ],
         "cons": [],
         "sentiment": "positive",
         "key_insights": [
-          "The 900mAh power rating is not relevant for a SATA SSD",
-          "The device works fine with a WD 3D BLUE and SanDisk Plus SSD"
+          "900mAh is not applicable to this use case",
+          "The device is just a standard SATA to USB controller"
         ],
         "recommended_by_users": true,
         "commentCount": 3,
@@ -21,7 +22,7 @@
         "hasRealComments": true,
         "sourcePost": "Is 900mAh enough for a SATA SSD?",
         "sourceUrl": "https://www.reddit.com/r/buildapc/comments/1sjk4ty/is_900mah_enough_for_a_sata_ssd/",
-        "scrapedAt": "2026-08-14T20:01:52.770Z"
+        "scrapedAt": "2026-08-15T12:01:49.465Z"
       }
     ]
   },
@@ -123,35 +124,33 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-08-14T20:01:52.776Z",
+    "lastUpdated": "2026-08-15T12:01:49.470Z",
     "insights": [
       {
-        "product": "Sony WH-1000XM5 Wireless ANC Headphones",
+        "product": "Audio-Technica ATH-M50x Studio Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Real users have mixed opinions about the Noble Audio FoKus Artemis, with some finding them bright and sibilant but lacking volume and sound quality compared to others' favorites.",
+        "summary": "Redditors warn against buying counterfeit Audio-Technica ATH-M50x headphones on eBay, citing poor sound quality and deceptive marketing.",
         "pros": [
-          "Sufficient SPL at even 40% of slider",
-          "Good build quality",
-          "All-rounded sound"
+          "They don't sound terrible",
+          "If they were marketed under their own brand instead of pretending to be Audio-Technica ATH-M50x, they'd probably be worth $50–70"
         ],
         "cons": [
-          "Sound leakage is a major issue",
-          "Lack of volume, especially when using EQ",
-          "May not be as good in sound quality compared to other options like Bathys MG or HDB 630"
+          "Ppl selling counterfeits should get like 5y in prison mandatory",
+          "They don't sound on par with the genuine ATH-M50x",
+          "Fake and deceptive counterfeits that are hard to spot without proper knowledge"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "Sound leakage can be damaging for some users",
-          "Volume may require customization through EQ",
-          "Artemis is all-rounded but not as good in sound quality as other options like MG or HDB 630"
+          "The fake headphones may sound better than expected, but still don't match the quality of genuine ATH-M50x",
+          "Counterfeiters are selling these as 'original' Audio-Technica ATH-M50x, making it hard for buyers to spot fakes without proper knowledge"
         ],
         "recommended_by_users": false,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "Tried the new Noble FoKus artemis",
-        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1vmhd9z/tried_the_new_noble_fokus_artemis/",
-        "scrapedAt": "2026-08-14T20:01:52.771Z"
+        "sourcePost": "Beware of Fake Audio-Technica ATH-M50x \"New\" and \"Open Box\" Headphones on eBay",
+        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v8axhf/beware_of_fake_audiotechnica_athm50x_new_and_open/",
+        "scrapedAt": "2026-08-15T12:01:49.467Z"
       }
     ]
   },
@@ -188,26 +187,28 @@
     ]
   },
   "best-budget-webcams": {
-    "lastUpdated": "2026-08-14T20:01:52.776Z",
+    "lastUpdated": "2026-08-15T12:01:49.470Z",
     "insights": [
       {
         "product": "Logitech C920s HD Pro Webcam",
         "productSlug": "best-budget-webcams",
-        "summary": "Users generally agree that a good webcam for streaming under $100 requires proper lighting, with some recommending additional investments like ring lights or dedicated cameras.",
+        "summary": "Users generally recommend spending money on lighting to improve low light performance, with some recommending specific webcams like the Logitech C920s HD Pro Webcam for their price range.",
         "pros": [
+          "decent",
+          "good",
           "decent in low light",
-          "auto tracking if you move around",
           "gets the job done"
         ],
         "cons": [
           "low light is gonna be rough on any sub $100 cam",
-          "software is horrendous (specifically Logitech)"
+          "software is horrendous (Logitech)",
+          "low light will always be a bit of a compromise without extra setup"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "Additional lighting can improve low-light performance",
-          "Auto tracking feature is a valuable addition",
-          "Proper setup can enhance overall image quality"
+          "Lighting can make or break low-light performance, even with cameras under $100.",
+          "Some users recommend spending money on lighting to improve image quality.",
+          "The Logitech C920s HD Pro Webcam is still a recommended choice for its price range."
         ],
         "recommended_by_users": true,
         "commentCount": 12,
@@ -215,7 +216,7 @@
         "hasRealComments": true,
         "sourcePost": "Need a webcam for streaming, what's actually good under $100?",
         "sourceUrl": "https://www.reddit.com/r/Twitch/comments/1tgkfgw/need_a_webcam_for_streaming_whats_actually_good/",
-        "scrapedAt": "2026-08-14T20:01:52.770Z"
+        "scrapedAt": "2026-08-15T12:01:49.465Z"
       }
     ]
   },
