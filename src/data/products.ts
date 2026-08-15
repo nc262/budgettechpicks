@@ -2265,6 +2265,22 @@ export const products: Product[] = [
     articleSlug: "best-audio-gear",
     badge: "🚀 Community Fave",
   },
+  // Promoted from community picks after 14+ days live (auto-pipeline)
+  {
+    id: "auto-b0cnt61vmz",
+    name: "Epomaker Aula F75",
+    asin: "B0CNT61VMZ",
+    price: "$65.99",
+    priceNum: 65.99,
+    rating: 4.6,
+    reviewCount: 3960,
+    description: "Recommended for its silent operation and potentially interesting hobby value.",
+    pros: ["silent gaming keyboard"],
+    cons: ["Newer to our list — less long-term data"],
+    category: "Gaming Gear",
+    articleSlug: "best-gaming-gear-under-50",
+    badge: "🚀 Community Fave",
+  },
 ];
 
 

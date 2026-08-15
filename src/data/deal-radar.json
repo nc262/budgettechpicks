@@ -1,4 +1,14 @@
 {
-  "updatedAt": "2026-08-14T07:01:01.031Z",
-  "deals": []
+  "updatedAt": "2026-08-15T07:01:15.893Z",
+  "deals": [
+    {
+      "product": "ASUS ROG Cetra II Core Wired Gaming Earbuds",
+      "asin": "B0883VFHGN",
+      "slug": "best-gaming-setups",
+      "title": "[Bundle] ASUS ROG STRIX Z890-H GAMING WIFI, Intel Core Ultra 7 270K Plus, three games with Intel (2 CPU, 1 Motherboard, Cooler Master Elite ",
+      "url": "https://reddit.com/r/buildapcsales/comments/1vn8qzo/bundle_asus_rog_strix_z890h_gaming_wifi_intel/",
+      "score": 31,
+      "postedAt": "2026-08-13T12:01:58.000Z"
+    }
+  ]
 }
