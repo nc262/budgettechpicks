@@ -58,30 +58,32 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-08-15T20:04:14.996Z",
+    "lastUpdated": "2026-08-16T04:04:17.253Z",
     "insights": [
       {
-        "product": "Philips Hue White & Color Starter Kit",
+        "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users appreciate a solution for under-cabinet lighting, share their own experiences with powering and mounting it, and discuss potential future projects like smart bird feeders.",
+        "summary": "Users think they can hack and debloate their Echo Dots, allowing for local LLM and speech recognition capabilities.",
         "pros": [
-          "Nice",
-          "can power 5 110v wired LED modules without a visible mess"
+          "hacking into",
+          "debloating"
         ],
-        "cons": [],
+        "cons": [
+          "limitations of the exploit",
+          "running like absolute trash"
+        ],
         "sentiment": "positive",
         "key_insights": [
-          "Powering under-cabinet lighting without a visible mess",
-          "Using the LightingWill LED Driver 60 Watts power supply",
-          "Smart bird feeders as a potential future project"
+          "hackable",
+          "can be repurposed for other uses"
         ],
-        "recommended_by_users": true,
-        "commentCount": 5,
+        "recommended_by_users": false,
+        "commentCount": 4,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "My Tunable Kitchen Cabinet Lighting",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1viij0l/my_tunable_kitchen_cabinet_lighting/",
-        "scrapedAt": "2026-08-15T20:04:14.993Z"
+        "sourcePost": "Hacked and debloated an Echo Dot 2 (local LLM + local Speech recognition)",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1vhnxat/hacked_and_debloated_an_echo_dot_2_local_llm/",
+        "scrapedAt": "2026-08-16T04:04:17.248Z"
       }
     ]
   },
