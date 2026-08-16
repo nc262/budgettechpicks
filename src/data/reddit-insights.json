@@ -58,32 +58,31 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-08-16T04:04:17.253Z",
+    "lastUpdated": "2026-08-16T12:04:28.216Z",
     "insights": [
       {
-        "product": "Amazon Echo Dot (5th Gen)",
+        "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users think they can hack and debloate their Echo Dots, allowing for local LLM and speech recognition capabilities.",
+        "summary": "Users appreciate the idea of tunable kitchen cabinet lighting and share their own experiences with powering it, but some mention challenges with DIY implementation.",
         "pros": [
-          "hacking into",
-          "debloating"
+          "tunable lighting",
+          "under-cabinet lighting is on users' to-do lists"
         ],
         "cons": [
-          "limitations of the exploit",
-          "running like absolute trash"
+          "no specific cons mentioned in comments"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "hackable",
-          "can be repurposed for other uses"
+          "power supply options (e.g. LightingWill LED Driver 60 Watts)",
+          "DIY implementation challenges (mounting, powering)"
         ],
         "recommended_by_users": false,
-        "commentCount": 4,
+        "commentCount": 5,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "Hacked and debloated an Echo Dot 2 (local LLM + local Speech recognition)",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1vhnxat/hacked_and_debloated_an_echo_dot_2_local_llm/",
-        "scrapedAt": "2026-08-16T04:04:17.248Z"
+        "sourcePost": "My Tunable Kitchen Cabinet Lighting",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1viij0l/my_tunable_kitchen_cabinet_lighting/",
+        "scrapedAt": "2026-08-16T12:04:28.213Z"
       }
     ]
   },
