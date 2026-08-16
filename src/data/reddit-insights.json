@@ -58,31 +58,36 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-08-16T12:04:28.216Z",
+    "lastUpdated": "2026-08-16T20:04:32.258Z",
     "insights": [
       {
-        "product": "Philips Hue White & Color Starter Kit",
+        "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users appreciate the idea of tunable kitchen cabinet lighting and share their own experiences with powering it, but some mention challenges with DIY implementation.",
+        "summary": "Users appreciate the EchoMuse updates, particularly those related to audio synchronization and VOIP integration, but some express concern over complexity and latency issues.",
         "pros": [
-          "tunable lighting",
-          "under-cabinet lighting is on users' to-do lists"
+          "synced audio",
+          "VOIP Stack integration",
+          "streaming TTS and music ducking",
+          "wake-to-first-word latency"
         ],
         "cons": [
-          "no specific cons mentioned in comments"
+          "complexity",
+          "latency issues",
+          "weird issues with open WakeWord"
         ],
         "sentiment": "positive",
         "key_insights": [
-          "power supply options (e.g. LightingWill LED Driver 60 Watts)",
-          "DIY implementation challenges (mounting, powering)"
+          "Users would appreciate a sendspin client for synced audio",
+          "Streaming TTS and music ducking make EchoMuse feel genuinely usable",
+          "Latency plus false/missed wake counts per device are desired features"
         ],
-        "recommended_by_users": false,
-        "commentCount": 5,
+        "recommended_by_users": true,
+        "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "My Tunable Kitchen Cabinet Lighting",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1viij0l/my_tunable_kitchen_cabinet_lighting/",
-        "scrapedAt": "2026-08-16T12:04:28.213Z"
+        "sourcePost": "UPDATE: EchoMuse - Alexa Replacement for the Echo Dot Gen 2",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1ve6ane/update_echomuse_alexa_replacement_for_the_echo/",
+        "scrapedAt": "2026-08-16T20:04:32.253Z"
       }
     ]
   },
