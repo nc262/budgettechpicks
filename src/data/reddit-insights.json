@@ -58,36 +58,29 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-08-16T20:04:32.258Z",
+    "lastUpdated": "2026-08-17T12:04:29.416Z",
     "insights": [
       {
-        "product": "Amazon Echo Dot (5th Gen)",
+        "product": "Philips Hue White & Color Starter Kit",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users appreciate the EchoMuse updates, particularly those related to audio synchronization and VOIP integration, but some express concern over complexity and latency issues.",
+        "summary": "Users find the idea of tunable kitchen cabinet lighting useful and inspiring, with one user sharing their experience of using a power supply and mounting it under the recessed part of the cabinet.",
         "pros": [
-          "synced audio",
-          "VOIP Stack integration",
-          "streaming TTS and music ducking",
-          "wake-to-first-word latency"
+          "Tunable kitchen cabinet lighting",
+          "Power supply option shared"
         ],
-        "cons": [
-          "complexity",
-          "latency issues",
-          "weird issues with open WakeWord"
-        ],
+        "cons": [],
         "sentiment": "positive",
         "key_insights": [
-          "Users would appreciate a sendspin client for synced audio",
-          "Streaming TTS and music ducking make EchoMuse feel genuinely usable",
-          "Latency plus false/missed wake counts per device are desired features"
+          "User shared experience of using a specific power supply and mounting method",
+          "Consideration of DIYing smart bird feeders with Home Assistant"
         ],
         "recommended_by_users": true,
-        "commentCount": 12,
+        "commentCount": 5,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "UPDATE: EchoMuse - Alexa Replacement for the Echo Dot Gen 2",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1ve6ane/update_echomuse_alexa_replacement_for_the_echo/",
-        "scrapedAt": "2026-08-16T20:04:32.253Z"
+        "sourcePost": "My Tunable Kitchen Cabinet Lighting",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1viij0l/my_tunable_kitchen_cabinet_lighting/",
+        "scrapedAt": "2026-08-17T12:04:29.413Z"
       }
     ]
   },
