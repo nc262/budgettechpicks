@@ -2281,6 +2281,22 @@ export const products: Product[] = [
     articleSlug: "best-gaming-gear-under-50",
     badge: "🚀 Community Fave",
   },
+  // Promoted from community picks after 14+ days live (auto-pipeline)
+  {
+    id: "auto-b07bqc7gnl",
+    name: "Fosi mini amp",
+    asin: "B07BQC7GNL",
+    price: "$79.99",
+    priceNum: 79.99,
+    rating: 4.5,
+    reviewCount: 9708,
+    description: "The Fosi Audio BT20A Bluetooth Stereo Amplifier is highly recommended for its versatility in home theatre applications, including gaming and music listening.",
+    pros: ["Epic for gaming in home theatre","Good for music"],
+    cons: ["Newer to our list — less long-term data"],
+    category: "Audio & Microphones",
+    articleSlug: "best-audio-gear",
+    badge: "🚀 Community Fave",
+  },
 ];
 
 
