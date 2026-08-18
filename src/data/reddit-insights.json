@@ -58,29 +58,32 @@
     ]
   },
   "best-smart-home-under-50": {
-    "lastUpdated": "2026-08-17T12:04:29.416Z",
+    "lastUpdated": "2026-08-18T04:04:37.170Z",
     "insights": [
       {
-        "product": "Philips Hue White & Color Starter Kit",
+        "product": "Amazon Echo Dot (5th Gen)",
         "productSlug": "best-smart-home-under-50",
-        "summary": "Users find the idea of tunable kitchen cabinet lighting useful and inspiring, with one user sharing their experience of using a power supply and mounting it under the recessed part of the cabinet.",
+        "summary": "Users are excited about the LibreEcho project, a Linux-based replacement OS for Echo devices, and are eager to test it on their existing Echo Gen 2 devices.",
         "pros": [
-          "Tunable kitchen cabinet lighting",
-          "Power supply option shared"
+          "Airplay support",
+          "Multi-room audio capabilities",
+          "Potential to add features like sync",
+          "Offline use without subscription or fees"
         ],
         "cons": [],
         "sentiment": "positive",
         "key_insights": [
-          "User shared experience of using a specific power supply and mounting method",
-          "Consideration of DIYing smart bird feeders with Home Assistant"
+          "LibreEcho uses a low-level BROM mode for flashing and injecting payloads",
+          "Airplay support makes it worth trying, especially with decent speakers like Echo Gen 2",
+          "Users are concerned about privacy on their unused devices"
         ],
         "recommended_by_users": true,
-        "commentCount": 5,
+        "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "My Tunable Kitchen Cabinet Lighting",
-        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1viij0l/my_tunable_kitchen_cabinet_lighting/",
-        "scrapedAt": "2026-08-17T12:04:29.413Z"
+        "sourcePost": "LibreEcho: Linux 6.1 replacement OS for the full-size Echo Gen 2 — looking for early testers",
+        "sourceUrl": "https://www.reddit.com/r/homeautomation/comments/1vpsr2h/libreecho_linux_61_replacement_os_for_the/",
+        "scrapedAt": "2026-08-18T04:04:37.163Z"
       }
     ]
   },
