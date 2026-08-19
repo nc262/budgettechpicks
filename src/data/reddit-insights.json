@@ -88,35 +88,33 @@
     ]
   },
   "best-streaming-gear": {
-    "lastUpdated": "2026-08-14T04:02:01.581Z",
+    "lastUpdated": "2026-08-19T04:03:50.502Z",
     "insights": [
       {
         "product": "Shure SM7B Broadcast Microphone",
         "productSlug": "best-streaming-gear",
-        "summary": "Real Reddit users are experiencing hiss with their Shure SM7B microphone and are trying to figure out the cause, with some suggesting it might be related to gain staging or electromagnetic interference.",
+        "summary": "Reddit users experience hiss with Shure SM7B microphone and discuss potential causes, such as room elements, gain staging, and electromagnetic interference, while recommending solutions like inline preamps.",
         "pros": [
-          "boosters like the sE DM1",
-          "get inline preamps",
-          "balanced cables"
+          "boosting levels after recording",
+          "using inline preamps like sE DM1 or Cloudlifter mini"
         ],
         "cons": [
-          "gain on preamps being too high",
-          "room elements causing hiss",
-          "preamp noise and self-noise"
+          "hiss caused by room elements",
+          "gain staging issues",
+          "electromagnetic interference"
         ],
         "sentiment": "neutral",
         "key_insights": [
-          "gain staging can affect the presence of hiss",
-          "electromagnetic interference from the environment might be causing the hiss",
-          "inline preamps can help reduce hiss"
+          "Room elements can cause hiss, and using a booster like the sE DM1 might solve the problem.",
+          "Gain staging is crucial to avoid hiss, but reducing gain too much makes the mic level quiet."
         ],
-        "recommended_by_users": false,
+        "recommended_by_users": true,
         "commentCount": 12,
         "relevant": true,
         "hasRealComments": true,
         "sourcePost": "Shure SM7b Hiss Puzzling Me",
         "sourceUrl": "https://www.reddit.com/r/audioengineering/comments/1vcssxe/shure_sm7b_hiss_puzzling_me/",
-        "scrapedAt": "2026-08-14T04:02:01.573Z"
+        "scrapedAt": "2026-08-19T04:03:50.497Z"
       }
     ]
   },
@@ -294,24 +292,25 @@
     ]
   },
   "best-monitors-and-displays": {
-    "lastUpdated": "2026-08-12T04:04:42.519Z",
+    "lastUpdated": "2026-08-19T04:03:50.502Z",
     "insights": [
       {
         "product": "Alienware AW3423DWF 34\" QD-OLED",
         "productSlug": "best-monitors-and-displays",
-        "summary": "Users generally advise against using a 1440p QD-OLED monitor for work due to its limited brightness and text fringing issues, with some recommending IPS displays instead.",
+        "summary": "Users generally advise against buying a 1440p QD-OLED monitor for work due to text smearing and viewing angle issues, but some users have had good experiences with their own monitors.",
         "pros": [
-          "Some users may be able to tolerate it"
+          "Some users have had no issues with text smearing or viewing angles"
         ],
         "cons": [
-          "Text fringing",
-          "Limited brightness",
-          "Burn-in susceptibility"
+          "Text smearing from VA or OLED panels",
+          "Viewing angle issues",
+          "Burn-in on the taskbar"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "OLEDs don't have a proper subpixel layout so fringing is a thing",
-          "4k 27"
+          "OLED panels have issues with text smearing and viewing angles",
+          "IPS displays are brighter and more resistant to burn-in",
+          "Some users have had good experiences, but it depends on usage"
         ],
         "recommended_by_users": false,
         "commentCount": 7,
@@ -319,7 +318,7 @@
         "hasRealComments": true,
         "sourcePost": "Used Alienware AW3423DWF QD-OLED 1440p for $400",
         "sourceUrl": "https://www.reddit.com/r/Monitors/comments/1ua0u0k/used_alienware_aw3423dwf_qdoled_1440p_for_400/",
-        "scrapedAt": "2026-08-12T04:04:42.512Z"
+        "scrapedAt": "2026-08-19T04:03:50.496Z"
       }
     ]
   }
