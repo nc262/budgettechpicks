@@ -119,33 +119,29 @@
     ]
   },
   "best-audio-gear": {
-    "lastUpdated": "2026-08-15T12:01:49.470Z",
+    "lastUpdated": "2026-08-19T12:01:26.677Z",
     "insights": [
       {
-        "product": "Audio-Technica ATH-M50x Studio Headphones",
+        "product": "Sony WH-1000XM5 Wireless ANC Headphones",
         "productSlug": "best-audio-gear",
-        "summary": "Redditors warn against buying counterfeit Audio-Technica ATH-M50x headphones on eBay, citing poor sound quality and deceptive marketing.",
-        "pros": [
-          "They don't sound terrible",
-          "If they were marketed under their own brand instead of pretending to be Audio-Technica ATH-M50x, they'd probably be worth $50–70"
-        ],
+        "summary": "Several users reported issues with the hinges of their Sony WH-1000XM5 headphones, with some experiencing cracks for the third time after replacement with OEM parts.",
+        "pros": [],
         "cons": [
-          "Ppl selling counterfeits should get like 5y in prison mandatory",
-          "They don't sound on par with the genuine ATH-M50x",
-          "Fake and deceptive counterfeits that are hard to spot without proper knowledge"
+          "hinge problems",
+          "reputation for failing at the hinge"
         ],
         "sentiment": "negative",
         "key_insights": [
-          "The fake headphones may sound better than expected, but still don't match the quality of genuine ATH-M50x",
-          "Counterfeiters are selling these as 'original' Audio-Technica ATH-M50x, making it hard for buyers to spot fakes without proper knowledge"
+          "Some users replaced the hinges with expensive OEM parts twice before experiencing issues again.",
+          "The repair kit mentioned in one comment may help solve the hinge problem, but it did not directly address the issue mentioned by the user who posted the feedback."
         ],
         "recommended_by_users": false,
-        "commentCount": 12,
+        "commentCount": 8,
         "relevant": true,
         "hasRealComments": true,
-        "sourcePost": "Beware of Fake Audio-Technica ATH-M50x \"New\" and \"Open Box\" Headphones on eBay",
-        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1v8axhf/beware_of_fake_audiotechnica_athm50x_new_and_open/",
-        "scrapedAt": "2026-08-15T12:01:49.467Z"
+        "sourcePost": "My Sony WH-1000XM5 Headphones hinges are starting to Crack for the 3rd time After replacing them with expensive OEM parts twice do not buy them",
+        "sourceUrl": "https://www.reddit.com/r/headphones/comments/1vnutzy/my_sony_wh1000xm5_headphones_hinges_are_starting/",
+        "scrapedAt": "2026-08-19T12:01:26.673Z"
       }
     ]
   },
